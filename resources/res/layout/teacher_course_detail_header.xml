@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="208dp">
+        <com.chaoxing.fanya.aphone.view.AsyncImageView android:id="@+id/course_img" android:layout_width="match_parent" android:layout_height="208dp" android:src="@drawable/default_course" android:scaleType="centerCrop"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/course_info" android:background="@drawable/blue_border_corner_2" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_marginBottom="14dp" android:text="学生管理" android:drawableRight="@drawable/course_info_right" android:drawablePadding="8dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <View android:background="#cfcfcf" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/rl_class" android:background="#efefef" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+        <TextView android:textSize="16sp" android:textColor="@color/bg_blue" android:id="@+id/class_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/select_down" android:layout_toRightOf="@+id/class_checked" android:layout_centerVertical="true"/>
+        <View android:id="@+id/view_line" android:background="#c8c7cc" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/bg_blue" android:gravity="center" android:id="@+id/no_class_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:text="暂无学生，点此可添加学生。"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bg_lesson" android:background="#ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp"/>
+    </LinearLayout>
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="96dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:layout_width="16dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:id="@+id/course_class_chat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_class_chat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="班级群聊" android:drawableTop="@drawable/course_discuss_teacher" android:drawablePadding="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/course_knowledge" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="课程目录" android:drawableTop="@drawable/course_chapter_teacher" android:drawablePadding="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/course_datum" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="@string/topiclist_item_material" android:drawableTop="@drawable/course_resources_teacher" android:drawablePadding="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/course_discuss_teacher" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="问答" android:drawableTop="@drawable/course_class_chat" android:drawablePadding="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/course_homework" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="作业" android:drawableTop="@drawable/course_homework_teacher" android:drawablePadding="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/course_catalog" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="课件" android:drawableTop="@drawable/course_catalog" android:drawablePadding="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/course_notice" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="@string/message_notice" android:drawableTop="@drawable/course_notice_teacher" android:drawablePadding="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/course_manage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="学生管理" android:drawableTop="@drawable/course_student_manage" android:drawablePadding="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/course_exam" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="@string/course_exam" android:drawableTop="@drawable/course_exam_teacher" android:drawablePadding="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/course_thesis" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="论文" android:drawableTop="@drawable/course_thesis_teacher" android:drawablePadding="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View android:background="#cfcfcf" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/class_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/class_one" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="15sp" android:textColor="@color/bg_blue" android:ellipsize="end" android:id="@+id/name_one" android:paddingRight="28dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="安居客和斯蒂芬京哈靠技ddd接受的发s" android:maxLines="1" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/arrow_right_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/line_one" android:background="#d7d7d7" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/class_two" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="15sp" android:textColor="@color/bg_blue" android:ellipsize="end" android:id="@+id/name_two" android:paddingRight="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="安居客和斯蒂芬京哈靠技ddd拉克丝的金额非接受的发s" android:maxLines="1" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/arrow_right_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/line_two" android:background="#d7d7d7" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/class_three" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="15sp" android:textColor="@color/bg_blue" android:ellipsize="end" android:id="@+id/name_three" android:paddingRight="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="安居客和斯蒂芬京哈靠技ddd接受的发s" android:maxLines="1" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/arrow_right_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/line_three" android:background="#d7d7d7" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/class_four" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="15sp" android:textColor="@color/bg_blue" android:ellipsize="end" android:id="@+id/name_four" android:paddingRight="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="安居客和斯蒂芬京哈靠技ddd接受的发s" android:maxLines="1" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/arrow_right_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp"/>
+    </LinearLayout>
+    <View android:background="#cfcfcf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/course_top" android:background="#efeff4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32dp">
+        <TextView android:textSize="18sp" android:textColor="#999999" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="讨论"/>
+        <RelativeLayout android:id="@+id/rlRight" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <Button android:textSize="14sp" android:id="@+id/btn_group_info" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingRight="12dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <Button android:textSize="14sp" android:id="@+id/btn_new_topic" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingRight="6dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_toLeftOf="@+id/btn_group_info" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="#ebebeb" android:visibility="visible" android:layout_width="match_parent" android:layout_height="62dp">
+        <TextView android:textSize="17sp" android:textColor="#777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/course_teacher_class_activity" android:layout_centerVertical="true"/>
+        <TextView android:textSize="17sp" android:textColor="#777777" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/knowledge_list_catalog" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/bg_blue" android:id="@+id/knowledge_edit" android:background="@color/transparent" android:paddingLeft="6dp" android:paddingTop="2dp" android:paddingRight="6dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="@string/knowledge_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/add_class" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/icon_class_add" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#d7d7d7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="7dp" android:layout_marginRight="7dp"/>
+    <TextView android:textSize="15sp" android:textColor="#b8b8b8" android:layout_gravity="center_horizontal" android:id="@+id/no_class" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70dp" android:text="暂无班级"/>
+    <RelativeLayout android:id="@+id/rl_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="400dp">
+        <ImageView android:id="@+id/iv_no_data_tip" android:background="@drawable/conversation_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_marginRight="60dp" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="19sp" android:textColor="#cccccc" android:id="@+id/tv_no_data_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_marginBottom="50dp" android:layout_below="@+id/iv_no_data_tip" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/viewReload" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="400dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/state_loading_fail" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

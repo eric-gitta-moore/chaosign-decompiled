@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#0099ff" android:layout_width="match_parent" android:layout_height="183dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="226dp" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pc_logo" android:contentDescription="@null"/>
+            <com.chaoxing.bookshelf.wifi.CirceScaleView android:id="@+id/circeView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_logo" android:layout_weight="0" android:contentDescription="@null"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="226dp" android:layout_height="wrap_content">
+            <ProgressBar android:id="@+id/upload_proBar" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="10dp" android:progressDrawable="@drawable/wifisend_progressbar" style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:ellipsize="middle" android:id="@+id/tvSendState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="" android:singleLine="true"/>
+            <TextView android:textSize="14sp" android:textColor="#d4effe" android:id="@+id/tvSendTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/noclose"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/view_share_note_page_bar"/>
+    <RelativeLayout android:id="@+id/rl_search" android:background="@drawable/bg_home_page_search" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:minHeight="44dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_home_search" android:layout_marginStart="14dp"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="@color/gray_999999" android:id="@+id/tv_search_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_home_search_information" android:singleLine="true" android:layout_marginStart="6dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

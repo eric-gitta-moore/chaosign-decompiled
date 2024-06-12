@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-61dp">
+        <RelativeLayout android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="68dp" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_name" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="68dp" android:lines="1" android:maxLength="40" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="@color/color_commen_del" android:layout_width="60dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="删除"/>
+    </LinearLayout>
+    <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="1dp"/>
+</LinearLayout>

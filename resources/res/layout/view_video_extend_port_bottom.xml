@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/bottom_port" android:layout_width="match_parent" android:layout_height="100dp">
+    <SeekBar android:layout_gravity="center_vertical" android:id="@+id/progress" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="2dp" android:progressDrawable="@drawable/video_seek_progress" android:minHeight="2dp" android:thumb="@drawable/video_seek_thumb_normal" android:thumbOffset="8dp" android:layout_above="@+id/rlButtons" android:splitTrack="false"/>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rlButtons" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/bottom_start" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_centerVertical="true" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/bottom_start"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/timeDivid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:layout_centerVertical="true" android:layout_toEndOf="@+id/current"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_centerVertical="true" android:layout_marginEnd="12dp" android:layout_toEndOf="@+id/timeDivid"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/danmu_write" android:background="@drawable/video_bg_danmu_write" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发弹幕" android:drawableLeft="@drawable/video_danmu_write" android:drawablePadding="5dp" android:layout_marginEnd="8dp"/>
+            <ImageView android:id="@+id/fullScreen" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_shrink" android:scaleType="center" android:contentDescription="@string/accessibility_zoom_content_description"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

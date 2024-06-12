@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topBar" layout="@layout/common_title_bar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar">
+        <RelativeLayout android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="65dp">
+            <com.chaoxing.mobile.group.ui.GroupAvatar android:id="@+id/ivLogo" android:background="@drawable/bg_group_head_circle" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/ivLogo" android:layout_centerVertical="true">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+                <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tvCount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <Button android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/btnAdd" android:background="@drawable/bg_rect_0099ff" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="30dp" android:layout_marginRight="15dp" android:text="@string/joinChat_middle"/>
+    </LinearLayout>
+    <include android:id="@+id/pbWait" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

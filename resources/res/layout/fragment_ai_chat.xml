@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.voice.ui.chat.widget.AiChatContainer android:id="@+id/chat_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ll_input">
+        <com.chaoxing.mobile.voice.ui.chat.widget.AiChatRecyclerView android:id="@+id/rv_chat" android:visibility="gone" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.hjq.shape.layout.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/view_stop_answer" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_marginBottom="2dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:shape_radius="17dp" app:shape_solidColor="#ffffff">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cxai_ic_stop_answer"/>
+            <TextView android:textSize="15dp" android:textColor="#0099ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="停止思考" android:layout_marginStart="6dp"/>
+        </com.hjq.shape.layout.ShapeLinearLayout>
+        <FrameLayout android:id="@+id/fl_welcome_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.chaoxing.mobile.voice.ui.chat.widget.AiChatContainer>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/view_ai_input"/>
+</RelativeLayout>

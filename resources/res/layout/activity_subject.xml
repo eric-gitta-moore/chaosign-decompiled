@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.fanzhou.widget.SwipeListView android:id="@+id/lv_chapter" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="#ffebeced" android:dividerHeight="0px" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tv_prompt_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专题没有内容，您可点击右上角图标进行添加" android:layout_centerInParent="true"/>
+        <include layout="@layout/common_loading_transparent"/>
+        <include layout="@layout/common_reload"/>
+    </RelativeLayout>
+</LinearLayout>

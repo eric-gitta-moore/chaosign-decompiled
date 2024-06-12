@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlContainer" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/cbSelect" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/ivIcon" android:background="@drawable/icon_topiclist_topicfolder" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/cbSelect" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/rl_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/iv_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sort_36dp"/>
+            <TextView android:textSize="13sp" android:textColor="#b3b3b3" android:gravity="center_vertical" android:id="@+id/tv_group_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp"/>
+        </RelativeLayout>
+        <TextView android:ellipsize="end" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="@dimen/dp_5" android:text="文件夹" android:maxLines="2" android:layout_toLeftOf="@+id/rl_right" android:layout_toRightOf="@+id/ivIcon" android:layout_centerVertical="true" style="@style/group_title_text"/>
+    </RelativeLayout>
+</RelativeLayout>

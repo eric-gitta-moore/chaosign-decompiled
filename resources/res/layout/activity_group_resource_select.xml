@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_collected_resource" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar2"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <com.mobeta.android.dslv.DragSortListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_resource" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="#ffefeff4" android:dividerHeight="1px" android:layout_above="@+id/operation_toolbar" android:headerDividersEnabled="false" android:footerDividersEnabled="false" cx:drag_handle_id="@+id/iv_sort" cx:drag_start_mode="0"/>
+        <TextView android:id="@+id/tvShowError" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="资料文件夹数据获取出错！" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <include layout="@layout/common_loading_transparent"/>
+</RelativeLayout>

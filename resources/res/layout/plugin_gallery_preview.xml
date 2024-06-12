@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/black" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.group.ui.ImageViewPager android:id="@+id/vpGallery" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:unselectedAlpha="1"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/album_bg_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_width="match_parent" android:layout_height="24dp"/>
+        <RelativeLayout android:id="@+id/viewTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="48dp" android:drawableLeft="@drawable/media_img_back" android:layout_centerVertical="true"/>
+            <TextView android:textSize="20sp" android:textColor="#ff333333" android:ellipsize="middle" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75dp" android:layout_marginRight="75dp" android:singleLine="true" android:layout_centerInParent="true"/>
+            <CheckBox android:id="@+id/cbChoose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:button="@drawable/checkbox_preview_image" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="15sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvSelPosition" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/cbChoose" android:layout_alignBottom="@+id/cbChoose" android:layout_centerVertical="true" android:layout_alignStart="@+id/cbChoose" android:layout_alignEnd="@+id/cbChoose"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_layout" android:background="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_images" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="94dp" android:paddingStart="15dp"/>
+        <RelativeLayout android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/tvEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="编辑" android:layout_centerVertical="true"/>
+            <CheckBox android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/cbOriginalImg" android:paddingLeft="4dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:button="@drawable/checkbox_small_selector" android:text="@string/original_img" android:layout_toRightOf="@+id/tvEdit" android:layout_centerVertical="true"/>
+            <TextView android:textSize="13sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btnRight" android:background="@drawable/bg_rect_0099ff" android:layout_width="64dp" android:layout_height="30dp" android:text="@string/comment_done" android:layout_centerVertical="true" android:layout_marginEnd="14dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

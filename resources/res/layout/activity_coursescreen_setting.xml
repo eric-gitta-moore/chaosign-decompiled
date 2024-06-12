@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlMainView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+            <TextView android:textSize="14sp" android:textColor="@android:color/black" android:id="@+id/tvSelectHint" android:paddingLeft="12dp" android:paddingTop="16dp" android:paddingRight="12dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="选择要投射的设备"/>
+            <View android:id="@+id/line" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/tvSelectHint"/>
+            <RelativeLayout android:id="@+id/device_list" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/line">
+                <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvDevices" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:layout_above="@+id/line2" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+                <View android:id="@+id/line2" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="10dp" android:layout_above="@+id/tvHint"/>
+                <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tvHint" android:paddingLeft="12dp" android:paddingTop="16dp" android:paddingRight="12dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:lineSpacingMultiplier="1.5"/>
+            </RelativeLayout>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_empty_message" android:paddingLeft="12dp" android:paddingTop="16dp" android:paddingRight="12dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/line" android:lineSpacingMultiplier="1.5"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlConnView" android:background="#000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18sp" android:textColor="#fff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投屏" android:layout_centerHorizontal="true"/>
+        <TextView android:textColor="#0ff" android:id="@+id/tvStop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="结束" android:layout_alignParentRight="true"/>
+        <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <TextView android:textColor="#fff" android:id="@+id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:text="正在连接服务器" android:layout_below="@+id/progressBar" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

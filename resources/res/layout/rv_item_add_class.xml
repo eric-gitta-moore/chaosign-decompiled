@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_new_clazz" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/chaoxing_blue" android:gravity="center" android:id="@+id/create_course_clazz" android:background="@drawable/bg_create_clazz_blue" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/create_class_hint"/>
+    </RelativeLayout>
+</RelativeLayout>

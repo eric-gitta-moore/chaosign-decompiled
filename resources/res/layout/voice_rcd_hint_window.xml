@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.chat.widget.VoiceRcdWindow xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/window_voice_rcd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/voice_rcd_hint_anim_area" android:background="@drawable/voice_rcd_hint_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="160dp">
+        <ImageView android:id="@+id/imageView1" android:layout_width="80dp" android:layout_height="120dp" android:src="@drawable/voice_rcd_hint"/>
+        <ImageView android:id="@+id/voice_rcd_hint_anim" android:background="@drawable/amp1" android:layout_width="80dp" android:layout_height="120dp" android:layout_toRightOf="@+id/imageView1" android:layout_alignBottom="@+id/imageView1"/>
+        <TextView android:textSize="15dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/voice_rcd_normal_wording" android:layout_width="160dp" android:layout_height="wrap_content" android:minHeight="40dp" android:text="@string/move_up_to_cancel" android:layout_below="@+id/imageView1" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</com.chaoxing.mobile.chat.widget.VoiceRcdWindow>

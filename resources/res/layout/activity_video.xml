@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/bg_video" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/topbar"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:src="@drawable/icon_video_playing"/>
+    <TextView android:textStyle="bold" android:textColor="@color/text_av_playing" android:id="@+id/video_state_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/video_playing"/>
+    <TextView android:textColor="@color/text_av_playing" android:ellipsize="end" android:id="@+id/video_name_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:layout_marginTop="5dp" android:layout_marginRight="80dp" android:text="wx_camera_14988888888..." android:maxLines="1"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+        <ImageView android:id="@+id/video_volumeDecrease_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28dp" android:src="@drawable/icon_video_volume_decrease"/>
+        <ImageView android:id="@+id/video_control_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_stop"/>
+        <ImageView android:id="@+id/video_volumeIncrease_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:src="@drawable/icon_video_volume_increase"/>
+    </LinearLayout>
+    <include android:id="@+id/video_seekBar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" layout="@layout/seekbar"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/bg_top" android:gravity="center" android:layout_gravity="center" android:id="@+id/video_exit_textView" android:background="@drawable/bg_screen_projection" android:paddingLeft="50dp" android:paddingTop="10dp" android:paddingRight="50dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35dp" android:text="@string/stop_play"/>
+</LinearLayout>

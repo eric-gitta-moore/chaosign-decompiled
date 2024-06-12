@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="@color/gray_b3b3b3" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/chat_search_specified_content"/>
+    <include layout="@layout/layout_line_1px_margin_lr15dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25">
+        <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center_horizontal" android:id="@+id/tvDate" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/date" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center_horizontal" android:id="@+id/tvPic" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/picture" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center_horizontal" android:id="@+id/tvVideo" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/attach_video" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:weightSum="3">
+        <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center_horizontal" android:id="@+id/tvFile" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/attachment" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center_horizontal" android:id="@+id/tvName" android:paddingLeft="17dp" android:paddingRight="17dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/topiclist_code_Members" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

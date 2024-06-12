@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.scwang.smart.refresh.header.CxClassicsHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlDrawableArrow="@drawable/icon_refresh" app:srlDrawableArrowSize="18dp" app:srlDrawableMarginRight="8dp" app:srlDrawableProgressSize="18dp" app:srlEnableLastTime="false" app:srlFinishDuration="100" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="13sp" app:srlTextTimeMarginTop="2dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvList" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+        <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+        <include android:visibility="gone" layout="@layout/reload"/>
+        <TextView android:id="@+id/tvEmptyMessage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topiccheck_list_nullhint" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

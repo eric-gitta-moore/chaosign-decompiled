@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffefeff4" android:paddingBottom="1px" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlGroupName" android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabGroupName" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小组名称" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="right" android:id="@+id/tvGroupName" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawablePadding="2dp" android:layout_toRightOf="@+id/tvLabGroupName" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlGroupAvatar" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabGroupAvatar" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小组头像" android:layout_centerVertical="true"/>
+        <com.chaoxing.mobile.group.widget.GroupHead android:layout_gravity="center" android:id="@+id/ivGroupAvatar" android:background="@drawable/bg_group_head_circle" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView android:layout_gravity="center" android:background="@drawable/fg_group_head" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlGroupQRCode" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabGroupQRCode" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="小组二维码" android:layout_centerVertical="true"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/ivGroupQRCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:src="@drawable/ic_group_qrcode" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlGroupCreater" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabGroupCreater" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创建者" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="right" android:id="@+id/tvGroupCreater" android:paddingLeft="10dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tvLabGroupCreater" android:layout_centerVertical="true"/>
+        <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlCreateTime" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabCreateTime" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创建时间" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="right" android:id="@+id/tvCreateTime" android:paddingLeft="10dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tvLabCreateTime" android:layout_centerVertical="true"/>
+        <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlTopicCount" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabTopicCount" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="话题数量" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="right" android:id="@+id/tvTopicCount" android:paddingLeft="10dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tvLabTopicCount" android:layout_centerVertical="true"/>
+        <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlGroupState" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabGroupState" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小组状态" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="right" android:id="@+id/tvGroupState" android:paddingLeft="10dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tvLabGroupState" android:layout_centerVertical="true"/>
+        <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp"/>
+    <RelativeLayout android:id="@+id/rlRedHint" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabRedHint" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息提醒" android:layout_centerVertical="true"/>
+        <com.fanzhou.widget.Switch android:id="@+id/cbRedHint" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Switch"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlAuthenticationMethod" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabAuthenticationMethod" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="身份验证" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="right" android:id="@+id/tvAuthenticationMethod" android:paddingLeft="10dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_recovery_topic" android:drawablePadding="12dp" android:layout_toRightOf="@+id/tvLabAuthenticationMethod" android:layout_centerVertical="true"/>
+        <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlPrivate" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabPrivate" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_private" android:layout_centerVertical="true"/>
+        <com.fanzhou.widget.Switch android:id="@+id/cbPrivate" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Switch"/>
+        <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlRecoveryTopic" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="68dp" android:layout_marginTop="-1dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabRecoveryTopic" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="恢复屏蔽帖子" android:drawableRight="@drawable/ic_recovery_topic" android:drawablePadding="12dp" android:layout_centerVertical="true"/>
+        <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+    <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp"/>
+    <RelativeLayout android:id="@+id/rlGroupMembers" android:background="@android:color/white" android:paddingBottom="-1dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabGroupMembers" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小组成员" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="right" android:id="@+id/tvGroupMembers" android:paddingLeft="10dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tvLabGroupMembers" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/btnDelete" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/ic_group_delete" android:layout_toLeftOf="@+id/btnInvit" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/btnInvit" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:src="@drawable/ic_group_invite" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlAdmin" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvAdminLable" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="管理员" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="right" android:paddingLeft="10dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_recovery_topic" android:drawablePadding="12dp" android:layout_toRightOf="@+id/tvAdminLable" android:layout_centerVertical="true"/>
+        <View android:background="#ffefeff4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</LinearLayout>

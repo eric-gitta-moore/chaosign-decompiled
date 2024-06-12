@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_app_container" android:paddingLeft="26dp" android:paddingTop="14dp" android:paddingRight="5dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="78dp">
+    <ImageView android:id="@+id/iv_app_icon" android:layout_width="26dp" android:layout_height="26dp" android:scaleType="center" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="8dp" android:layout_toStartOf="@+id/iv_app_option" android:layout_toEndOf="@+id/iv_app_icon">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#1b1f26" android:ellipsize="end" android:id="@+id/tv_app_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+        <TextView android:textSize="14sp" android:textColor="#8a9099" android:ellipsize="end" android:id="@+id/tv_app_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="2"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_app_option" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="15dp" android:paddingRight="15dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_logo" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/ic_ai_profile" android:scaleType="centerInside" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" app:riv_corner_radius="20dp"/>
+    <com.hjq.shape.layout.ShapeRelativeLayout android:gravity="center" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="40dp" android:paddingStart="12dp" android:paddingEnd="12dp" android:layout_marginStart="10dp" app:layout_constraintLeft_toRightOf="@+id/iv_logo" app:layout_constraintTop_toTopOf="0" app:shape_radiusInBottomLeft="8dp" app:shape_radiusInBottomRight="8dp" app:shape_radiusInTopLeft="2dp" app:shape_radiusInTopRight="8dp" app:shape_solidColor="@color/white">
+        <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[已停止]" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_gif" android:layout_width="32dp" android:layout_height="32dp" android:layout_centerInParent="true"/>
+    </com.hjq.shape.layout.ShapeRelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

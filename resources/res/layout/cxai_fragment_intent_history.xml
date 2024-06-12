@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:shape_radiusInTopLeft="15dp" app:shape_radiusInTopRight="15dp" app:shape_solidColor="#f5f6f8">
+    <com.google.android.material.imageview.ShapeableImageView android:layout_width="match_parent" android:layout_height="100dp" android:src="@drawable/cxai_bg_top" android:scaleType="fitXY" app:shapeAppearance="@style/cxai_shape_style_rounded15"/>
+    <com.chaoxing.mobile.voice.ui.view.AiToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="14sp" android:textColor="#8a9099" android:id="@+id/tv_tag" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="您可以在这里编辑您已有的指令" android:layout_below="@+id/toolbar"/>
+    <com.hjq.shape.layout.ShapeRelativeLayout android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="14dp" android:layout_marginRight="15dp" android:layout_marginBottom="14dp" android:layout_below="@+id/tv_tag" app:shape_radius="8dp" app:shape_solidColor="#ffffff">
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_intent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/tv_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无指令" android:layout_centerInParent="true"/>
+    </com.hjq.shape.layout.ShapeRelativeLayout>
+</com.hjq.shape.layout.ShapeRelativeLayout>

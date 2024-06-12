@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/cl_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/top_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="293dp" android:layout_marginLeft="15dp" android:layout_marginTop="110dp" android:layout_marginRight="15dp" android:weightSum="2">
+        <RelativeLayout android:id="@+id/rl_image1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/rl_image2" app:layout_constraintTop_toBottomOf="@+id/top_bar">
+            <ImageView android:id="@+id/iv_item1" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:id="@+id/tv_item1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无图片" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_image2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_item2" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:id="@+id/tv_item2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无图片" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.chaoxing.study.screencast.view.ScreenCastImageController android:id="@+id/screen_control" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rv_images" android:layout_below="@+id/top_bar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_images" android:background="#444444" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="88dp" android:layout_marginTop="2dp" android:layout_alignParentBottom="true" android:paddingStart="15dp"/>
+</RelativeLayout>

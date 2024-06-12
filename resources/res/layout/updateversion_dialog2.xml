@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/ll_close" android:layout_width="290dp" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/ivClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/updateversion_close" android:scaleType="fitCenter"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/updateversion_parent" android:background="@drawable/updateversion_dialog_bg" android:layout_width="290dp" android:layout_height="wrap_content" android:layout_below="@+id/ll_close" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/iv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/newversion_logo" android:scaleType="fitCenter" android:layout_alignParentTop="true"/>
+        <com.chaoxing.mobile.widget.AutoFitScrollView android:id="@+id/contentSV" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="22dp" android:layout_marginBottom="20dp" android:fillViewport="true" android:layout_above="@+id/ll_bottom" android:layout_below="@+id/iv_logo">
+            <TextView android:textSize="15sp" android:gravity="left" android:id="@+id/tvMessage" android:paddingLeft="27dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1、要有明确的学习目的，有刻苦钻研、知难而进的学习精神。\102、要有广泛的学习兴趣，不断扩充知识面，注意发展自己的特长爱好。\103、学习认真，一丝不苟，实事求是。能虚心求教于别人，又热心帮助别人，有良好的学习品质。\104、预习功课，并能掌握教师的教学方法，能够预习笔记。" android:lineSpacingExtra="5dp" style="@style/Text_secTitle_updateVersion"/>
+        </com.chaoxing.mobile.widget.AutoFitScrollView>
+        <LinearLayout android:id="@+id/ll_bottom" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+            <Button android:textSize="18sp" android:textColor="@color/white" android:id="@+id/btnOk" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/upgrade_now" style="@style/Button_blue_Submit"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

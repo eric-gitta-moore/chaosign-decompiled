@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/content_view" android:background="@drawable/search_bg_night" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="16dp" android:layout_marginBottom="6dp">
+        <ImageView android:id="@+id/ivSearch" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_group_search" android:contentDescription="@null"/>
+        <TextView android:textSize="14sp" android:textColor="#ffcccccc" android:id="@+id/tv_hint" android:paddingTop="6dp" android:paddingBottom="6dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/chaoxing_finding"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="264dp" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56dp">
+        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/menu_collection" android:layout_width="0dp" android:layout_height="match_parent" android:text="选集" android:layout_weight="1"/>
+        <TextView android:textSize="15sp" android:textColor="#999999" android:gravity="center" android:id="@+id/menu_introduction" android:layout_width="0dp" android:layout_height="match_parent" android:text="简介" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:background="#5c5c5c" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_collection" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/tv_introduction" android:visibility="gone" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:lineSpacingExtra="4dp"/>
+    </FrameLayout>
+</LinearLayout>

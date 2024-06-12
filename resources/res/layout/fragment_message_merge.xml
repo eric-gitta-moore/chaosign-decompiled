@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/contaier" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.fanzhou.widget.SwipeListView2 android:scrollbarStyle="outsideOverlay" android:id="@+id/lvMessage" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00d9d9d9" android:dividerHeight="0px" android:layout_below="@+id/top"/>
+    <RelativeLayout android:id="@+id/vg_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top">
+        <TextView android:id="@+id/v_no_data_arrow" android:background="@drawable/conversation_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginRight="64dp" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:gravity="center" android:id="@+id/tv_no_data_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_conversation_tip" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/to_top" android:paddingBottom="22dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@drawable/conversation_to_top" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top" layout="@layout/page_loading_circle_bg_white"/>
+    <include android:id="@+id/viewLoading2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+    <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top" layout="@layout/loading_failed_match_parent_img"/>
+</RelativeLayout>

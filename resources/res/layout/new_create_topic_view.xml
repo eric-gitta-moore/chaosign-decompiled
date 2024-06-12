@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rlRoot" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/rlToolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <TextView android:id="@+id/tvCanncel" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+        <TextView android:textSize="18sp" android:textColor="#ff333333" android:ellipsize="middle" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="65dp" android:layout_marginRight="65dp" android:text="@string/topic_createTitle" android:singleLine="true" android:layout_centerInParent="true"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/tvSend" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/pcenter_notes_edit_finish" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+        <View android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/sBottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/llBottom" android:layout_below="@+id/rlToolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlContent" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/rlToolbar">
+                <com.chaoxing.mobile.group.widget.AtToInBlueEditText android:textColorHint="#cccccc" android:id="@+id/etTitle" android:background="#00000000" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/topic_title_hint" android:maxLength="201" android:lineSpacingMultiplier="1.2" style="@style/text_lightgray_17"/>
+                <View android:id="@+id/dividerLine" android:background="#99ccff" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_below="@+id/etTitle"/>
+                <com.chaoxing.mobile.group.widget.AtToInBlueEditText android:textSize="16sp" android:textColor="@color/normal_black" android:textColorHint="#cccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/etContent" android:background="@android:color/transparent" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="4dp" android:hint="@string/topic_content_hint" android:minLines="5" android:layout_below="@+id/dividerLine" android:lineSpacingMultiplier="1.4"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/rlContent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/flBottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/rlImgGridView" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.chaoxing.mobile.group.widget.TopicGridView android:id="@+id/imgGridView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:albumColumnWidth="68dp" app:albumColumns="4" app:albumHorizontalSpacing="12dp" app:albumPaddingBottom="@dimen/common_margin" app:albumPaddingLeft="24dp" app:albumPaddingRight="24dp" app:albumPaddingTop="@dimen/common_margin" app:albumVerticalSpacing="12dp"/>
+                        <com.chaoxing.mobile.attachment.view.AttachmentViewLayout android:id="@+id/attachmentLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_below="@+id/imgGridView"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llBottom" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlBtnOperaPanel" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/btnOperaPanel" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_panel_open"/>
+                <TextView android:textSize="10sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvImageCount" android:background="@drawable/circle_bg_f55925_nosize" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="6dp" android:text="1" android:layout_alignRight="@+id/btnOperaPanel"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:src="@drawable/note_pic_camera" android:scaleType="centerInside" android:layout_toRightOf="@+id/rlBtnOperaPanel" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_pic_sel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:src="@drawable/note_photo_select" android:scaleType="centerInside" android:layout_toRightOf="@+id/iv_camera" android:layout_centerVertical="true"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_pic_sel" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_voice" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:src="@drawable/note_pic_voice" android:scaleType="centerInside"/>
+                <TextView android:id="@+id/tvVoiceTag" android:background="@drawable/tips_textview_bg" android:visibility="gone" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:layout_alignRight="@+id/iv_voice"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <LinearLayout android:id="@+id/llShowPushRemind" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <CheckBox android:id="@+id/cbsendMessageToMember" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/create_topic_select_sign"/>
+                    <TextView android:textSize="14sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="6dp" android:text="推送提醒"/>
+                </LinearLayout>
+                <View android:background="#d9d9d9" android:layout_width="1dp" android:layout_height="48dp"/>
+                <ImageView android:id="@+id/btn_hide_key_board" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_open_keyboard"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/rlOperaPanel" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlBtnOperaPanel">
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+            <FrameLayout android:id="@+id/fl_footer_panel" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignTop="@+id/llBottom"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_new_picture" android:background="@drawable/bg_new_picture" android:visibility="gone" android:layout_width="78dp" android:layout_height="124dp" android:layout_marginLeft="12dp" android:layout_marginBottom="12dp" android:layout_above="@+id/llBottom">
+        <TextView android:textSize="12sp" android:textColor="@color/normal_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="7dp" android:layout_marginRight="5dp" android:text="@string/common_user_recent_image"/>
+        <ImageView android:id="@+id/img_new_picture" android:layout_width="68dp" android:layout_height="68dp" android:layout_marginTop="7dp" android:src="@drawable/plugin_camera_no_pictures" android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <include android:id="@+id/loading_view" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_white"/>
+    <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_note_failed_match_parent"/>
+    <FrameLayout android:id="@+id/fl_main_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="58dp" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvUploading" android:background="@drawable/loading_bg" android:paddingLeft="30dp" android:paddingTop="16dp" android:paddingRight="30dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录音上传中....." android:layout_centerInParent="true"/>
+</RelativeLayout>

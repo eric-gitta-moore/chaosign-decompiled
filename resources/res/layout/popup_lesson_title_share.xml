@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/epubContainer" android:background="@drawable/radius_10_25282e_4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="课堂邀请码："/>
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:id="@+id/tv_lesson_code" android:paddingLeft="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_meeting_qrcode" android:drawablePadding="@dimen/dp_6"/>
+        <ImageView android:id="@+id/iv_copy_lesson" android:padding="@dimen/dp_3" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="3dp" android:src="@drawable/ic_copy_16dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="直播邀请码："/>
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:id="@+id/tv_live_code" android:paddingLeft="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_meeting_qrcode" android:drawablePadding="@dimen/dp_6"/>
+        <ImageView android:id="@+id/iv_copy_live" android:padding="@dimen/dp_3" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="3dp" android:src="@drawable/ic_copy_16dp"/>
+    </LinearLayout>
+</LinearLayout>

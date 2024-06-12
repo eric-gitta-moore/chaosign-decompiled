@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/jourcontent" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/jourCover" android:background="@drawable/book_cover_bg" android:layout_width="104dp" android:layout_height="147dp" android:src="@drawable/newspaper_cover_content" android:scaleType="fitXY"/>
+        <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/jourCover">
+            <TextView android:id="@+id/jcName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="8dp" android:text="@string/jc_name" android:maxLines="2" style="@style/Text_Title_16"/>
+            <TextView android:id="@+id/jcIssn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="8dp" android:text="@string/jc_issn" android:layout_below="@+id/jcName" style="@style/Text_Content_16"/>
+            <TextView android:id="@+id/jcPublishDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="8dp" android:text="@string/jc_publishDate" android:layout_below="@+id/jcIssn" style="@style/Text_Content_16"/>
+        </RelativeLayout>
+        <Button android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/jcButton" android:background="@drawable/light_blue_btn_bg" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="5dp" android:text="@string/jc_button" android:layout_alignLeft="@+id/relativeLayout1" android:layout_alignBottom="@+id/jourCover"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/view1" android:background="#ff909090" android:visibility="gone" android:layout_width="match_parent" android:layout_height="25dp" android:layout_marginBottom="10dp" android:layout_below="@+id/jourcontent">
+        <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/jcqihao" android:background="@color/list_item_bg" android:paddingLeft="5dp" android:paddingTop="2dp" android:paddingRight="5dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:singleLine="true"/>
+    </RelativeLayout>
+</RelativeLayout>

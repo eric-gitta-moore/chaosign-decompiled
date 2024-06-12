@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16sp" android:textStyle="bold" android:textColor="@color/read_set_text_color" android:layout_gravity="left" android:id="@+id/note_list_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_list" android:layout_centerVertical="true"/>
+        <Button android:textColor="@color/read_set_text_color" android:gravity="center" android:id="@+id/btn_view_hide_note" android:background="@drawable/popup_btn" android:layout_width="75dp" android:layout_height="30dp" android:text="@string/view_note" android:singleLine="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ImageView android:background="@drawable/separator_dashed_repeat" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="8dp" android:layout_centerHorizontal="true">
+                <Button android:textSize="16sp" android:textColor="@color/read_set_text_color" android:id="@+id/btnMyNote" android:background="@drawable/btn_left_press" android:visibility="visible" android:layout_width="0dp" android:layout_height="30dp" android:text="@string/note_my_note" android:layout_weight="1"/>
+                <Button android:textSize="16sp" android:textColor="@color/read_set_text_color" android:id="@+id/btnOthersNote" android:background="@drawable/btn_right_normal" android:visibility="visible" android:layout_width="0dp" android:layout_height="30dp" android:layout_marginLeft="-1dp" android:text="@string/note_others_shared_note" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/note_list_ll_list" android:background="@drawable/epub_lum_back_nightmode" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="45dp" android:layout_weight="1">
+                <ListView android:id="@+id/note_list_lv_users" android:background="@drawable/shape_bg_listview" android:visibility="gone" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2dp" android:cacheColorHint="@android:color/transparent" android:divider="@color/divider_color_night_2" android:dividerHeight="1dp" android:layout_weight="2"/>
+                <ListView android:id="@+id/note_list_lv_list" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2dp" android:cacheColorHint="@android:color/transparent" android:divider="@color/divider_color_night_2" android:dividerHeight="1dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginLeft="10dp">
+            <CheckBox android:id="@+id/cbShareMyNote" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="10dp" android:layout_marginTop="0dp" android:button="@drawable/checkbox" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/read_set_text_color" android:id="@+id/tvShareMyNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="@string/note_share_my_note" android:layout_toRightOf="@+id/cbShareMyNote" android:layout_centerVertical="true"/>
+            <Button android:textColor="@color/read_set_text_color" android:gravity="center" android:id="@+id/btn_delete_all_note" android:background="@drawable/popup_btn" android:padding="0dp" android:layout_width="60dp" android:layout_height="30dp" android:layout_marginRight="25dp" android:text="@string/note_clear" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <Button android:textColor="@color/read_set_text_color" android:gravity="center" android:id="@+id/btn_note_refresh" android:background="@drawable/popup_btn" android:padding="0dp" android:visibility="gone" android:layout_width="60dp" android:layout_height="30dp" android:layout_marginRight="25dp" android:text="@string/refresh" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

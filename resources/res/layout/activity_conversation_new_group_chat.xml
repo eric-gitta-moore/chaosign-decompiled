@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar_3"/>
+    <RelativeLayout android:id="@+id/rlContainer" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvGroupUser" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0px" android:layout_above="@+id/ok" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <Button android:textColor="@color/white" android:id="@+id/ok" android:background="@color/blue_0099ff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="@dimen/dp_15" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_10" android:text="@string/ok" android:layout_alignParentBottom="true"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle_bg_white"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp">
+        <TextView android:textSize="16sp" android:id="@+id/tv_fileId" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:singleLine="true"/>
+        <TextView android:textSize="12sp" android:id="@+id/tv_pageNo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_marginStart="10dp"/>
+        <TextView android:textSize="14sp" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:maxLines="2" android:lineSpacingExtra="5dp"/>
+        <RelativeLayout android:id="@+id/markNoteLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp">
+            <ImageView android:id="@+id/mark_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lib_reader_mark_note_icon" android:scaleType="fitCenter"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/mark_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_toRightOf="@+id/mark_icon">
+                <TextView android:textSize="12sp" android:ellipsize="end" android:id="@+id/tv_mark_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:maxLines="1"/>
+                <TextView android:textSize="12sp" android:ellipsize="end" android:id="@+id/tv_mark_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:id="@+id/tv_create_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="15dp"/>
+</LinearLayout>

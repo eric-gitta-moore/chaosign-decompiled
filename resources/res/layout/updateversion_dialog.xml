@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/customer_dialog_bg" android:paddingTop="10dp" android:layout_width="300dp" android:layout_height="match_parent">
+    <TextView android:id="@+id/tvTitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" style="@style/Text_Title_dialog_updateVersion"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/vContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    <View android:background="#bababa" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="20dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:id="@+id/btnCancel" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1" style="@style/custom_dialog_style"/>
+        <View android:id="@+id/vDividerLine" android:background="#bababa" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:id="@+id/btnNeutral" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1" style="@style/custom_dialog_style"/>
+        <View android:id="@+id/vDividerLine1" android:background="#bababa" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:id="@+id/btnOk" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/yes" android:layout_weight="1" style="@style/custom_dialog_style"/>
+    </LinearLayout>
+</LinearLayout>

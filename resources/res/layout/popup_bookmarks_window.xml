@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/bookmarksview" android:layout_width="290dp" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#0e6fe7" android:gravity="center" android:id="@+id/addbookmark" android:background="@drawable/border_blue" android:layout_width="65dp" android:layout_height="30dp" android:layout_marginLeft="12dp" android:text="@string/bookmark_btn_add" android:singleLine="true" android:layout_alignParentLeft="true"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16sp" android:textColor="#0e6fe7" android:id="@+id/bookmarkstitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bookmarks_window_title" android:layout_centerInParent="true"/>
+            <Button android:textColor="#0e6fe7" android:gravity="center" android:id="@+id/editbookmark" android:background="@drawable/border_blue" android:layout_width="65dp" android:layout_height="30dp" android:layout_marginRight="12dp" android:text="@string/bookmark_btn_edit" android:singleLine="true" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/v_line" android:background="@color/read_set_line_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp" android:contentDescription="@null"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/bookmark_win_back" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ListView android:id="@+id/bookmarkslist" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:listSelector="@color/list_selector" android:cacheColorHint="#00000000" android:divider="@color/page_mode_div_color" android:dividerHeight="1dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/addbookmarksview" android:visibility="gone" android:layout_width="290dp" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/read_set_text_color" android:id="@+id/txtTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:text="@string/bookmark_title"/>
+        <EditText android:id="@+id/edtBookmarktitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:minWidth="100dp" android:singleLine="true" android:inputType="text"/>
+        <TextView android:textSize="22sp" android:textColor="@color/read_set_text_color" android:id="@+id/txtRemark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remark"/>
+        <EditText android:id="@+id/edtBookmarkremark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="100dp" android:maxLines="10" android:lines="6" android:inputType="text"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <Button android:textColor="@color/read_set_text_color" android:gravity="center" android:id="@+id/btnCancel" android:background="@drawable/popup_btn" android:layout_width="65dp" android:layout_height="30dp" android:text="@string/no" android:singleLine="true"/>
+                <Button android:textColor="@color/read_set_text_color" android:gravity="center" android:id="@+id/btnOk" android:background="@drawable/popup_btn" android:layout_width="65dp" android:layout_height="30dp" android:layout_marginLeft="8dp" android:text="@string/yes" android:singleLine="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

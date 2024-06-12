@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/cl_toolbar_menu_font_size" android:textColor="@color/cl_toolbar_menu_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_menu" android:paddingTop="@dimen/cl_toolbar_menu_item_padding_top" android:paddingBottom="@dimen/cl_toolbar_menu_item_padding_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cl_toolbar_menu_item_padding_start" android:paddingEnd="@dimen/cl_toolbar_menu_item_padding_end"/>
+</RelativeLayout>

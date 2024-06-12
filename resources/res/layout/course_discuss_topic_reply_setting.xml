@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <LinearLayout android:orientation="vertical" android:padding="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+                <TextView android:textSize="16sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学生回复字数至少" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <EditText android:gravity="center" android:id="@+id/et_num" android:background="@drawable/course_topic_reply_item" android:layout_width="60dp" android:layout_height="40dp" android:numeric="integer"/>
+                    <TextView android:textSize="16sp" android:textColor="#000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="字"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+                <TextView android:textSize="16sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学生回复字数至多" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <EditText android:gravity="center" android:id="@+id/et_num_max" android:background="@drawable/course_topic_reply_item" android:layout_width="60dp" android:layout_height="40dp" android:numeric="integer"/>
+                    <TextView android:textSize="16sp" android:textColor="#000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="字"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+                <TextView android:textSize="16sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="允许学生回复" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <EditText android:gravity="center" android:id="@+id/et_time" android:background="@drawable/course_topic_reply_item" android:layout_width="60dp" android:layout_height="40dp" android:numeric="integer"/>
+                    <TextView android:textSize="16sp" android:textColor="#000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="次"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/llAllowViewreply" android:visibility="visible" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+                <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/tvAllowViewreply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="允许学生在发表回复前查看其他回复" android:layout_centerVertical="true"/>
+                <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbAllowViewreply" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginLeft="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlValidate" android:visibility="visible" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+                <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/tvLabValidate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="话题发布后自动发通知提醒学生有新话题" android:layout_centerVertical="true"/>
+                <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbValidateSwitch" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginLeft="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlCheckTopic" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="8dp">
+                <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/tvCheckTopic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="话题结束后不允许回复" android:layout_centerVertical="true"/>
+                <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbCheckTopic" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginLeft="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlCheckTopic_browseModeTime" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:minHeight="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="话题结束时间" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="#b3b3b3" android:layout_gravity="center" android:id="@+id/tv_text_browseMode_time" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

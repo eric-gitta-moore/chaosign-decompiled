@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="@color/CommentSearchTextColor" android:gravity="center" android:id="@+id/tv_iscontacts_have" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/iscontacts_qx" android:layout_alignParentBottom="true" android:lineSpacingExtra="5dp"/>
+</LinearLayout>

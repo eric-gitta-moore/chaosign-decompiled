@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/top_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/mi_tabs" android:background="@null" android:layout_width="match_parent" android:layout_height="48dp" android:layout_below="@+id/top_bar" android:layout_marginStart="7dp" android:layout_marginEnd="36dp"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/vp_items" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/mi_tabs"/>
+</RelativeLayout>

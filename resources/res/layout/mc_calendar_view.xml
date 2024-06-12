@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageButton android:id="@+id/previous" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/mcv_arrow_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/mcv_arrow_margin" android:contentDescription="@string/previous" app:srcCompat="@drawable/mcv_action_previous"/>
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/month_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="?android:attr/textAppearanceMedium"/>
+    <ImageButton android:id="@+id/next" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/mcv_arrow_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/mcv_arrow_margin" android:contentDescription="@string/next" app:srcCompat="@drawable/mcv_action_next"/>
+</LinearLayout>

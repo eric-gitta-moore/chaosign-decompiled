@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/shape_exit_dialog_bg" android:layout_width="300dp" android:layout_height="360dp">
+    <TextView android:textSize="18sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/dialog_title" android:layout_width="match_parent" android:layout_height="0dp" android:text="提醒事项" android:layout_weight="1"/>
+    <TextView android:textSize="18sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/dialog_content" android:layout_width="match_parent" android:layout_height="0dp" android:text="提醒内容是分公司" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="5">
+        <include layout="@layout/layout_divider_line"/>
+        <TextView android:textSize="18sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/delay_15" android:layout_width="match_parent" android:layout_height="0dp" android:text="15分钟" android:layout_weight="1"/>
+        <include layout="@layout/layout_divider_line"/>
+        <TextView android:textSize="18sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/delay_30" android:layout_width="match_parent" android:layout_height="0dp" android:text="30分钟" android:layout_weight="1"/>
+        <include layout="@layout/layout_divider_line"/>
+        <TextView android:textSize="18sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/delay_60" android:layout_width="match_parent" android:layout_height="0dp" android:text="1小时" android:layout_weight="1"/>
+        <include layout="@layout/layout_divider_line"/>
+        <TextView android:textSize="18sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/delay_more" android:layout_width="match_parent" android:layout_height="0dp" android:text="更多" android:layout_weight="1"/>
+        <include layout="@layout/layout_divider_line"/>
+        <TextView android:textSize="18sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/delay_cancle" android:layout_width="match_parent" android:layout_height="0dp" android:text="不再提醒" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:paddingTop="150dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/radius_ffffff_tl_tr_10dp" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/cancel" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择时间" android:layout_weight="1"/>
+        <TextView android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/ok" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/ok_button"/>
+    </LinearLayout>
+    <com.chaoxing.mobile.chat.ui.picker.CalendarView android:id="@+id/calendarList" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

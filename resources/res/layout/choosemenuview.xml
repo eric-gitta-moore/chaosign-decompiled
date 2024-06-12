@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rlMain" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/menuBtns" android:background="@color/bg_light_gray" android:padding="@dimen/choose_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/choose_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/choose_btn_height" android:layout_marginBottom="10dp" android:text="@string/choose_chat" style="@style/btn_style"/>
+        <Button android:id="@+id/choose_camera" android:layout_width="match_parent" android:layout_height="@dimen/choose_btn_height" android:layout_marginBottom="10dp" android:text="@string/choose_camera" style="@style/btn_style"/>
+        <Button android:id="@+id/choose_pick" android:layout_width="match_parent" android:layout_height="@dimen/choose_btn_height" android:text="@string/choose_pick" style="@style/btn_style"/>
+        <Button android:id="@+id/choose_canncel" android:background="@drawable/menu_btn_gray_bg" android:layout_width="match_parent" android:layout_height="@dimen/choose_btn_height" android:layout_marginTop="@dimen/choose_margin" android:layout_marginBottom="5dp" android:text="@string/choose_canncel" style="@style/text_black_16"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#fff7f7f7" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#ffc5c5c5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="20dp" android:paddingTop="12dp" android:paddingRight="14dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="14sp" android:textColor="#ffcccccc" android:id="@+id/etReply" android:background="@drawable/bg_edittext_circular_bead_white" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="发表话题" android:layout_toLeftOf="@+id/rlRight" android:layout_centerVertical="true"/>
+            <RelativeLayout android:id="@+id/rlRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentRight="true" android:layout_centerHorizontal="true">
+                <Button android:id="@+id/btnPraise" android:background="@android:color/transparent" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/group_unpraise" android:layout_centerVertical="true"/>
+                <Button android:id="@+id/btnForward" android:background="@android:color/transparent" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:drawableLeft="@drawable/group_shared" android:layout_toRightOf="@+id/btnPraise" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

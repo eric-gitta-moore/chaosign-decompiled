@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="73dp" android:layout_marginRight="-81dp">
+        <RelativeLayout android:id="@+id/viewFront" android:background="@drawable/selector_list_item" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/fl_imageView" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_centerVertical="true">
+                <com.chaoxing.mobile.group.ui.GroupAvatar android:layout_gravity="center" android:id="@+id/iv_icon" android:layout_width="50dp" android:layout_height="50dp"/>
+            </RelativeLayout>
+            <com.chaoxing.mobile.chat.widget.RedCircleTipView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_unread_count" android:background="@null" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginTop="-9dp" android:layout_marginRight="-9dp" android:text="0" android:layout_alignTop="@+id/fl_imageView" android:layout_alignRight="@+id/fl_imageView"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_toRightOf="@+id/fl_imageView" android:layout_centerVertical="true" layout="@layout/item_notice_reward"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/vNoticeBody" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="12dp" android:layout_marginBottom="3dp" android:layout_toRightOf="@+id/fl_imageView" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp">
+                    <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvName" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Medium Text" android:maxLines="2" android:layout_weight="1"/>
+                    <TextView android:textSize="14sp" android:textColor="#b3b3b3" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Small Text" android:singleLine="true"/>
+                </LinearLayout>
+                <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Small Text" android:singleLine="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvRecall" android:background="@color/color_commen_addgroup" android:visibility="gone" android:layout_width="80dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/message_notice_recall"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="#fa372d" android:layout_width="80dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/bookCollections_Delete"/>
+    </LinearLayout>
+    <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="1px"/>
+</LinearLayout>

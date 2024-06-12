@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/lv_teacher_notice" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/base_divider_color" android:dividerHeight="1px" android:layout_weight="1"/>
+    <View android:id="@+id/v_line1" android:background="@color/base_divider_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="2dp"/>
+    <RelativeLayout android:id="@+id/rl_bottom_notice" android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="46dp">
+        <Button android:textSize="14sp" android:textColor="@android:color/black" android:id="@+id/btn_new_notice" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:text="@string/new_notice" android:drawableLeft="@drawable/new_discuss" android:drawablePadding="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

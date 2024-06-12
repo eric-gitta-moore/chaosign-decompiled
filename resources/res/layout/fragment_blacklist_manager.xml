@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.fanzhou.widget.SwipeExpandableListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listview" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <com.chaoxing.study.contacts.widget.LetterBar android:id="@+id/vg_letter_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+        <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:gravity="center" android:id="@+id/tv_no_data_tip1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="暂无人员"/>
+    </RelativeLayout>
+</LinearLayout>

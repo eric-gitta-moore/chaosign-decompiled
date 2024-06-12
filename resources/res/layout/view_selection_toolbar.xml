@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/bg_view_selection_toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="20dp">
+        <Button android:textSize="14sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@+id/btnReport" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="举报"/>
+        <View android:background="@color/white" android:visibility="visible" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="14sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@+id/btnCopy" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="复制"/>
+        <View android:id="@+id/image_line0" android:background="@color/white" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="14sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@+id/btnEdit" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/something_xuexitong_edit"/>
+        <View android:id="@+id/image_line" android:background="@color/white" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="14sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@+id/btnDel" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingRight="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/common_delete"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/rl_tab_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rg_tab" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <RadioButton android:textSize="16sp" android:textColor="@color/topic_recycle_tab_text" android:id="@+id/rb_been_issued" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tab_published" android:layout_weight="1" style="@style/Radio_Button_Resource_Text"/>
+            <RadioButton android:textSize="16sp" android:textColor="@color/topic_recycle_tab_text" android:id="@+id/rb_audit" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tab_under_review" android:layout_weight="1" style="@style/Radio_Button_Resource_Text"/>
+            <RadioButton android:textSize="16sp" android:textColor="@color/topic_recycle_tab_text" android:id="@+id/rb_notpass" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tab_failed" android:layout_weight="1" style="@style/Radio_Button_Resource_Text"/>
+            <RadioButton android:textSize="16sp" android:textColor="@color/topic_recycle_tab_text" android:id="@+id/rb_bedelete" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tab_deleted_record" android:layout_weight="1" style="@style/Radio_Button_Resource_Text"/>
+        </RadioGroup>
+    </RelativeLayout>
+    <View android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="7dp"/>
+    <FrameLayout android:id="@+id/fl_frame_context" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

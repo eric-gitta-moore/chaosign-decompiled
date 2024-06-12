@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/wifi_punch_dialog_bg" android:layout_width="280dp" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/messageTv" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp" android:text="@string/no_repeat_add_wifi" android:lineSpacingExtra="7dp"/>
+        <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="16sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/textTv" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/close_hint"/>
+    </LinearLayout>
+</LinearLayout>

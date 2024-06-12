@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.SlideView xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/item_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/rl_mission" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_mission" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="11dp" android:layout_marginBottom="10dp" android:layout_toLeftOf="@+id/iv_status" android:layout_toRightOf="@+id/rl_mission" android:layout_centerVertical="true">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_mission_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingMultiplier="1.2"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                    <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_mission_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="content" android:singleLine="true"/>
+                    <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_mission_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="time" android:singleLine="true" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/normal_blue" android:id="@+id/iv_status" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mission_start" android:text="开始" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/options" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_clone" android:background="@color/color_commen_stick" android:layout_width="60dp" android:layout_height="match_parent" android:text="克隆"/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_move" android:background="@color/blue_0099ff" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/common_move"/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_tranfer" android:background="@color/blue_0099ff" android:layout_width="60dp" android:layout_height="match_parent" android:text="转发"/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_delete" android:background="@color/color_commen_del" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/common_delete"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/color_ebeded" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</com.fanzhou.widget.SlideView>

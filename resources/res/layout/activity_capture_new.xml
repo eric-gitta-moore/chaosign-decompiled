@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/capture_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.journeyapps.barcodescanner.CompoundBarcodeView android:id="@+id/barcode_scanner" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/ll_top" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/top_leftLy" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="16dp" android:textColor="@color/white" android:id="@+id/top_leftButton" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="30dp" android:text="@string/cancel_str"/>
+            </LinearLayout>
+            <TextView android:textSize="18dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/top_content" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/sweep" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_bottom" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="120dp">
+            <Button android:id="@+id/capture_flashlight" android:background="@drawable/scan_flashlight_normal" android:layout_width="55dp" android:layout_height="55dp"/>
+            <TextView android:textSize="14dp" android:textColor="@android:color/white" android:id="@+id/tv_flashlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/flashlight_on"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

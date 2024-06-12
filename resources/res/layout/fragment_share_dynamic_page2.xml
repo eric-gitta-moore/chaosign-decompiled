@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/cl_main_page" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/ab_layout_main_page" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <com.chaoxing.mobile.study.home.mainpage.view.HomePageHeader android:id="@+id/search_main_page" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="5"/>
+        <com.chaoxing.mobile.study.home.mainpage2.widget.MainPageTabLayout android:id="@+id/indicator_main_page" android:layout_width="match_parent" android:layout_height="44dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.chaoxing.mobile.group.ui.NoScrollViewPager android:id="@+id/vp_main_page" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:background="@drawable/ic_main_page_tab_shadow" android:layout_width="match_parent" android:layout_height="8dp"/>
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/iv_write_note" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25dp" android:layout_marginBottom="32dp" android:src="@drawable/ic_write_note" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <com.chaoxing.mobile.study.home.mainpage.view.HomePageFloatButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/iv_to_top" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:layout_marginBottom="75dp" android:src="@drawable/img_to_top" android:scaleType="centerInside"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

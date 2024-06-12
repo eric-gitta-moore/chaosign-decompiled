@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/float_voice_call_bg" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_voice_call" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/float_voice_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15sp" android:textColor="@color/color_999999" android:id="@+id/date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:text="2019-06-13"/>
+    <com.chaoxing.mobile.fanya.ui.AutoGridView android:id="@+id/summary_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="34dp" android:layout_marginRight="16dp" android:layout_marginBottom="34dp" android:listSelector="@android:color/transparent" android:verticalSpacing="40dp" android:stretchMode="columnWidth" android:numColumns="4" android:layout_below="@+id/date" android:layout_centerHorizontal="true"/>
+    <com.chaoxing.mobile.office.widget.StatisticsHeaderView android:id="@+id/head_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/summary_view"/>
+    <com.chaoxing.mobile.office.widget.ASErrorLayout android:id="@+id/error_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/head_view"/>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_17" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/dialog_title" android:background="@drawable/bg_dialog_top" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/window_dialog_title"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_buttons" android:background="@color/bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_below="@+id/dialog_title">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/color_selectdevice_selector" android:gravity="center" android:id="@+id/scan_qr_to_connect" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/scan_to_connect" android:layout_weight="1" android:layout_centerVertical="true"/>
+        <View android:id="@+id/view_v_1" android:background="@color/abc_input_method_navigation_guard" android:layout_width="1px" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/color_selectdevice_selector" android:gravity="center" android:id="@+id/tv_tip_click" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/window_dialog_tip_click" android:layout_weight="1" android:layout_centerVertical="true"/>
+        <View android:id="@+id/view_v_2" android:background="@color/abc_input_method_navigation_guard" android:layout_width="1px" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/color_selectdevice_selector" android:gravity="center" android:id="@+id/across_ip_connect" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/across_ip_connect" android:layout_weight="1" android:layout_centerVertical="true"/>
+    </LinearLayout>
+    <View android:id="@+id/line_1" android:background="@color/abc_input_method_navigation_guard" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/layout_buttons"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_device_list" android:layout_width="match_parent" android:layout_height="190dp" android:layout_below="@+id/line_1">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/color_connecting_tips" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/tv_device_tip" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="@dimen/item_margin_left" android:text="@string/tip_connect" android:maxLines="1"/>
+        <View style="@style/line_horizontal"/>
+        <ListView android:id="@+id/lv_devices" android:layout_width="match_parent" android:layout_height="150dp" android:divider="@color/line_color" android:dividerHeight="0.1dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_waiting" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="190dp" android:layout_below="@+id/line_1">
+        <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@+id/loading_progress" android:layout_width="@dimen/loading_min_width" android:layout_height="@dimen/loading_min_width" android:layout_marginTop="20dp"/>
+        <TextView android:textSize="12dp" android:textColor="@color/color_wifi" android:gravity="center" android:layout_gravity="center" android:id="@+id/loading_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_is_opening"/>
+    </LinearLayout>
+    <View android:id="@+id/line_2" android:background="@color/bg_window_out_of_range_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/layout_device_list"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/line_2">
+        <TextView android:textSize="17dp" android:textColor="@color/text_devices" android:gravity="center" android:id="@+id/dialog_cancel" android:background="@drawable/btn_dialog_selector_left" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginRight="-1.2dp" android:text="@string/cancel" android:layout_weight="1"/>
+        <View android:background="@color/bg_window_out_of_range_stroke" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/text_devices" android:gravity="center" android:id="@+id/dialog_ok" android:background="@drawable/btn_dialog_selector_right" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginLeft="-1.2dp" android:text="@string/confirm" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

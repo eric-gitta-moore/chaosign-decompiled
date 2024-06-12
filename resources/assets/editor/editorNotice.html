@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta charset="utf-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="editorWrap editorNoticeWrap">
+    <div class="editorBox">
+        <div class="editor_main field" contenteditable="true" id="zss_editor_content"></div>
+        <div class="notice_main" id="notice_main"></div>
+    </div>
+    <div id="zss_editor_footer"></div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sockjs.min.js"></script>
+    <script type="text/javascript" src="js/stomp.js"></script>
+    <script type="text/javascript" src="js/axios.js"></script>
+    <script type="text/javascript" src="js/S2.js"></script>
+    <script type="text/javascript" src="js/replace.js"></script>
+    <script type="text/javascript" src="js/editor.js"></script>
+    <script>
+    function isSpecial() {
+        return true;
+    }
+    $(document).ready(function() {
+        zss_editor.init();
+    });
+    </script>
+</body>
+
+</html>

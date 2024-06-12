@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/head_contentLayout" android:layout_width="match_parent" android:layout_height="40dp">
+        <FrameLayout android:paddingLeft="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/head_arrowImageView" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/icon_refresh" android:scaleType="centerInside"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/head_progressBar" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp" style="@android:style/Widget.ProgressBar.Small"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_centerInParent="true">
+            <TextView android:textSize="13sp" android:textColor="@color/refresh_text_color" android:id="@+id/head_tipsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上拉获取更多"/>
+            <TextView android:textSize="10sp" android:textColor="@android:color/black" android:id="@+id/head_lastUpdatedTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/lightNessLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:background="@drawable/epub_shadow" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/light_adjust_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="101dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/lum_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:src="@drawable/lightness_dark"/>
+            <SeekBar android:layout_gravity="center_vertical" android:id="@+id/sb_light_adjust" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:maxHeight="2dp" android:max="255" android:progress="0" android:secondaryProgress="0" android:progressDrawable="@drawable/epub_seekbar_style_ep" android:minHeight="2dp" android:thumb="@drawable/epub_thumb" android:thumbOffset="12dp" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/lum_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25dp" android:src="@drawable/lightness_bright"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginRight="28dp" android:layout_marginBottom="25dp">
+            <TextView android:id="@+id/tv_white" android:background="@drawable/lightness_white_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_weight="1"/>
+            <TextView android:id="@+id/tv_yellow" android:background="@drawable/lightness_yellow_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_weight="1"/>
+            <TextView android:id="@+id/tv_green" android:background="@drawable/lightness_green_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_weight="1"/>
+            <ImageButton android:id="@+id/ib_dark" android:background="@drawable/lightness_black_selector" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="10dp" android:src="@drawable/epub_blue_moon" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlTitle" android:background="@color/white" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:id="@+id/tv_left" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginRight="65dp" android:text="评论" android:layout_centerInParent="true" style="@style/Text_Title_18"/>
+        <Button android:id="@+id/btnBack" android:visibility="gone" android:text="@string/cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Button_back_2_words_h"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/lvReview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlTitle" style="@style/List_View_Style"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/rlSending" android:background="@drawable/toast_bg" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:id="@+id/tvSending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="正在分享……" style="@style/Text_White_16"/>
+    </RelativeLayout>
+    <include android:gravity="center" android:id="@+id/pbLoading" layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

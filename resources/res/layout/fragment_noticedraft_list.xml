@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/viewTitleBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <Button android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingTop="4dp" android:paddingRight="6dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:drawableLeft="@drawable/cl_ic_toolbar_arrow_left_24dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="#ff333333" android:ellipsize="middle" android:gravity="center" android:id="@+id/tvTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/comment_draftbox" android:singleLine="true" android:drawablePadding="2dp" android:layout_centerInParent="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_status" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_centerInParent="true">
+            <com.chaoxing.core.widget.CircleProgressBar android:layout_gravity="center_vertical" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginTop="2dp"/>
+            <TextView android:textSize="18sp" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_tip_receiving" android:layout_marginStart="5dp"/>
+        </LinearLayout>
+        <Button android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/btnRight2" android:background="@android:color/transparent" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_7" android:text="@string/validate_cleanall" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/list_divider" android:dividerHeight="0px" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <include android:id="@+id/viewLoading" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+        <com.chaoxing.mobile.common.NoDataTipView android:id="@+id/vg_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

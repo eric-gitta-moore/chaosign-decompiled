@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/popup_content" android:background="@drawable/read_popup_content_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="7dp"/>
+    <ImageView android:id="@+id/popup_arrow_up" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/read_popup_arrow_down" android:rotation="180"/>
+    <ImageView android:id="@+id/popup_arrow_down" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6dp" android:src="@drawable/read_popup_arrow_down" android:layout_below="@+id/popup_content"/>
+    <ImageView android:id="@+id/popup_arrow_left" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/read_popup_arrow_down" android:rotation="270"/>
+    <ImageView android:id="@+id/popup_arrow_right" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-6dp" android:src="@drawable/read_popup_arrow_down" android:layout_toRightOf="@+id/popup_content" android:rotation="90"/>
+</RelativeLayout>

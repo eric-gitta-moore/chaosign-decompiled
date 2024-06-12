@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/tv_main_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/cl_Toolbar_Title"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_main_tab_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/tv_main_tab_title" android:layout_centerVertical="true"/>
+</RelativeLayout>

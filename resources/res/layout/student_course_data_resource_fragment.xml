@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/tipsView" android:background="#fffdf6eb" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="#a18a66" android:gravity="center" android:id="@+id/tv_tips" android:paddingLeft="37dp" android:paddingTop="10dp" android:paddingRight="37dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/student_course_tasks_tips" android:lineSpacingMultiplier="1.2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <ImageView android:id="@+id/icon_close" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/icon_close_color_a18166" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/resourceList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tipsView"/>
+    <TextView android:enabled="false" android:textSize="15sp" android:textColor="@color/color_808080" android:gravity="center" android:id="@+id/noDataTv" android:background="@color/white" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

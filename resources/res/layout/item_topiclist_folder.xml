@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.group.ui.TopicFolderListItem xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="65dp">
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_topicfolder_move" android:background="@color/color_commen_move" android:visibility="gone" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/bookCollections_Move"/>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_topicfolder_updata" android:background="@color/color_commen_edit" android:visibility="gone" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/common_Edit"/>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_topicfolder_delete" android:background="@color/color_commen_del" android:visibility="gone" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/something_xuexitong_delete"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/mainview" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="65dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/ivFolder" android:background="@drawable/ic_folder_private" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/ivRedTag" android:background="@drawable/shape_red_circle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ivFolder"/>
+        </RelativeLayout>
+        <TextView android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:text="名字" android:maxLines="2"/>
+    </LinearLayout>
+    <View android:id="@+id/line" android:background="#ffd9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+</com.chaoxing.mobile.group.ui.TopicFolderListItem>

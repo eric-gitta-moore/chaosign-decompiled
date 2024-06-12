@@ -1,0 +1,30 @@
+{
+  "id": "2490249",
+  "name": "无序列表",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "22365549",
+      "name": "无序列表-圈",
+      "font_class": "wuxuliebiao-quan",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "22337192",
+      "name": "圆形",
+      "font_class": "yuanxing",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "22337176",
+      "name": "正方形",
+      "font_class": "zhengfangxing-copy",
+      "unicode": "ec1f",
+      "unicode_decimal": 60447
+    }
+  ]
+}

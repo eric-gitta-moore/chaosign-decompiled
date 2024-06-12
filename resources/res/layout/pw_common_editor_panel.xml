@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_pannel" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/line1" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ImageView android:id="@+id/voiceline" android:background="@drawable/icon_voice_line_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="6dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/vg_bottom" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="45dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llkeyboard" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <View android:background="#c5c5c5" android:layout_width="1px" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/iv_keyboard_hidden" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_open_keyboard" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <HorizontalScrollView android:id="@+id/horizonScrollView" android:background="@null" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/llkeyboard">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_top" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/line2" android:background="#c5c5c5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/rlcontainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

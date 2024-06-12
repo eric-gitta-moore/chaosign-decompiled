@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.widget.ExtListView android:scrollbarStyle="outsideInset" android:id="@+id/elvMessage" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/gray_light" android:dividerHeight="1dp" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+    <include android:id="@+id/unloginView" android:background="@drawable/button_blue_stroke" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/view_unlogin"/>
+</RelativeLayout>

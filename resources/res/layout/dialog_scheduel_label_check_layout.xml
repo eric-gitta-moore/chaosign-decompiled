@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/back_zone" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="18sp" android:textColor="#0099ff" android:id="@+id/label_check_back_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/schedule_label_title" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/add_label_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/ic_add_topic" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/schedule_label_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6.5dp" android:divider="@null" android:layout_above="@+id/et_add_schedule_label"/>
+</LinearLayout>

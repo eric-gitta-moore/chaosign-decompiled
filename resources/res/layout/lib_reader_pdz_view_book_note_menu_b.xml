@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="80dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <include layout="@layout/lib_reader_pdz_view_note_menu_color"/>
+    </LinearLayout>
+    <View android:background="#b2b2b2" android:layout_width="match_parent" android:layout_height="2px"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="70dp">
+        <include layout="@layout/lib_reader_pdz_view_note_menu_line"/>
+    </LinearLayout>
+    <View android:background="#b2b2b2" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:background="#efeff4" android:layout_width="match_parent" android:layout_height="4dp"/>
+    <View android:background="#b2b2b2" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp">
+        <Button android:textSize="20sp" android:textColor="#007aff" android:gravity="center" android:id="@+id/ibtn_del_note" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/lib_reader_pdz_note_clear"/>
+    </LinearLayout>
+</LinearLayout>

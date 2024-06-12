@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.ViewSwipeListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/viewFront" android:background="@drawable/selector_list_item" android:paddingTop="6dp" android:paddingBottom="6dp" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <FrameLayout android:id="@+id/fl_imageView" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="8dp" android:layout_marginTop="6dp" android:layout_marginRight="8dp" android:layout_marginBottom="6dp">
+                <com.chaoxing.mobile.group.widget.GroupHead android:layout_gravity="center" android:id="@+id/iv_icon" android:layout_width="50dp" android:layout_height="50dp"/>
+                <ImageView android:layout_gravity="center" android:background="@drawable/bg_conversation_head_round" android:layout_width="50dp" android:layout_height="50dp"/>
+            </FrameLayout>
+            <com.chaoxing.mobile.chat.widget.RedCircleTipView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_unread_count" android:background="@null" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="-8dp" android:layout_marginRight="-8dp" android:text="0" android:layout_alignTop="@+id/fl_imageView" android:layout_alignRight="@+id/fl_imageView"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_toRightOf="@+id/fl_imageView" android:layout_centerVertical="true">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Medium Text" android:singleLine="true" android:layout_toLeftOf="@+id/tvTime" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="14sp" android:textColor="#b3b3b3" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Small Text" android:singleLine="true" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Small Text" android:singleLine="true" android:layout_below="@+id/tvName"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_remove_tip" android:background="#ff7e00" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="取消提醒"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_delete_tip" android:background="#fe0000" android:paddingLeft="18dp" android:paddingRight="18dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/common_delete"/>
+    </LinearLayout>
+</com.fanzhou.widget.ViewSwipeListItem>

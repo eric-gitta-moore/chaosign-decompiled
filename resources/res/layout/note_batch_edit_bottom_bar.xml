@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="#3e9cfa" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_delete" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tvDeleteFolder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_resource" android:drawableTop="@drawable/icon_note_batch_edit_delete" android:drawablePadding="2dp" android:layout_weight="1" android:layout_centerInParent="true"/>
+        <View android:id="@+id/deleteCover" android:background="#80ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_move" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tvMoveFolder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/move_resource" android:drawableTop="@drawable/icon_note_batch_edit_move" android:drawablePadding="2dp" android:layout_centerInParent="true"/>
+        <View android:id="@+id/moveCover" android:background="#80ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_Share" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tvShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_group_list_transfer" android:drawableTop="@drawable/icon_note_batch_edit_share" android:drawablePadding="2dp" android:layout_centerInParent="true"/>
+        <View android:id="@+id/shareCover" android:background="#80ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_subject" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tvCreateSubject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_folder_subject" android:drawableTop="@drawable/icon_note_batch_create_subject" android:layout_centerInParent="true"/>
+        <View android:id="@+id/subCover" android:background="#80ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

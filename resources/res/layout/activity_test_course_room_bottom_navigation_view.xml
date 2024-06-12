@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.tabs.TabLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#f225282e" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="5" app:tabTextAppearance="@style/TextAppearance.TabItem.Classroom" app:tabTextColor="@android:color/white">
+    <com.google.android.material.tabs.TabItem android:icon="@mipmap/ic_online_course_mic_1_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="静音"/>
+    <com.google.android.material.tabs.TabItem android:icon="@drawable/ic_conference_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启视频"/>
+    <com.google.android.material.tabs.TabItem android:icon="@drawable/ic_conference_screen_unshare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共享屏幕"/>
+    <com.google.android.material.tabs.TabItem android:icon="@drawable/ic_conference_member" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="成员"/>
+    <com.google.android.material.tabs.TabItem android:icon="@drawable/lesson_online_icon_more_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多"/>
+</com.google.android.material.tabs.TabLayout>

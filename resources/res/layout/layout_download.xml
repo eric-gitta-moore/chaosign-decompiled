@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/slView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layout_downLoad" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/headerLayout" android:background="@color/title_gray_bg" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download" android:layout_centerInParent="true" style="@style/Text_Title_18"/>
+            <Button android:id="@+id/btn_download_setting" android:background="@color/light_blue" android:layout_width="50dp" android:layout_height="30dp" android:layout_marginRight="15dp" android:text="@string/setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Text_White_16"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/headerLayout">
+            <RelativeLayout android:id="@+id/layout_downLoadInfo" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/layout_downLoadInfoTitle" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="16dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在下载:"/>
+                        <TextView android:textSize="16dp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_downingName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text=""/>
+                    </LinearLayout>
+                    <ProgressBar android:id="@+id/pb_downingProgress" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="5dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/down_progressbar_style" style="@android:style/Widget.ProgressBar.Horizontal"/>
+                    <TextView android:textSize="14dp" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tv_downingProcess" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text=""/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-13dp" android:layout_below="@+id/layout_downLoadInfoTitle">
+                    <Button android:textSize="16dp" android:textColor="@color/white" android:id="@+id/btn_cancleDownLoad" android:background="@color/light_blue" android:paddingLeft="4dp" android:paddingTop="6dp" android:paddingRight="4dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消下载"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <ListView android:id="@+id/lv_downLoadList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_weight="1" android:layout_below="@+id/layout_downLoadInfo" style="@style/List_View_Style"/>
+            <Button android:textSize="18dp" android:textColor="@color/light_blue" android:id="@+id/btnDone" android:background="@drawable/bottom_tool_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="43dp" android:text="@string/hide" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layout_setting" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/headerLayout1" android:background="@color/title_gray_bg" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载设置" android:layout_centerInParent="true" style="@style/Text_Title_18"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_onlyWifi" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/headerLayout1">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="只在WIFI下载" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Text_Title_18"/>
+            <LinearLayout android:layout_width="118dp" android:layout_height="50dp" android:layout_alignParentRight="true">
+                <com.chaoxing.mobile.widget.SlipButton android:id="@+id/btn_slipBtnOnlyWifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_allOnline" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_onlyWifi">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部打开" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Text_Title_18"/>
+            <LinearLayout android:layout_width="118dp" android:layout_height="50dp" android:layout_alignParentRight="true">
+                <com.chaoxing.mobile.widget.SlipButton android:id="@+id/btn_slipBtnAllOnline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_settingList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layout_allOnline">
+            <ListView android:id="@+id/lv_downLoadSettingList" android:paddingLeft="5dp" android:paddingTop="15dp" android:paddingRight="5dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="340dp" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="16dp" android:layout_weight="1" style="@style/List_View_Style"/>
+            <Button android:textSize="18dp" android:textColor="@color/light_blue" android:id="@+id/btn_settingDone" android:background="@drawable/bottom_tool_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="43dp" android:text="@string/done" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

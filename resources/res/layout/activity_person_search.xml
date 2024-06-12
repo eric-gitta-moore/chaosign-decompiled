@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:background="#f7f7f7" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center" android:id="@+id/btn_search" android:background="@color/transparent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/group_search_input_bg" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginLeft="12dp" android:layout_toLeftOf="@+id/btn_search" android:layout_centerVertical="true">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="8dp" android:src="@drawable/iv_search_bg"/>
+            <EditText android:textSize="14sp" android:textColor="@color/normal_gray" android:textColorHint="#cccccc" android:id="@+id/edit_keyword" android:background="@color/transparent" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginLeft="2dp" android:hint="@string/comment_serarch" android:layout_weight="1" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch"/>
+            <ImageView android:id="@+id/iv_clear" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="8dp" android:src="@drawable/clear" android:layout_weight="0"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/fragment_result" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/fragment_search" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/wait_circle_bar_with_text"/>
+        <ImageView android:id="@+id/ivLoad" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/state_loading_fail" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/富文本/网格颜色</title>
+    <g id="icon/富文本/网格颜色" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组" transform="translate(3.000000, 3.000000)" stroke-width="1.2">
+            <line x1="0" y1="5" x2="12" y2="5" id="路径-11" stroke="#474C59"></line>
+            <line x1="4" y1="10" x2="4" y2="-2.77555756e-16" id="路径-11备份-2" stroke="#474C59"></line>
+            <line x1="8" y1="10" x2="8" y2="-2.77555756e-16" id="路径-11备份-3" stroke="#474C59"></line>
+            <rect id="矩形" stroke="#636874" fill-rule="nonzero" x="0.6" y="0.6" width="10.8" height="8.8" rx="1"></rect>
+        </g>
+    </g>
+</svg>

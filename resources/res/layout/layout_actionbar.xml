@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/viewTitleBar" android:background="@drawable/shape_line_title_bg" android:layout_width="match_parent" android:layout_height="48dp">
+    <ImageView android:id="@+id/actionbar_iv_left" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/back_icon" android:scaleType="center" android:layout_centerVertical="true"/>
+    <TextView android:textSize="18sp" android:id="@+id/actionbar_tv_mid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题" android:layout_centerInParent="true"/>
+    <TextView android:textSize="16sp" android:gravity="center" android:id="@+id/actionbar_tv_right" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="完成" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/actionbar_iv_add" android:padding="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/reminder_menu_img" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

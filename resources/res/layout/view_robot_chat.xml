@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/chat_container" android:layout_width="match_parent" android:layout_height="64dp">
+        <ImageView android:id="@+id/c_speech" android:background="@drawable/robot_speech_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/normal_gray" android:id="@+id/c_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <EditText android:textSize="16sp" android:textColor="@color/color_333333" android:textColorHint="@color/CommentTextColor2" android:gravity="center_vertical" android:id="@+id/c_chat" android:background="@drawable/shape_robot_chat" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:hint="@string/robot_chat_hint" android:singleLine="true" android:layout_toLeftOf="@+id/c_action" android:layout_toRightOf="@+id/c_speech" android:layout_centerVertical="true" android:imeOptions="actionSend"/>
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="25dp" android:layout_below="@+id/chat_container"/>
+</RelativeLayout>

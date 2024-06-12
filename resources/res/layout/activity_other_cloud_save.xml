@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="130dp" android:layout_below="@+id/titleBar" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/iv_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="202dp" android:src="@drawable/cloud_file" android:scaleType="centerCrop"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_icon" android:visibility="visible" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/cloud_file" android:scaleType="centerCrop"/>
+        <TextView android:textSize="12sp" android:textColor="@color/mineSeparatorTextColor" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="视频.mp4" android:maxLines="1"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_open" android:background="@drawable/bg_0099ff_circle_6_select_style" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="@string/open_right_now"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_save" android:background="@drawable/cloud_file_btn_save" android:padding="13dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/save_to_cloud" android:layout_below="@+id/btn_open"/>
+    </RelativeLayout>
+    <include android:id="@+id/upload_view" android:visibility="gone" layout="@layout/upload_cloud_disk"/>
+    <include android:visibility="gone" layout="@layout/common_loading_transparent"/>
+</RelativeLayout>

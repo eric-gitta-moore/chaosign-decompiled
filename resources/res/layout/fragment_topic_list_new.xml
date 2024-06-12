@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar2_topiclist"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <com.fanzhou.widget.PullToRefreshListView android:id="@+id/topicListView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+        <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tv_prompt_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160dp" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.chaoxing.mobile.office.widget.AttendanceGroupSelectLayout android:id="@+id/attendanceGroupSelectLayout" android:layout_width="match_parent" android:layout_height="60dp"/>
+    <TextView android:textSize="15sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/daily_punch_trend_chart" android:paddingStart="16dp"/>
+    <FrameLayout android:id="@+id/dateLayout" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/preDateTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="17sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/currentDateTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+            <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/nextDateTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="left" android:id="@+id/ivMaskLeft" android:layout_width="70dp" android:layout_height="match_parent" android:src="@drawable/white_black_gradient" android:scaleType="fitXY" android:contentDescription="@string/mission_introduce"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/ivMaskRight" android:layout_width="70dp" android:layout_height="match_parent" android:src="@drawable/rotate_white_black_gradient" android:scaleType="fitXY" android:contentDescription="@string/mission_introduce"/>
+    </FrameLayout>
+    <include layout="@layout/view_divider"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/yAxisParent" android:background="#ffffff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/yAxisTextLayout" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <View android:background="#ebebeb" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginStart="2dp"/>
+        </LinearLayout>
+        <com.chaoxing.mobile.office.widget.MSHorizontalScrollView android:id="@+id/histogramScrollView" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never">
+            <com.chaoxing.mobile.office.widget.MonthlyStatisticsHistogramView android:id="@+id/monthly_statistics_histogram_view" android:layout_width="wrap_content" android:layout_height="233dp" android:layout_marginRight="8dp"/>
+        </com.chaoxing.mobile.office.widget.MSHorizontalScrollView>
+    </LinearLayout>
+    <View android:background="#f4f5f7" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <include layout="@layout/view_divider"/>
+</LinearLayout>

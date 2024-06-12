@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/llContainer" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.webapp.ui.toolbar.WebToolbar android:id="@+id/web_view_fragment_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_edit_title" android:paddingLeft="15dp" android:paddingRight="11dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title">
+        <EditText android:textSize="18sp" android:textColor="#ff303030" android:textColorHint="@color/color_ccc" android:gravity="center_vertical" android:id="@+id/ed_editor_title" android:background="@null" android:layout_width="match_parent" android:layout_height="45dp" android:hint="标题"/>
+        <View android:background="@color/blue_disabled" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvUploading" android:background="@drawable/loading_bg" android:paddingLeft="30dp" android:paddingTop="16dp" android:paddingRight="30dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录音上传中....." android:layout_centerInParent="true"/>
+        <include layout="@layout/web_client"/>
+        <FrameLayout android:id="@+id/fl_footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

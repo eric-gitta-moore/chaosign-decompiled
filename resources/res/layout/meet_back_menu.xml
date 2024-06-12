@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/normal_black" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textColor="#ff3b30" android:gravity="center" android:id="@+id/tv_end" android:background="@color/white" android:layout_width="match_parent" android:layout_height="55dp" android:text="@string/ys_end_class" style="@style/group_popwindow_text"/>
+        <View android:id="@+id/viewline" android:background="@color/DividerColor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textColor="#ff3b30" android:gravity="center" android:id="@+id/tv_end_group" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="55dp" android:text="@string/course_online_end_group" style="@style/group_popwindow_text"/>
+        <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:gravity="center" android:id="@+id/tv_leave" android:background="@color/white" android:layout_width="match_parent" android:layout_height="55dp" android:text="@string/course_online_leave_class" style="@style/group_popwindow_text"/>
+        <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:gravity="center" android:id="@+id/tv_back" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/ys_back_class" style="@style/group_popwindow_text"/>
+        <View android:background="@color/bg_color_f5f6f8" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <TextView android:gravity="center" android:id="@+id/tv_Cancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/cancel" style="@style/group_popwindow_text"/>
+    </LinearLayout>
+</RelativeLayout>

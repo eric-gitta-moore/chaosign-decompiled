@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="282dp">
+        <RelativeLayout android:id="@+id/rlContainer" android:background="#f5f6f8" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/btnCancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_cancle" android:layout_centerVertical="true"/>
+            <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/btnSure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sure" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_manager_add_sub" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rlContainer">
+            <com.chaoxing.mobile.fanya.view.WheelView android:id="@+id/wvList" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:background="@drawable/cover_view_class_manage_score_top" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3"/>
+                <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <View android:background="@drawable/cover_view_class_manage_score_bottom" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

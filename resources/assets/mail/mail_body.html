@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+<meta charset="utf-8">
+<title></title>
+<style>
+*{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul{list-style-type:none;}
+a{text-decoration:none;color:#333;}
+img{border:0px;}
+em,b{font-style:normal;}
+.clearfix{overflow:hidden;zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+.mainBox{font:14px/1.5 微软雅黑;color:#333;padding:0 10px;}
+.mainAddr{ border-bottom:1px solid #c9c8c8;padding:12px 0 6px;}
+.mainAddr li{margin-bottom:8px;}
+.mainAddr .h2{ font-size:16px;}
+.mainAddr .top_r{color:#0b79f8;}
+.mainAddr .top_r span{ display:inline-block; margin-right:8px;}
+.mainAddr .top_r em{ color:#c0bfbf; font-weight:bold; margin-left:5px;}
+.mainTit{border-bottom:1px solid #c9c8c8;padding:14px 0 15px;}
+.mainTit h2{ font-size:16px; line-height:22px;}
+.mainTit time{color:#666;}
+.mainCon{padding:18px 0; color:#000; font-size:16px; line-height:24px;}
+.mainCon h3{ font-size:16px; font-weight:normal;}
+.mainCon p{ text-indent:2em;}
+.mainInfor{margin-top:60px;padding:16px 0 25px 26px; position:relative; font-size:13px;}
+.mainInfor::before{ content:""; position:absolute;left:0; top:0;width:117px; height:1px; border-top:1px dashed #666; }
+.mainInfor p{ color:#999;}
+.mainInfor .nub{color:#0b79f8; text-decoration:underline;}
+.annex{ display:-webkit-box; -webkit-box-orient:vertical; -webkit-box-align:center; -webkit-box-pack:center; font-size:12px;width:160px; min-height:120px; padding:10px 5px; border:1px solid #b3b3ad; border-radius:20px; margin-bottom:8px;}
+.annex > *{ display:block;}
+.annex h3{ font-size:13px; color:#0b79f8;text-align:center;}
+.annex p{ width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; text-align:center; color:#999;}
+</style>
+    <script type="text/javascript">
+        var from = java.getFrom();
+        var to = eval(java.getArrayTo());
+        var cc = eval(java.getArrayCc());
+        var subject = java.getSubject();
+        var content = java.getContent();
+        var time = java.getTime();
+        var attachments = eval(java.getAttachments());
+    </script>
+</head>
+
+<body>
+	<div class="mainBox">
+    	<ul class="mainAddr">
+        	<li class="h2 clearfix">
+            	<label class="fl">发件人：</label>
+                <div class="top_r"><span>
+                    <script type="text/javascript">
+                        document.write(from);
+                    </script>
+                   <em>></em></span></div>
+            </li>
+            <li class="clearfix">
+            	<label class="fl">收件人：</label>
+                <div class="top_r">
+                    <script type="text/javascript">
+                      for(i in to){
+                         document.write("<span>"+to[i]+"<em>></em></span>");
+                        }
+                    </script>
+                  </div>
+            </li>
+            <li class="clearfix">
+            	<label class="fl">抄送：</label>
+                <div class="top_r">
+                    <script type="text/javascript">
+                      for(i in cc){
+                         document.write("<span>"+cc[i]+"<em>></em></span>");
+                        }
+                    </script>
+                </div>
+            </li>
+        </ul>
+        <div class="mainTit">
+        	<h2>
+                <script type="text/javascript">
+                         document.write(subject);
+                </script>
+            </h2>
+            <time>
+                <script type="text/javascript">
+                         document.write(time);
+                </script>
+            </time>
+        </div>
+        <div>
+            <script type="text/javascript">
+                     document.write(content);
+            </script>
+        </div>
+        <!--<div class="mainCon">-->
+        	<!--<h3>各位领导：</h3>-->
+            <!--<p>李克强推进大众创业万众创新 国务院22份文件部署李克强推进大众创业万众创新 国务院22份文件部署李克强推进大众创业万众创新 国务院22份文件部署李克强推进大众创业万众创新 国务院22份文件部署</p>-->
+        <!--</div>-->
+        <!--<div class="mainInfor">-->
+        	<!--<h3>张启松</h3>-->
+            <!--<p>北京世纪超星信息技术发展有限责任公司</p>-->
+            <!--<p>TEL：<a href="tel:15301081125" class="nub">15301081125</a></p>-->
+        <!--</div>-->
+        <script type="text/javascript">
+         function getSize(size){
+            if(size<1024){
+                return size+"B";
+            }
+            size = size/1024;
+            if(size<1024){
+                return size.toFixed(1)+"KB";
+            }
+            size = size/1024;
+            return size.toFixed(1)+"MB";
+        }
+
+        function clickAttachment(index){
+            java.onClickAttachment(index);
+        }
+
+        function updateAttachment(index,status,curSize,totalSize){
+            console.log("updateAttachment");
+            console.log("index:"+index);
+            var ele_att_size = document.getElementsByName("att_size")[index];
+            var ele_att_oper = document.getElementsByName("att_oper")[index];
+            console.log("ele_att_size:"+ele_att_size);
+            if(status==1){
+                ele_att_size.innerHTML = getSize(totalSize);
+                ele_att_oper.innerHTML = "轻点以打开";
+            }else if(status==2){
+                var text = getSize(curSize)+"/"+getSize(totalSize);
+                console.log("text:"+text);
+                ele_att_size.innerHTML = text;
+                ele_att_oper.innerHTML = "正在下载";
+            }else if(status==0){
+                ele_att_size.innerHTML = getSize(totalSize);
+                ele_att_oper.innerHTML = "轻点以下载";
+            }else if(status==3){
+                ele_att_size.innerHTML = getSize(totalSize);
+                ele_att_oper.innerHTML = "下载失败";
+            }
+        }
+
+         for(i in attachments){
+            var attachment = attachments[i];
+            var att_html = '<a name="att_name'
+            +'" href="javascript:clickAttachment('+attachment.index+');"  class="annex"><h3 name = "att_oper">'
+            +(attachment.isDownload==true?'轻点以打开':'轻点以下载')+'</h3><p name = "att_title">'
+            +attachment.fileName+'</p><p name = "att_size">'
+            +getSize(attachment.fileLength)+'</p></a>';
+             console.log(i+":"+att_html);
+            document.write(att_html);
+        }
+
+         </script>
+        <!--<a href="" class="annex">-->
+        	<!--<img src="images/img.png" class="img" width="38" />-->
+            <!--<h3>轻点已下载</h3>-->
+            <!--<p>2016春季学期超星尔雅选修课.zip</p>-->
+            <!--<p>1.1MB</p>-->
+        <!--</a>-->
+        <!--<a href="" class="annex">-->
+            <!--<h3 name = "att_oper">轻点以下载</h3>-->
+            <!--<p name = "att_title">2016春季学期超星尔雅选修课.zip</p>-->
+            <!--<p name = "att_size">1.1MB</p>-->
+        <!--</a>-->
+    </div>
+</body>
+</html>

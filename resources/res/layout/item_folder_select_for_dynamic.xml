@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1px">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/viewFront" android:background="@drawable/selector_list_note_item" android:paddingLeft="12dp" android:paddingRight="12dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="62dp">
+        <ImageView android:id="@+id/ivIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9dp" android:src="@drawable/ic_folder_share" android:layout_centerVertical="true"/>
+        <com.chaoxing.mobile.group.ui.GroupAvatar android:id="@+id/ga_avatar" android:background="@drawable/bg_group_head_circle" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="7dp"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="#000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvName" android:paddingRight="12dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="#8e8e93" android:id="@+id/tvIntroduction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tvName"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/ivSelect" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:src="@drawable/iv_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </LinearLayout>
+    <View android:id="@+id/line1" android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

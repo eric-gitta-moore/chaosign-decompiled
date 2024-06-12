@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/mark_container" android:background="@drawable/bg_popupwindow" android:layout_width="119dp" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/bluetoothSettingTv" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/attendance_blue_tooth_manager"/>
+    <ImageView android:id="@+id/bluetoothSettingDividerIv" android:background="#ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/settingTv" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_attendance_wifi"/>
+    <ImageView android:id="@+id/settingDividerIv" android:background="#ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/remindLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/remindTv" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/redDotIv" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:src="@drawable/red_dot_shape" android:layout_toRightOf="@+id/remindTv" android:layout_alignTop="@+id/remindTv"/>
+    </RelativeLayout>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/shareTv" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/forward_shard"/>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/entry_attendance" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/attendance_statistics"/>
+</LinearLayout>

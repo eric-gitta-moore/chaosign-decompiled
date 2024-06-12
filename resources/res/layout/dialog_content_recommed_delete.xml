@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14dp" android:textColor="#999999" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/string_home_select_not_interest_reason"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="15dp">
+        <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_dislike_anchor" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_bad_content" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="8dp">
+        <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_already_seen" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_dislike" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

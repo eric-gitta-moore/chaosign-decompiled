@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_title" android:background="#f225282e" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_back" android:padding="8dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@mipmap/cx_ic_navigation_arrow_back_24dp_white"/>
+    <RelativeLayout android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/iv_back">
+        <ImageView android:id="@+id/iv_voice" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_conferencesw_speeker" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_title" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_tile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_chaoxing_class"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="11sp" android:textColor="#80ffffff" android:id="@+id/tv_time" android:paddingTop="3dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_recordStatus" android:paddingLeft="20dp" android:paddingTop="3dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_vertical" android:id="@+id/lottieAnimationView" android:layout_width="6dp" android:layout_height="6dp" android:foregroundGravity="center_vertical" app:lottie_autoPlay="true" app:lottie_fileName="online_course_recording_animation.json" app:lottie_loop="true"/>
+                <TextView android:textSize="11sp" android:textColor="#ccffffff" android:layout_gravity="center_vertical" android:id="@+id/tv_recordStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/course_online_recording"/>
+                <ImageView android:id="@+id/ic_arrow_record" android:visibility="gone" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="@dimen/dp_4" android:layout_marginTop="3.5dp" android:src="@drawable/record_arrow_down" android:scaleType="fitCenter"/>
+            </LinearLayout>
+            <TextView android:textSize="10sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_live_status" android:paddingTop="3dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="直播中..." android:drawableLeft="@drawable/icon_live_record_status" android:drawablePadding="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rl_camera" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp">
+            <ImageView android:id="@+id/iv_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_conferencesw_camera" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="15sp" android:textColor="#fff54e45" android:layout_gravity="center_vertical" android:id="@+id/tv_right" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="@string/course_online_leave"/>
+    </LinearLayout>
+</RelativeLayout>

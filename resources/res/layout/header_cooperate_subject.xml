@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/cooperateContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/comment_note_cooperate_subject" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="8dp"/>
+    </LinearLayout>
+</LinearLayout>

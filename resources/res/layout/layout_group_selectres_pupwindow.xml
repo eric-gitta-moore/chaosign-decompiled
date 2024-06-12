@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rlContainer" android:background="#80333333" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@+id/tvSelectRes" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/attach_local_collection" style="@style/group_popwindow_text"/>
+            <View android:background="@color/DividerColor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:gravity="center" android:id="@+id/tvSelectNote" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/attach_local_notes" style="@style/group_popwindow_text"/>
+            <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:gravity="center" android:id="@+id/tvSelectCloud" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/mine_header_clond" style="@style/group_popwindow_text"/>
+            <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:gravity="center" android:id="@+id/tvSelectFile" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/pc_file" style="@style/group_popwindow_text"/>
+            <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:gravity="center" android:id="@+id/tvSelectLocalFile" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/pupop_window_local_file" style="@style/group_popwindow_text"/>
+        </LinearLayout>
+        <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="6dp"/>
+        <TextView android:gravity="center" android:id="@+id/tvCancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/something_xuexitong_cancle" style="@style/group_popwindow_text"/>
+    </LinearLayout>
+</RelativeLayout>

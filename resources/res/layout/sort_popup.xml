@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/popup_shape" android:padding="1dp" android:layout_width="110dp" android:layout_height="wrap_content">
+    <Button android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/btn_time_sort" android:background="@drawable/btn_top_shape" android:layout_width="110dp" android:layout_height="40dp" android:text="@string/sort_by_time"/>
+    <Button android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/btn_name_sort" android:background="@drawable/btn_up_selector" android:layout_width="110dp" android:layout_height="40dp" android:text="@string/sort_by_name" android:layout_below="@+id/btn_time_sort"/>
+    <Button android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/btn_type_sort" android:background="@drawable/btn_bottom_shape" android:layout_width="110dp" android:layout_height="40dp" android:text="@string/sort_by_type" android:layout_below="@+id/btn_name_sort"/>
+</RelativeLayout>

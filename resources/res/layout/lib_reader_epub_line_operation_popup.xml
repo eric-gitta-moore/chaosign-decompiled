@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rootLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/arrowUpIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lib_reader_popup_window_arrow_up"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/read_progress_bg_layout" android:background="@drawable/lib_reader_round_solid_black" android:layout_width="280dp" android:layout_height="wrap_content" android:minHeight="60dp">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="#cccccc" android:gravity="center" android:id="@+id/copyTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/lib_reader_copy" android:drawableTop="@mipmap/lib_reader_epub_copy_white" android:drawablePadding="5dp" android:layout_weight="1"/>
+                <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_weight="1">
+                    <com.chaoxing.reader.epub.widget.EpubColorSelectorView android:id="@+id/colorSelectorView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp"/>
+                    <TextView android:textSize="15sp" android:textColor="#cccccc" android:gravity="center" android:id="@+id/drawLineTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lib_reader_dash" android:drawableTop="@mipmap/lib_reader_epub_draw_line_white" android:drawablePadding="5dp"/>
+                </LinearLayout>
+                <TextView android:textSize="15sp" android:textColor="#cccccc" android:gravity="center" android:id="@+id/writeNoteTv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/lib_reader_write_note" android:drawableTop="@mipmap/lib_reader_epub_write_note_white" android:drawablePadding="5dp" android:layout_weight="1"/>
+                <TextView android:textSize="15sp" android:textColor="#cccccc" android:gravity="center" android:id="@+id/editNoteTv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/lib_reader_edit_note" android:drawableTop="@mipmap/lib_reader_epub_write_note_white" android:drawablePadding="5dp" android:layout_weight="1"/>
+                <TextView android:textSize="15sp" android:textColor="#cccccc" android:gravity="center" android:id="@+id/shareTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/lib_reader_forward" android:drawableTop="@mipmap/lib_reader_epub_share_white" android:drawablePadding="5dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <ImageView android:id="@+id/arrowDownIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lib_reader_popup_window_arrow_down"/>
+</LinearLayout>

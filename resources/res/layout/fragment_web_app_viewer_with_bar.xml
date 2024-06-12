@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title" android:visibility="gone" layout="@layout/activity_top_bar_gccx"/>
+    <include android:id="@+id/webClient" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_bar" android:layout_below="@+id/title" layout="@layout/web_client"/>
+    <include android:id="@+id/bottom_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="43dp" android:layout_alignParentBottom="true" layout="@layout/web_view_bottom_bar2"/>
+</RelativeLayout>

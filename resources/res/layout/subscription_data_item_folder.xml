@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_centerVertical="true">
+            <RelativeLayout android:gravity="center_vertical" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="66dp">
+                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/rlIcon" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/ivFolderLogo" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_folder_private" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+                        <TextView android:textSize="10sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvMsgCount" android:background="@drawable/bg_unread_count_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="18dp" android:minHeight="18dp" android:text="0" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rlContent" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tvResourceCount" android:layout_toRightOf="@+id/rlIcon" android:layout_centerVertical="true">
+                        <RelativeLayout android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:ellipsize="end" android:id="@+id/tvTitle" android:paddingRight="38dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题标题标题" android:maxLines="2" android:layout_centerVertical="true" style="@style/text_title_16"/>
+                            <TextView android:textSize="12sp" android:textColor="#a8a8a8" android:id="@+id/tv_top" android:background="@drawable/bg_circular_corner3_ffcccccc" android:paddingLeft="4dp" android:paddingRight="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-34dp" android:text="@string/grouplist_Top" android:layout_toRightOf="@+id/tvTitle" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="13sp" android:textColor="@color/gray_999999" android:id="@+id/tvShareType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="类型" android:singleLine="true" android:layout_below="@+id/title"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tvResourceCount" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvPublish" android:background="@color/color_commen_transpond" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/forward_shard"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvStick" android:background="@color/color_commen_stick" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/grouplist_Top"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvMove" android:background="@color/color_commen_move" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bookCollections_Move"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvEdit" android:background="@color/color_commen_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/common_modify"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="@color/color_commen_del" android:paddingLeft="18dp" android:paddingRight="18dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/common_delete"/>
+    </LinearLayout>
+    <View android:background="@color/app_line_bg" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="68dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

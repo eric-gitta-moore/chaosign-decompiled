@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#ee9572"/>
+            <corners android:radius="50dp"/>
+            <stroke android:width="0dp" android:color="#000"/>
+            <padding android:left="10dp" android:top="2dp" android:right="10dp" android:bottom="2dp"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="50dp"/>
+            <solid android:color="#4b0082"/>
+            <padding android:left="10dp" android:top="2dp" android:right="10dp" android:bottom="2dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="false">
+        <shape>
+            <solid android:color="#00abfa"/> //填充的颜色 
+            <corners android:radius="50dp"/>//边角弧度 
+            <stroke android:width="0dp" android:color="#fff"/> //边框设置 color：边框颜色 ， width：边框厚度 
+            <padding android:left="10dp" android:top="2dp" android:right="10dp" android:bottom="2dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#c0c0c0"/> //填充的颜色 
+            <corners android:radius="50dp"/>//边角弧度 
+            <stroke android:width="0dp" android:color="#fff"/> //边框设置 color：边框颜色 ， width：边框厚度 
+            <padding android:left="10dp" android:top="2dp" android:right="10dp" android:bottom="2dp"/>
+        </shape>
+    </item>
+</selector>

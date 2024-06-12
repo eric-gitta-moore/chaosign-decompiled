@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/rl_new" android:layout_width="match_parent" android:layout_height="56dp">
+            <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:id="@+id/tvNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_notes_my_note" android:layout_centerInParent="true" android:textFontWeight="400"/>
+        </RelativeLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/rl_Add" android:layout_width="match_parent" android:layout_height="56dp">
+            <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:id="@+id/tvAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_heji_add_note" android:layout_centerInParent="true" android:textFontWeight="400"/>
+        </RelativeLayout>
+        <View android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="6dp"/>
+        <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tvCancel" android:layout_width="match_parent" android:layout_height="@dimen/dp_54" android:text="取消" android:textFontWeight="400"/>
+    </LinearLayout>
+</RelativeLayout>

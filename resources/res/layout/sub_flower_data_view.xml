@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1px" android:layout_weight="2">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1px" android:scaleType="centerCrop" android:layout_weight="1">
+            <ImageView android:id="@+id/ivSubBg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flower_sub_hollow"/>
+            <ImageView android:id="@+id/ivSubCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignRight="@+id/ivSubBg" android:layout_alignBottom="@+id/ivSubBg"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_weight="1">
+            <ImageView android:id="@+id/ivPraiseBg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flower_praise_hollow"/>
+            <ImageView android:id="@+id/ivPraiseCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignBottom="@+id/ivPraiseBg"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1px" android:scaleType="centerCrop" android:layout_weight="1">
+            <ImageView android:id="@+id/ivReviewBg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flower_review_hollow"/>
+            <ImageView android:id="@+id/ivReviewCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignRight="@+id/ivReviewBg"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_weight="1">
+            <ImageView android:id="@+id/ivReadBg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flower_read_hollow"/>
+            <ImageView android:id="@+id/ivReadCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

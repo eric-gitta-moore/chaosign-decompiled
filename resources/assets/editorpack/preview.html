@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/editor.css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    <script type="text/javascript" src="dist/editor.bundle.js" async></script>
+</head>
+<body class="detailPage">
+<!--页面加载中的动画-->
+<div class="loading"></div>
+<div class="cxeditor cxPreview" style="padding-top: 0">
+    <div class="edit_title">
+        <div id="previewTitle" contenteditable="false"><span id="noteTitle"></span></div>
+    </div>
+    <div class="noteInfo" id="xxt_noteInfo">
+        <span class="blue" id="createName"></span>
+        <span id="createTime"></span>
+        <span class="blue" id="readCount">阅读 </span>
+        <span class="blue" id="y-delete">删除</span>
+        <span class="blue" id="y-edit">编辑</span>
+    </div>
+    <div id="editorBox"><div id="editor"></div></div>
+</div>
+<div id="content" style="display: none"></div>
+</body>
+<script>
+  if(document.body && !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
+    document.body.style.background = '#FFF';
+  }
+  function getAttachmentInfo(){
+    var attachmentArr = [];
+    var sLeft = document.documentElement.scrollLeft;
+    var sTop = document.documentElement.scrollTop;
+    var attDoms = document.getElementsByTagName('ui-attachment');
+    if (attDoms) {
+      for (var i = 0; i < attDoms.length; i++) {
+        var attDom = attDoms[i];
+        var attStrValue = attDom.getAttribute('name')
+        attStrValue = cxeditor.b64DecodeUnicode(attStrValue)
+        var cid = attStrValue.cid
+        var parentDom = attDom.parentElement
+        var attId = parentDom.getAttribute('id')
+
+        var domBounds = {};
+        if (attStrValue) {
+          var domRect = parentDom.getBoundingClientRect();
+          domBounds.x = domRect.left + sLeft;
+          domBounds.y = domRect.top + sTop;
+          domBounds.width = domRect.width;
+          domBounds.height = domRect.height;
+        }
+        if (attStrValue && domBounds) {
+          var attDomInfo = {};
+          attDomInfo.cid = cid;
+          attDomInfo.domBounds = domBounds;
+          attDomInfo.attStr = attStrValue;
+          attDomInfo.attId = attId;
+          attachmentArr.push(attDomInfo);
+        }
+      }
+    }
+
+    return JSON.stringify(attachmentArr);
+  }
+  function getAttachmentBounds(){
+    var attachmentArr = [];
+    var sLeft = document.documentElement.scrollLeft;
+    var sTop = document.documentElement.scrollTop;
+    var attDoms = document.getElementsByTagName('ui-attachment');
+    if (attDoms) {
+      for (var i = 0; i < attDoms.length; i++) {
+        var attDom = attDoms[i];
+        var attStrValue = attDom.getAttribute('name')
+        attStrValue = cxeditor.b64DecodeUnicode(attStrValue)
+        var cid = attStrValue.cid
+        var parentDom = attDom.parentElement;
+        var attId = parentDom.getAttribute('id');
+
+        var domRect = parentDom.getBoundingClientRect();
+        var domBounds = null;
+        if (domRect){
+          domBounds = {};
+          domBounds.x = domRect.left + sLeft;
+          domBounds.y = domRect.top + sTop;
+          domBounds.width = domRect.width;
+          domBounds.height = domRect.height;
+        }
+
+        if (domBounds) {
+          var attDomInfo = {};
+          attDomInfo.cid = cid;
+          attDomInfo.domBounds = domBounds;
+          attDomInfo.attId = attId;
+          attachmentArr.push(attDomInfo);
+        }
+      }
+    }
+    return JSON.stringify(attachmentArr);
+  }
+</script>
+<script type="text/javascript" src="https://data-xxt.aichaoxing.com/res/addPoint.js"></script>
+</html>

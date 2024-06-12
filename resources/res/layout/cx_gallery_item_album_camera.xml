@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.gallery.album.widget.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cx_gallery_ic_album_camera"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="15sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/cx_gallery_take_photo"/>
+    </LinearLayout>
+</com.chaoxing.gallery.album.widget.SquareRelativeLayout>

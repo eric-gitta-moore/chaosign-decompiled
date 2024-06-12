@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar_3"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/rlContainer" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@+id/tv_contents_member" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/pcenter_contents_member"/>
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:paddingTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rlUser0" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginLeft="23dp">
+                <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar0" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" ss:border_color="@color/avatar_border" ss:border_width="1px" ss:is_circle="false" ss:x_radius="4dp" ss:y_radius="4dp"/>
+                <TextView android:textSize="12sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center" android:id="@+id/tvUserName0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="名字" android:singleLine="true"/>
+                <LinearLayout android:id="@+id/v_add_friend0" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/tv_add_friend0" android:background="@drawable/blue_btn_border_radius_3" android:layout_width="40dp" android:layout_height="20dp" android:layout_marginBottom="8dp" android:text="@string/add_friend_attention" android:layout_below="@+id/tvUserName0" android:layout_centerHorizontal="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/rlUser1" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginLeft="25dp">
+                <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar1" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/topic_img_add" android:scaleType="fitXY" ss:border_color="@color/avatar_border" ss:border_width="1dp" ss:is_circle="false" ss:x_radius="4dp" ss:y_radius="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.chaoxing.mobile.chat.widget.ConversationPersonFooter android:id="@+id/vPersonFooter" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle_bg_white"/>
+    <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent"/>
+</RelativeLayout>

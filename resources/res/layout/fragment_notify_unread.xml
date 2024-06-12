@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_title" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+            <Button android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="48dp" android:drawableLeft="@drawable/cl_ic_toolbar_arrow_left_24dp" android:layout_centerVertical="true"/>
+            <CheckBox android:textSize="15dp" android:textColor="#0099ff" android:id="@+id/cb_select_all" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="全选" android:layout_toRightOf="@+id/btnLeft" android:layout_centerVertical="true"/>
+            <TextView android:textSize="18sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未读人员" android:layout_centerInParent="true"/>
+            <Button android:textSize="15sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_remind" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="确定" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <com.fanzhou.widget.PullToRefreshAndLoadListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvUser" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/white" android:dividerHeight="0dp" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+    </LinearLayout>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+    <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_note_failed_match_parent"/>
+    <TextView android:textSize="18sp" android:textColor="#66333333" android:id="@+id/tvNoDataTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

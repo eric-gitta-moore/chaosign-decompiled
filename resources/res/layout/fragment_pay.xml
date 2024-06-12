@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/top" layout="@layout/common_title_bar_4"/>
+        <TextView android:textSize="28sp" android:textColor="#000000" android:gravity="center" android:id="@+id/tvMoney" android:layout_width="match_parent" android:layout_height="100dp" android:text="¥105.25"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/vMain" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/vg_wallet_pay" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_pay_wallet"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
+                            <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/message_superstar_payment"/>
+                            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_balances" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="当前余额：0元"/>
+                        </LinearLayout>
+                        <CheckBox android:id="@+id/cb_wallet_selected" android:focusable="false" android:clickable="false" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="8dp" android:button="@drawable/checkbox_group_member"/>
+                    </LinearLayout>
+                    <View android:id="@+id/vWalletMask" android:background="#33000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp"/>
+                </RelativeLayout>
+                <View android:background="#e5e5e5" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/vg_bonus_pay" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_pay_bonus"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
+                        <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="使用超星奖金基金支付"/>
+                        <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_bonus_balances" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="当前余额：0元"/>
+                    </LinearLayout>
+                    <CheckBox android:id="@+id/cb_bonus_selected" android:focusable="false" android:clickable="false" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="8dp" android:button="@drawable/checkbox_group_member"/>
+                </LinearLayout>
+                <View android:background="#e5e5e5" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vg_wx_pay" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="60dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_pay_wx"/>
+                <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/message_wechat_payment" android:layout_weight="1"/>
+                <CheckBox android:id="@+id/cb_wx_selected" android:focusable="false" android:clickable="false" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="8dp" android:button="@drawable/checkbox_group_member"/>
+            </LinearLayout>
+            <View android:background="#e5e5e5" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vg_ali_pay" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="60dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_pay_ali"/>
+                <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/message_alipay_payment" android:layout_weight="1"/>
+                <CheckBox android:id="@+id/cb_ali_selected" android:focusable="false" android:clickable="false" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="8dp" android:button="@drawable/checkbox_group_member"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/btnOk" android:background="@drawable/bg_btn_quit_group" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="50dp" android:layout_marginRight="50dp" android:text="@string/message_comfirm_payment"/>
+    </LinearLayout>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+</RelativeLayout>

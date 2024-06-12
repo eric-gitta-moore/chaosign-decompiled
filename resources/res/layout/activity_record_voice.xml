@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rl_container" android:background="#80666666" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/rl_fragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvUploading" android:background="@drawable/loading_bg" android:paddingLeft="30dp" android:paddingTop="16dp" android:paddingRight="30dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录音上传中....." android:layout_centerInParent="true"/>
+</RelativeLayout>

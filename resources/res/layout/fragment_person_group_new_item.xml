@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.study.contacts.widget.PersonGroupItemNewView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-221dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1">
+            <CheckBox android:id="@+id/cb_selected" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="8dp" android:button="@drawable/checkbox_group_member"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="12dp" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="17sp" android:textColor="#999999" android:id="@+id/tvCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/ivRightArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/ic_group_info_right_arrow" android:layout_centerVertical="true" android:contentDescription="@null"/>
+            <ImageView android:id="@+id/iv_sort" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_sort_36dp"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvRename" android:background="@color/color_commen_edit" android:layout_width="80dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/common_rename"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_more_editpx" android:background="@color/color_commen_move" android:layout_width="80dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/pcenter_contents_Sortby"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="@color/color_commen_del" android:layout_width="60dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/common_delete"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+</com.chaoxing.study.contacts.widget.PersonGroupItemNewView>

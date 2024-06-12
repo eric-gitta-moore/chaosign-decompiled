@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/rlTopBar" layout="@layout/activity_top_bar"/>
+    <ScrollView android:id="@+id/svSetting" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlTopBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/ic_rect_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/sivOfflineDownload" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <include layout="@layout/settings_item_dividerline"/>
+                <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/sivOfflineDownloadSetting" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <include layout="@layout/settings_item_dividerline"/>
+                <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/sivCleanCache" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <include android:visibility="gone" layout="@layout/settings_item_dividerline"/>
+                <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/sivOpenPush" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" layout="@layout/setting_theme"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/ic_rect_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/sivAccountBind" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <include android:visibility="gone" layout="@layout/settings_item_dividerline"/>
+                <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/sivRating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <include layout="@layout/settings_item_dividerline"/>
+                <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/sivAbout" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvClearCacheProgress" android:background="@drawable/loading_bg" android:visibility="gone" android:layout_width="240dp" android:layout_height="68dp" android:layout_marginBottom="50dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

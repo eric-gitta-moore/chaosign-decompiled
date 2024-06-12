@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/cb_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:src="@drawable/ic_resource_default" android:scaleType="centerCrop" android:layout_toRightOf="@+id/cb_select" android:layout_centerVertical="true" app:riv_corner_radius="4dp" app:riv_mutate_background="true" app:riv_oval="false"/>
+        <TextView android:textSize="10sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_tag_self" android:background="@drawable/bg_self_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自建" android:layout_alignLeft="@+id/iv_icon" android:layout_alignRight="@+id/iv_icon" android:layout_alignBottom="@+id/iv_icon"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/iv_sort" android:layout_toRightOf="@+id/iv_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:paddingRight="38dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-38dp" android:layout_toRightOf="@+id/tv_title">
+                <TextView android:textSize="12sp" android:textColor="#ffa8a8a8" android:id="@+id/tv_tag_top_sign" android:background="@drawable/bg_circular_corner3_ffcccccc" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/grouplist_Top"/>
+            </LinearLayout>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@+id/tv_title"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_sort" android:paddingLeft="15dp" android:paddingTop="16dp" android:paddingRight="15dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/public_ic_list_drag" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/public_divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="99dp"/>
+</LinearLayout>

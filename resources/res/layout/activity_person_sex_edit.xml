@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/topBar">
+        <RelativeLayout android:id="@+id/rlMale" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:gravity="center_vertical" android:id="@+id/tvMale" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/male" style="@style/text_user_title"/>
+            <TextView android:id="@+id/tvMaleCheck" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/folder_selected" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/rlFemale" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:gravity="center_vertical" android:id="@+id/tvFemale" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/female" style="@style/text_user_title"/>
+            <TextView android:id="@+id/tvFemaleCheck" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/folder_selected" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

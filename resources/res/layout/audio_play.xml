@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/grlContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:id="@+id/top_bar" android:background="@drawable/audio_top_bg" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对鲁迅的再认识及其在当代的意义" style="@style/text_white.16"/>
+    </LinearLayout>
+    <GridView android:id="@+id/gvContent" android:background="@color/audio_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:numColumns="2" android:layout_above="@+id/rlWaitNext" android:layout_below="@+id/top_bar"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/rlWaitPrevious" android:background="@color/audio_bg" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top_bar">
+        <ProgressBar android:id="@+id/loadingBar1" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="5dp" android:layout_centerVertical="true"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_more" android:layout_toRightOf="@+id/loadingBar1" android:layout_centerVertical="true" style="@style/Text_Content_14"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/rlWaitNext" android:background="@color/audio_bg" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottom_bar">
+        <ProgressBar android:id="@+id/loadingBar2" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="5dp" android:layout_centerVertical="true"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_more" android:layout_toRightOf="@+id/loadingBar2" android:layout_centerVertical="true" style="@style/Text_Content_14"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/bottom_bar" android:background="@drawable/audio_bottom_bg" android:layout_width="match_parent" android:layout_height="120dp" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/ibtn_play" android:background="@drawable/audio_start" android:layout_width="26dp" android:layout_height="40dp" android:layout_marginBottom="20dp" android:scaleType="centerInside" android:contentDescription="@null"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_seekbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tv_current_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="6dp" android:text="00:28/01:28"/>
+            <SeekBar android:id="@+id/seekbar_play" android:paddingLeft="18dp" android:paddingRight="18dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxHeight="6dp" android:progressDrawable="@drawable/seekbar_process_style" android:minHeight="6dp" android:thumbOffset="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/audio_pb_wait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip>
+    <shape android:shape="rectangle">
+        <corners android:radius="0dp"/>
+        <solid android:color="@color/seekbar_progresscolor"/>
+    </shape>
+</clip>

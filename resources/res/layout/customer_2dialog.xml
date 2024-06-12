@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/customer_dialog_bg" android:paddingTop="10dp" android:layout_width="300dp" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/tvTitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" style="@style/Text_Title_Page"/>
+    <EditText android:textColorHint="#d7d7d7" android:layout_gravity="center_horizontal" android:id="@+id/etContent" android:background="@drawable/bg_input" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="250dp" android:layout_height="45dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/vContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="-1dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="15sp" android:textColor="@color/normal_blue" android:id="@+id/btnCancel" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1" style="@style/custom_dialog_style"/>
+        <View android:id="@+id/vDividerLine" android:background="#e8e8e8" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="15sp" android:textColor="@color/normal_blue" android:id="@+id/btnNeutral" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1" style="@style/custom_dialog_style"/>
+        <View android:id="@+id/vDividerLine1" android:background="#e8e8e8" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="15sp" android:textColor="@color/normal_blue" android:id="@+id/btnOk" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/yes" android:layout_weight="1" style="@style/custom_dialog_style"/>
+    </LinearLayout>
+</LinearLayout>

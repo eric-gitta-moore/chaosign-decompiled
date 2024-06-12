@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/title_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_course_manage" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom" android:layout_below="@+id/title_bar"/>
+    <TextView android:textSize="14sp" android:textColor="#b3b3b3" android:gravity="center" android:id="@+id/bottom" android:paddingTop="10dp" android:paddingBottom="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/down_pc" android:layout_alignParentBottom="true"/>
+    <include android:id="@+id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

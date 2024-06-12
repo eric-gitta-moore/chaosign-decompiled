@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <CheckBox android:id="@+id/cb_downSetting_selectedName" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="28dp" android:layout_height="28dp" android:button="@drawable/rss_offline_setting_checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/tv_downsetting_selectedName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/cb_downSetting_selectedName" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Text_Title_16"/>
+    </RelativeLayout>
+</RelativeLayout>

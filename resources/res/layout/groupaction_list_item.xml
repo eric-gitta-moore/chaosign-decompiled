@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:paddingLeft="16dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llLeft" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <View android:background="#d9d9d9" android:layout_width="1px" android:layout_height="16dp"/>
+        <com.fanzhou.widget.CircleImageView android:id="@+id/ivPhoto" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:contentDescription="@null" ss:border_color="@color/user_line" ss:border_width="1px" ss:is_circle="false"/>
+        <View android:background="#d9d9d9" android:layout_width="1px" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:maxEms="10"/>
+            <TextView android:textSize="12sp" android:textColor="#b3b3b3" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/tvUserName" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="13sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:singleLine="true"/>
+        <TextView android:textSize="13sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvTopic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:singleLine="true"/>
+        <TextView android:textSize="13sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvInvitation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:singleLine="true"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvReply" android:background="@drawable/img_stroke_solid" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:maxLines="4"/>
+    </LinearLayout>
+</LinearLayout>

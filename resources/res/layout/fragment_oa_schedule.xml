@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top" layout="@layout/schedule_list_title_bar"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swiperefreshlayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top">
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/schedule_data_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <RelativeLayout android:id="@+id/rl_no_data_tip" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top">
+        <ImageView android:id="@+id/schedule_no_data_tips" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_50" android:src="@drawable/schedule_no_data_tag" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/schedule_no_data_tips">
+            <TextView android:textSize="18sp" android:id="@+id/tv_add_span_left" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/schedule_no_data_tips_left"/>
+            <TextView android:textSize="18sp" android:textColor="#0099ff" android:id="@+id/tv_add_span_mid" android:paddingLeft="5dp" android:paddingTop="16dp" android:paddingRight="5dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/schedule_no_data_tips_mid"/>
+            <TextView android:textSize="18sp" android:id="@+id/tv_add_span_fight" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/schedule_no_data_tips_right"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@+id/schedule_guide" android:visibility="gone" layout="@layout/schedule_guide_view"/>
+    <ImageView android:id="@+id/iv_schedule_add" android:visibility="visible" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_70" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_88" android:src="@drawable/icon_schedule_add" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

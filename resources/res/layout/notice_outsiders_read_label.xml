@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlContainer" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_outside_readers" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:id="@+id/tv_reader_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="5dp" android:layout_toStartOf="@+id/iv_right_arrow"/>
+    </RelativeLayout>
+    <View android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="8dp" android:layout_below="@+id/rlContainer"/>
+</RelativeLayout>

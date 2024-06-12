@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_collected_resource" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar2"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <com.mobeta.android.dslv.DragSortListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_resource" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="#ffefeff4" android:dividerHeight="1px" android:layout_above="@+id/operation_toolbar" android:headerDividersEnabled="false" android:footerDividersEnabled="false" cx:drag_handle_id="@+id/iv_sort" cx:drag_start_mode="0"/>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/operation_toolbar" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/options" android:paddingTop="1px" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <Button android:textSize="18sp" android:textColor="#0099ff" android:layout_gravity="center_vertical" android:id="@+id/btn_delete" android:background="@android:color/transparent" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/delete_resource" android:layout_weight="1"/>
+                <Button android:textSize="18sp" android:textColor="#0099ff" android:layout_gravity="center_vertical" android:id="@+id/btn_move" android:background="@android:color/transparent" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/move_resource" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+            <View android:id="@+id/split_line" android:background="#d9d9d9" android:layout_width="1px" android:layout_height="wrap_content" android:layout_alignTop="@+id/options" android:layout_alignBottom="@+id/options" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tv_empty_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resource_collection_empty_tip" android:layout_centerInParent="true"/>
+        <include layout="@layout/common_loading_transparent"/>
+    </RelativeLayout>
+</RelativeLayout>

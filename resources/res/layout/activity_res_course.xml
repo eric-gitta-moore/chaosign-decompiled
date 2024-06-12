@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/ll_tips" android:background="#fff5ed" android:layout_width="match_parent" android:layout_height="37dp" android:layout_below="@+id/toolbar">
+        <TextView android:textSize="12sp" android:textColor="@color/color_ff8c19" android:gravity="center_vertical" android:id="@+id/tv_course_tips" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ui_10_dip" android:text="@string/course_tips" android:layout_toLeftOf="@+id/iv_close"/>
+        <ImageView android:id="@+id/iv_close" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_course_tip_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/ll_tips">
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_course" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <RelativeLayout android:id="@+id/no_course_tip" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:orientation="vertical" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_teacher_tips" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_no_course_tips" android:paddingRight="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp"/>
+                    <TextView android:textSize="15sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_bind_number" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.3"/>
+                    <TextView android:textSize="15sp" android:textColor="#999999" android:gravity="center" android:id="@+id/teacher_create_course" android:padding="3dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_centerInParent="true"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_student_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:gravity="left" android:id="@+id/tv_tips1" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="15sp" android:textColor="#999999" android:gravity="left" android:id="@+id/tv_tips2" android:padding="3dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                        <RelativeLayout android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="15sp" android:textColor="#999999" android:id="@+id/tv_tips3" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:textSize="15sp" android:textColor="@color/chaoxingBlue" android:id="@+id/tv_edit" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_tips3"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/color_6B89B3" android:gravity="center" android:id="@+id/course_help_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60dp" android:text="@string/course_help_tips" android:drawableLeft="@drawable/ic_course_help_tips" android:drawablePadding="5dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <TextView android:gravity="center" android:id="@+id/tv_prompt_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="亲，文件夹还没有内容哦" android:layout_centerInParent="true" style="@style/group_title_b3_text"/>
+        <include android:visibility="gone" layout="@layout/common_loading_transparent"/>
+        <include android:visibility="gone" layout="@layout/reload"/>
+    </RelativeLayout>
+</RelativeLayout>

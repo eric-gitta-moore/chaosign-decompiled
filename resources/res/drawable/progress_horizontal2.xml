@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/progress_seek_dark"/>
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@color/normal_blue"/>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip android:drawable="@color/divider_line"/>
+    </item>
+</layer-list>

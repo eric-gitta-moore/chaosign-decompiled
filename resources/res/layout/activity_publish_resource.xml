@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:id="@+id/viewContainer" android:background="#eeeff3" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewToolbar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:id="@+id/rlContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewToolbar">
+        <RelativeLayout android:background="@android:color/white" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="68dp">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/ivIcon" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_chaoxing_default" android:layout_centerVertical="true" cx:border_color="@color/avatar_border" cx:border_width="1px" cx:is_circle="true"/>
+            <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tvUploadIconHint" android:background="@android:color/white" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="上传域图标" android:layout_toRightOf="@+id/ivIcon" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

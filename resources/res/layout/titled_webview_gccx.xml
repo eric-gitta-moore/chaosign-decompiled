@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/webviewer" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title" layout="@layout/toolbar_webview"/>
+    <com.chaoxing.mobile.webapp.WebViewSearchBar android:id="@+id/search_bar" android:background="@color/home_toolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/llBottomContainer" android:layout_below="@+id/search_bar" layout="@layout/web_client"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llBottomContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

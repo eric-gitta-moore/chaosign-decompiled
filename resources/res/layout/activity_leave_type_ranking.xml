@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.office.widget.PunchTopTitleLayout android:id="@+id/titleLayout" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <ImageView android:id="@+id/divider" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/titleLayout" android:contentDescription="@string/mission_introduce"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipeRefreshLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_below="@+id/divider">
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.chaoxing.mobile.office.widget.PunchLoadingView android:id="@+id/loadingView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <com.chaoxing.mobile.office.widget.ASErrorLayout android:id="@+id/errorLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/divider" android:layout_centerInParent="true"/>
+</RelativeLayout>

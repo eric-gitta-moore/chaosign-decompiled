@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titleBar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:id="@+id/headerView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/btnBack" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="48dp" android:minWidth="0dp" android:minHeight="0dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <Button android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center" android:id="@+id/btn_search" android:background="@color/transparent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/group_search_input_bg" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginRight="12dp" android:layout_toLeftOf="@+id/btn_search" android:layout_toRightOf="@+id/btnBack" android:layout_centerVertical="true">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="8dp" android:src="@drawable/iv_search_bg"/>
+            <EditText android:textSize="14sp" android:textColor="@color/normal_gray" android:textColorHint="#cccccc" android:id="@+id/edit_keyword" android:background="@color/transparent" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginLeft="2dp" android:hint="@string/comment_serarch" android:layout_weight="1" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch"/>
+            <ImageView android:id="@+id/iv_clear" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="8dp" android:src="@drawable/clear" android:layout_weight="0"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fragment_search" android:background="#ebecee" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

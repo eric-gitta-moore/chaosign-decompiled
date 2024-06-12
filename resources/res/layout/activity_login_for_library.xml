@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#fff6f6f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:id="@+id/input" android:background="@android:color/white" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="60dp" android:layout_marginRight="12dp" android:layout_below="@+id/toolbar">
+        <EditText android:textSize="14sp" android:id="@+id/et_account" android:background="@android:color/white" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="借阅证账号/一卡通账号" android:maxLines="1" android:layout_toLeftOf="@+id/iv_clear_account" android:inputType="text" android:imeOptions="actionNext"/>
+        <ImageView android:id="@+id/iv_clear_account" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:scaleType="center" android:layout_alignTop="@+id/et_account" android:layout_alignBottom="@+id/et_account" android:layout_alignParentRight="true"/>
+        <View android:id="@+id/line" android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/et_account"/>
+        <EditText android:textSize="14sp" android:id="@+id/et_password" android:background="@android:color/white" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="借阅证密码" android:maxLines="1" android:layout_toLeftOf="@+id/line2" android:layout_below="@+id/line" android:inputType="textPassword" android:imeOptions="actionDone"/>
+    </RelativeLayout>
+    <Button android:textSize="@dimen/text_size_normal" android:textColor="@android:color/white" android:id="@+id/btn_login" android:background="@drawable/login_fragment_btn_login" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="40dp" android:layout_marginRight="15dp" android:text="@string/bind" android:layout_below="@+id/input"/>
+    <include android:visibility="gone" layout="@layout/common_loading_transparent"/>
+</RelativeLayout>

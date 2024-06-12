@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/parentView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tvVerifyResult" android:background="@drawable/bg_toast" android:padding="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180dp" android:maxLines="2" android:layout_centerInParent="true"/>
+</RelativeLayout>

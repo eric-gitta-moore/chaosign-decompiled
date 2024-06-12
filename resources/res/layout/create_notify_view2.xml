@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rlRoot" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <RelativeLayout android:gravity="center_vertical" android:id="@+id/toolBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+                <TextView android:id="@+id/tvCanncel" android:paddingLeft="8dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+                <TextView android:textSize="18sp" android:textColor="#ff333333" android:ellipsize="middle" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginRight="65dp" android:text="@string/pcenter_message_notify" android:singleLine="true" android:layout_centerInParent="true"/>
+                <TextView android:textSize="15sp" android:id="@+id/tvSend" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+            </RelativeLayout>
+            <com.chaoxing.mobile.notify.widget.CreateNoticeListView android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@null" android:layout_below="@+id/toolBar"/>
+            <View android:id="@+id/view_cover" android:background="#80999999" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llImgChooseTip" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="24dp" android:layout_marginTop="8dp" android:layout_marginRight="@dimen/common_margin" android:layout_marginBottom="8dp">
+                <ImageView android:id="@+id/iv_operation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_panel_open" android:layout_centerInParent="true"/>
+                <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_unread_count" android:background="@drawable/tips_textview_bg" android:layout_width="16dp" android:layout_height="16dp" android:text="1" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_reply_mode" android:visibility="gone" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="24dp" android:layout_marginTop="8dp" android:layout_marginRight="@dimen/common_margin" android:layout_marginBottom="8dp">
+                <ImageView android:id="@+id/iv_reply_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notice_settings" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="24dp" android:layout_marginTop="8dp" android:layout_marginRight="@dimen/common_margin" android:layout_marginBottom="8dp">
+                <ImageView android:id="@+id/iv_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/rlOperaPanel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/btnOperaPanel">
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+            <FrameLayout android:id="@+id/fl_footer_panel" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:id="@+id/loading_view" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

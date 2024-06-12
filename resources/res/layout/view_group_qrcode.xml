@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/viewContainer" android:background="#464647" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:background="@drawable/bg_corner_group_qrcode" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="48dp" android:layout_marginRight="28dp" android:layout_below="@+id/viewTitleBar">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llTop" android:paddingTop="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="58dp" android:layout_marginRight="58dp" android:layout_centerHorizontal="true">
+            <com.chaoxing.mobile.group.widget.GroupHead android:layout_gravity="center" android:id="@+id/ivGroupAvatar" android:background="@drawable/bg_group_head" android:layout_width="50dp" android:layout_height="50dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textColor="#333333" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@+id/tvGroupName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:maxLines="2"/>
+                <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tvUnitName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="4dp" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rlQRCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_below="@+id/llTop" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/ivQRCode" android:background="@drawable/best_lib_rank_img_stroke" android:layout_width="146dp" android:layout_height="146dp" android:layout_centerHorizontal="true"/>
+            <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/pbLoading" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="#666666" android:gravity="center_horizontal" android:id="@+id/tip_text" android:paddingBottom="42dp" android:layout_width="176sp" android:layout_height="wrap_content" android:layout_marginTop="45dp" android:text="@string/hint_scan_group_qrcode" android:layout_below="@+id/rlQRCode" android:layout_centerHorizontal="true" android:lineSpacingExtra="8sp"/>
+    </RelativeLayout>
+</RelativeLayout>

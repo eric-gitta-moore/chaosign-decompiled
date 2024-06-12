@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/normal_black" android:ellipsize="end" android:id="@+id/tv_name" android:background="@drawable/bg_receiver_item" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="2dp" android:layout_marginRight="6dp" android:layout_marginBottom="1dp" android:maxWidth="160dp" android:maxLines="1"/>
+    <ImageView android:id="@+id/ivDelete" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-6dp" android:src="@drawable/item_selimg_del" android:layout_alignRight="@+id/tv_name"/>
+</RelativeLayout>

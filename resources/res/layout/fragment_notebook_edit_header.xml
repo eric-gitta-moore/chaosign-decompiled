@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioGroup android:id="@+id/rg_status" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="66dp">
+                <EditText android:textSize="16sp" android:textColor="@color/normal_black" android:textColorHint="#9e9e9e" android:gravity="center_vertical" android:id="@+id/editName" android:background="@android:color/white" android:paddingLeft="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/bookCollections_createfolder_hint" android:singleLine="true" android:layout_weight="1" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/iv_delete" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="15dp" android:paddingBottom="20dp" android:visibility="gone" android:layout_width="40dp" android:layout_height="66dp" android:src="@drawable/clear" android:scaleType="fitCenter"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/vgOpenStatus" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="8dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_personnal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="66dp">
+                    <RadioButton android:id="@+id/rb_personnal_note" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:checked="false" android:button="@drawable/group_type"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_weight="1">
+                        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bookCollections_Private"/>
+                        <TextView android:textSize="13sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/note_justme"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_public" android:background="@color/white" android:layout_width="match_parent" android:layout_height="66dp">
+                    <RadioButton android:id="@+id/rb_public_note" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:checked="false" android:button="@drawable/group_type"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_weight="1">
+                        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_SharewithPublic"/>
+                        <TextView android:textSize="13sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/note_AllFriends"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_shareToFriend" android:background="@color/white" android:layout_width="match_parent" android:layout_height="66dp">
+                    <RadioButton android:id="@+id/rb_shareToFriend_note" android:background="@drawable/group_type" android:focusable="false" android:clickable="false" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:checked="false" android:button="@null"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_weight="1">
+                        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_SharewithFriends"/>
+                        <TextView android:textSize="13sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/note_eachother"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#e5e5e5" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_share" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="66dp">
+                    <RadioButton android:id="@+id/rb_share_note" android:background="@drawable/group_type" android:focusable="false" android:clickable="false" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:checked="false" android:button="@null"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_weight="1">
+                        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_sharedto"/>
+                        <TextView android:textSize="13sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/note_one"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/icon_next" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/icon_notebook_range_add" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+    </RadioGroup>
+</LinearLayout>

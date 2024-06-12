@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.mobile.common.TitleBarView android:id="@+id/viewTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.chaoxing.mobile.chat.widget.FaceToFaceInputView android:id="@+id/vInput" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp"/>
+        <TextView android:textSize="14dp" android:textColor="#cccccc" android:gravity="center" android:id="@+id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="@string/enter_same_group_chat_with_friend"/>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:id="@+id/tvLable" android:background="#f5f6f8" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="65dp" android:text="@string/message_friends_enter_chat_group"/>
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_main" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tvJoinLable" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/message_tip_create_chat_group" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvJoinGroup" android:background="@drawable/chat_send_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:text="@string/message_enter_chat_group"/>
+    </LinearLayout>
+    <include android:id="@+id/vLoadding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+    <com.chaoxing.mobile.notify.widget.KeyboardView android:id="@+id/vKeyboard" android:background="#d9d9d9" android:paddingTop="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@null" android:horizontalSpacing="1dp" android:verticalSpacing="1dp" android:numColumns="3" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/vNotFoundLocation" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150dp" android:src="@drawable/icon_face_to_face_location"/>
+        <TextView android:textSize="16sp" android:textColor="#868686" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39dp" android:text="无法获取你的位置信息"/>
+    </LinearLayout>
+</RelativeLayout>

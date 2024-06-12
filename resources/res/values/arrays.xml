@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="all_field_bookch">
+        <item>全部字段</item>
+        <item>书名</item>
+        <item>作者</item>
+        <item>主题词</item>
+    </array>
+    <array name="all_field_booken">
+        <item>全部字段</item>
+        <item>书名</item>
+        <item>作者</item>
+        <item>目次</item>
+    </array>
+    <array name="all_field_journalch">
+        <item>全部字段</item>
+        <item>标题</item>
+        <item>作者</item>
+        <item>刊名</item>
+        <item>作者单位</item>
+        <item>关键词</item>
+    </array>
+    <array name="all_field_journalen">
+        <item>全部字段</item>
+        <item>标题</item>
+        <item>作者</item>
+        <item>刊名</item>
+        <item>关键词</item>
+    </array>
+    <array name="all_field_newspaper">
+        <item>全部字段</item>
+        <item>标题</item>
+        <item>作者</item>
+        <item>来源</item>
+        <item>全文</item>
+    </array>
+    <array name="attendance_statistics_tab_title">
+        <item>@string/daily_statistics</item>
+        <item>@string/monthly_statistics</item>
+    </array>
+    <array name="attention_title">
+        <item>@string/focus_sharedData</item>
+        <item>@string/focus_groupAction</item>
+        <item>@string/focus_sharedNote</item>
+        <item>@string/tab_contacts</item>
+    </array>
+    <array name="by_language">
+        <item>按中文资料</item>
+        <item>按外文资料</item>
+    </array>
+    <array name="by_relation">
+        <item>按相关度</item>
+        <item>按时间</item>
+    </array>
+    <array name="course_clone_menu">
+        <item>@string/course_clone_self</item>
+        <item>@string/course_clone_other</item>
+    </array>
+    <array name="course_popupwindow">
+        <item>@string/course_manage</item>
+        <item>@string/course_statistics</item>
+        <item>@string/course_catalog</item>
+        <item>@string/course_exam</item>
+    </array>
+    <array name="course_publish_task_menu">
+        <item>@string/course_task_publish_to_student</item>
+        <item>@string/course_task_publish_qr_code</item>
+    </array>
+    <array name="default_book_covers">
+        <item>default_book_cover1</item>
+        <item>default_book_cover2</item>
+        <item>default_book_cover3</item>
+        <item>default_book_cover4</item>
+        <item>default_book_cover5</item>
+    </array>
+    <array name="fragment_feitu_tab_title">
+        <item>Music</item>
+        <item>Video</item>
+        <item>Photo</item>
+    </array>
+    <array name="fragment_tab_title">
+        <item>音乐</item>
+        <item>视频</item>
+        <item>图片</item>
+    </array>
+    <array name="group_order_index">
+        <item>4</item>
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="group_order_name">
+        <item>@string/group_order_most_active</item>
+        <item>@string/group_order_most_nember</item>
+        <item>@string/group_order_most_topic</item>
+        <item>@string/group_order_time_last</item>
+    </array>
+    <array name="home_item_colors">
+        <item>@color/home_item_color_0</item>
+        <item>@color/home_item_color_1</item>
+        <item>@color/home_item_color_2</item>
+        <item>@color/home_item_color_3</item>
+        <item>@color/home_item_color_4</item>
+        <item>@color/home_item_color_5</item>
+        <item>@color/home_item_color_6</item>
+        <item>@color/home_item_color_7</item>
+        <item>@color/home_item_color_8</item>
+        <item>@color/home_item_color_9</item>
+        <item>@color/home_item_color_10</item>
+        <item>@color/home_item_color_11</item>
+    </array>
+    <array name="home_manage_tab">
+        <item>@string/string_home_manage_recent</item>
+        <item>@string/string_home_manage_bottom</item>
+    </array>
+    <array name="home_popup_Add">
+        <item>@string/create_folder</item>
+        <item>@string/edit_resources</item>
+    </array>
+    <array name="home_popup_Add_mirror">
+        <item>@string/create_folder</item>
+        <item>@string/create_group</item>
+        <item>@string/edit_resources</item>
+        <item>@string/create_resource</item>
+    </array>
+    <array name="home_popupwindow_subscripte">
+        <item>@string/create_folder</item>
+        <item>@string/inviteCode_title</item>
+        <item>@string/to_scan</item>
+        <item>@string/tab_personal</item>
+    </array>
+    <array name="home_popupwindow_unit">
+        <item>@string/to_scan</item>
+        <item>@string/inviteCode_title</item>
+    </array>
+    <array name="image_compare_menu">
+        <item>@string/take_photo</item>
+        <item>@string/local_file_upload</item>
+        <item>@string/choose_from_cloud</item>
+    </array>
+    <array name="introduce_function_drawables">
+        <item>@drawable/function_01</item>
+        <item>@drawable/function_02</item>
+        <item>@drawable/function_03</item>
+        <item>@drawable/function_04</item>
+    </array>
+    <array name="menu_cloud_file_list">
+        <item>@string/cloud_upload_file</item>
+        <item>@string/cloud_pc_upload</item>
+        <item>@string/create_folder</item>
+    </array>
+    <array name="menu_cloud_file_list_empty">
+        <item>@string/cloud_upload_file</item>
+        <item>@string/cloud_pc_upload</item>
+        <item>@string/create_folder</item>
+        <item>@string/cloud_file_descreption</item>
+    </array>
+    <array name="menu_cloud_folder_list">
+        <item>@string/cloud_upload_file</item>
+        <item>@string/create_folder</item>
+    </array>
+    <array name="menu_cloud_folder_list_empty">
+        <item>@string/cloud_upload_file</item>
+        <item>@string/create_folder</item>
+        <item>@string/cloud_file_descreption</item>
+    </array>
+    <array name="menu_group_list">
+        <item>@string/menu_group_list_new_group</item>
+        <item>@string/menu_group_list_new_folder</item>
+        <item>@string/menu_group_list_edit</item>
+        <item>@string/menu_group_list_group_market</item>
+    </array>
+    <array name="menu_group_resource_folder">
+        <item>@string/menu_group_list_new_folder</item>
+        <item>@string/menu_group_add_resource</item>
+    </array>
+    <array name="menu_group_resource_folder_list">
+        <item>@string/create_res_folder</item>
+    </array>
+    <array name="menu_groupfolder_list">
+        <item>@string/menu_group_list_new_group</item>
+        <item>@string/menu_group_list_new_folder</item>
+        <item>@string/menu_group_list_edit</item>
+    </array>
+    <array name="my_folder_options">
+        <item>@string/create_folder</item>
+        <item>@string/edit_resources</item>
+        <item>@string/create_folder_subject</item>
+    </array>
+    <array name="note_time_limit">
+        <item>@string/note_time_limit_all</item>
+        <item>@string/note_time_limit_halfyear</item>
+        <item>@string/note_time_limit_oneMonth</item>
+    </array>
+    <array name="off_work_after_minutes">
+        <item>@null</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </array>
+    <array name="off_work_after_minutes1">
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+    </array>
+    <array name="off_work_after_time">
+        <item>下班时间</item>
+        <item>下班后5分钟</item>
+        <item>下班后10分钟</item>
+        <item>下班后15分钟</item>
+        <item>下班后30分钟</item>
+        <item>下班后1小时</item>
+    </array>
+    <array name="off_work_after_time1">
+        <item>下班后1小时</item>
+        <item>下班后2小时</item>
+        <item>下班后3小时</item>
+    </array>
+    <array name="page_type">
+        <item>@string/unk_page</item>
+        <item>@string/cov_page</item>
+        <item>@string/bok_page</item>
+        <item>@string/leg_page</item>
+        <item>@string/fow_page</item>
+        <item>@string/cat_page</item>
+        <item>@string/txt_page</item>
+        <item>@string/insert_page</item>
+        <item>@string/att_page</item>
+        <item>@string/bac_page</item>
+    </array>
+    <array name="recentViewHeights">
+        <item>137</item>
+        <item>123</item>
+        <item>130</item>
+        <item>119</item>
+    </array>
+    <array name="recentViewWidths">
+        <item>115</item>
+        <item>107</item>
+        <item>112</item>
+        <item>104</item>
+    </array>
+    <array name="record_popupwindow">
+        <item>@string/record_readbook_order</item>
+        <item>@string/record_readbook_report</item>
+        <item>@string/validate_cleanall</item>
+    </array>
+    <array name="remind_value">
+        <item>@string/pcenter_topic_set_monday</item>
+        <item>@string/pcenter_topic_set_tuesday</item>
+        <item>@string/pcenter_topic_set_wednesday</item>
+        <item>@string/pcenter_topic_set_thursday</item>
+        <item>@string/pcenter_topic_set_friday</item>
+        <item>@string/pcenter_topic_set_saturday</item>
+        <item>@string/pcenter_topic_set_sunday</item>
+    </array>
+    <array name="screen_close_mode">
+        <item>@string/screen_close_mode_txt_sys</item>
+        <item>@string/screen_close_mode_txt_5m</item>
+        <item>@string/screen_close_mode_txt_10m</item>
+        <item>@string/screen_close_mode_txt_30m</item>
+        <item>@string/screen_close_mode_txt_not</item>
+    </array>
+    <array name="set_language_area">
+        <item>CN</item>
+        <item>TW</item>
+        <item>US</item>
+        <item>TH</item>
+    </array>
+    <array name="set_language_country">
+        <item>zh</item>
+        <item>zh</item>
+        <item>en</item>
+        <item>th</item>
+    </array>
+    <array name="set_language_name">
+        <item>@string/language_zh</item>
+        <item>@string/language_zh_rTW</item>
+        <item>@string/language_en</item>
+        <item>@string/language_th</item>
+    </array>
+    <array name="setting_menu_list">
+        <item>@string/setting_my_favorites</item>
+        <item>@string/setting_scan_history</item>
+        <item>@string/setting_study_process</item>
+        <item>@string/setting_borrow_info</item>
+        <item>@string/setting_message_center</item>
+        <item>@string/setting_feedback</item>
+    </array>
+    <array name="tab_items_person_info">
+        <item>@string/person_tab_action</item>
+        <item>@string/person_tab_about</item>
+        <item>@string/person_tab_detail</item>
+    </array>
+    <array name="time_array">
+        <item>@string/one_hour</item>
+        <item>@string/two_hour</item>
+        <item>@string/three_hour</item>
+        <item>@string/four_hour</item>
+    </array>
+    <array name="time_int_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="type_freeze">
+        <item>@string/user_freeze_sq</item>
+        <item>@string/user_freeze_sr</item>
+        <item>@string/user_freeze_fd</item>
+        <item>@string/user_freeze_gg</item>
+        <item>@string/user_freeze_copy</item>
+        <item>@string/user_freeze_qt</item>
+    </array>
+    <array name="type_report">
+        <item>@string/group_report_copy</item>
+        <item>@string/group_report_gg</item>
+        <item>@string/group_report_sq</item>
+        <item>@string/group_report_fd</item>
+        <item>@string/group_report_bl</item>
+        <item>@string/group_report_rsgj</item>
+        <item>@string/group_report_sr</item>
+        <item>@string/group_report_jjzp</item>
+        <item>@string/group_report_qt</item>
+    </array>
+    <array name="video_speed_float">
+        <item>0.75</item>
+        <item>1.0</item>
+        <item>1.25</item>
+        <item>1.5</item>
+        <item>2.0</item>
+    </array>
+    <array name="video_speed_string">
+        <item>0.75x</item>
+        <item>@string/speed_1</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+    <array name="video_speeds_chose">
+        <item>0.75x</item>
+        <item>1x</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+    <array name="week_day_title">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>日</item>
+    </array>
+    <array name="week_title">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </array>
+    <array name="work_after_minutes">
+        <item>@null</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </array>
+    <array name="work_after_time">
+        <item>上班时间</item>
+        <item>上班后15分钟</item>
+        <item>上班后30分钟</item>
+        <item>上班后1小时</item>
+        <item>上班后2小时</item>
+    </array>
+    <array name="work_before_minutes">
+        <item>120</item>
+        <item>60</item>
+        <item>30</item>
+    </array>
+    <array name="work_before_time">
+        <item>上班前2小时</item>
+        <item>上班前1小时</item>
+        <item>上班前30分钟</item>
+    </array>
+</resources>

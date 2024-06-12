@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_receiver" android:background="@drawable/bg_receiver_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="9dp" android:layout_marginBottom="6dp">
+        <ImageView android:id="@+id/iv_icon" android:background="@drawable/icon_receiver_person" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="8dp" android:layout_marginRight="-6dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="12sp" android:textColor="@color/normal_black" android:ellipsize="end" android:id="@+id/tv_name" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160dp" android:maxLines="1"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/ivDelete" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-6dp" android:src="@drawable/item_selimg_del" android:layout_alignRight="@+id/ll_receiver"/>
+</merge>

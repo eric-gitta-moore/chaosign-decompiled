@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/arrow_record_popwindow_bg" android:layout_width="wrap_content" android:layout_height="86dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/record_pause" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="34dp" android:minWidth="74dp" android:layout_above="@+id/record_end" android:layout_alignParentStart="true" android:paddingHorizontal="14dp">
+        <ImageView android:id="@+id/record_pause_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/record_pause_icon"/>
+        <TextView android:textSize="13sp" android:textColor="#ccffffff" android:id="@+id/record_pause_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/text_stop" android:singleLine="true" android:layout_marginStart="6dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/record_end" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_marginBottom="4dp" android:minWidth="74dp" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:paddingHorizontal="14dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/record_end_icon"/>
+        <TextView android:textSize="13sp" android:textColor="#ccffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/text_end" android:singleLine="true" android:layout_marginStart="6dp"/>
+    </LinearLayout>
+</RelativeLayout>

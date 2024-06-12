@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="70dp">
+    <TextView android:gravity="center_vertical" android:id="@+id/tvlabelRemake" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/persioninfo_ProfilPhoto" style="@style/text_user_title"/>
+    <RelativeLayout android:id="@+id/rlAvatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/tvRemakeArrow">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/ivAvatar" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" ss:riv_corner_radius="4dp"/>
+        <ProgressBar android:id="@+id/pbAvatar" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true"/>
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:id="@+id/tvAvatarProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/gray_b3b3b3" android:id="@+id/tvRemakeArrow" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableEnd="@drawable/ic_right_arrow" android:layout_marginStart="12dp" android:layout_alignParentEnd="true"/>
+    <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

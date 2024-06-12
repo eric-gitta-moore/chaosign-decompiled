@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+    <ImageView android:id="@+id/rss_read_back" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/navigation_img_back" android:scaleType="centerInside" android:layout_alignParentLeft="true"/>
+    <ImageView android:id="@+id/book_review" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/book_review" android:scaleType="centerInside" android:layout_alignParentLeft="true"/>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/rss_read_text" android:paddingLeft="15dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/rss_text" android:scaleType="centerInside"/>
+        <ImageView android:id="@+id/rss_read_share" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/rss_share" android:scaleType="centerInside"/>
+        <ImageView android:id="@+id/rss_read_collect" android:paddingLeft="10dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/rss_collect" android:scaleType="centerInside"/>
+    </LinearLayout>
+</RelativeLayout>

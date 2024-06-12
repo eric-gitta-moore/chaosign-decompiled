@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/contentView" android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingRight="15dp" android:paddingBottom="8dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:id="@+id/card_view" android:layout_width="match_parent" android:layout_height="wrap_content" cx:cardCornerRadius="10dp" cx:cardElevation="0dp">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="15dp">
+                        <RelativeLayout android:orientation="vertical" android:id="@+id/ll_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16sp" android:textColor="#333333" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="已上线宣传图" android:layout_toStartOf="@+id/img_line_admap_arrow"/>
+                            <ImageView android:id="@+id/img_line_admap_arrow" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_arrow_up" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:gravity="center" android:id="@+id/online_no_data_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="84dp" android:text="暂无已上线的宣传图"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/ll_line_admap" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_line_admap" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/contentViewOff" android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingRight="15dp" android:paddingBottom="8dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/contentView">
+                <androidx.cardview.widget.CardView android:id="@+id/card_view_Off" android:layout_width="match_parent" android:layout_height="wrap_content" cx:cardCornerRadius="10dp" cx:cardElevation="0dp">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content_Off" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="15dp">
+                        <RelativeLayout android:orientation="vertical" android:id="@+id/ll_item_Off" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16sp" android:textColor="#333333" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="已下线宣传图" android:layout_toStartOf="@+id/img_line_admap_arrow_Off"/>
+                            <ImageView android:id="@+id/img_line_admap_arrow_Off" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_arrow_up" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:gravity="center" android:id="@+id/offline_no_data_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="84dp" android:text="暂无未上线的宣传图"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/ll_line_admap_Off" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_line_admap_Off" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

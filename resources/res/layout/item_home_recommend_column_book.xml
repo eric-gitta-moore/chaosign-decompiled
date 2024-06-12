@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#ffffff" android:layout_width="100dp" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_column_book" android:layout_width="match_parent" android:layout_height="0dp" android:scaleType="centerCrop" app:layout_constraintDimensionRatio="1:1.3" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_column_book_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:singleLine="true" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/iv_column_book"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

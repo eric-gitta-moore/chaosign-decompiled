@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/note_menu_btns" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="300dp" android:layout_height="50dp" android:layout_centerInParent="true">
+        <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/ibtn_line_size" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_change_line_size" android:layout_weight="1"/>
+        <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/ibtn_edit_link" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_edit_hyperlink" android:layout_weight="1"/>
+        <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/ibtn_note_color" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/note_changecolor" android:layout_weight="1"/>
+        <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/ibtn_del_note" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/note_delete" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/note_select_line_color_size" android:visibility="gone" android:layout_width="300dp" android:layout_height="80dp">
+        <Button android:id="@+id/btn_note_menu_back" android:background="@drawable/note_menu_back" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <View android:background="#333333" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginLeft="-1dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/book_note_menu_line" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/book_note_menu_line_group"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/book_note_menu_color" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/book_note_menu_color_group"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

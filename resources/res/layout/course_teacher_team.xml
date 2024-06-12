@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/divider_view1" android:background="@color/color_f5f6f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <View android:background="@color/bg_color_f5f6f8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/rl_team" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:id="@+id/tv_teacher_team" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_teacher_team" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/normal_blue" android:id="@+id/tv_add_teacher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_add_teacher" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

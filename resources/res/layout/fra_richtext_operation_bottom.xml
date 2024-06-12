@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/il_anonymity" layout="@layout/item_anonymity_post"/>
+    <View android:id="@+id/line1" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ImageView android:id="@+id/voiceline" android:background="@drawable/icon_voice_line_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="6dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/vg_bottom" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="45dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llkeyboard" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <View android:background="#c5c5c5" android:layout_width="1px" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/iv_keyboard_hidden" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_open_keyboard" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_operation" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/llkeyboard">
+                <RelativeLayout android:id="@+id/rl_operation" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_operation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_panel_open" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_camera" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_pic_camera" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rlBtnOperaPanel" android:layout_width="0dp" android:layout_height="45dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_pic_voice" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="10sp" android:textColor="@android:color/white" android:id="@+id/tv_unread_count" android:background="@drawable/tips_textview_bg" android:focusable="false" android:clickable="false" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginTop="-6dp" android:layout_alignTop="@+id/iv_voice" android:layout_alignRight="@+id/iv_voice"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_pic_sel" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_pic_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_photo_select" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_font_sel" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_font_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_font_select" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_compose_select" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_compose_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_compose_select" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_style_select" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_style_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_style_select" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_reply_mode" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_reply_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notice_settings" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_checkbox_sel" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_checkbox_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_checkbox_select" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_undo" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_undo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_undo_select" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_redo" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_redo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_redo_select" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/line2" android:background="#c5c5c5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:id="@+id/fl_footer_panel" android:background="#f7f7f7" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

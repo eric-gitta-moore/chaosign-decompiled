@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_centerVertical="true">
+        <CheckBox android:id="@+id/cb_selected" android:visibility="visible" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="12dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon" android:clickable="false" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginTop="6dp" android:layout_marginRight="12dp" android:layout_marginBottom="6dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_toRightOf="@+id/cb_selected" android:layout_centerVertical="true" android:contentDescription="@null" ss:border_color="#999d9e" ss:border_width="1px" ss:is_circle="false" ss:x_radius="5dp" ss:y_radius="5dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:layout_toRightOf="@+id/iv_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</LinearLayout>

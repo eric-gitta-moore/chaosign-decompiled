@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/happen_time_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="#0099ff" android:id="@+id/dialog_happen_time_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="14dp" android:text="@string/schedule_cancle_text" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="18sp" android:textColor="#0099ff" android:id="@+id/happen_time_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginRight="15dp" android:text="@string/schedule_done_text" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TimePicker android:id="@+id/schedule_happen_time_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/happen_time_top" android:layout_centerHorizontal="true" android:timePickerMode="spinner"/>
+</RelativeLayout>

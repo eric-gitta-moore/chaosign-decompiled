@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rlContainer" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_resource" android:background="@android:color/white" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="#d9d9d9" android:dividerHeight="1px"/>
+        <include layout="@layout/common_loading_transparent"/>
+    </RelativeLayout>
+</RelativeLayout>

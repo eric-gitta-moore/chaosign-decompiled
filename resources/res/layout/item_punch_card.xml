@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/recordLayout" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="100dp">
+    <ImageView android:id="@+id/iv_upLine" android:background="#cccccc" android:visibility="gone" android:layout_width="2dp" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginBottom="-12dp" android:layout_above="@+id/iv_circle" android:layout_alignLeft="@+id/iv_circle" android:layout_alignTop="@+id/divider_up" android:layout_marginStart="9dp" android:layout_alignStart="@+id/iv_circle"/>
+    <ImageView android:id="@+id/iv_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/punch_record_icon" android:layout_alignTop="@+id/rightParent"/>
+    <ImageView android:id="@+id/iv_bottomLine" android:background="#cccccc" android:layout_width="2dp" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginTop="-4dp" android:layout_below="@+id/iv_circle" android:layout_alignLeft="@+id/iv_circle" android:layout_alignBottom="@+id/divider_bottom" android:layout_marginStart="9dp" android:layout_alignStart="@+id/iv_circle"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/rightParent" android:paddingLeft="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui_10_dip" android:layout_toRightOf="@+id/iv_circle" android:layout_centerInParent="true" android:layout_marginStart="@dimen/ui_10_dip" android:layout_toEndOf="@+id/iv_circle">
+        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@+id/clockDateTimeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/locationLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <ImageView android:id="@+id/locationIcon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/punch_location_icon"/>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/locationTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/wifiLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <ImageView android:id="@+id/wifiIcon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/wifi_icon"/>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/wifiNameTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="1dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/bluetoothLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <ImageView android:id="@+id/bluetoothIcon" android:layout_width="20dp" android:layout_height="20dp" android:src="@mipmap/as_blue_tooth_icon"/>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/bluetoothNameTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="1dp"/>
+        </LinearLayout>
+        <TextView android:textSize="13sp" android:textColor="@color/chaoxing_blue" android:id="@+id/updatePunchTv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="@string/update_punch" android:drawableRight="@drawable/wifi_punch_arrow_right"/>
+    </LinearLayout>
+    <View android:id="@+id/divider_bottom" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="0.5px" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/divider_up" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="0.5px" android:layout_alignParentTop="true"/>
+</RelativeLayout>

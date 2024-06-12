@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.imageeditlibrary.coper.CropImageView android:id="@+id/cropImageView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="15dp" android:layout_above="@+id/rlBottom"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/rlBottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:enabled="false" android:textSize="16sp" android:textColor="#777777" android:gravity="center" android:id="@+id/tvReset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="还原" android:drawableLeft="@drawable/image_edit_selector_btn_reset" android:drawablePadding="3dp" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textColor="#fff" android:gravity="center" android:id="@+id/tvRoote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="旋转" android:drawableLeft="@drawable/image_edit_icon_roote" android:drawablePadding="3dp" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp">
+            <TextView android:textSize="16sp" android:textColor="#fff" android:gravity="center" android:id="@+id/tvCancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1"/>
+            <TextView android:enabled="false" android:textSize="16sp" android:textColor="#777777" android:gravity="center" android:id="@+id/tvCrop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_weight="1" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

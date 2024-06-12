@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.bookshelf.GridView android:scrollbarStyle="outsideOverlay" android:id="@+id/gvSubject" android:background="@color/date_line" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:stretchMode="columnWidth" android:numColumns="1"/>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#bebebe" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/video_zone" android:layout_width="match_parent" android:layout_height="@dimen/vertial_mainui_v_video_item_videozone_height"/>
+    <LinearLayout android:orientation="horizontal" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/audio_status_img" android:layout_width="@dimen/vertial_mainui_v_video_item_imgicon_height" android:layout_height="@dimen/vertial_mainui_v_video_item_imgicon_height" android:layout_marginRight="@dimen/vertial_mainui_v_video_item_imgicon_marginleft" android:src="@mipmap/ic_online_course_mic_3_1"/>
+        <TextView android:textSize="10sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/video_username" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

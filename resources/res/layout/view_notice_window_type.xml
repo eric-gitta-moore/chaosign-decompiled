@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="251dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_notice_dialog"/>
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/notice_pup_remind"/>
+            <CheckBox android:layout_gravity="center" android:id="@+id/cb_selected_dialog" android:background="@drawable/group_type" android:focusable="true" android:clickable="true" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp" android:button="@null"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_floatingwindow"/>
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/notice_banner_remind"/>
+            <CheckBox android:layout_gravity="center" android:id="@+id/cb_selected_window" android:background="@drawable/group_type" android:focusable="true" android:clickable="true" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp" android:button="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#ffc5c5c5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/rlEdit" android:background="#fff7f7f7" android:padding="10dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlAdd" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="6dp" android:layout_centerVertical="true">
+            <Button android:id="@+id/btnAdd" android:background="@android:color/transparent" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_topic_reply_add" android:layout_centerInParent="true"/>
+            <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvImageCount" android:background="@drawable/bg_topic_reply_image_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <com.chaoxing.mobile.group.widget.AtToInBlueEditText android:textSize="14sp" android:textColorHint="#ffcccccc" android:id="@+id/etReply" android:background="@drawable/bg_edittext_circular_bead_white" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="写评论" android:layout_toLeftOf="@+id/btnSend" android:layout_toRightOf="@+id/rlAdd" android:layout_centerVertical="true"/>
+        <Button android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/btnSend" android:background="@drawable/bg_btn_topic_reply" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="12dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="发送" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#ffc5c5c5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ViewSwitcher android:id="@+id/vsSelect" android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="24dp" android:paddingTop="14dp" android:paddingRight="24dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlSeletImages" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <RelativeLayout android:id="@+id/rlSeletImage" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btnSelectImage" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_topic_reply_select_image" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="16sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="照片" android:layout_below="@+id/btnSelectImage" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvImageCount2" android:background="@drawable/bg_topic_reply_image_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" android:layout_alignTop="@+id/rlSeletImage" android:layout_alignRight="@+id/rlSeletImage"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlTakePhoto" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_toRightOf="@+id/rlSeletImages">
+                <Button android:id="@+id/btnTakePhoto" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_topic_reply_take_photo" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="16sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="拍照" android:layout_below="@+id/btnTakePhoto" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <HorizontalScrollView android:id="@+id/hsvSelectedImage" android:padding="16dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llSelectedImage" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </HorizontalScrollView>
+    </ViewSwitcher>
+</LinearLayout>

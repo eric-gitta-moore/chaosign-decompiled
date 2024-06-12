@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/web_toolbar_text" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cl_Toolbar_Action_Button"/>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/web_toolbar_net_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter"/>
+</merge>

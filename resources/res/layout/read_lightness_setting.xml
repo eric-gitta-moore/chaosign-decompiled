@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/light_adjust_view" android:background="@drawable/reader_toolbar_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/lum_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/read_lightness_low"/>
+        <SeekBar android:layout_gravity="center_vertical" android:id="@+id/sb_light_adjust" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:maxHeight="2dp" android:max="255" android:progress="0" android:secondaryProgress="0" android:progressDrawable="@drawable/seekbar_style_ep" android:minHeight="2dp" android:thumb="@drawable/epub_progress_swipe_point" android:thumbOffset="12dp" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/lum_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/read_lightness_high"/>
+        <View android:layout_gravity="center_vertical" android:background="#66666666" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginLeft="10dp"/>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/ibtn_read_mode" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/read_mode_day"/>
+    </LinearLayout>
+</LinearLayout>

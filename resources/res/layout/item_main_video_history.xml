@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="11dp" android:paddingEnd="15dp">
+    <RelativeLayout android:id="@+id/rl_video_container" android:layout_width="124dp" android:layout_height="68dp">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_video" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_centerVertical="true" app:riv_corner_radius="4dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffffff" android:id="@+id/tv_video_time" android:paddingLeft="5dp" android:paddingTop="2dp" android:paddingRight="5dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_alignParentBottom="true" android:layout_marginEnd="5dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="15sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tv_video_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:maxLines="2" android:layout_alignTop="@+id/rl_video_container" android:layout_marginStart="10dp" android:layout_toEndOf="@+id/rl_video_container"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_below="@+id/tv_video_title" android:layout_marginStart="10dp" android:layout_toEndOf="@+id/rl_video_container">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="9sp" android:textColor="#ffabb1b6" android:ellipsize="end" android:id="@+id/tv_see_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tv_see_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="14dp"/>
+    </LinearLayout>
+</RelativeLayout>

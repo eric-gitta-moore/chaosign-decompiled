@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/content_view" android:background="#fffdfdfd" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="@color/color_999999" android:layout_gravity="center" android:id="@+id/tv_un_fold_mission" android:padding="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/un_fold_mission" android:drawableRight="@drawable/mission_group_open" android:drawablePadding="8dp" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

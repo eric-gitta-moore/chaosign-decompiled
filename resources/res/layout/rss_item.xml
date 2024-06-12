@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlContainer" android:padding="3dp" android:layout_width="match_parent" android:layout_height="@dimen/cover_item_height">
+        <ImageView android:id="@+id/ivCover" android:background="@android:color/transparent" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/ivCoverTop" android:layout_width="match_parent" android:layout_height="@dimen/cover_item_height" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:id="@+id/selectedBg" android:background="@color/black_4c000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/cover_item_height" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/edit_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:layout_marginBottom="2dp" android:src="@drawable/bookshelf_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <TextView android:ellipsize="end" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvTitle" android:background="@drawable/gradient_black_bg_xml" android:padding="7dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:lineSpacingExtra="3dp" style="@style/text_main_page_item"/>
+    </RelativeLayout>
+</FrameLayout>

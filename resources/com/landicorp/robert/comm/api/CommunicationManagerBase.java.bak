@@ -1,0 +1,200 @@
+
+
+package com.landicorp.robert.comm.api;
+
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+
+import com.landicorp.robert.comm.adapter.*;
+import com.landicorp.robert.comm.api.AudioJackManager;
+import com.landicorp.robert.comm.control.ICommDebug;
+import com.landicorp.robert.comm.control.Logger;
+import com.landicorp.liu.comm.api.BluetoothManager;
+import com.landicorp.liu.comm.api.DownloadCallback;
+import com.landicorp.liu.comm.api.DownloadCallback;
+
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.media.AudioManager;
+import android.os.ConditionVariable;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Looper;
+import android.util.Log;
+/**
+ * @author huanggq
+ *
+ */
+public abstract class CommunicationManagerBase {
+	private static final String DEBUG_TAG = "CommunicationManagerBase";
+	private static final String libVersion = "V2.2.17.0512";//主、次、修订、build,build用月日
+	private static DeviceSearchListener sDeviceSearchListener = null;
+	private static Context 				sSearchDeviceContext = null;
+	
+	public enum CommunicationMode  {
+		MODE_MASTERSLAVE,				// 主从模式
+		MODE_DUPLEX,					// 双工模式
+	}
+	
+	public enum DeviceCommunicationChannel {
+		AUDIOJACK,
+		BLUETOOTH,
+	}
+	
+	public static CommunicationManagerBase getInstance(DeviceCommunicationChannel channel,Context ctx){
+		Log.i(DEBUG_TAG,"landi android SDK version="+libVersion);
+		if(channel == DeviceCommunicationChannel.AUDIOJACK){
+			return AudioJackManager.getInstance(ctx);
+		}else{
+			return BluetoothManager.getInstance(ctx);
+		}
+	}
+	
+	public static CommunicationManagerBase getInstance(DeviceCommunicationChannel channel){
+		if(channel == DeviceCommunicationChannel.AUDIOJACK){
+			return AudioJackManager.getInstance();
+		}else{
+			return BluetoothManager.getInstance();
+		}
+	}
+	
+	public interface DeviceSearchListener {
+		void discoverOneDevice(DeviceInfo devInfo);
+		void discoverComplete();
+	}
+	
+	/*
+	 * 返回值：
+	 * 	0 -- 成功
+	 * 	-1 -- 不支持蓝牙功能
+	 * 	-2 -- 打开蓝牙失败
+	 * 	-3 -- startDiscovery()失败
+	 * */
+	public synchronized static int searchDevices(DeviceSearchListener dsl,
+			boolean detectAudioDevice, boolean detectBluetoothDevice,long timeout,
+			Context ctx) {
+		Log.e(DEBUG_TAG, "searchDevices...");
+		sSearchDeviceContext = ctx;
+		sDeviceSearchListener = dsl;
+		if (detectAudioDevice != false) {
+			Log.e(DEBUG_TAG, "search audioDevices...");
+			AudioManager am = (AudioManager) sSearchDeviceContext.getSystemService(Context.AUDIO_SERVICE);
+			Log.e(DEBUG_TAG, "isWiredHeadsetOn:" + am.isWiredHeadsetOn());
+			if (am.isWiredHeadsetOn()) {
+				DeviceInfo devInfo = new DeviceInfo();
+				devInfo.setDevChannel(DeviceCommunicationChannel.AUDIOJACK);
+				devInfo.setName(null);
+				devInfo.setIdentifier(null);
+				sDeviceSearchListener.discoverOneDevice(devInfo);
+			}
+		}
+		if (detectBluetoothDevice != false) {
+			Log.e(DEBUG_TAG, "search bluetoothDevices...");
+			int ret = 0;
+			BluetoothManager bm = BluetoothManager.getInstance(ctx);
+			if((ret = bm.startDiscovery(dsl, timeout, ctx)) != 0){
+				return ret;
+			}
+		}else{
+			sDeviceSearchListener.discoverComplete();
+		}
+		
+		return 0;
+	}
+	
+	public synchronized static void stopSearchDevices(){
+		BluetoothManager bm = BluetoothManager.getInstance();
+		if(bm==null){
+			Log.e(DEBUG_TAG, "stopSearchDevices--bm==null,you not start search before stopSearch");
+		}else{
+			bm.stopDiscovery();
+		}
+		
+	}
+   
+	public static String getLibVersion() {
+		return libVersion;
+	}
+	
+	public int printer(String devAddr,byte[] message){
+		
+		if(!BluetoothAdapter.checkBluetoothAddress(devAddr)){
+			Log.e(DEBUG_TAG,"bluetooth device is not legal,"+devAddr);
+			return -1;
+		}
+		if (!BluetoothAdapter.getDefaultAdapter().isEnabled()) {
+			
+			if(!BluetoothAdapter.getDefaultAdapter().enable()){
+				
+				return -2;
+			}
+		}
+	
+		BluetoothDevice btDev = BluetoothAdapter.getDefaultAdapter().getRemoteDevice(devAddr);
+		int i=0;
+		do{
+			try {
+				BluetoothAdapter.getDefaultAdapter().cancelDiscovery();
+				BluetoothSocket tmp = btDev.createRfcommSocketToServiceRecord(UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"));
+				tmp.connect();
+				byte[] x = new byte[message.length + 1];
+				System.arraycopy(message, 0, x, 0, message.length);
+				x[message.length] = (byte) 0X0A;
+				tmp.getOutputStream().write(x);
+				tmp.getOutputStream().flush();
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				tmp.close();
+				return 0;
+			} catch (IOException e) {
+				Log.e(DEBUG_TAG, "Error" + e.toString() + "\n" + "REPEAT");
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e1) {
+					e1.printStackTrace();
+				}
+				++i;
+			}
+		}while(i<3);
+		return -1;
+	}
+	// 默认仅支持主从模式
+	public abstract int openDevice(String identifiers);
+	public abstract int openDevcie(String identifier, CommParameter param);
+	public abstract int openDeviceWithSetpin(String identifier, String pinCode, CommunicationCallBack cb);
+	public abstract int openDeviceWithSetpin(String identifier, String pinCode, CommunicationCallBack cb, CommunicationMode mode);
+	public abstract int exchangeData(List<Byte> data,long timeout,CommunicationCallBack cb);
+	// 默认双工模式
+	public abstract int openDevice(String identifier, CommunicationCallBack cb);
+	// 支持指定主从/双工模式
+	public abstract int openDevice(String identifier, CommunicationCallBack cb, CommunicationMode mode);
+	public abstract int exchangeData(List<Byte> data,long timeout);
+	// 其他
+	public abstract int cancelExchange();
+	public abstract void closeDevice();
+	public abstract void closeResource();
+	// 参数识别
+	public abstract boolean calibrateCommParameter(String identifiers,CalibrateParamCallback cpcb);
+	public abstract void stopCalibrate();
+	// 连接状态
+	public abstract boolean isConnected();
+	// 日志控制接口
+	public static ICommDebug getLogCtrl(){
+		return Logger.shareInstance();
+	}
+	public abstract void downLoad(String path, DownloadCallback dlCB);
+	public abstract void breakOpenProcess();
+}
+

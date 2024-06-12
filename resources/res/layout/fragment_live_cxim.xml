@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.live.LiveChatView android:id="@+id/live_chat_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <com.fanzhou.refresh.PullToRefreshListView android:id="@+id/live_cxim_list" android:background="#f0f1f2" android:layout_width="match_parent" android:layout_height="match_parent" android:transcriptMode="normal" android:layout_above="@+id/live_chat_view" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llo_player_praise_count" android:background="@drawable/bg_live_praise" android:paddingLeft="20dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginBottom="3dp" android:layout_above="@+id/live_chat_view" android:layout_alignParentRight="true">
+        <ImageView android:background="@drawable/live_online_count" android:layout_width="15dp" android:layout_height="15dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/player_praise_count" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="5dp" android:text="点赞: 0" android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lyt_online_count_player" android:background="@drawable/bg_live_praise" android:paddingLeft="20dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginBottom="10dp" android:layout_above="@+id/llo_player_praise_count" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/live_praise_count"/>
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/player_online_count" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="在线: 0"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lyt_online_count" android:background="@drawable/bg_live_praise" android:paddingLeft="20dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginBottom="3dp" android:layout_above="@+id/live_chat_view" android:layout_alignParentRight="true">
+        <ImageView android:background="@drawable/live_online_count" android:layout_width="15dp" android:layout_height="15dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/online_count" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="5dp" android:text="在线: 0" android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llo_streamer_praise_count" android:background="@drawable/bg_live_praise" android:paddingLeft="20dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginBottom="10dp" android:layout_above="@+id/lyt_online_count" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/live_praise_count"/>
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/streamer_praise_count" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="点赞: 0"/>
+    </LinearLayout>
+</RelativeLayout>

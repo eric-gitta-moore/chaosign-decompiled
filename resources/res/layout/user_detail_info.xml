@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:id="@+id/parent" android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rlBottomBtn" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="75dp" android:layout_alignParentBottom="true">
+        <Button android:gravity="center" android:id="@+id/btnBan" android:background="@drawable/btn_blue_bg" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/account_freeze" android:layout_weight="1" style="@style/Text_White_16"/>
+        <Button android:gravity="center" android:id="@+id/btnWriteMail" android:background="@drawable/btn_blue_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/write_mail" android:layout_weight="1" style="@style/Text_White_16"/>
+        <Button android:gravity="center" android:id="@+id/btnVoiceChat" android:background="@drawable/btn_blue_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/persioninfo_chat_voice" android:layout_weight="1" style="@style/Text_White_16"/>
+        <Button android:gravity="center" android:id="@+id/btnStartIM" android:background="@drawable/btn_blue_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/start_im" android:layout_weight="1" style="@style/Text_White_16"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/scrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/rlBottomBtn" android:layout_below="@+id/topBar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/InfoLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:paddingLeft="15dp" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/ivAvatar" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" ss:riv_corner_radius="4dp"/>
+                <RelativeLayout android:id="@+id/rlContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/rlRight" android:layout_toRightOf="@+id/ivAvatar" android:layout_centerVertical="true">
+                    <RelativeLayout android:id="@+id/rlName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_centerVertical="true">
+                        <TextView android:ellipsize="end" android:id="@+id/tvRealName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/name_label" android:maxEms="9" android:singleLine="true" android:layout_centerVertical="true" style="@style/Text_Title_15"/>
+                        <ImageView android:id="@+id/ivSex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/male" android:scaleType="fitEnd" android:layout_toRightOf="@+id/tvRealName" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rlInfoOther" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/rlName" android:layout_centerVertical="true">
+                        <com.chaoxing.mobile.resource.flower.StatisUserDataView android:id="@+id/statisDataView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        <LinearLayout android:gravity="center" android:id="@+id/llCertiTag" android:background="@drawable/ic_user_certi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="5dp" android:paddingEnd="5dp">
+                            <TextView android:textSize="10sp" android:textColor="@android:color/white" android:id="@+id/tvCertiTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="3dp" android:drawableStart="@drawable/ic_user_certi_tag"/>
+                        </LinearLayout>
+                        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvUserStateTag" android:background="@drawable/bg_blue_66ccfd" android:padding="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="未激活" android:maxLines="1" android:layout_toRightOf="@+id/statisDataView" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rlRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <Button android:textSize="12sp" android:textColor="@color/user_change_btn" android:id="@+id/btnCommon" android:background="@drawable/bg_circular_corner3_ffcccccc" android:visibility="gone" android:layout_width="60dp" android:layout_height="26dp" android:maxLines="1"/>
+                    <TextView android:textSize="10sp" android:textColor="@color/account_gray" android:id="@+id/tvFocusedTag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/focused_tag" android:layout_below="@+id/btnCommon" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <include android:id="@+id/rlRemark" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="8dp" layout="@layout/user_info_item2"/>
+            <include android:id="@+id/infoRealName" android:visibility="gone" layout="@layout/user_info_item"/>
+            <include android:id="@+id/infoEmail" layout="@layout/user_info_item"/>
+            <include android:id="@+id/infoPhone" layout="@layout/user_info_item"/>
+            <include android:id="@+id/infoDept" android:visibility="gone" layout="@layout/user_info_item"/>
+            <RelativeLayout android:id="@+id/infoDepartment" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_vertical" android:id="@+id/tv_label" android:layout_width="70dp" android:layout_height="50dp" android:layout_centerVertical="true" style="@style/text_user_title"/>
+                <TextView android:textColorHint="@color/text_hint" android:gravity="center_vertical" android:id="@+id/tv_info" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/unadded" android:maxLines="5" android:layout_toRightOf="@+id/tv_label" android:layout_centerVertical="true" style="@style/text_user_content"/>
+            </RelativeLayout>
+            <com.chaoxing.mobile.login.ui.UserUnitView android:id="@+id/vUnit" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <include android:id="@+id/rlHisActives" android:visibility="gone" layout="@layout/user_info_item2"/>
+            <include android:id="@+id/rlReport" layout="@layout/user_info_item2"/>
+            <RelativeLayout android:id="@+id/rlHideHim" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp">
+                <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px"/>
+                <TextView android:gravity="center_vertical" android:id="@+id/tvHideHim" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/person_hidehim_label" style="@style/text_user_title"/>
+                <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbHideHim" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/pbWaiting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+    <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar" layout="@layout/loading_failed_match_parent_img"/>
+    <RelativeLayout android:id="@+id/rllogoutTip" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar">
+        <TextView android:textSize="16sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/persioninfo_logout_tip" android:drawableTop="@drawable/user_logout_tip" android:drawablePadding="20dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

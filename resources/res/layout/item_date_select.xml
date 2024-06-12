@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15sp" android:textColor="@color/color_999999" android:id="@+id/textTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/choose_date"/>
+    <TextView android:textSize="15sp" android:textColor="@color/chaoxingBlue" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/chooseDateTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_right_blue" android:drawablePadding="5dp"/>
+</merge>

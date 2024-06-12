@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/main" android:background="#f5f6f8" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/radius_ffffff_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+                <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="允许学生匿名发帖" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_item_student_post" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="允许学生匿名回复" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_item_student_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置话题回复权限"/>
+                    <CheckBox android:layout_gravity="center" android:id="@+id/cb_teacher" android:background="@drawable/group_type" android:focusable="true" android:clickable="true" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="20dp" android:button="@null"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="教师" android:layout_centerVertical="true"/>
+                    <CheckBox android:layout_gravity="center" android:id="@+id/cb_student" android:background="@drawable/group_type" android:focusable="true" android:clickable="true" android:layout_width="24dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:button="@null"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="本课程学生" android:layout_centerVertical="true"/>
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学生发表话题不允许粘贴" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_limit_student_post_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/relativeLayout_item" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学生回复话题不允许粘贴" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_limit_student_post_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/radius_ffffff_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+                <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发表话题需教师审核后可见" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_limit_student_post_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="讨论列表不显示教师发布的章节讨论" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_blank_topic_teacher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="话题详情只允许学生查看所在班级的回复" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_limit_student_reply_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/radius_ffffff_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+                <RelativeLayout android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:id="@+id/tv_browse_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="浏览模式"/>
+                    <TextView android:textSize="13sp" android:textColor="#999999" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="开启后，班级成员将不能点赞、发表和回复话题" android:layout_below="@+id/tv_browse_mode"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_item_browse_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rlCheckTopic_browseModeTime" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="50dp" android:minHeight="50dp">
+                    <TextView android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pcenter_groupsetting_browseMode_time" android:layout_centerVertical="true" style="@style/group_title_text"/>
+                    <TextView android:textSize="13sp" android:textColor="#b3b3b3" android:layout_gravity="center" android:id="@+id/tv_text_browseMode_time" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/item_teacher_delect_reason" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:id="@+id/tv_teacher_delect_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="教师删除话题需填写原因"/>
+                    <TextView android:textSize="13sp" android:textColor="#999999" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="开启后，学生端显示“被删原因”" android:layout_below="@+id/tv_teacher_delect_reason"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_item_delect_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/item_reason_manager" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="46dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除原因管理" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="13sp" android:textColor="#b3b3b3" android:layout_gravity="center" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+</LinearLayout>

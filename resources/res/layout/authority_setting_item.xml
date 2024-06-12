@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/adaptive_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/top_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="15dp"/>
+    <RelativeLayout android:id="@+id/rl_content" android:paddingTop="16dp" android:paddingRight="15dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@+id/tv_authority" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/switch_button" android:layout_centerVertical="true"/>
+        <com.kyleduo.switchbutton.SwitchButton android:id="@+id/switch_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/subList" android:background="@drawable/authority_sub_shadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@+id/divider2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="10dp"/>
+        <View android:id="@+id/divider3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="15dp"/>
+        <View android:id="@+id/divider1" android:background="@color/color_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+</LinearLayout>

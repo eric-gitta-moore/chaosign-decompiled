@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/ll_container" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="240dp">
+        <RelativeLayout android:id="@+id/rl_bold" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/rl_underline" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="0">
+            <ImageView android:id="@+id/bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_bold" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_underline" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintLeft_toRightOf="@+id/rl_bold" app:layout_constraintRight_toLeftOf="@+id/rl_italic" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/underline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_underline" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_italic" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintLeft_toRightOf="@+id/rl_underline" app:layout_constraintRight_toLeftOf="@+id/rl_line_middleline" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/italic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_italic" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_line_middleline" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintLeft_toRightOf="@+id/rl_italic" app:layout_constraintRight_toLeftOf="@+id/rl_highlighte" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/line_middleline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_line_middleline" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_highlighte" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintLeft_toRightOf="@+id/rl_line_middleline" app:layout_constraintRight_toLeftOf="@+id/rl_checkbox" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/highlighte" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_highlighte" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_checkbox" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintLeft_toRightOf="@+id/rl_highlighte" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_checkbox_select" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.Barrier android:id="@+id/barrier" android:layout_width="match_parent" android:layout_height="wrap_content" app:barrierDirection="3" app:constraint_referenced_ids="rl_bold,rl_underline,rl_italic,rl_line_middleline,rl_highlighte,rl_checkbox"/>
+        <View android:id="@+id/line1" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" app:layout_constraintTop_toTopOf="@+id/barrier"/>
+        <RelativeLayout android:id="@+id/rl_toleft" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/rl_middle" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/toleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_toleft" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_middle" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintLeft_toRightOf="@+id/rl_toleft" app:layout_constraintRight_toLeftOf="@+id/rl_toright" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_middle" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_toright" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintLeft_toRightOf="@+id/rl_middle" app:layout_constraintRight_toLeftOf="@+id/rl_line_toright" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/toright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_toright" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_line_toright" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintLeft_toRightOf="@+id/rl_toright" app:layout_constraintRight_toLeftOf="@+id/rl_line_toleft" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/line_toright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_line_toright" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_line_toleft" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintLeft_toRightOf="@+id/rl_line_toright" app:layout_constraintRight_toLeftOf="@+id/rl_no_order" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/line_toleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_line_toleft" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_no_order" android:layout_width="48dp" android:layout_height="48dp" app:layout_constraintLeft_toRightOf="@+id/rl_line_toleft" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/no_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_no_order" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.Barrier android:id="@+id/barrier2" android:layout_width="match_parent" android:layout_height="wrap_content" app:barrierDirection="3" app:constraint_referenced_ids="rl_toleft,rl_middle,rl_toright,rl_line_toright,rl_line_toleft,rl_no_order"/>
+        <View android:id="@+id/line2" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" app:layout_constraintTop_toTopOf="@+id/barrier2"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_title_font" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintBottom_toBottomOf="@+id/line3" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="@+id/line2">
+            <TextView android:textSize="12sp" android:textColor="#999999" android:layout_gravity="center_vertical" android:id="@+id/tv_label_title_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/note_title_font"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/richtext_font_deliverline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_richtext_deliverline"/>
+            <RelativeLayout android:id="@+id/rl_title_font1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/title_font1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_font_h1" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_title_font2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/title_font2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_font_h2" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_title_font3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/title_font3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_font_h3" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_title_font4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/title_font4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_font_h4" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/richtext_deliverline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_richtext_deliverline"/>
+            <RelativeLayout android:id="@+id/rl_undo" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/undo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_undo" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_redo" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/redo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_note_richtext_redo" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@+id/line3" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" app:layout_constraintBottom_toTopOf="@+id/ll_content_font" app:layout_constraintTop_toBottomOf="@+id/ll_title_font"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_content_font" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintBottom_toBottomOf="@+id/line4" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="@+id/line3">
+            <TextView android:textSize="12sp" android:textColor="#999999" android:layout_gravity="center_vertical" android:id="@+id/tv_label_content_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/note_content_font"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/richtext_content_font_deliverline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_richtext_deliverline"/>
+            <RelativeLayout android:id="@+id/rl_content_font1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="@color/normal_black" android:id="@+id/content_font1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_content_font2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/content_font2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_content_font3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="18sp" android:textColor="@color/normal_black" android:id="@+id/content_font3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_content_font4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="20sp" android:textColor="@color/normal_black" android:id="@+id/content_font4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_content_font5" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="24sp" android:textColor="@color/normal_black" android:id="@+id/content_font5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="24" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@+id/line4" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" app:layout_constraintBottom_toTopOf="@+id/ll_color" app:layout_constraintTop_toTopOf="@+id/ll_content_font"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_color" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/line4">
+            <TextView android:textSize="12sp" android:textColor="#999999" android:layout_gravity="center_vertical" android:id="@+id/tv_label_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/new_note_font_color"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/richtext_color_deliverline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_richtext_deliverline"/>
+            <RelativeLayout android:id="@+id/rl6" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv6" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/new_note_richtext_black" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv1" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/new_note_richtext_red" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv2" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/new_note_richtext_yellow" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv3" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/new_note_richtext_green" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv4" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/new_note_richtext_purple" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl5" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv5" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/new_note_richtext_gray" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

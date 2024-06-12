@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="@dimen/dp_10">
+    <RelativeLayout android:id="@+id/rootView" android:background="@drawable/radius_00000_10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.chaoxing.mobile.conferencesw.view.ZoomView android:id="@+id/zoom" android:background="@drawable/radius_00000_10dp" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/rl_video" android:background="@drawable/radius_5900000_10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_close" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_26" android:layout_marginTop="@dimen/dp_4" android:layout_marginRight="@dimen/dp_4" android:src="@drawable/ic_close_white" android:layout_alignParentRight="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/reader_toolbar_bottom_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/page_turn_mode_tip" style="@style/text_read_pdg_set_title"/>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/rg_page_mode" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/rb_page_mode_book" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/read_radio_btn_bg" android:text="@string/page_mode_txt_book" android:layout_weight="1" style="@style/text_read_pdg"/>
+        <RadioButton android:id="@+id/rb_page_mode_hor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/read_radio_btn_bg" android:text="@string/page_mode_txt_hor" android:layout_weight="1" style="@style/text_read_pdg"/>
+        <RadioButton android:id="@+id/rb_page_mode_ver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/read_radio_btn_bg" android:text="@string/page_mode_txt_ver" android:layout_weight="1" style="@style/text_read_pdg"/>
+    </RadioGroup>
+    <View android:background="#666666" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:text="@string/screen_close_tip" style="@style/text_read_pdg_set_title"/>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/rg_screen_close_mode" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/rb_screen_close_time_sys" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/read_radio_btn_bg" android:text="@string/screen_close_mode_txt_sys" android:layout_weight="1" style="@style/text_read_pdg"/>
+        <RadioButton android:id="@+id/rb_screen_close_time_5m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/read_radio_btn_bg" android:text="@string/screen_close_mode_txt_5m" android:layout_weight="1" style="@style/text_read_pdg"/>
+        <RadioButton android:id="@+id/rb_screen_close_time_10m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/read_radio_btn_bg" android:text="@string/screen_close_mode_txt_10m" android:layout_weight="1" style="@style/text_read_pdg"/>
+        <RadioButton android:id="@+id/rb_screen_close_time_not" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/read_radio_btn_bg" android:text="@string/screen_close_mode_txt_not" android:layout_weight="1" style="@style/text_read_pdg"/>
+    </RadioGroup>
+</LinearLayout>

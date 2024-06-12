@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/epubContainer" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/read_catalog_select_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="#0e6fe7" android:gravity="center" android:id="@+id/tv_read_catalog" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/catalog_window_title"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="@color/epub_black_bg_color" android:gravity="center" android:id="@+id/tv_read_note_list" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/note2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="50dp" app:elevation="0dp" app:tabGravity="0" app:tabIndicatorColor="@color/normal_blue" app:tabMode="1" app:tabSelectedTextColor="#0099ff" app:tabTextColor="#333333"/>
+    <View android:id="@+id/divider" android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <com.chaoxing.widget.GestureViewFlipper android:id="@+id/gvf_read_catalog_lists" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/mulu_viewPager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

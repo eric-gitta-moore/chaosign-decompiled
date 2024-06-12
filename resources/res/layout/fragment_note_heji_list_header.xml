@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_new_heji" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="@color/chaoxing_blue" android:gravity="center_vertical" android:id="@+id/tvAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:text="@string/create_resource" android:drawableLeft="@drawable/icon_add_note_heji" android:drawablePadding="7dp" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/tvOpen" android:layout_below="@+id/toolbar">
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="25dp" android:drawableLeft="@drawable/setting_eye_protect"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tvProtectTip" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:text="@string/setting_eye_protect_tip" android:lineSpacingExtra="1dp"/>
+        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/rlSetTime" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_time_set" android:layout_centerVertical="true"/>
+            <TextView android:id="@+id/tvArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvOpen" android:background="@drawable/btn_blue_normal_xml" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="15dp" android:text="@string/setting_open_eye_protect" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

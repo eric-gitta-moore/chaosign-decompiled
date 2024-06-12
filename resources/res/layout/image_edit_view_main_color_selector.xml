@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingLeft="17dp" android:layout_width="match_parent" android:layout_height="@dimen/image_edit_bottom_tool_paint_height">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="45dp" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/rlWhite" android:layout_width="27dp" android:layout_height="27dp">
+            <View android:background="@drawable/image_edit_shape_range_white_bg" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="45dp" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/rlBlack" android:layout_width="27dp" android:layout_height="27dp">
+            <View android:background="@drawable/image_edit_shape_range_black_bg" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="45dp" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/rlRed" android:background="@drawable/image_edit_shape_range_bg" android:layout_width="27dp" android:layout_height="27dp">
+            <View android:background="@drawable/image_edit_shape_range_red_bg" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="45dp" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/rlYellow" android:layout_width="27dp" android:layout_height="27dp">
+            <View android:background="@drawable/image_edit_shape_range_yellow_bg" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="45dp" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/rlGreen" android:layout_width="27dp" android:layout_height="27dp">
+            <View android:background="@drawable/image_edit_shape_range_green_bg" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="45dp" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/rlBlue" android:layout_width="27dp" android:layout_height="27dp">
+            <View android:background="@drawable/image_edit_shape_range_blue_bg" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="45dp" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/rlPurple" android:layout_width="27dp" android:layout_height="27dp">
+            <View android:background="@drawable/image_edit_shape_range_purple_bg" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="45dp" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/rlPink" android:layout_width="27dp" android:layout_height="27dp">
+            <View android:background="@drawable/image_edit_shape_range_pink_bg" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/wifi_punch_dialog_bg" android:layout_width="280dp" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/punch_card_iv" android:layout_width="148dp" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:src="@drawable/wifi_punch_success_location_icon"/>
+    <TextView android:textSize="61sp" android:textStyle="bold" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/timeTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="10:23"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/punch_in_wifi"/>
+        <TextView android:textSize="16sp" android:textColor="#999999" android:gravity="center" android:id="@+id/punch_card_hint_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/punch_success"/>
+    </LinearLayout>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="30.5dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="16sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/iknowTv" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/wf_i_know"/>
+    </LinearLayout>
+</LinearLayout>

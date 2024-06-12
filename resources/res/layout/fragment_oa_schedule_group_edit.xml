@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top" layout="@layout/conversation_title_bar"/>
+    <ListView android:id="@+id/lv_schedule" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/schedule_group_edit_bottom" android:layout_below="@+id/top"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/schedule_group_edit_bottom" android:padding="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/schedule_group_time_set" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_about_us" android:layout_alignParentLeft="true"/>
+        <ImageView android:id="@+id/schedule_group_delete" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_about_us" android:layout_toRightOf="@+id/schedule_group_time_set"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

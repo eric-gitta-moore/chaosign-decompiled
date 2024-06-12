@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.fanzhou.widget.PullToRefreshListView android:id="@+id/pull_refresh_list" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/List_View_Style"/>
+    <FrameLayout android:id="@+id/loadStateContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

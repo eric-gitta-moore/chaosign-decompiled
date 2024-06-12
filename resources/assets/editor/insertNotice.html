@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+<meta charset="utf-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body onhashchange="hashChangeFire()">
+    <div class="attach-box" id="attach-box"><b class="closeAnnex"></b></div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/attachment_common.js"></script>
+    <script type="text/javascript">
+    	// 附件点击调客户端方法
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        function hashChangeFire(){
+            if(getUrlParam('isiframeClose')){
+                $(".closeAnnex").show();
+            }
+        }
+        function getUrlParam(name){
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.hash.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return r[2]; return null; //返回参数值
+        }
+        //2021.04.22
+        var editorClientType = true;
+        if(getUrlParam('editorClientType')){
+        	if(getUrlParam('editorClientType') == 'false'){
+        		editorClientType = false;
+        	}
+        }
+        var jsonOld = window.name;
+        try{
+            jsonOld = b64DecodeUnicode(jsonOld);
+        }catch(e){
+
+        }
+        try{
+            json = JSON.parse(jsonOld);
+        }catch(e){
+            json = "";
+        }
+        if(json == ""){
+        }
+        var att_notice = json.att_notice || "";
+        if (att_notice != "") {
+        	var noticeLogo;
+        	// if(att_notice.logo){
+        	// 	noticeLogo = att_notice.logo;
+        	// }else{
+        		if(att_notice.sourceType==1000){
+        			noticeLogo="images/znxh.png";
+        		}else if(att_notice.sourceType==4000 || att_notice.sourceType==4001 || att_notice.sourceType==4002){
+        			noticeLogo="images/sp.png";
+        		}else{
+        			noticeLogo="images/tz.png";
+        		}
+        	// }
+            var noticeTitle = att_notice.title || "";
+            var noticeCon = att_notice.content || "";
+            var fromer = att_notice.createrName || "";
+            if(noticeTitle=="" && noticeCon==""){
+            	if(att_notice.imgs && att_notice.imgs.length>0){
+            		noticeTitle="图片";
+            	}else{
+            		noticeTitle="通知";
+            	}
+            }
+            var html = '<div aria-hidden="false" role="option" class="attach_item insertNotice">'+
+                            '<div aria-hidden="true" class="img"><img src="'+noticeLogo+'"></div>'+
+                            '<div class="attach_infor">'+
+                                '<h2>'+noticeTitle+'</h2>'+
+                                '<p class="aside">'+noticeCon+'</p>'+
+                                '<p class="from">发件人:<span class="blue">'+fromer+'</span></p>'+
+                            '</div>'+
+                        '</div>';
+            $(".attach-box").append(html);
+            if(json.cid){
+            	var cid=json.cid;
+            	if(!att_notice.title && noticeCon==""){//标题和正文都没有
+            		$('.attach_infor h2').css('margin-bottom','4px');
+            	}else if(noticeTitle!='' && noticeCon==''){//只有标题
+            		$('.attach_infor h2').css('margin-bottom','0')
+            		$('.attach_infor h2').addClass('words2');
+            	}else if(noticeTitle=='' && noticeCon!=''){//只有正文
+            		$('.attach_infor h2').css('margin-bottom','0')
+            		$('.attach_infor .aside').css({'font-size':'15px','color':'#333333','line-height':'1.23'}).addClass('words2');
+            	}else if(noticeTitle!='' && noticeCon!=''){//标题和正文同时存在
+            		$('.attach_infor .aside').addClass('words2');
+            		$('.attach_infor h2').css('margin-bottom','3px');
+            		$('.attach_infor p.from').css('margin-top','3px');
+            		if($('.attach_infor .aside').height()>$('.attach_infor .aside').css('line-height').substr(0,$('.attach_infor .aside').css('line-height').length-2)){
+                        $('.attach_item').css('height','90px');
+                        if(editorClientType == true){
+			                if (isAndroid && (typeof javaJs !== 'undefined')) {
+				               javaJs.executeParentJs('changeIframeHeight("'+cid+'",90)');
+				            }
+	                        if (isIOS) {
+	                            if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+	                            window.webkit.messageHandlers.executeParentJs.postMessage(['changeIframeHeight("'+cid+'",90)']);
+	                            }else{
+	                    　　　　     if(window.top["executeParentJs"]) {
+	                                    window.top["executeParentJs"]('changeIframeHeight("'+cid+'",90)');
+	                                }
+	                            }
+	                        }
+		                }else{
+		                	//改变高度2021.05
+		                	parent.postMessage({'msgType':'changeIframeHeight','cid': cid,"height":90}, '*');
+		                }
+
+            		}
+            	}
+            }
+        }
+        if(json.cid){
+            var cid=json.cid;
+             //显示附件叉号2021.05
+            attachmentUtils.showiframeClose(cid,editorClientType);
+        }
+        // 附件点击调客户端方法
+        function openClickEvent(e,attachment){
+            attachmentUtils.openClickEvent(e,attachment,json,editorClientType);
+        };
+        //长按附件
+        var touchY = 0;
+        var longClick =0;
+        $(".attach-box").on({
+            touchstart: function(e){
+                longClick=0;
+                timeOutEvent = setTimeout(function(){
+                    //此处为长按事件
+                    longClick=1;//假如长按，则设置为1
+                    if(json.cid){
+                        var cid=json.cid;
+                        if (isAndroid && (typeof javaJs !== 'undefined')) {
+                           javaJs.executeParentJs('zss_editor.iframeForward("'+cid+'")');
+                        }
+                        if (isIOS) {
+                            if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+                            window.webkit.messageHandlers.executeParentJs.postMessage(['zss_editor.iframeForward("'+cid+'")']);
+                            }else{
+                    　　　　     if(window.top["executeParentJs"]) {
+                                    window.top["executeParentJs"]('zss_editor.iframeForward("'+cid+'")');
+                                }
+                            }
+                        }
+                    }
+
+                },500);
+                var touch = e.originalEvent.targetTouches[0];
+                touchY = touch.clientY;
+            },
+            touchmove: function(e){
+                clearTimeout(timeOutEvent);
+                timeOutEvent = 0;
+                var touch = e.originalEvent.changedTouches[0];
+                if(Math.abs(touch.clientY - touchY) < 10){
+                    if(isAndroid){
+                     e.preventDefault();
+                    }
+                }
+            },
+            touchend: function(e){
+                clearTimeout(timeOutEvent);
+                if(timeOutEvent!=0 && self.longClick==0){//点击
+                   //此处为点击事件----在此处跳转
+                   openClickEvent(e,jsonOld)
+                }
+                return false;
+            }
+        });
+        $('.attach-box').bind('contextmenu', function(e) {
+          e.preventDefault();
+        })
+    </script>
+</body>
+</html>

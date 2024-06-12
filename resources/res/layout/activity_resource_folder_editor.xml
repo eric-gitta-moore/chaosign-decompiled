@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ebecee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/name_editor" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <EditText android:textSize="17sp" android:textColor="#333333" android:textColorHint="#9e9e9e" android:id="@+id/et_name" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingTop="20dp" android:paddingRight="63dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/public_hint_input_folder_name" android:singleLine="true" android:maxLength="16"/>
+        <ImageView android:id="@+id/iv_clear" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/clear" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RadioGroup android:id="@+id/rg_public_state" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/name_editor">
+        <RelativeLayout android:id="@+id/public_state" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rb_public" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:button="@drawable/group_type" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tv_title_public" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_SharewithPublic" android:layout_toRightOf="@+id/rb_public"/>
+            <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_AllFriends" android:layout_toRightOf="@+id/rb_public" android:layout_below="@+id/tv_title_public"/>
+        </RelativeLayout>
+        <View android:background="#ebecee" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="49dp"/>
+        <RelativeLayout android:id="@+id/private_state" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rb_private" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:button="@drawable/group_type" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tv_title_private" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_private" android:layout_toRightOf="@+id/rb_private"/>
+            <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_justme" android:layout_toRightOf="@+id/rb_private" android:layout_below="@+id/tv_title_private"/>
+        </RelativeLayout>
+        <View android:background="#ebecee" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="49dp"/>
+        <RelativeLayout android:id="@+id/friends_state" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rb_friends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:button="@drawable/group_type" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tv_title_friends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_SharewithFriends" android:layout_toRightOf="@+id/rb_friends"/>
+            <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_eachother" android:layout_toRightOf="@+id/rb_friends" android:layout_below="@+id/tv_title_friends"/>
+        </RelativeLayout>
+    </RadioGroup>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar" layout="@layout/common_loading_transparent"/>
+</RelativeLayout>

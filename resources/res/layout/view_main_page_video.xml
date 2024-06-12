@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@+id/pb_main_video" android:visibility="visible" android:layout_width="match_parent" android:layout_height="2dp" android:max="100" android:progress="0" android:secondaryProgress="0" android:progressDrawable="@drawable/bg_main_video_progressbar" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+</merge>

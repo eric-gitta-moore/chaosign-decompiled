@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.reader.pdz.widget.BookMenuCatalogView xmlns:android="http://schemas.android.com/apk/res/android" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_read_catalog" android:background="@drawable/lib_reader_pdz_read_corner_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.chaoxing.reader.pdz.widget.BookMenuCatalogView>

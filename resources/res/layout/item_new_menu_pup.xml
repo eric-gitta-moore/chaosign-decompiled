@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlRootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/tvName" android:layout_width="match_parent" android:layout_height="56dp" android:text="内容" style="@style/group_popwindow_text"/>
+    <View android:id="@+id/view_line" android:background="@color/DividerColor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/tvName"/>
+</RelativeLayout>

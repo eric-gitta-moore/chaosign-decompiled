@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/parentView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <com.scwang.smart.refresh.header.CxClassicsHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlDrawableArrow="@drawable/icon_refresh" app:srlDrawableArrowSize="18dp" app:srlDrawableMarginRight="8dp" app:srlDrawableProgressSize="18dp" app:srlEnableLastTime="false" app:srlFinishDuration="100" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="13sp" app:srlTextTimeMarginTop="2dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/clbarLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@+id/appbar" android:background="@color/bg_color_f5f6f8" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/tv_review" android:background="#e676c5f9" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/review_class_chapter"/>
+                    <com.chaoxing.mobile.widget.StiffSearchBar android:id="@+id/search_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="11"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/llBarLayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="3">
+                        <RelativeLayout android:id="@+id/course_image" android:background="@android:color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/iv_logo" android:layout_width="match_parent" android:layout_height="160dp" android:src="@drawable/ic_default_image_bg" android:scaleType="centerCrop"/>
+                            <ImageView android:id="@+id/iv_video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_play" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+                            <RelativeLayout android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                                <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/iv_qa" android:background="@drawable/bg_course_qa" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_qa" android:drawableRight="@drawable/white_arrow_24" android:drawablePadding="6dp"/>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <net.lucode.hackware.magicindicator.MagicIndicator android:layout_gravity="center_horizontal" android:id="@+id/tabs" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="44dp"/>
+                    <View android:id="@+id/tablayout_below_divider" android:background="@color/gray_ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+                </com.google.android.material.appbar.AppBarLayout>
+                <LinearLayout android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                    <com.chaoxing.mobile.widget.ScrollableViewPager android:id="@+id/vp_course" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </LinearLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+            <include android:visibility="gone" layout="@layout/common_loading_transparent"/>
+            <TextView android:textSize="15sp" android:textColor="#000000" android:gravity="center" android:id="@+id/open_course_time" android:background="#f2f2f2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="55dp" android:text="开课时间" android:singleLine="true" android:layout_alignParentBottom="true"/>
+            <include android:visibility="gone" layout="@layout/reload"/>
+        </RelativeLayout>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    <TextView android:gravity="center" android:id="@+id/tv_delete_tip" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="该课程已删除" android:layout_below="@+id/toolbar"/>
+    <com.chaoxing.mobile.course.ui.view.FloatingAIAssistantView android:id="@+id/cl_greeting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_90" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#71360b" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_greeting" android:background="@drawable/ic_ai_greeting_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-18dp" android:layout_marginBottom="-20dp" android:maxWidth="210dp" android:maxLines="12" app:layout_constraintBottom_toTopOf="@+id/iv_ai_assistant" app:layout_constraintRight_toLeftOf="@+id/iv_ai_assistant"/>
+        <ImageView android:id="@+id/iv_ai_assistant" android:layout_width="100dp" android:layout_height="100dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0"/>
+    </com.chaoxing.mobile.course.ui.view.FloatingAIAssistantView>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.5dp" android:layout_marginEnd="16.5dp">
+        <TextView android:textSize="14sp" android:textColor="@color/ds_color_base_black" android:id="@+id/yearTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:id="@+id/dividerIv" android:background="@color/ds_color_divider" android:layout_width="0.5dp" android:layout_height="14dp" android:layout_marginLeft="6.5dp" android:layout_marginRight="6.5dp" android:layout_centerVertical="true" android:layout_toEndOf="@+id/yearTv"/>
+        <TextView android:textSize="14sp" android:textColor="@color/ds_color_base_black" android:id="@+id/dateTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/dividerIv"/>
+        <TextView android:textSize="12sp" android:textColor="#979797" android:id="@+id/chooseTodayTv" android:background="@drawable/ds_bg_calendar_choose_today" android:paddingLeft="8.5dp" android:paddingTop="1.5dp" android:paddingRight="8.5dp" android:paddingBottom="1.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/choose_today" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.5dp" android:layout_marginBottom="6.5dp">
+        <com.necer.view.WeekBar android:textSize="12sp" android:textColor="#ff4d4d4d" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="9dp" android:layout_marginEnd="9dp"/>
+        <com.necer.calendar.EmuiCalendar android:id="@+id/emuiCalendar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginStart="9dp" android:layout_marginEnd="9dp" app:animationDuration="0" app:calendarBackground="@color/white" app:defaultCalendar="100" app:numberBackgroundTextColor="@color/chaoxing_blue" app:showHoliday="true" app:showLunar="true" app:showNumberBackground="true">
+            <androidx.core.widget.NestedScrollView android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </com.necer.calendar.EmuiCalendar>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.5dp" android:layout_marginEnd="16.5dp">
+            <androidx.appcompat.widget.AppCompatTextView android:background="@color/ds_color_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_centerInParent="true"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/calenderModelIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ds_icon_down" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

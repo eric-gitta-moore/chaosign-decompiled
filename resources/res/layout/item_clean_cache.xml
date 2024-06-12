@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="65dp">
+    <CheckBox android:id="@+id/cbCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+    <TextView android:id="@+id/tvItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/cbCheck" android:layout_centerVertical="true" style="@style/text_title_16"/>
+    <TextView android:textSize="13sp" android:textColor="@color/gray_b3b3b3" android:id="@+id/tvCleanRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

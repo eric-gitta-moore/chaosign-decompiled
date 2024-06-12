@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rlRoot" android:background="#7f000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlContent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/vEmpty" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rlTextContent"/>
+        <RelativeLayout android:id="@+id/rlTextContent" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="201dp" android:layout_above="@+id/dividerLine2">
+            <EditText android:textColorHint="#cccccc" android:id="@+id/etTitle" android:background="#00000000" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/topic_title_hint" android:maxLines="3" style="@style/text_lightgray_17"/>
+            <View android:id="@+id/dividerLine" android:background="#99ccff" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/etTitle"/>
+            <com.chaoxing.mobile.group.widget.AtToInBlueEditText android:textSize="16sp" android:textColor="@color/normal_black" android:textColorHint="#cccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/etContent" android:background="#00000000" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp" android:layout_marginBottom="4dp" android:hint="@string/topic_content_hint" android:layout_below="@+id/dividerLine"/>
+        </RelativeLayout>
+        <View android:id="@+id/dividerLine2" android:background="#ffbfbfbf" android:layout_width="match_parent" android:layout_height="1px" android:layout_above="@+id/rlBottom"/>
+        <RelativeLayout android:id="@+id/rlBottom" android:background="#fff9f9f9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@+id/rlToolBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+                <RelativeLayout android:id="@+id/rlChoosePic" android:layout_width="33dp" android:layout_height="33dp" android:layout_marginLeft="24dp" android:layout_centerVertical="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/createtopic_selpic" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="10sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvSelCount" android:background="@drawable/circle_bg_f55925" android:layout_width="16dp" android:layout_height="16dp" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <ImageView android:id="@+id/ivTakePhoto" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/camera_createtopic" android:layout_toRightOf="@+id/rlChoosePic" android:layout_centerVertical="true"/>
+                <com.chaoxing.mobile.group.widget.AtToInBlueEditText android:textSize="14sp" android:textColor="@color/normal_black" android:textColorHint="#cccccc" android:id="@+id/etReplyContent" android:background="@drawable/bg_edittext_circular_bead_white" android:padding="7dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:maxLines="5" android:layout_toLeftOf="@+id/tvSend" android:layout_toRightOf="@+id/rlChoosePic" android:layout_centerVertical="true"/>
+                <TextView android:gravity="center" android:id="@+id/tvSend" android:background="@drawable/bg_circular_bead_ff0099ff" android:layout_width="50dp" android:layout_height="28dp" android:layout_marginRight="12dp" android:text="@string/topic_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+            </RelativeLayout>
+            <View android:id="@+id/dividerLine1" android:background="#ffd9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rlToolBar"/>
+            <FrameLayout android:id="@+id/flPicSel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="248dp" android:layout_below="@+id/dividerLine1">
+                <RelativeLayout android:id="@+id/rlImgGridView" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.chaoxing.mobile.group.widget.MyHorizontalScrollView android:id="@+id/hsvSelectedImage" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="34dp" android:layout_marginRight="28dp">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llSelectedImage" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </com.chaoxing.mobile.group.widget.MyHorizontalScrollView>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/llImgChooseTip" android:background="#fff9f9f9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="105dp" android:layout_marginTop="34dp">
+                        <ImageView android:layout_width="90dp" android:layout_height="90dp" android:src="@drawable/topic_img_add"/>
+                    </LinearLayout>
+                    <TextView android:textSize="12sp" android:textColor="#87888c" android:id="@+id/tvSelCountTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_below="@+id/hsvSelectedImage" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="12sp" android:textColor="#87888c" android:id="@+id/tvCanSelTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="还可以上传图片" android:layout_below="@+id/tvSelCountTip" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <FrameLayout android:id="@+id/flAttachment" android:background="@android:color/white" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.chaoxing.mobile.group.ViewAttachment android:id="@+id/viewAttachment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </FrameLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@+id/loading_view" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

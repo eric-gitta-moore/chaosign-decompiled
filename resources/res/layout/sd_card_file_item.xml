@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp">
+        <RelativeLayout android:id="@+id/rl_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/folder_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true"/>
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/icon_file" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_resource_default" android:scaleType="fitCenter" android:layout_centerVertical="true" app:riv_corner_radius="4dp" app:riv_mutate_background="true" app:riv_oval="false"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/tv_name" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="2" android:layout_toLeftOf="@+id/rl_right" android:layout_toRightOf="@+id/rl_icon" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.2"/>
+        <RelativeLayout android:id="@+id/rl_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui_10_dip" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:id="@+id/tv_right_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow"/>
+            <CheckBox android:id="@+id/cb_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableLeft="@drawable/checkbox_group_member"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="66dp"/>
+</LinearLayout>

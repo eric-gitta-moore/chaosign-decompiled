@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/富文本/右缩紧1.2蓝</title>
+    <g id="icon/富文本/右缩紧1.2蓝" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组" transform="translate(2.000000, 2.000000)">
+            <rect id="矩形-copy" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+            <g id="Group" transform="translate(7.000000, 7.000000) scale(-1, 1) translate(-7.000000, -7.000000) translate(0.000000, 1.000000)" fill="#3A8BFF">
+                <rect id="矩形" fill-rule="nonzero" x="0.5" y="0.4" width="13" height="1.2" rx="0.6"></rect>
+                <rect id="矩形-copy-5" fill-rule="nonzero" x="0.5" y="5.4" width="4.5" height="1.2" rx="0.6"></rect>
+                <rect id="矩形-copy-6" fill-rule="nonzero" x="7.5" y="5.4" width="6" height="1.2" rx="0.6"></rect>
+                <rect id="矩形-copy-7" fill-rule="nonzero" x="0.5" y="10.4" width="13" height="1.2" rx="0.6"></rect>
+                <path d="M9.62487373,4.25487373 C9.95624458,4.25487373 10.2248737,4.52350288 10.2248737,4.85487373 C10.2248737,5.18624458 9.95624458,5.45487373 9.62487373,5.45487373 L7.92387373,5.45487373 L7.92487373,7.25487373 C7.92487373,7.53101611 7.70101611,7.75487373 7.42487373,7.75487373 L7.22487373,7.75487373 C6.94873136,7.75487373 6.72487373,7.53101611 6.72487373,7.25487373 L6.72487373,4.75487373 C6.72487373,4.47873136 6.94873136,4.25487373 7.22487373,4.25487373 L9.62487373,4.25487373 Z" id="Combined-Shape" transform="translate(8.474874, 6.004874) rotate(-45.000000) translate(-8.474874, -6.004874) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

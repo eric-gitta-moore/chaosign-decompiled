@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/channelLayout" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+    <ImageView android:id="@+id/ivRssChannelLogo" android:background="@drawable/default_cover_bg" android:layout_width="107dp" android:layout_height="66dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llRssChannel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/rlRssChannelAdd" android:layout_toRightOf="@+id/ivRssChannelLogo" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:id="@+id/tvRssChannelName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Text_Title"/>
+        <TextView android:id="@+id/tvVideoOwner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true" style="@style/Text_Content_14"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rlRssChannelAdd" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:id="@+id/tvRssChannelAdded" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/added" android:layout_centerVertical="true" style="@style/Text_Content_14"/>
+        <ImageButton android:id="@+id/ibtnRssChannelAdd" android:background="@android:color/transparent" android:paddingLeft="30dp" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="66dp" android:src="@drawable/channel_btn_add" android:scaleType="centerInside" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

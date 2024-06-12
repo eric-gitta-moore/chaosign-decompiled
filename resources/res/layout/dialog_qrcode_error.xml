@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_17" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/dialog_title" android:background="@drawable/bg_dialog_top" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/connect_failed_title"/>
+    <View android:id="@+id/line_1" android:background="@color/abc_input_method_navigation_guard" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/dialog_title"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_device_list" android:layout_width="match_parent" android:layout_height="190dp" android:layout_below="@+id/line_1">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/bright_foreground_material_light" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_hint" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/check_ap_status"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/color_connecting_tips" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_url" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/connect_failed_info"/>
+    </LinearLayout>
+    <View android:id="@+id/line_2" android:background="@color/bg_window_out_of_range_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/layout_device_list"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/line_2">
+        <TextView android:textSize="17dp" android:textColor="@color/text_devices" android:gravity="center" android:id="@+id/dialog_ok" android:background="@drawable/btn_dialog_selector_right" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginLeft="-1.2dp" android:text="@string/confirm" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

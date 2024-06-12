@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_header" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="15dp" android:textColor="#9d9fa5" android:ellipsize="end" android:id="@+id/tv_divider_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="常用" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14sp" android:textColor="#999999" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_divider_center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/common_click_and_sort" android:singleLine="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

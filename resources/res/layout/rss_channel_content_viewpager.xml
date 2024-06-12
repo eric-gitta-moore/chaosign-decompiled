@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.widget.HackyViewPager android:id="@+id/vpReadContent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/rlWait" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/pbRssReadWait" layout="@layout/wait_circle_bar_with_text"/>
+    </RelativeLayout>
+</RelativeLayout>

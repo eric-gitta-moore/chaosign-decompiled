@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/item_time" android:background="@drawable/bg_group_chatroom_time_item" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp"/>
+    <TextView android:id="@+id/item_tv_content" android:background="@drawable/bg_group_chatroom_text_item" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:lineSpacingMultiplier="1.2"/>
+</LinearLayout>

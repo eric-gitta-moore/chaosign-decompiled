@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.reader.pdz.widget.BookMenuMarkView xmlns:android="http://schemas.android.com/apk/res/android" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_book_mark" android:background="@drawable/lib_reader_pdz_read_corner_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_book_mark_empty" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_reader_pdz_bookmark_empty" android:layout_centerInParent="true"/>
+        <TextView android:textColor="#adb1b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="暂无书签"/>
+    </LinearLayout>
+</com.chaoxing.reader.pdz.widget.BookMenuMarkView>

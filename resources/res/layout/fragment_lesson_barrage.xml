@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView android:gravity="bottom" android:id="@+id/scrollView" android:focusable="false" android:scrollbars="none" android:clickable="false" android:layout_width="wrap_content" android:layout_height="200dp" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:layout_above="@+id/rl_footer">
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/ll_message" android:visibility="gone" android:layout_width="260dp" android:layout_height="200dp"/>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:id="@+id/rl_footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_input" android:background="@drawable/radius_b325282e_radius5" android:layout_width="wrap_content" android:layout_height="@dimen/dp_34" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_input_content" android:layout_width="wrap_content" android:layout_height="@dimen/dp_34">
+                <ImageView android:id="@+id/iv_emoji" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_margin="@dimen/dp_5" android:src="@drawable/ic_lesson_chat_emoji"/>
+                <View android:background="@color/color_1affffff" android:layout_width="@dimen/sp_1" android:layout_height="@dimen/dp_18"/>
+                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_bfffffff" android:gravity="center" android:id="@+id/tv_input" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:layout_marginLeft="@dimen/dp_8" android:layout_marginRight="@dimen/dp_8" android:text="@string/course_online_say_something"/>
+                <View android:background="@color/color_1affffff" android:layout_width="@dimen/sp_1" android:layout_height="@dimen/dp_18"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_check_input" android:padding="@dimen/dp_3" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginLeft="@dimen/dp_8" android:layout_marginRight="@dimen/dp_8" android:src="@drawable/arrow_left"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rl_input" android:background="@color/color_f225282e" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_66">
+            <ImageView android:id="@+id/iv_emoji1" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_6" android:src="@drawable/ic_lesson_chat_emoji"/>
+            <EditText android:textSize="@dimen/sp_13" android:textColor="@color/white" android:textColorHint="@color/color_4dffffff" android:id="@+id/et_input" android:background="@drawable/radius_1affffff_radius5" android:padding="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:maxHeight="100dp" android:minHeight="@dimen/dp_36" android:hint="@string/course_online_say_something" android:layout_toLeftOf="@+id/tv_send" android:layout_toRightOf="@+id/iv_emoji1" android:imeOptions="flagNoExtractUi"/>
+            <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_bfffffff" android:gravity="center" android:id="@+id/tv_send" android:background="@drawable/bg_btn_5dp_0099ff" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_30" android:text="@string/send" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/emoji_view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="260dp" android:layout_marginBottom="-30dp" android:layout_below="@+id/rl_input"/>
+    </RelativeLayout>
+</RelativeLayout>

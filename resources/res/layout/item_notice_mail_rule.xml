@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64dp">
+        <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon" android:clickable="false" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:contentDescription="@null" android:layout_marginStart="15dp" android:layout_marginEnd="10dp" ss:border_color="#999d9e" ss:is_circle="false" ss:x_radius="4dp" ss:y_radius="4dp"/>
+        <TextView android:textSize="18sp" android:textColor="@color/color_333333" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_notice_delete_rule" android:contentDescription="@null" android:layout_marginStart="10dp" android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+    <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="65dp"/>
+</LinearLayout>

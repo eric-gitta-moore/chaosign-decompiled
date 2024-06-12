@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp">
+    <com.chaoxing.mobile.coverFlow.FancyCoverFlow android:gravity="center_vertical" android:id="@+id/fancyCoverFlow" android:background="#e6e9ed" android:layout_width="match_parent" android:layout_height="180dp"/>
+</RelativeLayout>

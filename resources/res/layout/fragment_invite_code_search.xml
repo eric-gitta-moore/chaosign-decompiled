@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.study.home.invitecode.search.InviteCodeSearchBar android:id="@+id/view_search_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/view_search_header">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_invite" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="暂无搜索结果" android:maxLines="2"/>
+    </RelativeLayout>
+    <include layout="@layout/common_loading_transparent"/>
+</RelativeLayout>

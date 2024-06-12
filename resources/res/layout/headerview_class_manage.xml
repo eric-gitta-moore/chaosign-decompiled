@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_class_name" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="#333" android:ellipsize="end" android:id="@+id/tv_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/class_name" android:maxLines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/gray_b3b3b3" android:ellipsize="end" android:gravity="right" android:id="@+id/tv_class_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginRight="15dp" android:maxLines="1" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="8dp" android:layout_toRightOf="@+id/tv_class" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/rlTopContainer" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="#333" android:ellipsize="end" android:id="@+id/tvTopClassName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="5dp" android:maxLines="1" android:layout_toLeftOf="@+id/tvClassQrcode" android:layout_centerVertical="true"/>
+        <TextView android:textColor="@color/gray_b3b3b3" android:id="@+id/tvClassQrcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9dp" android:text="dafsdaf" android:drawableRight="@drawable/icon_class_mamager_qrcode" android:drawablePadding="7dp" android:layout_toLeftOf="@+id/ivTopFlow" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/ivTopFlow" android:background="@drawable/ic_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlSetting" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/class_manager_class_info" android:layout_centerVertical="true"/>
+        <ImageView android:background="@drawable/ic_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlGroupManage" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/class_group_manage" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/ivRightArrow" android:background="@drawable/ic_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlChat" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/class_on_key_chat" android:drawableRight="@drawable/ic_group_info_right_arrow" android:layout_centerVertical="true"/>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlAddMember" android:layout_width="match_parent" android:layout_height="50dp" android:minHeight="50dp">
+        <TextView android:textSize="16sp" android:textColor="#333" android:id="@+id/tv_add_member" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/class_manager_add_student" android:layout_centerVertical="true"/>
+        <ImageView android:background="@drawable/ic_group_invite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/ivDeliver" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

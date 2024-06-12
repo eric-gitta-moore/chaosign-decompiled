@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/rl_class_name" android:background="@color/white" android:layout_width="match_parent" android:layout_height="65dp" android:layout_below="@+id/topBar">
+        <ImageView android:id="@+id/iv_delete" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <EditText android:textSize="15sp" android:textColorHint="#cccccc" android:id="@+id/et_class_name" android:background="@color/white" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="15dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/course_edit_name_hint_text" android:layout_toLeftOf="@+id/iv_delete" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#0099ff" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_connect_class_space" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="30dp" android:singleLine="true" android:layout_below="@+id/rl_class_name"/>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar" layout="@layout/common_loading_transparent"/>
+</RelativeLayout>

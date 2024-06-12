@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ll_edit_layout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_video_header" android:background="@drawable/video_note_top_bar_bg" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:gravity="center" android:id="@+id/tv_tick" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/editor_tick" android:layout_weight="1"/>
+            <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:gravity="center" android:id="@+id/tv_capture" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/editor_capture" android:layout_weight="1"/>
+            <RelativeLayout android:id="@+id/rl_save" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:textColor="@color/color_550099ff" android:gravity="center" android:id="@+id/tv_save" android:background="@drawable/bg_btn_video_save_80bfff" android:layout_width="68dp" android:layout_height="26dp" android:text="@string/editor_save" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/fl_editor" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvUploading" android:background="@drawable/loading_bg" android:paddingLeft="30dp" android:paddingTop="16dp" android:paddingRight="30dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录音上传中....." android:layout_centerInParent="true"/>
+    <include android:id="@+id/loading_view" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+    <RelativeLayout android:id="@+id/rlcover" android:background="@color/mainpage_backgroud_color" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_top" android:background="@drawable/ic_create_note_top" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="78dp" android:layout_marginRight="78dp" android:layout_centerHorizontal="true">
+            <TextView android:textSize="13sp" android:textColor="#ff000000" android:ellipsize="middle" android:gravity="center" android:id="@+id/tvTitle3" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true"/>
+            <TextView android:textSize="17sp" android:textColor="#ff333333" android:ellipsize="middle" android:gravity="center" android:id="@+id/tvTitle4" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/ivShowCover" android:background="@drawable/ic_create_note_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ll_top"/>
+    </RelativeLayout>
+</RelativeLayout>

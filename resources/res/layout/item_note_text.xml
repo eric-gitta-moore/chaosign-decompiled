@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="17sp" android:textColor="#333333" android:id="@+id/tv_item" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.35"/>
+    <com.chaoxing.mobile.note.widget.ContentEditText android:textSize="17sp" android:textColor="#333333" android:gravity="top" android:id="@+id/et_item" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.35"/>
+</RelativeLayout>

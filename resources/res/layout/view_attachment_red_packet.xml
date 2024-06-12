@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vRoot" android:background="@drawable/bg_red_packet_card" android:paddingLeft="16dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="74dp">
+        <ImageView android:id="@+id/ivImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@drawable/icon_red_packet" android:scaleType="fitXY"/>
+        <LinearLayout android:orientation="vertical" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/attachment_title" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="红包" android:maxLines="1"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="恭喜发财" android:maxLines="2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_remove" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_att_delete_white" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+    <View android:id="@+id/vMask" android:background="@drawable/bg_red_packet_card_mask" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/vRoot" android:layout_alignTop="@+id/vRoot" android:layout_alignRight="@+id/vRoot" android:layout_alignBottom="@+id/vRoot"/>
+</RelativeLayout>

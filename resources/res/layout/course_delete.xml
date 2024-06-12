@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_delete" android:background="@drawable/shape_course_delete_backgroud" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="30dp" android:layout_marginRight="15dp" android:text="@string/common_delete"/>
+    <TextView android:textSize="14sp" android:textColor="#b3b3b3" android:gravity="center" android:id="@+id/bottom" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/down_pc" android:layout_alignParentBottom="true"/>
+</LinearLayout>

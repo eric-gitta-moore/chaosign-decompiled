@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-81dp">
+        <RelativeLayout android:id="@+id/viewFront" android:background="@drawable/selector_list_item" android:paddingTop="6dp" android:paddingBottom="6dp" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <FrameLayout android:id="@+id/fl_imageView" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="8dp" android:layout_marginTop="6dp" android:layout_marginRight="8dp" android:layout_marginBottom="6dp">
+                <com.chaoxing.mobile.group.widget.GroupHead android:layout_gravity="center" android:id="@+id/iv_icon" android:layout_width="50dp" android:layout_height="50dp"/>
+                <ImageView android:layout_gravity="center" android:background="@drawable/bg_conversation_head_round" android:layout_width="50dp" android:layout_height="50dp"/>
+            </FrameLayout>
+            <com.chaoxing.mobile.chat.widget.RedCircleTipView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_unread_count" android:background="@null" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="-8dp" android:layout_marginRight="-8dp" android:text="0" android:layout_alignTop="@+id/fl_imageView" android:layout_alignRight="@+id/fl_imageView"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_toRightOf="@+id/fl_imageView">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/rl_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_weight="1">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_name" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Medium Text" android:singleLine="true" android:layout_alignParentLeft="true"/>
+                            <com.chaoxing.mobile.resource.flower.StatisUserDataView android:id="@+id/userFlower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vgOrganization" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/ll_name">
+                            <TextView android:textSize="14sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvOrganization" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true"/>
+                            <TextView android:textSize="12sp" android:textColor="#ff999999" android:id="@+id/tvTime" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="Small Text" android:singleLine="true"/>
+                        </LinearLayout>
+                        <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tvTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="验证消息：" android:singleLine="true" android:layout_below="@+id/vgOrganization"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_btns" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <LinearLayout android:gravity="bottom" android:id="@+id/vg_refuse" android:layout_width="62dp" android:layout_height="match_parent">
+                            <Button android:textSize="14sp" android:textColor="#999999" android:id="@+id/btn_refuse" android:background="@drawable/border_validate_btn" android:clickable="false" android:layout_width="50dp" android:layout_height="34dp" android:text="拒绝"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="bottom" android:id="@+id/vg_accept" android:layout_width="62dp" android:layout_height="match_parent">
+                            <Button android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/btn_accept" android:background="@drawable/border_validate_btn" android:clickable="false" android:layout_width="50dp" android:layout_height="34dp" android:layout_marginRight="6dp" android:text="同意"/>
+                        </LinearLayout>
+                        <TextView android:textSize="14sp" android:textColor="#cccccc" android:layout_gravity="bottom" android:id="@+id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_marginBottom="6dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我是..." android:maxLines="2" android:layout_below="@+id/rl_title" android:layout_alignLeft="@+id/rl_title"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="#ffcc0000" android:layout_width="80dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="删除"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_video_test" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rv_footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="47dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16sp" android:textColor="@color/bg_green" android:gravity="center" android:id="@+id/btn_check_answer" android:background="@drawable/green_button" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/check_answer" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/bg_green" android:gravity="center" android:id="@+id/btn_next" android:background="@drawable/green_button" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/check_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/bg_green" android:id="@+id/tv_answer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="100dp" android:text="@string/tv_right_answer" android:drawableLeft="@drawable/right_answer" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_test" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rv_footer" android:layout_below="@+id/toolbar"/>
+        <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

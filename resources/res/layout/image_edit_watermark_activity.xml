@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.chaoxing.imageeditlibrary.editimage.view.PinchImageView android:id="@+id/iv_source" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.chaoxing.imageeditlibrary.watermark.ui.sticker.WatermarkStickerView android:id="@+id/sticker_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <com.chaoxing.imageeditlibrary.watermark.ui.view.WatermarkPanel android:id="@+id/panel_bottom" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <android.support.v7.widget.AppCompatImageView android:id="@+id/iv_sticker_preview" android:background="@color/image_edit_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:layout_below="@+id/toolbar"/>
+    <include layout="@layout/image_edit_watermark_view_loading"/>
+</RelativeLayout>

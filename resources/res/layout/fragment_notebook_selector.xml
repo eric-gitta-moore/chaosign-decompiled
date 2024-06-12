@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewToolbar" layout="@layout/common_title_bar_3"/>
+    <TextView android:textSize="16sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tvTip" android:background="#eeeeee" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36dp" android:text="@string/comment_folder_select_tip" android:layout_below="@+id/viewToolbar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tvTip">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvNoteBook" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#d9d9d9" android:dividerHeight="1px" android:headerDividersEnabled="false" android:footerDividersEnabled="true"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent_white"/>
+        <include android:id="@+id/viewLoading2" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+        <TextView android:textSize="16sp" android:textColor="#66333333" android:gravity="center" android:id="@+id/tvNoDataTip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_note_failed_match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

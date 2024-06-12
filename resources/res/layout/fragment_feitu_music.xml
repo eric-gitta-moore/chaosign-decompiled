@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:text="选择音乐推流"/>
+    <ListView android:id="@+id/music_listview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_below="@+id/title"/>
+    <RelativeLayout android:id="@+id/music_bottom_ctl_layout" android:background="#e4e4e4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="72dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/music_bottom_next_img" android:background="@drawable/music_bottom_next_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/music_bottom_play_stop_img" android:background="@drawable/music_bottom_play_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_toLeftOf="@+id/music_bottom_next_img" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/title_bar_bg" android:ellipsize="end" android:id="@+id/music_name_focus_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginTop="12dp" android:layout_marginRight="10dp" android:text="" android:maxLines="1" android:layout_toLeftOf="@+id/music_bottom_play_stop_img" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/title_bar_bg" android:id="@+id/music_artist_focus_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginTop="6dp" android:text="" android:layout_below="@+id/music_name_focus_text"/>
+    </RelativeLayout>
+</RelativeLayout>

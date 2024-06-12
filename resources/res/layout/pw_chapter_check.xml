@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/exam_parent" android:background="#70000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/verify" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16dp" android:textColor="#333333" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="16dp" android:layout_marginRight="28dp" android:text="若您已完成任务点，但系统未正常解锁，为了不影响您的学习进度，请输入验证码进行解锁"/>
+        <EditText android:textSize="16sp" android:id="@+id/verify_code" android:background="@drawable/blue_border_corner" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="28dp" android:layout_marginTop="12dp" android:layout_marginRight="28dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="12dp" android:layout_marginRight="28dp">
+            <ImageView android:id="@+id/iv_verify" android:background="@drawable/gray_border_corner" android:layout_width="100dp" android:layout_height="40dp" android:scaleType="fitCenter"/>
+            <TextView android:textSize="11sp" android:textColor="#666666" android:gravity="center" android:id="@+id/tv_tip" android:background="@drawable/gray_border_corner" android:visibility="gone" android:layout_width="100dp" android:layout_height="40dp"/>
+            <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center_vertical" android:id="@+id/tv_refresh" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="换一个"/>
+            <TextView android:textSize="16sp" android:textColor="#ff0000" android:gravity="center_vertical" android:id="@+id/verify_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/check" android:background="#0299ff" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="12dp" android:layout_marginRight="28dp" android:text="确定"/>
+        <TextView android:textSize="11sp" android:textColor="#666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="12dp" android:layout_marginRight="28dp" android:layout_marginBottom="16dp" android:text="若您未完成任务点，即使临时解锁，也不会计入成绩，您需要继续学习完成该任务点"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/dismissVerify" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/verify"/>
+</RelativeLayout>

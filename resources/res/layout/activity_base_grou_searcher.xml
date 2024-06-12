@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/btn_left" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginRight="-11dp" android:minWidth="0dp" android:minHeight="0dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/group_search_input_bg" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_toLeftOf="@+id/btn_right" android:layout_toRightOf="@+id/btn_left" android:layout_centerVertical="true">
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="8dp" android:src="@drawable/iv_search_bg"/>
+            <EditText android:textSize="14sp" android:textColor="#333333" android:textColorHint="#b3b3b3" android:id="@+id/et_keyword" android:background="@android:color/transparent" android:paddingLeft="0dp" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginLeft="5dp" android:hint="@string/comment_serarch" android:layout_weight="1" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch"/>
+            <ImageView android:id="@+id/iv_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/clear" android:layout_weight="0"/>
+        </LinearLayout>
+        <Button android:textSize="15sp" android:textColor="#333333" android:id="@+id/btn_right" android:background="@android:color/transparent" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="-11dp" android:layout_marginRight="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:id="@+id/container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_option_content" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/gray_b3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginBottom="10dp" android:text="搜索指定内容"/>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginTop="25dp" android:layout_marginRight="60dp" android:layout_marginBottom="25dp">
+            <TextView android:textSize="16sp" android:textColor="@color/blue_0099ff" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="wrap_content" android:text="姓名" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="标题" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:textColor="@color/blue_0099ff" android:gravity="right" android:id="@+id/tv_content" android:layout_width="0dp" android:layout_height="wrap_content" android:text="正文" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

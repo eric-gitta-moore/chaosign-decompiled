@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/viewToolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:textSize="16sp" android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <EditText android:textSize="14sp" android:textColor="#ff666666" android:textColorHint="#ffcccccc" android:gravity="center_vertical" android:id="@+id/etSearch" android:background="@drawable/group_search_input_bg" android:padding="6dp" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:hint="@string/comment_serarch" android:singleLine="true" android:drawableLeft="@drawable/iv_search_bg" android:drawablePadding="6dp" android:layout_toLeftOf="@+id/btnRight" android:layout_toRightOf="@+id/btnLeft" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch"/>
+        <Button android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/btnRight" android:background="@android:color/transparent" android:paddingRight="12dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="48dp" android:text="取消" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ViewFlipper android:id="@+id/vfSearch" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewToolbar">
+        <FrameLayout android:id="@+id/flSearchKeyword" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/flSearchContent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ViewFlipper>
+</RelativeLayout>

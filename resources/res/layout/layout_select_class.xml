@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topBar" layout="@layout/common_title_bar_3"/>
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/rvClassList" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#d9d9d9" android:dividerHeight="1px" android:layout_below="@+id/topBar"/>
+    <include android:id="@+id/viewLoading" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

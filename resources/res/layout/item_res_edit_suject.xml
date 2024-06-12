@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/selectable_item_background" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="65dp">
+    <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp">
+        <CheckBox android:id="@+id/cb_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/ga_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/ic_resource_default" android:layout_toRightOf="@+id/cb_selector" android:layout_centerVertical="true" app:riv_corner_radius="4dp" app:riv_mutate_background="true" app:riv_oval="false"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/rlItemRight" android:layout_toRightOf="@+id/ga_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:paddingRight="38dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+            <TextView android:textSize="12sp" android:textColor="#ffa8a8a8" android:id="@+id/tv_tag" android:background="@drawable/bg_circular_corner3_ffcccccc" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-34dp" android:text="教学" android:layout_toRightOf="@+id/tv_title"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="正文" android:maxLines="1" android:layout_below="@+id/tv_title"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlItemRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="12sp" android:textColor="#0099ff" android:ellipsize="end" android:id="@+id/tv_folder_enter" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="10" android:drawablePadding="4dp" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_sort" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sort_36dp" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="70dp" android:layout_toRightOf="@+id/cb_selector" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

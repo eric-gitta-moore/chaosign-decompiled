@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="46dp">
+    <View android:id="@+id/v_divider" android:background="@color/bg_color_f5f6f8" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_node_title" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="2" android:layout_below="@+id/v_divider" android:layout_alignParentLeft="true" android:lineSpacingMultiplier="1.2"/>
+    <LinearLayout android:gravity="center" android:id="@+id/ll_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="46dp" android:layout_toRightOf="@+id/tv_node_title" android:layout_below="@+id/v_divider" android:layout_centerVertical="true">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/iv_status" android:paddingLeft="10dp" android:paddingTop="12dp" android:paddingRight="15dp" android:paddingBottom="8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/group_tea_expand_arrow_up"/>
+    </LinearLayout>
+    <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignBottom="@+id/tv_node_title"/>
+</RelativeLayout>

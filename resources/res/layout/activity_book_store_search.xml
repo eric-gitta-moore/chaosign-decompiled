@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.GestureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/libContentConter" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llContentCenter" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/activity_comment_title"/>
+        <FrameLayout android:orientation="vertical" android:id="@+id/nFragContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</com.fanzhou.widget.GestureRelativeLayout>

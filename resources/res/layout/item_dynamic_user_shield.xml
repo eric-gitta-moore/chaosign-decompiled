@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="60dp">
+        <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon" android:clickable="false" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="12dp" android:layout_marginTop="6dp" android:layout_marginRight="12dp" android:layout_marginBottom="6dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" android:contentDescription="@null" ss:border_color="#999d9e" ss:border_width="1px" ss:is_circle="false" ss:x_radius="5dp" ss:y_radius="5dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_name" android:paddingRight="50dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <com.chaoxing.mobile.resource.flower.StatisUserDataView android:id="@+id/userFlower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-46dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearl_attention" android:paddingRight="@dimen/friend_paddingheight" android:layout_width="wrap_content" android:layout_height="@dimen/friend_layoutheight">
+            <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_attention" android:background="@drawable/gray_btn_border_5" android:layout_width="60dp" android:layout_height="30dp" android:text="显示动态"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="69dp" android:layout_marginBottom="1px"/>
+</LinearLayout>

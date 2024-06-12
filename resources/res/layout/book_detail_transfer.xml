@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/rlTitle" layout="@layout/activity_top_bar_back_and_submit"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vEmailGroup" android:background="@drawable/corner_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_below="@+id/rlTitle">
+            <TextView android:id="@+id/tvEmail" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfer_email" style="@style/text_input_hint"/>
+            <EditText android:id="@+id/etEmail" android:background="@drawable/bg_input" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textEmailAddress" android:imeOptions="actionDone" style="@style/Text_Title"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="1dp" android:layout_marginRight="20dp" android:layout_below="@+id/vEmailGroup">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/transmit_range" style="@style/Text_Title"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/corner_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <include android:id="@+id/startPage" layout="@layout/book_transfer_item"/>
+                <ImageView android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+                <include android:id="@+id/endPage" layout="@layout/book_transfer_item"/>
+            </LinearLayout>
+            <TextView android:gravity="left" android:layout_gravity="left" android:id="@+id/tvPageNumNotice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/transmit_pagenum_notice" style="@style/text_content"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/transmit_add_item" style="@style/Text_Title"/>
+            <RelativeLayout android:background="@drawable/corner_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transmit_assist_pages" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Text_Title"/>
+                <com.fanzhou.widget.Switch android:id="@+id/swh_select" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_alignParentRight="true" style="@style/Switch"/>
+            </RelativeLayout>
+            <TextView android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/transmit_assist_pages_notice" style="@style/text_content"/>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/vVerifyCodeGroup" android:background="@drawable/corner_bg" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_below="@+id/linearLayout1">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击重新获取图片" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/ivVerifyCode" android:background="@android:color/transparent" android:layout_width="120dp" android:layout_height="45dp" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <EditText android:textColorHint="@color/text_hint" android:id="@+id/etVerifyCode" android:background="@drawable/bg_input" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="@string/verify_code" android:singleLine="true" android:selectAllOnFocus="true" android:layout_toLeftOf="@+id/ivVerifyCode" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone" style="@style/Text_Title"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

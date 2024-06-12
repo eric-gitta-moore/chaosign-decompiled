@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.study.home.mainpage.view.HomeVideoImageView android:id="@+id/v_video" android:layout_width="match_parent" android:layout_height="120dp" app:video_shadow_height="30dp"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="1"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#b3b3b3" android:ellipsize="end" android:id="@+id/tv_content1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="1"/>
+</LinearLayout>

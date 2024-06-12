@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="19sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="30dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/optionspicker" android:background="@android:color/white" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.chaoxing.pickerview.lib.WheelView android:id="@+id/options1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.1"/>
+        <com.chaoxing.pickerview.lib.WheelView android:id="@+id/options2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.3"/>
+        <com.chaoxing.pickerview.lib.WheelView android:id="@+id/options3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.6"/>
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/bg_white_border_d9d9d9" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp">
+        <TextView android:textSize="15sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvCancel" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="取消" android:layout_weight="1"/>
+        <View android:background="#d9d9d9" android:layout_width="1px" android:layout_height="match_parent"/>
+        <TextView android:textSize="15sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvOk" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="确认" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

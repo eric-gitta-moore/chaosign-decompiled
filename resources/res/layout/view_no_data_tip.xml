@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/view_arrow" android:background="@drawable/conversation_arrow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginRight="64dp" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:gravity="center" android:id="@+id/tv_no_data_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="亲，还没有添加任何人哦，\10快去添加小伙伴吧" android:layout_centerInParent="true"/>
+</RelativeLayout>

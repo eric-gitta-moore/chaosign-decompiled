@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="打开音频播放窗口">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivMusic" android:background="@mipmap/cx_audio_player_music_window_background_70dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:src="@mipmap/cx_audio_player_music_70dp" android:scaleType="fitXY"/>
+</LinearLayout>

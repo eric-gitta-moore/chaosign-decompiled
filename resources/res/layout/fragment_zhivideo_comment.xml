@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rlContainer" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <include android:id="@+id/id_head_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_zhireply_head"/>
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@+id/srl_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottomBar" android:layout_below="@+id/id_head_bar">
+            <com.scwang.smart.refresh.header.CxClassicsHeader android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:srlDrawableArrow="@drawable/icon_refresh" app:srlDrawableArrowSize="18dp" app:srlDrawableMarginRight="8dp" app:srlDrawableProgressSize="18dp" app:srlEnableLastTime="false" app:srlFinishDuration="100" app:srlPrimaryColor="@color/white" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="13sp" app:srlTextTimeMarginTop="2dp"/>
+            <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_reply_list" android:background="#ffffff" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:footerDividersEnabled="false"/>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewToolbar" layout="@layout/page_loading_circle"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#b3b3b3" android:gravity="center" android:id="@+id/tv_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="还没有评论，发表第一个评论吧" android:layout_centerInParent="true"/>
+        <include android:id="@+id/bottomBar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/view_zhireply_bar"/>
+        <View android:id="@+id/reply_bg" android:background="#80000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fl_reply" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

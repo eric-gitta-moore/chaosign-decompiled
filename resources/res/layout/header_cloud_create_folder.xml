@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rlEditName" android:background="@drawable/common_white_stroke_bg" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_delete" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="20dp" android:layout_width="40dp" android:layout_height="60dp" android:src="@drawable/clear" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <EditText android:textSize="16sp" android:textColor="@color/normal_black" android:textColorHint="#cccccc" android:gravity="center_vertical" android:id="@+id/editFileName" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/create_res_folder" android:layout_toLeftOf="@+id/iv_delete" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RadioGroup android:orientation="vertical" android:id="@+id/rg_public_state" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/rlEditName">
+        <RelativeLayout android:id="@+id/private_state" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rb_private" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="12dp" android:button="@drawable/group_type" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tv_title_public" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cloud_private" android:layout_toRightOf="@+id/rb_private"/>
+            <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cloud_only_show_self" android:layout_toRightOf="@+id/rb_private" android:layout_below="@+id/tv_title_public"/>
+        </RelativeLayout>
+        <View android:background="@color/date_line" android:layout_width="wrap_content" android:layout_height="1px" android:layout_marginLeft="51dp"/>
+        <RelativeLayout android:id="@+id/share_state" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rb_share" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="12dp" android:button="@drawable/group_type" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tv_title_friends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cloud_share_friends" android:layout_toRightOf="@+id/rb_share"/>
+            <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cloud_share_tips" android:layout_toRightOf="@+id/rb_share" android:layout_below="@+id/tv_title_friends"/>
+            <ImageView android:id="@+id/iv_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_topic_reply_add" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="@color/date_line" android:layout_width="wrap_content" android:layout_height="1px" android:layout_marginLeft="51dp"/>
+    </RadioGroup>
+</RelativeLayout>

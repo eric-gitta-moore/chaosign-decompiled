@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/rlCata" android:background="#f5f6f8" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="35dp">
+        <RelativeLayout android:id="@+id/ll_cata" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="14sp" android:textColor="#666666" android:gravity="center" android:id="@+id/tvCata" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="达人收藏" android:layout_centerVertical="true"/>
+            <View android:id="@+id/cataLine" android:background="@color/blue1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_alignLeft="@+id/tvCata" android:layout_alignRight="@+id/tvCata" android:layout_alignBottom="@+id/tvCata"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/llFriendSubscri" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_toRightOf="@+id/ll_cata">
+            <TextView android:textSize="14sp" android:textColor="#666666" android:gravity="center" android:id="@+id/tvFriendSubscri" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bookCollections_TopCollections"/>
+            <View android:id="@+id/subscriLine" android:background="@color/blue1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_alignLeft="@+id/tvFriendSubscri" android:layout_alignRight="@+id/tvFriendSubscri" android:layout_alignBottom="@+id/tvFriendSubscri"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/ll_talent" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_toRightOf="@+id/llFriendSubscri">
+            <TextView android:textSize="14sp" android:textColor="#666666" android:gravity="center" android:id="@+id/tvTalent" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bookCollections_TopCollections"/>
+            <View android:id="@+id/talentLine" android:background="@color/blue1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_alignLeft="@+id/tvTalent" android:layout_alignRight="@+id/tvTalent" android:layout_alignBottom="@+id/tvTalent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlRefresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <Button android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/btn_more" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bookCollections_more" android:layout_alignParentRight="true"/>
+        <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:id="@+id/btnRefresh" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingTop="6dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/img_refresh" android:layout_alignParentRight="true"/>
+        <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/refreshLoading" android:visibility="gone" android:layout_width="26dp" android:layout_height="26dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

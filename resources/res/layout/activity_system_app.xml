@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/activity_system_app" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolBar" layout="@layout/common_title_bar"/>
+    <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/selector_list_item" android:cacheColorHint="@android:color/transparent" android:divider="#d9d9d9" android:dividerHeight="1px" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+</LinearLayout>

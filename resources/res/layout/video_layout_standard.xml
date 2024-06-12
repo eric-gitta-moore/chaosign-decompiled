@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:id="@+id/surface_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/rlMark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_subtitle" android:background="@drawable/subtitle_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_marginBottom="16dp" android:layout_alignBottom="@+id/surface_container" android:layout_centerHorizontal="true" android:letterSpacing="0.04"/>
+    <RelativeLayout android:id="@+id/rlSelf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/thumb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <RelativeLayout android:id="@+id/rlControl" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/rlTop" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

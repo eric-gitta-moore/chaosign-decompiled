@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/content_view" android:background="#999999" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/video_container" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <com.chaoxing.mobile.widget.media.TextureRenderView android:id="@+id/sv" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:id="@+id/clickView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/iv_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    </FrameLayout>
+    <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/pbLoading" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/view_video_back" android:background="#80666666" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/ivBack" android:background="@mipmap/cx_ic_navigation_arrow_back_24dp_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/view_video_ctrl" android:background="#80666666" android:clickable="true" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/video_ib_play_pause" android:background="#00000000" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="15dp" android:src="@drawable/video_view_play" android:scaleType="centerInside" android:contentDescription="@null"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="20dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="-3dp">
+                <TextView android:id="@+id/video_tv_current_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" style="@style/text_white.10"/>
+                <TextView android:id="@+id/video_tv_total_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/text_white.10"/>
+            </RelativeLayout>
+            <SeekBar android:gravity="center_vertical" android:id="@+id/video_sb_process_play" android:paddingLeft="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:maxHeight="4dp" android:progressDrawable="@drawable/seekbar_process_img" android:minHeight="4dp" android:thumb="@drawable/video_view_process_thumb" android:thumbOffset="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@+id/upload_view" android:visibility="gone" layout="@layout/upload_cloud_disk"/>
+    <RelativeLayout android:id="@+id/downloadView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/view_video_back">
+        <com.chaoxing.mobile.widget.SectorProgressView android:id="@+id/sector_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_upload_bg" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

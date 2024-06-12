@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rlcontainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="74dp">
+    <RelativeLayout android:id="@+id/rlRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/ivImage" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="12dp" android:layout_marginRight="10dp" android:src="@drawable/lib_attachment_icon_video" android:scaleType="fitXY" android:layout_centerVertical="true" app:riv_corner_radius="4dp" app:riv_oval="false"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_toRightOf="@+id/ivImage" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <TextView android:textSize="14sp" android:textColor="#ff999999" android:id="@+id/tvSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                <TextView android:textSize="14sp" android:textColor="#ff999999" android:id="@+id/tvProcess" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="1" android:layout_below="@+id/tvContent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_expend" android:background="@drawable/lib_attachment_bg_video_boder_f2f2f2" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/videoCover" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+        <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_attachment_icon_video_play" android:layout_centerInParent="true"/>
+        <View android:background="@drawable/lib_attachment_ic_video_bottom_bg" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_alignLeft="@+id/videoCover" android:layout_alignRight="@+id/videoCover" android:layout_alignBottom="@+id/videoCover" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/tvSize_expend" android:paddingLeft="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/videoCover" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/tvTime" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@+id/videoCover" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_remove" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_attachment_icon_delete" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+</RelativeLayout>

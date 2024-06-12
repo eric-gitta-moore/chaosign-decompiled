@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/line1" android:background="@color/base_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/base_item_height">
+        <TextView android:textSize="17sp" android:textColor="@android:color/black" android:id="@+id/user_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:textColor="#cccccc" android:id="@+id/user_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="104dp" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/line2" android:background="@color/base_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:id="@+id/line3" android:background="@color/base_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="16dp"/>
+</LinearLayout>

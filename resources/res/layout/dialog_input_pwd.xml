@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/x60" android:textColor="@color/white" android:gravity="center" android:background="@drawable/bg_dialog_top" android:layout_width="match_parent" android:layout_height="@dimen/x150" android:text="@string/edit_wifi_pwd_input" android:layout_weight="1"/>
+    <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/x40"/>
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:paddingLeft="@dimen/x20" android:paddingRight="@dimen/x20" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/x50" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_wifi_pwd"/>
+            <EditText android:textSize="@dimen/x50" android:textColor="@color/BLACK" android:id="@+id/editText_password" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/x150" android:layout_marginLeft="@dimen/x40" android:cursorVisible="true" android:ems="10" android:inputType="textPassword" android:textCursorDrawable="@null"/>
+        </LinearLayout>
+        <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <CheckBox android:textColor="@color/black" android:id="@+id/check_show_pwd" android:paddingLeft="@dimen/x20" android:layout_width="match_parent" android:layout_height="@dimen/x150" android:button="@drawable/checkbox" android:text="@string/edit_wifi_pwd_show"/>
+    </LinearLayout>
+    <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/x150" android:layout_marginTop="@dimen/x40">
+        <TextView android:textSize="@dimen/x50" android:textColor="@color/color_selectdevice_selector" android:gravity="center" android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/x20" android:text="@string/cancel" android:layout_weight="1"/>
+        <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:enabled="false" android:textSize="@dimen/x50" android:textColor="@color/color_selectdevice_selector" android:gravity="center" android:id="@+id/connect" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/x20" android:text="@string/edit_wifi_connect" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#000000" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.gallery.album.widget.AlbumViewPager android:id="@+id/vp_preview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.chaoxing.gallery.album.widget.AlbumPreviewTopBar android:id="@+id/topBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <com.chaoxing.gallery.album.widget.AlbumPreviewBottomBar android:id="@+id/bottomBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

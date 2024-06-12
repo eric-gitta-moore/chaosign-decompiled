@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar2_title_2line"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipeRefresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/saveTv" android:layout_below="@+id/toolbar">
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView android:textSize="14sp" android:textColor="#596eff" android:gravity="center" android:id="@+id/saveTv" android:background="#f9f9fa" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/add_attendance_blue_tooth" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/noDataLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_centerInParent="true">
+        <ImageView android:gravity="center" android:id="@+id/messageIv" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/as_no_blue_tooth_bg"/>
+        <TextView android:textSize="14sp" android:textColor="#a1a4aa" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_blue_tooth_tips"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/loading_view" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_centerInParent="true" style="@style/ProgressBar"/>
+</RelativeLayout>

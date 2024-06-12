@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rlcontainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llContainer" android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:minHeight="74dp">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_linker_image" android:layout_width="@dimen/lib_attachment_icon_size" android:layout_height="@dimen/lib_attachment_icon_size" android:scaleType="centerCrop" app:riv_corner_radius="4dp" app:riv_oval="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <TextView android:textSize="11sp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/tvTag" android:background="@drawable/lib_attachment_bg_attachment_group" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7dp" android:text="@string/lib_attachment_attach_microcourse" android:singleLine="true" android:layout_toRightOf="@+id/tvTitle"/>
+            <TextView android:textSize="@dimen/lib_attachment_title" android:textColor="@color/lib_attachment_color_attachemt_title" android:ellipsize="end" android:id="@+id/tv_linkers_contexts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试" android:maxLines="2"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_Time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_remove" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_attachment_icon_delete" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+</RelativeLayout>

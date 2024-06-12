@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/vRoot" android:background="@drawable/lib_attachment_bg_red_packet_card" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:layout_marginRight="12dp" android:layout_marginBottom="9dp">
+            <ImageView android:id="@+id/ivImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/lib_attachment_icon_red_packet" android:scaleType="fitXY"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="15sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="恭喜发财" android:maxLines="2"/>
+                <TextView android:textSize="12sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/lib_attachment_message_view_red_packet" android:maxLines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llSeeDetails" android:background="@drawable/lib_attachment_bg_red_packet_card_bottom" android:paddingLeft="12dp" android:paddingTop="0dp" android:paddingRight="12dp" android:paddingBottom="1dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvTip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="红包"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/vMask" android:background="@drawable/lib_attachment_bg_red_packet_card_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

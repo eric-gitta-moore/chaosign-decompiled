@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewToolbar" layout="@layout/toolbar_resource_edit"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewToolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.mobeta.android.dslv.DragSortListView android:id="@+id/listView" android:background="@color/gray_style" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#00000000" android:dividerHeight="0px" android:layout_weight="1" android:headerDividersEnabled="false" android:footerDividersEnabled="false" dslv:collapsed_height="0dp" dslv:drag_enabled="true" dslv:drag_handle_id="@+id/iv_sort" dslv:drag_scroll_start="0.33" dslv:drag_start_mode="0" dslv:float_alpha="0.6" dslv:max_drag_scroll_speed="0.5" dslv:slide_shuffle_speed="0.3" dslv:track_drag_sort="false" dslv:use_default_controller="true"/>
+        </LinearLayout>
+        <ViewStub android:id="@+id/vsWait" android:layout="@layout/wait_circle_bar_with_text_match_parent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

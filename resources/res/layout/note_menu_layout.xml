@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rlmenu" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/color_ebeced" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="1px"/>
+        <ImageView android:id="@+id/ivDis" android:background="@drawable/note_panel_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12dp"/>
+        <View android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <View android:background="#c5c5c5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="215dp"/>
+        <com.viewpagerindicator.CirclePageIndicator android:id="@+id/vIndicator" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginBottom="10dp" app:dotPadding="10dp" app:fillColor="#8b8b8b" app:pageColor="#bbbbbb" app:radius="3dp" app:strokeWidth="1px"/>
+    </LinearLayout>
+</LinearLayout>

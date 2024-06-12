@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top" layout="@layout/common_title_bar_4"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#d9d9d9" android:dividerHeight="1px"/>
+        <RelativeLayout android:id="@+id/vg_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:background="@drawable/conversation_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginRight="64dp" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="19sp" android:textColor="#cccccc" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您还没有需要完成的作业" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_white"/>
+        <include android:id="@+id/loadingView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+    </RelativeLayout>
+</LinearLayout>

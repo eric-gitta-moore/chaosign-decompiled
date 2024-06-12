@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewToolbar" layout="@layout/common_title_bar2"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewToolbar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/listView" android:background="@color/gray_ebebeb" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:layout_above="@+id/vDivider"/>
+        <View android:id="@+id/vDivider" android:background="@color/gray_ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_above="@+id/edit_container"/>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/edit_container" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="18sp" android:textColor="@color/normal_blue" android:id="@+id/tvDownload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_ok"/>
+                <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/tvSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(12m)"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <ViewStub android:id="@+id/vsWait" android:layout="@layout/wait_circle_bar_with_text_match_parent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

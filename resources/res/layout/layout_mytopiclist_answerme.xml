@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="#fff" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="50dp">
+    <ImageView android:id="@+id/iv_icon" android:background="@drawable/ic_replyme_topic" android:layout_width="22dp" android:layout_height="22dp"/>
+    <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="我的回复" android:layout_toRightOf="@+id/iv_icon"/>
+    <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_replay_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.ViewSwipeListItem xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="40dp">
+        <RelativeLayout android:background="#f4f5f7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_label" android:background="@drawable/ic_course_chapter_label" android:paddingLeft="-11dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true"/>
+            <TextView android:textSize="17sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="1" android:layout_toLeftOf="@+id/right_options" android:layout_toRightOf="@+id/tv_label" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/right_options" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_add" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="4dp" android:src="@drawable/ic_chapter_add" android:scaleType="center"/>
+                <ImageView android:id="@+id/iv_sort" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/home_menu_left" android:layout_centerVertical="true"/>
+            </LinearLayout>
+            <View android:background="#ffebeced" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/options" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_option" android:background="@color/common_stick" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_option2" android:background="@color/common_setting" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_option3" android:background="@color/common_edit" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_option4" android:background="@color/common_delete" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.fanzhou.widget.ViewSwipeListItem>

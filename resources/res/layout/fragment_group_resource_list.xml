@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_collected_resource" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_resource" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:id="@+id/loading_transparent" android:background="@drawable/loading_bg" android:paddingTop="18dp" android:paddingBottom="18dp" android:visibility="gone" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/pbLoading" android:layout_width="24dp" android:layout_height="24dp"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/tvLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/loading_data_please_wait"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:text="@string/resource_collection_empty_tip" android:layout_centerHorizontal="true" style="@style/group_title_b3_text"/>
+    <include android:visibility="gone" layout="@layout/reload"/>
+</RelativeLayout>

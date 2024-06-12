@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_setting" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/headerLayout" layout="@layout/activity_top_bar"/>
+    <RelativeLayout android:id="@+id/layout_onlyWifi" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/headerLayout">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="只在WIFI下载" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Text_Title"/>
+        <com.fanzhou.widget.Switch android:id="@+id/swh_OnlyWifi" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_alignParentRight="true" style="@style/Switch"/>
+    </RelativeLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_content"/>
+    <RelativeLayout android:id="@+id/layout_allOnline" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/layout_onlyWifi">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部打开" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Text_Title"/>
+        <com.fanzhou.widget.Switch android:id="@+id/swh_AllOnline" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_alignParentRight="true" style="@style/Switch"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/tvOpenOfflineDownload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:text="@string/open_your_offline_channel" android:layout_below="@+id/layout_onlyWifi" style="@style/text_content"/>
+    <RelativeLayout android:id="@+id/layout_settingList" android:background="@drawable/corner_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/tvOpenOfflineDownload">
+        <include android:id="@+id/vSelectedAllChannels" layout="@layout/rss_download_setting_all_channel"/>
+        <ListView android:id="@+id/lv_downLoadSettingList" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/vSelectedAllChannels" style="@style/List_View_Style"/>
+        <Button android:textSize="18dp" android:textColor="@color/light_blue" android:id="@+id/btn_settingDone" android:background="@drawable/bottom_tool_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="43dp" android:text="@string/done" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

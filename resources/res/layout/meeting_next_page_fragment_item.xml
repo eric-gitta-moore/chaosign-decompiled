@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.conferencesw.view.MeetSurfaceViewContainer android:id="@+id/rl_surface" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/iv_role" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28dp" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/iv_audit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7dp" android:layout_above="@+id/iv_role"/>
+    <com.chaoxing.mobile.conferencesw.view.MicStatusWithNameView android:id="@+id/vg_mic_name" android:background="@drawable/meeting_speeker_text_bg" android:layout_width="wrap_content" android:layout_height="22dp" android:layout_marginRight="20dp" android:layout_alignParentBottom="true"/>
+    <com.chaoxing.mobile.widget.roundedimageview.RoundedImageView android:id="@+id/roundImage" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="centerCrop" android:layout_centerInParent="true" app:riv_oval="true"/>
+    <RelativeLayout android:id="@+id/rl_call" android:background="@drawable/course_online_phone_call_bg" android:visibility="visible" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/iv_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_course_online_phone_call" android:layout_centerInParent="true"/>
+        <TextView android:textSize="12sp" android:textColor="#99ffffff" android:id="@+id/tv_call_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13sp" android:text="@string/course_online_calling" android:layout_below="@+id/iv_call" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</merge>

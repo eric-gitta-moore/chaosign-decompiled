@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ebecee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/et_name" android:background="@android:color/white" android:paddingLeft="12dp" android:paddingTop="20dp" android:paddingRight="60dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/public_hint_input_folder_name" android:singleLine="true"/>
+        <ImageView android:id="@+id/iv_clear" android:layout_width="48dp" android:layout_height="wrap_content" android:src="@drawable/clear" android:scaleType="center" android:layout_alignTop="@+id/et_name" android:layout_alignBottom="@+id/et_name" android:layout_alignParentRight="true"/>
+        <include android:id="@+id/loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/common_loading_transparent"/>
+    </RelativeLayout>
+</RelativeLayout>

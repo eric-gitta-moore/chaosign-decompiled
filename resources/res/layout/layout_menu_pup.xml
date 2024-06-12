@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/llRootView" android:background="#80333333" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="6dp"/>
+        <TextView android:gravity="center" android:id="@+id/tv_cancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/cancel" style="@style/group_popwindow_text"/>
+    </LinearLayout>
+</RelativeLayout>

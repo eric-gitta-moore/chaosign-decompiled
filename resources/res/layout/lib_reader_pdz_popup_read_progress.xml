@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/lib_reader_pdz_toolbar_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <SeekBar android:id="@+id/sb_setting_read_progress" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:maxHeight="2dp" android:max="100" android:progress="0" android:secondaryProgress="0" android:progressDrawable="@drawable/lib_reader_pdz_seekbar_style" android:minHeight="2dp" android:thumb="@drawable/lib_reader_pdz_progress_swipe_point" android:thumbOffset="12dp" android:layout_weight="1"/>
+        <View android:background="#66666666" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        <Button android:textSize="14sp" android:textColor="@color/lib_reader_color_pdz_blue" android:id="@+id/btn_goto_page" android:background="@drawable/lib_reader_pdz_border_blue" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="35dp" android:minWidth="70dp"/>
+    </LinearLayout>
+</LinearLayout>

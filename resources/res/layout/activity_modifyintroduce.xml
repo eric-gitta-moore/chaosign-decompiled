@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar"/>
+    <RelativeLayout android:background="@drawable/common_white_stroke_bg_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+        <EditText android:textSize="16sp" android:textColorHint="@color/color_cccccc" android:layout_gravity="center_vertical" android:id="@+id/groupIntroduct" android:background="@android:color/transparent" android:padding="22dp" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/grouplist_list_manage_text" android:maxLength="50" android:layout_toLeftOf="@+id/introductBtn_clear" android:imeOptions="actionNext"/>
+        <ImageButton android:id="@+id/introductBtn_clear" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <include layout="@layout/wait_circle_bar_with_text"/>
+</LinearLayout>

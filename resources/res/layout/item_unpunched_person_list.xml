@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="66dp" android:paddingStart="15dp" android:paddingEnd="15dp">
+    <com.chaoxing.mobile.widget.roundedimageview.RoundedImageView android:id="@+id/userHeaderIcon" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_launcher_background" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:riv_oval="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/middleBlock" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/userHeaderIcon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ui_10_dip" android:layout_toEndOf="@+id/userHeaderIcon">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/userNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ds_color_base_gray" android:ellipsize="end" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="-" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/clockLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.5dp">
+            <TextView android:textSize="11sp" android:textColor="#ff2ebcbf" android:id="@+id/clockWorkTypeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5dp"/>
+            <TextView android:textSize="13sp" android:textColor="#ff006ce2" android:gravity="right" android:id="@+id/clockTypeTv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/divider" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true" android:contentDescription="@string/mission_introduce" android:layout_alignStart="@+id/middleBlock"/>
+</RelativeLayout>

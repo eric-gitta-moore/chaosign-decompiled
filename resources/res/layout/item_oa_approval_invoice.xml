@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:id="@+id/invoice_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="XXX的报销单" android:layout_alignParentLeft="true"/>
+        <TextView android:id="@+id/invoice_info_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xx-xx" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/invoice_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="报销金额：xxxx xx xx"/>
+    <TextView android:id="@+id/invoice_category" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="报销类型：xxxx xx xx"/>
+</LinearLayout>

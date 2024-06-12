@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+    <TextView android:gravity="center_horizontal" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/complete_info" style="@style/Text_Title"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_input" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="12dp" android:layout_marginRight="20dp">
+        <TextView android:id="@+id/textphone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/complete_phone" style="@style/infocomplete"/>
+        <EditText android:id="@+id/info_phone" android:background="@android:color/transparent" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="phone" android:imeOptions="actionNext" style="@style/infocomplete_text"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_input" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="12dp" android:layout_marginRight="20dp">
+        <TextView android:id="@+id/textmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/complete_mail" style="@style/infocomplete"/>
+        <EditText android:id="@+id/info_mail" android:background="@android:color/transparent" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textEmailAddress" android:imeOptions="actionDone" style="@style/infocomplete_text"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="12dp" android:layout_marginRight="20dp">
+        <EditText android:gravity="center" android:id="@+id/info_checkcode" android:background="@drawable/bg_input" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="1" android:imeOptions="actionDone" style="@style/infocomplete_text"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
+            <Button android:id="@+id/btnSendCheckCode" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/send_check_code" style="@style/btn_stroke_black_default"/>
+            <TextView android:textSize="14sp" android:textColor="@color/normal_gray" android:id="@+id/tvSendedText" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

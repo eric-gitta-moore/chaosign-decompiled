@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_disinterest_arrow" android:layout_marginStart="10dp" android:layout_alignParentStart="true"/>
+    <RelativeLayout android:id="@+id/rl_container" android:layout_width="match_parent" android:layout_height="134dp" android:layout_below="@+id/iv_arrow">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_layout1" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/rl_uninterested" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_interest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_main_recommend_uninterested" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/iv_interest" android:layout_centerVertical="true">
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="15sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_home_dialog_uninterested"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_home_dialog_recommend_less2"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_report" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_main_recommend_report" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/iv_report_arrow" android:layout_toRightOf="@+id/iv_report" android:layout_centerVertical="true">
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="15sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_home_dialog_report"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_home_select_report_reason"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/iv_report_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_home_report_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_arrow2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_disinterest_arrow2" android:layout_below="@+id/rl_container" android:layout_marginStart="10dp" android:layout_alignParentStart="true"/>
+</RelativeLayout>

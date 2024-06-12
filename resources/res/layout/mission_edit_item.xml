@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/item_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp">
+        <CheckBox android:id="@+id/cb_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/rl_mission" android:paddingLeft="4dp" android:paddingTop="10dp" android:paddingRight="4dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/cb_selector" android:layout_centerVertical="true">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_mission" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/course_task_answer_gray" android:scaleType="centerCrop" android:layout_centerVertical="true" app:riv_corner_radius="4dp"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="11dp" android:layout_toLeftOf="@+id/iv_sort" android:layout_toRightOf="@+id/rl_mission" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_mission_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="name" android:maxLines="2"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_mission_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="content" android:singleLine="true"/>
+                <TextView android:textSize="11sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_mission_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="time" android:singleLine="true" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_sort" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/ic_sort_36dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

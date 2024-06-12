@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/page_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rly_top_tip" android:background="@android:color/white" android:paddingTop="@dimen/btn_top_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/cust_font_size" android:textColor="@color/default_color" android:id="@+id/tv_cancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/left_right_margin" android:text="&lt; 返回"/>
+        <TextView android:textSize="@dimen/cust_font_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可视化操作命名" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rly_spinner_region" android:background="@color/default_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/left_right_margin" android:layout_marginTop="@dimen/middle_margin" android:layout_marginRight="@dimen/left_right_margin" android:layout_below="@+id/rly_top_tip">
+        <Spinner android:id="@+id/spinner_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/left_right_margin" android:layout_centerVertical="true"/>
+        <TextView android:textColor="@android:color/black" android:id="@+id/tv_action_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="action should show here" android:singleLine="true" android:layout_toRightOf="@+id/spinner_info" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lly_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rly_spinner_region">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/left_right_margin" android:layout_marginTop="@dimen/middle_margin" android:layout_marginRight="@dimen/left_right_margin">
+            <TextView android:textSize="@dimen/cust_font_size" android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="事件名称"/>
+            <EditText android:textSize="@dimen/cust_font_size" android:textColor="@android:color/black" android:id="@+id/et_action_name" android:background="@drawable/edit_sharp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="输入操作名称" android:singleLine="true" android:maxLength="32"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/left_right_margin" android:layout_marginTop="@dimen/middle_margin" android:layout_marginRight="@dimen/left_right_margin">
+            <TextView android:textSize="@dimen/cust_font_size" android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击发生于"/>
+            <TextView android:textSize="@dimen/cust_font_size" android:textColor="@android:color/black" android:id="@+id/tv_page_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_page_tag" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lly_filter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/left_right_margin" android:layout_marginTop="@dimen/middle_margin" android:layout_marginRight="@dimen/left_right_margin">
+            <TextView android:textSize="@dimen/cust_font_size" android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="筛选限制"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:textSize="@dimen/cust_font_size" android:textColor="@android:color/black" android:id="@+id/cb_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/checkbox_content_str"/>
+                <CheckBox android:textSize="@dimen/cust_font_size" android:textColor="@android:color/black" android:id="@+id/cb_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/position_pref"/>
+            </LinearLayout>
+            <LinearLayout android:background="#dddddd" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/middle_margin" android:layout_marginTop="@dimen/middle_margin">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@android:drawable/ic_dialog_info"/>
+                    <TextView android:id="@+id/tv_tip_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_tip_show_default"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_action_img" android:layout_width="wrap_content" android:layout_height="@dimen/image_height" android:layout_marginTop="@dimen/middle_margin" android:layout_below="@+id/lly_desc" android:layout_centerHorizontal="true"/>
+    <Button android:id="@+id/btn_upload" android:background="@color/default_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/left_right_margin" android:text="上传" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

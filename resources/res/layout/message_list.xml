@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/view_no_content" android:visibility="gone" layout="@layout/setting_item_no_content"/>
+    <com.fanzhou.widget.PullToRefreshListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#e5e5e5" android:headerDividersEnabled="true" style="@style/List_View_Style"/>
+    <include android:id="@+id/pbWait" android:layout_centerInParent="true" layout="@layout/wait_circle_bar"/>
+</RelativeLayout>

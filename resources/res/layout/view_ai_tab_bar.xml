@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="18dp" android:textColor="#1b1f26" android:id="@+id/tv_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小星"/>
+        <ImageView android:id="@+id/iv_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/ic_ai_tab_indicator" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_find" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="28dp" android:layout_toEndOf="@+id/rl_star">
+        <TextView android:textSize="18dp" android:textColor="#8a9099" android:id="@+id/tv_find" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主页"/>
+        <ImageView android:id="@+id/iv_find" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/ic_ai_tab_indicator" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/container" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="73dp">
+        <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/ic_chaoxing_default" android:layout_centerVertical="true" app:is_circle="false" app:x_radius="6px" app:y_radius="6px"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/iv_icon" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@+id/top" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tv_time" android:layout_alignParentLeft="true">
+                    <TextView android:textSize="14sp" android:textColor="#0066cc" android:ellipsize="end" android:id="@+id/tv_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="12sp" android:textColor="#b3b3b3" android:ellipsize="end" android:id="@+id/tv_operate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="1" android:layout_toRightOf="@+id/tv_user" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="#b3b3b3" android:ellipsize="end" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1" android:layout_below="@+id/top"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

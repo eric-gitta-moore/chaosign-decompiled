@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@+id/tv_label" android:paddingLeft="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_title" android:layout_toRightOf="@+id/iv_left" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="2dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_my_subscrip" android:scaleType="centerCrop" android:layout_centerVertical="true" app:riv_corner_radius="4dp"/>
+    </RelativeLayout>
+    <View android:background="@color/date_line" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/adaptive_80dp"/>
+</LinearLayout>

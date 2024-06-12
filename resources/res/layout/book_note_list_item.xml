@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/note_iv_thumbnail" android:background="@drawable/book_widget_cover_bg" android:visibility="gone" android:layout_width="93dp" android:layout_height="124dp" android:layout_marginLeft="10dp" android:scaleType="center"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <TextView android:textSize="16sp" android:textColor="@color/read_set_text_color" android:id="@+id/note_tv_pageNum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="13sp" android:textColor="@color/read_set_text_color" android:id="@+id/note_tv_noteTypes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="3dp" android:layout_marginBottom="3dp"/>
+    </LinearLayout>
+</LinearLayout>

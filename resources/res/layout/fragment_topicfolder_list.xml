@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titleBar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titleBar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvTopicFolderList" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/loadView" android:clickable="true" layout="@layout/page_loading_circle"/>
+        <TextView android:textSize="16sp" android:id="@+id/tvEmptyTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topiclist_createfolder" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

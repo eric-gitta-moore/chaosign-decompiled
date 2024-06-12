@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.ViewSwipeListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/viewSwipeListItem" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="88dp" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/rl_avatar" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+                <ImageView android:id="@+id/video_cover" android:layout_width="123dp" android:layout_height="68dp" android:layout_marginTop="0dp" android:src="@drawable/ic_group_head_item" android:scaleType="centerCrop" android:layout_alignParentTop="true" app:riv_corner_radius="4dp" app:riv_mutate_background="true" app:riv_oval="true"/>
+                <RelativeLayout android:background="@drawable/bg_corner_2_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_marginBottom="6dp" android:layout_alignRight="@+id/video_cover" android:layout_alignBottom="@+id/video_cover">
+                    <ImageView android:id="@+id/tv_see_icon" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginTop="0dp" android:src="@drawable/compilation_icon" android:scaleType="fitCenter"/>
+                    <TextView android:textSize="9sp" android:textColor="#b3b3b3" android:gravity="center_vertical" android:id="@+id/tv_see_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01234567" android:drawablePadding="5dp" android:layout_toRightOf="@+id/tv_see_icon"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+                <CheckBox android:id="@+id/cb_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_group_member" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="@+id/ll_text_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_text_content" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/options" app:layout_constraintStart_toEndOf="@+id/rl_avatar" app:layout_constraintTop_toTopOf="0">
+                <TextView android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" app:layout_constraintHorizontal_bias="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintWidth_default="1"/>
+                <TextView android:ellipsize="end" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_default="1"/>
+            </LinearLayout>
+            <androidx.constraintlayout.widget.Barrier android:id="@+id/barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="0" app:constraint_referenced_ids="ll_text_content"/>
+            <View android:id="@+id/divider" android:background="@color/DividerColor" android:layout_width="0dp" android:layout_height="1px" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="@+id/barrier"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</com.fanzhou.widget.ViewSwipeListItem>

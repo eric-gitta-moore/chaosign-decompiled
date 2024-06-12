@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:gesture-image="http://schemas.polites.com/android" xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlTopBar" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentTop="true">
+        <Button android:id="@+id/ibtnGoBack" android:background="@android:color/transparent" android:paddingLeft="22dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/back_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/btnSubmit" android:background="@drawable/light_blue_btn_bg" android:paddingLeft="12dp" android:paddingTop="5dp" android:paddingRight="12dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/submit" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rlTopBar">
+        <ImageView android:id="@+id/ivSeletedImage" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:layout_centerInParent="true" android:contentDescription="@null"/>
+        <ProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Inverse"/>
+    </RelativeLayout>
+</RelativeLayout>

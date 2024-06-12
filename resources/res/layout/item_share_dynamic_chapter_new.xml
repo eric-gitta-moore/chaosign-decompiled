@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/content_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp">
+        <CheckBox android:id="@+id/cb_selected" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="15dp" android:button="@drawable/checkbox_group_member" android:layout_weight="0" android:layout_centerVertical="true"/>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_toRightOf="@+id/cb_selected">
+            <TextView android:textSize="13sp" android:textColor="#999999" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tvRecommend" android:background="@drawable/recommend_gray_bg" android:layout_width="32dp" android:layout_height="18dp" android:layout_marginLeft="10dp" android:text="@string/btn_Recommend_text" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="14sp" android:textColor="@color/chaoxing_blue" android:ellipsize="end" android:id="@+id/tv_creator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:layout_toLeftOf="@+id/tvRecommend" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_chapter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/cb_selected" android:layout_below="@+id/ll_top"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_contentainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_toRightOf="@+id/cb_selected" android:layout_below="@+id/tv_chapter">
+            <TextView android:textSize="17sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/tv_note_title" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingMultiplier="1" android:letterSpacing="0.02"/>
+            <TextView android:textSize="16sp" android:textColor="#444444" android:ellipsize="end" android:id="@+id/tv_note_content" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:lineSpacingMultiplier="1.2" android:letterSpacing="0.02"/>
+            <com.chaoxing.mobile.note.widget.DynamicItemImageAndVideoLayout android:id="@+id/vg_images" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/viewline1" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="15dp" android:layout_below="@+id/content_view"/>
+</RelativeLayout>

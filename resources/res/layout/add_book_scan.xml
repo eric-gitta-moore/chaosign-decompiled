@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/whilte_F0F3F7" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_gravity="center_horizontal" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" style="@style/scan_title"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_found" style="@style/Text_Content_14"/>
+        <TextView android:id="@+id/tvFoundBooks" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Content_14"/>
+    </LinearLayout>
+    <ImageView android:background="#b2b2b2" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginTop="20dp" android:layout_marginRight="12dp"/>
+    <Button android:textSize="16sp" android:textColor="#0e6fe7" android:id="@+id/btnCancel" android:background="@android:color/transparent" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="10dp" android:layout_marginRight="12dp" android:text="@string/cancel" style="@style/Button_black_Cancel"/>
+</LinearLayout>

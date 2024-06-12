@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/customer_dialog_bg" android:layout_width="300dp" android:layout_height="312dp">
+    <TextView android:gravity="center" android:id="@+id/tvTitle" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" style="@style/Text_Title"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_course" android:layout_width="match_parent" android:layout_height="220dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#bababa" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:id="@+id/btnCancel" android:background="@android:color/transparent" android:paddingLeft="9dp" android:paddingTop="15dp" android:paddingRight="9dp" android:paddingBottom="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <View android:id="@+id/vDividerLine" android:background="#bababa" android:visibility="visible" android:layout_width="1px" android:layout_height="match_parent"/>
+            <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:id="@+id/btnOk" android:background="@android:color/transparent" android:paddingLeft="9dp" android:paddingTop="15dp" android:paddingRight="9dp" android:paddingBottom="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/yes" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

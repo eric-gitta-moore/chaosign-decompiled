@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/bookmarkslist" android:background="@drawable/read_corner_bg" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/list_selector" android:cacheColorHint="#00000000" android:divider="@color/read_pdg_list_item_divider" android:dividerHeight="1px" android:layout_weight="1"/>
+        <Button android:textSize="16sp" android:textColor="#0e6fe7" android:layout_gravity="right" android:id="@+id/editbookmark" android:background="@drawable/border_blue" android:layout_width="65dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:text="@string/bookmark_btn_edit" android:singleLine="true" android:layout_below="@+id/bookmarkslist"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/vNoBookmark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_bookmark" android:layout_centerInParent="true"/>
+        <TextView android:textColor="#adb1b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="暂无书签"/>
+    </LinearLayout>
+</RelativeLayout>

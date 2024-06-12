@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/ll_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_profile" android:layout_width="wrap_content" android:layout_height="86dp" android:scaleType="centerInside"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="14sp" android:textColor="#1b1f26" android:id="@+id/tv_profile_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textColor="#8a9099" android:id="@+id/tv_profile_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="(默认)"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="184">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/first" android:layout_width="match_parent" android:layout_height="@dimen/adaptive_24dp" android:layout_marginLeft="@dimen/adaptive_24dp" android:layout_marginRight="@dimen/adaptive_24dp" android:layout_weight="0">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/tv_call_time">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_members" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp" android:layout_alignParentLeft="true">
+                <TextView android:textSize="@dimen/adaptive_18sp" android:textStyle="bold" android:textColor="#fff" android:ellipsize="end" android:id="@+id/tv_members" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/adaptive_18sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/tv_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/adaptive_18sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/tv_call_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/adaptive_8dp" android:layout_marginRight="@dimen/adaptive_8dp" android:weightSum="4" android:layout_weight="56">
+        <RelativeLayout style="@style/style_call_tools_panel_button_wrapper">
+            <ImageButton android:id="@+id/btn_change_camera_switch" android:src="@drawable/em_call_camera_toggle" style="@style/style_call_tools_panel_button"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/style_call_tools_panel_button_wrapper">
+            <ImageButton android:id="@+id/btn_mic_switch" android:src="@drawable/em_call_mic" style="@style/style_call_tools_panel_button"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/style_call_tools_panel_button_wrapper">
+            <ImageButton android:id="@+id/btn_camera_switch" android:src="@drawable/em_call_video" style="@style/style_call_tools_panel_button"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/style_call_tools_panel_button_wrapper">
+            <ImageButton android:id="@+id/btn_speaker_switch" android:src="@drawable/em_call_speaker" style="@style/style_call_tools_panel_button"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/adaptive_8dp" android:layout_marginRight="@dimen/adaptive_8dp" android:weightSum="4" android:layout_weight="56">
+        <RelativeLayout style="@style/style_call_tools_panel_button_wrapper">
+            <ImageButton android:id="@+id/btn_desk_share" android:src="@drawable/em_call_desk_share" style="@style/style_call_tools_panel_button"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/style_call_tools_panel_button_wrapper">
+            <ImageButton android:id="@+id/btn_invite" android:src="@drawable/em_call_invite" style="@style/style_call_tools_panel_button"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/adaptive_72dp" android:layout_marginLeft="@dimen/adaptive_8dp" android:layout_marginRight="@dimen/adaptive_8dp" android:weightSum="4" android:layout_weight="72">
+        <RelativeLayout style="@style/style_call_tools_panel_button_wrapper">
+            <ImageButton android:id="@+id/btn_scale_mode" android:visibility="invisible" android:layout_marginTop="16dp" android:src="@drawable/em_call_scale_fill" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/style_call_tools_panel_button"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <ImageButton android:id="@+id/btn_hangup" android:background="@drawable/em_call_btn_bg" android:layout_width="@dimen/adaptive_72dp" android:layout_height="@dimen/adaptive_72dp" android:src="@drawable/em_call_hangup" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/style_call_tools_panel_button_wrapper">
+            <ImageButton android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/btn_close" android:layout_marginTop="16dp" android:src="@drawable/em_call_close" style="@style/style_call_tools_panel_button"/>
+            <ImageButton android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/btn_zoomin" android:visibility="gone" android:layout_marginTop="16dp" android:src="@drawable/em_call_zoomin" style="@style/style_call_tools_panel_button"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

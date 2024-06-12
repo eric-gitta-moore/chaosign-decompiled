@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlcontainer" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="#80666666" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48dp"/>
+    <LinearLayout android:background="@null" android:layout_width="match_parent" android:layout_height="335dp" android:layout_marginTop="48dp">
+        <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="11sp" android:textColor="#cccccc" android:id="@+id/tvNotice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="分组方案"/>
+            <GridView android:scrollbarStyle="outsideOverlay" android:id="@+id/gridView" android:paddingLeft="15dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:listSelector="@null" android:horizontalSpacing="4dp" android:verticalSpacing="1dp" android:numColumns="3"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

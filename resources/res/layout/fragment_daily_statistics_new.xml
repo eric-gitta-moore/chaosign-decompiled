@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/cl_layout_daily_statistics" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/ab_layout_daily_statistics" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_behavior="com.chaoxing.mobile.office.widget.DSAppBarLayoutBehavior">
+                <com.chaoxing.mobile.office.widget.DSHeaderView android:id="@+id/ds_header_view" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1"/>
+                <View android:id="@+id/v_divider" android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="8dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_scrollFlags="1"/>
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_daily_statistics_tabbar"/>
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

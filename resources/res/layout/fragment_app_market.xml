@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/subscriptionContentConter" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topBar" layout="@layout/activity_top_bar"/>
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvContent" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:layout_below="@+id/topBar"/>
+    <include android:id="@+id/pbContentWait" layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

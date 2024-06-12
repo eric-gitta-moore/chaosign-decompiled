@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="65dp">
+        <TextView android:gravity="center_vertical" android:id="@+id/tvRssChannelContentTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="80dp" android:singleLine="true" style="@style/title_text_black_24"/>
+        <Button android:id="@+id/btnAdd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收藏" android:layout_alignParentRight="true" style="@style/btn_stroke_blue_default"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llDate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <TextView android:id="@+id/tvMonth" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Content2_14"/>
+            <TextView android:id="@+id/tvYear" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Content2_14"/>
+        </LinearLayout>
+        <TextView android:gravity="center_vertical" android:id="@+id/tvDay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/llDate" style="@style/text_gray_40"/>
+    </RelativeLayout>
+    <ImageView android:background="@color/blue_0e6fe7" android:layout_width="match_parent" android:layout_height="2dp"/>
+</LinearLayout>

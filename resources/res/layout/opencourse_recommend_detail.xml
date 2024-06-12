@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/flPicture" android:layout_width="match_parent" android:layout_height="190dp"/>
+    <ImageView android:background="@drawable/opencourse_recommend_shadow" android:layout_width="match_parent" android:layout_height="6px"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tvRecommendTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" style="@style/Text_Title"/>
+            <TextView android:id="@+id/tvCollegeContent" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Content_14"/>
+            <TextView android:id="@+id/tvLecturerContent" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Content_14"/>
+            <TextView android:id="@+id/tvPeriodContent" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Content_14"/>
+            <TextView android:id="@+id/tvSummaryContent" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" style="@style/Text_Content_14"/>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp">
+        <Button android:id="@+id/btnPlay" android:layout_height="wrap_content" android:text="@string/play_course" android:layout_centerInParent="true" style="@style/button_stroke_blue_4_words"/>
+    </RelativeLayout>
+</LinearLayout>

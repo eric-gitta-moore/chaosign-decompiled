@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+		<!-- 禁止打电话，发邮件 -->
+		<meta name="format-detection" content="telephone=no,email=no,adress=no">
+		<!--禁止缓存-->
+		<meta http-equiv="pragma" content="no-cache"/>
+		<meta http-equiv="cache-control" content="no-cache" />
+		<!--设定网页的到期时间--> 
+		<meta http-equiv="expires" content="0"/>
+	    <title data-lang="课表">课表</title>
+	    <link rel="stylesheet" href="css/style.css?t=6" />
+	    <link rel="stylesheet" href="css/common.css?t=2" />
+	    <link rel="stylesheet" href="css/schedule.css?t=8" />
+        <!-- 插件包下面的js文件都是放在js目录下的，所以首页用到的js文件也要放在js目录下，且新引用js文件，需要同步拷到插件包里面 -->
+	    <script type="text/javascript" src="js/jquery.min.js" ></script>
+        <script type="text/javascript" src="js/map.js"></script>
+        <script type="text/javascript" src="js/CXJSBridge.js"></script>
+        <script type="text/javascript" src="js/app.utils.js"></script>
+	    <script>
+	        function _jsBridgeReady(){
+	            AppUtils.hideToolbar({
+	                toolbarType:"0"
+	            });
+	        }
+        </script>
+	</head>
+	<body>
+		<div class="tophead">
+			<div class="head bottomLine">
+			  <div class="leftHead">
+	                <div class="back"></div>
+	                <div class="totalscheduel" data-lang="总览">总览</div>
+	            </div>
+	            <div class="centerHead">
+	                <div class="selectBox">
+	                    <div class="selectWeek">
+                            <div class="weekBox">
+                                <span class="week" week=''></span>
+                                <img src="images/arrowblue.png"/>
+                            </div>
+                            <div class="isNow"></div>
+                        </div>
+                        
+	                    <div class="selectList">
+	                        <ul></ul>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="rightHead" style="display: none">
+	                <div class="scan"></div>
+	                <div class="setting"></div>
+	            </div>
+                <!--20210428-->
+                <div class="completeDelete" data-lang="完成">完成</div>
+			</div>
+			<!--20200922 课表较少提示-->
+            <div class="lessTips" style="display:none;">
+                <span data-lang="课表信息较少，点击右上角可从教务系统导入课表">课表信息较少，点击右上角可从教务系统导入课表</span>
+                <i></i>
+            </div>
+			<!--20200826 表头单独写，放到顶部-->
+            <table id="scheduleHead"></table>
+		</div>
+		<!--20200807 设置加透明遮罩-->
+        <div class="settingMask">
+            <div class="settingModal">
+                <div class="settingList list">
+                    <div class="listItem bottomLine2 setBtn" data-lang="设置">设置</div>
+                    <div class="listItem bottomLine2 import" style="display:none;" data-lang="导入">导入</div>
+                    <div class="listItem bottomLine2 richScan" data-lang="扫一扫">扫一扫</div>
+                    <div class="listItem bottomLine2 QRCode" data-lang="二维码">二维码</div>
+                    <div class="listItem forward" data-lang="转发">转发</div>
+                    <!--<div class="listItem history" style="display: none;">历史课表</div>-->
+                </div>
+            </div>
+        </div>
+        <!-- 20221016 增加弹窗 -->
+        <div class="tipsMask" style="display:none;pointer-events: none;">
+            <div class="settingTips">在此切换当前学期</div>
+        </div>
+        <!--20200918  引导页  显示时给body加popOverflow，禁止页面滚动-->
+        <div class="guidMask" style="display:none;">
+            <div class="firstdiv ycenter">
+                <div class="td"><div class="firstClick ycenter xcenter"><img class="add" src="images/add.png"></div></div>
+                <img class="guideline" src="images/guideline.png" />
+                <p data-lang="点击格子添加课表">点击格子添加课表</p>
+            </div>
+            <div class="seconddiv">
+                <div class="bg">
+                    <div class="td"><div class="firstClick ycenter xcenter"><img class="add" src="images/add.png"></div></div>
+                    <img class="guidearrow" src="images/guidearrow.png" />
+                </div>
+                <img class="guideline" src="images/guideline.png" />
+                <p>点击后拖动格子<br>可添加多节课</p>
+            </div>
+        </div>
+        <div class="backToWeek" style="display:none;">
+            <img src="images/backToWeek.png" alt="" srcset="">
+            <span></span>
+        </div>
+		<div class="table"><table id="scheduleTable"></table></div>
+		<!--20200810 复制到我的课表  他人的课程表给div .table加一个class other,以保证页面底部给按钮留间距-->
+        <div class="bottomBtn topLine">
+            <div class="btn blue copySchedule" data-lang="复制到我的课表">复制到我的课表</div>
+        </div>
+        <!-- 导入课表提示 -->
+        <div class="loadingmask xcenter ycenter" style="display: none;">
+            <img src="images/loading.png">
+            <span data-lang="Importing timetable…">正在导入课表…</span>
+        </div>
+        <div class="centerMask loadingModal" style="display: none;">
+            <div class="centerConfirmModal">
+                <div class="centerHead bottomLine" data-lang="Processing, you will be notified by notification when the import is successful, please wait">本校课表信息来自教务系统同步，不支持手动导入</div>
+                <div class="btns">
+                    <div class="modalbtn" style="width: 100%;" data-lang="知道了">知道了</div>
+                </div>
+            </div>
+        </div>
+        <!--20200922 导入课表弹窗-->
+        <div class="centerMask importScheduleModal" style="display: none;">
+            <div class="centerConfirmModal">
+                <div class="centerHead bottomLine" data-lang="暂无课表信息，是否从教务系统导入课表？">暂无课表信息，是否从教务系统导入课表？</div>
+                <div class="btns">
+                    <div class="modalbtn cancle" data-lang="取消">取消</div>
+                    <div class="modalbtn leftLine importSche" data-lang="导入课表">导入课表</div>
+                </div>
+            </div>
+        </div>
+        <!--20210428 删除课程弹窗-->
+        <div class="centerMask deleteCourseModal" style="display: none;">
+            <div class="centerConfirmModal">
+                <div class="centerHead bottomLine" data-lang="确认删除？">确认删除？</div>
+                <div class="btns">
+                    <div class="modalbtn cancle" data-lang="取消">取消</div>
+                    <div class="modalbtn leftLine sureDelete" data-lang="删除">删除</div>
+                </div>
+            </div>
+        </div>
+        <!--2022-02-24 删除课堂弹窗-->
+        <div class="centerMask popDeleteCourseModal" style="display: none;">
+            <div class="centerConfirmModal">
+                <div class="centerHead bottomLine">该在线课堂已被删除，是否删除失效的课堂码？</div>
+                <div class="btns">
+                    <div class="modalbtn cancle">取消</div>
+                    <div class="modalbtn leftLine sureDelete">删除</div>
+                </div>
+            </div>
+        </div>
+        <!-- 2023-05-24 查看冲突课程弹窗 -->
+        <div class="centerMask popClashCourseModal">
+            <div class="clashCourseList">
+            </div>
+        </div>
+        <!-- 插件包下面的js文件都是放在js目录下的，所以首页用到的js文件也要放在js目录下，且新引用js文件，需要同步拷到插件包里面 -->
+        <script type="text/javascript" src="js/tools.js?t=7"></script>
+        <script type="text/javascript" src="js/clamp.js"></script>
+	    <script type="text/javascript" src="js/schedule.js?v=73"></script>
+        <script type="text/javascript" src="js/jquery.i18n.properties.min.js" ></script>
+        <script type="text/javascript" src="js/i18n.util.js?t=7"></script>
+        <script type="text/javascript" src="js/mirrorDomain.js"></script>
+	    <script type="text/javascript" src="js/common.js?t=2"></script>
+	</body>
+</html>

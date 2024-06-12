@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titleBar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="35dp" android:layout_below="@+id/titleBar">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llTop" android:layout_width="match_parent" android:layout_height="50dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivAllchang" android:background="@drawable/img_all_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="12dp"/>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:layout_gravity="center_vertical" android:id="@+id/tvAllchang" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/downloadres_chapterDownload_alldownload"/>
+        </LinearLayout>
+        <ListView android:id="@+id/listview" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#e5e5e5" android:dividerHeight="1px" android:layout_below="@+id/llTop" android:footerDividersEnabled="false"/>
+        <View android:id="@+id/spinner" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/llTop"/>
+        <include android:id="@+id/showEmpty" android:visibility="gone" layout="@layout/layout_downloadcenter_emptyview"/>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tvSize" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="35dp" android:text="总空间/" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

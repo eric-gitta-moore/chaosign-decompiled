@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50.5dp">
+    <RelativeLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/countLayout" android:paddingLeft="16dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/typeNameTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="出勤人数" android:singleLine="true" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/typeCountTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="上地七街汇众大厦" android:singleLine="true" android:drawableRight="@drawable/as_arrow_right_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/divider" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true" android:contentDescription="@string/mission_introduce"/>
+</RelativeLayout>

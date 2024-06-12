@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="56dp">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    <View android:background="#f5f6f7" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

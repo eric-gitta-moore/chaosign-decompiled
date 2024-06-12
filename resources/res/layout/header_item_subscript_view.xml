@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/llContentView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlItem1" android:paddingLeft="15dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="65dp">
+            <ImageView android:id="@+id/ivItem1" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_folder_private" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvItem1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="最近阅读" android:maxLines="1" android:layout_toLeftOf="@+id/tvItem1Right" android:layout_toRightOf="@+id/ivItem1" android:layout_centerVertical="true"/>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tvItem1Right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@drawable/list_divider_line_style_65dp" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/rlItem2" android:paddingLeft="15dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="65dp">
+            <ImageView android:id="@+id/ivItem2" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_folder_private" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvItem2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="书签" android:maxLines="1" android:layout_toLeftOf="@+id/tvItem2Right" android:layout_toRightOf="@+id/ivItem2" android:layout_centerVertical="true"/>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tvItem2Right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@drawable/list_divider_line_style_65dp" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/rlItem3" android:paddingLeft="15dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="65dp">
+            <ImageView android:id="@+id/ivItem3" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_folder_private" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvItem3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="下载" android:maxLines="1" android:layout_toLeftOf="@+id/tvItem3Right" android:layout_toRightOf="@+id/ivItem3" android:layout_centerVertical="true"/>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tvItem3Right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/view_d8" android:background="@drawable/list_divider_line_style_65dp" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

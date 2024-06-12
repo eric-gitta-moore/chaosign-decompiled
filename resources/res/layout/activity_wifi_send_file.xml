@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/ll_bs" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_booksend" android:background="@drawable/recent_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginTop="40dp" android:layout_marginRight="5dp" android:layout_marginBottom="20dp">
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="15dp" android:text="@string/book_send"/>
+        <TextView android:textSize="17sp" android:textColor="@android:color/black" android:id="@+id/book_on_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:text="@string/book_on_wifi_send"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/wifi_send" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/wifi_main" android:visibility="visible" android:layout_width="match_parent" android:layout_height="210dp">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/wifi_tip" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@+id/wifi_pro" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/wifi_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_wifi"/>
+                </LinearLayout>
+                <ListView android:id="@+id/wifi_list" android:visibility="gone" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:divider="@drawable/line_background" android:dividerHeight="2dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

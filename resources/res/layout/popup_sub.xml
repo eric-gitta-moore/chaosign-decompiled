@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="240dp" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_zoom" android:background="@drawable/epub_lum_back" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="15dp">
+                <ImageButton android:id="@+id/btn_zoom_out" android:background="@drawable/btn_normal" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/epub_zoom_out" android:layout_weight="1" android:contentDescription="@null"/>
+                <View android:id="@+id/v_zoom_split" android:background="#b2b2b2" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="3dp" android:layout_marginBottom="3dp"/>
+                <ImageButton android:id="@+id/btn_zoom_in" android:background="@drawable/btn_normal" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/epub_zoom_in" android:layout_weight="1" android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/read_mode_view" android:background="@drawable/epub_lum_back" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="15dp">
+                <LinearLayout android:gravity="center" android:id="@+id/ll_rm_normal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <Button android:background="@drawable/rm_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <Button android:textSize="16sp" android:gravity="center" android:id="@+id/btn_rm_normal" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/set_day" android:contentDescription="@null" android:textAlignment="center"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@+id/ll_rm_night" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <Button android:background="@drawable/rm_night" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <Button android:textSize="16sp" android:gravity="center" android:id="@+id/btn_rm_night" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/set_night" android:contentDescription="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/light_adjust_view_back" android:background="@drawable/epub_lum_back" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="15dp">
+                <ImageView android:id="@+id/lum_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/epub_lum_dark_left" android:contentDescription="@null"/>
+                <SeekBar android:id="@+id/sb_light_adjust" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:max="255" android:progress="0" android:secondaryProgress="0" android:layout_weight="1" style="@style/ReaderSeekBar"/>
+                <SeekBar android:id="@+id/sb_light_adjust_night" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:maxHeight="2dp" android:max="255" android:progress="0" android:secondaryProgress="0" android:progressDrawable="@drawable/seekbar_style_ep_night" android:minHeight="2dp" android:thumb="@drawable/epub_progress_swipe_point_nightmode" android:thumbOffset="12dp" android:layout_weight="1"/>
+                <ImageView android:id="@+id/lum_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/epub_lum_dark_right" android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/page_mode_view" android:background="@drawable/epub_lum_back" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/pm_title" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+                    <Button android:background="@drawable/set_pagemodel" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/read_set_text_color" android:id="@+id/tv_page_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/page_turn_mode_tip"/>
+                    <ImageView android:id="@+id/pm_down_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:src="@drawable/arrow_expand" android:contentDescription="@null"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/pm_sub" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ListView android:id="@+id/page_mode" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="91dp" android:layout_margin="0dp" android:cacheColorHint="#00000000" android:divider="@color/read_set_line_color" android:dividerHeight="1dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/screen_close_view" android:background="@drawable/epub_lum_back" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sc_title" android:layout_width="match_parent" android:layout_height="45dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set_sleep_time"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/read_set_text_color" android:id="@+id/tv_screen_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/screen_close_tip"/>
+                    <ImageView android:id="@+id/sc_down_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:src="@drawable/arrow_expand" android:contentDescription="@null"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/sc_sub" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ListView android:id="@+id/screen_close_mode" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="209dp" android:layout_margin="2dp" android:cacheColorHint="#00000000" android:divider="@color/page_mode_div_color" android:dividerHeight="1dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

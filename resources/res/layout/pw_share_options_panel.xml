@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/vp_operation" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+        <com.viewpagerindicator.CirclePageIndicator android:id="@+id/indicator" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginBottom="10dp" app:dotPadding="10dp" app:fillColor="#8b8b8b" app:pageColor="#bbbbbb" app:radius="3dp" app:strokeWidth="1px"/>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <Button android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/btnCancel" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/btn_no"/>
+    </LinearLayout>
+</RelativeLayout>

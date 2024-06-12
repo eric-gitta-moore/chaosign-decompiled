@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_ping" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar" android:fadeScrollbars="false">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/feedback_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                <RadioButton android:id="@+id/rbMe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="反馈我的问题"/>
+                <RadioButton android:id="@+id/rbOther" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取他人日志 "/>
+            </RadioGroup>
+            <RelativeLayout android:id="@+id/start_view" android:layout_width="match_parent" android:layout_height="40dp">
+                <TextView android:textSize="15sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择时间" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14sp" android:textColor="@color/gray_b3b3b3" android:id="@+id/tv_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部日志" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="15sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="问题类型" android:layout_centerVertical="true"/>
+            <CheckBox android:id="@+id/cbIM" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="聊天消息问题/丢消息/群聊问题 等"/>
+            <CheckBox android:id="@+id/cbLesson" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="泛雅课堂/会议 音视频问题 等"/>
+            <CheckBox android:id="@+id/cbCurriculum" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="课表问题/无法导入课表 等"/>
+            <CheckBox android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="其他"/>
+            <EditText android:textSize="15sp" android:textColor="#333333" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/et_content" android:background="#efeff4" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginTop="@dimen/dp_10" android:hint="请简要描述您遇到的问题，这有助于问题快速解决。" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_uid" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_25">
+                <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                    <RadioButton android:id="@+id/rbPuid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="超星uid"/>
+                    <RadioButton android:id="@+id/rbUid" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="环信uid"/>
+                </RadioGroup>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="15sp" android:textColor="#333333" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/et_uid_search" android:background="#efeff4" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_46" android:hint="用户的uid" android:layout_weight="1" android:layout_centerVertical="true" android:inputType="number"/>
+                    <Button android:textColor="@color/white" android:id="@+id/btn_search" android:background="@color/blue_009afe" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_10" android:text="获取"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tvUser" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="其他查询"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="15sp" android:textColor="#333333" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/et_message_search" android:background="#efeff4" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/dp_46" android:hint="" android:layout_weight="1" android:layout_centerVertical="true" android:inputType="number"/>
+                    <Button android:textColor="@color/white" android:id="@+id/btn_search_message" android:background="@color/blue_009afe" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_10" android:text="查询"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/vWaiting" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+</RelativeLayout>

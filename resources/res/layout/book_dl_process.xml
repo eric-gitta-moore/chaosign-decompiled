@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/process_view" android:background="@drawable/translucent_white_bg" android:paddingLeft="2px" android:paddingTop="5px" android:paddingRight="2px" android:paddingBottom="5px" android:layout_width="75px" android:layout_height="wrap_content" android:layout_marginLeft="35px" android:layout_marginTop="102px">
+    <ProgressBar android:id="@+id/process_bar" android:layout_width="75px" android:layout_height="10px" android:maxHeight="20dp" android:max="100" android:indeterminateOnly="false" android:progressDrawable="@drawable/progress_horizontal" android:minHeight="20dp"/>
+    <TextView android:gravity="center_horizontal" android:id="@+id/process_text" android:layout_width="75px" android:layout_height="20px" android:layout_marginLeft="2px" style="@style/text_16_black"/>
+</LinearLayout>

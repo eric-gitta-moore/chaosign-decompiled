@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/llSearchHistory" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/lvSearchHistory" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/List_View_Style"/>
+    <View android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+    <Button android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/btnClearHistory" android:background="@android:color/transparent" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_clear_history" android:drawableLeft="@drawable/search_history_delete" android:drawablePadding="10dp"/>
+    <View android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

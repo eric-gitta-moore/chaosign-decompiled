@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.hjq.shape.view.ShapeView android:id="@+id/view_tag" android:layout_width="50dp" android:layout_height="4dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_centerHorizontal="true" app:shape_radius="2dp" app:shape_solidColor="#b0b7be"/>
+    <RelativeLayout android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="46dp" android:layout_below="@+id/view_tag">
+        <ImageView android:id="@+id/iv_back" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_ai_back"/>
+        <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="#1b1f26" android:ellipsize="end" android:id="@+id/tv_title" android:paddingLeft="80dp" android:paddingRight="80dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</merge>

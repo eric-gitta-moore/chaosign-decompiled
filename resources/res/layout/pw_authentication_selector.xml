@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/viewContainer" android:background="#90000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_group_qrcode_btn" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16sp" android:textColor="#ff0099ff" android:gravity="center" android:id="@+id/btnNotValidate" android:background="@android:color/transparent" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="允许任何人加入"/>
+            <View android:background="#ff999999" android:layout_width="match_parent" android:layout_height="1px"/>
+            <Button android:textSize="16sp" android:textColor="#ff0099ff" android:gravity="center" android:id="@+id/btnValidate" android:background="@android:color/transparent" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="需要身份验证"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_group_qrcode_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <Button android:textSize="16sp" android:textColor="#ff0099ff" android:gravity="center" android:id="@+id/btnCancel" android:background="@android:color/transparent" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="取消"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

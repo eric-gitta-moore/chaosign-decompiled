@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:id="@+id/down_tip_view" android:background="@drawable/bg_toast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textSize="15sp" android:textColor="@color/whilte_F0F3F7" android:id="@+id/tv_tip1" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已添加至云盘-我的下载  | " android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/whilte_F0F3F7" android:id="@+id/tv_tip2" android:paddingLeft="5dp" android:paddingTop="12dp" android:paddingRight="10dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看" android:drawableRight="@drawable/white_arrow_24" android:drawablePadding="5dp" android:layout_toRightOf="@+id/tv_tip1" android:layout_centerVertical="true"/>
+    </LinearLayout>
+</RelativeLayout>

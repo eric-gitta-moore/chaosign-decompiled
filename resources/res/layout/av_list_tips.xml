@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/text_size_14" android:textColor="@color/text_av_tips" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_video_tips" android:background="@color/bg_av_tips" android:paddingLeft="21dp" android:paddingRight="27dp" android:layout_width="match_parent" android:layout_height="45dp" android:maxLines="1" android:drawableLeft="@drawable/icon_video_tips" android:drawablePadding="10dp"/>

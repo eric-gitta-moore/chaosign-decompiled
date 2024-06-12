@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.chaoxing.fanya.aphone.view.AsyncImageView android:id="@+id/course_img" android:visibility="gone" android:layout_width="match_parent" android:layout_height="160dp" android:scaleType="fitXY"/>
+    <View android:background="#cfcfcf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="90dp" android:weightSum="3">
+        <TextView android:textSize="14sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/course_notice" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_notice" android:drawableTop="@drawable/course_notice_student" android:drawablePadding="6dp" android:layout_weight="1"/>
+        <View android:background="#cfcfcf" android:layout_width="1px" android:layout_height="match_parent"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/course_homework" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="作业" android:drawableTop="@drawable/course_work_student" android:drawablePadding="6dp" android:layout_weight="1"/>
+        <View android:background="#cfcfcf" android:layout_width="1px" android:layout_height="match_parent"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/course_exam" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_exam" android:drawableTop="@drawable/course_exam_student" android:drawablePadding="6dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:background="#cfcfcf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="90dp" android:weightSum="3">
+        <TextView android:textSize="14sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/course_discuss_group" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="讨论" android:drawableTop="@drawable/course_discuss_student" android:drawablePadding="6dp" android:layout_weight="1"/>
+        <View android:background="#cfcfcf" android:layout_width="1px" android:layout_height="match_parent"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/course_statistics" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="统计" android:drawableTop="@drawable/course_statistics" android:drawablePadding="6dp" android:layout_weight="1"/>
+        <View android:background="#cfcfcf" android:layout_width="1px" android:layout_height="match_parent"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/course_manage" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="管理" android:drawableTop="@drawable/course_manage" android:drawablePadding="6dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#efefef" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#cfcfcf" android:layout_width="match_parent" android:layout_height="1px"/>
+        <View android:background="#cfcfcf" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="16dp"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/course_top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="18sp" android:textColor="@color/normal_title_color" android:gravity="center_vertical" android:id="@+id/tv_catalog" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:text="目录"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_class" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp">
+        <TextView android:textSize="15sp" android:textColor="@color/bg_tv" android:id="@+id/class_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/select_down" android:layout_toRightOf="@+id/class_checked" android:layout_centerVertical="true"/>
+        <View android:id="@+id/view_line" android:background="#c8c7cc" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

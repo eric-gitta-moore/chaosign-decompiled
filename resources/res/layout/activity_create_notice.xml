@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/cToolBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/top_cover" android:background="#80999999" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/cToolBar" android:layout_alignBottom="@+id/cToolBar"/>
+    <FrameLayout android:id="@+id/fl_editor" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/cToolBar"/>
+    <include android:id="@+id/loading_view" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/indicator" android:background="@null" android:layout_width="match_parent" android:layout_height="34dp" android:layout_centerVertical="true"/>
+</merge>

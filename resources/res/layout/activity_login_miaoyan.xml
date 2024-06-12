@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="96dp" android:layout_below="@+id/toolbar">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="36sp" android:textColor="#333333" android:ellipsize="middle" android:gravity="center_horizontal" android:id="@+id/tv_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14sp" android:textColor="#999999" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/tv_slogan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:singleLine="true"/>
+        <com.chaoxing.mobile.miaoyan.MobPrivacyView android:id="@+id/view_privacy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:paddingStart="9dp" android:paddingEnd="15dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="44dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tv_other_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:minHeight="44dp"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/pb_loading" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true" style="@style/ProgressBar"/>
+</RelativeLayout>

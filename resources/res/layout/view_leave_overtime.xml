@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/lateLayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/late"/>
+        <TextView android:textSize="16sp" android:textColor="@color/chaoxingBlue" android:id="@+id/lateNumberTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="1px" android:layout_height="18dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/leaveEarlyLayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/leave_early"/>
+        <TextView android:textSize="16sp" android:textColor="@color/chaoxingBlue" android:id="@+id/leaveEarlyNumberTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="1px" android:layout_height="18dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/leaveLayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/leave"/>
+        <TextView android:textSize="16sp" android:textColor="@color/chaoxingBlue" android:id="@+id/leaveNumberTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="1px" android:layout_height="18dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/outLayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_out"/>
+        <TextView android:textSize="16sp" android:textColor="@color/chaoxingBlue" android:id="@+id/goOutNumberTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="1px" android:layout_height="18dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/overTimeLayout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overtime"/>
+        <TextView android:textSize="16sp" android:textColor="@color/chaoxingBlue" android:id="@+id/overTimeNumberTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.GestureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/libContentConter" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/activity_comment_title"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:id="@+id/lvUpload" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/List_View_Style"/>
+            <include android:id="@+id/view_no_content" android:visibility="gone" layout="@layout/setting_item_no_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</com.fanzhou.widget.GestureRelativeLayout>

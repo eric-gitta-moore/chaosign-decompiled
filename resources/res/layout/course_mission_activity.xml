@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/top_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/header_height">
+            <com.chaoxing.fanya.aphone.view.BackButtonBlack android:id="@+id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_centerVertical="true"/>
+            <TextView android:textSize="18sp" android:textColor="@color/title_text" android:ellipsize="end" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:layout_marginRight="80dp" android:text="@string/course_mission" android:singleLine="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/btn_right" android:background="@color/transparent" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="任务库" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="#b2b2b2" android:layout_width="match_parent" android:layout_height="1px"/>
+        <FrameLayout android:id="@+id/flMission" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <View android:background="#b2b2b2" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:background="#f8f8f9" android:layout_width="match_parent" android:layout_height="76dp">
+            <LinearLayout android:gravity="center" android:id="@+id/mission_chat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:textColor="#0099ff" android:gravity="center" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="交流" android:drawableTop="@drawable/mission_chat" android:drawablePadding="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/mission_add" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:textColor="#0099ff" android:gravity="center" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/course_mission" android:drawableTop="@drawable/mission_add" android:drawablePadding="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/mission_student" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:textColor="#0099ff" android:gravity="center" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="学生" android:drawableTop="@drawable/mission_student" android:drawablePadding="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fl_operation" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

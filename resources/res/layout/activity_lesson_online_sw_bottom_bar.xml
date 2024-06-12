@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/ll_bottom" android:background="#f225282e" android:layout_width="match_parent" android:layout_height="56dp" android:layout_alignParentBottom="true">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/vg_mic" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <com.chaoxing.mobile.conferencesw.view.MicStatusView android:id="@+id/iv_mic" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_mic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_unmute_voice" android:layout_centerInParent="true"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_handup" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_handup" android:layout_width="19dp" android:layout_height="18dp" android:src="@drawable/ic_conference_handup" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_handup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/course_online_handup" android:layout_below="@+id/iv_handup" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_video_bottom" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_video_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_open_video" android:drawableTop="@drawable/ic_conference_video_closed" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_screen_share" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_screen_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_screen_share" android:drawableTop="@drawable/ic_conference_screen_unshare" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_member" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_member" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_member" android:drawableTop="@drawable/ic_conference_member" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_chat" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_chat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_interaction" android:drawableTop="@drawable/ic_conference_members" android:layout_centerInParent="true"/>
+        <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_unread" android:background="@drawable/bg_unread_count_tip2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="18dp" android:layout_marginTop="-3dp" android:layout_marginRight="-9dp" android:minWidth="18dp" android:layout_alignTop="@+id/tv_chat" android:layout_alignRight="@+id/tv_chat"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_more" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_more" android:drawableTop="@drawable/lesson_online_icon_more_down" android:layout_centerInParent="true"/>
+        <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_unread2" android:background="@drawable/bg_unread_count_tip2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18dp" android:layout_marginTop="-3dp" android:layout_marginRight="-6dp" android:minWidth="18dp" android:layout_alignTop="@+id/tv_more" android:layout_alignRight="@+id/tv_more"/>
+    </RelativeLayout>
+</LinearLayout>

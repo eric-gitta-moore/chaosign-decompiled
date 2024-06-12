@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/vg_validate" android:background="#f0eff5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/common_title_bar_3"/>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginLeft="12dp" android:text="@string/pcenter_message_addfirend_AddInfo"/>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+        <EditText android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="top" android:id="@+id/et_msg" android:background="@android:color/white" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="112dp" android:text="我是" android:maxLength="25"/>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <include layout="@layout/page_loading_circle"/>
+</RelativeLayout>

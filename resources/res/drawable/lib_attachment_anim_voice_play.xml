@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="60" android:drawable="@drawable/lib_attachment_anim_voice_play1"/>
+    <item android:duration="60" android:drawable="@drawable/lib_attachment_anim_voice_play2"/>
+    <item android:duration="60" android:drawable="@drawable/lib_attachment_anim_voice_play3"/>
+    <item android:duration="60" android:drawable="@drawable/lib_attachment_anim_voice_play4"/>
+    <item android:duration="60" android:drawable="@drawable/lib_attachment_anim_voice_play5"/>
+    <item android:duration="60" android:drawable="@drawable/lib_attachment_anim_voice_play6"/>
+    <item android:duration="60" android:drawable="@drawable/lib_attachment_anim_voice_play7"/>
+    <item android:duration="60" android:drawable="@drawable/lib_attachment_anim_voice_play8"/>
+    <item android:duration="60" android:drawable="@drawable/lib_attachment_anim_voice_play9"/>
+</animation-list>

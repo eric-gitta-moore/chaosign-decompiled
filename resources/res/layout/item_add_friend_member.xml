@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/add_member" android:background="@color/white" android:layout_width="match_parent" android:layout_height="62dp">
+        <ImageView android:id="@+id/icon_next" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_group_info_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好友"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_discription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="（可选）"/>
+    </RelativeLayout>
+    <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:id="@+id/v_line_next" android:background="#d9d9d9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp"/>
+</LinearLayout>

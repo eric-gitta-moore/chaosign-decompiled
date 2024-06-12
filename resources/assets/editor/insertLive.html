@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body onhashchange="hashChangeFire()">
+    <div class="attach-box" id="attach-box"><b class="closeAnnex"></b></div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/attachment_common.js"></script>
+    <script type="text/javascript">
+	var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+    function hashChangeFire(){
+        if(getUrlParam('isiframeClose')){
+            $(".closeAnnex").show();
+        }
+        var livestatus = getUrlParam('livestatusVal');
+        var ifreview = getUrlParam('ifreviewVal');
+        var statusMap = {//状态映射
+            0:{"cls":"insertLive-no","img":"images/icon_live_no.png","text":"直播未开始"},
+            1:{"cls":"insertLive-ing","img":"images/icon_live_ing.png","text":"正在直播"},
+            3:{"cls":"insertLive-no","img":"images/icon_live_no.png","text":"直播中断"},
+            4:{"cls":"insertLive-no","img":"images/icon_live_no.png","text":"直播结束"},
+            5:{"cls":"insertLive-ing","img":"images/icon_live_ing.png","text":"直播回看"},
+            6:{"cls":"insertLive-no","img":"images/icon_live_no.png","text":"直播已删除"}
+        }
+        var $liveEle = $(".attach-box");
+        if(getUrlParam('isdelete') == 1){
+        	var statusInfo = statusMap[6];
+        }else if(livestatus == 0 || livestatus == 1 || livestatus == 3 ){
+            var statusInfo = statusMap[livestatus];
+        }else if(livestatus == 4){
+            if(ifreview == 0){
+                var statusInfo = statusMap[5];
+            }else{
+                var statusInfo = statusMap[4];
+            }
+        }
+        if(statusInfo){
+            $liveEle.find(".attach_live").removeClass("insertLive-ing").removeClass("insertLive-stop").removeClass("insertLive-no").addClass(statusInfo["cls"]);
+            $liveEle.find(".attach_live .img img").attr("src",statusInfo["img"]);
+            $liveEle.find(".attach_live .live-text").html(statusInfo["text"]);
+        }
+    }
+    function getUrlParam(name){
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.hash.substr(1).match(reg);  //匹配目标参数
+        if (r != null) return r[2]; return null; //返回参数值
+    }
+    //2021.04.22
+    var editorClientType = true;
+    if(getUrlParam('editorClientType')){
+    	if(getUrlParam('editorClientType') == 'false'){
+    		editorClientType = false;
+    	}
+    }
+    var jsonOld = window.name;
+    try{
+        jsonOld = b64DecodeUnicode(jsonOld);
+    }catch(e){
+
+    }
+    try{
+        json = JSON.parse(jsonOld);
+    }catch(e){
+        json = "";
+    }
+    if (json == "") {
+
+    }
+    var att_chat_course = json.att_chat_course || "";
+    if (att_chat_course != "") {
+        var vdoid = att_chat_course.description.vdoid;
+        var streamName = att_chat_course.description.streamName;
+        var liveTit = att_chat_course.title || '直播';
+        var liveTime = att_chat_course.subTitle || '';
+        var html = '<div aria-hidden="false" role="option" class="attach_live insertLive-no">' +
+                '<div class="attach_item insertLive">' +
+                 '<div aria-hidden="true" class="img"><img src="images/icon_live_no.png"></div>' +
+                 '<div class="attach_infor">' +
+                        '<h2>' + liveTit + '</h2>' +
+                        '<p class="aside">' + liveTime + '</p>'+
+                 '</div>' +
+                '</div>' +
+                '<div class="live-status clearfix">' +
+                     '<span class="name fr">主播：' + (att_chat_course.description.userName || '') + '</span>' +
+                     '<span class="live-text fl">直播未开始</span>' +
+                '</div>' +
+        	'</div>';
+        $(".attach-box").append(html);
+        if(json.cid){
+        	var cid=json.cid;
+        	$('.attach_infor h2').addClass('words2')
+			if($('.attach_infor h2').height()>$('.attach_infor h2').css('line-height').substr(0,$('.attach_infor h2').css('line-height').length-2)){
+				$('.attach_live').height(104);
+				$('.insertLive').height(82);
+				if(editorClientType == true){
+	                if (isAndroid && (typeof javaJs !== 'undefined')) {
+		               javaJs.executeParentJs('changeIframeHeight("'+cid+'",104)');
+		            }
+	                if (isIOS) {
+	                    if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+	                    window.webkit.messageHandlers.executeParentJs.postMessage(['changeIframeHeight("'+cid+'",104)']);
+	                    }else{
+	            　　　　     if(window.top["executeParentJs"]) {
+	                            window.top["executeParentJs"]('changeIframeHeight("'+cid+'",104)');
+	                        }
+	                    }
+	                }
+                }else{
+                	//改变高度2021.05
+                	parent.postMessage({'msgType':'changeIframeHeight','cid': cid,"height":104}, '*');
+                }
+
+			}
+        }
+    }
+    if(json.cid){
+        var cid=json.cid;
+        //显示附件叉号2021.05
+        attachmentUtils.showiframeClose(cid,editorClientType);
+    }
+    // 附件点击调客户端方法
+    function openClickEvent(e,attachment){
+        attachmentUtils.openClickEvent(e,attachment,json,editorClientType);
+    };
+    //长按附件
+    var touchY = 0;
+    var longClick =0;
+    $(".attach-box").on({
+        touchstart: function(e){
+            longClick=0;
+            timeOutEvent = setTimeout(function(){
+                //此处为长按事件
+                longClick=1;//假如长按，则设置为1
+                if(json.cid){
+                    var cid=json.cid;
+                    if (isAndroid && (typeof javaJs !== 'undefined')) {
+                       javaJs.executeParentJs('zss_editor.iframeForward("'+cid+'")');
+                    }
+                    if (isIOS) {
+                        if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+                        window.webkit.messageHandlers.executeParentJs.postMessage(['zss_editor.iframeForward("'+cid+'")']);
+                        }else{
+                　　　　     if(window.top["executeParentJs"]) {
+                                window.top["executeParentJs"]('zss_editor.iframeForward("'+cid+'")');
+                            }
+                        }
+                    }
+                }
+
+            },500);
+            var touch = e.originalEvent.targetTouches[0];
+            touchY = touch.clientY;
+        },
+        touchmove: function(e){
+            clearTimeout(timeOutEvent);
+            timeOutEvent = 0;
+            var touch = e.originalEvent.changedTouches[0];
+            if(Math.abs(touch.clientY - touchY) < 10){
+                if(isAndroid){
+                 e.preventDefault();
+                }
+            }
+        },
+        touchend: function(e){
+            clearTimeout(timeOutEvent);
+            if(timeOutEvent!=0 && self.longClick==0){//点击
+               //此处为点击事件----在此处跳转
+               openClickEvent(e,jsonOld)
+            }
+            return false;
+        }
+    });
+    $('.attach-box').bind('contextmenu', function(e) {
+      e.preventDefault();
+    })
+    </script>
+</body>
+
+</html>

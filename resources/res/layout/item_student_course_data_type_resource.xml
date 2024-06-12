@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/clickLayout" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp">
+    <RelativeLayout android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@+id/cb_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/iconLayout" android:layout_width="40dp" android:layout_height="40dp" android:layout_toRightOf="@+id/cb_selector" android:layout_centerVertical="true">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/typeIv" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_picture_file" android:scaleType="fitCenter" android:layout_centerVertical="true" app:riv_corner_radius="4dp"/>
+            <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/myCreateTv" android:background="@drawable/bg_self_tag" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bookCollections_Own" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui_10_dip" android:layout_marginRight="15dp" android:layout_toRightOf="@+id/iconLayout" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tv_related" android:layout_centerVertical="true">
+                <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/nameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+                <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/descTv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="13sp" android:id="@+id/tv_related" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/talent_about" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/dividerIv" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</LinearLayout>

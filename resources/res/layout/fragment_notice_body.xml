@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/myLayout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="#fafafa" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_btn" android:background="#ffffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/iv_dealt" android:background="@drawable/btn_stroke_daiban" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginTop="6dp" android:layout_marginRight="15dp" android:layout_marginBottom="6dp" android:layout_weight="1">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iv_daiban"/>
+                    <TextView android:textSize="17dp" android:textColor="#0099ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/write_Backlog"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/iv_reply" android:background="@drawable/btn_unread_remind" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="6dp" android:layout_marginRight="12dp" android:layout_marginBottom="6dp" android:layout_weight="1">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iv_huifu"/>
+                    <TextView android:textSize="17dp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/pcenter_letter_reply"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewToolbar">
+                <ImageView android:id="@+id/to_top" android:paddingBottom="22dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@drawable/img_to_top" android:layout_above="@+id/bottomBar" android:layout_alignParentRight="true"/>
+                <RelativeLayout android:id="@+id/rlLoadAll" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginBottom="22dp" android:layout_above="@+id/bottomBar" android:layout_alignParentRight="true">
+                    <TextView android:textSize="16sp" android:textColor="#ff0281df" android:background="@drawable/ic_topic_load_all" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <com.chaoxing.mobile.group.widget.TopicListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvTopic" android:background="#fafafa" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="45dp" android:listSelector="@android:color/transparent" android:transcriptMode="disabled" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0px" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:layout_alignParentStart="true"/>
+                <include android:id="@+id/bottomBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/view_reply_bar"/>
+                <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+                <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_note_failed_match_parent"/>
+            </RelativeLayout>
+            <com.chaoxing.study.screencast.view.ScreenCastController android:id="@+id/screen_control" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <include android:id="@+id/viewToolbar" layout="@layout/notice_title_bar"/>
+            <View android:id="@+id/reply_bg" android:background="#80000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/fl_reply" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include android:id="@+id/reply_viewLoading" android:visibility="gone" android:clickable="true" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

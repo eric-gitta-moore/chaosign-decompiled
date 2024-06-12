@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_container" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingTop="6dp" android:paddingRight="15dp" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ivImage" android:background="@drawable/ic_default_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_reload" android:background="@drawable/bg_circular_bead_cccccc1" android:padding="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginBottom="10dp" android:minWidth="150dp" android:layout_alignBottom="@+id/ivImage" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_process" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AAAAAA"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/ivDelete0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6dp" android:layout_marginRight="-6dp" android:src="@drawable/ic_del_member" android:layout_alignTop="@+id/ivImage" android:layout_alignRight="@+id/ivImage"/>
+    <View android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp" android:layout_below="@+id/ivImage"/>
+</RelativeLayout>

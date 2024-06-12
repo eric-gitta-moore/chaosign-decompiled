@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rLndicator" android:background="@drawable/bg_message_center_category_normal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:ellipsize="middle" android:id="@+id/tvIndicator" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" style="@style/message_center_indicator_default"/>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/video_bg_setting" android:layout_width="match_parent" android:layout_height="294dp">
+        <RelativeLayout android:id="@+id/rlSetting" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/close" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/video_setting_close" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="14sp" android:textColor="#a6a6a6" android:id="@+id/tv_tag_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46dp" android:text="@string/speed" android:layout_marginStart="25dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_speed" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="2dp" android:layout_marginRight="15dp" android:layout_below="@+id/tv_tag_speed"/>
+            <TextView android:textSize="14sp" android:textColor="#a6a6a6" android:id="@+id/tv_tag_clarity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/clarity_tag" android:layout_below="@+id/rv_speed" android:layout_marginStart="25dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_clarity" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="2dp" android:layout_marginRight="15dp" android:layout_below="@+id/tv_tag_clarity"/>
+            <View android:id="@+id/line" android:background="#808080" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="29.5dp" android:layout_below="@+id/rv_clarity"/>
+            <RelativeLayout android:id="@+id/click_Collection" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="72.5dp" android:layout_below="@+id/line">
+                <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/tvCollectionTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collection" android:layout_centerVertical="true"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/video_collection_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlCollection" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/rl_title" android:layout_width="match_parent" android:layout_height="50dp">
+                <ImageView android:id="@+id/back" android:paddingTop="6.5dp" android:paddingBottom="6.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_collection_back" android:layout_centerVertical="true" android:paddingStart="7dp" android:paddingEnd="4dp" android:layout_marginStart="10dp"/>
+                <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collection" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/close2" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/video_setting_close" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+                <View android:background="#808080" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_Collection" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_title" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

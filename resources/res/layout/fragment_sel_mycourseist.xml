@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top" layout="@layout/common_title_bar_3"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_search" android:background="#ebeced" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/top">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/ll_search_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="9dp" android:layout_marginTop="8dp" android:layout_marginRight="9dp" android:layout_marginBottom="8dp">
+            <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_group_search"/>
+            <TextView android:textSize="16sp" android:textColor="#cccccc" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/comment_serarch"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/ll_search">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:dividerHeight="0dp"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+    </RelativeLayout>
+    <com.chaoxing.mobile.common.NoDataTipView android:id="@+id/vg_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/wait_circle_bar_with_text"/>
+    <ImageView android:id="@+id/ivLoad" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/state_loading_fail" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-81dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/viewFront" android:background="@drawable/selector_list_note_item" android:paddingLeft="6dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_unread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:src="@drawable/icon_unread_mail"/>
+                <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_sender_name" android:padding="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:text="123" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="2dp"/>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_clip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:src="@drawable/icon_mail_clip" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14sp" android:textColor="#666666" android:id="@+id/tv_subject" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="123" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_content" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="123" android:maxLines="2"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvStick" android:background="#99cdff" android:visibility="gone" android:layout_width="70dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/note_top"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="#cc0000" android:layout_width="80dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="删除"/>
+    </LinearLayout>
+    <View android:id="@+id/line1" android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="1px"/>
+</LinearLayout>

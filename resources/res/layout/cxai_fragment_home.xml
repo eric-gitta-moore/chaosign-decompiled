@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.mobile.voice.ui.home.AiSearchView android:id="@+id/view_search" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.hjq.shape.layout.ShapeRelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="6dp" android:layout_weight="1" app:shape_radiusInTopLeft="10dp" app:shape_radiusInTopRight="10dp" app:shape_solidColor="#ffffff">
+            <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_app" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:nestedScrollingEnabled="false"/>
+                    <com.chaoxing.mobile.voice.ui.home.AiHomeQuestionView android:id="@+id/view_question" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.hjq.shape.layout.ShapeRelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

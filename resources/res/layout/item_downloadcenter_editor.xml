@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:my="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/llContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <CheckBox android:layout_gravity="center" android:id="@+id/cb_check" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <com.fanzhou.widget.CircleImageView android:id="@+id/img_icon" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="11dp" android:layout_marginTop="11dp" android:layout_marginRight="11dp" android:layout_marginBottom="11dp" android:scaleType="centerCrop" android:layout_toRightOf="@+id/cb_check" my:is_circle="false" my:x_radius="6px" my:y_radius="6px"/>
+        <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="11dp" android:layout_marginBottom="11dp" android:text="专题名" android:singleLine="true" android:layout_toRightOf="@+id/img_icon"/>
+    </RelativeLayout>
+</LinearLayout>

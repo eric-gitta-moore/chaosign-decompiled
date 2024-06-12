@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="73dp">
+        <RelativeLayout android:id="@+id/rlGroupAvater" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/ga_avatar" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/ic_group_head_item" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_cover" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/fg_group_head" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toLeftOf="@+id/tv_addedStatus" android:layout_toRightOf="@+id/rlGroupAvater" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_name" android:paddingRight="48dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_content" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        </LinearLayout>
+        <TextView android:textSize="13sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_addedStatus" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="58dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

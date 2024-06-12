@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewToolbar" layout="@layout/common_title_bar2"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewToolbar">
+        <RelativeLayout android:gravity="center" android:id="@+id/header" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="35dp">
+            <TextView android:textSize="14sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_click_and_sort" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <com.mobeta.android.dslv.DragSortListView android:id="@+id/listView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#e5e5e5" android:dividerHeight="1px" android:layout_above="@+id/vDivider" android:layout_below="@+id/header" android:headerDividersEnabled="false" android:footerDividersEnabled="false" dslv:drag_enabled="true" dslv:drag_handle_id="@+id/iv_sort"/>
+        <View android:id="@+id/vDivider" android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_above="@+id/edit_container"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/edit_container" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tvDelete" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/delete_resource" android:layout_weight="1"/>
+            <View android:background="#d9d9d9" android:layout_width="1px" android:layout_height="match_parent"/>
+            <TextView android:textSize="16sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tvMove" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/move_resource" android:layout_weight="1"/>
+        </LinearLayout>
+        <ViewStub android:id="@+id/vsWait" android:layout="@layout/page_loading_circle_modal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

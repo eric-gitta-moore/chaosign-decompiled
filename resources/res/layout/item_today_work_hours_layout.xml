@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/workHourLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="30dp" android:layout_marginEnd="10dp"/>
+    <com.chaoxing.mobile.office.widget.WorkHourRulesView android:id="@+id/workHourRulesView" android:layout_width="30dp" android:layout_height="wrap_content"/>
+    <com.chaoxing.mobile.office.widget.AVGWorkHoursView android:id="@+id/avgHourView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp"/>
+</merge>

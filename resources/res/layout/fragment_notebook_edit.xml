@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlContainer" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/header" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <Button android:textSize="16sp" android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="48dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="#ff333333" android:ellipsize="middle" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75dp" android:layout_marginRight="75dp" android:singleLine="true" android:layout_centerInParent="true"/>
+        <Button android:textSize="14sp" android:id="@+id/btnRight" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv" android:background="#ffffff" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0px" android:layout_below="@+id/header" android:headerDividersEnabled="false" android:footerDividersEnabled="true"/>
+    <include layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

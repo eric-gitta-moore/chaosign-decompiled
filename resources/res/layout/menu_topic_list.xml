@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/bg_popupwindow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlForwardResource" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="14sp" android:id="@+id/btnForwardResource" android:background="@drawable/selector_list_item" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进入专题"/>
+        <View android:background="#ff999999" android:layout_width="wrap_content" android:layout_height="1px" android:layout_below="@+id/btnForwardResource" android:layout_alignLeft="@+id/btnForwardResource" android:layout_alignRight="@+id/btnForwardResource"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlForwardCreateFolder" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="14sp" android:id="@+id/btnForwardCreateFolder" android:background="@drawable/selector_list_item" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="建文件夹"/>
+        <View android:background="#ff999999" android:layout_width="wrap_content" android:layout_height="1px" android:layout_below="@+id/btnForwardCreateFolder" android:layout_alignLeft="@+id/btnForwardCreateFolder" android:layout_alignRight="@+id/btnForwardCreateFolder"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlGroupProfile" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="14sp" android:id="@+id/btnGroupProfile" android:background="@drawable/selector_list_item" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小组信息"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginRight="-71dp">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/viewFront" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/rlAvatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_centerVertical="true">
+                <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:clickable="false" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="centerCrop" ss:border_color="#999d9e" ss:border_width="1px" ss:is_circle="false" ss:x_radius="10px" ss:y_radius="10px"/>
+                <com.chaoxing.mobile.group.ui.GroupAvatar android:id="@+id/ivGroupAvatar" android:background="@drawable/bg_group_head_circle" android:visibility="gone" android:layout_width="44dp" android:layout_height="44dp" android:layout_toRightOf="@+id/cbSelector"/>
+                <ImageView android:id="@+id/ivEmail" android:visibility="gone" android:clickable="false" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/btn_email" android:scaleType="centerCrop"/>
+                <ImageView android:id="@+id/ivPhone" android:visibility="gone" android:clickable="false" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/btn_tel" android:scaleType="centerCrop"/>
+            </RelativeLayout>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvName" android:paddingRight="72dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="包贝尔" android:singleLine="true" android:layout_toRightOf="@+id/rlAvatar" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tvTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-68dp" android:text="（部门）" android:layout_toRightOf="@+id/tvName" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="#ffcc0000" android:layout_width="70dp" android:layout_height="match_parent" android:text="@string/common_delete"/>
+    </LinearLayout>
+</LinearLayout>

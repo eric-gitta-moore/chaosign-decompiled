@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:my="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:id="@+id/rlcontainer" android:background="@drawable/bg_circle_border_f4f5f6" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="74dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.fanzhou.widget.CircleImageView android:id="@+id/ivImage" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="8dp" android:src="@drawable/ic_default_image" android:scaleType="fitXY" android:layout_centerVertical="true" my:is_circle="false" my:x_radius="4dp" my:y_radius="4dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ivImage" android:layout_centerInParent="true">
+            <TextView android:textSize="14sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="几米在作品中测试几米在作品中测试几米在作品中测试几米在作品中测试" android:maxLines="2" android:layout_toRightOf="@+id/ivImage"/>
+            <TextView android:textSize="12sp" android:textColor="#ff999999" android:id="@+id/tvSize" android:paddingTop="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="几米在作品中吐露着现代人内心深处不为人知的的隐痛与困顿，揭示出" android:maxLines="1" android:layout_toRightOf="@+id/ivImage" android:layout_below="@+id/tvContent"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp">
+        <CheckBox android:id="@+id/cb_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/rl_avatar" android:layout_width="60dp" android:layout_height="60dp" android:layout_toRightOf="@+id/cb_selector" android:layout_centerVertical="true">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/icon_file" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:src="@drawable/ic_ppt_file" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@null" app:riv_corner_radius="4dp"/>
+            <ImageView android:id="@+id/icon_folder" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_toLeftOf="@+id/iv_sort" android:layout_toRightOf="@+id/rl_avatar" android:layout_centerVertical="true">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/rlNameContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/public_list_title" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/tags" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_default="1"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dp" android:layout_toRightOf="@+id/tv_name" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@+id/tv_name" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0">
+                    <TextView android:textSize="12sp" android:textColor="#ffa8a8a8" android:id="@+id/tv_tag_top_sign" android:background="@drawable/bg_circular_corner3_ffcccccc" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/grouplist_Top"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxLines="1"/>
+                <TextView android:textSize="13sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_duration" android:paddingRight="38dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/tv_size" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_sort" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sort_36dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="100dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

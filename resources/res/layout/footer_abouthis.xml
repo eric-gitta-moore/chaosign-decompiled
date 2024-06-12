@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/common_white_stroke_bg" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/rlReport" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:gravity="center_vertical" android:id="@+id/tvReport" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/topic_Report" style="@style/text_user_title"/>
+            <TextView android:gravity="center_vertical" android:id="@+id/tvReportArrow" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="6dp" android:layout_alignParentRight="true" style="@style/text_user_content"/>
+            <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/rlHideHim" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp">
+            <TextView android:gravity="center_vertical" android:id="@+id/tvHideHim" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/person_hidehim_label" style="@style/text_user_title"/>
+            <com.fanzhou.widget.Switch android:id="@+id/cbHideHim" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Switch"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="15sp" android:textColor="#000" android:id="@+id/tv_inviter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp"/>
+    <ImageView android:id="@+id/iv_call_anim" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom" android:layout_below="@+id/tv_inviter_name"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:weightSum="2" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageButton android:id="@+id/btn_reject" android:background="@drawable/em_call_btn_bg" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/em_call_hangup" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageButton android:id="@+id/btn_pickup" android:background="@drawable/em_call_btn_bg" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/em_call_pickup" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

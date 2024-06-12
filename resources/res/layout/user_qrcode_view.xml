@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/tvInvitCodeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_code" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#0099ff" android:id="@+id/tvInvitCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tvInvitCodeLabel" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tvInstruct" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/something_xuexitong_users" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/tvForwardInstructions" android:background="@drawable/group_transfer" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlValidTime" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/tvDateLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有效期至：" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tvDateLabel" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tvDateSetting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="12dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlQRCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/ivQRCode" android:background="@drawable/best_lib_rank_img_stroke" android:layout_width="136dp" android:layout_height="136dp" android:layout_centerHorizontal="true"/>
+            <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/pbLoading" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvScanHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/something_xuexitong_users" android:layout_below="@+id/rlQRCode" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/ivShard" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/ic_group_share" android:layout_toRightOf="@+id/rlQRCode" android:layout_alignBottom="@+id/rlQRCode"/>
+    </RelativeLayout>
+    <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px"/>
+</merge>

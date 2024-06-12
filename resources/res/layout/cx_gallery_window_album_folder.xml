@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_folder" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="12dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="360dp" android:listSelector="#e6e6e6" android:divider="#e5e5e5" android:dividerHeight="1px"/>
+</RelativeLayout>

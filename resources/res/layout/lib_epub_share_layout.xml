@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/shareRoot" android:background="@drawable/lib_epub_reader_share_shape_bg" android:fitsSystemWindows="true" android:drawingCacheQuality="high" android:alwaysDrawnWithCache="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/shareTopLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="40dp" android:layout_marginRight="35dp" android:layout_marginBottom="30dp">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@+id/shareAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/shareLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/lib_reader_share_title_hint" android:singleLine="true" android:layout_marginStart="10dp"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="right" android:id="@+id/shareTime" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="#666666" android:id="@+id/shareContentTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginRight="35dp" android:lineSpacingExtra="10dp"/>
+        <LinearLayout android:id="@+id/shareBookIntroduce" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="15dp" android:layout_marginRight="35dp">
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#666666" android:id="@+id/shareBookName" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12sp" android:textColor="#666666" android:id="@+id/shareBookAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_divider" android:background="@color/divider_line_color" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0.5px" android:layout_marginTop="15dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/shareBottomLayout" android:paddingTop="32dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="155dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/shareBookCover" android:layout_width="42dp" android:layout_height="60dp" android:scaleType="fitCenter"/>
+                    <ImageView android:id="@+id/shareBookQrCodeIv" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="15dp" android:scaleType="fitXY" android:layout_marginStart="15dp"/>
+                </LinearLayout>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center" android:id="@+id/qrCodeTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/lib_reader_share_book_hint" android:lineSpacingExtra="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

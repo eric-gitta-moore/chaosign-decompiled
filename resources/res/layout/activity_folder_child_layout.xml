@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/frameLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_quote" android:layout_below="@+id/toolBar"/>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_quote" android:background="@color/blue_0099ff" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/course_select_to_reference" android:layout_alignParentBottom="true"/>
+    <include android:id="@+id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolBar" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

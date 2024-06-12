@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rlContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlMoveLayout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlMoveTop" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+            <Button android:textSize="16sp" android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="48dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tvMoveTitle" android:layout_width="wrap_content" android:layout_height="45dp" android:text="@string/sub_moveToFolder" android:layout_centerHorizontal="true"/>
+            <Button android:id="@+id/btnRight" android:background="@android:color/transparent" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:drawableLeft="@drawable/create_folder" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/topLine" android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rlMoveTop"/>
+        <ListView android:id="@+id/listView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="#d9d9d9" android:dividerHeight="1px" android:minHeight="113dp" android:layout_above="@+id/llOptionPanel" android:layout_below="@+id/topLine" android:footerDividersEnabled="false"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/llOptionPanel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp" android:layout_below="@+id/bottomLine">
+            <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:layout_gravity="center" android:id="@+id/btnCancel" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1"/>
+            <View android:id="@+id/vDividerLine" android:background="#bababa" android:layout_width="1px" android:layout_height="match_parent"/>
+            <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:layout_gravity="center" android:id="@+id/btnOk" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sure" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlCreateFolderLayout" android:background="#ffefeff4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rlCreateFolderTop" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+            <Button android:id="@+id/btnCreateLeft" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="45dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tvCreateTitle" android:layout_width="wrap_content" android:layout_height="45dp" android:text="建文件夹" android:layout_centerHorizontal="true"/>
+            <Button android:id="@+id/btnCreateRight" android:background="@android:color/transparent" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/createTopLine" android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rlCreateFolderTop"/>
+        <RelativeLayout android:id="@+id/rlInputForlder" android:background="@android:color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="55dp" android:layout_below="@+id/createTopLine">
+            <EditText android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:id="@+id/etCreateFolder" android:background="@android:color/transparent" android:paddingRight="55dp" android:layout_width="match_parent" android:layout_height="55dp" android:hint="@string/public_hint_input_folder_name" android:singleLine="true"/>
+            <ImageView android:id="@+id/iv_delete" android:padding="10dp" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/clear" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/createBottomLine" android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/rlInputForlder"/>
+        <RadioGroup android:orientation="vertical" android:id="@+id/rgFolderType" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/createBottomLine">
+            <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_public" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:layout_below="@+id/rlPrivate">
+                <RadioButton android:id="@+id/rbPublic" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:checked="false" android:button="@drawable/group_type" android:layout_centerVertical="true"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/rbPublic">
+                    <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_SharewithPublic"/>
+                    <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_AllFriends"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@+id/deliverline" android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_below="@+id/rl_public"/>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_private" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp">
+                <RadioButton android:id="@+id/rbPrivate" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:checked="false" android:button="@drawable/group_type" android:layout_centerVertical="true"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/rbPrivate">
+                    <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_private"/>
+                    <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_justme"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_friend" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp">
+                <RadioButton android:id="@+id/rbFriend" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:checked="false" android:button="@drawable/group_type" android:layout_centerVertical="true"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/rbFriend">
+                    <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_SharewithFriends"/>
+                    <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_eachother"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        </RadioGroup>
+    </RelativeLayout>
+    <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

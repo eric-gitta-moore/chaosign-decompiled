@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/viewContainer" android:background="#80333333" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/subject" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_subject" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="专题"/>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/subject_chapter" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_subject_chapter" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/import_subject_chapter"/>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/course_chapter" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_course_chapter" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/import_course_chapter"/>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/teach_resource" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_teach_resource" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/import_course_resource_lib"/>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/note" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_note" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/import_notes"/>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <View android:background="@color/bg_color_f5f6f8" android:layout_width="match_parent" android:layout_height="6dp"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_cancel" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/course_chapter_cancle"/>
+    </LinearLayout>
+</RelativeLayout>

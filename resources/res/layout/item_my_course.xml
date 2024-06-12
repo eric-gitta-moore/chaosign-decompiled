@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-101dp" android:layout_marginBottom="1px">
+    <RelativeLayout android:id="@+id/viewFront" android:background="@drawable/selector_list_note_item" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/icon_next" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_group_info_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_num_count" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:layout_toLeftOf="@+id/icon_next" android:layout_centerVertical="true"/>
+        <CheckBox android:id="@+id/cb_selected" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="8dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <RelativeLayout android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="62dp" android:layout_toLeftOf="@+id/tv_num_count" android:layout_toRightOf="@+id/cb_selected">
+            <RelativeLayout android:id="@+id/rl" android:layout_width="50dp" android:layout_height="50dp">
+                <com.chaoxing.mobile.group.ui.GroupAvatar android:id="@+id/ivIcon" android:background="@drawable/ic_chaoxing_default" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="9dp" android:layout_centerVertical="true"/>
+                <TextView android:textSize="10sp" android:textColor="#0099ff" android:id="@+id/tvTagSelf" android:background="@drawable/bg_circular_bead_ff0099ff_3" android:paddingLeft="4dp" android:paddingTop="1dp" android:paddingRight="4dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="教" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_toRightOf="@+id/rl" android:layout_centerVertical="true">
+                <TextView android:textSize="15sp" android:textColor="#000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvName" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:singleLine="true"/>
+                <TextView android:textSize="12sp" android:textColor="#8e8e93" android:id="@+id/tvIntroduction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tvName"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="62dp" android:weightSum="3">
+            <TextView android:id="@+id/vCheckArea" android:background="#00000000" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

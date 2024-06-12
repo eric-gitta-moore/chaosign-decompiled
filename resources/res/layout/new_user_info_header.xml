@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:background="@drawable/common_white_stroke_bg_1" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="78dp">
+    <com.fanzhou.widget.CircleImageView android:id="@+id/ivPhoto" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" android:contentDescription="@null" ss:border_color="@color/user_line" ss:border_width="1px" ss:is_circle="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="12dp" android:layout_toLeftOf="@+id/ivRightArrow" android:layout_toRightOf="@+id/ivPhoto" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="7" android:singleLine="true" style="@style/text_user_title"/>
+        <com.chaoxing.mobile.resource.flower.StatisUserDataView android:id="@+id/statisView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tvName"/>
+        <TextView android:id="@+id/tvAccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/tvName" style="@style/text_user_title"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/ivRightArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+</RelativeLayout>

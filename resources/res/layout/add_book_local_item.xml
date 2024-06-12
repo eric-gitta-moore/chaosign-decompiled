@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivIcon" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="0dp" android:scaleType="centerInside"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/relstate" android:layout_width="60dp" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                <TextView android:id="@+id/tvState" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_imported" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Text_Title_16"/>
+                <CheckBox android:id="@+id/cbSelector" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/local_import_cbselector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/ivRightArrow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_toLeftOf="@+id/relstate">
+                <TextView android:id="@+id/tvFileSize" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Title_16"/>
+                <TextView android:ellipsize="middle" android:id="@+id/tvFileName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Title_16"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

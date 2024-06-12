@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_top" android:layout_width="match_parent" android:layout_height="@dimen/top_bar_height">
+    <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/back_imageView" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bg_back"/>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/back_textView" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/app_exit"/>
+    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/title_textView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/setting_imageView" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_settings_normal"/>
+</FrameLayout>

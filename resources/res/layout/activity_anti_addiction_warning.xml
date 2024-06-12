@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="270dp" android:layout_height="wrap_content">
+        <ImageView android:layout_width="270dp" android:layout_height="96dp" android:src="@drawable/anti_addiction_warning_tips_header" android:scaleType="fitXY"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_anti_addiction_warning" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:id="@+id/tv_tips" android:paddingLeft="30dp" android:paddingTop="16dp" android:paddingRight="30dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@color/public_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="#ff0099ff" android:gravity="center" android:id="@+id/tv_stop" android:padding="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="停止使用" android:layout_weight="1"/>
+                <View android:background="@color/public_divider" android:layout_width="1px" android:layout_height="match_parent"/>
+                <TextView android:textSize="16sp" android:textColor="#ff0099ff" android:gravity="center" android:id="@+id/tv_continue" android:padding="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="继续使用" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

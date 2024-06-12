@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/common_title_bar"/>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="66dp">
+            <ImageView android:id="@+id/iv_delete" android:background="#ffffff" android:padding="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="60dp" android:src="@drawable/clear" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <EditText android:textSize="16sp" android:textColor="@color/normal_black" android:textColorHint="#cccccc" android:gravity="center_vertical" android:id="@+id/editName" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="37dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/chat_hint_input_name" android:singleLine="true" android:layout_toLeftOf="@+id/iv_delete" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@+id/tvFaceToFace" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp" android:text="@string/face_to_face_create_group" android:drawableRight="@drawable/ic_right_arrow"/>
+    </LinearLayout>
+    <include layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

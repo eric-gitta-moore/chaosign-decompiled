@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/em_notification_icon" android:padding="4dp" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="10dp" android:id="@+id/em_notification_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@android:style/TextAppearance.StatusBar.EventContent"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/em_notification_style" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="1dp" android:layout_toLeftOf="@+id/em_notification_date" android:layout_toRightOf="@+id/em_notification_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="16dp" android:id="@+id/em_notification_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+        <TextView android:textSize="13dp" android:ellipsize="end" android:id="@+id/em_notification_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxLines="2" style="@android:style/TextAppearance.StatusBar.EventContent"/>
+        <ImageView android:id="@+id/em_bigview_imageView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="192dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="13dp" android:ellipsize="end" android:id="@+id/em_bigview_TextView" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="192dp"/>
+    </LinearLayout>
+</RelativeLayout>

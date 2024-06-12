@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:background="@android:color/white" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="66dp">
+                <EditText android:textColorHint="@color/color_cccccc" android:id="@+id/group_name" android:background="@android:color/transparent" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/creategroup_group_name" android:singleLine="true" android:layout_toLeftOf="@+id/ibtn_clear" android:layout_centerVertical="true" android:imeOptions="actionNext" style="@style/group_title_text"/>
+                <ImageButton android:id="@+id/ibtn_clear" android:background="@android:color/transparent" android:padding="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@android:color/white" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="66dp">
+                <EditText android:textColorHint="@color/color_cccccc" android:id="@+id/groupIntroduct" android:background="@android:color/transparent" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/creategroup_group_introduce" android:layout_toLeftOf="@+id/introductBtn_clear" android:layout_centerVertical="true" android:imeOptions="actionNext" style="@style/group_title_text"/>
+                <ImageButton android:id="@+id/introductBtn_clear" android:background="@android:color/transparent" android:padding="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/group_ivater" android:background="@android:color/white" android:paddingTop="12dp" android:paddingBottom="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="66dp">
+                <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_group" android:layout_width="42dp" android:layout_height="42dp" android:layout_marginLeft="15dp" android:src="@drawable/ic_group_head_item" android:scaleType="centerCrop" app:riv_corner_radius="42dp" app:riv_oval="true"/>
+                <TextView android:textColorHint="@color/color_cccccc" android:gravity="center_vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:hint="@string/creategroup_group_icon" style="@style/group_title_text"/>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_public" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+                <RadioButton android:id="@+id/public_group" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:checked="true" android:button="@drawable/group_type"/>
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="小组市场可见" android:layout_centerVertical="true"/>
+                <com.fanzhou.widget.Switch android:id="@+id/cbMarketVisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Switch"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/ll_personnal" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+                <RadioButton android:id="@+id/personnal_group" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:checked="false" android:button="@drawable/group_type"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="加入小组需要身份验证"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_999999" android:id="@+id/person_unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="仅单位用户可见"/>
+                </LinearLayout>
+                <com.fanzhou.widget.Switch android:id="@+id/cbGroupCheck" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Switch"/>
+            </RelativeLayout>
+            <Button android:gravity="center" android:id="@+id/creat_group" android:background="@drawable/btn_blue_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="12dp" android:layout_marginTop="90dp" android:layout_marginRight="12dp" android:text="下一步" style="@style/Text_White_16"/>
+        </LinearLayout>
+        <include layout="@layout/wait_circle_bar_with_text"/>
+    </RelativeLayout>
+</RelativeLayout>

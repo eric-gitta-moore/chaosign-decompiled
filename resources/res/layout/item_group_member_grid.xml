@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/ivAvatar" android:background="@drawable/radius_f5f6f8_3dp" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:scaleType="centerCrop" app:riv_corner_radius="3dp"/>
+        <TextView android:textSize="6sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_role" android:layout_width="match_parent" android:layout_height="@dimen/dp_10" android:singleLine="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="13sp" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tv_name" android:layout_width="@dimen/dp_40" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_7" android:singleLine="true" android:layout_weight="1"/>
+</LinearLayout>

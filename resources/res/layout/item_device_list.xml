@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/selector_listview" android:layout_width="match_parent" android:layout_height="60dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="16dp" android:textColor="@color/bg_top" android:ellipsize="middle" android:id="@+id/tvIP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_margin_left" android:text="192.168.43.1" android:singleLine="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/bg_end" android:id="@+id/txt_save" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_margin_left" android:text="@string/wifi_connected_is_saved" android:maxLines="1"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/img_ip_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/icon_select"/>
+</LinearLayout>

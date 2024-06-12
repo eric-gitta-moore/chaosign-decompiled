@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f5f6f8" android:paddingBottom="1px" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/vg_group_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlGroupQRCode" android:background="@android:color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/conversation_info_height">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabGroupQRCode" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/something_xuexitong_ChatQRCode" android:layout_centerVertical="true"/>
+            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbGroupQRCode" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llGroupQRCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/cbGroupQRCode" android:layout_centerVertical="true"/>
+            <View android:background="#e1e1e1" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/vgGroupQRCodeDetail" android:background="@android:color/white" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="#e1e1e1" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/llInviteCode" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="5dp">
+                <TextView android:textSize="16sp" android:textColor="#666666" android:id="@+id/tvInviteCodeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/something_xuexitong_invaitecode"/>
+                <TextView android:textSize="22sp" android:textColor="#0099ff" android:id="@+id/tvInviteCode" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:id="@+id/iv_copy" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_copy_16dp"/>
+            </LinearLayout>
+            <TextView android:textSize="13dp" android:textColor="#999999" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/user_xuexitong_rightconner"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/ivGroupQRCode" android:layout_width="216dp" android:layout_height="216dp" android:layout_marginTop="20dp" android:scaleType="fitXY"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:layout_gravity="center_horizontal" android:id="@+id/tvQRCodeInstructions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rlAddMember" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/conversation_info_height">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvAddMember" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_wechat_addmember" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/cbAddMember" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginRight="15dp" android:src="@drawable/add_contact" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#e1e1e1" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlGroupMember" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp">
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:id="@+id/tvMemberLable" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_contents_member" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

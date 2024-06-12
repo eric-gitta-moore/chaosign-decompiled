@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/white" android:paddingBottom="1px" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="52dp">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:is_circle="false" app:x_radius="4dp" app:y_radius="4dp"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_contact" android:maxLines="1"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivVoice" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dynamic_voice_icon"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivCamera" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/dynamic_camera_icon"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivBack" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/ic_right_arrow"/>
+    </LinearLayout>
+    <View android:id="@+id/viewline" android:background="#f5f6f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp"/>
+</LinearLayout>

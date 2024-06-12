@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f5f6f8" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="30dp">
+    <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tvTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+    <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tvSort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_manager_class_bonus" android:drawableLeft="@drawable/icon_class_student_sort" android:drawablePadding="3dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

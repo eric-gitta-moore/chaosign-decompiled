@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolBar">
+        <EditText android:textSize="16sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:gravity="top" android:id="@+id/et_content" android:background="@null" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:minHeight="200dp" android:hint="@string/course_introduce_hint" android:lineSpacingMultiplier="1.2"/>
+    </ScrollView>
+    <include layout="@layout/common_loading_transparent"/>
+</RelativeLayout>

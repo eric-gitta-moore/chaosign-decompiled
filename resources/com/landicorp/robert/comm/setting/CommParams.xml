@@ -1,0 +1,2897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+    <audio class="com.landicorp.robert.comm.setting.AudioCommParam">
+<!--HTC  -->
+  		<phone model="HTC S610d">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+    	</phone>
+	    <phone model="HTC Incredible S">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+             <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC Sensation XE with Beats Audio Z715e">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+             <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+	    </phone>
+	    <phone model="HTC T328t">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+             <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC T328w">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC T328d">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+	    </phone>
+	    <phone model="HTC Desire S">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="Wildfire S A510e">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC One S">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+	    </phone>
+	    <phone model="HTC S720t">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC Wildfire">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC Z510d">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC One X">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC Sensation Z710e">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="Desire HD">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC A310e">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC Bee">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC C510e">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC Desire">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC EVO 3D X515m">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC Glacier">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="HTC Rhyme S510b">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC T329t">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC X515d">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC X515m">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC Z710t">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ADR6300">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC ChaCha A810e">	       	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>    
+	    <phone model="HTC T320e">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 
+	    <phone model="Nexus One">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	      
+	    </phone>
+	    <phone model="HTC Z560e">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC Ruby">	        	        
+	            <Wave type="int">0</Wave>
+	            <SendBaud type="short">3675</SendBaud>
+	            <SendVolume type="float">1.0</SendVolume>
+	            <RecvBaud type="short">3617</RecvBaud>
+	            <Voltage type="short">3300</Voltage>
+	            <AudioSource type="int">1</AudioSource>
+	            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC Legend">	      	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="T-Mobile myTouch 3G Slide">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC Z710e">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC Hero">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC A510c">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC S710d">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- MOTO -->
+	    <phone model="XT531">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="XT928">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="XT910">	        
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="ME722">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">150</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	   <phone model="XT319">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	       
+	    </phone>
+	    <phone model="XT685">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	   <phone model="MB526">	        
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3157</RecvBaud>
+            <Voltage type="short">200</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   	<phone model="ME526">	        
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">2008</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   <phone model="MT917">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>
+	    <phone model="ME525+">
+	    <!--ITMP  -->
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">100</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ME860">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+	    </phone>
+	    <phone model="MT887">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="MT870">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="MT680">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="DROID2 GLOBAL">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   	<phone model="MB855">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.3</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ME525">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="MB525">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">100</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ME600">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ME811">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ME863">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ME865">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="XT317">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="XT615">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="XT882">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="XT883">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="MT788">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>   
+	    <phone model="MZ606">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="MB501">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">860</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="XT800">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="XT701">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- 索尼-->
+	    <phone model="MT15i">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="LT28h">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="LT22i">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">573</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="LT18i">	 
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="LT26ii">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="MT27i">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">573</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="MT25i">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="E15i">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="E16i">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="LT15i">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ST18i">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>     
+	    <phone model="WT19i">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ST15i">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- 华为-->
+	    <phone model="S8600">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="U9200E">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="HUAWEI U8825D">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    
+	    <phone model="HUAWEI C8825D">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   	<phone model="HUAWEI C8812">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="HUAWEI U8950D">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="U8500">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HUAWEI T8828">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HUAWEI U9508"><!-- 关闭杜比音效 -->	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HUAWEI U9510E">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+		<phone model="T8830"><!--使用50%音量 -->	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">128</FrameLength>
+	    </phone>
+	    <phone model="T8830Pro"><!-- 成功率很低60% -->	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.5</SendVolume>
+            <RecvBaud type="short">5512</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="T9200">	       
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="U8836D">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HUAWEI C8650+">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="u8800">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>   
+	    <phone model="U8860">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="C8650">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="C8800">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="SONIC">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- 联想 -->
+	    <phone model="Lenovo A698t">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">128</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo A520GRAY">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">2205</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo S880">	       
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">150</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo A580"> <!-- 降低发送音量 -->	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.2</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo K800">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo S760">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    
+	    <phone model="Lenovo S899t">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo S2-38AT0">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo A500">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">2205</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   <phone model="Lenovo A60"> <!--无法打开-->	       
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="3GC101">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="IdeaTab K2110A-F">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>  
+	    <phone model="Lenovo P700">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">0</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo S1-37AH0">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.1</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo A65">	       
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="LNV-Lenovo A790e">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="K1">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.3</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo A789">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo S720">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.3</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="a107">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    
+	    <!-- 中兴 -->
+	    <phone model="ZTE V889D">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="ZTE-U V960">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="ZTE U880E">	   
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ZTE N880E">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="ZTE U930">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="ZTE V970">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">150</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ZTE-C N600+">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="ZTE-C N760">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 
+	    <phone model="ZTE-C N880">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>  
+	    <phone model="ZTE U885">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>   
+	    <phone model="ZTE V788D">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>   
+	    <phone model="V961">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>    
+	    <phone model="X850">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 
+	    <phone model="V881">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>   
+	    <phone model="ZTE-T U880">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>   
+	    <phone model="ZTE V889M">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>   
+	    <!-- 天语 -->  
+	    <phone model="K-Touch W619">	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    
+	    <phone model="V9">	   
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <!-- 由于手机被刷机，认到的型号是I9300,所以这并不是真正的型号 -->
+	    <phone model="K-Touch W806">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="W700">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">384</FrameLength>	        
+	    </phone>
+	    <!-- LG -->  
+	    <phone model="LG-F160">	  
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">2123</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+		<phone model="LG-P350">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+		<phone model="LG-LU6200">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	  	<phone model="LG-C550">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	  	<phone model="LG-C660">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	  	<phone model="LG-P970">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3157</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>    
+	  	<phone model="Nexus 4">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">100</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+		 <!-- Hisense -->  
+	    <phone model="HS-U8">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+		 <!-- Haier -->  
+	    <phone model="Haier HW-W910">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Haier HW-N86W">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    
+		<!-- 小米 -->  
+	    <phone model="MI-ONE C1">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="MI-ONE">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="MI-ONE Plus">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>  
+	    <phone model="MI 1S">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 
+	    <phone model="MI 2">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.5</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="MI 2A">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>  
+	    <phone model="MI 2S">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 
+	    <phone model="MI 2SC">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 
+		<!-- TCL -->  
+	    <phone model="TCLW989">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+		<!-- 步步高 -->  
+	    <phone model="vivo S7">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+		<!-- TP-LINK -->  
+	    <phone model="T882">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+		<!-- 阿尔卡特 -->  
+	    <phone model="ALCATEL one touch 986+">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+		<!--三星 -->  
+	    <phone model="Galaxy Nexus">	       
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="SCH-i589">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="SCH-i559">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-I9070">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	       
+	    </phone>
+	    <phone model="GT-I9220">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   <phone model="GT-I9003">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-S5360">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="GT-S5368">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-I9050"><!-- 降低手机发送幅度 -->	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.33</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-S7568">	   
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   <phone model="GT-I9300">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	   <phone model="SCH-i919">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   	<phone model="GT-I9008L">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-I9000">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-I8250">	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-I9308">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-I9100">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="GT-B5510">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-B5330">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- 成功率只有60% -->
+	    <phone model="GT-I9088">	    
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	       
+	    </phone>
+	    <phone model="GT-P1000">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-P7510">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>    
+	    <phone model="GT-P7300">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.2</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>    
+	    <phone model="GT-S5570">	   
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>    
+	    <phone model="GT-S5660">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>   
+	   	<phone model="GT-S5820">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 	    
+	  	<phone model="GT-S5838">	  
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 	
+	   	<phone model="GT-S6500D">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 	  
+	   	<phone model="SAMSUNG-SGH-I997R">	   
+	        <Wave type="int">1</Wave>
+	        <SendBaud type="short">3675</SendBaud>
+	        <SendVolume type="float">1.0</SendVolume>
+	        <RecvBaud type="short">3675</RecvBaud>
+	        <Voltage type="short">3300</Voltage>
+	        <AudioSource type="int">1</AudioSource>
+	        <FrameLength type ="short">256</FrameLength>	        
+	    </phone>    
+	   	<phone model="GT-I5700">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   	<phone model="I9023">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>  
+	   	<phone model="GT-I9108">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>       
+	   	<phone model="Nexus S">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 
+	   	<phone model="GT-S5830i">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>     
+	   	<phone model="SCH-I339">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>    
+	   	<phone model="SCH-I519">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+	    </phone>        
+	   	<phone model="SCH-i569">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>   
+	   	<phone model="SCH-I619">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>        
+	   	<phone model="SCH-i909">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1779</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>   
+	   	<phone model="GT-S6102E">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-I9100G">	   
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="SCH-i509">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-S5670">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="SCH-i809">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-I9103">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3452</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="SGH-T959">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-I9001">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-S7562">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="SCH-i579">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GT-I8150">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   	<phone model="GT-P3110">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   	<phone model="GT-P5110">	   
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   	<phone model="SGH-M919">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.3</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	   	<phone model="SCH-I669">	    	
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    
+	    <!-- Coolpad -->
+	    <phone model="9900">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="5860A">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="7260">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="5855">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">918</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="8811">
+            <Wave type="int">1</Wave>                                          
+            <SendBaud type="short">3675</SendBaud>                             
+            <SendVolume type="float">1.0</SendVolume>                          
+            <RecvBaud type="short">918</RecvBaud>                              
+            <Voltage type="short">3300</Voltage>                               
+            <AudioSource type="int">1</AudioSource>  
+            <FrameLength type ="short">256</FrameLength>                          
+	    </phone>   
+	    
+	    <!-- GreenOrange -->
+	    <phone model="GO M2">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="GO M1">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- 魅族 -->   
+	    <phone model="M9">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="M030">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="M031">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="M032">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- 夏新 -->
+	    <phone model="AMOI_N90">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="AMOI N820">	   
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.5</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    
+	    <!-- KONKA -->
+	    <phone model="W900">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="LA-I">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <!-- marvell -->
+	    <phone model="8150">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- ACER -->
+	    <phone model="AK330">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- Dell -->
+	    <phone model="Dell V04B">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- DOOV -->
+	    <phone model="DOOV_D5">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!--Ramos-->
+	    <phone model="W32">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!--国红 -->
+	    <phone model="GHONG W100">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- YUSUN -->
+	    <phone model="YUSUN--W 800">	        
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.5</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- HEDY -->
+	    <phone model="HEDY_H701">	       
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- DEC -->
+	    <phone model="SX30+">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- OPPO -->
+	    <phone model="R811">	       
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="X903">	       
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="U701">	     
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="U701T">	       
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 
+	    <phone model="U705T">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone> 
+	    <phone model="X909">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    
+	    <!-- GFIVE -->
+	    <phone model="GFIVE A86">	     
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- 盛大 -->
+	    <phone model="Bambook S1">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!--Philips-->
+	    <phone model="W732">	      
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">500</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo K860">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Xiaomi" model="MI 3W">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Coolpad" model="8190">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">250</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HUAWEI T8951">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Sony" model="M35t">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="SM-N9009">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="CUBE" model="U55GT">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="K-Touch T60">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="GT-I8558" model="samsung">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="LG-F340L">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="SCH-I879">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="SM-C101">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="SM-G3818">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="Coolpad8720Q">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">250</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="GT-I9508">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">128</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="GT-I9508">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">128</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="SCH-P709">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="SM-G7106">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Coolpad 5951">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="motorola" model="DROID RAZR HD">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="ErenEben" model="EBEN T7">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="GiONEE" model="GN137">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="GT-P3100">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC D816w">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>	    
+	    <phone model="POMP_C6">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="thl" model="T200">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="thl T100">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="motorola" model="XT890">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">60</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="SM-N900">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="SM-T211">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="HUAWEI G750-T01">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="HUAWEI Y511-T00">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="Lenovo A390t">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="OPPO" model="N1T">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Teclast" model="P90(H3U6)">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="OPPO" model="R819T">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Ramosi9">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="vivo X510t">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="Haier HW-N86W">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="HTC 606w">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="HTC 609d">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Coolpad" model="5860A">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="GT-I9000">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!--phone manufacturer="samsung" model="GT-P1000">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone-->
+	    <phone model="HTC One X">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Meizu" model="M032">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Xiaomi" model="MI 2SC">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Motorola" model="MT680">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="google" model="Nexus 7">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Huawei" model="T9200">	    
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="OPPO" model="U701">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Motorola" model="XT320">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone model="K-Touch T60">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Huawei" model="T9200">	    
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone model="Coolpad 5950">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="Xiaomi" model="HM 1SW">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="SM-G9008V">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="LGE" model="LG-F200">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="SM-T530NN">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.2</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <phone manufacturer="samsung" model="SM-T530NU">	    
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.2</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>	        
+	    </phone>
+	    <!-- new configs 2016-05-18 -->
+	    <phone manufacturer="HTC" model="HTC6545LVW">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">1000</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+	    </phone>
+	    <phone manufacturer="LGE" model="VK815">
+	    	<Wave type="int">1</Wave>
+	    	<SendBaud type="short">3675</SendBaud>
+	    	<SendVolume type="float">1.0</SendVolume>
+	    	<RecvBaud type="short">3675</RecvBaud>
+	    	<Voltage type="short">1000</Voltage>
+	    	<AudioSource type="int">1</AudioSource>
+	    	<FrameLength type ="short">512</FrameLength>
+	    </phone>
+	    <phone manufacturer="samsung" model="SAMSUNG-SM-T217A">
+	    	<Wave type="int">1</Wave>
+	    	<SendBaud type="short">3675</SendBaud>
+	    	<SendVolume type="float">1.0</SendVolume>
+	    	<RecvBaud type="short">3675</RecvBaud>
+	    	<Voltage type="short">1000</Voltage>
+	    	<AudioSource type="int">1</AudioSource>
+	    	<FrameLength type ="short">512</FrameLength>
+	    </phone>
+	    <phone manufacturer="samsung" model="SM-T377P">
+	    	<Wave type="int">1</Wave>
+	    	<SendBaud type="short">3675</SendBaud>
+	    	<SendVolume type="float">1.0</SendVolume>
+	    	<RecvBaud type="short">3675</RecvBaud>
+	    	<Voltage type="short">1000</Voltage>
+	    	<AudioSource type="int">1</AudioSource>
+	    	<FrameLength type ="short">512</FrameLength>
+	    </phone>
+	    <!-- add by chfeng 2016-09-19 -->
+	    <phone model="AirBox380">
+	    	<Wave type="int">1</Wave>
+	    	<SendBaud type="short">3675</SendBaud>
+	    	<SendVolume type="float">0.5</SendVolume>
+	    	<RecvBaud type="short">3675</RecvBaud>
+	    	<Voltage type="short">1000</Voltage>
+	    	<AudioSource type="int">1</AudioSource>
+	    	<FrameLength type ="short">256</FrameLength>
+	    </phone>
+	</audio>
+</params>

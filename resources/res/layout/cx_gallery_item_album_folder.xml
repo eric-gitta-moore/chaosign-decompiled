@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/cx_gallery_selector_album_folder_item" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="90dp">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_cover" android:layout_width="66dp" android:layout_height="66dp" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="12dp" android:layout_toStartOf="@+id/iv_selected" android:layout_toEndOf="@+id/iv_cover">
+        <TextView android:textSize="18sp" android:textColor="#333333" android:ellipsize="middle" android:id="@+id/tv_folder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_file_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_selected" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cx_gallery_album_folder_selected" android:layout_centerVertical="true" android:layout_marginStart="5dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

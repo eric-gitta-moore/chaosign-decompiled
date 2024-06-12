@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/note_menu_popup_up" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="62dp">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textColor="@android:color/white" android:id="@+id/btn_copy" android:background="@drawable/btn_black_selector" android:layout_width="60dp" android:layout_height="40dp" android:text="@string/note_copy"/>
+        <Button android:textColor="@android:color/white" android:id="@+id/btn_highlight" android:background="@drawable/btn_black_selector" android:layout_width="60dp" android:layout_height="40dp" android:text="@string/note_highlight"/>
+        <Button android:textColor="@android:color/white" android:id="@+id/btn_select_all" android:background="@drawable/btn_black_selector" android:visibility="gone" android:layout_width="60dp" android:layout_height="40dp" android:text="@string/note_select_all"/>
+        <Button android:textColor="@android:color/white" android:id="@+id/btn_note_text" android:background="@drawable/btn_black_selector" android:visibility="visible" android:layout_width="60dp" android:layout_height="40dp" android:text="@string/note_tag_epub"/>
+        <Button android:textColor="@android:color/white" android:id="@+id/btn_search" android:background="@drawable/btn_black_selector" android:layout_width="60dp" android:layout_height="40dp" android:text="@string/search"/>
+        <Button android:textColor="@android:color/white" android:id="@+id/btn_view_note_text" android:background="@drawable/btn_black_selector" android:visibility="gone" android:layout_width="60dp" android:layout_height="40dp" android:text="@string/view_note_text"/>
+        <Button android:textColor="@android:color/white" android:id="@+id/btn_color" android:background="@drawable/btn_black_selector" android:visibility="gone" android:layout_width="60dp" android:layout_height="40dp" android:text="@string/note_color"/>
+        <Button android:textColor="@android:color/white" android:id="@+id/btn_delete" android:background="@drawable/btn_black_selector" android:visibility="gone" android:layout_width="60dp" android:layout_height="40dp" android:text="@string/note_delete"/>
+    </LinearLayout>
+</LinearLayout>

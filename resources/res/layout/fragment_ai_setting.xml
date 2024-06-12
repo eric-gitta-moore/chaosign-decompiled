@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_container" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:shape_radiusInTopLeft="15dp" app:shape_radiusInTopRight="15dp" app:shape_solidColor="#f5f6f8">
+    <com.google.android.material.imageview.ShapeableImageView android:layout_width="match_parent" android:layout_height="100dp" android:src="@drawable/cxai_bg_top" android:scaleType="fitXY" app:shapeAppearance="@style/cxai_shape_style_rounded15"/>
+    <com.chaoxing.mobile.voice.ui.view.AiToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.hjq.shape.layout.ShapeRelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" app:shape_radius="8dp" app:shape_solidColor="@color/white">
+                <TextView android:textSize="16sp" android:textColor="#1b1f26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="悬浮状态" android:layout_centerVertical="true"/>
+                <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_voice_wake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            </com.hjq.shape.layout.ShapeRelativeLayout>
+            <com.hjq.shape.layout.ShapeRelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="56dp" app:shape_radius="8dp" app:shape_solidColor="@color/white">
+                <TextView android:textSize="16sp" android:textColor="#1b1f26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="唤醒词" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小星小星" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </com.hjq.shape.layout.ShapeRelativeLayout>
+            <com.hjq.shape.layout.ShapeRelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="56dp" app:shape_radius="8dp" app:shape_solidColor="@color/white">
+                <TextView android:textSize="16sp" android:textColor="#1b1f26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="语音播报" android:layout_centerVertical="true"/>
+                <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_voice_speak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            </com.hjq.shape.layout.ShapeRelativeLayout>
+            <com.chaoxing.mobile.voice.ui.setting.AnimLinearLayout android:orientation="vertical" android:id="@+id/ll_timbre_container" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="#8a9099" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="音色"/>
+                <com.hjq.shape.layout.ShapeLinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:minHeight="56dp" app:shape_radius="8dp" app:shape_solidColor="@color/white">
+                    <com.chaoxing.mobile.voice.ui.setting.AiTimbreView android:id="@+id/view_timbre" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                    <com.chaoxing.mobile.voice.ui.setting.AiTimbreView android:id="@+id/view_timbre2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                    <com.chaoxing.mobile.voice.ui.setting.AiTimbreView android:id="@+id/view_timbre3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                    <com.chaoxing.mobile.voice.ui.setting.AiTimbreView android:id="@+id/view_timbre4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                </com.hjq.shape.layout.ShapeLinearLayout>
+            </com.chaoxing.mobile.voice.ui.setting.AnimLinearLayout>
+            <TextView android:textSize="14sp" android:textColor="#8a9099" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="形象"/>
+            <com.hjq.shape.layout.ShapeLinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="170dp" android:layout_marginTop="10dp" app:shape_radius="8dp" app:shape_solidColor="@color/white">
+                <com.chaoxing.mobile.voice.ui.setting.AiProfileView android:id="@+id/view_profile" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <com.chaoxing.mobile.voice.ui.setting.AiProfileView android:id="@+id/view_profile2" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            </com.hjq.shape.layout.ShapeLinearLayout>
+            <com.hjq.shape.layout.ShapeRelativeLayout android:id="@+id/rl_understand_star" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="56dp" app:shape_radius="8dp" app:shape_solidColor="@color/white">
+                <TextView android:textSize="16sp" android:textColor="#1b1f26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="了解小星" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ai_right_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/SwitchButtonStyle"/>
+            </com.hjq.shape.layout.ShapeRelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.hjq.shape.layout.ShapeRelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/lib_reader_dialog_bg" android:layout_width="300dp" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="#333333" android:gravity="center_horizontal" android:id="@+id/tv_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/lib_reader_dash_delete_hint" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <ImageView android:background="@color/lib_reader_divider_color" android:layout_width="match_parent" android:layout_height="1px" android:contentDescription="@string/lib_reader_divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/tv_cancel" android:paddingLeft="9dp" android:paddingTop="15dp" android:paddingRight="9dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/lib_reader_cancel" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_divider" android:background="@color/lib_reader_divider_color" android:layout_width="1px" android:layout_height="match_parent" android:contentDescription="@string/lib_reader_divider"/>
+        <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/tv_confirm" android:paddingLeft="9dp" android:paddingTop="15dp" android:paddingRight="9dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/lib_reader_confirm" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/version" android:background="?android:attr/selectableItemBackground" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:paddingStart="15dp" android:paddingEnd="15dp" app:layout_constraintTop_toBottomOf="@+id/divider2">
+                <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tv_label_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/string_settings_version" android:layout_toLeftOf="@+id/tv_version" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="right" android:id="@+id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/divider" android:background="@color/public_divider" android:layout_width="match_parent" android:layout_height="1px" app:layout_constraintTop_toBottomOf="@+id/version"/>
+            <LinearLayout android:orientation="vertical" android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/divider">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/public_rect_round_4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:src="@drawable/qrcode_app_chaoxing_com" android:scaleType="fitCenter" android:minWidth="240dp" android:minHeight="240dp"/>
+                    <View android:background="@color/public_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+                    <TextView android:textSize="16sp" android:textColor="#ff0066cc" android:layout_gravity="center_horizontal" android:id="@+id/tv_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/string_settings_version_download"/>
+                    <TextView android:textSize="14sp" android:textColor="#ff0066cc" android:layout_gravity="center_horizontal" android:id="@+id/tv_download_url" android:background="?android:attr/selectableItemBackground" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/string_settings_release_version_download_url"/>
+                    <TextView android:textSize="12sp" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:id="@+id/tv_copy_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="20dp" android:text="@string/string_settings_copy_tip"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

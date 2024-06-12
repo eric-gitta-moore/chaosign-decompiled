@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/toolbar_background_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignTop="@+id/toolbar_content" android:layout_alignBottom="@+id/toolbar_content"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/toolbar_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+        <ViewFlipper android:id="@+id/toolbar_left_action_layout_parent" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/toolbar_left_action_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/cl_toolbar_padding_start">
+                <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/toolbar_left_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/cl_ic_toolbar_arrow_left_24dp" style="@style/cl_Toolbar_Action_Button"/>
+                <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/toolbar_left_action2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cl_Toolbar_Action_Button"/>
+            </LinearLayout>
+        </ViewFlipper>
+        <ViewFlipper android:layout_gravity="center_vertical" android:id="@+id/toolbar_title_layout_parent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/toolbar_title_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/cl_toolbar_title_padding_start" android:paddingEnd="@dimen/cl_toolbar_title_padding_end">
+                <androidx.appcompat.widget.AppCompatTextView android:layout_gravity="center" android:id="@+id/toolbar_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cl_Toolbar_Title"/>
+            </LinearLayout>
+        </ViewFlipper>
+        <ViewFlipper android:layout_gravity="center_vertical" android:id="@+id/toolbar_right_action_parent_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/toolbar_right_action_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/cl_toolbar_padding_end">
+                <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/toolbar_right_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/cl_ic_write_topic_24dp" style="@style/cl_Toolbar_Action_Button"/>
+                <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/toolbar_right_action2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cl_Toolbar_Action_Button"/>
+            </LinearLayout>
+        </ViewFlipper>
+    </LinearLayout>
+    <View android:id="@+id/bottom_line" android:background="#ffebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/toolbar_content"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/rlContent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.fanzhou.widget.PullToRefreshAndLoadListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvSubject" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent_white"/>
+        <TextView android:textSize="16sp" android:textColor="#66333333" android:gravity="center" android:id="@+id/tvNoData" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginRight="32dp" android:text="你还有创建过专题噢" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="#ffffff" android:layout_width="@dimen/vertial_floatingwindow_width" android:layout_height="@dimen/vertial_floatingwindow_height">
+    <TextView android:textSize="10sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/test_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我在测试悬浮窗"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.group.ui.ImageViewPager android:id="@+id/vpImage" android:background="@android:color/transparent" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="30"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/headview" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:layout_margin="32dp" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/gallery_del" android:background="@drawable/img_topic_picture_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_blue_16"/>
+    </RelativeLayout>
+</RelativeLayout>

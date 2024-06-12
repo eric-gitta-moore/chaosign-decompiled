@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/dateZoneBG" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/detail_title" layout="@layout/layout_actionbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/detail_noti_time_zone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/detail_title">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="56dp">
+            <TextView android:textSize="16sp" android:id="@+id/detail_happen_time_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/remind_time" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="15sp" android:id="@+id/detail_time_happen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="00_00 00:00" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <include layout="@layout/layout_divider_line"/>
+        <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+            <TextView android:textSize="16sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="49dp" android:layout_marginLeft="17dp" android:text="@string/remind_repeat" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="15sp" android:id="@+id/repeat_reminde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="永不" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_divider_line"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/detail_button_zone" android:layout_below="@+id/detail_noti_time_zone">
+        <LinearLayout android:orientation="vertical" android:id="@+id/detail_all_content" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:textColor="@color/contentTextColor" android:id="@+id/detail_remind_content" android:paddingTop="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="这是提醒详情页的默认内容" android:minLines="3"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/detail_img_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/detail_att_container" android:background="@drawable/shape_line_blue_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/detail_button_zone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/chaoxingBlue" android:id="@+id/remind_delete" android:background="@color/mainGrey" android:layout_width="0dp" android:layout_height="45dp" android:text="@string/remind_delete" android:layout_weight="1"/>
+        <Button android:textColor="@android:color/white" android:id="@+id/set_done" android:background="@color/chaoxingBlue" android:layout_width="0dp" android:layout_height="45dp" android:text="@string/remind_set_done" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

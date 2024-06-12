@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/remaining_space" android:background="@drawable/bg_cc_remaining_space" android:layout_width="match_parent" android:layout_height="30dp" android:text="剩余可用空间" android:layout_alignParentBottom="true"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/download_recycleview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/remaining_space" android:layout_below="@+id/title_bar"/>
+    <TextView android:textSize="16sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cc_download_manager_empty" android:layout_above="@+id/remaining_space" android:layout_below="@+id/title_bar"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_chat_course_btn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_icon" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:contentDescription="@null"/>
+    <TextView android:textSize="12sp" android:textColor="#484848" android:ellipsize="end" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="96dp" android:maxLines="2" android:layout_marginStart="4dp"/>
+</LinearLayout>

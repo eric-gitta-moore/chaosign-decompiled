@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/actionbar_title_zone" layout="@layout/layout_actionbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/reminder_time_ll" android:background="@color/dateZoneBG" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/actionbar_title_zone">
+        <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="56dp">
+            <TextView android:textSize="16sp" android:textColor="@color/timeGrey" android:gravity="center" android:layout_width="wrap_content" android:layout_height="49dp" android:layout_marginLeft="16dp" android:text="@string/remind_reminder" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <Switch android:id="@+id/time_switch" android:padding="16dp" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <include layout="@layout/layout_divider_line"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/time_picker_zone" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/happen_time_rl" android:layout_width="match_parent" android:layout_height="56dp">
+                <TextView android:textSize="16sp" android:textColor="@color/timeGrey" android:gravity="center" android:layout_width="wrap_content" android:layout_height="49dp" android:layout_marginLeft="17dp" android:text="@string/remind_time" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/tv_time_happen" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="6dp" android:text="00-00 00:00" android:layout_toLeftOf="@+id/iv_happen_next"/>
+                <ImageView android:id="@+id/iv_happen_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@mipmap/next_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <include layout="@layout/layout_divider_line"/>
+            <RelativeLayout android:id="@+id/repeat_time_rl" android:layout_width="match_parent" android:layout_height="56dp">
+                <TextView android:textSize="16sp" android:textColor="@color/timeGrey" android:gravity="center" android:layout_width="wrap_content" android:layout_height="49dp" android:layout_marginLeft="17dp" android:text="@string/remind_repeat" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="15sp" android:textColor="#333333" android:gravity="center" android:id="@+id/repeat_time" android:paddingLeft="50dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="6dp" android:text="@string/remind_never" android:layout_toLeftOf="@+id/repeat_next_iv"/>
+                <ImageView android:id="@+id/repeat_next_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@mipmap/next_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <include layout="@layout/layout_divider_line"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/edit_media_zone" android:background="@drawable/shape_line_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/iv_picker_pic" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/reminder_pic_icon" android:scaleType="center"/>
+        <ImageView android:id="@+id/iv_camera_use" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/reminder_camera_icon" android:scaleType="center"/>
+        <ImageView android:id="@+id/iv_voice_use" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:src="@mipmap/reminder_voice_icon"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/content_sv" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/edit_media_zone" android:layout_below="@+id/reminder_time_ll">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:textSize="16sp" android:textColorHint="@color/dividerLine" android:gravity="top" android:id="@+id/et_remind_content" android:background="@null" android:padding="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入内容" android:minLines="2"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/add_img_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/edit_reminder_att_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

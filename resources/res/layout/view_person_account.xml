@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/line" android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+    <include android:id="@+id/llBindUnit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/person_profile_item_view2"/>
+    <include android:id="@+id/llTrustUnit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="15dp" layout="@layout/item_person_account"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llAccountMore" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="#fff5f6f8" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="35dp">
+            <TextView android:textSize="14sp" android:textColor="#999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/school_name_label" android:layout_centerInParent="true"/>
+            <TextView android:id="@+id/tvAddUnit" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/person_unit_add" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llAccountList" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/rlMore" android:layout_width="match_parent" android:layout_height="35dp">
+            <View android:id="@+id/line1" android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tvMore" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_more" android:drawableRight="@drawable/person_unit_more" android:drawablePadding="2dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlDelList" android:visibility="gone" android:layout_width="match_parent" android:layout_height="35dp">
+            <View android:id="@+id/line2" android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tvDelList" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_del_list" android:drawableRight="@drawable/person_unit_more" android:drawablePadding="2dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

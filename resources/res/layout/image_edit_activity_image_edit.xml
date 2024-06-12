@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rootContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.imageeditlibrary.editimage.view.PinchImageView android:layout_gravity="center" android:id="@+id/main_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.chaoxing.imageeditlibrary.editimage.view.mosaic.MosaicView android:layout_gravity="center" android:id="@+id/mosaic_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.chaoxing.imageeditlibrary.editimage.view.CustomPaintView android:layout_gravity="center" android:id="@+id/custom_paint_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.chaoxing.imageeditlibrary.editimage.view.StickerView android:layout_gravity="center" android:id="@+id/sticker_panel" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/rl_sticker_panel" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/loading" layout="@layout/image_edit_save_loading_view"/>
+    </FrameLayout>
+    <include android:id="@+id/titleBar" layout="@layout/image_edit_edit_image_header"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/flBottomView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/image_edit_line__spilt" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:id="@+id/rl_fragment" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/fl_main_menu" android:background="#af000000" android:layout_width="match_parent" android:layout_height="@dimen/image_edit_bottom_banner_height"/>
+            <FrameLayout android:id="@+id/fl_edit_bottom_height" android:background="@color/image_edit_bottom_banner_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <FrameLayout android:id="@+id/fl_edit_bottom_full" android:background="#af000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fl_edit_above_mainmenu" android:background="@color/image_edit_bottom_banner_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/flBottomView"/>
+    <FrameLayout android:id="@+id/fl_crop_view" android:background="@color/image_edit_bottom_banner_bg" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/transparent" android:padding="@dimen/common_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/btn_style">
+        <TextView android:textSize="16sp" android:textColor="@color/bg_blue" android:gravity="center" android:id="@+id/btn_meeting_manager_audio" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px" android:text="打开麦克风"/>
+        <View android:background="@color/gray_868686" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="16sp" android:textColor="@color/bg_blue" android:gravity="center" android:id="@+id/btn_meeting_manager_video" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px" android:text="打开摄像头"/>
+        <View android:background="@color/gray_868686" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="16sp" android:textColor="@color/bg_blue" android:gravity="center" android:id="@+id/btn_meeting_manager_main" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px" android:text="设为主讲"/>
+        <View android:background="@color/gray_868686" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="16sp" android:textColor="@color/bg_blue" android:gravity="center" android:id="@+id/btn_meeting_manager_kick_out" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px" android:text="移除会议室"/>
+    </LinearLayout>
+    <Button android:textColor="@color/bg_blue" android:id="@+id/btn_meeting_manager_cancel" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_margin" android:layout_marginBottom="@dimen/common_margin" android:text="@string/cancel" style="@style/btn_style"/>
+</LinearLayout>

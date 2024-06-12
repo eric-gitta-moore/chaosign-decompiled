@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/contentView" android:paddingTop="14dp" android:paddingBottom="14dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15sp" android:textColor="@color/color_5e6c80" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:maxLines="2" android:layout_toLeftOf="@+id/tv_count" android:lineSpacingMultiplier="1.1"/>
+    <TextView android:textSize="13sp" android:textColor="@color/color_a6abb3" android:gravity="center" android:id="@+id/tv_count" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_course_list_clazz_arrow" android:drawablePadding="6dp" android:layout_alignTop="@+id/clazz" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

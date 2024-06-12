@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="15dp">
+        <com.chaoxing.mobile.voice.ui.find.indicator.AiFindIndicator android:id="@+id/indicator_find" android:paddingLeft="9dp" android:paddingTop="12dp" android:paddingRight="9dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@+id/vp_find" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

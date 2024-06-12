@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_top" android:background="@drawable/lesson_member_top_bg" android:layout_width="match_parent" android:layout_height="@dimen/adaptive_48dp">
+        <ImageView android:id="@+id/iv_back" android:padding="@dimen/adaptive_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15dp" android:textColor="#0099ff" android:id="@+id/cb_select_all" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="全选" android:layout_toRightOf="@+id/iv_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/normal_black" android:id="@+id/rb_members" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_choose_member" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/color_999999" android:id="@+id/tv_finish" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/ok" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.chaoxing.mobile.search.widget.SearchBar android:id="@+id/searchBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/search_bar" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/search_bg_night" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_toLeftOf="@+id/tv_action" android:layout_centerVertical="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_group_search" android:layout_marginStart="8dp" android:layout_marginEnd="5dp"/>
+                <EditText android:textSize="14sp" android:textColor="@color/normal_gray" android:textColorHint="#ffb3b3b3" android:id="@+id/et_keyword" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="30dp" android:hint="@string/comment_serarch" android:layout_weight="1" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch"/>
+                <ImageView android:id="@+id/iv_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/clear" android:layout_weight="0"/>
+            </LinearLayout>
+            <TextView android:textSize="15sp" android:textColor="@color/bg_blue" android:id="@+id/tv_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/search_Action_Button"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_speeker" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="16sp" android:textColor="#ffb3b3b3" android:gravity="center" android:id="@+id/tvNoSearchData" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="暂无搜索结果"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_white"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rl_bottom" android:background="@drawable/lesson_member_bottom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/tvCancel" android:background="@drawable/btn_stroke_0099ff" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:text="@string/cancel" android:layout_weight="1"/>
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvOk" android:background="@drawable/btn_solide_0099ff" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:text="@string/ok" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/rl_select_mange" android:padding="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_administrator" android:layout_centerVertical="true"/>
+            <TextView android:id="@+id/tv_select_mange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="120dp" android:maxLines="1" android:singleLine="true" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_startWeekDateTime" android:padding="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_week_date_time" android:layout_centerVertical="true"/>
+            <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/tv_startWeekDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_restart_choose" android:drawableRight="@drawable/blue_ic_down" android:drawablePadding="5dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_endWeekDateTime" android:padding="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/end_week_date_time" android:layout_centerVertical="true"/>
+            <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/tv_endWeekDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_restart_choose" android:drawableRight="@drawable/blue_ic_down" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_repeating" android:padding="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/repeat" android:layout_centerVertical="true"/>
+            <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/tv_repeating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:text="@string/course_restart_choose" android:maxLines="1" android:singleLine="true" android:drawableRight="@drawable/blue_ic_down" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

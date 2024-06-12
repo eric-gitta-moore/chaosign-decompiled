@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="25dp" android:paddingTop="10dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/ask_me" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/robot_ask_me" android:maxLines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/item_box_header" android:background="@drawable/shape_line_bg" android:layout_width="match_parent" android:layout_height="@dimen/itemHeaderHeight">
+        <TextView android:textSize="@dimen/itemHeaderDateSize" android:textColor="@color/dateZoneTvColor" android:id="@+id/item_box_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/itemMarginLeft" android:text="12月27日"/>
+    </LinearLayout>
+    <CheckBox android:id="@+id/group_edit_item_cb" android:focusable="false" android:clickable="false" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="12dp" android:layout_marginTop="14dp" android:layout_below="@+id/item_box_header" style="@style/CheckBoxTheme"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/item_box_content" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="38dp" android:layout_below="@+id/item_box_header">
+        <TextView android:textSize="@dimen/itemTimeTextSize" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/item_box_time" android:background="@drawable/shape_item_time_unhappen_bg" android:layout_width="@dimen/itemTimeBGWidth" android:layout_height="@dimen/itemTimeBGHeight" android:layout_marginRight="@dimen/itemTimeBGMarginRight" android:text="10:00" android:layout_alignParentRight="true"/>
+        <ImageView android:id="@+id/item_box_clock_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/itemClockIconMarginRight" android:src="@mipmap/reminder_icon_clock_blue" android:layout_toLeftOf="@+id/item_box_time"/>
+        <RelativeLayout android:id="@+id/item_box_content_zone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/item_box_clock_icon" android:layout_alignParentLeft="true">
+            <RelativeLayout android:id="@+id/item_box_tv_zone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/itemContentTextSize" android:textColor="@color/itemContetColor" android:ellipsize="end" android:id="@+id/item_remind_content" android:layout_width="@dimen/itemContentWidth" android:layout_height="wrap_content" android:layout_marginRight="@dimen/itemTextContentMargin" android:text="默认提醒内容" android:maxLines="2" android:layout_centerVertical="true"/>
+                <TextView android:id="@+id/item_box_red_icon" android:background="@drawable/shape_red_rop" android:visibility="gone" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="4dp" android:layout_marginTop="16dp" android:layout_marginRight="4dp" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/item_box_img_container" android:layout_width="@dimen/itemContentWidth" android:layout_height="wrap_content" android:layout_below="@+id/item_box_tv_zone"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/item_box_att_container" android:layout_width="@dimen/itemContentWidth" android:layout_height="wrap_content" android:layout_below="@+id/item_box_img_container"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="38dp" android:layout_below="@+id/item_box_content"/>
+</RelativeLayout>

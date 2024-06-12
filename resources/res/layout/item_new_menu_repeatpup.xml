@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlRootView" android:layout_width="match_parent" android:layout_height="45dp">
+    <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="15dp" android:text="@string/notice_letter_mode_replay"/>
+    <ImageView android:gravity="center" android:id="@+id/iv_reply" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginRight="15dp" android:src="@drawable/ic_notice_reply_mode" android:layout_alignParentRight="true"/>
+    <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/tvName"/>
+</RelativeLayout>

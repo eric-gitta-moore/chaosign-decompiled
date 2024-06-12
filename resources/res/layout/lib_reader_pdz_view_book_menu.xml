@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.reader.pdz.widget.BookMenuView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/pdg_menu" android:background="@color/lib_reader_color_pdz_white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/view_place_holder" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <com.chaoxing.reader.pdz.widget.BookSlidingTabLayout android:id="@+id/pdg_tab" android:background="@drawable/lib_reader_pdz_border_blue" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" app:lib_reader_tl_divider_color="#0e6fe7" app:lib_reader_tl_divider_width="0.5dp" app:lib_reader_tl_indicator_color="#0e6fe7" app:lib_reader_tl_indicator_corner_radius="1dp" app:lib_reader_tl_indicator_height="35dp" app:lib_reader_tl_indicator_margin_bottom="0dp" app:lib_reader_tl_indicator_margin_top="0dp" app:lib_reader_tl_indicator_style="2" app:lib_reader_tl_tab_space_equal="true" app:lib_reader_tl_textSelectColor="#ffffff" app:lib_reader_tl_textUnselectColor="#000000"/>
+        <com.chaoxing.reader.pdz.widget.NoScrollViewPager android:id="@+id/vp_menu" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_menu_close" android:background="@android:color/transparent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_reader_pdz_read_catalog_back" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+</com.chaoxing.reader.pdz.widget.BookMenuView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/image_edit_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/image_edit_edit_image_header"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp">
+            <EditText android:textSize="30sp" android:textColor="@color/image_edit_white" android:textColorHint="@color/image_edit_white" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/text_input" android:background="@null" android:paddingLeft="5dp" android:paddingTop="2dp" android:paddingRight="5dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/image_edit_input_hint" android:lineSpacingExtra="4.6dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="#757b7e" android:layout_width="match_parent" android:layout_height="1px"/>
+    <com.chaoxing.imageeditlibrary.editimage.view.ColorSelectorView android:id="@+id/colorSlider" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="45dp"/>
+</LinearLayout>

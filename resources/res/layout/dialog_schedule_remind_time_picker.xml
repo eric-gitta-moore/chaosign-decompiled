@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/shape_border_approval_item_bg" android:layout_width="205dp" android:layout_height="360dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="43dp">
+        <TextView android:textSize="14sp" android:textColor="#0099ff" android:gravity="center_vertical" android:id="@+id/dialog_remind_back" android:paddingLeft="15dp" android:layout_width="60dp" android:layout_height="40dp" android:text="@string/schedule_cancle_text" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/schedule_reminder_title" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/ll_no_remind" android:layout_width="match_parent" android:layout_height="44dp">
+        <CheckBox android:id="@+id/cb_no_remind" android:background="@drawable/selector_schedule_priority_check_cb" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@null"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/no_schedule_remind" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:text="@string/schedule_no_reminder"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="6dp"/>
+    <LinearLayout android:id="@+id/ll_zhunshi_remind" android:layout_width="match_parent" android:layout_height="44dp">
+        <CheckBox android:id="@+id/cb_zhunshi" android:background="@drawable/selector_schedule_priority_check_cb" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@null"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/zhunshi_remind" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="46dp" android:text="@string/schedule_remind_zhunshi"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/ll_2_min_remind" android:layout_width="match_parent" android:layout_height="44dp">
+        <CheckBox android:id="@+id/cb_2_min" android:background="@drawable/selector_schedule_priority_check_cb" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@null"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/two_min_remind" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="46dp" android:text="@string/schedule_remind_2_min_advance"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/ll_5_min_remind" android:layout_width="match_parent" android:layout_height="44dp">
+        <CheckBox android:id="@+id/cb_5_min" android:background="@drawable/selector_schedule_priority_check_cb" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@null"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/five_min_remind" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="46dp" android:text="@string/schedule_remind_5_min_advance"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/ll_30_min_remind" android:layout_width="match_parent" android:layout_height="44dp">
+        <CheckBox android:id="@+id/cb_30_min" android:background="@drawable/selector_schedule_priority_check_cb" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@null"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/thirty_min_remind" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="46dp" android:text="@string/schedule_remind_30_min_advance"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/ll_one_hour_remind" android:layout_width="match_parent" android:layout_height="44dp">
+        <CheckBox android:id="@+id/cb_one_hour" android:background="@drawable/selector_schedule_priority_check_cb" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@null"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/one_hour_remind" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="46dp" android:text="@string/schedule_remind_1_hour_advance"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/ll_one_day_remind" android:layout_width="match_parent" android:layout_height="44dp">
+        <CheckBox android:id="@+id/cb_one_day" android:background="@drawable/selector_schedule_priority_check_cb" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@null"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/one_day_remind" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="46dp" android:text="@string/schedule_remind_1_day_advance"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/ll_two_day_remind" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp">
+        <CheckBox android:id="@+id/cb_two_day" android:background="@drawable/selector_schedule_priority_check_cb" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@null"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/two_day_remind" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="46dp" android:text="@string/schedule_remind_2_day_advance"/>
+    </LinearLayout>
+</LinearLayout>

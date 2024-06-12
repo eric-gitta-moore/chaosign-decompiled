@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_save_vew" android:background="@android:color/white" android:layout_width="315dp" android:layout_height="350dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/group_ivater" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_50" android:layout_marginTop="30dp" android:layout_marginRight="@dimen/dp_50" android:minHeight="44dp">
+        <com.fanzhou.widget.CircleImageView android:layout_gravity="center_vertical" android:id="@+id/iv_group2" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/default_group_head" android:scaleType="centerCrop" app:is_circle="false" app:x_radius="6dp" app:y_radius="6dp"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_g_name2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="复复反反" android:maxLines="2" style="@style/group_title_text"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/ivQRCode_2" android:background="@drawable/best_lib_rank_img_stroke" android:layout_width="216dp" android:layout_height="216dp" android:layout_marginTop="30dp" android:layout_below="@+id/group_ivater" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#80999999" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/btn_save_reply" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/pcenter_letter_reply"/>
+        <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/btn_save_all" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/pcenter_letter_reply_all"/>
+        <View android:id="@+id/divider_replay_all" android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/btn_save_relay" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/grouplist_forward"/>
+        <View android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="6dp"/>
+        <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/btnCancel" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/cancel"/>
+    </LinearLayout>
+</RelativeLayout>

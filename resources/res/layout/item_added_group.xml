@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="12dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.chaoxing.mobile.group.ui.GroupAvatar android:id="@+id/ivAvatar" android:background="@drawable/bg_group_head_circle" android:layout_width="48dp" android:layout_height="48dp" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/llContent" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toLeftOf="@+id/tv_topic_count" android:layout_toRightOf="@+id/ivAvatar" android:layout_centerVertical="true">
+        <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_name" android:paddingRight="48dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_content" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center_vertical" android:id="@+id/tv_topic_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="0" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

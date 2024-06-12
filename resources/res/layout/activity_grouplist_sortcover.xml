@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar_4"/>
+    <View android:background="@color/color_f2f2f2" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <com.chaoxing.mobile.note.ui.GridView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_drag_listview" android:background="#00000000" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:numColumns="1"/>
+</LinearLayout>

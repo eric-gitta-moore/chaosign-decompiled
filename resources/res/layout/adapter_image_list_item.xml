@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_thumb" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_default_image" android:scaleType="centerCrop"/>
+    <View android:id="@+id/mask" android:background="#88000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/rlCbSelect" android:paddingLeft="12dp" android:paddingTop="3dp" android:paddingRight="3dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <CheckBox android:enabled="false" android:id="@+id/cbSelect" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_state_selector"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvSelPosition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/cbSelect" android:layout_alignBottom="@+id/cbSelect" android:layout_alignStart="@+id/cbSelect" android:layout_alignEnd="@+id/cbSelect"/>
+    </RelativeLayout>
+</RelativeLayout>

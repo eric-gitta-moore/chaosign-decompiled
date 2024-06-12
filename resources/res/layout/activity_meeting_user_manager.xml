@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/zone_video" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/meeting_manager_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/meeting_manager_toolbar">
+        <RelativeLayout android:gravity="center_vertical" android:background="@drawable/common_white_stroke_bg" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="16sp" android:id="@+id/all_user_audio_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="全员静音"/>
+            <TextView android:textSize="14sp" android:textColor="#cccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="开启后，参与者的麦克风为静音状态" android:layout_below="@+id/all_user_audio_down"/>
+            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/audio_down_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:background="@drawable/common_white_stroke_bg" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="10dp">
+            <TextView android:textSize="16sp" android:id="@+id/all_user_video_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="全员关闭"/>
+            <TextView android:textSize="14sp" android:textColor="#cccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="开启后，参与者的摄像头为关闭状态" android:layout_below="@+id/all_user_video_down"/>
+            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/video_down_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:gravity="center_vertical" android:id="@+id/user_count" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="15dp" android:text="参与人：" android:layout_below="@+id/meeting_video_save"/>
+        <ListView android:id="@+id/rv_meeting_userlist" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+    </LinearLayout>
+</RelativeLayout>

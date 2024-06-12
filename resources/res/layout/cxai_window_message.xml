@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_arrow_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cxai_ic_pop_arrow" android:layout_centerHorizontal="true" android:rotation="180"/>
+    <com.hjq.shape.layout.ShapeLinearLayout android:orientation="horizontal" android:id="@+id/ll_content_container" android:paddingLeft="17dp" android:paddingTop="10dp" android:paddingRight="17dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/iv_arrow_top" app:shape_radius="10dp" app:shape_solidColor="#f6f6f6">
+        <TextView android:textSize="15sp" android:textColor="#000000" android:id="@+id/tv_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="复制"/>
+    </com.hjq.shape.layout.ShapeLinearLayout>
+    <ImageView android:id="@+id/iv_arrow_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cxai_ic_pop_arrow" android:layout_below="@+id/ll_content_container" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

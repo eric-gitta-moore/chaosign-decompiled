@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.player.course.CourseVideoPlayer android:id="@+id/cvPlayer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/shot_view" android:background="@drawable/course_shot_image_bg" android:paddingBottom="6dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:layout_marginRight="60dp" android:layout_alignParentRight="true">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/image" android:padding="6dp" android:layout_width="136dp" android:layout_height="76dp" android:src="@drawable/ic_default_chat_image" android:scaleType="fitXY" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" app:shapeAppearance="@style/ShapeAppearance.Rounded4dp"/>
+        <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_insert" android:background="@drawable/btn_solide_insert_note" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginTop="6dp" android:layout_marginRight="6dp" android:src="@drawable/ic_launcher" android:text="插入课堂笔记" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/image"/>
+        <RelativeLayout android:background="@drawable/shot_close_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+            <TextView android:id="@+id/close" android:paddingLeft="5dp" android:paddingTop="1dp" android:paddingRight="5dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/shot_close"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

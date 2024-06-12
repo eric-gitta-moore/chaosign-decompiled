@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <com.chaoxing.fanya.aphone.view.CircleAsyncImageView android:id="@+id/icon" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="1dp" android:scaleType="fitXY"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/tv_creator" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/tv_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/floor1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_discuss" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="3dp">
+        <TextView android:textSize="18sp" android:textColor="@android:color/black" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:textColor="#555555" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <LinearLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#b9b9b9" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/ll_btns" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textSize="14sp" android:textColor="#82973d" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_support" android:background="@null" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/support" android:drawableLeft="@drawable/support1" android:drawablePadding="2dp"/>
+                <Button android:textSize="14sp" android:textColor="#82973d" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_reply" android:background="@null" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="10dp" android:text="@string/reply2" android:drawableLeft="@drawable/reply1" android:drawablePadding="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

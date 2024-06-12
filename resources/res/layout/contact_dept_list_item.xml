@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/selector_list_item" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="#666666" android:gravity="center_vertical" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="56dp" android:layout_marginLeft="22dp" android:text="Medium Text" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <TextView android:background="@drawable/icon_close_angle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

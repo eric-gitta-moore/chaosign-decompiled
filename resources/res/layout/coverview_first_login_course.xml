@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mainpage_backgroud_color" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlCourseContainer" android:background="@drawable/selectable_item_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="90dp">
+        <ImageView android:id="@+id/ivTag" android:background="@drawable/ic_my_course" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_course" android:layout_toRightOf="@+id/ivTag" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/normal_gray" android:id="@+id/tvArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:background="@drawable/img_coverview_course" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/rlCourseContainer" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

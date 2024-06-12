@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/rgContainer" android:background="@drawable/bottom_toolbar_bg" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="60dp">
+    <RadioButton android:layout_width="0dp" android:text="@string/hot_4tittlevideo" android:drawableTop="@drawable/tittlevideo_hot_selector" android:layout_weight="1" style="@style/Radio_Button_Center_Text"/>
+    <RadioButton android:layout_width="0dp" android:text="@string/cata_4tittlevideo" android:drawableTop="@drawable/tittlevideo_cata_selector" android:layout_weight="1" style="@style/Radio_Button_Center_Text"/>
+    <RadioButton android:layout_width="0dp" android:text="@string/download_4opencourse" android:drawableTop="@drawable/selector_download_4opencourse" android:layout_weight="1" style="@style/Radio_Button_Center_Text"/>
+</RadioGroup>

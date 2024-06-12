@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titleBar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titleBar">
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:orientation="horizontal" android:id="@+id/rlTopContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="#333" android:ellipsize="end" android:id="@+id/tvTopClassName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="5dp" android:text="班级名dasda jfkdajf jdsafhkjsd af jkdsjafk jdsaklj dsaf ds f d " android:maxLines="1" android:layout_toLeftOf="@+id/tvClassQrcode" android:layout_centerVertical="true"/>
+                    <TextView android:id="@+id/tvClassQrcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9dp" android:text="dafsdaf" android:drawableRight="@drawable/icon_class_mamager_qrcode" android:drawablePadding="7dp" android:layout_toLeftOf="@+id/ivTopFlow" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/ivTopFlow" android:background="@drawable/ic_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_qr_code" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="30dp" android:layout_marginRight="15dp">
+                        <TextView android:textSize="17sp" android:textColor="#333" android:id="@+id/tvClassName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_name"/>
+                        <TextView android:textSize="17sp" android:textColor="#0099ff" android:ellipsize="end" android:id="@+id/tvEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="测试按揭教师" android:maxLines="1" android:drawableRight="@drawable/icon_edit_class_name" android:drawablePadding="7dp" android:layout_toRightOf="@+id/tvClassName" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/llQRCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                        <TextView android:textSize="16sp" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_manager_class_qrcode"/>
+                        <TextView android:textSize="26sp" android:textColor="#0099ff" android:id="@+id/tvQRCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="456454654"/>
+                    </LinearLayout>
+                    <TextView android:textSize="13sp" android:textColor="#999" android:id="@+id/tvQrcMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:text="@string/user_course_student_invite"/>
+                    <ImageView android:id="@+id/ivQRCode" android:layout_width="200dp" android:layout_height="200dp" android:layout_marginTop="20dp"/>
+                    <TextView android:textSize="14sp" android:textColor="#999" android:gravity="center_vertical" android:background="#f5f6f8" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="30dp" android:text="@string/class_manager_class_setting"/>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/class_manager_allow_join" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sbAllJoin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/class_allow_exit" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sbExitClass" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/class_manager_allow_weixin" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sbOpenWeiXin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="75dp">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_centerVertical="true">
+                        <TextView android:textSize="16sp" android:textColor="#333" android:id="@+id/tvTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_manager_browse_mode"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/class_manager_not_recode_learn_history" android:layout_below="@+id/tvTag"/>
+                    </RelativeLayout>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sbLookup" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+    </RelativeLayout>
+</RelativeLayout>

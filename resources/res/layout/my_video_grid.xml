@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.bookshelf.GridView android:scrollbarStyle="outsideOverlay" android:gravity="center_horizontal" android:id="@+id/gvVideo" android:background="@color/bg_activity" android:paddingLeft="10dp" android:paddingRight="10dp" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:stretchMode="columnWidth" android:columnWidth="@dimen/video_grid_item_width" android:numColumns="2"/>
+</FrameLayout>

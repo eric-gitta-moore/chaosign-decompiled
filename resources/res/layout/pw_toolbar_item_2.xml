@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30dp">
+    <View android:id="@+id/show_divler" android:background="@color/white" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+    <Button android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/btn1" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="30dp" android:maxLines="1"/>
+</LinearLayout>

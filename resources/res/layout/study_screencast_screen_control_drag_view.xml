@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_screen_laser_painter" android:background="@drawable/study_screencast_laser_painter_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <View android:background="@color/study_screencast_white" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ImageView android:id="@+id/iv_screen_spoltlight" android:background="@drawable/study_screencast_spotlight_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <View android:background="@color/study_screencast_white" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ImageView android:id="@+id/iv_screen_up" android:background="@drawable/study_screencast_controller_up_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <View android:background="@color/study_screencast_white" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ImageView android:id="@+id/iv_screen_down" android:background="@drawable/study_screencast_controller_down_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

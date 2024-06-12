@@ -1,0 +1,697 @@
+@charset "UTF-8";
+.list .itemCon { flex: 1; overflow: hidden; }
+.list .itemCon h1 { font-size: 0.32rem; color: #333333; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.list .itemCon p { margin-top: 0.04rem; font-size: 0.26rem; color: #999999; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.list .itemRight { height: 100%; padding-right: 0.3rem; }
+/* .list .itemRight p.ycenter, .list .itemRight #selectLoc { word-break: break-all;max-width: 255px; height: 100%; font-size: 0.3rem; color: #999999; padding: 0.3rem 0; line-height: 0.4rem; justify-content: flex-end; text-align: right; } */
+/* 添加课表页面适配ipad */
+.list .itemRight p.ycenter, .list .itemRight #selectLoc { word-break: break-all;height: 100%; font-size: 0.3rem; color: #999999; padding: 0.3rem 0; line-height: 0.4rem; justify-content: flex-end; text-align: right; }
+.list .itemRight #selectLoc { padding: 0.22rem 0; }
+.list .itemRight #selectLoc #locationNameTips { position: relative; color: #CCCCCC; padding: 0.08rem 0;}
+.list .itemRight #selectLoc #locationName p { padding:0; color: #999999; line-height: 0; font-size: 0; }
+.list .itemRight #selectLoc label {display: inline-block; padding: 0.08rem 0;font-size: 0.3rem; line-height: 0.42rem;}
+.list .itemRight #selectLoc label.online { word-wrap: break-word; max-width: 238px;padding: 0.07rem 0.24rem; background: #f5f6f8; border-radius: 0.3rem; }
+.list .itemRight #selectLoc label:empty { padding: 0; margin: 0; }
+.list .itemRight img { width: 0.24rem; height: 0.24rem; margin-left: 0.1rem; }
+
+/*我教的课*/
+.courseList { padding-top: 0.1rem; }
+.courseList .listItem { min-height: 1.32rem; padding: 0.22rem 0.3rem; }
+.courseList .listItem h1 { white-space: initial; display: -webkit-box; display: box; overflow: hidden; text-overflow: ellipsis; word-break: break-all; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.courseList .itemLeft { position: relative; width: 0.8rem; height: 0.8rem; border-radius: 0.08rem; margin-right: 0.2rem; overflow: hidden; }
+.courseList .itemLeft .itemImg { width: 100%; height: 100%; }
+.courseList .itemLeft i { position: absolute; right: 0; bottom: 0; width: 0.4rem; height: 0.4rem; background: url(../images/jiao.png) center center/0.4rem auto no-repeat; }
+.courseList .itemRight img { width: 0.16rem; height: 0.28rem; }
+
+/*底部弹窗*/
+.bottomMask { display: none; position: fixed; bottom: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1; }
+.bottomMask .bottomModal { position: fixed; bottom: 0; left: 0; width: 100%; height: auto; max-height: 100%; background: #FFFFFF; border-top-left-radius: 0.2rem; border-top-right-radius: 0.2rem; box-shadow: 0px -1px 0px 0px #f2f2f2 inset; }
+.bottomMask .bottomModal .bottomHead { position: relative; height: 1.12rem; padding: 0 0.4rem; }
+.bottomMask .bottomModal .bottomHead p { font-size: 0.36rem; font-weight: bold; line-height: 1.12rem; }
+.bottomMask .bottomModal .bottomHead .close { position: absolute; right: 0.2rem; top: 0; width: 0.7rem; height: 100%; background: url(../images/close.png) center center/0.3rem 0.3rem no-repeat; }
+.bottomMask .bottomModal .bottomMain { max-height: calc(100vh - 2.3rem); overflow: auto; }
+
+/*线上教学列表*/
+.bottomMask .onlineList.list { padding: 0.1rem 0 0.3rem 0; }
+.bottomMask .onlineList.list .listItem { height: 1.2rem; padding: 0 0.1rem 0 0.4rem; text-align: left; }
+.bottomMask .onlineList.list .itemImg { width: 0.6rem; height: 0.6rem; border-radius: 0.1rem; margin-right: 0.3rem; }
+.bottomMask .onlineList.list .itemRight .arrowRight { width: 0.56rem; height: 100%; background: url(../images/arrowGray.png) center center/0.16rem 0.28rem no-repeat; }
+
+/*页面中间弹窗*/
+.centerMask { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 2; }
+
+.popClashCourseModal{
+  overflow-y: scroll;
+}
+
+.popClashCourseModal .clashCourseList{
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popClashCourseModal .clashCourseList .item{
+  border-top: solid 5px #CCCCCC;
+  width: 315px;
+  height: auto;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 0px 16px 16px 16px;
+  margin-top: 20px;
+}
+.popClashCourseModal .clashCourseList .item.color1 {  border-top: solid 5px  #7EA4FC; }
+.popClashCourseModal .clashCourseList .item.color2 {  border-top: solid 5px  #FFA998; }
+.popClashCourseModal .clashCourseList .item.color3 {  border-top: solid 5px  #00B268; }
+.popClashCourseModal .clashCourseList .item.color4 {  border-top: solid 5px  #d58512; }
+.popClashCourseModal .clashCourseList .item.color5 {  border-top: solid 5px  #78C7FB; }
+.popClashCourseModal .clashCourseList .item.color6 {  border-top: solid 5px  #FF99B0; }
+.popClashCourseModal .clashCourseList .item.color7 {  border-top: solid 5px  #8ED66B; }
+.popClashCourseModal .clashCourseList .item.color8 {  border-top: solid 5px  #E6A1CF; }
+.popClashCourseModal .clashCourseList .item.color9 {  border-top: solid 5px  #6BB5FF; }
+.popClashCourseModal .clashCourseList .item.color10 {  border-top: solid 5px  #FA9191; }
+.popClashCourseModal .clashCourseList .item.color11 {  border-top: solid 5px  #FFB866; }
+.popClashCourseModal .clashCourseList .item.color12 {  border-top: solid 5px  #FFD166; }
+.popClashCourseModal .clashCourseList .item.color13 {  border-top: solid 5px  #FF5722 }
+.popClashCourseModal .clashCourseList .item.color14 {  border-top: solid 5px  #B3BAFF }
+.popClashCourseModal .clashCourseList .item.color15 {  border-top: solid 5px  #1a72b2 }
+.popClashCourseModal .clashCourseList .item.color16 {  border-top: solid 5px  #c0a16b }
+.popClashCourseModal .clashCourseList .item.color17 {  border-top: solid 5px  #a94442 }
+.popClashCourseModal .clashCourseList .item.color18 {  border-top: solid 5px  #6B89B3 }
+.popClashCourseModal .clashCourseList .item.color19 {  border-top: solid 5px  #8a6d3b }
+.popClashCourseModal .clashCourseList .item.color20 {  border-top: solid 5px  #8899B3 }
+.popClashCourseModal .clashCourseList .item.color21 {  border-top: solid 5px  #245269 }
+.popClashCourseModal .clashCourseList .item.color22 {  border-top: solid 5px  #818181 }
+.popClashCourseModal .clashCourseList .item.color23 {  border-top: solid 5px  #2b542c }
+.popClashCourseModal .clashCourseList .item.color24 {  border-top: solid 5px  #CC3D9C }
+.popClashCourseModal .clashCourseList .item.color25 {  border-top: solid 5px  #5fd6a9 }
+.popClashCourseModal .clashCourseList .item.color26 {  border-top: solid 5px  #F33F34 }
+.popClashCourseModal .clashCourseList .item.color27 {  border-top: solid 5px  #17a6ec }
+.popClashCourseModal .clashCourseList .item.color28 {  border-top: solid 5px  #3071a9 }
+.popClashCourseModal .clashCourseList .item.color29 {  border-top: solid 5px  #FF6D10 }
+.popClashCourseModal .clashCourseList .item.color30 {  border-top: solid 5px  #0000FF }
+
+.popClashCourseModal .clashCourseList .item .titleBox{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.popClashCourseModal .clashCourseList .item .title{
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.popClashCourseModal .clashCourseList .item .topImg{
+  display: none;
+}
+.popClashCourseModal .clashCourseList .item .topBtn{
+  padding: 9px 12px 9px 8px;
+  width: 60px;
+  height: 25px;
+  border: 1px solid #33ADFF;
+  border-radius: 40px;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #0099FF;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.popClashCourseModal .clashCourseList .item .topBtn .topBtnImg{
+  width: 10px;
+  height: 10px;
+  margin-right: 2px;
+  margin-bottom: 3px;
+}
+.popClashCourseModal .clashCourseList .item .week,
+.popClashCourseModal .clashCourseList .item .location,
+.popClashCourseModal .clashCourseList .item .teacher,
+.popClashCourseModal .clashCourseList .item .class{
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;  
+  color: #999999;
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.popClashCourseModal .clashCourseList .item .detail{
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #0099FF;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  }
+.popClashCourseModal .clashCourseList .item .detail .detailImg{
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+}
+.popClashCourseModal .clashCourseList .topItem .titleBox{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: flex-start ;
+}
+.popClashCourseModal .clashCourseList .topItem .titleBox .topBtn{
+  display: none;
+}
+.popClashCourseModal .clashCourseList .topItem .titleBox .topImg{
+  display: block;
+  width: 28px;
+  height: 16px;
+  background: #0099FF;
+  border-radius: 2px;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 5px;
+  flex-shrink: 0;
+}
+
+.centerModal { position: absolute; width: 6rem; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #FFFFFF; border-radius: 0.2rem; padding: 0.5rem; }
+.centerModal .centerHead { line-height: 0.58rem; font-size: 0.36rem; color: #333333; font-weight: bold; text-align: center; margin-bottom: 0.52rem; }
+.centerModal .close { position: absolute; right: 0; top: 0; width: 0.84rem; height: 0.84rem; background: url(../images/close.png) center center/0.24rem 0.24rem no-repeat; }
+.centerModal .inputDiv { position: relative; border: 1px solid #e6e6e6; margin-bottom: 0.5rem; border-radius: 0.08rem; padding: 0.14rem 0 0.14rem 0.3rem; }
+.centerModal .inputDiv textarea { width: 100%; display: block; height: 0.6rem; padding: 0.08rem 0; line-height: 0.44rem; border-radius: 0.1rem; font-size: 0.32rem; resize: none; box-sizing: border-box; }
+.centerModal .inputDiv .history { position: absolute; right: 0; bottom: 0; width: 0.9rem; height: 0.9rem; background: url(../images/loc.png) center center/0.32rem 0.32rem no-repeat; }
+.centerModal .btn { height: 0.84rem; line-height: 0.84rem; background: #0099ff; border-radius: 0.08rem; font-size: 0.32rem; color: #FFFFFF; text-align: center; margin-bottom: 0.3rem; }
+.centerModal .btn.disable { opacity: 0.25; }
+.centerModal .link { display: block; margin: 0 auto; font-size: 0.3rem; color: #0099FF; line-height: 0.5rem; text-align: center; }
+.centerModal .link img { position: relative; top: -0.02rem; height: 0.22rem; margin-left: 0.12rem; vertical-align: middle; }
+.centerModal .cancleConnect { display: block; margin: 0 auto; font-size: 0.3rem; color: #0099FF; line-height: 0.5rem; text-align: center; }
+
+.locationModal .inputDiv { padding: 0.14rem 0.8rem 0.14rem 0.3rem; }
+.locationModal .onlineteach { margin-bottom: 0.7rem; }
+.locationModal .onlineteach p { position: relative; min-height: 0.9rem; width: 5rem; padding: 0.12rem 0.84rem 0.12rem 0.2rem; border-radius: 0.08rem; line-height: 0.44rem; border: 1px solid #E6E6E6; font-size: 0.32rem; color: #0099FF; }
+.locationModal .onlineteach .stuClassLoc {position: relative; padding-right: 0.2rem;}
+.locationModal .onlineteach .stuClassLoc textarea{ width: 100%; display: block; height: 0.6rem; padding: 0.08rem 0.5rem 0.08rem 0; line-height: 0.44rem; border-radius: 0.1rem; font-size: 0.32rem; resize: none; box-sizing: border-box; }
+.locationModal .onlineteach .stuClassLoc i{position: absolute; right: 0.1rem; top: 50%; transform: translateY(-50%); margin: 0; width: 0.64rem; height: 0.64rem; background: url(../images/closetext.png) center center / 0.24rem 0.24rem no-repeat;}
+.locationModal .onlineteach .tips{font-size: 0.26rem; color: #FF3B30; margin-top: 0.2rem;}
+.locationModal .onlineteach .addOnline i, .locationModal .onlineteach .onlineAdd i { position: absolute; right: 0; top: 0; top: 0; right: 0; width: 0.84rem; height: 0.84rem; }
+.locationModal .onlineteach .onlineAdd span {word-wrap: break-word; max-width:196px; display: inline-block; min-height: 0.6rem; font-size: 0.3rem; background: #f5f6f8; border-radius: 0.3rem; padding: 0.09rem 0.24rem; line-height: 0.42rem; color: #333333; }
+.locationModal .onlineteach .onlineAdd i { top: 50%; margin-top: -0.42rem; background: url(../images/close.png) center center/0.2rem 0.2rem no-repeat; }
+.locationModal .onlineteach .addOnline { color: #CCCCCC; line-height: 0.6rem; padding-left: 0.3rem; }
+.locationModal .onlineteach .addOnline i { background: url(../images/arrowgrayRight.png) center center/0.24rem 0.24rem no-repeat; }
+
+/*全局设置*/
+.settingList { background: #FFFFFF; padding-left: 0.3rem; }
+.settingList .listItem { height: 1rem; }
+.settingList .listItem h1 { font-size: 0.32rem; color: #333333; text-align: left; }
+.settingList .listItem .itemRight { padding-right: 0.3rem; }
+.settingList .listItem .itemRight img { width: 0.24rem; height: 0.24rem; min-width: 0.24rem; margin-left: 0.1rem; }
+.settingList .listItem .itemRight .switch { top: 0.24rem; }
+.settingList .moringEmpty { height: 1rem; text-align: center; line-height: 1rem; font-size: 0.28rem; }
+.settingList .moringEmpty span { color: #0099FF; }
+
+/* 设置页 每日上课提醒 */
+.settingList .dailyRemind h1{margin-bottom: 0.04rem;}
+
+/*新增课表*/
+.addSettingList .listItem { height: auto; min-height: 1rem; }
+.addSettingList .itemCon { width: 25%; }
+.addSettingList .itemRight { width: 75%; }
+.addSettingList .itemRight p { padding: 0.3rem 0; line-height: 0.4rem; }
+
+/*选择每节课时间下拉框样式调整*/
+.ios-select-widget-box.four-level-box .one-level-contain, .ios-select-widget-box.four-level-box .two-level-contain, .ios-select-widget-box.four-level-box .three-level-contain, .ios-select-widget-box.four-level-box .four-level-contain { width: calc(25% - 0.225rem); }
+
+.ios-select-widget-box.two-level-box .one-level-contain, .ios-select-widget-box.two-level-box .two-level-contain { width: 1.2rem; }
+
+.two-level-box .iosselect-box { padding-left: calc(50% - 1.2rem); }
+.two-level-box .one-level-contain { position: relative; }
+.two-level-box .one-level-contain:after { position: absolute; content: ':'; right: -3px; top: 147px; width: 5px; height: 22px; font-size: 16px; }
+
+.four-level-box .iosselect-box { padding: 0 0.9rem; }
+.four-level-box .one-level-contain, .four-level-box .three-level-contain { position: relative; }
+.four-level-box .one-level-contain:after, .four-level-box .three-level-contain:after { position: absolute; content: ':'; right: -3px; top: 147px; width: 5px; height: 22px; font-size: 16px; }
+.four-level-box .two-level-contain { position: relative; padding-right: 0.9rem; box-sizing: content-box; }
+.four-level-box .two-level-contain:after { position: absolute; content: 'To'; right: 15px; top: 147px; width: 16px; height: 22px; font-size: 16px; }
+
+/*固定底部按钮*/
+.bottomBtn { position: fixed; bottom: 0; left: 0; width: 100%; height: 1.2rem; background-color: #FFFFFF; }
+.bottomBtn .btn { margin: 0.2rem 0.3rem; height: 0.8rem; }
+
+.selectWeekModal { display: none; }
+.selectWeekModal .selectWeekHead { height: 45px; line-height: 45px; }
+.selectWeekModal .selectWeekHead p { font-size: 16px; color: #333333; text-align: center; }
+.selectWeekModal .selectWeekHead .cancle, .selectWeekModal .selectWeekHead .sure { font-size: 15px; color: #0099ff; top: 0; }
+.selectWeekModal .selectWeekHead .cancle { position: absolute; left: 15px; }
+.selectWeekModal .selectWeekHead .sure { position: absolute; right: 15px; }
+.selectWeekModal .weeklist { padding: 0.3rem 0.2rem 0; overflow: hidden; }
+.selectWeekModal .weeklist .weekItem { float: left; width: 20%; margin-bottom: 0.3rem; }
+.selectWeekModal .weeklist .weekItem span { display: block; width: 1rem; height: 1rem; line-height: 1rem; text-align: center; font-size: 0.3rem; color: #999999; background: #f4f5f6; border-radius: 0.12rem; }
+.selectWeekModal .weeklist .weekItem.active span { background: #33ADFF; color: #FFFFFF; }
+.selectWeekModal .weeklist .weekItem.disable span { opacity: 0.3; }
+.selectWeekModal .selectoption { height: 1rem; padding: 0.3rem 0.46rem; }
+.selectWeekModal .selectoption .radiobox { float: left; width: 33%; line-height: 0.4rem; }
+.selectWeekModal .selectoption .radiobox .radio { width: 0.36rem; height: 0.36rem; margin-right: 0.16rem; background-image: url(../images/radio.png); background-size: 0.36rem auto; background-position: 0 0; }
+.selectWeekModal .selectoption .radiobox.active .radio { background-position: 0 -0.36rem; }
+
+/*单选框*/
+.listItem .radio { display: block; width: 0.48rem; height: 0.48rem; margin-right: 0.2rem; background-image: url(../images/radio.png); background-size: 0.48rem auto; background-position: 0 0; }
+.listItem.active .radio { background-position: 0 -0.48rem; }
+
+/*上课地点列表*/
+.hislocationList { padding-left: 0.3rem; }
+.hislocationList .listItem { min-height: 1.32rem; }
+.hislocationList .listItem .itemRight img { width: 0.16rem; height: 0.28rem; }
+.hislocationList .listItem .itemCon .loc { font-size: 0.32rem; line-height: 0.45rem; color: #333333; }
+
+/*详情页*/
+.courseCon { position: relative; padding-left: 0.3rem; background: #FFFFFF; }
+.courseCon .item { min-height: 1rem; padding: 0.3rem 0.3rem 0.3rem 0; word-wrap: break-word; }
+.courseCon .itemLeft { display: block; font-size: 0.32rem; line-height: 0.4rem; width: 25%; }
+.courseCon .itemRight { display: block; font-size: 0.3rem; color: #0099FF; text-align: right; width: 75%; }
+.courseCon .itemRight p { justify-content: flex-end; }
+.courseCon .itemRight img { width: 0.24rem; height: 0.24rem; min-width: 0.24rem; margin-left: 0.1rem; }
+/*.courseCon .itemRight.gray { color: #999999; }*/
+.courseCon .itemRight > label { display: inline-block; vertical-align: middle; margin-left: 12px; }
+.courseCon .itemRight .className, .courseCon .itemRight .courseName { color: #999; }
+.courseCon .itemRight p.ppt span { display: inline-block; padding-left: 0.56rem; text-align: left; background: url(../images/ppt.png) left top/0.44rem 0.44rem no-repeat; }
+.courseCon .location .itemRight { margin-top: -0.08rem; margin-bottom: -0.08rem; }
+.courseCon .location .itemRight label { display: block; padding: 0.08rem 0; }
+.courseCon .location .itemRight label.online { display: inline-block; font-size: 0.3rem; line-height: 0.42rem; padding: 0.07rem 0.24rem; border-radius: 0.3rem; padding-left: 0.64rem; background: url(../images/video.png) 0.24rem 0.14rem/0.28rem 0.28rem no-repeat; background-color: #f5f6f8; }
+.courseCon .location .itemRight label.other{display: inline-block; font-size: 0.3rem; line-height: 0.42rem; padding: 0.07rem 0.24rem; border-radius: 0.3rem; padding-left: 0.24rem; background-color: #f5f6f8;}
+/*.courseCon .location .itemRight label.gray { color: #999999; }*/
+.courseCon .location .itemRight label:empty { display: inline; padding: 0; margin: 0; }
+.courseCon .signbtn {position: relative; top: 0.15rem; width: 1.12rem; height: 0.5rem; font-size: 0.26rem; line-height: 0.5rem; color: #0099FF; text-align: center; border-radius: 25px; }
+.courseCon .signbtn:after{border: 1px solid #0099FF;  border-radius: 0.5rem; box-sizing: border-box}
+.signIn .signInHeader{color: #333;font-size: 18px;font-family: PingFang SC;font-weight: 500;margin-bottom: 5px;}
+.signIn .signInList .item{ display: flex;padding: 12px 0px;justify-content: space-between;align-items: center;}
+.signIn .signInList .item .itemLeft{display: flex;}
+.signIn .signInList .item .left img{width: 40px;height: 40px;border-radius: 4px;margin-right: 10px;}
+.signIn .signInList .item .center{display: flex;flex-direction: column;width: 215px;}
+.signIn .signInList .item .center .title{font-size: 16px;font-family: PingFang SC;line-height: 140%;color: var(--unnamed, #333);min-height:22px;max-width: 215px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.signIn .signInList .item .center .time{color: var(--unnamed, #999);font-size: 13px;font-family: PingFang SC;}
+.signIn .signInList .item .right{display: flex;justify-content: space-between;align-items: flex-end;}
+.signIn .signInList .item .num{color: var(--unnamed, #999);text-align: right;font-size: 13px;font-family: PingFang SC;}
+.fixedBottom{position: fixed; bottom: 0; width: 100%; height: 62px; text-align: center; background-color: #FFFFFF; z-index: 1;display: flex;justify-content: space-around;align-items: center;}
+.fixedBottom  .fixedBtnLeft,.fixedBottom .fixedBtnRight{display: flex;flex-direction: column;align-items: center;color: #09F;text-align: center;font-size: 13px;font-family: PingFang SC;}
+.fixedBottom  .fixedBtnLeft img{width: 30px;}
+.fixedBottom  .fixedBtnCenter img{height:62px;}
+.fixedBottom .fixedBtnRight img{width: 30px;}
+.stuFixedBottom  .fixedBtnLeft,.stuFixedBottom  .fixedBtnCenter,.stuFixedBottom  .fixedBtnRight{opacity: 0.3;}
+.stuFixedMask{position: fixed;bottom: 0;width: 100%;height: 62px;text-align: center;z-index: 2;display: flex;justify-content: space-around;align-items: center;}
+.btnGroup { margin: 0.6rem 0 0 0.3rem; overflow: hidden; }
+.btnGroup .btn { float: left; width: calc(50% - 0.3rem); margin-right: 0.3rem; }
+.btnGroup .btn:last-child { margin-right: 0; }
+
+.btnGroup_change .btn { width: calc(33.33% - 0.3rem); }
+
+/*新建课程弹窗*/
+.centerConfirmModal { position: absolute; width: 5.4rem; min-height: 2.48rem; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #FFFFFF; border-radius: 0.26rem; }
+.centerConfirmModal .centerHead { min-height: 1.6rem; text-align: center; padding: 0.34rem 0.6rem; font-size: 0.32rem; line-height: 0.45rem; color: #333333; display: -webkit-flex; align-items: center; justify-content: center; }
+.centerConfirmModal .btns { height: 0.88rem; }
+.centerConfirmModal .btns .modalbtn { float: left; width: 50%; text-align: center; font-size: 0.32rem; line-height: 0.45rem; color: #0099FF; line-height: 0.88rem; cursor: pointer }
+
+/*关联教案弹窗*/
+.bottomMask .list .listItem { width: 100%; height: 1.12rem; line-height: 1.12rem; text-align: center; font-size: 0.34rem; color: #333333; }
+
+/*编辑上课地点*/
+.textarea { padding: 0.36rem 0 0.36rem 0.3rem; background: #FFFFFF; }
+.textarea textarea { width: 100%; resize: none; font-size: 0.32rem; color: #333333; line-height: 0.44rem; padding: 0.08rem 0; height: 0.6rem; box-sizing: border-box; }
+
+.deleteIcon { display: none; width: 0.6rem; height: 0.6rem; margin-left: 0.1rem; margin-right: 0.14rem; background: url(../images/delete.png) center center/0.28rem 0.28rem no-repeat; }
+
+.eyeIcon { width: 0.6rem; height: 0.6rem; margin-left: 0.1rem; margin-right: 0.14rem; background: url(../images/eyeclose.png) center center/0.36rem 0.36rem no-repeat; }
+
+.eyeIcon.open { background: url(../images/eyeopen.png) center center/0.36rem 0.36rem no-repeat; }
+
+/*设置节数与时间返回弹窗*/
+.backModal .title { height: 0.72rem; padding-top: 0.22rem; font-size: 0.26rem; line-height: 0.37rem; color: #818181; text-align: center; }
+.backModal .list .listItem { width: 100%; height: 1.12rem; line-height: 1.12rem; text-align: center; font-size: 0.34rem; color: #333333; }
+.backModal .list .listItem.red { color: #FF3B30; }
+
+/*泛雅课堂*/
+.cxcourseDiv { padding-top: 50px; }
+.cxcourseDiv h1 { font-size: 0.48rem; line-height: 0.67rem; color: #333333; text-align: center; margin-bottom: 0.2rem; }
+.cxcourseDiv p { font-size: 0.26rem; line-height: 0.37rem; color: #999999; margin-bottom: 0.4rem; text-align: center; }
+.cxcourseDiv #qrcode img, .cxcourseDiv #qrcode canvas { display: block; width: 4.32rem; height: 4.32rem; margin: 0 auto; margin-bottom: 0.6rem; }
+.cxcourseDiv .link { text-align: center; line-height: 0.4rem; font-size: 0.28rem; color: #333333; margin-bottom: 1rem; }
+.cxcourseDiv .link .linkText { color: #0099FF; }
+.cxcourseDiv .link .copy { margin-left: 0.3rem; font-size: 0.26rem; color: #999999; }
+.cxcourseDiv .link .copy i { position: relative; top: 2px; display: inline-block; width: 0.28rem; height: 0.28rem; margin-right: 0.06rem; background: url(../images/copy.png) center center/0.28rem 0.28rem no-repeat; }
+.cxcourseDiv .btnDiv { margin: 0 0.6rem 0.5rem; }
+.cxcourseDiv .btnDiv .btn { width: 100%; line-height: 0.8rem; font-size: 0.32rem; margin-bottom: 0; }
+.cxcourseDiv .selectOthermeeting { font-size: 0.3rem; text-align: center; color: #0099ff; line-height: 0.42rem; }
+.cxcourseDiv .selectOthermeeting img { margin-left: 0.12rem; width: 0.13rem; height: 0.22rem; }
+.addClassPremession{ margin:0 30px 25px; height: 50px; line-height: 50px; font-size: 15px; padding:0 15px; background: #F8F8F8; border-radius: 4px; }
+.addClassPremession a{ position: relative; float: right; font-size: 13px; color: #999999; padding-right: 10px}
+.addClassPremession a:after{ position: absolute; content:''; top: 19px; width: 8px; height: 8px; border-width: 1px; border-style: solid; border-color:  #CCCCCC #CCCCCC transparent transparent; transform: rotate(45deg) }
+
+.settingTimePage .fastSetting { position: relative; margin: 0.1rem 0; height: 1rem; padding: 0.3rem 0.3rem; line-height: 0.4rem; font-size: 0.32rem; color: #333333; }
+.settingTimePage .fastSetting img { position: absolute; top: 50%; right: 0.3rem; margin-top: -0.12rem; width: 0.24rem; height: 0.24rem; }
+.settingTimePage .divText { height: 0.6rem; line-height: 0.6rem; padding: 0 0.3rem; font-size: 0.28rem; color: #b3b3b3; background: #f5f6f8; }
+.settingTimePage .settingList .listItem:last-child { background: none; }
+.settingTimePage .btnGroup { margin: 0.2rem 0 0.2rem 0.3rem; }
+.settingTimePage .btnGroup .btn.disable { opacity: 0.3; }
+.settingTimePage .btnGroup .btn.blue.disable { opacity: 1; }
+
+.sectionNum { width: 3rem; height: 0.8rem; border: 1px solid #D6D6D6; border-radius: 0.08rem; box-sizing: content-box; overflow: hidden; }
+.sectionNum .minus, .sectionNum .plus { float: left; display: block; width: 0.8rem; height: 100%; cursor: pointer; box-sizing: border-box; }
+.sectionNum .num { float: left; display: block; width: 1.4rem; height: 100%; text-align: center; font-size: 0.3rem; color: #333333; }
+.sectionNum .minus { border-right: 1px solid #D6D6D6; background: url(../images/minus.png) center center/0.2rem auto no-repeat; }
+.sectionNum .minus.disabled { cursor: default; background: url(../images/minus_disabled.png) center center/0.2rem auto no-repeat; }
+.sectionNum .plus { border-left: 1px solid #D6D6D6; background: url(../images/plus.png) center center/0.2rem auto no-repeat; }
+.sectionNum .plus.disabled { cursor: default; background: url(../images/plus_disabled.png) center center/0.2rem auto no-repeat; }
+
+.maxWeekPop .centerModal { min-height: 4.58rem; }
+.maxWeekPop .centerModal .centerHead { margin-bottom: 0; }
+.maxWeekPop .title { font-size: 0.36rem; text-align: center; color: #333333; line-height: 0.58rem; margin-bottom: 0.56rem; }
+.maxWeekPop .sectionNum { margin: 0 auto; }
+.maxWeekPop .btnGroup { margin-top: 0.7rem; }
+.maxWeekPop .centerModal .btn { margin-bottom: 0; width: 100%; }
+
+.btmcourse { height: 1.24rem; background: #f5f6f8; }
+.btmcourse .sharePPT, .btmcourse .openstu, .btmcourse .closePPT { position: absolute; top: 0.12rem; }
+.btmcourse .sharePPT img, .btmcourse .openstu img, .btmcourse .closePPT img { display: block; width: 0.6rem; height: 0.6rem; margin-bottom: 0.04rem; }
+.btmcourse .sharePPT span, .btmcourse .openstu span, .btmcourse .closePPT span { display: block; font-size: 0.26rem; color: #0099ff; text-align: center; }
+.btmcourse .sharePPT { left: 0.95rem; }
+.btmcourse .closePPT { left: 0.7rem; width: 1.1rem; }
+.btmcourse .closePPT img { margin: 0 auto 0.04rem; }
+.btmcourse .closePPT span { color: #FF7373; }
+.btmcourse .openstu { right: 0.95rem; }
+.btmcourse .addactivity { position: relative; display: block; top: 0.04rem; width: 1.16rem; margin: 0 auto; }
+.btmcourse .addactivity img { display: block; width: 100%; }
+
+/*课程较少提示*/
+.lessTips { position: relative; min-height: 40px; padding: 10px 30px; background: #f0f6ff; font-size: 13px; line-height: 20px; color: #8899B3; text-align: center; }
+.lessTips i { position: absolute; top: 0; right: 0; width: 40px; height: 40px; background: url(../images/close2.png) center center/0.2rem 0.2rem no-repeat; }
+
+.inputBox { position: relative; height: 0.9rem; border: 1px solid #e6e6e6; border-radius: 0.08rem; }
+.inputBox input { width: 100%; font-size: 0.32rem; padding: 0.22rem 0.8rem 0.22rem 0.30rem; caret-color: #466EF2; box-sizing: border-box; border-radius: 0.08rem; }
+.inputBox .deleteIcon { position: absolute; right: 0; top: 0.12rem; }
+.inputBox .eyeIcon { position: absolute; top: 0.12rem; right: 0rem; }
+
+/*导入课表*/
+.schoolInputBox { padding: 1rem 0.40rem 0.40rem; }
+.schoolInputBox .searchschoolList { display: none; position: absolute; top: 2.1rem; left: 0; width: 100%; height: calc(100% - 2.1rem); background: #FFFFFF; z-index: 1; }
+.schoolInputBox .searchschoolList li { padding: 0.2rem 0.7rem; font-size: 0.32rem; }
+.schoolInputBox .searchschoolList li i { font-style: normal; color: #0099FF; }
+
+.schoolList { max-height: 5.6rem; margin: 0 0.40rem 0.4rem; background: #f8f8f8; border-radius: 0.08rem; }
+.schoolList .listhead { height: 0.76rem; line-height: 0.76rem; font-size: 0.24rem; color: #b3b3b3; padding: 0 0.3rem; }
+.schoolList .list { max-height: 4.84rem; padding-bottom: 0.2rem; overflow-y: auto; }
+.schoolList .list li { overflow: hidden; padding: 0.2rem 0.3rem; }
+.schoolList .list li .check { float: left; display: inline-block; width: 0.48rem; height: 0.48rem; background: url(../images/radio.png) no-repeat; background-size: 0.48rem auto; background-position: 0 0; margin-right: 0.2rem; }
+.schoolList .list li .check.checked { background-position: 0 -0.48rem; }
+.schoolList .list li p { font-size: 0.32rem; color: #333333; line-height: 0.44rem; padding-top: 0.02rem; }
+
+.selectschoolNextBtn { display: block; margin: 0.4rem 0.3rem 0.6rem; }
+
+.manualBtn { text-align: center; color: #0099ff; line-height: 0.42rem; font-size: 0.3rem; }
+.manualBtn img { height: 0.22rem; margin-left: 0.12rem; }
+
+.loginBox { padding: 1rem 0.40rem 0; }
+.loginBox .inputBox { position: relative; margin-bottom: 0.7rem; }
+.loginBox .inputBox input { background: transparent; }
+.loginBox .inputBox .inputtitle { position: absolute; color: #CCCCCC; font-size: 0.32rem; top: 0.21rem; left: 0.3rem; z-index: -1; transition: all 0.3s cubic-bezier(0.4, 0, 1, 1); }
+.loginBox .inputBox.focus .inputtitle { color: #B3B3B3; top: -0.44rem; left: 0; font-size: 0.22rem; }
+.loginBox .inputBox.pwd { margin-bottom: 0.8rem; }
+.loginBox .inputBox.pwd .deleteIcon { right: 0.76rem; }
+.loginBox .inputBox.pwd input { padding-right: 1.6rem; }
+.loginBox .radioBox { margin-top: -0.2rem; }
+.loginBox .radioBox label { display: inline-block; vertical-align: middle; line-height: 0.48rem; font-size: 16px; color: #333333; }
+.loginBox .radioBox input { display: inline-block; vertical-align: middle; appearance: none; width: 0.48rem; height: 0.48rem; margin-left: 0.4rem; margin-right: 0.2rem; background: url(../images/radio.png) no-repeat; background-size: 0.48rem auto; background-position: 0 0; }
+.loginBox .radioBox .checked input { background-position: 0 -0.48rem; }
+
+.importScheduleBtn { margin: 0.6rem 0.4rem 0.8rem 0.4rem; }
+
+.jwSystemBox { padding: 2.1rem 0.4rem 0.8rem; }
+
+.openSystemBtn { margin: 0 0.4rem; }
+
+.loadingmask { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); font-size: 0.32rem; color: #FFFFFF; z-index: 4; }
+.loadingmask img { float: left; display: block; width: 0.36rem; height: 0.36rem; margin-right: 0.16rem; animation: rotate 1s infinite linear; }
+
+@keyframes rotate { from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }
+.jwTop { height: 45px; padding: 0 7px; box-shadow: 0px -1px 0px 0px #f2f2f2 inset; justify-content: space-around; }
+.jwTop .step { position: relative; font-size: 11px; line-height: 45px; text-align: center; color: #A6ABB3; }
+.jwTop .step .numtext { position: relative; top: 3px; width: 0.32rem; height: 0.32rem; margin-right: 6px; }
+.jwTop .line { height: 1px; width: 5.3%; background: #DCE0E6; }
+
+.abandonModal { z-index: 3; }
+
+.historyList { padding-left: 0.3rem; }
+.historyList .listItem { height: 1rem; }
+.historyList .listItem h1 { font-size: 0.32rem; color: #333333; }
+.historyList .listItem .radio { display: block; width: 0.48rem; height: 0.48rem; margin-right: 0.2rem; background-image: url(../images/radio.png); background-size: 0.48rem auto; background-position: 0 0; }
+.historyList .listItem.active .radio { background-position: 0 -0.48rem; }
+
+/*# sourceMappingURL=style.css.map */
+/* 课表学生详情页优化 */
+.warp-box{
+
+}
+.card{
+  width: 6.9rem;
+  background: #ffffff;
+  border-radius: .08rem;
+  margin: 0 auto;
+  margin-top: .2rem;
+  padding: .36rem .3rem .36rem .4rem;
+}
+.card .header{
+  height: max-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.card .header h1{
+  font-size: .36rem;
+  font-family: PingFangSC, PingFangSC-Medium;
+  font-weight: bold;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -moz-box;
+  -moz-line-clamp: 2;
+  -moz-box-orient: vertical;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
+.card .header .associated{
+  white-space: nowrap;
+  font-size: .26rem;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #0099ff;
+  margin-left: .2rem;
+  margin-right: 1.36rem;
+  margin: .06rem 1.36rem 0 .2rem;
+}
+.card .header h1.blue{
+  color: #0099FF;
+}
+.card .header label{
+  font-size: .3rem;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #999999;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.card .header label .edit{
+  width: .24rem;
+  height: .24rem;
+  display: inline-block;
+  background-image: url(../images/edit.png);
+  background-size: 100%;
+  margin-right: .1rem;
+}
+.card .content{
+  font-size: .3rem;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #666666;
+  margin-top: .2rem;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+.card .content p{
+  white-space: normal;
+  margin-left: .16rem;
+}
+.card .content .class{
+  font-size: .26rem;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #0099ff;
+  margin-left: .2rem;
+}
+.card .attachment{
+  width: max-content;
+  background: #f5f6f8;
+  border-radius: .28rem;
+  padding: .12rem .3rem;
+  display: flex;
+  align-items: center;
+  font-size: .3rem;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #0099ff;
+  margin-top: .2rem;
+  margin-left: .68rem;
+}
+.card .attachment .play{
+  width: .26rem;
+  height: .26rem;
+  display: inline-block;
+  background: url(../images/play.png);
+  background-size: 100%;
+  margin-right: .1rem;
+}
+.class-notes{
+  display: block;
+  margin: 0 auto;
+  width: calc(100% - 0.6rem);
+  margin-top: .4rem;
+}
+.card .content .associatedTeachPlan{
+  font-size: .26rem;
+  font-family: PingFangSC, PingFangSC-Regular;
+  font-weight: 400;
+  color: #0099ff;
+}
+p.blue {
+  color: #0099ff;
+}
+
+/* //课表学生详情页优化 */
+
+/*登录页覆盖弹窗*/
+.coverModal{}
+.coverModal .centerModal{width: 270px; padding: 0; border-radius: 10px;}
+.coverModal .centerCon{padding: 17px 30px; min-height: 100px; font-size: 16px; text-align: center;}
+.coverModal .centerBottom p{height: 44px; line-height: 44px; text-align: center; color: #0099FF; font-size: 16px;}
+
+@media only screen and (max-width: 750px){
+	.coverModal .centerModal{width: 5.4rem; padding: 0;}
+	.coverModal .centerCon{padding: 0.34rem 0.6rem; min-height: 2rem; font-size: 0.32rem; text-align: center;}
+	.coverModal .centerBottom p{height: 0.88rem; line-height: 0.88rem; text-align: center; color: #0099FF; font-size: 0.32rem;}
+}
+
+.schoolInputBox .searchschoolList .nosearchResult{text-align: center; padding-top: 2rem; font-size: 16px; color: #b3b3b3;}
+
+/*新详情页--教师版*/
+.cardMain{ background: #ffffff; border-radius: .08rem; margin: 0.2rem 0.3rem; padding: .2rem .4rem .2rem .4rem;}
+.cardMain .item{min-height: 0.72rem; padding: 0.1rem 0; font-size: 0.3rem; color: #666666;}
+/* 1360 江西医学高等专科学校 移动端教师 打卡按钮 */
+.clockIn{ display: flex; align-items: center; justify-content: space-between; }
+.clockIn .clockInBtn{ width: 1.12rem; height: 0.5rem; font-size: 0.26rem; line-height: 0.5rem; color: #33ADFF; text-align: center; border-radius: 25px; border: 1px solid; display: flex; align-items: center; justify-content: space-around;}
+.cardHeader{font-size: 0.36rem; color: #333; display: flex; align-items: flex-start; }
+.cardHeader h1{line-height: 0.8rem; flex: 1}
+.cardHeader h1.blue {color: #0099FF;max-width: 305px;word-break: break-all;}
+/*关联课程*/
+.relatecourseList .listItem{ min-height: 1.32rem; padding: 0 0.32rem;}
+.relatecourseList .listItem .headtitle{display: flex; align-items: flex-start;}
+.relatecourseList .listItem .courseName{ max-width: calc(100% - 0.8rem); white-space: initial;}
+.relatecourseList .listItem .top{ display: inline-block; height: 0.32rem; padding: 0 0.1rem; line-height: 0.28rem; margin-top: 0.06rem; margin-left: 0.1rem; text-align: center; border-radius: 0.16rem; color: #A8a8a8; font-size: 0.22rem; border: solid 0.02rem #CCCCCC;}
+
+.relatecourseList .liImg { position: relative; width: 0.8rem; height: 0.8rem; margin-right: 0.2rem; border-radius: 0.08rem; overflow: hidden;}
+.relatecourseList .liImg i { position: absolute; right: 0; bottom: 0; width: 0.4rem; height: 0.4rem; background: url(../images/jiao.png) center center/0.4rem auto no-repeat; }
+.relatecourseList .liImg img { width: 100%; height: 100%; }
+
+/**搜索*/
+.cancelSearch { position: absolute; right: 0.3rem; top: 0.16rem; width: 0.28rem; height: 0.28rem; background: url(../images/cancelsearch.png) center center/14px 14px no-repeat; z-index: 1; }
+.searchBox { position: relative; height: .6rem; line-height: .6rem; background: #f5f6f8; -moz-border-radius: .3rem; -webkit-border-radius: .3rem; border-radius: .3rem; margin: .2rem .3rem; text-align: center; position: relative; }
+.searchBox input { position: relative; display: block; height: 0.6rem; width: 100%; padding: 0 0.8rem 0 0.3rem; z-index: 1; background: transparent; box-sizing: border-box; }
+.searchBox .bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 0.3rem; background: #F5F6F8; text-align: center; font-size: .28rem; color: #b3b3b3; }
+.searchBox .bg i { display: inline-block; vertical-align: top; width: .34rem; height: 100%; margin-right: .1rem; background: url(../images/searchicon.png) center no-repeat; -o-background-size: 100% auto; -ms-background-size: 100% auto; -moz-background-size: 100% auto; -webkit-background-size: 100% auto; background-size: 100% auto; }
+
+.relatecourseList{margin-bottom: 1.8rem;}
+
+.relateClassBtn{margin: 0.6rem 0; background: #FFFFFF; }
+.relateClassBtn:after{border: none;}
+
+.cardMain .itemLeft{width:auto;}
+/* .cardMain .itemRight{ max-width:255px;min-height: 0.52rem; line-height: 0.52rem; flex: 1;text-align: left;} */
+/* 课表详情页适配ipad */
+.cardMain .itemRight{ min-height: 0.52rem; line-height: 0.52rem; flex: 1;text-align: left;}
+.courseCon.cardMain .location .itemRight{margin: 0;}
+.cardMain.courseCon .itemRight img{float:right;margin-top: 0.14rem;}
+.cardMain.courseCon .location .itemRight label{margin-left: 0; padding-top: 0; line-height: 0.4rem;}
+.cardMain.courseCon .location .itemRight label.online{margin-left: 0;color: #0099FF; padding-top: 0.08rem;}
+.cardMain.courseCon .location .itemRight label.other{word-wrap: break-word; max-width: 238px;color: #666666;background: url();}
+.cardMain .item.location{margin-top: 0.08rem;}
+.cardMain .gray{color: #666666;}
+
+/*输入线上地址弹窗*/
+.onlineModal .centerModal .inputDiv { margin-bottom: 0.2rem;}
+.onlineModal .tips.red{ font-size: 0.26rem; color: #FF3B30; margin-top: 0.2rem; margin-bottom: 0.5rem;}
+.onlineModal .centerModal { width: 6.7rem; }
+
+
+/*国际化*/
+ .English .selectWeekModal .selectoption .radiobox {
+  width: 30%;
+}
+.English .selectWeekModal .selectoption .radiobox.even {
+  width: 35%;
+}
+.English .selectWeekModal .selectoption .radiobox.odd  {
+  width: 35%;
+}
+
+
+/*教案*/
+.relateTeachPlanList .listItem{
+  height: 62px;
+  padding: 0 0.3rem;
+}
+.relateTeachPlanList .listItem img{
+  width: 40px;
+  height: 40px;
+  margin-right: 0.2rem;
+}
+
+
+/*加入课堂权限*/
+.joinPermissionDiv .listItem{ display: flex;align-items: center; padding: 12px 15px;}
+.joinPermissionDiv .itemCon{ flex: 1;}
+.joinPermissionDiv .itemCon>h1{ font-size: 16px;}
+.joinPermissionDiv .itemCon>p{ font-size: 13px;color: #999999; padding-top: 2px;}
+.joinPermissionDiv .selectedList{ display: none;}
+.joinPermissionDiv .listItem.active .selectedList{display: block;}
+.joinPermissionDiv .selectedItem{ height: 50px; display: flex; align-items: center; }
+.joinPermissionDiv .selectedItem img{display: block; width: 35px; height: 35px; margin-right: 10px;}
+.joinPermissionDiv .selectedItem h2{flex: 1; font-size: 14px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-right: 10px }
+.joinPermissionDiv .selectedItem .close{width: 30px;height: 30px;background: url(../images/close2.png) center center / 10px 10px no-repeat}
+.joinPermissionDiv .listItem.flexTop{align-items: start}
+.joinPermissionDiv .listItem .add{ position: absolute; right: 15px; display: inline-block; width: 22px; height: 22px; background: url(../images/circle_add.png) center center / 22px 22px no-repeat;}
+
+

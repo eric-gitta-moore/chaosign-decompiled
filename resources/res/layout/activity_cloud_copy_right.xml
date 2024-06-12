@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_user" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/logo" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="centerCrop" app:riv_oval="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/logo" android:layout_centerVertical="true">
+                <TextView android:textSize="17sp" android:textColor="@color/normal_black" android:ellipsize="end" android:gravity="left" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerVertical="true"/>
+                <TextView android:textSize="16sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:gravity="left" android:id="@+id/tv_school" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxLines="2" android:layout_centerVertical="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/bg_color_f5f6f8" android:layout_width="match_parent" android:layout_height="8dp"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tv_content" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="14dp" android:paddingRight="15dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2"/>
+    <EditText android:textSize="16sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:gravity="top" android:id="@+id/et_content" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="14dp" android:paddingRight="15dp" android:paddingBottom="14dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/cloud_copy_right_tips" android:lineSpacingMultiplier="1.2"/>
+    <include layout="@layout/common_loading_transparent"/>
+</LinearLayout>

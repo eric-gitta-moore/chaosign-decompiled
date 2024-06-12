@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewToolbar" layout="@layout/common_title_bar"/>
+    <TextView android:textColor="#666666" android:id="@+id/transferTo" android:background="#ffebeded" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingRight="12dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/forward_forward" android:layout_below="@+id/viewToolbar"/>
+    <com.mobeta.android.dslv.DragSortListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0px" android:layout_below="@+id/transferTo" android:headerDividersEnabled="false" android:footerDividersEnabled="false" cx:drag_handle_id="@+id/btnRight" cx:drag_start_mode="0" cx:float_background_color="@android:color/white"/>
+</RelativeLayout>

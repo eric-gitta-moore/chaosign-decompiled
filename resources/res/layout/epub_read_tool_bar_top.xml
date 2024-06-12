@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.widget.EpubReaderTopBar xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/epub_read_tool_bar_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/top_status_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="25dp"/>
+    <RelativeLayout android:id="@+id/epub_top_bg" android:background="@color/white" android:layout_width="match_parent" android:layout_height="49dp">
+        <ImageView android:id="@+id/iv_back" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/epub_arrow_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_share" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="8dp" android:src="@drawable/epub_share" android:scaleType="centerInside" android:layout_toLeftOf="@+id/iv_more_menu" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_more_menu" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:src="@drawable/epub_more" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/ivShadow" android:background="@drawable/epub_top_shadow" android:layout_width="match_parent" android:layout_height="10dp"/>
+</com.chaoxing.widget.EpubReaderTopBar>

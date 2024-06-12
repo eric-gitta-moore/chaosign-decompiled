@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/folder_image" android:layout_width="86dp" android:layout_height="86dp" android:src="@mipmap/imageselector_photo" android:contentDescription="@null"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp">
+            <TextView android:textSize="16sp" android:textColor="@color/text_black" android:textColorHint="@color/text_black" android:id="@+id/folder_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/folder_name"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_gray" android:textColorHint="@color/text_gray" android:id="@+id/image_num_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="@string/image_num"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/imageselector_selected"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/separation" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

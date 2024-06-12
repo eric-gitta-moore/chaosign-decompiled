@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp">
+        <ImageView android:id="@+id/iv_logo" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/ic_folder_private" android:scaleType="centerCrop" android:layout_toRightOf="@+id/cb_selector" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/btnNext" android:layout_toRightOf="@+id/iv_logo" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="name" android:maxLines="2" android:layout_toLeftOf="@+id/iv_code1" android:lineSpacingMultiplier="1.2"/>
+            <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:ellipsize="end" android:id="@+id/tv_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="content" android:singleLine="true"/>
+        </LinearLayout>
+        <Button android:textColor="#0099ff" android:id="@+id/btnNext" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iv_selected" android:text="@string/common_enter" android:drawableRight="@drawable/book_source_next_level" android:drawablePadding="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="63dp" android:layout_alignParentBottom="true"/>
+</LinearLayout>

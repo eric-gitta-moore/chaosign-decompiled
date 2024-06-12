@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffdadee5" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.chaoxing.input.ime.keyboard.MenuView android:id="@+id/menu" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.chaoxing.input.ime.candidate.CandidateView android:id="@+id/candidate" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignLeft="@+id/menu" android:layout_alignTop="@+id/menu"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/menu">
+        <com.chaoxing.input.ime.keyboard.KeyboardQwertView android:id="@+id/keyboard_quert" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.chaoxing.input.ime.keyboard.KeyboardNumberView android:id="@+id/keyboard_number" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <com.chaoxing.input.ime.keyboard.KeyboardSymbolView android:id="@+id/keyboard_symbol" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.chaoxing.input.ime.candidate.CandidateDetailView android:id="@+id/candidate_detail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</RelativeLayout>

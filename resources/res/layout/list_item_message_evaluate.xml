@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/v_evaluate" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/radius_ffffff_10dp" android:layout_width="match_parent" android:layout_height="114dp">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="给我评价，我会继续努力做的更好" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="46dp">
+            <RelativeLayout android:background="@drawable/radius_f9f9f9_10dp" android:layout_width="0dp" android:layout_height="60dp" android:layout_marginLeft="8dp" android:layout_weight="1">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp" android:src="@drawable/expression_036" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="非常不满" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/radius_f9f9f9_10dp" android:layout_width="0dp" android:layout_height="60dp" android:layout_marginLeft="8dp" android:layout_weight="1">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp" android:src="@drawable/expression_002" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="不满意" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/radius_f9f9f9_10dp" android:layout_width="0dp" android:layout_height="60dp" android:layout_marginLeft="8dp" android:layout_weight="1">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp" android:src="@drawable/expression_120" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="一般" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/radius_f9f9f9_10dp" android:layout_width="0dp" android:layout_height="60dp" android:layout_marginLeft="8dp" android:layout_weight="1">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp" android:src="@drawable/expression_001" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="满意" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/radius_f9f9f9_10dp" android:layout_width="0dp" android:layout_height="60dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_weight="1">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp" android:src="@drawable/expression_121" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="非常满意" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/blue_0099ff" android:layout_gravity="right" android:id="@+id/tv_status_v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="5dp"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/cxfile_picker_nav_graph" app:startDestination="@+id/fragmentCategoryList">
+    <fragment android:name="com.chaoxing.android.cxfile.filepicker.CategoryListFragment" android:id="@+id/fragmentCategoryList">
+        <action android:id="@+id/fragmentCategoryListToFragmentFileList" app:destination="@+id/fragmentFileList" app:enterAnim="@anim/cxfile_picker_navigation_enter" app:exitAnim="@anim/cxfile_picker_navigation_exit" app:popEnterAnim="@anim/cxfile_picker_navigation_pop_enter" app:popExitAnim="@anim/cxfile_picker_navigation_pop_exit"/>
+        <action android:id="@+id/fragmentCategoryListToPathFragmentFileList" app:destination="@+id/pathFragmentFileList" app:popUpTo="@+id/fragmentCategoryList" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:name="com.chaoxing.android.cxfile.filepicker.FileListFragment" android:id="@+id/fragmentFileList">
+        <argument android:name="title" app:argType="string"/>
+        <argument android:name="category" app:argType="com.chaoxing.android.cxfile.filepicker.Category"/>
+    </fragment>
+    <fragment android:name="com.chaoxing.android.cxfile.filepicker.path.FileListFragment" android:id="@+id/pathFragmentFileList">
+        <argument android:name="path" android:defaultValue="/" app:argType="string" app:nullable="false"/>
+        <action android:id="@+id/pathFragmentFileListToPathFragmentFileList" app:destination="@+id/pathFragmentFileList"/>
+        <action android:id="@+id/pathFragmentFileListToFragmentCategoryList" app:destination="@+id/fragmentCategoryList" app:popUpTo="@+id/pathFragmentFileList" app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

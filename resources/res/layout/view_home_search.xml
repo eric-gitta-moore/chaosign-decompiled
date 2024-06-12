@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/search_bg_night" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_group_search" android:layout_marginStart="8dp" android:layout_marginEnd="5dp"/>
+    <EditText android:textSize="14sp" android:textColor="@color/normal_gray" android:textColorHint="#ffb3b3b3" android:id="@+id/et_keyword" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="30dp" android:hint="@string/comment_serarch" android:layout_weight="1" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch"/>
+    <ImageView android:id="@+id/iv_clear" android:paddingLeft="12dp" android:paddingTop="5dp" android:paddingRight="12dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_weight="0"/>
+</LinearLayout>

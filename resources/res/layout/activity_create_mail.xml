@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rlRoot" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/color_ebeced" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+            <TextView android:id="@+id/tvCanncel" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+            <TextView android:textSize="20sp" android:textColor="#ff333333" android:ellipsize="middle" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginRight="65dp" android:text="发邮件" android:singleLine="true" android:layout_centerInParent="true"/>
+            <TextView android:id="@+id/tvSend" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+        </RelativeLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/normal_black" android:id="@+id/tv_receiver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="15dp" android:layout_marginBottom="5dp" android:text="@string/pcenter_message_Tosomeone"/>
+                    <com.chaoxing.mobile.widget.WordWrapView android:layout_gravity="center_vertical" android:id="@+id/view_wordwrap" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <EditText android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/etReceiver" android:background="#00000000" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="xianquan@chaoxing.com" android:singleLine="true" android:layout_weight="1" style="@style/text_lightgray_17"/>
+                    <Button android:gravity="center" android:layout_gravity="bottom" android:id="@+id/btn_add" android:background="@drawable/add_contact" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="12dp" android:layout_marginBottom="4dp" style="@style/text_blue_16"/>
+                </LinearLayout>
+                <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/normal_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="15dp" android:layout_marginBottom="5dp" android:text="@string/pcenter_message_Duplicate"/>
+                    <EditText android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/etCc" android:background="#00000000" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" style="@style/text_lightgray_17"/>
+                </LinearLayout>
+                <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/normal_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="15dp" android:layout_marginBottom="5dp" android:text="密送"/>
+                    <EditText android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/etBcc" android:background="#00000000" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" style="@style/text_lightgray_17"/>
+                </LinearLayout>
+                <View android:background="#99ccff" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/etTitle"/>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textColorHint="#cccccc" android:gravity="center_vertical" android:id="@+id/etTitle" android:background="#00000000" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/topic_title_hint" android:singleLine="true" style="@style/text_lightgray_17"/>
+                    <View android:id="@+id/dividerLine" android:background="#99ccff" android:layout_width="match_parent" android:layout_height="1px"/>
+                    <EditText android:textSize="16sp" android:textColor="@color/normal_black" android:textColorHint="#cccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/etContent" android:background="#00000000" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:minHeight="200dp" android:hint="@string/say_something"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include android:id="@+id/loading_view" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

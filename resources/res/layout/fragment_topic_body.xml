@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlContainer" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.chaoxing.library.widget.CToolbar android:id="@+id/viewToolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewToolbar">
+                <com.chaoxing.mobile.group.widget.TopicListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvTopic" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:dividerHeight="0dp" android:layout_above="@+id/bottomBar" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+                <ImageView android:id="@+id/to_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginBottom="12dp" android:src="@drawable/img_to_top" android:layout_above="@+id/rlLoadAll" android:layout_alignParentRight="true"/>
+                <RelativeLayout android:id="@+id/rlLoadAll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginBottom="20dp" android:layout_above="@+id/bottomBar" android:layout_alignParentRight="true">
+                    <TextView android:textSize="16sp" android:textColor="#ff0281df" android:background="@drawable/ic_topic_load_all" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <include android:id="@+id/bottomBar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/view_reply_bar"/>
+                <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle_bg_white"/>
+                <include android:id="@+id/viewLoading2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+                <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_note_failed_match_parent"/>
+            </RelativeLayout>
+            <com.chaoxing.study.screencast.view.ScreenCastController android:id="@+id/screen_control" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:id="@+id/reply_bg" android:background="#80000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/fl_reply" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include android:id="@+id/reply_viewLoading" android:visibility="gone" android:clickable="true" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

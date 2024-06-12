@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="48dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rgContainer" android:background="@drawable/stroke_corner_radiogroup" android:layout_width="200dp" android:layout_height="34dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <RadioButton android:textColor="@color/note_tab_text" android:ellipsize="end" android:gravity="center" android:id="@+id/rbtnLeft" android:background="@drawable/selector_radiobutton_left" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/dynamic_my_topic" android:singleLine="true" android:drawablePadding="0dp" android:layout_weight="1" style="@style/Radio_Button_Resource_Text"/>
+            <View android:background="#0099ff" android:layout_width="1px" android:layout_height="match_parent"/>
+            <RadioButton android:textColor="@color/note_tab_text" android:ellipsize="end" android:gravity="center" android:id="@+id/rbtnRight" android:background="@drawable/selector_radiobutton_right" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:text="小组广场" android:singleLine="true" android:drawablePadding="2dp" android:layout_weight="1" style="@style/Radio_Button_Resource_Text"/>
+        </RadioGroup>
+        <Button android:textSize="16sp" android:id="@+id/btnRight" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.chaoxing.mobile.group.ui.NoScrollViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titlebar"/>
+</RelativeLayout>

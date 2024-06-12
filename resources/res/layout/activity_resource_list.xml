@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/parentView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar2_title_2line"/>
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:orientation="vertical" android:id="@+id/pull_refresh_resource" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.scwang.smart.refresh.header.CxClassicsHeader android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:srlDrawableArrow="@drawable/icon_refresh" app:srlDrawableArrowSize="18dp" app:srlDrawableMarginRight="8dp" app:srlDrawableProgressSize="18dp" app:srlEnableLastTime="false" app:srlFinishDuration="100" app:srlPrimaryColor="@color/white" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="13sp" app:srlTextTimeMarginTop="2dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/clbarLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@+id/appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_collapseMode="2" app:layout_scrollFlags="3">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/llBarLayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="2" app:layout_scrollFlags="3">
+                        <include layout="@layout/search_bar_normal_parent"/>
+                        <RelativeLayout android:id="@+id/rlGroupChatHeadView" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="65dp">
+                            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/ivChatLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/icon_class_group_chat" android:scaleType="fitCenter" android:layout_toRightOf="@+id/cb_selector" android:layout_centerVertical="true" app:riv_corner_radius="4dp" app:riv_mutate_background="true" app:riv_oval="false"/>
+                            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/ivChatLogo" android:layout_centerVertical="true">
+                                <TextView android:textSize="16sp" android:textColor="#333" android:id="@+id/tvChatTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="群聊"/>
+                                <TextView android:textSize="13sp" android:textColor="#999" android:ellipsize="end" android:id="@+id/tvResentMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="王绪:哈哈哈" android:maxLines="1" android:layout_below="@+id/tvChatTag"/>
+                                <TextView android:textSize="13sp" android:textColor="#999" android:id="@+id/tvChatTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="15min" android:layout_alignParentRight="true"/>
+                            </RelativeLayout>
+                            <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/group_profile" android:background="@android:color/white" android:padding="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.chaoxing.mobile.group.ui.GroupAvatar android:id="@+id/ga_avatar" android:background="@drawable/bg_group_head_circle" android:layout_width="48dp" android:layout_height="48dp" android:layout_centerVertical="true"/>
+                            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toLeftOf="@+id/iv_arrow" android:layout_toRightOf="@+id/ga_avatar" android:layout_centerVertical="true">
+                                <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1" android:layout_below="@+id/tv_name"/>
+                                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_topic_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="4dp" android:maxLines="1" android:layout_toRightOf="@+id/tv_member_count" android:layout_below="@+id/tv_name"/>
+                            </RelativeLayout>
+                            <ImageView android:id="@+id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <include android:id="@+id/rltopiccheckview" android:visibility="gone" layout="@layout/item_topic_remind_header"/>
+                        <ImageView android:id="@+id/iv_group_cover" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+                    </LinearLayout>
+                    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/tabs_home_page" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginStart="0dp" android:layout_marginEnd="0dp"/>
+                    <View android:id="@+id/tablayout_below_divider" android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+                </com.google.android.material.appbar.AppBarLayout>
+                <LinearLayout android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                    <com.fanzhou.widget.DispatchViewPager android:id="@+id/vp_resource" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </LinearLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+            <include android:visibility="gone" layout="@layout/reload"/>
+        </RelativeLayout>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

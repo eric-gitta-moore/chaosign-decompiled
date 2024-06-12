@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/voice_invigilate_shape" android:layout_width="match_parent" android:layout_height="133dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginHorizontal="15dp">
+    <TextView android:textSize="15sp" android:textColor="@color/white" android:id="@+id/tv_voice_invigilate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="11dp" android:paddingBottom="23dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/btn_refuse_voice" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/refuse_voice" android:layout_marginEnd="23dp"/>
+        <ImageView android:id="@+id/btn_answer_voice" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/answer_voice"/>
+    </LinearLayout>
+</LinearLayout>

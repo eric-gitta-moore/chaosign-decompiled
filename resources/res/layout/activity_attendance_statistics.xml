@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.office.widget.PunchTopTitleLayout android:id="@+id/titleLayout" android:layout_width="match_parent" android:layout_height="48dp"/>
+    <include layout="@layout/view_divider"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout" android:layout_width="match_parent" android:layout_height="35dp" app:tabIndicatorFullWidth="false" app:tabRippleColor="@null" app:tabTextAppearance="@style/ASTabLayoutTextAppearance" style="@style/ASTabLayoutStyle"/>
+    <View android:background="#f4f5f7" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <com.chaoxing.mobile.group.ui.NoScrollViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

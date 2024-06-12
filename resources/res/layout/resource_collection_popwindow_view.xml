@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlpop" android:background="#80333333" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#7f7f7f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/llBookRoom" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="#666666" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvBookRoom" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/tab_personal" android:drawableLeft="@drawable/tab_myapp_selected" android:drawableRight="@drawable/right_arrow" android:drawablePadding="8dp"/>
+            </LinearLayout>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llPcCloud" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="#666666" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvPcCloud" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/bookCollections_PCSyncCloudDrive" android:drawableLeft="@drawable/item_att_cloud" android:drawableRight="@drawable/right_arrow" android:drawablePadding="8dp"/>
+            </LinearLayout>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llNote" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="#666666" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvNote" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/note" android:drawableLeft="@drawable/tab_note_sel" android:drawableRight="@drawable/right_arrow" android:drawablePadding="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

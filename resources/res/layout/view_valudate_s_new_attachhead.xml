@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="50dp">
+    <RelativeLayout android:id="@+id/rlContener" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tvTag" android:paddingLeft="15dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新增关注" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvReadCount" android:background="@drawable/rectangle_circleconer_bg_red" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="9dp" android:layout_height="9dp" android:layout_marginRight="3dp" android:minWidth="9dp" android:layout_toLeftOf="@+id/tvRight" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/tvRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:drawableRight="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+        <View android:id="@+id/headerBottomDevider" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1.5px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

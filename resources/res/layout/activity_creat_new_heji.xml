@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:background="@android:color/white" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="66dp">
+                <EditText android:textColorHint="@color/color_cccccc" android:id="@+id/heji_name" android:background="@android:color/transparent" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/create_heji_name" android:singleLine="true" android:layout_toLeftOf="@+id/ibtn_clear" android:layout_centerVertical="true" android:imeOptions="actionNext" style="@style/group_title_text"/>
+                <ImageButton android:id="@+id/ibtn_clear" android:background="@android:color/transparent" android:padding="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@android:color/white" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="66dp">
+                <EditText android:textColorHint="@color/color_cccccc" android:id="@+id/editAutor" android:background="@android:color/transparent" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/comment_author" android:layout_centerVertical="true" android:imeOptions="actionNext" android:layout_toStartOf="@+id/introductBtn_clear" style="@style/group_title_text"/>
+                <ImageButton android:id="@+id/authorBtn_clear" android:background="@android:color/transparent" android:padding="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_logo" android:background="@android:color/white" android:paddingTop="12dp" android:paddingBottom="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="66dp">
+                <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_logo" android:layout_width="42dp" android:layout_height="42dp" android:layout_marginLeft="15dp" android:src="@drawable/take_photo_icon" android:scaleType="centerCrop" app:riv_corner_radius="4dp" app:riv_oval="false"/>
+                <TextView android:textColorHint="@color/color_cccccc" android:gravity="center_vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:hint="@string/create_course_picture" style="@style/group_title_text"/>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/wait_circle_bar_with_text"/>
+    </RelativeLayout>
+</RelativeLayout>

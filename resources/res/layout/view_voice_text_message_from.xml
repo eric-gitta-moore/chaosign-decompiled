@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.chat.widget.VoiceTextMessageView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/v_voice_text_message" android:background="@drawable/chat_im_from_bg_voice_text" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/tvVoiceToText" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="207dp" android:minWidth="32dp" android:minHeight="26dp"/>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vg_voice_message" android:paddingLeft="9dp" android:layout_width="wrap_content" android:layout_height="30dp">
+        <ImageView android:id="@+id/iv_voice" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chatfrom_voice_playing_f3"/>
+        <TextView android:textColor="#333333" android:layout_gravity="center_vertical" android:id="@+id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="3dp" android:text="" android:maxLines="1"/>
+    </LinearLayout>
+</com.chaoxing.mobile.chat.widget.VoiceTextMessageView>

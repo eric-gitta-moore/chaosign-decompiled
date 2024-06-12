@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tvForgetPwd" android:background="#f5f6f8" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="36dp" android:text="@string/my_forget_pwd" android:layout_below="@+id/topBar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llContent" android:paddingLeft="26dp" android:paddingRight="26dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tvForgetPwd">
+        <RelativeLayout android:id="@+id/llOldPwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/etAccount_oldPwd" android:background="@android:color/transparent" android:paddingTop="12dp" android:paddingRight="10dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/my_old_message" android:maxLines="1" android:layout_toLeftOf="@+id/ivClearOld" android:inputType="textPassword"/>
+            <ImageView android:id="@+id/ivClearOld" android:paddingLeft="12dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignTop="@+id/etAccount_oldPwd" android:layout_alignBottom="@+id/etAccount_oldPwd" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/llNewPwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/etNewPwd" android:background="@android:color/transparent" android:paddingTop="12dp" android:paddingRight="10dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/my_new_message" android:maxLines="1" android:layout_toLeftOf="@+id/ivClearNew" android:inputType="textPassword"/>
+            <ImageView android:id="@+id/ivClearNew" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignTop="@+id/etNewPwd" android:layout_alignBottom="@+id/etNewPwd" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvFormatTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/setting_pwd_format"/>
+        <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/btnSetPwd" android:background="@drawable/btn_blue_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="38dp" android:text="@string/persioninfo_Done"/>
+        <TextView android:textSize="13sp" android:textColor="#999999" android:gravity="center_horizontal" android:id="@+id/tvSetPwdTip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginRight="15dp" android:text="@string/pc_login_tip"/>
+    </LinearLayout>
+    <include android:id="@+id/vWaiting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+</RelativeLayout>

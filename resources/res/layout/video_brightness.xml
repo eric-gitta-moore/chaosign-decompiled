@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/app_video_brightness_box" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/content" android:background="@drawable/video_dialog_progress_bg" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="154dp" android:layout_height="44dp">
+        <ImageView android:id="@+id/video_brightness_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_brightness_white" android:layout_centerVertical="true"/>
+        <ProgressBar android:id="@+id/video_brightness_progressbar" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginLeft="10dp" android:max="100" android:progressDrawable="@drawable/video_dialog_progress" android:layout_toRightOf="@+id/video_brightness_icon" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Horizontal"/>
+    </RelativeLayout>
+</LinearLayout>

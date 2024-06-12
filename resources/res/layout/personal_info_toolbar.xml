@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true" android:textIsSelectable="true" style="@style/cl_Toolbar_Title"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/right_action_layout" android:layout_centerVertical="true" android:paddingStart="@dimen/cl_toolbar_padding_start">
+            <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/left_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/cl_ic_toolbar_arrow_left_white_24dp" style="@style/cl_Toolbar_Action_Button"/>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/left_avatar" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView android:id="@+id/left_iv_avatar" android:padding="0.5dp" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_avatar_75dp" android:scaleType="centerCrop" app:shapeAppearance="@style/Cx.ShapeAppearance.Rounded50p" app:strokeColor="@android:color/white" app:strokeWidth="1dp"/>
+            </RelativeLayout>
+            <TextView android:textSize="15sp" android:textColor="@android:color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/left_tv_action_text" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:textIsSelectable="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/right_action_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:paddingStart="15dp" android:paddingEnd="@dimen/cl_toolbar_padding_end">
+            <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/right_action" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cl_Toolbar_Action_Button"/>
+            <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/right_action2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cl_Toolbar_Action_Button"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

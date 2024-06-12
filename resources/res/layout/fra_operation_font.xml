@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/ll_container" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="213dp">
+        <RelativeLayout android:id="@+id/rl_bold" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/rl_underline" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="0">
+            <ImageView android:id="@+id/bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_bold" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_underline" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintLeft_toRightOf="@+id/rl_bold" app:layout_constraintRight_toLeftOf="@+id/rl_italic" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/underline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_underline" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_italic" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintLeft_toRightOf="@+id/rl_underline" app:layout_constraintRight_toLeftOf="@+id/rl_line_middleline" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/italic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_italic" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_line_middleline" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintLeft_toRightOf="@+id/rl_italic" app:layout_constraintRight_toLeftOf="@+id/rl_highlighte" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/line_middleline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_line_middleline" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_highlighte" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintLeft_toRightOf="@+id/rl_line_middleline" app:layout_constraintRight_toLeftOf="@+id/rl_checkbox" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/highlighte" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_highlighte" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_checkbox" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintLeft_toRightOf="@+id/rl_highlighte" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_checkbox_select" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.Barrier android:id="@+id/barrier" android:layout_width="match_parent" android:layout_height="wrap_content" app:barrierDirection="3" app:constraint_referenced_ids="rl_bold,rl_underline,rl_italic,rl_line_middleline,rl_highlighte,rl_checkbox"/>
+        <View android:id="@+id/line1" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" app:layout_constraintTop_toTopOf="@+id/barrier"/>
+        <RelativeLayout android:id="@+id/rl_toleft" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/rl_middle" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/toleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_toleft" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_middle" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintLeft_toRightOf="@+id/rl_toleft" app:layout_constraintRight_toLeftOf="@+id/rl_toright" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_middle" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_toright" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintLeft_toRightOf="@+id/rl_middle" app:layout_constraintRight_toLeftOf="@+id/rl_line_toright" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/toright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_toright" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_line_toright" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintLeft_toRightOf="@+id/rl_toright" app:layout_constraintRight_toLeftOf="@+id/rl_line_toleft" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/line_toright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_line_toright" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_line_toleft" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintLeft_toRightOf="@+id/rl_line_toright" app:layout_constraintRight_toLeftOf="@+id/rl_no_order" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/line_toleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_line_toleft" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_no_order" android:layout_width="48dp" android:layout_height="50dp" app:layout_constraintLeft_toRightOf="@+id/rl_line_toleft" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@+id/line1">
+            <ImageView android:id="@+id/no_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_no_order" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.Barrier android:id="@+id/barrier2" android:layout_width="match_parent" android:layout_height="wrap_content" app:barrierDirection="3" app:constraint_referenced_ids="rl_toleft,rl_middle,rl_toright,rl_line_toright,rl_line_toleft,rl_no_order"/>
+        <View android:id="@+id/line2" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" app:layout_constraintTop_toTopOf="@+id/barrier2"/>
+        <RelativeLayout android:id="@+id/rl_font1" android:layout_width="48dp" android:layout_height="60dp" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/rl_font2" app:layout_constraintTop_toTopOf="@+id/line2">
+            <ImageView android:id="@+id/font1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_font_a1" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_font2" android:layout_width="48dp" android:layout_height="60dp" app:layout_constraintLeft_toRightOf="@+id/rl_font1" app:layout_constraintRight_toLeftOf="@+id/rl_font3" app:layout_constraintTop_toTopOf="@+id/line2">
+            <ImageView android:id="@+id/font2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_font_a2" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_font3" android:layout_width="48dp" android:layout_height="60dp" app:layout_constraintLeft_toRightOf="@+id/rl_font2" app:layout_constraintRight_toLeftOf="@+id/rl_font4" app:layout_constraintTop_toTopOf="@+id/line2">
+            <ImageView android:id="@+id/font3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_font_a3" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_font4" android:layout_width="48dp" android:layout_height="60dp" app:layout_constraintLeft_toRightOf="@+id/rl_font3" app:layout_constraintRight_toLeftOf="@+id/richtext_deliverline" app:layout_constraintTop_toTopOf="@+id/line2">
+            <ImageView android:id="@+id/font4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_font_a4" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/richtext_deliverline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_richtext_deliverline" app:layout_constraintBottom_toBottomOf="@+id/barrier3" app:layout_constraintLeft_toRightOf="@+id/rl_font4" app:layout_constraintRight_toLeftOf="@+id/ll_chexiao" app:layout_constraintTop_toTopOf="@+id/line2"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_chexiao" android:layout_width="96dp" android:layout_height="wrap_content" app:layout_constraintLeft_toRightOf="@+id/richtext_deliverline" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@+id/line2">
+            <RelativeLayout android:id="@+id/rl_undo" android:layout_width="48dp" android:layout_height="60dp">
+                <ImageView android:id="@+id/undo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_undo" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_redo" android:layout_width="48dp" android:layout_height="60dp">
+                <ImageView android:id="@+id/redo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_redo" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.Barrier android:id="@+id/barrier3" android:layout_width="match_parent" android:layout_height="wrap_content" app:barrierDirection="3" app:constraint_referenced_ids="rl_font1,rl_font2,rl_font3,rl_font4,richtext_deliverline,ll_chexiao"/>
+        <View android:id="@+id/line3" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" app:layout_constraintTop_toTopOf="@+id/barrier3"/>
+        <androidx.constraintlayout.widget.Barrier android:id="@+id/barrier4" android:layout_width="match_parent" android:layout_height="wrap_content" app:barrierDirection="3" app:constraint_referenced_ids="line3"/>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:id="@+id/tv_label_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/note_font_color" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/barrier5" app:layout_constraintTop_toTopOf="@+id/barrier4"/>
+        <androidx.constraintlayout.widget.Barrier android:id="@+id/barrier5" android:layout_width="match_parent" android:layout_height="wrap_content" app:barrierDirection="3" app:constraint_referenced_ids="tv_label_text_color"/>
+        <RelativeLayout android:id="@+id/rl6" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="7dp" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/rl1" app:layout_constraintTop_toTopOf="@+id/barrier5">
+            <ImageView android:id="@+id/iv6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_black" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl1" android:layout_width="34dp" android:layout_height="34dp" app:layout_constraintLeft_toRightOf="@+id/rl6" app:layout_constraintRight_toLeftOf="@+id/rl2" app:layout_constraintTop_toTopOf="@+id/barrier5">
+            <ImageView android:id="@+id/iv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_red" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl2" android:layout_width="34dp" android:layout_height="34dp" app:layout_constraintLeft_toRightOf="@+id/rl1" app:layout_constraintRight_toLeftOf="@+id/rl3" app:layout_constraintTop_toTopOf="@+id/barrier5">
+            <ImageView android:id="@+id/iv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_yellow" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl3" android:layout_width="34dp" android:layout_height="34dp" app:layout_constraintLeft_toRightOf="@+id/rl2" app:layout_constraintRight_toLeftOf="@+id/rl4" app:layout_constraintTop_toTopOf="@+id/barrier5">
+            <ImageView android:id="@+id/iv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_green" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl4" android:layout_width="34dp" android:layout_height="34dp" app:layout_constraintLeft_toRightOf="@+id/rl3" app:layout_constraintRight_toLeftOf="@+id/rl5" app:layout_constraintTop_toTopOf="@+id/barrier5">
+            <ImageView android:id="@+id/iv4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_purple" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl5" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginRight="7dp" app:layout_constraintLeft_toRightOf="@+id/rl4" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@+id/barrier5">
+            <ImageView android:id="@+id/iv5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_purple" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

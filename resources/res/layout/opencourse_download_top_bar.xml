@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.widget.GeneralSelectBar xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/selectBar" android:background="@drawable/button_blue_stroke" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" style="@style/opencourse_download_selectbar_style">
+    <RadioGroup android:orientation="horizontal" android:id="@+id/rgContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RadioButton android:gravity="center" android:id="@+id/rbtnDownloading" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/state_downloading" android:layout_weight="1" style="@style/Radio_Button_Center_Text"/>
+        <RadioButton android:gravity="center" android:id="@+id/rbtnDownload" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/state_downloaded" android:layout_weight="1" style="@style/Radio_Button_Center_Text"/>
+    </RadioGroup>
+</com.chaoxing.mobile.widget.GeneralSelectBar>

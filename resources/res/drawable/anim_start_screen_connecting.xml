@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="125" android:drawable="@drawable/icon_start_screen_connecting_1"/>
+    <item android:duration="125" android:drawable="@drawable/icon_start_screen_connecting_2"/>
+    <item android:duration="125" android:drawable="@drawable/icon_start_screen_connecting_3"/>
+    <item android:duration="125" android:drawable="@drawable/icon_start_screen_connecting_4"/>
+    <item android:duration="125" android:drawable="@drawable/icon_start_screen_connecting_5"/>
+    <item android:duration="125" android:drawable="@drawable/icon_start_screen_connecting_6"/>
+    <item android:duration="125" android:drawable="@drawable/icon_start_screen_connecting_7"/>
+    <item android:duration="125" android:drawable="@drawable/icon_start_screen_connecting_8"/>
+</animation-list>

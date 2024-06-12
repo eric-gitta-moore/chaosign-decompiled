@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fanzhou="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/itemContainer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_cover" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40">
+        <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="match_parent" android:layout_height="match_parent" fanzhou:border_color="#999d9e" fanzhou:border_width="1px" fanzhou:is_circle="false" fanzhou:x_radius="4dp" fanzhou:y_radius="4dp"/>
+        <TextView android:textSize="@dimen/sp_6" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tvRole" android:background="@drawable/bg_0099ff_bottom_corner_4dp" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_10" android:text="创建者" android:singleLine="true" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/ivAdd" android:visibility="gone" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/item_note_add_cooperate_member_icon" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_13" android:textColor="#333333" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/tvName" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="egasg" android:singleLine="true"/>
+</LinearLayout>

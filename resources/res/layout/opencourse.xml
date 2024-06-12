@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="47dp">
+        <FrameLayout android:id="@+id/fragmentContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/ivTransBlack" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/trans_black"/>
+    </RelativeLayout>
+    <include android:layout_width="336dp" android:layout_height="164dp" android:layout_marginTop="48dp" android:layout_centerHorizontal="true" layout="@layout/opencourse_popup"/>
+    <include layout="@layout/open_course_activity_top_bar"/>
+</RelativeLayout>

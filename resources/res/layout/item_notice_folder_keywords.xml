@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="66dp">
+        <ImageView android:id="@+id/ivCondition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tvKeyword" android:layout_width="wrap_content" android:layout_height="22dp" android:text="学习通" android:layout_marginStart="10dp"/>
+        <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tvContain" android:layout_width="wrap_content" android:layout_height="18dp" android:text="@string/notice_include" android:layout_marginStart="10dp"/>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/ivEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_keywords_edit" android:layout_toLeftOf="@+id/ivDelete" android:layout_marginStart="16dp" android:layout_marginEnd="8dp"/>
+            <ImageView android:id="@+id/ivDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_notice_delete_rule" android:layout_alignParentRight="true" android:layout_marginStart="10dp" android:layout_marginEnd="15dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="15dp"/>
+</LinearLayout>

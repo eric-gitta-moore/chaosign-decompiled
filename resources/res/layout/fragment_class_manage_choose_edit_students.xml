@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titleBar">
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/lvList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/llBottomView"/>
+        <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:id="@+id/tvEmptyMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_manager_class_group_no_member" android:layout_centerInParent="true"/>
+        <include layout="@layout/page_loading_circle"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llBottomView" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="18sp" android:textColor="#999" android:gravity="center" android:id="@+id/tvDelete" android:background="#f7f7f7" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/delete_student_from_class" android:layout_weight="1"/>
+            <View android:background="#ebebeb" android:layout_width="1px" android:layout_height="match_parent"/>
+            <TextView android:textSize="18sp" android:textColor="#999" android:gravity="center" android:id="@+id/tvGroup" android:background="#f7f7f7" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/class_manage_sub_group" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignTop="@+id/llBottomView"/>
+        <include layout="@layout/common_reload"/>
+    </RelativeLayout>
+</RelativeLayout>

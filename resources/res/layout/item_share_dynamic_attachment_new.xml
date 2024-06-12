@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fanzhou="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/container" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+        <RelativeLayout android:id="@+id/rl_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginRight="9dp">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="1dp" android:layout_marginRight="1dp" fanzhou:is_circle="false" fanzhou:x_radius="4dp" fanzhou:y_radius="4dp"/>
+            <com.fanzhou.widget.CircleImageView android:id="@+id/ga_avatar" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true" fanzhou:is_circle="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/rl_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="#0099ff" android:ellipsize="end" android:id="@+id/tv_creator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/tv_notebook" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_unit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_top">
+                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_creator2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxWidth="72dp" android:text="" android:singleLine="true"/>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_unit" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxLines="1"/>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_contentainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="13dp" android:layout_marginRight="15dp" android:layout_marginBottom="13dp">
+        <TextView android:textSize="18sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/tv_note_title" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingExtra="5dp"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_note_content" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:lineSpacingExtra="5dp"/>
+        <include android:id="@+id/vg_images" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" layout="@layout/layout_dynamic_attachment_images"/>
+    </LinearLayout>
+    <include android:id="@+id/mTailView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" layout="@layout/view_attachment_layout_tail"/>
+</LinearLayout>

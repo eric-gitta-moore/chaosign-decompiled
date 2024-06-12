@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/viewContainer" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/rlContent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llGroup" android:background="@drawable/common_white_stroke_bg_1" android:layout_width="match_parent" android:layout_height="168dp">
+            <com.chaoxing.mobile.group.widget.GroupHead android:layout_gravity="center" android:id="@+id/ivGroupAvatar" android:background="@drawable/bg_group_head" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="28dp"/>
+            <TextView android:textSize="15sp" android:textColor="@android:color/black" android:id="@+id/tvGroupName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp"/>
+            <TextView android:textSize="14sp" android:textColor="#666666" android:id="@+id/tvGroupMemb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <Button android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/btnAddGroup" android:background="@drawable/light_blue_corner_btn_bg_0099ff" android:layout_width="174dp" android:layout_height="38dp" android:layout_marginTop="65dp" android:text="@string/addGroupTip" android:layout_below="@+id/llGroup" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <include android:id="@+id/vLoading" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

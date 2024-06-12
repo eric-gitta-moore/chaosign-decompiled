@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+    <bluetooth class="com.landicorp.liu.comm.api.BluetoothCommParam">
+<!--HTC  -->
+  		<phone model="HTC A9188">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+	    <phone model="HUAWEI U9510E">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="GT-I9008L">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="GT-S5830i">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="EBEST S5">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="SCH-i589">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="HTC One">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HTC One S">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HTC 7088">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="Lenovo K860">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HTC Sensation XE with Beats Audio Z715e">
+            <RfCommMethod type ="short">2</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="HTC One X">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="M031">
+            <RfCommMethod type ="short">2</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="U9200E">
+            <RfCommMethod type ="short">2</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="ZTE N880E">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="V182">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="T200">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="thl T100">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HTC 5088">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HUAWEI Y511-T00">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="K-Touch T60">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HTC S720e">
+            <RfCommMethod type ="short">2</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="GN137">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="ZTE G717C">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="K-Touch W95">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="U705T">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="ZTE Q501T">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="ZTE U819">
+            <RfCommMethod type ="short">0</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="vivo X3t">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="HUAWEI MT1-T00">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HUAWEI G610-T11">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="LA2-T">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="vivo Y11i T">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="vivo Y11">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="Lenovo S968t">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="E3">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="HTC T528t">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="Coolpad8085Q">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="LG-P880">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="SCH-i919">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HS-U8">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HUAWEI Y516-T00">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="T9200">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="ZTE U817">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="ZTE N919">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="Lenovo A820e">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="LNV-Lenovo A630e">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="2013023">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HTC X920e">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="U27GT">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HUAWEI U8950D">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="Coolpad8750">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="LT22i">
+            <RfCommMethod type ="short">2</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="Aqua 3G">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HTC Desire U dual sim">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="MX4">
+            <RfCommMethod type ="short">3</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="XT910">
+            <RfCommMethod type ="short">1</RfCommMethod>
+            <SleepTime type ="short">1000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="HUAWEI G520-0000">
+            <RfCommMethod type ="short">2</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="GT-I9300">
+            <RfCommMethod type ="short">2</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">1</NeedPair>
+    	</phone>
+    	<phone model="HUAWEI Y300-0000">
+            <RfCommMethod type ="short">2</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="HP 7 VoiceTab">
+            <RfCommMethod type ="short">2</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+    	<phone model="ZTE Blade Q Lux">
+            <RfCommMethod type ="short">2</RfCommMethod>
+            <SleepTime type ="short">3000</SleepTime>
+            <NeedPair type ="short">0</NeedPair>
+    	</phone>
+	</bluetooth>
+</params>

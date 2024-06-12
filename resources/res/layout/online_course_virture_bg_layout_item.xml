@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/item" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_image" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_66" android:layout_marginLeft="@dimen/dp_8" android:layout_marginTop="@dimen/dp_24" android:layout_marginRight="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/roundImage" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_img_default_online_course" android:scaleType="centerCrop" app:riv_border_width="0dp" app:riv_corner_radius="4dp" app:riv_oval="false"/>
+        <RelativeLayout android:id="@+id/roundImageBoder" android:background="@drawable/course_online_roundimage_cover_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:id="@+id/viewCover" android:background="@drawable/bg_image_upload_cover_66000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:id="@+id/process_bar" android:visibility="visible" android:layout_width="24dp" android:layout_height="24dp" android:indeterminate="false" android:indeterminateDrawable="@drawable/custom_progress" android:layout_centerInParent="true"/>
+        <com.chaoxing.mobile.group.widget.RoundProgressView android:id="@+id/progressView" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_reply_video_retry" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/ivAdd" android:visibility="gone" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ic_course_online_virture_bg_add" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/ivNone" android:visibility="gone" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ic_course_online_virture_bg_none" android:layout_centerInParent="true"/>
+        <RelativeLayout android:id="@+id/rt_name" android:background="@drawable/virture_bg_text_cover_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_22" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/sp_11" android:textColor="@color/white" android:id="@+id/tvBgName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlDel" android:padding="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-28dp" android:layout_marginTop="@dimen/dp_8" android:layout_toRightOf="@+id/rl_image">
+        <ImageView android:id="@+id/ivDel" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ic_online_course_virture_bg_del"/>
+    </RelativeLayout>
+</RelativeLayout>

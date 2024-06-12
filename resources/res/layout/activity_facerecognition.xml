@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/surfaceView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:background="@drawable/img_face_scrop" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/rlBack" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:background="@drawable/back_white" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="状态采集中..." android:layout_above="@+id/btnCollection" android:layout_centerHorizontal="true"/>
+    <Button android:textColor="@color/white" android:id="@+id/btnCollection" android:background="@drawable/bg_face_collected" android:layout_width="100dp" android:layout_height="35dp" android:layout_marginBottom="30dp" android:text="完成" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

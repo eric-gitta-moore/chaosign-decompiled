@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="@color/black_b2b2b2" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ImageView android:id="@+id/middle_line" android:background="@color/black_b2b2b2" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="54dp">
+        <RelativeLayout android:layout_gravity="center_vertical" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+            <TextView android:id="@+id/tvItemState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test" android:layout_alignParentRight="true" style="@style/Text_Content_14"/>
+            <TextView android:ellipsize="end" android:id="@+id/tvItemTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="testtes" android:singleLine="true" android:layout_toLeftOf="@+id/tvItemState" android:layout_alignParentLeft="true" style="@style/Text_Content_14"/>
+            <ProgressBar android:id="@+id/pbDownload" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:max="100" android:layout_below="@+id/tvItemTitle" style="@style/DownloadSeekBar"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivDownloadState" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/state_download" android:scaleType="centerInside"/>
+        <CheckBox android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/cbSelector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:button="@drawable/rss_checkbox"/>
+    </LinearLayout>
+</LinearLayout>

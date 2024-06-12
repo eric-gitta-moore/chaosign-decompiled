@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/rlTitle" layout="@layout/activity_top_bar_back_and_submit"/>
+    <ExpandableListView android:id="@+id/exlvProvince" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:cacheColorHint="@android:color/transparent" android:groupIndicator="@null" android:childDivider="@drawable/list_cut_off_line" android:divider="#c8c8c8" android:dividerHeight="1px" android:layout_below="@+id/rlTitle"/>
+    <include layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

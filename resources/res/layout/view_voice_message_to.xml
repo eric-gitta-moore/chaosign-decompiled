@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.chat.widget.VoiceMessageView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/v_voice_message" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/vg_voice_message" android:background="@drawable/chat_im_to_bg_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@+id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="0"/>
+        <ImageView android:id="@+id/iv_voice" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/chatto_voice_playing_f3"/>
+    </LinearLayout>
+    <include android:id="@+id/viewVoiceToText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" layout="@layout/view_voice_to_text"/>
+</com.chaoxing.mobile.chat.widget.VoiceMessageView>

@@ -1,0 +1,3588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phones>
+<!--HTC  -->
+  <phone>
+        <model>HTC S610d</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Incredible S</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+             <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Sensation XE with Beats Audio Z715e</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+             <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC T328t</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+             <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC T328w</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+             <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC T328d</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Desire S</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Wildfire S A510e</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC One S</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC S720t</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC S720e</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Wildfire</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Z510d</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC One X</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Sensation Z710e</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Desire HD</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC A310e</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Bee</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC C510e</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Desire</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC EVO 3D X515m</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Glacier</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Rhyme S510b</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC T329t</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC T329d</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC X515d</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC X515m</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Z710t</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ADR6300</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC ChaCha A810e</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>    
+    <phone>
+        <model>HTC T320e</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 
+    <phone>
+        <model>Nexus One</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Z560e</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Ruby</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Legend</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>T-Mobile myTouch 3G Slide</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Z710e</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC Hero</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC A510c</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC S710d</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HTC A9188</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">3</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- MOTO -->
+    <phone>
+        <model>XT531</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>XT928</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>XT910</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ME722</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">150</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   <phone>
+        <model>XT319</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>XT685</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   <phone>
+        <model>MB526</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3157</RecvBaud>
+            <Voltage type="short">200</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   	<phone>
+        <model>ME526</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">2008</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   <phone>
+        <model>MT917</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    <!--ITMP  -->
+        <model>ME525+</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">100</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ME860</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>MT887</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>MT870</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>MT680</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>DROID2 GLOBAL</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   	<phone>
+        <model>MB855</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.3</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ME525</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>MB525</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">100</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ME600</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ME811</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ME863</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ME865</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>XT317</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>XT615</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>XT882</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>XT883</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>MT788</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>   
+    <phone>
+        <model>MZ606</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>MB501</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">860</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>XT800</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>XT701</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">50</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- 索尼-->
+    <phone>
+        <model>MT15i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>LT28h</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>LT22i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">573</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>LT18i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>LT26ii</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>MT27i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">573</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>MT25i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>E15i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>E16i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>LT15i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ST18i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>     
+    <phone>
+        <model>WT19i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ST15i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- 华为-->
+    <phone>
+        <model>S8600</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>U9200E</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HUAWEI U8825D</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    
+    <phone>
+        <model>HUAWEI C8825D</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   	<phone>
+        <model>HUAWEI C8812</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HUAWEI C8813</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HUAWEI C8815</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HUAWEI G520-0000</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HUAWEI Y300-0000</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HUAWEI U8950D</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>U8500</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HUAWEI T8828</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone><!-- 关闭杜比音效 -->
+        <model>HUAWEI U9508</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HUAWEI U9510E</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">3</RfCommMethod>
+        </parameter>
+    </phone>
+	<phone><!--使用50%音量 -->
+        <model>T8830</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">128</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone><!-- 成功率很低60% -->
+        <model>T8830Pro</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.5</SendVolume>
+            <RecvBaud type="short">5512</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>T9200</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>U8836D</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>HUAWEI C8650+</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>u8800</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>   
+    <phone>
+        <model>U8860</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>C8650</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>C8800</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>SONIC</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- 联想 -->
+    <phone>
+        <model>Lenovo A3000-H</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 
+    <phone>
+        <model>Lenovo A698t</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">128</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo A520GRAY</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">2205</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo S880</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">150</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo A580</model>    <!-- 降低发送音量 -->
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo K800</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo S760</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    
+    <phone>
+        <model>Lenovo S899t</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo S2-38AT0</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo A500</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">2205</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   <phone>
+        <model>Lenovo A60</model><!--无法打开-->
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>3GC101</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>IdeaTab K2110A-F</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>  
+    <phone>
+        <model>Lenovo P700</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">0</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo S1-37AH0</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.1</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo A65</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>LNV-Lenovo A790e</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>K1</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.3</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo A789</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo S720</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.3</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>a107</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    
+    <!-- 中兴 -->
+    <phone>
+        <model>ZTE V889D</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ZTE-U V960</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ZTE U880E</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ZTE N880E</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ZTE U930</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ZTE U930HD</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ZTE V970</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">150</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ZTE-C N600+</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>ZTE-C N760</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 
+    <phone>
+        <model>ZTE-C N880</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>  
+    <phone>
+        <model>ZTE U885</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>   
+    <phone>
+        <model>ZTE U887</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>   
+    <phone>
+        <model>ZTE V788D</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>   
+    <phone>
+        <model>V961</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>    
+    <phone>
+        <model>X850</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 
+    <phone>
+        <model>V881</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>   
+    <phone>
+        <model>ZTE-T U880</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>   
+    <phone>
+        <model>ZTE V889M</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>   
+    <!-- 天语 -->  
+    <phone>
+        <model>K-Touch W619</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    
+    <phone>
+        <model>V9</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- 由于手机被刷机，认到的型号是I9300,所以这并不是真正的型号 -->
+    <phone>
+        <model>K-Touch W806</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>W700</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">384</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- LG -->  
+    <phone>
+        <model>LG-F160</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">2123</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+	<phone>
+        <model>LG-P350</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+	<phone>
+        <model>LG-LU6200</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+  	<phone>
+        <model>LG-C550</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+  	<phone>
+        <model>LG-C660</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+  	<phone>
+        <model>LG-P970</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3157</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>    
+  	<phone>
+        <model>Nexus 4</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">100</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+	 <!-- Hisense -->  
+    <phone>
+        <model>HS-U8</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+	 <!-- Haier -->  
+    <phone>
+        <model>Haier HW-W910</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Haier HW-N86W</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    
+	<!-- 小米 -->  
+    <phone>
+        <model>MI-ONE C1</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>MI-ONE</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>MI-ONE Plus</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>  
+    <phone>
+        <model>MI 1S</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 
+    <phone>
+        <model>MI 2</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.5</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>MI 2A</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>  
+    <phone>
+        <model>MI 2S</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 
+    <phone>
+        <model>MI 2SC</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 
+	<!-- TCL -->  
+    <phone>
+        <model>TCLW989</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+	<!-- 步步高 -->  
+    <phone>
+        <model>vivo S7</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>vivo S7t</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+	<!-- TP-LINK -->  
+    <phone>
+        <model>T882</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+	<!-- 阿尔卡特 -->  
+    <phone>
+        <model>ALCATEL one touch 986+</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+	<!--三星 -->  
+    <phone>
+        <model>Galaxy Nexus</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>SCH-i589</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>SCH-i559</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>GT-I9070</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>GT-I9220</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   <phone>
+        <model>GT-I9003</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>GT-S5360</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>GT-S5368</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone><!-- 降低手机发送幅度 -->
+        <model>GT-I9050</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.33</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>GT-S7568</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   <phone>
+        <model>GT-I9300</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   <phone>
+        <model>SCH-i919</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">3</RfCommMethod>
+        </parameter>
+    </phone>
+   	<phone>
+    	<model>GT-I9008L</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">3</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-I9000</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-I8250</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-I9308</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-I9100</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-B5510</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-B5330</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- 成功率只有60% -->
+    <phone>
+    	<model>GT-I9088</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-P1000</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-P7510</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>    
+        <phone>
+    	<model>GT-P7300</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>    
+    <phone>
+    	<model>GT-S5570</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>    
+    <phone>
+    	<model>GT-S5660</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>   
+   	<phone>
+    	<model>GT-S5820</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 	    
+  	<phone>
+    	<model>GT-S5838</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 	
+   	<phone>
+    	<model>GT-S6500D</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 	  
+   	<phone>
+    	<model>SAMSUNG-SGH-I997R</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>    
+   	<phone>
+    	<model>GT-I5700</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   	<phone>
+    	<model>I9023</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>  
+   	<phone>
+    	<model>GT-I9108</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>       
+   	<phone>
+    	<model>Nexus S</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 
+   	<phone>
+    	<model>GT-S5830i</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">3</RfCommMethod>
+        </parameter>
+    </phone>     
+    <phone>
+    	<model>GT-S5830</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">3</RfCommMethod>
+        </parameter>
+    </phone>     
+   	<phone>
+    	<model>SCH-I339</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>    
+   	<phone>
+    	<model>SCH-I519</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>        
+   	<phone>
+    	<model>SCH-i569</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>   
+   	<phone>
+    	<model>SCH-I619</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>        
+   	<phone>
+    	<model>SCH-i909</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1779</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>   
+   	<phone>
+    	<model>GT-S6102E</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-I9100G</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>SCH-i509</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-S5670</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>SCH-i809</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-I9103</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3452</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>SGH-T959</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-I9001</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-S7562</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>SCH-i579</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+    	<model>GT-I8150</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   	<phone>
+    	<model>GT-P3110</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   	<phone>
+    	<model>GT-P5110</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   	<phone>
+    	<model>SGH-M919</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.3</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+   	<phone>
+    	<model>SCH-I669</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    
+    <!-- Coolpad -->
+    <phone>
+        <model>9900</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>5860A</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>7260</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>5855</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">918</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>                                                                                                                           
+        <model>8811</model>                                                    
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>                                          
+            <SendBaud type="short">3675</SendBaud>                             
+            <SendVolume type="float">1.0</SendVolume>                          
+            <RecvBaud type="short">918</RecvBaud>                              
+            <Voltage type="short">3300</Voltage>                               
+            <AudioSource type="int">1</AudioSource>  
+            <FrameLength type ="short">256</FrameLength>    
+            <RfCommMethod type ="short">0</RfCommMethod>                      
+        </parameter>                                                           
+    </phone>   
+    
+    <!-- GreenOrange -->
+    <phone>
+        <model>GO M2</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+        </parameter>
+    </phone>
+    <phone>
+        <model>GO M1</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- 魅族 -->   
+    <phone>
+        <model>M9</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>M030</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>M031</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>M032</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- 夏新 -->
+    <phone>
+        <model>AMOI_N90</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>AMOI N820</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.5</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    
+    <!-- KONKA -->
+    <phone>
+        <model>W900</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>LA-I</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- marvell -->
+    <phone>
+        <model>8150</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- ACER -->
+    <phone>
+        <model>AK330</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- Dell -->
+    <phone>
+        <model>Dell V04B</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- DOOV -->
+    <phone>
+        <model>DOOV_D5</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!--Ramos-->
+    <phone>
+        <model>W32</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!--国红 -->
+    <phone>
+        <model>GHONG W100</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- YUSUN -->
+    <phone>
+        <model>YUSUN--W 800</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">0.5</SendVolume>
+            <RecvBaud type="short">1837</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- HEDY -->
+    <phone>
+        <model>HEDY_H701</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- DEC -->
+    <phone>
+        <model>SX30+</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3617</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- OPPO -->
+    <phone>
+        <model>R811</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>X903</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>U701</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>U701T</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 
+    <phone>
+        <model>U705T</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone> 
+    <phone>
+        <model>X909</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>R815T</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>R819T</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>R823T</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    
+    <!-- GFIVE -->
+    <phone>
+        <model>GFIVE A86</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">0</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!-- 盛大 -->
+    <phone>
+        <model>Bambook S1</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!--Philips-->
+    <phone>
+        <model>W732</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">500</Voltage>
+            <AudioSource type="int">6</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>Lenovo K860</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">1500</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">512</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!--GIONEE-->
+    <phone>
+        <model>GN777</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <!--Hisense-->
+    <phone>
+        <model>HS-EG958</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+     <phone>
+        <model>HS-EG970</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    <phone>
+        <model>X817</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">0</RfCommMethod>
+        </parameter>
+    </phone>
+    
+    <!--EBEST-->
+    <phone>
+        <model>EBEST S5</model>
+        <parameter class="com.landicorp.liu.comm.api.CommParameter">
+            <Wave type="int">1</Wave>
+            <SendBaud type="short">3675</SendBaud>
+            <SendVolume type="float">1.0</SendVolume>
+            <RecvBaud type="short">3675</RecvBaud>
+            <Voltage type="short">3300</Voltage>
+            <AudioSource type="int">1</AudioSource>
+            <FrameLength type ="short">256</FrameLength>
+            <RfCommMethod type ="short">3</RfCommMethod>
+        </parameter>
+    </phone>
+</phones>

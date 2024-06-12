@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="65dp" android:layout_below="@+id/topBar">
+        <ImageView android:id="@+id/iv_delete" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="20dp" android:layout_width="40dp" android:layout_height="60dp" android:src="@drawable/clear" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <EditText android:textSize="15sp" android:textColorHint="#cccccc" android:id="@+id/et_class_name" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/course_chat_name" android:layout_toLeftOf="@+id/iv_delete" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar" layout="@layout/common_loading_transparent"/>
+</RelativeLayout>

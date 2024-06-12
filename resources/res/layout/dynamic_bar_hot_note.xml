@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/hotNoteBar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="12sp" android:textColor="#ff5658" android:gravity="center" android:id="@+id/tvTag" android:background="@drawable/bg_circular_bead_ff5658" android:layout_width="30dp" android:layout_height="18dp" android:layout_marginRight="15dp" android:text="热门"/>
+                <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvTitle" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优质笔记推荐" android:lines="1" android:layout_toRightOf="@+id/vTag"/>
+            </LinearLayout>
+            <ImageView android:background="@drawable/hot_dynamic_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/viewline1" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+    </LinearLayout>
+</LinearLayout>

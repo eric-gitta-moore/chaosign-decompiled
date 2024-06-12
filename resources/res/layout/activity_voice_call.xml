@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fanzhou="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/root_layout" android:background="@color/voice_call_bg_color" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/topLayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_shrink" android:paddingTop="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voicecall_back_white"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1.5">
+        <com.fanzhou.widget.CircleImageView android:id="@+id/swing_card" android:layout_width="115dp" android:layout_height="115dp" android:src="@drawable/default_avatar" android:scaleType="centerCrop" fanzhou:is_circle="false" fanzhou:x_radius="4dp" fanzhou:y_radius="4dp"/>
+        <TextView android:textSize="28sp" android:textColor="@android:color/white" android:ellipsize="middle" android:id="@+id/tv_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="张三" android:singleLine="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/voip_interface_text_color" android:gravity="center" android:id="@+id/tv_call_state" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="正在通话"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1.5">
+        <RelativeLayout android:id="@+id/ll_time" android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/tv_call_hint" android:background="@drawable/bg_toast_voice_call" android:paddingLeft="12dp" android:paddingTop="10dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="40dp" android:text="对方一直未接听，建议稍后再尝试" android:layout_above="@+id/chronometer" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="16sp" android:textColor="#fff" android:id="@+id/chronometer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="0:00" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_time">
+            <RelativeLayout android:id="@+id/ll_voice_control" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_mute" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/icon_mute_normal" android:scaleType="fitCenter"/>
+                    <TextView android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/mute"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageView android:id="@+id/iv_handsfree" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/icon_speaker_normal" android:scaleType="fitCenter"/>
+                    <TextView android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/Hands_free"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_hangup_call" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/btn_hangup_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_hangup"/>
+                    <TextView android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/tvHangup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/Has_been_cancelled_no"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/vg_handsfree2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_handsfree2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_hangup"/>
+                    <TextView android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/Hands_free"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/ll_coming_call" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/btn_refuse_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_hangup" android:layout_weight="1"/>
+                    <TextView android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/jujue"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/btn_answer_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_answer_g" android:layout_weight="1"/>
+                    <TextView android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/answer"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

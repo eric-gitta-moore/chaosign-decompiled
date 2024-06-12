@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar_3"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="#d9d9d9" android:dividerHeight="1px"/>
+        <RelativeLayout android:id="@+id/vg_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/view_arrow" android:background="@drawable/conversation_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginRight="64dp" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="19sp" android:textColor="#cccccc" android:gravity="center" android:id="@+id/tv_no_data_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/has_no_data" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <include layout="@layout/wait_circle_bar_with_text"/>
+    </RelativeLayout>
+</LinearLayout>

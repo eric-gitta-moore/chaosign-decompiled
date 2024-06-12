@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <SurfaceView android:layout_gravity="center" android:id="@+id/video_sv_show_video" android:layout_width="640dp" android:layout_height="480dp"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/video_iv_wait" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@null"/>
+                <ProgressBar android:id="@+id/video_pb_wait" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <ProgressBar android:id="@+id/video_pb_wait_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60dp" android:layout_toLeftOf="@+id/video_pb_wait" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/video_screen_paly" android:background="#90000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageButton android:id="@+id/iv_screen_paly" android:background="@drawable/media_screen_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@null"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:id="@+id/video_list_view" android:background="#90000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentTop="true"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true"/>
+                <GridView android:id="@+id/gvConten" android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="match_parent" android:layout_height="match_parent" android:numColumns="5" android:layout_above="@+id/rlWaitNext" android:layout_below="@+id/top"/>
+                <include android:id="@+id/rlWaitPrevious" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top" layout="@layout/media_footer_view"/>
+                <include android:id="@+id/rlWaitNext" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottom" layout="@layout/media_footer_view"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <HorizontalScrollView android:id="@+id/video_hScrollView_episode_buttons" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/video_linearLayout_episode_buttons" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50dp"/>
+    </HorizontalScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/view_video_ctrl" android:background="@drawable/media_bottom_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/video_ib_play_pause" android:background="#00000000" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="40dp" android:scaleType="centerInside" android:contentDescription="@null"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="-3dp">
+                <TextView android:id="@+id/video_tv_current_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" style="@style/text_white.10"/>
+                <TextView android:id="@+id/video_tv_total_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/text_white.10"/>
+            </RelativeLayout>
+            <SeekBar android:gravity="center_vertical" android:id="@+id/video_sb_process_play" android:paddingLeft="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:maxHeight="4dp" android:progressDrawable="@drawable/seekbar_process_img" android:minHeight="4dp" android:thumb="@drawable/video_view_process_adjust_ball2" android:thumbOffset="10dp"/>
+        </LinearLayout>
+        <SeekBar android:id="@+id/video_sb_volume" android:visibility="gone" android:layout_width="90dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:maxHeight="6dp" android:max="100" android:progressDrawable="@drawable/seekbar_volume_img" android:minHeight="6dp" android:thumb="@drawable/seekbar_volume_thumb" android:thumbOffset="0dp"/>
+        <ImageButton android:id="@+id/video_ib_volume_switch" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:contentDescription="@null"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/video_relativeLayout_toolbar" android:background="@drawable/media_top_bg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentTop="true">
+        <Button android:id="@+id/btnBack" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/media_img_back" android:layout_centerVertical="true"/>
+        <TextView android:ellipsize="middle" android:id="@+id/video_tv_video_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginRight="50dp" android:singleLine="true" android:layout_centerInParent="true" style="@style/text_white.16"/>
+        <ImageButton android:id="@+id/video_list_btn" android:background="@drawable/video_menu_catalog_selector" android:padding="10dp" android:visibility="visible" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="20dp" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:id="@+id/video_ib_video_detail_info" android:background="@drawable/all_black_button_xml" android:visibility="gone" android:layout_width="75dp" android:layout_height="30dp" android:text="详细介绍" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:id="@+id/video_ib_download" android:background="@drawable/all_black_button_xml" android:visibility="gone" android:layout_width="55dp" android:layout_height="30dp" android:text="下载" android:layout_toLeftOf="@+id/video_ib_video_detail_info" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

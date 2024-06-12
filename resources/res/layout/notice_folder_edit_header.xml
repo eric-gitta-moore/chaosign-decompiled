@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_folder" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="66dp">
+        <EditText android:textSize="16sp" android:textColor="@color/normal_black" android:textColorHint="@color/color_ccc" android:gravity="center_vertical" android:id="@+id/editName" android:background="@android:color/white" android:paddingLeft="15dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/bookCollections_createfolder_hint" android:singleLine="true" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_delete" android:background="@color/transparent" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:src="@drawable/clear"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="66dp" android:layout_marginTop="8dp">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/notice_store_sender_letter" android:layout_weight="1" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        <ImageView android:id="@+id/ivAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_richtext_panel_open" android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+    <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

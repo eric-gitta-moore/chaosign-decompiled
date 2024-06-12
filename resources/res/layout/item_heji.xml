@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fanzhou="http://schemas.android.com/apk/res-auto" android:id="@+id/container" android:background="#ffffff" android:paddingBottom="1px" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/rlcontainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlCheckContainer" android:paddingLeft="8dp" android:paddingTop="30dp" android:paddingRight="8dp" android:paddingBottom="30dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="-8dp" android:layout_centerVertical="true">
+                <CheckBox android:id="@+id/cb_selected" android:focusable="false" android:clickable="false" android:layout_width="24dp" android:layout_height="24dp" android:button="@drawable/checkbox_group_member" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/rlCheckContainer">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" fanzhou:is_circle="false" fanzhou:x_radius="4dp" fanzhou:y_radius="4dp"/>
+                    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/rl_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_weight="1">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="13dp">
+                            <TextView android:textSize="14sp" android:textColor="@color/chaoxing_blue" android:ellipsize="end" android:id="@+id/tv_creator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150dp" android:singleLine="true"/>
+                            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                                <TextView android:textSize="9sp" android:textColor="#a8a8a8" android:gravity="center" android:id="@+id/tvTagTop" android:background="@drawable/bg_circular_bead_cccccc" android:visibility="gone" android:layout_width="25dp" android:layout_height="13dp" android:layout_marginLeft="5dp" android:text="@string/note_top"/>
+                            </LinearLayout>
+                            <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/ll_Note_Topic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_Note_Topic" android:paddingLeft="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_weight="1"/>
+                                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:src="@drawable/dynamic_down_arrow_ss" android:layout_weight="0"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_unit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/ll_top">
+                            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13dp" android:layout_below="@+id/ll_top"/>
+                            <TextView android:textSize="12sp" android:textColor="#0099ff" android:id="@+id/tvReadCount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_contentainer" android:background="@drawable/bg_circle_border_f4f5f6_with_radius" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:minHeight="74dp">
+                    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:id="@+id/rlHeji" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.fanzhou.widget.CircleImageView android:id="@+id/ivHeji" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="8dp" android:src="@drawable/icon_att_public_folder" android:scaleType="fitCenter" android:layout_centerVertical="true" fanzhou:border_color="@color/avatar_border" fanzhou:border_width="1px" fanzhou:is_circle="false" fanzhou:x_radius="8px" fanzhou:y_radius="8px"/>
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ivHeji" android:layout_centerVertical="true">
+                                <TextView android:textSize="16sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/tvName" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                                <TextView android:textSize="14sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1" android:layout_below="@+id/tvName"/>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_buttom_rlayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top">
+            <RelativeLayout android:gravity="center" android:id="@+id/rlShare" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/ivShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dynamic_share_icon" android:layout_centerVertical="true"/>
+                <TextView android:textSize="12sp" android:textColor="#4f4f4f" android:id="@+id/tvShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/topic_share" android:layout_toRightOf="@+id/ivShare" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/rlReply" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/ivReply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dynamic_reply" android:layout_centerVertical="true"/>
+                <TextView android:textSize="12sp" android:textColor="#4f4f4f" android:id="@+id/tvReply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/topic_review" android:layout_toRightOf="@+id/ivReply" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/rlPraise" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/ivPraise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dynamic_prise" android:layout_centerVertical="true"/>
+                <TextView android:textSize="12sp" android:textColor="#4f4f4f" android:id="@+id/tvPraise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/topic_like" android:layout_toRightOf="@+id/ivPraise" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/cover" android:background="#80999999" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/rlcontainer" android:layout_alignBottom="@+id/rlcontainer"/>
+    <View android:id="@+id/viewline1" android:background="#f5f6f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp" android:layout_below="@+id/rlcontainer" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/line1" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rlcontainer" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

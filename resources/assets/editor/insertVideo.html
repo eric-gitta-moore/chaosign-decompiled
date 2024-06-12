@@ -1,0 +1,789 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="css/video-js.min.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<style>
+	.video-js{
+		background: none;
+	}
+	.video-js button{
+		outline: none;
+	}
+	.video-js .vjs-control-bar{
+		height: 40px;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+		font-size:12px;
+		color:#FFF;
+	}
+	.video-js .vjs-time-control{
+		line-height: 40px;
+	}
+	.video-js .vjs-current-time, .vjs-no-flex .vjs-current-time{
+		display: block;
+	}
+	.video-js .vjs-duration, .vjs-no-flex .vjs-duration{
+		display: block;
+	}
+	.video-js .vjs-play-control,.video-js .vjs-big-play-button{
+		position: fixed;
+		top:50%;
+		left: 50%;
+		width:50px;
+		height: 50px;
+		margin:-25px 0 0 -25px;
+		background: url(images/icon_video_btn.png) no-repeat; background-size: 50px auto;
+		border:0;
+	}
+	.vjs-icon-play:before, .video-js .vjs-play-control .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before{
+		content: "";
+	}
+	.vjs-icon-pause:before, .video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder:before{
+		content: "";
+	}
+	.video-js .vjs-play-control.vjs-playing{
+		background-position: 0 -50px;
+	}
+	.video-js .vjs-play-control.vjs-paused{
+		background-position: 0 0;
+	}
+	.video-js .vjs-progress-holder{
+	}
+	.vjs-icon-fullscreen-enter:before, .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before{
+		content: "";
+		width:100%;
+		height: 100%;
+		background: url(images/icon_video_fullscreen.png) center center no-repeat;
+		background-size: 12px auto;
+	}
+	.vjs-icon-fullscreen-exit:before, .video-js.vjs-fullscreen .vjs-fullscreen-control .vjs-icon-placeholder:before{
+		content: "";
+		background: url(images/icon_exit_fullscreen.png) center center no-repeat;
+		background-size: 12px auto;
+	}
+	.video-js:hover .vjs-big-play-button, .video-js .vjs-big-play-button:focus{
+		width:50px;
+		height: 50px;
+		top:50%;
+		left:50%;
+		margin:-25px 0 0 -25px;
+		border:0;
+		background-color: transparent;
+	}
+	.video-js .vjs-progress-holder{
+		background: transparent;
+	}
+	.video-js .vjs-slider{
+		background: rgba(255, 255, 255, 0.1);
+		height: 1px;
+	}
+	.video-js .vjs-progress-control:hover .vjs-progress-holder{
+		font-size:inherit;
+	}
+	.video-js .vjs-progress-holder .vjs-play-progress, .video-js .vjs-progress-holder .vjs-load-progress, .video-js .vjs-progress-holder .vjs-load-progress div{
+		background: rgba(255, 255, 255, 0.3);
+	}
+	.video-js .vjs-play-progress:before{
+		width:11px;
+		height:11px;
+		top:-5px;
+	}
+	.video-fullscreen:before{
+		content: "";
+		width:100%;
+		height: 100%;
+		background: url(images/icon_video_fullscreen.png) center center no-repeat;
+    	background-size: 12px auto;
+    	display: block;
+	}
+	.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar{
+		display: none;
+	}
+	.returnFullscreen{
+		width:40px;
+		height: 40px;
+		position: fixed;
+		top:10px;
+		left: 10px;
+		background: url(images/icon_fullscreen_return.png) center center no-repeat;
+		background-size: 24px auto;
+		z-index: 9999;
+		display: none;
+	}
+	.video-js .vjs-progress-holder .vjs-slider-bar{
+		background: #0099FF;
+	}
+</style>
+</head>
+
+<body onhashchange="hashChangeFire()">
+    <div class="attach-box attach-box-video" id="attach-box"><b class="closeAnnex"></b></div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/radialIndicator.min.js"></script>
+    <script type="text/javascript" src="js/video.js" ></script>
+    <script type="text/javascript" src="js/attachment_common.js"></script>
+    <script type="text/javascript">
+        //判断移动端
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        var videoSize = 0;
+        var editorClientType = true;
+        function hashChangeFire(){
+            if(getUrlParam('progressVal') || getUrlParam('progressSize') || getUrlParam('progressStatus')){
+                 $(".circleChart").show();
+                 $(".circleChartMask").show();
+                 $(".video-chat-play").hide();
+                 $(".video-progress-box").show();
+                 $(".video-waiting").hide();
+                var progressVal = getUrlParam('progressVal');
+                var progressSize = getUrlParam('progressSize');
+                var progressStatus = getUrlParam('progressStatus');
+
+                if(getUrlParam('videoSize')){
+                    videoSize = getUrlParam('videoSize');
+                    var videoSizeformat = sizeformat(videoSize) || 0;
+                    $(".video-num-size").html(videoSizeformat);
+                }
+
+                var progress =  parseInt((progressVal / progressSize) * 100);
+                var progresslen = sizeformat(videoSize * (progressVal / progressSize)) ||  0;
+                if(progressStatus == 0){
+                    $('.insertVideo').addClass('video-chat-fail');
+                    $(".circleChart").hide();
+                    $(".circleChartMask").hide();
+                }else if(progress == 100){
+                    $('.video-num-progress').html(videoSize);
+                    radialObj.animate(progress);
+                    setTimeout(function(){
+                        $(".video-chat-play").show();
+                        $(".circleChart-inner").empty();
+                        $(".circleChart").hide();
+                        $(".circleChartMask").hide();
+                        $('.insertVideo').removeClass('video-chat-fail');
+                        $(".video-progress-box").hide();
+                    },200)
+                }else if(progress >= 0){
+                    $(".circleChart").show();
+                    $(".circleChartMask").show();
+                    $('.insertVideo').removeClass('video-chat-fail');
+                    $(".video-num-progress").html(progresslen);
+                    radialObj.animate(progress);
+                }
+            }
+            if(getUrlParam('isvoiceIcon')){
+                $(".closeAnnex").show();
+            }
+            //替换录音标题
+            if(getUrlParam('newtit')){
+                // var newtit = getUrlParam('newtit');
+                // $(".attach_item h2").html(decodeURIComponent(newtit));
+                // jsonOld = JSON.parse(jsonOld);
+                // jsonOld.att_video.titleEdited = 1;
+                // jsonOld = JSON.stringify(jsonOld);
+
+            }
+            if(getUrlParam('newurl')){
+                var newUrl = getUrlParam('newurl');
+                try{
+                    newUrl = b64DecodeUnicode(newUrl);
+                }catch(e){
+
+                }
+                var width = $(window).width();
+//              changeVideoHeight(newUrl,width);
+                newUrl = imgRule(newUrl,width);
+                $(".video-cover").attr("data-src",newUrl);
+                $(".video-cover").css("background-image",'url('+newUrl+')');
+                $(".video-waiting").hide();
+                //上传进度100%没执行显示，这里再执行下
+                $(".video-chat-play").show();
+                $(".circleChart-inner").empty();
+                $(".circleChart").hide();
+                $(".circleChartMask").hide();
+                $(".video-progress-box").hide();
+            }
+            if(getUrlParam('ischangeHeight')){
+            	var ischangeHeight = getUrlParam('ischangeHeight');
+            	if(ischangeHeight == 'true'){
+            		var width = $(window).width();
+              		changeVideoHeight('',width);
+            	}
+            }
+            if(getUrlParam('videourl')){
+                var videourl = getUrlParam('videourl');
+                try{
+                    videourl = b64DecodeUnicode(videourl);
+                }catch(e){
+
+                }
+                creat_video(videourl);
+            }
+            if(getUrlParam('currentTime')){
+                var currentTime = getUrlParam('currentTime');
+                player.currentTime(currentTime);
+            }
+            if(getUrlParam('played')){
+                var played = getUrlParam('played');
+                if(played == 'false'){
+                	player.pause();
+                }
+            }
+        }
+        if(getUrlParam('editorClientType')){
+        	if(getUrlParam('editorClientType') == 'false'){
+        		editorClientType = false;
+        	}
+        }
+        function getUrlParam(name){
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.hash.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return r[2]; return null; //返回参数值
+        }
+        function getImgurlParam(url,name){
+            url = url.replace(/&amp;/g, '&');
+            if (url.indexOf("?") != -1) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                var r =url.split("?")[1].match(reg);
+                if (r != null) return unescape(r[2]);
+                return null;
+            }
+        };
+		//2021.04.22
+        var editorClientType = true;
+        if(getUrlParam('editorClientType')){
+        	if(getUrlParam('editorClientType') == 'false'){
+        		editorClientType = false;
+        	}
+        }
+        var jsonOld = window.name;
+        try{
+            jsonOld = b64DecodeUnicode(jsonOld);
+        }catch(e){
+
+        }
+        try{
+            json = JSON.parse(jsonOld);
+        }catch(e){
+            json = "";
+        }
+        if(json == ""){
+        }
+        var att_video = json.att_video || "";
+        if (att_video != "") {
+            var width = $(window).width();
+            var videoLogoOld = att_video.coverUrl || "";
+            var videoLogo = imgRule(videoLogoOld,width);
+            var videoName = att_video.fileTitle || "";
+            var duration = formartTime(att_video.videoLength || 0);
+            var objectId2 = att_video.objectId2 || "";
+            var version = null;
+            if(isIOS){
+                version = versionSame('4.3.5.6');
+            }
+            if(isAndroid){
+                version = versionSame('4.3.7.5');
+            }
+            if(version && objectId2 == ""){
+                var videoSizeformat = '';
+                var showhide = 'block';
+                var hideshow = 'none';
+
+            }else{
+                videoSize = att_video.fileLength || 0;
+                var videoSizeformat = sizeformat(videoSize) || 0;
+                var showhide = 'none';
+                var hideshow = 'block';
+            }
+            var html = '<div class="attach_item insertVideo">'+
+            				'<div class="circleChartMask"></div>'+
+                            '<div class="circleChart">'+
+                                '<div class="circleChart-bg"></div>'+
+                                '<div class="circleChart-inner"></div>'+
+                            '</div>'+
+                            '<div class="video-waiting" style="display:'+showhide+'"></div>'+
+                            '<div class="video-chat-txt clearfix"><span class="video-txt-aside">上传失败！点击重新上传</span><span class="video-txt-num"><span class="video-progress-box"><span class="video-num-progress"></span>/</span><span class="video-num-size">'+videoSizeformat+'</span></span><span class="video-txt-time">'+duration+'</span></div>'+
+                            '<div class="video-i">'+
+                                '<div class="video-cover" style="background-image: url('+videoLogo+');" data-src="'+videoLogo+'"></div>'+
+                            '</div>'+
+                            '<div class="video-chat-play" style="display:'+hideshow+'"></div>'+
+                            '<span tabindex="0" style="position: absolute;top:0px;width: 100%;">视频名称：'+att_video.fileTitle+'</span>'+
+                            '<div style="position: absolute;width: 100%;height: 100%;display: flex;justify-content: center"><span tabindex="0" style="position: absolute;width: 100px;height: 50px" aria-hidden="false" role="button"  class="aria-video-play" id="videoPlayFlag">点击播放视频</span><div>'+
+                            '<div class="video-fail-icon"></div>'+
+                            '<video class="video-js" id="ztvideo" style="width:1px;height:1px;" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow" x5-video-player-type="h5"></video>'+
+                        '</div>';
+            $(".attach-box").append(html);
+            changeVideoHeight(videoLogoOld,width);
+        }
+
+        var radialObj = radialIndicator('.circleChart-inner', {
+            barBgColor:'transparent',
+            barColor: '#0099ff',
+            barWidth: 6,
+            radius: 44,
+            initValue: 0,
+            fontSize:24,
+            fontColor:'#FFFFFF',
+            fontWeight:'300',
+            roundCorner: true,
+            percentage: true,
+        });
+        if(json.att_video.status && json.att_video.status == 2){
+            $('.insertVideo').addClass('video-chat-fail');
+            $(".circleChart").hide();
+            $(".circleChartMask").hide();
+        }
+        if(json.cid){
+            var cid=json.cid;
+            attachmentUtils.showvoiceIcon(cid,editorClientType);
+        }
+        //根据封面宽高比显示视频宽高
+        function changeVideoHeight(videoLogo,width){
+            if(json.cid){
+                var cid=json.cid;
+//	            var horiScale = 16/9;
+//	            var height = parseInt(width / horiScale);
+//	            $('.attach_item').css('height',height);
+//              if (isAndroid && (typeof javaJs !== 'undefined')) {
+//                 javaJs.executeParentJs('changeIframeHeight("'+cid+'","'+height+'")');
+//              }
+//              if (isIOS) {
+//                  if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+//                      window.webkit.messageHandlers.executeParentJs.postMessage(['changeIframeHeight("'+cid+'","'+height+'")']);
+//                  }else{
+//          　　　　     if(window.top["executeParentJs"]) {
+//                          window.top["executeParentJs"]('changeIframeHeight("'+cid+'","'+height+'")');
+//                      }
+//                  }
+//              }
+                var videoWidth = "";
+                var videoHeight = "";
+                if(json.att_video != ""){
+                    videoWidth = json.att_video.videoWidth;
+                    videoHeight = json.att_video.videoHeight;
+                }
+                var calcuHeight = imgHeight(videoLogo,width,videoWidth,videoHeight);
+                if(calcuHeight && calcuHeight.isHorizontal == false){
+                    $(".attach-box").addClass("video_vertical");
+                }
+                if(calcuHeight && calcuHeight.height){
+                    var height = calcuHeight.height
+                    $('.attach_item').css('height',height);
+                    if(editorClientType == true){
+		                if (isAndroid && (typeof javaJs !== 'undefined')) {
+	                       javaJs.executeParentJs('changeIframeHeight("'+cid+'","'+height+'")');
+	                    }
+	                    if (isIOS) {
+	                        if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+	                            window.webkit.messageHandlers.executeParentJs.postMessage(['changeIframeHeight("'+cid+'","'+height+'")']);
+	                        }else{
+	                　　　　     if(window.top["executeParentJs"]) {
+	                                window.top["executeParentJs"]('changeIframeHeight("'+cid+'","'+height+'")');
+	                            }
+	                        }
+	                    }
+	                }else{
+	                	//改变高度2021.05
+	                	parent.postMessage({'msgType':'changeIframeHeight','cid': cid,"height":height}, '*');
+	                }
+
+                }
+
+            }
+        }
+        function imgHeight(url,w,videoWidth,videoHeight){
+            if(!!videoWidth && !!videoHeight){
+                var winWidth = w;
+                var imgWidth1 = videoWidth;
+                var imgHeight1 = videoHeight;
+                var horiScale = 16/9;
+                var vertiScale = 2/3;
+                if(parseFloat(imgWidth1) > parseFloat(imgHeight1)){
+                    var imgWidth = winWidth;
+                    var imgHeight = parseInt(imgWidth / horiScale);
+                    var isHorizontal = true;
+                }else{
+                    var imgWidth = winWidth;
+                    var imgHeight = parseInt(imgWidth / vertiScale);
+                    var isHorizontal = false;
+                }
+
+            }else if (url.indexOf("rw") != -1 && url.indexOf("rh") != -1 && url.indexOf("origin") != -1){
+                var winWidth = w;
+                var imgWidth1 = getImgurlParam(url,'rw');
+                var imgHeight1 = getImgurlParam(url,'rh');
+                var horiScale = 16/9;
+                var vertiScale = 2/3;
+                if(parseFloat(imgWidth1) > parseFloat(imgHeight1)){
+                    var imgWidth = winWidth;
+                    var imgHeight = parseInt(imgWidth / horiScale);
+                    var isHorizontal = true;
+                }else{
+                    var imgWidth = winWidth;
+                    var imgHeight = parseInt(imgWidth / vertiScale);
+                    var isHorizontal = false;
+                }
+
+            }else{
+                var winWidth = w;
+                var horiScale = 16/9;
+                var imgWidth = winWidth;
+                var imgHeight = parseInt(imgWidth / horiScale);
+                var isHorizontal = true;
+            }
+            var arr = {};
+            arr.isHorizontal = isHorizontal;
+            arr.height = imgHeight;
+            return arr;
+
+        }
+        function versionSame(num){
+            //判断版本号
+            if(navigator.userAgent.indexOf("ChaoXingStudy") > -1){
+                var ua = navigator.userAgent;
+                ua = ua.substring(ua.indexOf("ChaoXingStudy"));
+                ua = ua.substring(ua.indexOf("_")+1);
+                ua = ua.substring(ua.indexOf("_")+1);
+                ua = ua.substring(0,ua.indexOf("_"));
+                var version = ua;
+                if(version > num){
+                    return true;
+                }
+
+            }
+
+            return false;
+        }
+
+        function reuploadFile(attachment){
+        	if(editorClientType == true){
+	            //android
+	            if (isAndroid && (typeof javaJs !== 'undefined')) {
+	               javaJs.reuploadFile(attachment);
+	            }
+	            //ios
+	            if (isIOS) {
+	                if(window.webkit && window.webkit.messageHandlers.reuploadFile){
+	                     window.webkit.messageHandlers.reuploadFile.postMessage([attachment]);
+	                 }else{
+	        　　　　       if(window.top["reuploadFile"]) {
+	                        window.top["reuploadFile"](attachment);
+	                    }
+	                 }
+	            }
+            }else{
+            	parent.postMessage({'msgType':'reuploadFile','mediaType': 'video', 'attachment': json}, '*');
+            }
+        }
+        function revideoTit(attachment,n){
+            //android
+            if (isAndroid && (typeof javaJs !== 'undefined')) {
+               javaJs.revideoTit(attachment,n);
+            }
+            //ios
+            if (isIOS) {
+                var tmp = {};
+                tmp.title = n;
+                tmp.attachment = attachment;
+                if(window.webkit && window.webkit.messageHandlers.revideoTit){
+                    window.webkit.messageHandlers.revideoTit.postMessage([JSON.stringify(tmp)]);
+                }else{
+                    if(window.top["revideoTit"]){
+                        window.top["revideoTit"](JSON.stringify(tmp));
+                    }
+                }
+            }
+
+        }
+        function imgRule(url,w){
+            if (url.indexOf("rw") != -1 && url.indexOf("rh") != -1 && url.indexOf("origin") != -1){
+                var screenWidth = w
+                var winWidth = parseInt(screenWidth*2);
+                var imgWidth1 = getImgurlParam(url,'rw');
+                var imgHeight1 = getImgurlParam(url,'rh');
+                if(imgWidth1 <winWidth){
+                    imgWidth = imgWidth1;
+                }else{
+                    imgWidth = winWidth;
+                }
+
+                var imgHeight = parseInt(imgWidth * imgHeight1 / imgWidth1);
+                var imgUrlNew = url.replace(/origin/g, ''+imgWidth+'_'+imgHeight+'Q50');
+                return imgUrlNew;
+            }else{
+                return url;
+            }
+        }
+        // 附件点击调客户端方法
+        var alreadyPlay = false
+        function openClickEvent(e,attachment){
+                if(e.target.className && e.target.className.indexOf('video-fail-icon')!=-1){
+                    //上传失败重新上传
+                    reuploadFile(jsonOld);
+                }else if(e.target.className && e.target.className.indexOf('closeAnnex')!=-1){
+                    if(json.cid){
+                        var cid=json.cid;
+                        if(editorClientType == true){
+			            	if (isAndroid && (typeof javaJs !== 'undefined')) {
+			                   javaJs.executeParentJs('zss_editor.oniframeClose("'+cid+'")');
+			                }
+			                if (isIOS) {
+			                    if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+			                    window.webkit.messageHandlers.executeParentJs.postMessage(['zss_editor.oniframeClose("'+cid+'")']);
+			                    }else{
+			            　　　　     if(window.top["executeParentJs"]) {
+			                            window.top["executeParentJs"]('zss_editor.oniframeClose("'+cid+'")');
+			                        }
+			                    }
+			                }
+			            }else{
+			            	//删除附件2021.05
+			    			parent.postMessage({'msgType':'deleteIframe','cid': cid}, '*');
+			            }
+                    }
+                    // 无障碍适配
+                }else if(e.target.className && (e.target.className.indexOf('video-chat-play')!=-1 || e.target.className.indexOf('video-cover')!=-1) || (e.target.id && e.target.id.indexOf('videoPlayFlag')!=-1 && !alreadyPlay)){
+                    alreadyPlay = true
+                    if(editorClientType == true){
+                  		//creat_video('http://videosy.soyoung.com/item-263.MP4');
+	                    var version = null;
+				    	if(isIOS){
+				    		version = versionSame('4.8.2.1');
+				    		if(version){
+				    			if(window.webkit && window.webkit.messageHandlers.onClickVideoAttachment){
+		                             window.webkit.messageHandlers.onClickVideoAttachment.postMessage([attachment]);
+		                        }else{
+		                　　　　      				if(window.top["onClickVideoAttachment"]) {
+		                                window.top["onClickVideoAttachment"](attachment);
+		                            }
+		                        }
+				    		}else{
+				    			if(window.webkit && window.webkit.messageHandlers.onClickAttachment){
+		                             window.webkit.messageHandlers.onClickAttachment.postMessage([attachment]);
+		                        }else{
+		                　　　　     				if(window.top["onClickAttachment"]) {
+		                                window.top["onClickAttachment"](attachment);
+		                            }
+		                        }
+				    		}
+				    	}
+				    	if(isAndroid && (typeof javaJs !== 'undefined')){
+				    		version = versionSame('4.8.1.7');
+				    		if(version){
+				    			javaJs.onClickVideoAttachment(attachment);
+				    		}else{
+				    			javaJs.onClickAttachment(attachment);
+				    		}
+				    	}
+                	}else{
+
+						parent.postMessage({'msgType':'playMedia','mediaType': 'video', 'media': json}, '*');
+                	}
+
+
+
+                }
+        };
+        //长按附件
+        var touchY = 0;
+        var longClick =0;
+//      $(".attach-box").on('click',function(e){
+//      	openClickEvent(e,jsonOld)
+//      })
+        $(".attach-box").on({
+            touchstart: function(e){
+                longClick=0;
+                timeOutEvent = setTimeout(function(){
+                    //此处为长按事件
+                    longClick=1;//假如长按，则设置为1
+                    if(json.cid){
+                        var cid=json.cid;
+                        if (isAndroid && (typeof javaJs !== 'undefined')) {
+                           javaJs.executeParentJs('zss_editor.iframeForward("'+cid+'")');
+                        }
+                        if (isIOS) {
+                            if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+                            window.webkit.messageHandlers.executeParentJs.postMessage(['zss_editor.iframeForward("'+cid+'")']);
+                            }else{
+                    　　　　     if(window.top["executeParentJs"]) {
+                                    window.top["executeParentJs"]('zss_editor.iframeForward("'+cid+'")');
+                                }
+                            }
+                        }
+                    }
+
+                },500);
+                var touch = e.originalEvent.targetTouches[0];
+                touchY = touch.clientY;
+            },
+            touchmove: function(e){
+                clearTimeout(timeOutEvent);
+                timeOutEvent = 0;
+                var touch = e.originalEvent.changedTouches[0];
+                if(Math.abs(touch.clientY - touchY) < 10){
+                    if(isAndroid){
+                     e.preventDefault();
+                    }
+                }
+            },
+            touchend: function(e){
+                clearTimeout(timeOutEvent);
+                if(timeOutEvent!=0 && self.longClick==0){//点击
+                   //此处为点击事件----在此处跳转
+                   openClickEvent(e,jsonOld)
+                }
+//              return false;
+            },
+            // 无障碍：点击事件
+            click: function(e){
+                openClickEvent(e,jsonOld)
+            }
+        });
+
+
+    </script>
+    <script>
+            /**
+         * 视频加载兼容处理
+         */
+            var options = {
+                width:'100%',
+                height:'100%',
+                controls:true,
+                controlBar: { // 设置控制条组件
+				    children: [
+				      {name: 'playToggle'},
+				      {name: 'currentTimeDisplay'}, // 当前已播放时间
+				      {name: 'progressControl'}, // 播放进度条
+				      {name: 'durationDisplay'}, // 总时间
+					  {name: 'FullscreenToggle'} // 全屏
+				    ]
+				}
+            };
+//          var player = videojs('ztvideo', options,function(){
+//				player.bigPlayButton.hide();
+//          });
+            var player = videojs('ztvideo', options,function(){
+            	var newbtn = document.createElement('div');
+				newbtn.className = "returnFullscreen";
+				var controlBar = document.getElementsByClassName('vjs-control-bar')[0];
+				controlBar.appendChild(newbtn);
+				player.bigPlayButton.hide();
+
+                // 无障碍适配
+                $('.video-js').attr('aria-hidden',true)
+                $('.video-chat-txt').attr('aria-hidden',true)
+                $('#videoPlayFlag').on({
+                    click:function (e) {
+                        if(player.paused()){
+                            player.play()
+                            // $('#videoPlayFlag')[0].innerText = '点击暂停视频'
+                        }else {
+                            player.pause()
+                            // $('#videoPlayFlag')[0].innerText = '点击播放视频'
+                        }
+
+                    }
+                })
+
+            });
+            function creat_video(url) {
+                $("video").css({"width":"100%","height":"100%"});
+                $(".video-js").css({"width":"100%","height":"100%"});
+                $("video").html('<source class="source" src="' + url + '" type="video/mp4">');
+                $(".video-chat-play").hide();
+                $(".video-chat-txt").hide();
+                player.src(url);
+                player.load(url);
+				player.play();
+                player.on('ended', function() {
+                    // 无障碍适配：视频结束后重置播放按钮文本
+                    $('#videoPlayFlag')[0].innerText = '点击播放视频'
+
+                    $(".video-chat-txt").show();
+                    $(".video-i").show();
+                    if (player.isFullscreen()) {
+			            player.exitFullscreen();
+			        }
+                    player.hasStarted(false);
+                    $("video").css({"width":"1px","height":"1px"});
+                    player.currentTime(0);
+				      player.pause();
+				      player.bigPlayButton.show();
+
+                });
+                player.on("pause", function(){
+                    $('#videoPlayFlag')[0].innerText = '点击播放视频'
+                  $('#videoPlayFlag')[0].focus()
+				});
+                player.on("play", function(){
+                    $('#videoPlayFlag')[0].innerText = '点击暂停视频'
+                  $('#videoPlayFlag')[0].focus()
+				    $(".video-i").hide();
+                	$(".video-chat-txt").hide();
+                	$("video").css({"width":"100%","height":"100%"});
+				});
+				player.on("fullscreenchange", function(){
+					if (player.isFullscreen()) {
+			            $(".returnFullscreen").show();
+			        }else{
+			        	$(".returnFullscreen").hide();
+			        }
+
+
+				});
+				player.on("loadstart", function(){
+				    $(".vjs-play-control").hide();
+				});
+				player.on("playing", function(){
+				    $(".vjs-play-control").show();
+				    //通知其他视频附件暂停播放
+				    if(editorClientType == true){
+					    if (isAndroid && (typeof javaJs !== 'undefined')) {
+	                       javaJs.executeParentJs('zss_editor.onvideoClose("'+cid+'")');
+	                    }
+	                    if (isIOS) {
+	                        if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+	                        window.webkit.messageHandlers.executeParentJs.postMessage(['zss_editor.onvideoClose("'+cid+'")']);
+	                        }else{
+	                　　　　     if(window.top["executeParentJs"]) {
+	                                window.top["executeParentJs"]('zss_editor.onvideoClose("'+cid+'")');
+	                            }
+	                        }
+	                    }
+	                }else{
+	                	parent.postMessage({'msgType':'videoPause', 'attachment': json}, '*');
+	                }
+				});
+				$("#attach-box").on('click','.video-fullscreen',function(e) {
+					var playtime = player.currentTime();
+					var tmp = {};
+	                tmp.playtime= playtime;
+	                tmp.url = url;
+	                tmp.attachment = jsonOld;
+					//android
+                    if (isAndroid && (typeof javaJs !== 'undefined')) {
+                       javaJs.onClickFullscreen(JSON.stringify(tmp));
+                    }
+                    //ios
+                    if (isIOS) {
+                        if(window.webkit && window.webkit.messageHandlers.onClickFullscreen){
+                             window.webkit.messageHandlers.onClickFullscreen.postMessage([JSON.stringify(tmp)]);
+                         }else{
+                　　　　      			    if(window.top["onClickFullscreen"]) {
+                                window.top["onClickFullscreen"](JSON.stringify(tmp));
+                            }
+                         }
+                    }
+				})
+				$("#attach-box").on('click','.returnFullscreen',function(e) {
+					player.exitFullscreen();
+				})
+            };
+
+        </script>
+</body>
+</html>

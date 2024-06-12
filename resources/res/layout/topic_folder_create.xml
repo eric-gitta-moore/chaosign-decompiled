@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ebecee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rlEditName" android:background="@drawable/common_white_stroke_bg" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top">
+        <ImageView android:id="@+id/iv_delete" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="20dp" android:layout_width="40dp" android:layout_height="60dp" android:src="@drawable/clear" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <EditText android:textSize="17sp" android:textColor="@color/normal_black" android:textColorHint="#9e9e9e" android:gravity="center_vertical" android:id="@+id/editGroupName" android:background="@android:color/white" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/public_hint_input_folder_name" android:layout_toLeftOf="@+id/iv_delete" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RadioGroup android:orientation="vertical" android:id="@+id/rgFolderType" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/rlEditName">
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_public" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:layout_below="@+id/rlPrivate">
+            <RadioButton android:id="@+id/rbPublic" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:checked="false" android:button="@drawable/group_type" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/rbPublic">
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topic_folder"/>
+                <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_AllFriends"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_private" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp">
+            <RadioButton android:id="@+id/rbPrivate" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:checked="false" android:button="@drawable/group_type" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/rbPrivate">
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resource_folder"/>
+                <TextView android:textSize="12sp" android:textColor="#b2b2b2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_justme"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+    </RadioGroup>
+    <include layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

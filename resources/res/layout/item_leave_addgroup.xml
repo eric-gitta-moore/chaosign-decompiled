@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.study.contacts.widget.LieaveItemView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/viewFront" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="68dp">
+        <CheckBox android:id="@+id/cb_selected" android:focusable="false" android:visibility="visible" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="8dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/tv_name" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="68dp" android:text="ff" android:layout_toRightOf="@+id/cb_selected"/>
+        <TextView android:textSize="8sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_self_create" android:background="@drawable/bg_self_create" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginLeft="6dp" android:text="@string/bookCollections_Own" android:layout_toRightOf="@+id/tv_name" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:textColor="#999999" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tvCount" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:drawableRight="@drawable/ic_group_info_right_arrow" android:drawablePadding="6dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="1dp"/>
+</com.chaoxing.study.contacts.widget.LieaveItemView>

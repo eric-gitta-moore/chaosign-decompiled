@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/rl_right">
+            <TextView android:textSize="16sp" android:textColor="@color/color_34455e" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingMultiplier="1.1"/>
+            <TextView android:textSize="13sp" android:textColor="@color/color_a6abb3" android:id="@+id/tv_member_count" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rl_right" android:paddingLeft="15dp" android:paddingTop="16dp" android:paddingRight="15dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="13sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_arrow" android:paddingLeft="8dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="10dp" android:layout_alignTop="@+id/clazz" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_arrow" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/color_ebeded" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="16dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

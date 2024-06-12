@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mainpage_backgroud_color" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:id="@+id/schedule_top" android:background="@drawable/shape_scheudle_guide_top_bg" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_35" android:layout_margin="@dimen/adaptive_12dp" android:layout_alignParentRight="true">
+        <Button android:textSize="15sp" android:textColor="#0999ff" android:id="@+id/btnRight" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="@dimen/dp_48" android:text="@string/common_sort" android:layout_alignParentRight="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/ivTagMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/dp_12" android:src="@drawable/schedule_guide_arrow" android:layout_below="@+id/schedule_top" android:layout_alignParentRight="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

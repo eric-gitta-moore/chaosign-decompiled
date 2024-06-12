@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="100" android:drawable="@mipmap/cx_audio_player_ic_beating_1"/>
+    <item android:duration="100" android:drawable="@mipmap/cx_audio_player_ic_beating_2"/>
+    <item android:duration="100" android:drawable="@mipmap/cx_audio_player_ic_beating_3"/>
+    <item android:duration="100" android:drawable="@mipmap/cx_audio_player_ic_beating_4"/>
+    <item android:duration="100" android:drawable="@mipmap/cx_audio_player_ic_beating_5"/>
+    <item android:duration="100" android:drawable="@mipmap/cx_audio_player_ic_beating_6"/>
+    <item android:duration="100" android:drawable="@mipmap/cx_audio_player_ic_beating_7"/>
+    <item android:duration="100" android:drawable="@mipmap/cx_audio_player_ic_beating_8"/>
+</animation-list>

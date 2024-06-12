@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewToolbar" layout="@layout/notice_title_bar"/>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+    <com.fanzhou.widget.PullToRefreshListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_external" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:layout_below="@+id/viewToolbar"/>
+</RelativeLayout>

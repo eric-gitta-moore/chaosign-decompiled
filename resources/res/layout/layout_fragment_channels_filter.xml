@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/tb_top" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.chaoxing.mobile.study.home.mainpage.view.HomePageSwipeRecyclerView android:id="@+id/rv_home_page" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tb_top"/>
+    <FrameLayout android:id="@+id/fl_scroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tb_top">
+        <RelativeLayout android:id="@+id/rl_packup" android:background="@drawable/bg_recommend_filter_up" android:visibility="gone" android:layout_width="match_parent" android:layout_height="35dp">
+            <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/tv_current_channel" android:paddingLeft="10dp" android:paddingTop="4dp" android:paddingRight="10dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中国当代文学" android:drawableRight="@drawable/recommend_filter_down" android:drawablePadding="6dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <com.chaoxing.mobile.study.home.mainpage.view.RecommendFilterView android:id="@+id/v_expand" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <com.chaoxing.mobile.study.home.mainpage.view.HomePageFloatButton android:id="@+id/iv_to_top" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:layout_marginBottom="22dp" android:src="@drawable/img_to_top" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:id="@+id/tv_noData" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无数据" android:layout_centerInParent="true"/>
+</RelativeLayout>

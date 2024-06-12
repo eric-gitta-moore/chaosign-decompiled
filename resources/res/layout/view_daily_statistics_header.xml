@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.office.widget.AttendanceGroupSelectLayout android:id="@+id/attendanceGroupSelectLayout" android:layout_width="match_parent" android:layout_height="60dp"/>
+    <com.chaoxing.mobile.office.widget.DateMonthSelectLayout android:id="@+id/dateMonthSelectLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/ds_color_base_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/today_attendance_statistics" android:layout_marginStart="16.5dp"/>
+    <com.chaoxing.mobile.office.widget.TodayAttendanceStatisticsLayout android:id="@+id/todayAttendanceStcsLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginStart="16.5dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/viewWorkHourLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="11sp" android:textColor="#ffc0c0c3" android:gravity="center" android:layout_gravity="center" android:id="@+id/toggleShowWorkHoursTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.5dp" android:layout_marginBottom="10.5dp" android:text="@string/view_work_hours" android:drawableEnd="@mipmap/icon_arrow_down"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/workHourContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16.5dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14sp" android:textColor="@color/ds_color_base_black" android:id="@+id/avgWorkHourTv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="@color/ds_color_base_gray" android:id="@+id/baseWorkHourTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+            <com.chaoxing.mobile.office.widget.TodayWorkHoursLayout android:id="@+id/todayWorkHourLayout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="#f9f9fa" android:layout_width="match_parent" android:layout_height="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/switchAttendanceLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/workShiftRecyclerView" android:background="@drawable/attend_work_shift_view_shape_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_marginStart="16.5dp" android:layout_marginEnd="16.5dp"/>
+        <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/workShiftMagicIndicator" android:background="@drawable/attend_work_shift_view_shape_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_marginStart="16.5dp" android:layout_marginEnd="16.5dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="20dp">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/punchCountView" android:layout_toStartOf="@+id/punchCountView">
+                <TextView android:textSize="19sp" android:textColor="#202020" android:id="@+id/punchCountTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dp">
+                    <ImageView android:layout_width="7dp" android:layout_height="7dp" android:src="@drawable/ds_work_hour_bg_circle"/>
+                    <TextView android:textSize="10sp" android:textColor="#898989" android:ellipsize="end" android:gravity="center" android:id="@+id/punchTv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/on_duty" android:maxLines="2" android:layout_marginStart="3.5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.chaoxing.mobile.office.widget.DSPunchCountView android:id="@+id/punchCountView" android:layout_width="177dp" android:layout_height="98dp" android:layout_centerInParent="true"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/punchCountView" android:layout_toEndOf="@+id/punchCountView">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="19sp" android:textColor="#202020" android:id="@+id/punch2CountTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dp">
+                        <ImageView android:layout_width="7dp" android:layout_height="7dp" android:src="@drawable/ds_work_hour_bg_circle2" android:contentDescription="@string/app_name"/>
+                        <TextView android:textSize="10sp" android:textColor="#898989" android:ellipsize="end" android:gravity="center" android:id="@+id/punchTv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/off_work" android:maxLines="2" android:layout_marginStart="3.5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/view_divider"/>
+    <com.chaoxing.mobile.office.widget.ASErrorLayout android:gravity="center" android:id="@+id/errorLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

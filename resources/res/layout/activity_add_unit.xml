@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rlEditName" android:background="@drawable/common_white_stroke_bg" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="66dp" android:layout_below="@+id/toolBar">
+        <ImageView android:id="@+id/iv_delete" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <EditText android:textSize="16sp" android:textColor="@color/normal_black" android:textColorHint="#cccccc" android:gravity="center_vertical" android:id="@+id/edit_name" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/create_course_unit" android:singleLine="true" android:layout_toLeftOf="@+id/iv_delete" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolBar" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

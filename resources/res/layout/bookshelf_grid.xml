@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.bookshelf.GridView xmlns:android="http://schemas.android.com/apk/res/android" android:scrollbarStyle="outsideOverlay" android:id="@+id/bookshelf" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingRight="10dp" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:stretchMode="columnWidth" android:columnWidth="@dimen/grid_item_width" android:numColumns="3"/>

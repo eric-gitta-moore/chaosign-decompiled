@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="60dp">
+    <ImageView android:id="@+id/wifiIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui_10_dip" android:layout_marginTop="8dp" android:src="@drawable/wifi_icon" android:layout_alignParentLeft="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/selectorIv" android:layout_toRightOf="@+id/wifiIcon" android:layout_centerVertical="true">
+        <TextView android:textSize="15sp" android:textColor="#333333" android:id="@+id/wifiName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="wifiName"/>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/wifiMacAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="macAddress"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/selectorIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ui_10_dip" android:src="@drawable/btn_select_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

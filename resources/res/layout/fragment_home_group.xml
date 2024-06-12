@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/content_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_group" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <com.chaoxing.mobile.common.NoDataTipView android:id="@+id/vNoData" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include layout="@layout/common_loading_transparent"/>
+        <include android:visibility="gone" layout="@layout/common_loading"/>
+        <include layout="@layout/common_reload"/>
+    </RelativeLayout>
+</RelativeLayout>

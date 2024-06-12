@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/floatview_min" android:width="@dimen/floatview_min"/>
+    <corners android:radius="@dimen/floatview_min"/>
+    <gradient android:startColor="@color/floatview_stroke" android:endColor="@color/floatview_bg" android:angle="0" android:type="radial" android:gradientRadius="@dimen/floatview_min"/>
+</shape>

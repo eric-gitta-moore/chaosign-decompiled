@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#80999999" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivNotifyIcon" android:layout_width="60dp" android:layout_height="60dp" android:contentDescription="@null"/>
+    <TextView android:id="@+id/tvNotifyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ivNotifyIcon" style="@style/text_white.18"/>
+    <TextView android:id="@+id/tvNotifyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ivNotifyIcon" android:layout_below="@+id/tvNotifyTitle" style="@style/text_white.16"/>
+    <ImageView android:id="@+id/ivNotifyCtrl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+</RelativeLayout>

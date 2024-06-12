@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:id="@+id/parentView" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/toolbar_line" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/toolbar"/>
+    <RelativeLayout android:id="@+id/rl_hd_title" android:background="@color/white" android:layout_width="match_parent" android:layout_height="66dp" android:layout_below="@+id/toolbar_line">
+        <ImageView android:id="@+id/iv_delete" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <EditText android:textSize="16sp" android:textColor="#333" android:textColorHint="@color/color_cccccc" android:gravity="center_vertical" android:id="@+id/editHdName" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="宣传图名称" android:singleLine="true" android:layout_toLeftOf="@+id/iv_delete" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_mob_layout" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="120dp" android:layout_below="@+id/rl_hd_title">
+        <RelativeLayout android:id="@+id/rl_mob_title" android:layout_width="match_parent" android:layout_height="70dp">
+            <com.google.android.material.imageview.ShapeableImageView android:id="@+id/iv_logo_mob" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/ic_default_image" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_alignParentStart="true" cx:shapeAppearance="@style/ShapeAppearance.Rounded4dp"/>
+            <RelativeLayout android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_logo_mob">
+                <TextView android:textSize="16sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_mob_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="上传移动端宣传图" android:singleLine="true" android:layout_alignParentTop="true"/>
+                <TextView android:textSize="12sp" android:textColor="#8a8b99" android:id="@+id/tv_mob_sub_title" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="建议图片不超过4M，移动端最佳尺寸: 690*240" android:layout_below="@+id/tv_mob_title"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textColorHint="@color/color_cccccc" android:id="@+id/et_mob_content" android:background="@android:color/transparent" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="移动端宣传图链接" android:layout_toLeftOf="@+id/ivIntroductlear" android:layout_centerVertical="true" android:imeOptions="actionNext" android:paddingStart="5dp" style="@style/group_title_text"/>
+            <ImageView android:id="@+id/ivIntroductlear" android:background="@android:color/transparent" android:padding="8dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="120dp" android:layout_below="@+id/ll_mob_layout">
+        <RelativeLayout android:id="@+id/rl_pc_title" android:layout_width="match_parent" android:layout_height="70dp">
+            <com.google.android.material.imageview.ShapeableImageView android:id="@+id/iv_logo_pc" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/ic_default_image" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_alignParentStart="true" cx:shapeAppearance="@style/ShapeAppearance.Rounded4dp"/>
+            <RelativeLayout android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_logo_pc">
+                <TextView android:textSize="16sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_pc_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="上传PC端宣传图" android:singleLine="true" android:layout_alignParentTop="true"/>
+                <TextView android:textSize="12sp" android:textColor="#8a8b99" android:id="@+id/tv_pc_sub_title" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="建议图片不超过4M，PC端最佳尺寸: 840*130" android:layout_below="@+id/tv_pc_title"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textColorHint="@color/color_cccccc" android:id="@+id/et_pc_content" android:background="@android:color/transparent" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="PC端宣传图链接" android:layout_toLeftOf="@+id/ivIntroductlearPc" android:layout_centerVertical="true" android:imeOptions="actionNext" android:paddingStart="5dp" style="@style/group_title_text"/>
+            <ImageView android:id="@+id/ivIntroductlearPc" android:background="@android:color/transparent" android:padding="8dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="64dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_alignParentStart="true">
+        <Button android:textSize="16sp" android:textColor="#0099ff" android:id="@+id/btn_send_off_hd" android:background="@drawable/btn_border_8cbbff" android:layout_width="0dp" android:layout_height="match_parent" android:text="保存草稿" android:layout_weight="1"/>
+        <Button android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/btn_send_on_hd" android:background="@drawable/btn_border_0099ff" android:layout_width="0dp" android:layout_height="match_parent" android:text="立即上线" android:layout_weight="1" android:layout_marginStart="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

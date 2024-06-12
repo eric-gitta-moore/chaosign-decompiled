@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.toofifi.mobile.smallball.overlays.FloatView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/zk_floatball_width" android:layout_height="@dimen/zk_floatball_height" android:splitMotionEvents="false">
+    <RelativeLayout android:id="@+id/rl_floatview_up" android:background="@mipmap/zk_img_floatview_bg_up" android:layout_width="@dimen/zk_x720" android:layout_height="@dimen/zk_y118">
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/ll_img_min" android:layout_width="@dimen/zk_x150" android:layout_height="match_parent" android:layout_marginBottom="@dimen/zk_y15" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/img_min" android:background="@drawable/zk_floatview_min_selector" android:layout_width="@dimen/zk_y40" android:layout_height="@dimen/zk_y40" android:layout_marginTop="@dimen/zk_y24" android:layout_marginRight="@dimen/zk_y24"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/zk_float_title_size" android:textColor="@color/floatview_title" android:id="@+id/tv_wireless_central_control" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zk_y24" android:layout_marginTop="@dimen/zk_y24" android:text="@string/wireless_central_control"/>
+        <TextView android:textSize="@dimen/zk_floatview_text_size" android:textColor="@color/floatview_title" android:id="@+id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zk_y80" android:layout_marginRight="@dimen/zk_x97" android:text="@string/connected_channel" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/zk_floatview_text_size" android:textColor="@color/floatview_title" android:id="@+id/tv_zk_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zk_y80" android:layout_marginRight="@dimen/zk_x97" android:text="@string/zk_lock" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="@dimen/zk_floatview_text_size" android:textColor="@color/floatview_title" android:id="@+id/tv_zk_host" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zk_y80" android:layout_marginRight="@dimen/zk_x24" android:text="@string/zk_host" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_floatview" android:background="@mipmap/zk_img_floatview_bg_mid" android:focusable="false" android:focusableInTouchMode="false" android:scrollbars="vertical" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rl_floatview_bottom" android:background="@mipmap/zk_img_floatview_bg_buttom" android:layout_width="@dimen/zk_x720" android:layout_height="@dimen/zk_y80">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_zk_wireless_snapshot" android:layout_width="0px" android:layout_height="@dimen/zk_y80" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="@dimen/zk_y20" android:textColor="@color/white" android:id="@+id/tv_zk_wireless_snapshot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zk_y5" android:text="@string/zk_wireless_snapshot"/>
+                <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/rlayout_swv_snapshot" android:layout_width="@dimen/zk_x66" android:layout_height="@dimen/zk_y28" shSwitch:shadowSpace="0dp" shSwitch:tintColor="#ff1782dd"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:background="@mipmap/zk_img_split_mid" android:layout_width="@dimen/zk_x3" android:layout_height="@dimen/zk_y77"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_zk_wireless_speak" android:layout_width="0px" android:layout_height="@dimen/zk_y80" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/zk_y20" android:textColor="@color/white" android:id="@+id/tv_zk_wireless_speak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zk_y5" android:text="@string/zk_wireless_speak"/>
+                <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/rlayout_swv_speak" android:layout_width="@dimen/zk_x66" android:layout_height="@dimen/zk_y28" shSwitch:shadowSpace="0dp" shSwitch:tintColor="#ff1782dd"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_preview" android:layout_width="0px" android:layout_height="@dimen/zk_y80" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:background="@mipmap/zk_img_split_mid" android:layout_width="@dimen/zk_x3" android:layout_height="@dimen/zk_y77"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_zk_wireless_preview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="@dimen/zk_y20" android:textColor="@color/white" android:id="@+id/tv_zk_wireless_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zk_y5" android:text="@string/zk_wireless_preview"/>
+                <ImageView android:id="@+id/iv_zk_preview" android:layout_width="wrap_content" android:layout_height="@dimen/zk_y28" android:src="@mipmap/zk_preview"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rl_floatview_bottom2" android:background="@mipmap/zk_img_floatview_bg_buttom2" android:visibility="gone" android:layout_width="@dimen/zk_x720" android:layout_height="@dimen/zk_y20"/>
+    <TextView android:textSize="@dimen/zk_floatview_sub_text_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/sub_text" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:id="@+id/tv_min" android:visibility="gone" android:layout_width="0px" android:layout_height="0px"/>
+</com.toofifi.mobile.smallball.overlays.FloatView>

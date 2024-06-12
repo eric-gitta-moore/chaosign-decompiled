@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.ViewSwipeListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@+id/cbSelector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ui_10_dip" android:button="@drawable/checkbox_group_member"/>
+        <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:minHeight="65dp" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/rlFolder" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/ivFolderLogo" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_folder_private" android:scaleType="fitXY"/>
+                <RelativeLayout android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toLeftOf="@+id/rl_right" android:layout_toRightOf="@+id/ivFolderLogo" android:layout_centerVertical="true">
+                    <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvFolderTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题标题标题标题标题" android:maxLines="2"/>&gt; 
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="13sp" android:textColor="#ff0099ff" android:id="@+id/tvNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1222" android:maxLines="1" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlFile" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.fanzhou.widget.CircleImageView android:id="@+id/ivFileLogo" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_default_file" android:scaleType="fitXY" app:border_color="@color/avatar_border" app:border_width="1px" app:is_circle="false"/>
+                <RelativeLayout android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/ivFileLogo" android:layout_centerVertical="true">
+                    <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvFileTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题标题标题标题标题" android:maxLines="2"/>&gt; 
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llOperation" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/option1" android:background="@color/color_commen_move" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bookCollections_Move"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/option2" android:background="@color/color_commen_edit" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/edit"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/option3" android:background="@color/color_commen_del" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/common_delete"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="65dp" android:layout_below="@+id/itemContainer"/>
+</com.fanzhou.widget.ViewSwipeListItem>

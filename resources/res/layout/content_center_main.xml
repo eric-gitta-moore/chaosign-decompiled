@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.GestureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/subscriptionContentConter" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llContentCenter" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/topBar" layout="@layout/activity_top_bar"/>
+        <ListView android:id="@+id/lvContent" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ListView_Content"/>
+        <include android:id="@+id/llLoading" android:visibility="gone" layout="@layout/listview_footer_more"/>
+    </LinearLayout>
+    <include android:id="@+id/pbContentWait" layout="@layout/wait_circle_bar_with_text"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/rlBottomToolBarDone" android:layout_width="match_parent" android:layout_height="43dp" android:layout_alignParentBottom="true">
+        <include layout="@layout/bottom_tool_bar"/>
+    </RelativeLayout>
+</com.fanzhou.widget.GestureRelativeLayout>

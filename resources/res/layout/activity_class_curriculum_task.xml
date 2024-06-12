@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_below="@+id/toolBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <RelativeLayout android:id="@+id/rl_head" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                    <RadioGroup android:orientation="horizontal" android:id="@+id/rg_head" android:visibility="visible" android:layout_width="match_parent" android:layout_height="30dp" android:layout_centerInParent="true">
+                        <RadioButton android:textSize="15sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/rb_tab_ppt" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="PPT" android:layout_weight="1"/>
+                        <RadioButton android:textSize="15sp" android:textColor="#808080" android:gravity="center" android:id="@+id/rb_tab_task" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:button="@null" android:text="@string/teacher_task_record" android:layout_weight="1"/>
+                    </RadioGroup>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_alignParentBottom="true">
+                        <ImageView android:id="@+id/iv_tab_bottom_img" android:background="#0099ff" android:layout_width="0dp" android:layout_height="1dp" android:scaleType="matrix" android:layout_weight="1"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+            <ViewFlipper android:id="@+id/vfMission" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <FrameLayout android:id="@+id/flMissionLeft" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <FrameLayout android:id="@+id/flMissionRight" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </ViewFlipper>
+            <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_bottom" android:layout_width="match_parent" android:layout_height="62dp" android:weightSum="1">
+                <TextView android:textSize="13dp" android:textColor="#0099ff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/mission_control" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/mission_control_open" android:drawableTop="@drawable/mission_control_open" android:drawablePadding="4dp" android:layout_weight="1"/>
+                <ImageView android:textSize="13dp" android:textColor="#0099ff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/mission_add" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/mission_add" android:drawablePadding="4dp" android:layout_weight="1"/>
+                <TextView android:textSize="13dp" android:textColor="#0099ff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/mission_chat" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/mission_class" android:drawableTop="@drawable/mission_student" android:drawablePadding="4dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+        <include android:id="@+id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fl_operation" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

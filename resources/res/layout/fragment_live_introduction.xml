@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#e7e9ed" android:paddingLeft="15dp" android:paddingTop="24dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/live_introduction" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@+id/live_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="直播"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/scroll_view" android:background="#e7e9ed" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp">
+        <WebView android:id="@+id/live_introduction" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </ScrollView>
+    <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/live_no_introduction" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

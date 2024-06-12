@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/clickLayout" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:layout_gravity="center_vertical" android:id="@+id/cb_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/folderIv" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_folder_public_30dp" android:layout_toRightOf="@+id/cb_selector" android:layout_centerVertical="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ui_10_dip" android:layout_toRightOf="@+id/folderIv" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_65" android:layout_toLeftOf="@+id/arrowRightIv" android:layout_centerInParent="true">
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/nameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/descTv1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true"/>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/descTv2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/arrowRightIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/dividerIv" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

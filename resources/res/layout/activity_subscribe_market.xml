@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ebecee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topBar" layout="@layout/activity_top_bar"/>
+    <com.chaoxing.mobile.widget.GeneralSelectBar android:id="@+id/selectBar" android:background="@drawable/button_blue_stroke" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginLeft="18dp" android:layout_marginTop="6dp" android:layout_marginRight="18dp" android:layout_marginBottom="6dp" android:layout_below="@+id/topBar" style="@style/opencourse_download_selectbar_style">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rgContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar">
+            <RadioButton android:gravity="center" android:id="@+id/rbtnRecommend" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/btn_Recommend_text" android:layout_weight="1" style="@style/Radio_Button_Center_Text"/>
+            <RadioButton android:gravity="center" android:id="@+id/rbtnNavigation" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/btn_navigation_text" android:layout_weight="1" style="@style/Radio_Button_Center_Text"/>
+        </RadioGroup>
+    </com.chaoxing.mobile.widget.GeneralSelectBar>
+    <com.chaoxing.mobile.widget.ForbidenScrollViewPager android:id="@+id/vpContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/selectBar"/>
+</RelativeLayout>

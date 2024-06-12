@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="50dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+        <RelativeLayout android:id="@+id/left_zone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/schedule_done_state" android:padding="15dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableLeft="@drawable/selector_schedule_priority_no_cb" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/schedule_red_dot" android:visibility="gone" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="-19dp" android:layout_marginTop="12dp" android:src="@drawable/shape_red_circle_ff" android:layout_toRightOf="@+id/schedule_done_state"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/onr_key_type" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_toRightOf="@+id/left_zone" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/schedule_title" android:layout_width="match_parent" android:layout_height="50dp" android:text="标题内容" android:maxLines="1" android:maxEms="15" android:layout_toLeftOf="@+id/schedule_remind_info" android:layout_toRightOf="@+id/onr_key_type"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/schedule_remind_info" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="14sp" android:layout_gravity="right" android:id="@+id/schedule_happen_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:layout_gravity="right" android:id="@+id/schedule_remind_icon" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginTop="1dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

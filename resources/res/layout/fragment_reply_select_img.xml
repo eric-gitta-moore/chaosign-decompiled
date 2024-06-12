@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSelectedImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:overScrollMode="never"/>
+    <TextView android:textSize="12sp" android:textColor="#87888c" android:id="@+id/tvSelectedCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/9" android:layout_below="@+id/rvSelectedImage" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="12sp" android:textColor="#87888c" android:id="@+id/tvSelectTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="44dp" android:text="@string/topic_body_select_image_can_select_image_and_video" android:layout_below="@+id/tvSelectedCount" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

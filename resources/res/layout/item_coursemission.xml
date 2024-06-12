@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_icon" android:layout_width="45dp" android:layout_height="45dp" android:layout_margin="16dp" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/tv_mission_tip" android:background="@drawable/shape_mission_circle" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="50dp" android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/centerContiner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="3" android:layout_toRightOf="@+id/img_icon">
+        <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[投票/问卷]" android:lines="1"/>
+        <TextView android:textSize="11sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tvFrom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="未签 来自《语言的艺术》 默认班级" android:lines="1" android:layout_below="@+id/tvTitle"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rightContiner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_weight="1" android:layout_toRightOf="@+id/centerContiner">
+        <TextView android:ellipsize="end" android:gravity="right" android:id="@+id/tvTag" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="剩余" android:maxLines="2"/>
+        <TextView android:id="@+id/tvTime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="16:26:39.0" android:layout_below="@+id/tvTag"/>
+    </RelativeLayout>
+</LinearLayout>

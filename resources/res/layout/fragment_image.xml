@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0dp">
+    <ImageView android:id="@+id/imageView" android:background="@drawable/opencourse_recommend_default_play_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/opencourse_recommend_default_cover" android:scaleType="centerInside" android:adjustViewBounds="true"/>
+</RelativeLayout>

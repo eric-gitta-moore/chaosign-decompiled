@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/selectable_item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llContainer" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="14sp" android:textColor="#b3b3b3" android:gravity="center" android:id="@+id/tvEndTip" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/public_list_no_more_hint"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fanzhou="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-70dp" android:layout_marginBottom="1px">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/viewFront" android:background="@drawable/selector_list_note_item" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="14dp" android:paddingBottom="12dp" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/ivLogo" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="6dp" android:src="@drawable/ic_default_image" android:scaleType="fitXY" fanzhou:is_circle="false" fanzhou:x_radius="4dp" fanzhou:y_radius="4dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11sp" android:textColor="#999999" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvName" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@+id/tvTime"/>
+                <TextView android:textSize="13sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@+id/tvName"/>
+                <TextView android:textSize="14sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tvTag" android:background="@drawable/bg_attachment_group" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="小组" android:singleLine="true" android:layout_toRightOf="@+id/tvTitle"/>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tvContent"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="@color/color_commen_del" android:layout_width="70dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/gTimeline_Delete"/>
+    </LinearLayout>
+    <View android:background="#b2b2b2" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="1px"/>
+</LinearLayout>

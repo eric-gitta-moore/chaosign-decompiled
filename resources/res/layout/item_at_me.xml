@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlBody" android:background="@drawable/bg_topic_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlContent" android:background="@android:color/white" android:paddingTop="8dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlTop" android:paddingLeft="8dp" android:paddingTop="6dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" ss:border_color="@color/avatar_border" ss:border_width="1px" ss:is_circle="false" ss:x_radius="6px" ss:y_radius="6px"/>
+                <RelativeLayout android:id="@+id/rlLeft" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_toLeftOf="@+id/rlReadStatus" android:layout_toRightOf="@+id/ivAvatar" android:layout_centerVertical="true">
+                    <TextView android:textSize="16sp" android:textColor="#ff0066cc" android:ellipsize="end" android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小清新" android:singleLine="true"/>
+                    <TextView android:textSize="14sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvOrganization" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="南京航空航天大学" android:singleLine="true" android:layout_toRightOf="@+id/tvAuthor"/>
+                    <TextView android:textSize="14sp" android:textColor="#ff999999" android:id="@+id/tvPublishTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="1分钟前" android:layout_toRightOf="@+id/tvOrganization"/>
+                    <TextView android:textSize="14sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvGroup" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="来自我的小组" android:singleLine="true" android:layout_below="@+id/tvAuthor"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rlReadStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvReadStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_contents_Unread" android:drawableLeft="@drawable/ic_reply_read_status" android:drawablePadding="4dp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlAtMe" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlTop">
+                <TextView android:textSize="14sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tvAtContent" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@钱俊芝话题是我发的，他人回复的" android:singleLine="true"/>
+                <RelativeLayout android:id="@+id/rlAtImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tvAtContent">
+                    <ImageView android:id="@+id/ivAtImage" android:background="@drawable/ic_default_image" android:layout_width="64dp" android:layout_height="64dp" android:scaleType="fitXY" android:cropToPadding="true"/>
+                    <TextView android:textSize="14sp" android:textColor="#ff0099ff" android:id="@+id/tvAtUsers" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@钱俊芝" android:singleLine="true" android:layout_toRightOf="@+id/ivAtImage" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlReply" android:background="#fff3f3f5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="6dp" android:layout_marginRight="6dp" android:layout_below="@+id/rlAtMe">
+                <TextView android:textSize="14sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/tvReplyContent" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="钱俊芝：原话题标题，没有标题的，直接取两行内容，后面加…" android:maxLines="2"/>
+                <RelativeLayout android:id="@+id/rlReplyImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tvReplyContent">
+                    <ImageView android:id="@+id/ivReplyImage" android:background="@drawable/ic_default_image" android:layout_width="64dp" android:layout_height="64dp" android:scaleType="fitXY" android:cropToPadding="true"/>
+                    <TextView android:textSize="14sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/tvReplyImageAuth" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="钱俊芝的图片" android:singleLine="true" android:layout_toRightOf="@+id/ivReplyImage" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

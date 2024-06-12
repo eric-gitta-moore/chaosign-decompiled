@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.GestureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/grlContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/lvContent" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" style="@style/List_View_Style"/>
+        <include layout="@layout/search_result_footer"/>
+    </LinearLayout>
+    <include layout="@layout/wait_circle_bar_with_text"/>&quot; 
+    <ImageView android:id="@+id/ivTransBlack" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/trans_black"/>
+</com.fanzhou.widget.GestureRelativeLayout>

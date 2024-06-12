@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:my="http://schemas.android.com/apk/res-auto" android:id="@+id/rlContainer" android:background="@drawable/bg_circle_border_f4f5f6" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlContentContainer" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:minHeight="74dp">
+        <com.fanzhou.widget.CircleImageView android:id="@+id/ivMissionHeader" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="10dp" android:layout_centerVertical="true" my:is_circle="false" my:x_radius="4dp" my:y_radius="4dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ivMissionHeader" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvMissionTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="问卷" android:maxLines="2"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tvMissionContent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="ceshi" android:maxLines="1" android:layout_alignBottom="@+id/tvMissionTitle"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_remove" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_att_delete" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+</RelativeLayout>

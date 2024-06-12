@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/lesson_online_help_message_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="13sp" android:textColor="@color/white" android:id="@+id/tv_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="13dp" android:layout_marginRight="110dp" android:layout_marginBottom="13dp" android:text="第3组请求帮助，是否前往？" android:lines="1"/>
+    <TextView android:textSize="11dp" android:textColor="@color/white" android:id="@+id/tv_go" android:background="@drawable/lesson_online_help_message_item_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/course_online_teacher_go" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/cancel" android:layout_toLeftOf="@+id/tv_go" android:layout_centerVertical="true"/>
+</RelativeLayout>

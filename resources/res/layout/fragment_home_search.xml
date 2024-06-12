@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_mine" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/selector_list_item" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+    </RelativeLayout>
+    <include android:id="@+id/loading" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+    <include android:id="@+id/foo_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_white"/>
+    <include android:id="@+id/reload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+    <TextView android:textSize="17sp" android:textColor="#999999" android:id="@+id/tv_empty_list_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_no_search_result" android:layout_centerInParent="true"/>
+    <include android:visibility="gone" layout="@layout/home_search_empty_view"/>
+    <include android:id="@+id/loadingView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/common_loading_transparent"/>
+</RelativeLayout>

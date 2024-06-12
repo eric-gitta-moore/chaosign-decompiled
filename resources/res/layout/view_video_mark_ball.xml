@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/vector_float_view_bg" android:layout_width="55dp" android:layout_height="55dp">
+    <ImageView android:id="@+id/iv_video_mark" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_richtext_video_mark"/>
+    <TextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/tv_video_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/richtext_click_mark"/>
+</LinearLayout>

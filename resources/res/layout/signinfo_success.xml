@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textColor="#3bba6d" android:layout_gravity="center_horizontal" android:paddingBottom="50dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 恭喜你签到成功！" android:drawableTop="@drawable/sign_success" android:drawablePadding="14dp"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_name"/>
+            <TextView android:textSize="18sp" android:id="@+id/sign_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_real_name"/>
+        </LinearLayout>
+        <LinearLayout android:textSize="18sp" android:orientation="horizontal" android:id="@+id/ll_teacher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="18sp" android:textColor="@color/sign_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_tea"/>
+            <TextView android:textSize="18sp" android:textColor="@color/sign_gray" android:id="@+id/sign_tea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_real_tea"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_course" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+            <TextView android:textSize="18sp" android:textColor="@color/sign_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_course"/>
+            <TextView android:textSize="18sp" android:textColor="@color/sign_gray" android:id="@+id/sign_course" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_course_name"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="@color/sign_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_time"/>
+            <TextView android:textSize="18sp" android:textColor="@color/sign_gray" android:id="@+id/sign_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_real_time"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

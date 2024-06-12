@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/lv_personal_mission" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/tv_save" android:layout_below="@+id/toolBar"/>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_save" android:background="@drawable/bg_rect_0099ff" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:minHeight="40dp" android:layout_alignParentBottom="true"/>
+    <include layout="@layout/common_loading_transparent"/>
+    <include android:visibility="gone" layout="@layout/reload"/>
+    <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tvTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mission_lib_empty_tips" android:layout_centerInParent="true"/>
+</RelativeLayout>

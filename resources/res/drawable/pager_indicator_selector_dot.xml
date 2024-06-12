@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/pager_indicator_selected_dot"/>
+    <item android:drawable="@drawable/pager_indicator_default_dot"/>
+</selector>

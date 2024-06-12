@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+    <CheckBox android:id="@+id/checkBox" android:focusable="false" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:button="@drawable/checkbox_group_member" android:layout_marginStart="15dp" android:layout_marginEnd="-5dp"/>
+    <RelativeLayout android:id="@+id/rl_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp">
+        <com.chaoxing.mobile.chat.widget.ConversationAvatar2 android:id="@+id/iv_icon" android:background="#ebebeb" android:layout_width="32dp" android:layout_height="32dp"/>
+        <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/icon_user_head_portrait" app:border_color="@color/avatar_border" app:border_width="1px" app:is_circle="false" app:x_radius="3dp" app:y_radius="3dp"/>
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginEnd="15dp">
+        <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/tvMemberName" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/tvMemberTag" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_default="1"/>
+        <TextView android:textSize="11sp" android:textColor="@android:color/white" android:id="@+id/tvMemberTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4dp" android:paddingEnd="4dp" android:layout_marginStart="10dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@+id/tvMemberName" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

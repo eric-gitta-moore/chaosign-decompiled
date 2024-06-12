@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.GestureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/grlLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/rlTitle" layout="@layout/activity_top_bar"/>
+    <include android:id="@+id/view_no_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rlTitle" layout="@layout/setting_item_no_content"/>
+    <include android:id="@+id/view_hitcount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlTitle" layout="@layout/search_results_hitcount_header_view"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/view_hitcount" layout="@layout/search_results"/>
+</com.fanzhou.widget.GestureRelativeLayout>

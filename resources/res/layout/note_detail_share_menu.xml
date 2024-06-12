@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#80999999" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/note_detail_share_menu_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/rl_save" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="54dp">
+            <ImageView android:id="@+id/ivSave" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/icon_note_detail_save_button" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tvSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="@string/editor_save" android:layout_toRightOf="@+id/ivSave" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_cooperate" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_18" android:layout_width="match_parent" android:layout_height="54dp">
+            <ImageView android:id="@+id/ivCooperate" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/icon_note_detail_share_menu_cooperate" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tvCooperate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="@string/comment_cooperate" android:layout_toRightOf="@+id/ivCooperate" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icon_note_detail_share_menu_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tvCancel" android:layout_width="match_parent" android:layout_height="@dimen/dp_54" android:text="取消"/>
+    </LinearLayout>
+</RelativeLayout>

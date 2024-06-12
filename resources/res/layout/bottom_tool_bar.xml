@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:background="@drawable/bottom_toolbar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+    <Button android:textSize="18sp" android:textColor="@color/light_blue" android:id="@+id/btnDone" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/done"/>
+</LinearLayout>

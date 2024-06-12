@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titleBar">
+        <com.fanzhou.widget.PullToRefreshListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listview" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#e5e5e5" android:dividerHeight="1px" android:headerDividersEnabled="true" android:footerDividersEnabled="true"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" layout="@layout/page_loading_circle"/>
+        <include android:id="@+id/viewLoading2" android:visibility="gone" layout="@layout/page_loading_circle"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_note_failed_match_parent"/>
+    </RelativeLayout>
+    <TextView android:textSize="18sp" android:id="@+id/tvShowNoting" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/validate_listview_shownothing" android:layout_centerInParent="true"/>
+</RelativeLayout>

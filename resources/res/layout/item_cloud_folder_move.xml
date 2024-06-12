@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:minHeight="@dimen/adaptive_65dp" android:layout_toLeftOf="@+id/btn_next" android:layout_centerVertical="true">
+            <ImageView android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/iv_icon" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/ic_folder_private" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tv_count" android:layout_toRightOf="@+id/iv_icon" android:layout_centerVertical="true">
+                <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_name" android:paddingRight="38dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+                <TextView android:textSize="13sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_subtitle" android:paddingRight="38dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@+id/tv_folder" android:layout_centerVertical="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <Button android:textColor="#0099ff" android:id="@+id/btn_next" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iv_selected" android:text="@string/common_enter" android:drawableRight="@drawable/book_source_next_level" android:drawablePadding="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/divier1" android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="65dp" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/divier2" android:background="@color/color_f5f6f8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="8dp" android:layout_alignParentBottom="true"/>
+</LinearLayout>

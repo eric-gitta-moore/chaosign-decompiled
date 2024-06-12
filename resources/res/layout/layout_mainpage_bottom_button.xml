@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_btn3" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_btn3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_main_recommend_share" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="#4f4f4f" android:id="@+id/tv_btn3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/topic_share" android:layout_toRightOf="@+id/iv_btn3" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_btn1" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_main_recommend_comment" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="#4f4f4f" android:id="@+id/tv_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/topic_review" android:layout_toRightOf="@+id/iv_btn1" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_btn2" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_btn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_main_recommend_prise" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="#4f4f4f" android:id="@+id/tv_btn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/topic_like" android:layout_toRightOf="@+id/iv_btn2" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

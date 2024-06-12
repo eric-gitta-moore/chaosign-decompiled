@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_category" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/rl_symbol_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_symbol" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.chaoxing.input.ime.widget.OverlayView android:id="@+id/overlay_symbol" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <com.chaoxing.input.ime.widget.KeyButton android:id="@+id/kb" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.chaoxing.input.ime.widget.KeyButton android:id="@+id/kb2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.chaoxing.input.ime.widget.KeyButton android:id="@+id/kb3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.chaoxing.input.ime.widget.KeyButton android:id="@+id/kb4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.chaoxing.input.ime.widget.KeyButton android:id="@+id/kb5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</merge>

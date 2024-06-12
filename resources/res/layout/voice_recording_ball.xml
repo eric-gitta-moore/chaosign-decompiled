@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/vector_float_view_bg" android:layout_width="60dp" android:layout_height="60dp">
+    <ImageView android:id="@+id/iv" android:background="@drawable/voice_recording_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp"/>
+    <TextView android:textSize="10sp" android:textColor="@android:color/white" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

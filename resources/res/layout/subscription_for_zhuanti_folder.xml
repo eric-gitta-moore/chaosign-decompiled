@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/headerBar" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentTop="true" layout="@layout/activity_top_bar"/>
+    <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:background="@color/gray_style" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="1px" android:layout_below="@+id/headerBar"/>
+    <include layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

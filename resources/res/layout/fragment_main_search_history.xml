@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/vRoot" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_history_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="4dp">
+            <TextView android:textSize="14sp" android:textColor="@color/gray_b3b3b3" android:layout_gravity="center_vertical" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/recent_search" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_delete" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/search_history_delete" android:contentDescription="@string/accessibility_clear_content_description"/>
+        </LinearLayout>
+        <View android:id="@+id/view_divider_history" android:background="@color/public_divider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_history_container" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.chaoxing.mobile.widget.WordWrapView android:id="@+id/view_wordwrap" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp" android:text="搜索指定内容" android:singleLine="true"/>
+                <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/tv_search_app" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_home_search_app" android:singleLine="true" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/tv_search_course" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_home_search_course" android:singleLine="true" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/tv_search_group_chat" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_home_search_group_chat" android:singleLine="true" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/tv_search_note" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_home_search_note" android:singleLine="true" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

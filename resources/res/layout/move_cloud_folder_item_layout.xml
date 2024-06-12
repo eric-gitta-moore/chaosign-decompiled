@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/itemContainer" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/rlContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp" android:layout_toLeftOf="@+id/btnNext">
+        <ImageView android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/iv_icon" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:src="@drawable/ic_folder_private"/>
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvName" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/iv_icon"/>
+    </RelativeLayout>
+    <Button android:textColor="#0099ff" android:id="@+id/btnNext" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iv_selected" android:text="@string/common_enter" android:drawableRight="@drawable/book_source_next_level" android:drawablePadding="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

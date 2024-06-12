@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.reader.pdz.widget.BookBottomToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/pdg_bottom_bar" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_read_tip" android:background="@drawable/lib_reader_pdz_read_black_bubble" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:minWidth="70dp" android:text="-1/-1" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/lib_reader_pdz_toolbar_bottom_bg" android:layout_width="match_parent" android:layout_height="55dp" android:layout_below="@+id/tv_read_tip">
+        <ImageView android:id="@+id/iv_menu" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/lib_reader_pdz_category" android:scaleType="centerInside" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_note" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/lib_reader_pdz_note_open" android:scaleType="centerInside" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_light" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/lib_reader_pdz_read_display" android:scaleType="centerInside" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_gopage" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/lib_reader_pdz_read_goto_page" android:scaleType="centerInside" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_changeov" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/lib_reader_pdz_orientation_vertical" android:scaleType="centerInside" android:layout_weight="1"/>
+    </LinearLayout>
+</com.chaoxing.reader.pdz.widget.BookBottomToolbarLayout>

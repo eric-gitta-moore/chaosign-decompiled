@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:paddingBottom="1px" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlContent" android:paddingLeft="12dp" android:paddingTop="15dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/rlMiddle" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="18sp" android:textColor="#ff000000" android:id="@+id/tvTitle" android:background="@null" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="false"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/vg_sender" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/vg_sender_name" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="#0099ff" android:ellipsize="end" android:id="@+id/tv_sender_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:maxLines="1" android:maxEms="4"/>
+                    <TextView android:textSize="12sp" android:textColor="#666666" android:id="@+id/tv_sender_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_read" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp">
+                        <TextView android:textSize="14sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="阅读:"/>
+                        <TextView android:textSize="14sp" android:textColor="#666666" android:id="@+id/tv_sender" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/tv_edit" android:paddingLeft="6dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/something_xuexitong_edit"/>
+                    <TextView android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/tv_retracement" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_notice_recall"/>
+                    <TextView android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/tv_unread_reminder" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_notice_UnreadReminder"/>
+                    <Button android:id="@+id/btnPraise" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_do_praise"/>
+                    <TextView android:textSize="10sp" android:textColor="#0099ff" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_praise_count" android:visibility="gone" android:layout_width="23dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignTop="@+id/btnPraise" android:layout_alignRight="@+id/btnPraise" android:layout_alignParentRight="true"/>
+                    <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/vg_send_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                    <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/tv_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_contents_Send_ing"/>
+                    <TextView android:textSize="12sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/tv_reader_names" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:maxLines="2"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/vg_send_name_cs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                    <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/tv_send_cs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抄送给:"/>
+                    <TextView android:textSize="12sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/tv_reader_names_cs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:maxLines="2"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/vg_reader_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                    <TextView android:textSize="14sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_contents_Read"/>
+                    <TextView android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/tv_reader_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@+id/dividerLine" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+            <EditText android:textSize="17sp" android:textColor="#ff333333" android:id="@+id/tvContent" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:lineSpacingMultiplier="1.2"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llImage" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            <com.chaoxing.mobile.attachment.view.AttachmentViewLayout android:id="@+id/view_attachments" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/ivPraiseTopLine" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="4dp" android:layout_below="@+id/rlContent"/>
+    <RelativeLayout android:id="@+id/rlPraiseUser" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="40dp" android:layout_below="@+id/ivPraiseTopLine">
+        <TextView android:textSize="16sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvPraiseUser" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:layout_toLeftOf="@+id/btnReplyOrder" android:layout_above="@+id/ivPraiseBottomLine"/>
+        <Button android:id="@+id/btnReplyOrder" android:background="@android:color/transparent" android:paddingLeft="20dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/ic_topic_reply_order_asc" android:layout_above="@+id/ivPraiseBottomLine" android:layout_alignParentRight="true"/>
+        <ImageView android:id="@+id/ivPraiseBottomLine" android:background="#ffc5c5c5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/viewLoadAll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlPraiseUser">
+        <TextView android:textSize="16sp" android:textColor="#0066cc" android:id="@+id/tvLoadAll" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="之前的评论..."/>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignTop="@+id/tvLoadAll"/>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignBottom="@+id/tvLoadAll"/>
+    </RelativeLayout>
+</RelativeLayout>

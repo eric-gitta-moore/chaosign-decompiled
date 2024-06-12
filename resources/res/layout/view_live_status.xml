@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:id="@+id/pb_loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" style="@android:style/Widget.ProgressBar.Small"/>
+    <TextView android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="直播尚未开始"/>
+    <Button android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_status_operate" android:background="@drawable/bg_border_white" android:paddingLeft="24dp" android:paddingTop="6dp" android:paddingRight="24dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="关闭"/>
+</merge>

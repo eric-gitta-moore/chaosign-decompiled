@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:background="#ebecee" android:paddingLeft="16dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="#666666" android:id="@+id/tv_separator" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/btn_option"/>
+    <Button android:textSize="14sp" android:textColor="#0099ff" android:gravity="center_vertical" android:id="@+id/btn_option" android:background="@android:color/transparent" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/tv_separator" android:layout_alignBottom="@+id/tv_separator" android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="@color/bg_tv" android:gravity="center" android:id="@+id/cancel" android:background="@color/white" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="取消" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/divider" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="10dp" android:layout_above="@+id/cancel"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llo_share" android:background="@color/white" android:paddingLeft="16dp" android:paddingTop="20dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/divider">
+        <TextView android:textSize="14sp" android:textColor="@color/bg_tv" android:id="@+id/wx_zone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信朋友圈" android:drawableTop="@drawable/rk_wx_zone" android:drawablePadding="10dp" android:layout_alignParentLeft="true"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/bg_tv" android:id="@+id/wx_friend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信好友" android:drawableTop="@drawable/rk_wx_friend" android:drawablePadding="10dp" android:layout_centerHorizontal="true"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/bg_tv" android:id="@+id/qq_zone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QQ朋友圈" android:drawableTop="@drawable/rk_qq_zone" android:drawablePadding="10dp"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/bg_tv" android:id="@+id/qq_friend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QQ好友" android:drawableTop="@drawable/rk_qq_friend" android:drawablePadding="10dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/close" android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/llo_share"/>
+</RelativeLayout>

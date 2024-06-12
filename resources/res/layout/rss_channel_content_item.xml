@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llClassify" android:background="@color/gray_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="22dp" android:layout_marginTop="12dp">
+        <LinearLayout android:background="@color/normal_blue" android:layout_width="2dp" android:layout_height="match_parent"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/tvClassify" android:background="@color/side_menu_bg" android:paddingLeft="6dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="头条" android:singleLine="true" style="@style/Text_Title_16"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llcontent" android:background="@drawable/llclick_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginRight="10dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:id="@+id/tvTag" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Title_16"/>
+                <TextView android:ellipsize="end" android:id="@+id/tvRssContentTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/Text_Title_16"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:id="@+id/tvRssContentAbstract" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="2" style="@style/Text_Content_14"/>
+            <TextView android:ellipsize="end" android:id="@+id/tvRssContentTimeAndFrom" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Content_14"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="0">
+            <ImageView android:layout_gravity="right" android:id="@+id/ivRssContentImg" android:layout_width="wrap_content" android:layout_height="66dp" android:scaleType="centerInside"/>
+            <ImageView android:layout_gravity="right" android:id="@+id/ivCover" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/iv_favorite_book"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

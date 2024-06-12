@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_devices" android:id="@+id/tv_section_chart" android:paddingLeft="10dp" android:paddingTop="15dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/data_format_ymd"/>
+    <View android:id="@+id/item_divider_chart1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="15dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_video_chart" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <com.toofifi.mobile.component.view.SquareLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginRight="7.5dp" android:layout_weight="1">
+            <include android:id="@+id/video_left" layout="@layout/item_video_chart_left"/>
+        </com.toofifi.mobile.component.view.SquareLayout>
+        <com.toofifi.mobile.component.view.SquareLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="7.5dp" android:layout_marginRight="15dp" android:layout_weight="1">
+            <include android:id="@+id/video_right" layout="@layout/item_video_chart_right"/>
+        </com.toofifi.mobile.component.view.SquareLayout>
+    </LinearLayout>
+    <View android:id="@+id/item_divider_chart2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="15dp"/>
+</LinearLayout>

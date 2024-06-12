@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:textSize="17sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvItem" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="13dp" android:paddingEnd="13dp"/>
+</RelativeLayout>

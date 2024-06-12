@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.toofifi.mobile.component.photo.TouchRemoteImageView android:id="@+id/image_server_screen" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <SurfaceView android:id="@+id/surface_server_screen" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.toofifi.mobile.component.mark.Paintview android:id="@+id/my_paint_view" android:background="#00000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingRight="60dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.fanzhou.widget.CircleImageView android:id="@+id/ivLeftAvator" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_launcher" android:contentDescription="@null"/>
+    <RelativeLayout android:id="@+id/rlLeftTxtMsg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/ivLeftAvator">
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/tvLeftTxtMsg" android:background="@drawable/sl_bg_msg_green" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false"/>
+        <ProgressBar android:id="@+id/pbLeftTxtMsgLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tvLeftTxtMsg" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Small.Inverse"/>
+        <ImageView android:id="@+id/ivLeftTxtMsgResend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_send_failed" android:layout_toRightOf="@+id/tvLeftTxtMsg" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlLeftImgMsg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/ivLeftAvator">
+        <com.chaoxing.mobile.widget.MsgImageView android:id="@+id/mivLeftImgMsg" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ProgressBar android:id="@+id/pbLeftLoadingImgMsg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/mivLeftImgMsg" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Small.Inverse"/>
+        <ImageView android:id="@+id/ivLeftImgMsgResend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_send_failed" android:scaleType="centerInside" android:layout_toRightOf="@+id/mivLeftImgMsg" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</RelativeLayout>

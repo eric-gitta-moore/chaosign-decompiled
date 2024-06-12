@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ll_screen_cast" android:layout_below="@+id/toolBar">
+        <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:expanded="false" app:layout_scrollFlags="11">
+            <com.chaoxing.mobile.widget.StiffSearchBar android:id="@+id/search_bar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="11"/>
+            <RelativeLayout android:id="@+id/rl_cover" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="160dp" app:layout_collapseMode="2" app:layout_scrollFlags="3">
+                <ImageView android:id="@+id/iv_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_launcher" android:scaleType="centerCrop"/>
+                <ImageView android:id="@+id/video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_play" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_unit" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <RelativeLayout android:id="@+id/ll_screen_cast" android:layout_width="match_parent" android:layout_height="62dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="13sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/tv_screen_control" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mission_control_open" android:drawableTop="@drawable/mission_control_open" android:drawablePadding="4dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:gravity="center" android:id="@+id/tv_delete_tip" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="该课程已删除" android:layout_below="@+id/toolBar"/>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolBar" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

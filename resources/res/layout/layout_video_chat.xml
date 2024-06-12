@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvChat" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/sendBar"/>
+    <com.chaoxing.mobile.player.danmu.view.SendDanmuView android:id="@+id/sendBar" android:layout_width="match_parent" android:layout_height="52dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

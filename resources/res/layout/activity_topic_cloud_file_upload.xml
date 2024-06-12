@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="209dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="194dp">
+                        <ImageView android:id="@+id/iv_icon" android:background="@drawable/best_lib_topic_up_video_bg" android:layout_width="match_parent" android:layout_height="194dp" android:scaleType="fitCenter"/>
+                        <ImageView android:id="@+id/iv_cover" android:background="@drawable/best_lib_topic_up_video_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="194dp" android:scaleType="fitXY"/>
+                        <ImageView android:id="@+id/tvOptioin" android:layout_width="12dp" android:layout_height="12dp" android:layout_margin="7dp" android:src="@drawable/ic_ocr_cancel" android:layout_alignParentRight="true"/>
+                        <ImageView android:id="@+id/im_play_sp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7dp" android:src="@drawable/icon_topic_video_p" android:layout_centerInParent="true"/>
+                        <com.chaoxing.record.view.VoicePlayProgressView android:id="@+id/vPlayProgressView_expend" android:visibility="gone" android:layout_width="55dp" android:layout_height="55dp" android:src="@drawable/icon_topic_video_jd" android:layout_centerInParent="true"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/ll_load" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <ImageView android:layout_gravity="center" android:id="@+id/spin_kit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zhishipin_download_video"/>
+                            <TextView android:textSize="12sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="等待上传..."/>
+                        </LinearLayout>
+                        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tv_process_expend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                        <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/tv_addvideo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topic_learning_video_recommend_add" android:drawableLeft="@drawable/ic_course_new_clazz" android:drawablePadding="5dp" android:layout_centerInParent="true"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_alignParentBottom="true"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tv_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_toRightOf="@+id/tv_time" android:layout_alignParentBottom="true"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tv_bj_cover" android:background="@drawable/bg_btn_upload_cov5dp_eff0f2" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="12dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="7dp" android:layout_marginBottom="6dp" android:text="@string/topic_editthe_cover" android:layout_above="@+id/tv_time" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.5dp">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32dp">
+                            <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/text_video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topic_learning_video_recommend_title"/>
+                            <ImageView android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_star_not_null" android:layout_toRightOf="@+id/text_video_title" android:layout_alignTop="@+id/text_video_title" android:layout_alignBottom="@+id/text_video_title"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="75dp">
+                            <EditText android:textSize="14sp" android:textColor="#333333" android:textColorHint="#cccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/ed_video_title" android:background="#ffffff" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="75dp" android:hint="@string/topic_learning_max_video_des2" android:lineSpacingExtra="4dp"/>
+                            <ImageButton android:id="@+id/ibtn_clear" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="13sp" android:textColor="#b2b2b2" android:gravity="right" android:id="@+id/tv_titlesize" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0/50"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="10.5dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp">
+                    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+                    <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="47dp" android:text="@string/topic_learning_video_recommend_about"/>
+                        <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp">
+                            <EditText android:textSize="14sp" android:textColor="#333333" android:textColorHint="#cccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/ed_video_dec" android:background="#ffffff" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:hint="@string/topic_learning_input_video_about" android:lineSpacingExtra="4dp"/>
+                            <ImageButton android:id="@+id/ibtn_clear2" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/linear_tag_" android:background="@color/white" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/text_video_tag" android:paddingLeft="15dp" android:paddingTop="@dimen/adaptive_6dp" android:paddingBottom="@dimen/adaptive_6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/top_upload_file_tag"/>
+                        <ImageView android:textColor="@color/red" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_star_not_null" android:layout_toRightOf="@+id/text_video_tag" android:layout_alignTop="@+id/text_video_tag" android:layout_alignBottom="@+id/text_video_tag"/>
+                    </RelativeLayout>
+                    <com.zhy.view.flowlayout.TagFlowLayout android:id="@+id/id_flowlayout_tj" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_layout_second" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/btn_compilation" android:background="@drawable/bg_corner_20_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp">
+                    <ImageView android:gravity="center" android:id="@+id/btn_compilation_icon" android:layout_width="21dp" android:layout_height="21dp" android:layout_marginLeft="15dp" android:src="@drawable/compilation_blue" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/btn_compilation_name" android:paddingLeft="7dp" android:paddingTop="6dp" android:paddingRight="15dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/top_upload_file_compilation" android:layout_toRightOf="@+id/btn_compilation_icon"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/compilation" android:background="@color/white" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="10dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/text_compilation" android:paddingLeft="15dp" android:paddingTop="@dimen/adaptive_6dp" android:paddingBottom="@dimen/adaptive_6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/top_upload_file_compilation"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:gravity="center" android:id="@+id/text_compilation_icon" android:layout_width="21dp" android:layout_height="21dp" android:layout_marginLeft="15dp" android:src="@drawable/compilation" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/text_compilation_name" android:paddingLeft="7dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/top_upload_file_compilation" android:maxLines="2" android:layout_toRightOf="@+id/text_compilation_icon"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:background="#f5f6f8" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <TextView android:textSize="12sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topic_learning_video_upload_xy"/>
+                        <TextView android:textSize="12sp" android:textColor="#0099ff" android:id="@+id/tv_user_xy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy_part0_3"/>
+                        <TextView android:textSize="12sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="和"/>
+                        <TextView android:textSize="12sp" android:textColor="#0099ff" android:id="@+id/tv_writing_conventions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy_part0_5"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+    </RelativeLayout>
+</LinearLayout>

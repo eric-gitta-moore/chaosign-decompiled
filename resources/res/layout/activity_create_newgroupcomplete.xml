@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/sv_content" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.chaoxing.library.widget.CToolbar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/sp_20" android:textStyle="bold" android:textColor="#333333" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_30" android:text="小组创建成功" android:drawableLeft="@drawable/icon_c_group_complete" android:drawablePadding="8dp"/>
+            <androidx.cardview.widget.CardView android:id="@+id/card_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginRight="@dimen/dp_30" cx:cardCornerRadius="10dp" cx:cardElevation="3.5dp" cx:contentPadding="1dp">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="32dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:id="@+id/rlInviteCode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/tvInvitCodeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/something_xuexitong_invaitecode"/>
+                        <TextView android:textSize="22sp" android:textColor="#0099ff" android:id="@+id/tvInvitCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1dp"/>
+                        <ImageView android:id="@+id/iv_copy" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_qr_copy" android:layout_alignParentRight="true"/>
+                    </LinearLayout>
+                    <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tvUseHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dp" android:text="@string/something_xuexitong_rightconner"/>
+                    <RelativeLayout android:id="@+id/rlQRCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                        <ImageView android:id="@+id/ivQRCode" android:background="@drawable/best_lib_rank_img_stroke" android:layout_width="216dp" android:layout_height="216dp" android:layout_centerHorizontal="true"/>
+                        <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true"/>
+                        <TextView android:textSize="16sp" android:textColor="#0099ff" android:id="@+id/tvReloadQRCode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击重新加载" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_buttom_time" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_effectiveTime" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="该邀请码90天内（8月6日前）有效"/>
+                        <TextView android:textSize="12sp" android:textColor="#0099ff" android:id="@+id/tv_revised_" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:text="修改"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="16sp" android:textColor="#0099ff" android:layout_gravity="center_horizontal" android:id="@+id/btn_save_album" android:background="@drawable/bg_btn__group_c_cg" android:paddingLeft="18dp" android:paddingTop="9dp" android:paddingRight="18dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="30dp" android:layout_marginRight="15dp" android:text="保存到相册" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@+id/rl_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="10dp" android:layout_above="@+id/btnQuit"/>
+            <Button android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/btnQuit" android:background="@drawable/bg_btn__group_create_cg" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/commen_done"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:visibility="invisible" layout="@layout/activity_create_newgroup_xc"/>
+    <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

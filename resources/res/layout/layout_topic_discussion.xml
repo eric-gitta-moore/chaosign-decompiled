@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/parentView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llContent" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingTop="11dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="17sp" android:textColorHint="#cccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/etTheme" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/topic_discussion" android:lines="3"/>
+            <ImageView android:layout_gravity="right" android:id="@+id/ivCamera" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginRight="-5dp" android:layout_marginBottom="10dp" android:src="@drawable/dynamic_camera"/>
+            <com.chaoxing.mobile.group.widget.TopicGridView android:id="@+id/imgGrid" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginBottom="20dp" app:albumColumnWidth="64dp" app:albumColumns="4" app:albumHorizontalSpacing="23dp" app:albumPaddingBottom="@dimen/common_margin" app:albumPaddingLeft="0dp" app:albumPaddingRight="24dp" app:albumPaddingTop="0dp" app:albumVerticalSpacing="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/option_bar" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="30dp" android:layout_below="@+id/llContent">
+            <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/tvSave" android:background="@drawable/border_radius_blue" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/commen_Save" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvStart" android:background="@drawable/bg_circular_bead_ff0099ff" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="@string/activity_start" android:layout_weight="1"/>
+        </LinearLayout>
+        <include layout="@layout/page_loading_circle"/>
+    </RelativeLayout>
+</LinearLayout>

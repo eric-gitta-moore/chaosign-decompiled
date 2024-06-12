@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.reader.epub.widget.PullDownBookMarksView android:orientation="vertical" android:id="@+id/dropdown_bookmark_view" android:background="@color/lib_reader_catalog_page_number_night" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:orientation="vertical" android:id="@+id/page_container" android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.chaoxing.reader.epub.widget.BookPageView android:id="@+id/pageView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <com.chaoxing.reader.epub.widget.DocumentPager android:id="@+id/document_pager" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <androidx.core.widget.ContentLoadingProgressBar android:id="@+id/pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+                <TextView android:id="@+id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <View android:id="@+id/empty_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/floatView" android:background="@drawable/lib_reader_floatview_circle_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter"/>
+            </RelativeLayout>
+        </com.chaoxing.reader.epub.widget.PullDownBookMarksView>
+        <com.chaoxing.reader.epub.widget.HeaderMarkLayout android:gravity="top|right|center_vertical|center_horizontal|center" android:layout_gravity="top" android:orientation="horizontal" android:id="@+id/headerMarkLayout" android:background="#00000000" android:paddingRight="10dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.chaoxing.reader.epub.widget.TopBar android:layout_gravity="top" android:id="@+id/top_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.chaoxing.reader.epub.BottomBar android:layout_gravity="bottom" android:id="@+id/bottom_bar" android:background="@mipmap/lib_reader_bottom_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <com.chaoxing.reader.epub.NaviView android:layout_gravity="start" android:id="@+id/navigation_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,244 @@
+# Rime's keyboards
+# encoding: utf-8
+config_version: '1.0.0'
+
+names:
+  - default
+  - number
+  - symbol
+
+preset_keyboards:
+  default:
+    name: "qwert"
+    width: 10
+    height: 52
+    padding: [ 6, 14, 6, 10 ]
+    padding_land: [ 100, 10, 100, 10 ]
+    gap: [ 5.5, 12 ]
+    gap_land: [ 6, 6 ]
+    round_corner: 5
+    keyboard_back_color: keyboard_back_color
+    ascii_mode: 1
+    key_text_offset_y: 2
+    key_symbol_offset_y: 3
+    key_correct: 2
+    keys:
+      row_0:
+        - { click: q, label: Q, long_click: 1, swipe_up: 1, key_back_color: bh1, key_text_color: th1 }
+        - { click: w, label: W, long_click: 2, swipe_up: 2, key_back_color: bh1, key_text_color: th1 }
+        - { click: e, label: E, long_click: 3, swipe_up: 3, key_back_color: bh1, key_text_color: th1 }
+        - { click: r, label: R, long_click: 4, swipe_up: 4, key_back_color: bh1, key_text_color: th1 }
+        - { click: t, label: T, long_click: 5, swipe_up: 5, key_back_color: bh1, key_text_color: th1 }
+        - { click: y, label: Y, long_click: 6, swipe_up: 6, key_back_color: bh1, key_text_color: th1 }
+        - { click: u, label: U, long_click: 7, swipe_up: 7, key_back_color: bh1, key_text_color: th1 }
+        - { click: i, label: I, long_click: 8, swipe_up: 8, key_back_color: bh1, key_text_color: th1 }
+        - { click: o, label: O, long_click: 9, swipe_up: 9, key_back_color: bh1, key_text_color: th1 }
+        - { click: p, label: P, long_click: 0, swipe_up: 0, key_back_color: bh1, key_text_color: th1 }
+      row_1:
+        - { width: 3.2, key_back_color: bh2, key_text_color: th2 }
+        - { click: a, label: A, long_click: '~', width: 10.4, key_back_color: bh2, key_text_color: th2 }
+        - { click: s, label: S, long_click: '!', width: 10.4, key_back_color: bh2, key_text_color: th2 }
+        - { click: d, label: D, long_click: '@', width: 10.4, key_back_color: bh2, key_text_color: th2 }
+        - { click: f, label: F, long_click: '#', width: 10.4, key_back_color: bh2, key_text_color: th2 }
+        - { click: g, label: G, long_click: '%', width: 10.4, key_back_color: bh2, key_text_color: th2 }
+        - { click: h, label: H, long_click: symbol_left_yin_hao, long_click2: symbol_left_yin_hao2, width: 10.4, key_back_color: bh2, key_text_color: th2 }
+        - { click: j, label: J, long_click: '"', long_click2: '&', width: 10.4, key_back_color: bh2, key_text_color: th2 }
+        - { click: k, label: K, long_click: '*', width: 10.4, key_back_color: bh2, key_text_color: th2 }
+        - { click: l, label: L, long_click: '?', width: 10.4, key_back_color: bh2, key_text_color: th2 }
+        - { width: 3.2, key_back_color: bh2, key_text_color: th2 }
+      row_2:
+        - { click: Shift_L, label: '分词', composing: delimiter, width: 13.6, key_text_size: '15', key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: th3, key_text_offset_y: 0 }
+        - { click: z, label: Z, long_click: '(', key_back_color: bh3, width: 10.4, key_text_color: th3 }
+        - { click: x, label: X, long_click: ')', key_back_color: bh3, width: 10.4, key_text_color: th3 }
+        - { click: c, label: C, long_click: '-', key_back_color: bh3, width: 10.4, key_text_color: th3 }
+        - { click: v, label: V, long_click: '_', key_back_color: bh3, width: 10.4, key_text_color: th3 }
+        - { click: b, label: B, long_click: ":", key_back_color: bh3, width: 10.4, key_text_color: th3 }
+        - { click: n, label: N, long_click: ";", key_back_color: bh3, width: 10.4, key_text_color: th3 }
+        - { click: m, label: M, long_click: "/", key_back_color: bh3, width: 10.4, key_text_color: th3 }
+        - { click: BackSpace, width: 13.6, key_back_drawable: 'bg_key_func.9.png', key_text_color: th3, hilited_key_back_color: bgn_on, key_text_offset_y: 0 }
+      row_3:
+        - { click: Keyboard_symbol, width: 13.6, key_text_size: '15', key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: th4, key_text_offset_y: 0 }
+        - { click: Keyboard_number, width: 13.6, key_text_size: '15', key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: th4, key_text_offset_y: 0 }
+        - { click: ',', label: ' ，', width: 10.4, key_back_color: bh4, key_text_color: th4, key_text_offset_y: 0 }
+        - { click: space, width: 24.8, key_back_color: bkg, key_text_color: th4, key_text_offset_y: 5 }
+        - { click: '.', label: ' 。', width: 10.4, key_back_color: bh4, key_text_color: th4, key_text_offset_y: 0 }
+        - { click: Mode_switch, width: 13.6, key_back_drawable: 'bg_key_func.9.png', key_text_color: th4, hilited_key_back_color: bgn_on, key_text_offset_y: 0 }
+        - { click: Return, swipe_up: Escape, width: 13.6, key_back_drawable: 'bg_key_func.9.png', key_text_color: th4, hilited_key_back_color: bgn_on, key_text_offset_y: 0 }
+
+  number:
+    name: "number"
+    width: 18
+    padding: [ 3, 6, 3, 10 ]
+    padding_land: [ 100, 10, 100, 10 ]
+    gap: [ 6, 6 ]
+    gap_land: [ 6, 6 ]
+    keyboard_back_color: keyboard_back_color
+    ascii_mode: 0
+    key_correct: 2
+    keys:
+      row_0:
+        - { width: 18 }
+        - { click: 1, width: 21.3 }
+        - { click: 2, width: 21.3 }
+        - { click: 3, width: 21.3 }
+        - { click: BackSpace, width: 18, key_back_drawable: 'bg_key_func.9.png', key_text_color: th4, hilited_key_back_color: bgn_on }
+      row_1:
+        - { width: 18 }
+        - { click: 4, width: 21.3 }
+        - { click: 5, width: 21.3 }
+        - { click: 6, width: 21.3 }
+        - { click: ., width: 18, key_back_drawable: 'bg_key_func.9.png', key_text_color: th4, hilited_key_back_color: bgn_on }
+      row_2:
+        - { width: 18 }
+        - { click: 7, width: 21.3 }
+        - { click: 8, width: 21.3 }
+        - { click: 9, width: 21.3 }
+        - { click: '@', width: 18, key_back_drawable: 'bg_key_func.9.png', key_text_color: th4, hilited_key_back_color: bgn_on }
+      row_3:
+        - { click: Keyboard_symbol, width: 18, key_text_size: '15', key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: th4 }
+        - { click: Keyboard_symbol_back, width: 18, key_text_size: '15', key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: th4 }
+        - { click: 0, width: 28 }
+        - { click: space, width: 18, key_back_drawable: 'bg_key_func.9.png', key_text_color: th4, hilited_key_back_color: bgn_on, key_text_offset_y: 5 }
+        - { click: Return, width: 18, key_back_drawable: 'bg_key_func.9.png', key_text_color: th4, hilited_key_back_color: bgn_on, }
+    key_category:
+      show_category: false
+      groups: [ group_symbol ]
+    group_symbol:
+      id: 'group_symbol'
+      name: 'group_symbol'
+      ascii_mode: 0
+      index: 0
+      rows: 3
+      columns: 1
+      weight: 0.85
+      round_corner: 4
+      round_stoke_width: 1
+      round_stoke_color: 0xffeeeeee
+      back_color: 0xffffffff
+      keys:
+        - { click: '+', key_back_drawable: '' }
+        - { click: '-', key_back_drawable: '' }
+        - { click: '*', key_back_drawable: '' }
+        - { click: '/', key_back_drawable: '' }
+        - { click: ':', key_back_drawable: '' }
+        - { click: '%', key_back_drawable: '' }
+        - { click: '#', key_back_drawable: '' }
+        - { click: '_', key_back_drawable: '' }
+
+  symbol:
+    name: "symbol"
+    padding: [ 6, 6, 6, 10 ]
+    padding_land: [ 100, 10, 100, 10 ]
+    gap: [ 6, 6 ]
+    gap_land: [ 6, 6 ]
+    keyboard_back_color: keyboard_back_color
+    auto_layout: false
+    ascii_mode: 0
+    key_correct: 2
+    keys:
+      row_0:
+        - { click: Keyboard_symbol_back, key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_size: '15', key_text_color: tgn }
+        - { click: Keyboard_symbol_lock, key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: tgn }
+        - { click: page_pre, key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: tgn }
+        - { click: page_next, key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: tgn }
+        - { click: BackSpace, key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: tgn }
+    key_category:
+      show_category: true
+      category_round_corner: 4
+      category_back_color: 0xffffffff
+      groups: [ group_cn, group_en ]
+    group_en:
+      id: 'en'
+      name: 英文
+      ascii_mode: 0
+      round_corner: 5
+      back_color: 0xffffffff
+      keys:
+        - { click: '.' }
+        - { click: '@' }
+        - { click: '~' }
+        - { click: '-' }
+        - { click: ',' }
+        - { click: ':' }
+        - { click: '*' }
+        - { click: '?' }
+        - { click: '!' }
+        - { click: '_' }
+        - { click: '#' }
+        - { click: '/' }
+        - { click: '=' }
+        - { click: '+' }
+        - { click: '﹉' }
+        - { click: '&' }
+        - { click: '^' }
+        - { click: ';' }
+        - { click: '%' }
+        - { click: '…' }
+        - { click: '$' }
+        - { click: '(' }
+        - { click: ')' }
+        - { click: '\' }
+        - { click: '..' }
+        - { click: '<' }
+        - { click: '>' }
+        - { click: '|' }
+        - { click: '·' }
+        - { click: '¥' }
+        - { click: '[' }
+        - { click: ']' }
+        - { click: '"' }
+        - { click: '{' }
+        - { click: '}' }
+        - { click: '–' }
+        - { click: "'" }
+        - { click: '€' }
+
+    group_cn:
+      id: 'cn'
+      name: 中文
+      ascii_mode: 1
+      round_corner: 5
+      back_color: 0xffffffff
+      keys:
+        - { click: '，' }
+        - { click: '。' }
+        - { click: '？' }
+        - { click: '！' }
+        - { click: '～' }
+        - { click: '、' }
+        - { click: '：' }
+        - { click: '＃' }
+        - { click: '；' }
+        - { click: '％' }
+        - { click: '＊' }
+        - { click: '——' }
+        - { click: '……' }
+        - { click: '＆' }
+        - { click: '·' }
+        - { click: '＄' }
+        - { click: '（' }
+        - { click: '）' }
+        - { click: '‘' }
+        - { click: '’' }
+        - { click: '“' }
+        - { click: '”' }
+        - { click: '[' }
+        - { click: ']' }
+        - { click: '『' }
+        - { click: '』' }
+        - { click: '〔' }
+        - { click: '〕' }
+        - { click: '｛' }
+        - { click: '｝' }
+        - { click: '【' }
+        - { click: '】' }
+        - { click: '￥' }
+        - { click: '￡' }
+        - { click: "♀" }
+        - { click: '‖' }
+        - { click: '〖' }
+        - { click: '〗' }
+        - { click: '《' }
+        - { click: '》' }
+        - { click: '「' }
+        - { click: '」' }

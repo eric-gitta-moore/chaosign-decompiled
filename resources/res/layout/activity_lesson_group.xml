@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="13sp" android:textColor="@color/white" android:id="@+id/tv_theme" android:background="#25282e" android:paddingLeft="14dp" android:paddingTop="10dp" android:paddingRight="14dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="39dp"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_group" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_group_bottom" android:background="#25282e" android:layout_width="match_parent" android:layout_height="56dp">
+        <CheckBox android:id="@+id/check_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/lessonCheckBoxTheme"/>
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:id="@+id/tv_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/course_online_sync_teacher_voice" android:layout_toRightOf="@+id/check_open" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

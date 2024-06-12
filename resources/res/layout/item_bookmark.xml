@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.ViewSwipeListItem xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="6dp" android:src="@drawable/ic_bookmark_item"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_icon">
+                    <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@+id/tv_tag"/>
+                    <TextView android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/tv_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="14sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="2" android:layout_below="@+id/tv_title"/>
+                    <TextView android:textSize="14sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/tv_stage" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@+id/tv_content"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="10dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_options" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_option" android:background="#fa372d" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.fanzhou.widget.ViewSwipeListItem>

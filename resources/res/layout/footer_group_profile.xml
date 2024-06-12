@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ViewFlipper android:id="@+id/vfLoad" android:layout_width="match_parent" android:layout_height="45dp">
+        <RelativeLayout android:id="@+id/viewLoad" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_group_user_load" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/viewLoading" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ProgressBar android:id="@+id/pbLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Small"/>
+                <TextView android:textSize="16sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/pcenter_groupsetting_load" android:layout_toRightOf="@+id/pbLoading" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/viewNoDataHint" android:background="@drawable/common_white_stroke_bg_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:textColor="#ff999999" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_share_person_tip" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </ViewFlipper>
+    <RelativeLayout android:id="@+id/viewQuit" android:background="@color/color_f5f6f8" android:paddingLeft="15dp" android:paddingTop="30dp" android:paddingRight="15dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/vfLoad">
+        <View android:id="@+id/bottomLine" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+        <Button android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/btnQuit" android:background="@drawable/bg_btn_quit_group" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/something_xuexitong_quitgroups"/>
+    </RelativeLayout>
+</RelativeLayout>

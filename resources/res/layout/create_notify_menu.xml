@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#80999999" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/btn_save_email" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/pcenter_contents_emailRemind"/>
+        <View android:id="@+id/divider_email" android:background="@color/color_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/tv_test" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:text="对不起,您没有权限!!!"/>
+        <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/btnSave" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/pcenter_contents_noteRemind"/>
+        <View android:id="@+id/divider_sms" android:background="@color/color_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/btnSave_call" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/pcenter_contents_callRemind"/>
+        <View android:id="@+id/divider_call" android:background="@color/color_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/btnSave_app" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/remind_in_app"/>
+        <View android:id="@+id/divider_app" android:background="@color/color_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/btnSave_wx" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/pcenter_contents_weichatRemind"/>
+        <View android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="6dp"/>
+        <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/btnCancel" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/cancel"/>
+    </LinearLayout>
+</RelativeLayout>

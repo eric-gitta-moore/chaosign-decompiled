@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/富文本/下方插入行</title>
+    <g id="icon/富文本/下方插入行" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="上方插入行" transform="translate(9.000000, 9.000000) scale(1, -1) translate(-9.000000, -9.000000) translate(2.500000, 3.000000)">
+            <rect id="矩形" stroke="#474C59" stroke-width="1.2" x="1.06428571" y="3.36923077" width="10.8714286" height="8.03076923" rx="0.6"></rect>
+            <rect id="矩形" fill="#474C59" x="0.464285714" y="-4.20176714e-14" width="12.0714286" height="1.29230769" rx="0.646153846"></rect>
+            <line x1="0.928571429" y1="7.38461538" x2="12.0714286" y2="7.38461538" id="路径-12" stroke="#474C59"></line>
+            <line x1="4.64285714" y1="3.69230769" x2="4.64285714" y2="11.0769231" id="路径-13" stroke="#474C59"></line>
+            <line x1="8.35714286" y1="3.69230769" x2="8.35714286" y2="11.0769231" id="路径-13备份" stroke="#474C59"></line>
+        </g>
+    </g>
+</svg>

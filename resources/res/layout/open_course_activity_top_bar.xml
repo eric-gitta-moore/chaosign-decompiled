@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/titleBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+    <TextView android:ellipsize="middle" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:singleLine="true" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+    <RelativeLayout android:id="@+id/llAll" android:background="@drawable/selector_translightblue_trans" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_centerInParent="true">
+        <TextView android:id="@+id/tvAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+        <ImageView android:layout_width="10dp" android:layout_height="10dp" android:src="@drawable/btn_triangle" android:layout_toRightOf="@+id/tvAll" android:layout_alignBottom="@+id/tvAll"/>
+    </RelativeLayout>
+    <Button android:textSize="16sp" android:textColor="@color/back_text_color" android:id="@+id/btnBack" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/navigation_img_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/ivSearch" android:paddingLeft="6dp" android:paddingRight="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/icon_group_search" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <Button android:id="@+id/btnEdit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/edit" android:layout_alignParentRight="true" style="@style/btn_stroke_blue_default"/>
+    <RelativeLayout android:id="@+id/rlEdit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_centerVertical="true">
+        <Button android:id="@+id/btnDone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/done" style="@style/btn_stroke_black_default"/>
+        <Button android:id="@+id/btnDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_delete" android:layout_alignParentRight="true" style="@style/btn_stroke_red_default"/>
+    </RelativeLayout>
+</RelativeLayout>

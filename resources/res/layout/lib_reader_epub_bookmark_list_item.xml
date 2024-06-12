@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_alignParentLeft="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <ImageView android:layout_width="8dp" android:layout_height="8dp" android:src="@mipmap/lib_reader_epub_bookmark" android:layout_centerVertical="true"/>
+            <TextView android:textSize="12sp" android:id="@+id/tv_fileId" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_toLeftOf="@+id/tv_pageNo" android:layout_centerVertical="true"/>
+            <TextView android:textSize="12sp" android:id="@+id/tv_pageNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:maxLines="1"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="15dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

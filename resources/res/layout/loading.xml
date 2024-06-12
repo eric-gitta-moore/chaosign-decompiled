@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.common.widget.LoadingView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/loading_view" android:background="#00000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:id="@+id/info" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Button android:gravity="center" android:id="@+id/retry" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重试"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/loading" android:background="@drawable/loading_bg" android:padding="18dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.android.common.widget.CircleProgressBar android:layout_width="24dp" android:layout_height="24dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/loading_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/loading_now"/>
+    </LinearLayout>
+</com.android.common.widget.LoadingView>

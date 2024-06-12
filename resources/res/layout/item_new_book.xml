@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/bookViewLayout" android:layout_width="match_parent" android:layout_height="75dp">
+        <CheckBox android:id="@+id/cbSelect" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@drawable/checkbox_book_shelf" android:layout_centerVertical="true"/>
+        <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rlicon" android:layout_width="@dimen/grid_item_width_list" android:layout_height="@dimen/grid_item_height_list" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/cbSelect" android:layout_centerVertical="true">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/book_cover" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:border_color="#99999999" app:border_width="0.5dp" app:is_circle="false" app:x_radius="4dp" app:y_radius="4dp"/>
+            <FrameLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.chaoxing.bookshelf.view.RoundProgressBar android:layout_gravity="center" android:id="@+id/book_progressbar" android:background="@drawable/book_round_progressbar_background" android:layout_width="28dp" android:layout_height="28dp" android:max="100"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/load_state" android:background="@drawable/ic_book_shlef_progress_pause" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="9sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/load_size" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toLeftOf="@+id/iv_sort" android:layout_toRightOf="@+id/rlicon" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/book_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="书名" android:maxLines="2"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <TextView android:textSize="13sp" android:textColor="#ffb3b3b3" android:ellipsize="end" android:id="@+id/tv_author" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintEnd_toStartOf="@+id/right" app:layout_constraintHorizontal_bias="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_default="1"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/right" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/tv_author" app:layout_constraintTop_toTopOf="0">
+                    <View android:layout_gravity="center_vertical" android:id="@+id/split_line" android:background="#ffebebeb" android:layout_width="1dp" android:layout_height="12dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+                    <TextView android:textSize="13sp" android:textColor="#ffb3b3b3" android:id="@+id/book_read_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/ic_book_view_sort" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/divider_line" android:background="#66999999" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true" android:layout_marginEnd="15dp" android:layout_alignStart="@+id/content"/>
+    </RelativeLayout>
+</RelativeLayout>

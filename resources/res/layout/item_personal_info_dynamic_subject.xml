@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="5dp" android:paddingEnd="5dp">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_icon" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_resource_default" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:riv_corner_radius="4dp" app:riv_mutate_background="true" app:riv_oval="false"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/iv_icon" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="13sp" android:textColor="#ffb3b3b3" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="59.5dp" android:layout_marginStart="16.5dp" android:layout_marginEnd="16.5dp">
+        <TextView android:textSize="14sp" android:textColor="@color/ds_color_base_black" android:id="@+id/textTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/choose_attendance_group"/>
+        <TextView android:textSize="14sp" android:textColor="@color/ds_color_base_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/chooseAttendanceGroupTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawablePadding="5dp" android:drawableEnd="@mipmap/ds_icon_right"/>
+    </LinearLayout>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:contentDescription="@string/mission_introduce"/>
+</merge>

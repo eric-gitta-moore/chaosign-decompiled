@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/info_view" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="18dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/avatar" android:layout_width="49dp" android:layout_height="49dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:riv_corner_radius="4dp" app:riv_oval="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/avatar" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/divider" android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/info_view"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/summary_view" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/divider">
+        <TextView android:textSize="16sp" android:gravity="center" android:id="@+id/leave_count" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <View android:layout_width="1dp" android:layout_height="18dp"/>
+        <TextView android:textSize="16sp" android:gravity="center" android:id="@+id/time" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:id="@+id/divider2" android:background="@color/out_bg" android:layout_width="match_parent" android:layout_height="8dp" android:layout_below="@+id/summary_view"/>
+    <com.chaoxing.mobile.office.widget.ASErrorLayout android:id="@+id/error_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/divider2"/>
+</RelativeLayout>

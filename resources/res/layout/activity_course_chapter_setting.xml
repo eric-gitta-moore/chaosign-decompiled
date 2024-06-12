@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/rl_course_logo_switch" android:visibility="visible" android:layout_width="match_parent" android:layout_height="45dp" android:layout_below="@+id/titleBar">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="15dp" android:text="@string/course_chapter_setting_number"/>
+        <com.kyleduo.switchbutton.SwitchButton android:id="@+id/number_switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+        <View android:background="@color/color_ebebeb" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <include android:id="@+id/view_loading" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

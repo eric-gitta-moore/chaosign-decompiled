@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/view_divider" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <com.chaoxing.mobile.study.home.mainpage.view.banner.BannerView android:id="@+id/view_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:layout_below="@+id/view_divider"/>
+</RelativeLayout>

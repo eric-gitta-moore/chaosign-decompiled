@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_video" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:riv_border_color="@color/home_image_border" app:riv_border_width="@dimen/home_image_border" app:riv_corner_radius="4dp"/>
+    <androidx.appcompat.widget.AppCompatImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_play3" android:layout_centerInParent="true"/>
+    <View android:background="#0d000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:background="@drawable/ic_video_bottom_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="11sp" android:textColor="#e6ffffff" android:ellipsize="end" android:id="@+id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_toStartOf="@+id/tv_time" android:layout_alignParentStart="true"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="11sp" android:textColor="#e6ffffff" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_alignParentBottom="true" android:layout_marginEnd="8dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

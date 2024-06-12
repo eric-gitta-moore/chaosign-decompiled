@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.ViewSwipeListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:petal="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="65dp">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/rlCategory" android:background="#ffefeff4" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="12dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:textColor="#ff999999" android:id="@+id/tvCategory" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="管理员"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlMember" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/icon_user_head_portrait" android:layout_centerVertical="true" petal:border_color="@color/avatar_border" petal:border_width="1px" petal:is_circle="false" petal:x_radius="8px" petal:y_radius="8px"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toLeftOf="@+id/linearl_attention" android:layout_toRightOf="@+id/ivAvatar" android:layout_centerVertical="true">
+                    <TextView android:textSize="16sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/tvMemberName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名字" android:maxEms="6" android:singleLine="true"/>
+                    <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/tvMemberTag" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="管理员" android:layout_toRightOf="@+id/tvMemberName"/>
+                    <ImageView android:id="@+id/ivMuteSign" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:src="@drawable/icon_message_group_mute" android:layout_toRightOf="@+id/tvMemberName"/>
+                    <com.chaoxing.mobile.resource.flower.StatisUserDataView android:id="@+id/userFlower" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_toRightOf="@+id/tvMemberTag"/>
+                    <com.chaoxing.fanya.flower.ViewMoocPetal android:id="@+id/statisDataView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:layout_toRightOf="@+id/tvMemberTag" petal:canvasSize="25dp"/>
+                    <TextView android:textSize="14sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:maxLines="1" android:layout_below="@+id/tvMemberName"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearl_attention" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="13sp" android:textColor="#ff0099ff" android:gravity="center" android:id="@+id/tvAddFriend" android:layout_width="72dp" android:layout_height="32dp" android:text="@string/add_friend_attention"/>
+                    <TextView android:textSize="9sp" android:textColor="#999999" android:id="@+id/tvAttentionMe" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/focused_tag"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/rlOperationPanel" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btnMute" android:background="@color/color_commen_move" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/message_tip_mute_person"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btnRight" android:background="@color/color_commen_setadmin" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/admin_set_add"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btnRight2" android:background="@color/color_commen_del" android:layout_width="56dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/common_delete"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="71dp" android:layout_marginBottom="1px" android:layout_below="@+id/itemContainer"/>
+</com.fanzhou.widget.ViewSwipeListItem>

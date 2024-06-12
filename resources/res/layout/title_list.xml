@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <Button android:id="@+id/btnOpdsHome" android:background="@drawable/goback_button_background_blue2" android:paddingLeft="14dp" android:visibility="gone" android:layout_width="80dp" android:layout_height="34dp" android:layout_marginLeft="15dp" android:text="@string/back_opds_home" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Text_White_14"/>
+        <TextView android:gravity="center" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="-2dp" android:singleLine="true" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+        <ImageView android:id="@+id/btnSearch" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="50dp" android:layout_height="match_parent" android:src="@drawable/iv_search_bg" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/btnDone" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/navigation_img_done" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/addLibrary" android:visibility="gone" android:layout_marginRight="10dp" android:layout_alignParentRight="true" style="@style/Button_black_2_words_h"/>
+        <ImageView android:id="@+id/btnBack" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/navigation_img_back" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14sp" android:textColor="@color/gray_b2b2b2" android:id="@+id/tv_moreAppIsmaking" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/more_app_ismaking" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:id="@+id/lvContent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/List_View_Style"/>
+            <include android:id="@+id/llLoading" android:visibility="gone" layout="@layout/listview_footer_more"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

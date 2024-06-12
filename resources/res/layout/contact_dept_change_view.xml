@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="35dp">
+    <TextView android:textSize="14sp" android:textColor="#0099ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_dept_change" android:drawableLeft="@drawable/icon_note_update" android:drawablePadding="5dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

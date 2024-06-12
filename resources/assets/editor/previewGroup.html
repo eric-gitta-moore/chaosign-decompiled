@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+<meta name="format-detection" content="telephone=no,email=no,adress=no">
+<meta charset="utf-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="previewWrap">
+	<div class="previewBox previewBox-group">
+    	<div class="noteInfo-group">
+    		<div class="noteImg" onclick="openClickEvent('BUTTON_USER','')"><img class="logo" src="images/ic_group_head_item.png" /></div>
+    		<div class="noteLib">
+    			<div class="noteTit"><span id="createName" onclick="openClickEvent('BUTTON_USER','')"></span><span id="createUnit"></span></div>
+    			<div class="noteArt"><span id="createTime"></span><span id="replyCount"></span><span class="blue" id="readCount" onclick="openClickEvent('BUTTON_READ_COUNT','')"></span><span class="blue" id="deleteNote" onclick="openClickEvent('BUTTON_DELETE','')"></span><span class="blue" id="reEditNote" onclick="openClickEvent('BUTTON_EDIT','')"></span><span class="blue" id="restoreNote" onclick="openClickEvent('BUTTON_RESTORE','')"></span><span class="blue" id="releaseNote" onclick="openClickEvent('BUTTON_RELEASE','')"></span></div>
+    		</div>
+    	</div>
+    	<div class="editor_title field" id="zss_editor_tit">
+    		<span id="title"></span>
+    	</div>
+      	<div class="editor_main field" id="zss_editor_content"></div>
+      	<div class="updateText"></div>
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/replace.js"></script>
+  <script type="text/javascript" src="js/editor.js"></script>
+  <script>
+	zss_editor.init();
+ //内容区最小高度设为0
+  var minheightVersion = null;
+  if(isIOS){
+    minheightVersion = zss_editor.versionSame('4.2.7.7');
+  }
+  if(minheightVersion || isAndroid){ 
+    $('#zss_editor_content').css({'min-height':'0'})
+  }
+	//ios调用
+	function setNoteInfo(noteInfo,w,isBasicEdu){
+		setNoteHtml(noteInfo);
+		var content = noteInfo.content;
+    if(minheightVersion && content==''){
+      $('#zss_editor_content').css({'height':'0','padding':'0'})
+      zss_editor.insertNoteContent(content,w,isBasicEdu);
+    }else{
+    	$('#zss_editor_content').css({'padding':'5px'});
+      zss_editor.insertNoteContent(content,w,isBasicEdu);
+    }
+		
+	}
+	//安卓调用，笔记内容
+	function setNoteContent(noteContent,isBasicEdu){
+		zss_editor.wWidth = $(window).width();
+		if(noteContent.content){
+        var content = noteContent.content;
+    }else{
+        var content = noteContent;
+    }
+    if(content==''){
+      $('#zss_editor_content').css({'height':'0','padding':'0'})
+    }else{
+      zss_editor.insertNoteContentAndroid(content,isBasicEdu);
+    }
+	}
+	//安卓调用，其他信息
+	function setNoteHtml(noteInfo){
+    if(zss_editor.isEnLanguage() || (noteInfo.language && noteInfo.language == "en")){
+      var read = "Read:";
+      var del = "Delete";
+      var edit = "Edit";
+      var reply = "Reply";
+      var restore = "Restore";
+      var release = "Release";
+    }else{
+      var read = "阅读:";
+      var del = "删除";
+      var edit = "编辑";
+      var reply = "回复:";
+      var restore = "还原";
+      var release = "发布";
+    }
+		if (isAndroid) {
+			noteInfo=JSON.parse(noteInfo);
+		}
+		if(noteInfo.title && noteInfo.title != ""){
+			var title = noteInfo.title.replace(/&/g, "&amp;").replace(/ /g, '&nbsp;');
+
+			$('.editor_title #title').html(title).css("margin-right","9px");
+		}else{
+			if(isIOS){
+				$('.editor_title #title').html("").css("margin-right","0px");
+			}
+		}
+		$('#createName').text(noteInfo.createName);
+		$('#createTime').text(noteInfo.createTime);
+                                        
+        if(!noteInfo.hasReader || noteInfo.hasReader==0){
+            if(noteInfo.readCount){
+                $('#readCount').text(read+noteInfo.readCount).show();
+            }
+        }else{
+           $('#readCount').hide()
+        }
+                                        
+		if(noteInfo.hasDelete==0){
+			$('#deleteNote').text(del).show();
+		}else{
+			$('#deleteNote').hide()
+		}
+		if(noteInfo.hasEdit==0){
+			$('#reEditNote').text(edit).show();
+			//点击文字区域进入编辑页
+			$('#zss_editor_content').off('click').on('click', function(event){
+			    if(!$(event.target).is('img') && !$(event.target).is('.editor-image') && !$(event.target).is('iframe') && !$(event.target).is('a') && !$(event.target).is('.record-list-tit') && !$(event.target).is('.record-list-tit *') && !$(event.target).is('.folderName')) {
+				   openClickEvent('BUTTON_EDIT','');
+			    }
+				  
+			});
+			//点击标题进入编辑页
+			$('#zss_editor_tit').off('click').on('click', function(event){
+				openClickEvent('BUTTON_EDIT','');
+				  
+			});
+		}else{
+			$('#reEditNote').hide();
+			//取消绑定事件2020.10.16
+			$('#zss_editor_content').off('click');
+			$('#zss_editor_tit').off('click');
+		}
+		if(noteInfo.hasRestore==0){
+			$("#restoreNote").text(restore).show();
+		}else{
+			$("#restoreNote").hide();
+		}
+		//发布
+		if(noteInfo.hasRelease==0){
+			$("#releaseNote").text(release).show();
+		}else{
+			$("#releaseNote").hide();
+		}
+		if(noteInfo.logo){
+			$('.noteImg .logo').attr("src",noteInfo.logo);
+		}else{
+			$('.noteImg .logo').attr("src","");
+		}
+		if(noteInfo.unit){
+			$("#createUnit").text(noteInfo.unit);
+		}
+		if(noteInfo.replyCount != null){
+            $('#replyCount').text(reply+noteInfo.replyCount);
+        }
+        if(noteInfo.folderName){
+        	
+        	
+        	var html = '<span class="folderName" onclick="openFolderName()">'+noteInfo.folderName+'</span>';
+
+        	setTimeout(function(){
+            $(".folderName").remove();
+        		if($('#zss_editor_content').children(":first").length > 0){
+        			$('#zss_editor_content').children(":first").prepend(html);
+        		}else{
+        			$('#zss_editor_content').prepend(html);
+        		}
+        	},50)
+        	
+        }
+	}
+	// 附件点击调客户端方法
+    function openClickEvent(btnName,value){
+    	//android
+        if (isAndroid) {
+        	javaJs.onClickBtn(btnName,value);
+	    }
+	    //ios
+	    if (isIOS) {
+            if(window.webkit && window.webkit.messageHandlers.onClickBtn){
+                window.webkit.messageHandlers.onClickBtn.postMessage([btnName,value]);
+            }else{
+                if(window["onClickBtn"]) {
+                   window["onClickBtn"](btnName,value);
+                }
+            }
+	    }
+    };
+    // #文件夹名称#支持点击跳到该文件夹
+    function openFolderName(){
+    	//android
+        if (isAndroid) {
+        	openClickEvent("OPEN_FOLDER","");
+	    }
+	    //ios
+	    if (isIOS) {
+            if(window.webkit && window.webkit.messageHandlers.openFolderName){
+                window.webkit.messageHandlers.openFolderName.postMessage([]);
+            }else{
+                if(window["openFolderName"]) {
+                   window["openFolderName"]();
+                }
+            }
+	    }
+    };
+    $(function(){
+		if (isAndroid) {
+	        javaJs.readyDom();
+			 var observer = new MutationObserver(function (mutations, observer) {
+                      javaJs.onWebContentHeightChanged(document.body.scrollHeight);
+             });
+             var article = $('#zss_editor_content')[0];
+             var  options = {
+                  'childList': true,
+                  'attributes':false,
+                  'characterData':true
+                } ;
+
+                observer.observe(article, options);
+          }
+	    
+	})
+	
+</script>
+</body>
+</html>

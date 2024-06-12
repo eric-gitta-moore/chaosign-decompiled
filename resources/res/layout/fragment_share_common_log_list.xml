@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.note.widget.CommomLogListTitleBar android:gravity="center_vertical" android:id="@+id/viewTitleBar" android:layout_width="match_parent" android:layout_height="48dp"/>
+    <RelativeLayout android:id="@+id/rlPersonnalNote" android:background="#cbdff4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/viewToolbar">
+        <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/tvPersonnalNote" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.chaoxing.mobile.note.widget.FloatListRelativeLayout android:id="@+id/vgFloat" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.chaoxing.mobile.note.widget.FloatListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+        <LinearLayout android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/viewReload2" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+        </LinearLayout>
+        <TextView android:textSize="18sp" android:textColor="#66333333" android:gravity="center" android:id="@+id/tvNoDataTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/ivBackTop" android:paddingBottom="22dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@drawable/img_to_top" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/ivNoNote" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_commonlog_search_nodata" android:layout_centerInParent="true"/>
+    </com.chaoxing.mobile.note.widget.FloatListRelativeLayout>
+</LinearLayout>

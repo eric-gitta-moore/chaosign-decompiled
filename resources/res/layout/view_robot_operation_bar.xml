@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/camera" android:background="@drawable/robot_camera" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/speech" android:background="@drawable/robot_speech" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/keyboard" android:background="@drawable/robot_keyboard" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

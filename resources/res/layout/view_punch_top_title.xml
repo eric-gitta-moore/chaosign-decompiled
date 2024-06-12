@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14sp" android:ellipsize="end" android:id="@+id/tvLeft" android:background="@android:color/transparent" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0dp" android:minHeight="0dp" android:layout_centerVertical="true" android:drawableStart="@drawable/navigation_img_back" android:paddingStart="10dp" android:paddingEnd="6dp"/>
+    <TextView android:textSize="18sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerInParent="true" android:layout_marginStart="40dp" android:layout_marginEnd="48dp"/>
+    <RelativeLayout android:id="@+id/flRight" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginEnd="@dimen/ui_10_dip" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/ivRight" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/punch_wifi_menu_icon" android:layout_centerVertical="true" android:layout_marginStart="0dp" android:layout_alignParentStart="true"/>
+        <ImageView android:id="@+id/redDotIv" android:visibility="gone" android:layout_width="10dp" android:layout_height="10dp" android:src="@drawable/red_dot_shape" android:layout_alignTop="@+id/ivRight" android:layout_centerVertical="true" android:layout_alignEnd="@+id/ivRight"/>
+    </RelativeLayout>
+</merge>

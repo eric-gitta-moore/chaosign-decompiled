@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#292e33" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/video_gridview_zone" android:visibility="gone" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.mobile.conferencesw.view.CustomGridView android:id="@+id/video_gridview" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="1dp" android:verticalSpacing="1dp" android:stretchMode="columnWidth" android:numColumns="3"/>
+    </ScrollView>
+    <TextView android:id="@+id/video_empty_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无用户开启视频" android:layout_centerInParent="true" style="@style/style_mainui_list_empty_tip"/>
+</RelativeLayout>

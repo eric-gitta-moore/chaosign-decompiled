@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f4f4f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.fanzhou.refresh.PullToRefreshListView android:id="@+id/lv_group_chatroom" android:background="#f4f4f6" android:layout_width="match_parent" android:layout_height="match_parent" android:transcriptMode="alwaysScroll" android:layout_above="@+id/group_chatroom_divider"/>
+    <TextView android:id="@+id/group_chatroom_divider" android:background="@color/color_ffcccccc" android:layout_width="match_parent" android:layout_height="1px" android:layout_above="@+id/rl_group_chatroom_footer"/>
+    <RelativeLayout android:id="@+id/rl_group_chatroom_footer" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/action_zone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/icon_zone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/et_group_chatroom_msg" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/smile_msg" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chatting_biaoqing"/>
+                <ImageView android:id="@+id/img_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp" android:src="@drawable/type_select_btn"/>
+                <ImageView android:id="@+id/iv_keyboard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp" android:src="@drawable/chatting_setmode_keyboard_btn"/>
+                <TextView android:textColor="@color/antique_white" android:gravity="center" android:id="@+id/tv_group_chatroom_send" android:background="@drawable/chat_send_btn" android:visibility="visible" android:layout_width="50dp" android:layout_height="30dp" android:layout_margin="6dp" android:text="发送"/>
+            </LinearLayout>
+            <com.chaoxing.mobile.chat.widget.ChatFooterEditText android:textSize="16sp" android:textColorHint="#ffcccccc" android:gravity="center_vertical" android:id="@+id/et_group_chatroom_msg" android:background="@drawable/bg_edittext_circular_bead_white" android:padding="11dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:hint="@string/live_say_something" android:maxLength="100" android:layout_toLeftOf="@+id/icon_zone" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/fl_group_chatroom_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/action_zone"/>
+    </RelativeLayout>
+</RelativeLayout>

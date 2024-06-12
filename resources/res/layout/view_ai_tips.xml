@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/ll_tips" android:paddingBottom="24dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="#1b1f26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你好，我是小星。你可以说"/>
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#1b1f26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="“小星小星”唤醒或中断我"/>
+</LinearLayout>

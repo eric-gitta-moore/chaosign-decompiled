@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlo_makeup" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/llo_makeup" android:layout_width="280dp" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/beauty_txt" android:background="#e6534f4e" android:paddingTop="10dp" android:paddingBottom="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="美颜" android:layout_weight="1"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/filter_txt" android:background="#e6534f4e" android:paddingTop="10dp" android:paddingBottom="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="滤镜" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rlo_content" android:background="#e6534f4e" android:layout_width="280dp" android:layout_height="wrap_content" android:layout_above="@+id/llo_makeup" android:layout_alignParentRight="true">
+        <com.chaoxing.mobile.live.LiveBeautyView android:id="@+id/view_beauty" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40dp"/>
+        <com.chaoxing.mobile.live.LiveFilterView android:id="@+id/view_filter" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/close" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/rlo_content" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="15dp" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_logo" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true" app:riv_corner_radius="4dp" app:riv_oval="false"/>
+        <RelativeLayout android:id="@+id/rl_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_logo" android:layout_centerVertical="true">
+            <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="2" android:layout_toLeftOf="@+id/ll_right"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_999999" android:id="@+id/tv_down_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_below="@+id/tv_name"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_999999" android:id="@+id/tv_down_speed" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_down_progress" android:layout_below="@+id/tv_name"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@+id/view_delete" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_delete" android:background="@drawable/cloud_down_cancel" android:layout_width="25dp" android:layout_height="25dp"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/view_pause_start" android:paddingLeft="7dp" android:paddingTop="4dp" android:paddingRight="20dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_down_state" android:background="@drawable/cloud_down_start" android:layout_width="25dp" android:layout_height="25dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@+id/progress_bar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="2dp" android:max="100" android:progressDrawable="@drawable/cloud_down_item_progress" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal"/>
+</LinearLayout>

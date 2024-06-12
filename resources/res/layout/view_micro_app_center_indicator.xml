@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="44dp">
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/indicator_channel" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" android:layout_marginStart="10dp" android:layout_toStartOf="@+id/iv_more"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_more" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/mainpage_channel_all" android:layout_alignParentEnd="true"/>
+    <View android:background="#ffebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

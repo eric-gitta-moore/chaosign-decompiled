@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="11dp" android:paddingTop="8dp" android:paddingRight="15dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp">
+        <RelativeLayout android:id="@+id/rl_mission" android:layout_width="48dp" android:layout_height="48dp" android:layout_centerVertical="true">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_mission" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/course_task_answer_gray" android:scaleType="centerCrop" android:layout_centerInParent="true" app:riv_corner_radius="4dp"/>
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_video_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40dp" android:src="@drawable/ic_course_task_video_play" android:layout_centerInParent="true"/>
+            <TextView android:id="@+id/tv_mission_tip" android:background="@drawable/shape_mission_circle" android:paddingTop="-6dp" android:visibility="gone" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="-8dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/rl_mission" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp">
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/tv_mission_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="name" android:maxLines="2" android:layout_toLeftOf="@+id/iv_code1" android:lineSpacingMultiplier="1.2"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:ellipsize="end" android:id="@+id/tv_mission_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="content" android:singleLine="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/mission_time" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="time" android:singleLine="true" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/divider" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</LinearLayout>

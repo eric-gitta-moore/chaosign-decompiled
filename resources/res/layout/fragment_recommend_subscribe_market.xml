@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/empty" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ListView android:id="@+id/lvChannelList" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/List_View_Style"/>
+    <include android:id="@+id/llLoading" android:visibility="gone" layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

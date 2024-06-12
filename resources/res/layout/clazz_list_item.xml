@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="74dp" android:layout_marginRight="-141dp">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp">
+                <TextView android:textSize="15sp" android:textColor="#333333" android:id="@+id/clazz_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="name"/>
+                <TextView android:textSize="11sp" android:textColor="#999999" android:id="@+id/class_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="num"/>
+            </LinearLayout>
+            <TextView android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="74dp" android:drawableRight="@drawable/arrow_right_blue_two" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="15sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvEdit" android:background="#c8c7cd" android:visibility="visible" android:layout_width="70dp" android:layout_height="match_parent" android:text="@string/common_modify"/>
+        <TextView android:textSize="15sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="#fb362d" android:layout_width="70dp" android:layout_height="match_parent" android:text="归档"/>
+    </LinearLayout>
+</RelativeLayout>

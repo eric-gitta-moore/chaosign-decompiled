@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/back" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:text="" android:drawableLeft="@drawable/rk_back"/>
+    <FrameLayout android:id="@+id/center_divider" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="1dp" android:layout_centerInParent="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="测试" android:layout_above="@+id/center_divider" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/color_cc_publisher" android:gravity="center" android:id="@+id/operate" android:background="@drawable/bg_cc_toast_operate" android:paddingLeft="12dp" android:paddingTop="5dp" android:paddingRight="12dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="观看直播" android:layout_below="@+id/center_divider" android:layout_centerHorizontal="true"/>
+</merge>

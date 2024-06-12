@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+<meta name="format-detection" content="telephone=no,email=no,adress=no">
+<meta charset="utf-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="previewWrap">
+  <div class="previewBox previewBox-notice">
+    	<div class="preview_notice_me" id="preview_notice_me">
+    		<div class="noticeHead"></div>
+				<div class="noticeContent" id="zss_editor_content"></div>
+    	</div>
+    	<div class="notice_main" id="notice_main"></div>
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/replace.js"></script>
+  <script type="text/javascript" src="js/editor.js"></script>
+  <script>
+	zss_editor.init();
+	
+	// 按钮点击调客户端方法
+    function openClickEvent(btnName,value){
+    	//android
+        if (isAndroid) {
+        	javaJs.onClickBtn(btnName,value);
+	    }
+	    //ios
+	    if (isIOS) {
+            if(window.webkit && window.webkit.messageHandlers.onClickBtn){
+                window.webkit.messageHandlers.onClickBtn.postMessage([btnName,value]);
+            }else{
+                if(window["onClickBtn"]) {
+                   window["onClickBtn"](btnName,value);
+                }
+            }
+	    }
+    };
+    function openReplyEvent(btnName,value1,value2){
+      //android
+        if (isAndroid) {
+          javaJs.openReplyEvent(btnName,value1,value2);
+      }
+      //ios
+      if (isIOS) {
+            if(window.webkit && window.webkit.messageHandlers.openReplyEvent){
+                window.webkit.messageHandlers.openReplyEvent.postMessage([btnName,value1,value2]);
+            }else{
+                if(window["openReplyEvent"]) {
+                   window["openReplyEvent"](btnName,value1,value2);
+                }
+            }
+      }
+    };
+    // 点击详情页位置信息传给编辑页，编辑页zss_editor.focusEditor方法再把信息传进去
+    function openfocusPos(infor){
+    	//android
+        if (isAndroid) {
+        	javaJs.openfocusPos(infor);
+	    }
+	    //ios
+	    if (isIOS) {
+            if(window.webkit && window.webkit.messageHandlers.openfocusPos){
+                window.webkit.messageHandlers.openfocusPos.postMessage([infor]);
+            }else{
+                if(window["openfocusPos"]) {
+                   window["openfocusPos"](infor);
+                }
+            }
+	    }
+    };
+</script>
+</body>
+</html>

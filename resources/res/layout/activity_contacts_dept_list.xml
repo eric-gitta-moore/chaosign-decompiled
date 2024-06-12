@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.FragmentTabHost xmlns:android="http://schemas.android.com/apk/res/android" android:id="@android:id/tabhost" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/titeBar" android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/common_title_bar"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <HorizontalScrollView android:background="#ebeced" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TabWidget android:gravity="center" android:orientation="horizontal" android:id="@android:id/tabs" android:layout_width="match_parent" android:layout_height="40dp" android:divider="@android:color/transparent" android:showDividers="none"/>
+                </HorizontalScrollView>
+                <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+                <FrameLayout android:id="@android:id/tabcontent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.fanzhou.widget.FragmentTabHost>

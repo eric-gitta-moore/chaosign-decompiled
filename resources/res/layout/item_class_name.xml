@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_class_name" android:background="@color/white" android:layout_width="match_parent" android:layout_height="68dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+        <View android:background="#cccccc" android:layout_width="1px" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="13dp" android:layout_marginRight="17dp" android:layout_weight="1">
+            <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:textSize="17sp" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/tv_class_name" android:layout_width="match_parent" android:layout_height="match_parent" android:text="alksdjflk" android:singleLine="true" android:drawableRight="@drawable/right_arrow"/>
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="1px" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View android:id="@+id/last_class_line" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+</LinearLayout>

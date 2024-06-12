@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/view_loading" android:background="#262626" android:padding="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+    <androidx.core.widget.ContentLoadingProgressBar android:id="@+id/pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:indeterminateTint="#ffffff" style="?android:attr/progressBarStyleSmall"/>
+    <TextView android:textSize="14sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/face_upload_loading"/>
+</LinearLayout>

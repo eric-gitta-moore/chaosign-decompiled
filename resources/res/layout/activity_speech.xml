@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rootLayout" android:background="@color/speech_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18dp" android:textColorHint="@color/text_hint" android:gravity="left" android:id="@+id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:hint="请开始讲话"/>
+    <Button android:id="@+id/btnStartSpeech" android:background="@drawable/btn_speak" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginBottom="120dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <Button android:textColor="@android:color/white" android:id="@+id/btnEndSpeech" android:background="@drawable/btn_cancel" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="40dp" android:text="取消" android:layout_alignParentBottom="true"/>
+    <com.fanzhou.widget.HeartBeatShapeView android:id="@+id/myHeartBeatShapeView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

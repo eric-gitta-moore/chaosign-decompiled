@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:drawable="@drawable/tab_group_selected"/>
+            <item android:left="17dp" android:bottom="17dp">
+                <shape android:shape="oval">
+                    <size android:height="12dp" android:width="10dp"/>
+                    <solid android:color="#ff7e00"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:drawable="@drawable/tab_group_normal"/>
+            <item android:left="17dp" android:bottom="17dp">
+                <shape android:shape="oval">
+                    <size android:height="10dp" android:width="10dp"/>
+                    <solid android:color="#ff7e00"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/parentView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@+id/refresh_layout" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.scwang.smart.refresh.header.CxClassicsHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlDrawableArrow="@drawable/icon_refresh" app:srlDrawableArrowSize="18dp" app:srlDrawableMarginRight="8dp" app:srlDrawableProgressSize="18dp" app:srlEnableLastTime="false" app:srlFinishDuration="100" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="13sp" app:srlTextTimeMarginTop="2dp"/>
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/clbarLayout" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@+id/appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_collapseMode="2" app:layout_scrollFlags="3">
+                    <com.chaoxing.mobile.course.ui.view.CourseCurriculumHeader android:id="@+id/course_curriculum_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" app:layout_collapseMode="2" app:layout_scrollFlags="3"/>
+                </com.google.android.material.appbar.AppBarLayout>
+                <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_task" android:background="@drawable/white_circle_border_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:listSelector="@android:color/transparent" android:divider="@null" android:footerDividersEnabled="false" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+        <include android:id="@+id/view_reload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="16sp" android:textColor="#808080" android:layout_gravity="center_horizontal" android:id="@+id/show_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:textColor="#808080" android:layout_gravity="center_horizontal" android:id="@+id/show_empty1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_centerInParent="true"/>
+    </LinearLayout>
+    <include android:id="@+id/view_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+    <include android:id="@+id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

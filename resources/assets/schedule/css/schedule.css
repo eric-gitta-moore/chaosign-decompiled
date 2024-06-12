@@ -1,0 +1,278 @@
+@charset "UTF-8";
+html, body { width: 100%; height: 100%; background: #FFFFFF; }
+
+::-webkit-scrollbar { width: 0px; }
+
+.tophead { position: fixed; top: 0; width: 100%; height: 95px; text-align: center; background-color: #FFFFFF; z-index: 1; }
+.tophead .head { position: relative; }
+.tophead .leftHead { position: absolute; left: 0; bottom: 0; height: 45px; z-index: 1; }
+.tophead .back { float: left; width: 40px; height: 45px; background: url(../images/headback.png) center center/24px 24px no-repeat; }
+/* .tophead .totalscheduel { display: none; float: left; line-height: 25px; padding-left: 13px; width: 50px; color: #0999FF; font-size: 0.3rem; box-sizing: border-box; margin-top: 10px; text-align: left; } */
+/* 课表总览适配ipad */
+.tophead .totalscheduel { display: none; float: left; line-height: 25px; padding-left: 13px; color: #0999FF; font-size: 0.3rem; box-sizing: border-box; margin-top: 10px; text-align: left; }
+.tophead .centerHead { position: relative; }
+.tophead .rightHead { position: absolute; right: 4px; bottom: 0; height: 45px; z-index: 1; }
+.tophead .completeDelete { display: none; position: absolute; right: 0; bottom: 0; height: 45px; line-height: 45px; text-align: center; width: 1.1rem; font-size: 15px; color: #0999FF; z-index: 1;}
+.tophead .rightHead .scan { display: none; float: left; width: 24px; height: 24px; background: url(../images/headback.png) center center/24px 24px no-repeat; }
+.tophead .rightHead .setting { float: left; width: 40px; height: 100%; background: url(../images/setting.png) center center/24px 24px no-repeat; }
+
+.selectBox { height: 45px; text-align: center; }
+.selectBox .selectWeek { font-size: 18px; line-height: 44px; color: #000000; height: 100%; width: 50%; margin: 0 auto; display: flex;align-items: center;flex-direction: column;justify-content: center;}
+.selectBox .selectWeek .weekBox{ height: 24px;display: flex;flex-direction: row;align-items: center;}
+.selectBox .selectWeek img { width: 12px; height: 12px; margin-left: 6px; transition: all 0.2s; }
+.selectBox .selectWeek .isNow{ display: none; color:#999;font-size: 11px;line-height: normal;margin-right: 15px;}
+.selectBox .selectList { display: none; position: absolute; z-index: 1; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.5); }
+.selectBox .selectList ul { width: 100%; padding: 0.22rem 0.2rem 0.12rem; position: relative; background-color: #FFFFFF; overflow: hidden; }
+.selectBox .selectList li { float: left; width: 25%; text-align: center; padding: 0.08rem; }
+.selectBox .selectList li p { background-color: #F5F6F8; border-radius: 0.08rem; height: 0.72rem; font-size: 0.26rem; line-height: 0.72rem; color: #333333; }
+.selectBox .selectList li p.active { color: #0099FF; }
+.selectBox.active .selectWeek img { transform: rotate(180deg); }
+.selectBox.active .selectList { display: block; }
+
+.settingMask { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: transparent; z-index: 1; }
+.tipsMask { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: transparent; z-index: 1; }
+
+.settingModal { position: absolute; right: 0.14rem; top: 45px; width: 2.1rem; background: #ffffff; box-shadow: 0px 0px 0.06rem 0px rgba(153, 153, 153, 0.6); border-radius: 0.08rem; }
+.settingModal .settingList { border-radius: 0.08rem; overflow: hidden; padding-left: 0; }
+.settingModal .listItem { text-align: center; height: 0.88rem; line-height: 0.88rem; font-size: 0.32rem; color: #333333; }
+.settingModal:after { position: absolute; content: ''; top: -0.18rem; right: 0.14rem; width: 0.4rem; height: 0.2rem; background: url(../images/trishadow.png) center center/0.4rem 0.2rem no-repeat; }
+.settingTips{   
+  z-index: 1;
+  position: absolute;
+  right: 0.14rem;
+  top: 45px;
+  text-align: center;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 0.32rem;
+  color: #EFEFEF;
+  background: rgba(24, 30, 51, 0.8);
+  border-radius: 4px;
+  padding-left: 0.16rem;
+  padding-right: 0.16rem;
+}
+.settingTips:after {
+  position: absolute;
+  content: '';
+  top: -0.2rem;
+  right: 0.14rem;
+  width: 0.4rem;
+  height: 0.2rem;
+  background: url(../images/Triangle.png) center center/0.4rem 0.2rem no-repeat;
+}
+
+/*拖动遮罩*/
+.leftmaskdiv { position: absolute; left: 0; background: rgba(0, 153, 255, 0.15); }
+
+.topmaskdiv { position: absolute; top: 45px; background: rgba(0, 153, 255, 0.15); }
+
+/* 返回本周 */
+.backToWeek {
+  background: #09f;
+  position: fixed;
+  bottom: 2rem;
+  right: 0;
+  z-index: 1;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 50px 0px 0px 50px;
+  padding: 5px 8px 5px 10px;
+  box-shadow: -1px 1px 3px 0px rgba(1, 77, 128, 0.3);
+  display: flex;
+  align-items: center;
+}
+.backToWeek img {
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+}
+
+.table { position: relative; top: 95px; }
+.table:before { position: absolute; content: ''; top: 5.59rem; left: 0; height: 0; width: 100%; }
+.table:after { position: absolute; content: ''; top: 11.18rem; left: 0; height: 0; width: 100%; }
+
+table { width: 100%; border-collapse: collapse; table-layout: fixed; /*头部颜色*/ }
+table thead tr th { width: 12.78%; height: 50px; text-align: center; background-color: #FCFCFC; padding: 4px; box-shadow: 0px -1px 0px 0px #F2F2F2 inset; }
+table td { width: 12.78%; height: 1.4rem; text-align: center; border-bottom: dashed 1px #F3F4F6; border-right: dashed 1px #F3F4F6; box-sizing: border-box; }
+table tbody tr { height: 1.4rem; }
+table tr th:first-child, table tr td:first-child { width: 9.45%; }
+table tr th:last-child, table tr td:last-child { width: 13.87%; border-right: none; }
+table tr th:last-child, table .col7 { padding-right: 0.08rem; }
+table tr td:first-child { border-bottom: none; border-right: solid 1px #F2F2F2; }
+table td.border { border-bottom: solid 1px #e6e7eb !important; }
+table td.delete { display: none; }
+table .thdiv { height: 42px; padding-top: 6px; border-radius: 0.08rem; }
+table .thdiv.today { padding-top: 5px; background: #ebf7ff; border: 1px solid #93cef5; }
+table .thdiv.today span { color: #45A5E6; }
+table .thdiv.selected { background: #e6edf7; border: 1px solid #cedaeb; }
+table th.active .thdiv { background: #e6edf7; border: 1px solid #cedaeb; border-radius: 0.08rem; }
+table.dayView th { opacity: 0.45; }
+table.dayView th.active { opacity: 1; }
+table.dayView td.col { width: 90.55%; }
+table .tddiv{position:relative; user-select:none; -moz-user-select: none; -ms-user-select: none; -webkit-user-select: none;}
+table .tddiv p{position:relative; user-select:none; -moz-user-select: none; -ms-user-select: none; -webkit-user-select: none;}
+/* 增加课程冲突样式 */
+table .tddiv .clashCourse{width: auto;height: 18px;background: #FF554C;border-radius: 2px;margin: 2px;border: 1px solid;display: flex;align-items: center;justify-content: space-around;}
+table .tddiv i.delete{position:absolute; width:0.6rem;height: 0.6rem; right: -0.08rem; bottom: -0.08rem; z-index: 0; background: url(../images/delete.png) center center / 0.28rem 0.28rem no-repeat;}
+table th span:first-child { display: block; color: #475466; font-size: 12px; line-height: 17px; margin-bottom: 1px; }
+table th span:last-child { display: block; color: #A6ABB3; font-size: 9px; line-height: 12px; font-weight: normal; }
+table td > div { width: calc(100% - 0.08rem); height: calc(100% - 0.08rem); margin: 0.04rem; overflow: hidden; word-break: break-all; border-radius: 0.08rem; }
+table td div.firstClick { background: #E6ECF5; }
+table td img.add { display: block; width: 0.28rem; height: 0.28rem; }
+table .col0 { color: #475466; background-color: #FCFCFC; font-size: 0.24rem; }
+table .sIndex { font-size: 0.24rem; color: #475466; line-height: 0.33rem; margin-bottom: 0.02rem;  overflow: hidden;text-overflow: ellipsis;white-space: nowrap; }
+table .stime { font-size: 0.18rem; color: #A6ABB3; line-height: 0.25rem; margin-top: 0.04rem; }
+table td[rowspan] { border-radius: 0.08rem; color: white; }
+table td[rowspan] p { text-align: left; overflow: hidden; text-overflow: ellipsis; }
+table .tddiv.color1 { background: #7EA4FC; }
+table .tddiv.color2 { background: #FFA998; }
+table .tddiv.color3 { background: #00B268; }
+table .tddiv.color4 { background: #d58512; }
+table .tddiv.color5 { background: #78C7FB; }
+table .tddiv.color6 { background: #FF99B0; }
+table .tddiv.color7 { background: #8ED66B; }
+table .tddiv.color8 { background: #E6A1CF; }
+table .tddiv.color9 { background: #6BB5FF; }
+table .tddiv.color10 { background: #FA9191; }
+table .tddiv.color11 { background: #FFB866; }
+table .tddiv.color12 { background: #FFD166; }
+table .tddiv.color13 { background: #FF5722 }
+table .tddiv.color14 { background: #B3BAFF }
+table .tddiv.color15 { background: #1a72b2 }
+table .tddiv.color16 { background: #c0a16b }
+table .tddiv.color17 { background: #a94442 }
+table .tddiv.color18 { background: #6B89B3 }
+table .tddiv.color19 { background: #8a6d3b }
+table .tddiv.color20 { background: #8899B3 }
+table .tddiv.color21 { background: #245269 }
+table .tddiv.color22 { background: #818181 }
+table .tddiv.color23 { background: #2b542c }
+table .tddiv.color24 { background: #CC3D9C }
+table .tddiv.color25 { background: #5fd6a9 }
+table .tddiv.color26 { background: #F33F34 }
+table .tddiv.color27 { background: #17a6ec }
+table .tddiv.color28 { background: #3071a9 }
+table .tddiv.color29 { background: #FF6D10 }
+table .tddiv.color30 { background: #0000FF }
+
+table .courseName { font-size: 0.24rem; line-height: 0.34rem; padding: 0.08rem 0.08rem 0 0.08rem; box-sizing: content-box; }
+table .timeBox { padding: 0.078rem 0.06rem 0 0.06rem; }
+table .courseLoc, table .teacher { font-size: 0.2rem; line-height: 0.28rem; margin: 0.04rem; opacity: 0.7; box-sizing: content-box; }
+table .dayDiv { width: calc(100% - 0.4rem); height: calc(100% - 0.2rem); margin: 0.1rem 0.2rem; border-radius: 0.08rem; box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); position: relative; }
+table .dayDiv .day-time { width: 1.1rem; height: 100%; min-width: 1.1rem; padding: 0.24rem 0; text-align: center; font-size: 0.2rem; line-height: 0.36rem; opacity: 0.65; }
+table .dayDiv .day-course { padding: 0.25rem 0.3rem; overflow: hidden; text-align: left; }
+table .dayDiv .day-clash { 
+  font-size: .167rem;
+  color: #fff;
+  background-color: #FF554C;
+  border-radius: .067rem;
+  border: 1px solid rgba(255, 255, 255, 0.70);
+  width: .35rem;
+  height: calc(100% - .067rem);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: .035rem;
+}
+.popClashCourseModal .location{
+  display: flex;
+  align-items: center;
+}
+.popClashCourseModal .onlineWrap{
+  padding: .065rem .18rem;
+  display: flex;
+  align-items: center;
+  border-radius: .233rem;
+  background-color: #F5F6F8;
+  color: #09F;
+}
+.popClashCourseModal .onlineWrap img{
+  width: .2rem;
+  height: .2rem;
+  margin-right: 0.04rem;
+}
+table .dayDiv .day-CourseName { font-size: 0.24rem; line-height: 0.34rem; margin-bottom: 0.08rem; margin-right: 0.5rem; font-weight: bold; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+table .dayDiv .day-CourseLoc { font-size: 0.2rem; line-height: 0.28rem; opacity: 0.65; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+table .dayDiv .day-CourseLoc span { margin-right: 0.2rem; }
+table .dayDiv.color1 { background: #e1f5ed; color: #00995F; }
+table .dayDiv.color1 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(0, 153, 95, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(0, 153, 95, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(0, 153, 95, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }
+table .dayDiv.color2 { background: #FFEAE6; color: #E64322; }
+table .dayDiv.color2 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(230, 67, 34, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(230, 67, 34, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(230, 67, 34, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }
+table .dayDiv.color3 { background: #FFF3D6; color: #E66300; }
+table .dayDiv.color3 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(230, 99, 0, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(230, 99, 0, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(230, 99, 0, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }
+table .dayDiv.color4 { background: #E6E8FF; color: #4D57BF; }
+table .dayDiv.color4 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(77, 87, 191, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(77, 87, 191, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(77, 87, 191, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }
+table .dayDiv.color5 { background: #D5EEFE; color: #2E6E99; }
+table .dayDiv.color5 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(46, 110, 153, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(46, 110, 153, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(46, 110, 153, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }
+table .dayDiv.color6 { background: #ffe6eb; color: #CC3D5D; }
+table .dayDiv.color6 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(204, 61, 93, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(204, 61, 93, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(204, 61, 93, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }
+table .dayDiv.color7 { background: #E8F5E1; color: #339900; }
+table .dayDiv.color7 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(51, 153, 0, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(51, 153, 0, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(51, 153, 0, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }
+table .dayDiv.color8 { background: #EBF1FF; color: #2D55B3; }
+table .dayDiv.color8 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(204, 61, 156, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(204, 61, 156, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(204, 61, 156, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }
+table .dayDiv.color9 { background: #E0EFFE; color: #2E6399; }
+table .dayDiv.color9 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(46, 99, 153, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(46, 99, 153, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(46, 99, 153, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }
+table .dayDiv.color10 { background: #FFEBEB; color: #D93636; }
+table .dayDiv.color10 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(217, 54, 54, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(217, 54, 54, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(217, 54, 54, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }
+table .dayDiv.color11 { background: #FFF1E0; color: #B35300; }
+table .dayDiv.color11 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(179, 83, 0, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(179, 83, 0, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(179, 83, 0, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }
+/*table .dayDiv.color12 { background: #EBF1FF; color: #2D55B3; }*/
+/*table .dayDiv.color12 .day-time { background: -webkit-linear-gradient(left, transparent 50%, rgba(45, 85, 179, 0.15) 50%) right center no-repeat; background: -moz-linear-gradient(left, transparent 50%, rgba(45, 85, 179, 0.15) 50%) right center no-repeat; background: -ms-linear-gradient(left, transparent 50%, rgba(45, 85, 179, 0.15) 50%) right center no-repeat; background-size: 1px 100%; }*/
+
+/*复制到我的课程表*/
+.bottomBtn { display: none; position: fixed; bottom: 0; left: 0; width: 100%; height: 1.2rem; background-color: #FFFFFF; }
+.bottomBtn .btn { margin: 0.2rem 0.3rem; height: 0.8rem; }
+
+.table.other { margin-bottom: 1.8rem; }
+
+.guidMask { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); overflow: hidden; z-index: 10; }
+.guidMask .firstdiv, .guidMask .seconddiv { position: absolute; width: 100%; }
+.guidMask .firstdiv .td, .guidMask .seconddiv .td { float: left; width: calc(12.78% - 0.1rem); height: 1.4rem; text-align: center; box-sizing: border-box; }
+.guidMask .firstdiv .td .firstClick, .guidMask .seconddiv .td .firstClick { width: 100%; height: calc(100% - 0.08rem); margin: 0.04rem 0; overflow: hidden; word-break: break-all; border-radius: 0.08rem; background: #E6ECF5; }
+.guidMask .firstdiv .td .firstClick img, .guidMask .seconddiv .td .firstClick img { display: block; width: 0.28rem; height: 0.28rem; }
+.guidMask .firstdiv p, .guidMask .seconddiv p { float: left; margin-left: 0.16rem; font-size: 0.3rem; color: #eff6ff; line-height: 0.48rem; }
+.guidMask .guidearrow { display: block; width: 0.5rem; height: 1.2rem; margin: 0 auto; }
+.guidMask .guideline { float: left; display: block; width: 0.7rem; height: 0.26rem; margin-left: 0.04rem; }
+.guidMask .firstdiv { left: calc(9.45% + 0.08rem); height: 1.4rem; top: 95px; }
+.guidMask .seconddiv { left: calc(22.23% + 0.08rem); height: 2.7rem; top: calc(95px + 2.8rem); }
+.guidMask .seconddiv .bg { position: relative; top: 0.06rem; float: left; width: calc(12.78% - 0.08rem); height: 100%; background: rgba(230, 236, 245, 0.15); border-radius: 0.08rem; }
+.guidMask .seconddiv .bg .td { width: 100%; }
+.guidMask .seconddiv .bg .td .firstClick { margin: 0 0 0.04rem; }
+.guidMask .seconddiv .guideline { position: relative; top: 1.9rem; }
+.guidMask .seconddiv p { position: relative; top: 1.58rem; }
+
+body.hasLesstips .tophead { height: 135px; }
+body.hasLesstips .table, body.hasLesstips .guidMask .firstdiv { top: 135px; }
+body.hasLesstips .guidMask .seconddiv { top: calc(135px + 2.8rem); }
+
+/*iphone678状态栏*/
+.ioswrapMax .tophead { padding-top: 20px !important; height: 115px; }
+.ioswrapMax .settingModal { top: 65px; }
+.ioswrapMax .settingTips{top: 65px;}
+.ioswrapMax .table, .ioswrapMax .guidMask .firstdiv { top: 115px; }
+.ioswrapMax .guidMask .seconddiv { top: calc(115px + 2.8rem); }
+.ioswrapMax.hasLesstips .tophead { height: 155px; }
+.ioswrapMax.hasLesstips .table, .ioswrapMax.hasLesstips .guidMask .firstdiv { top: 155px; }
+.ioswrapMax.hasLesstips .guidMask .seconddiv { top: calc(155px + 2.8rem); }
+
+/*iphone678plus状态栏*/
+.iospluswrapMax .tophead { padding-top: 30px !important; height: 125px; }
+.iospluswrapMax .settingModal { top: 75px; }
+.iospluswrapMax .settingTips{top: 75px;}
+.iospluswrapMax .table, .iospluswrapMax .guidMask .firstdiv { top: 125px; }
+.iospluswrapMax .guidMask .seconddiv { top: calc(125px + 2.8rem); }
+.iospluswrapMax.hasLesstips .tophead { height: 165px; }
+.iospluswrapMax.hasLesstips .table, .iospluswrapMax.hasLesstips .guidMask .firstdiv { top: 165px; }
+.iospluswrapMax.hasLesstips .guidMask .seconddiv { top: calc(165px + 2.8rem); }
+
+/*iphoneX状态栏*/
+.iosxwrapMax .tophead { padding-top: 44px !important; height: 139px; }
+.iosxwrapMax .settingModal { top: 89px; }
+.iosxwrapMax .settingTips{top: 89px;}
+.iosxwrapMax .table, .iosxwrapMax .guidMask .firstdiv { top: 139px; }
+.iosxwrapMax .guidMask .seconddiv { top: calc(139px + 2.8rem); }
+.iosxwrapMax.hasLesstips .tophead { height: 179px; }
+.iosxwrapMax.hasLesstips .table, .iosxwrapMax.hasLesstips .guidMask .firstdiv { top: 179px; }
+.iosxwrapMax.hasLesstips .guidMask .seconddiv { top: calc(179px + 2.8rem); }
+
+/*# sourceMappingURL=schedule.css.map */

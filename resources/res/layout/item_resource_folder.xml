@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="65dp">
+        <CheckBox android:id="@+id/cbSelector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/ivIcon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" android:src="@drawable/ic_folder_private" android:scaleType="fitXY" android:layout_toRightOf="@+id/cbSelector" android:layout_centerVertical="true"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/iv_arrow" android:layout_toRightOf="@+id/ivIcon" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="#333333" android:id="@+id/tvName" android:paddingRight="34dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-30dp" android:layout_toRightOf="@+id/tvName">
+                <TextView android:textSize="10sp" android:textColor="#999999" android:id="@+id/tv_top" android:background="@drawable/bg_circular_bead_ff999999" android:paddingLeft="4dp" android:paddingTop="1dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grouplist_Top"/>
+            </LinearLayout>
+            <TextView android:textSize="13sp" android:textColor="@color/public_list_content" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@+id/tvName"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_arrow" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/gray_ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

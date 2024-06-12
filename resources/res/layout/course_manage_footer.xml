@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/color_f5f6f8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="13dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_course_set" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_clazz_mange" android:background="@color/white" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@+id/tv_clazz_manage" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/course_clazz_manage" android:layout_toLeftOf="@+id/tv_clazz_num"/>
+                <TextView android:textSize="15sp" android:textColor="@color/gray_b3b3b3" android:gravity="center" android:id="@+id/tv_clazz_num" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="45dp" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/gray_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_course_weight" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@+id/tv_course_weight" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginRight="15dp" android:text="@string/course_weight_setting" android:drawableRight="@drawable/ic_right_arrow" android:layout_alignParentRight="true"/>
+            <View android:background="@color/gray_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@+id/tv_team_manage" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginRight="15dp" android:text="@string/course_team_manage" android:drawableRight="@drawable/ic_right_arrow" android:layout_alignParentRight="true"/>
+            <View android:background="#f5f6f8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="13dp"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rl_restart" android:background="@color/white" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/tv_restart" android:background="@color/white" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/course_restart" android:drawableRight="@drawable/ic_right_arrow" android:layout_centerVertical="true"/>
+            <View android:background="@color/color_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/rl_clone" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="45dp">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tvRightArrow" android:layout_centerVertical="true">
+                    <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/tv_clone" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/course_clone"/>
+                    <TextView android:textSize="13sp" android:textColor="#999999" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/course_clone_tip" android:layout_below="@+id/tvLabel"/>
+                </LinearLayout>
+                <TextView android:textSize="14sp" android:textColor="@color/normal_gray" android:id="@+id/tvRightArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:drawableRight="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#f5f6f8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="13dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_course_logo_switch" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="15dp" android:text="@string/course_show_logo"/>
+        <View android:background="@color/color_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_alignParentBottom="true"/>
+        <com.kyleduo.switchbutton.SwitchButton android:id="@+id/logo_switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_course_task_sync" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@+id/task_sync_to_clazz" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="15dp" android:text="@string/course_save_task_to_clazz"/>
+        <View android:background="@color/color_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_alignParentBottom="true"/>
+        <com.kyleduo.switchbutton.SwitchButton android:id="@+id/task_sync_switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_sync" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_sync_class_room" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/tv_sync" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/course_sync"/>
+                <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sync_switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            </RelativeLayout>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tv_sync_tips1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_chapter_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:text="@string/course_chapter_number"/>
+        <com.kyleduo.switchbutton.SwitchButton android:id="@+id/switch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_task_publish" android:background="@color/white" android:paddingLeft="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="课堂活动发放方式" android:layout_toLeftOf="@+id/tv_publish" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:id="@+id/tv_publish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="15dp" android:text="推送给学生" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_import_course" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tv_import_course" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_unit_from_teach_package" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_export_course" android:background="@color/white" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@+id/tv_export_course" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/course_mooc" android:drawableRight="@drawable/ic_right_arrow"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_delete" android:background="@drawable/shape_course_delete_backgroud" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="30dp" android:layout_marginRight="15dp" android:text="@string/common_delete"/>
+    <TextView android:textSize="14sp" android:textColor="#b3b3b3" android:gravity="center" android:id="@+id/bottom" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/down_pc" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/divider_view1" android:background="#f5f6f8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <View android:background="@color/color_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_operation_hint" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="36dp" android:text="@string/common_click_and_sort" android:layout_below="@+id/toolbar"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_ppt_task" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/operation_toolbar" android:layout_below="@+id/tv_operation_hint"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/operation_toolbar" android:background="#ffd9d9d9" android:paddingTop="1px" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_delete" android:background="#fff5f6f8" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/delete_resource" android:layout_weight="1"/>
+        <View android:background="#d9d9d9" android:visibility="visible" android:layout_width="1px" android:layout_height="match_parent"/>
+        <TextView android:textSize="16sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_move" android:background="#fff5f6f8" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/move_resource" android:layout_weight="1"/>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar" layout="@layout/common_loading_transparent"/>
+</RelativeLayout>

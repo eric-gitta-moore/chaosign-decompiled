@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="65dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_left" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_student_course_group_chat" android:scaleType="centerCrop" android:layout_centerVertical="true" app:riv_corner_radius="4dp"/>
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/tv_count" android:layout_toRightOf="@+id/iv_left" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@+id/tv_label" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/student_group_chat" android:layout_toLeftOf="@+id/tv_recent_time" android:layout_toRightOf="@+id/lessonIv"/>
+                <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@+id/tv_recent_time" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxLines="1" android:layout_toRightOf="@+id/lessonIv" android:layout_centerVertical="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/bg_color_f5f6f8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/content_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="96dp" android:weightSum="3">
+        <RelativeLayout android:id="@+id/item" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_collection_my_group" android:layout_centerHorizontal="true" app:is_circle="false" app:x_radius="8px" app:y_radius="8px"/>
+            <TextView android:textSize="13sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:maxLines="1" android:layout_below="@+id/iv_icon" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/view_d1" android:background="#e6e9ed" android:layout_width="1px" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/item_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="13sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_label_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:maxLines="1" android:layout_below="@+id/iv_icon_2" android:layout_centerHorizontal="true"/>
+            <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chaoxing_default" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:is_circle="false" app:x_radius="8px" app:y_radius="8px"/>
+        </RelativeLayout>
+        <View android:id="@+id/view_d2" android:background="#e6e9ed" android:layout_width="1px" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/item_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chaoxing_default" android:layout_centerHorizontal="true" app:is_circle="false" app:x_radius="8px" app:y_radius="8px"/>
+            <TextView android:textSize="13sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_label_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:maxLines="1" android:layout_below="@+id/iv_icon_3" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/view_d4" android:background="#e6e9ed" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="96dp" android:weightSum="3">
+        <RelativeLayout android:id="@+id/item_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chaoxing_default" android:layout_centerHorizontal="true" app:is_circle="false" app:x_radius="8px" app:y_radius="8px"/>
+            <TextView android:textSize="13sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_label_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:maxLines="1" android:layout_below="@+id/iv_icon_5" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/view_d5" android:background="#e6e9ed" android:layout_width="1px" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/item_6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chaoxing_default" android:layout_centerHorizontal="true" app:is_circle="false" app:x_radius="8px" app:y_radius="8px"/>
+            <TextView android:textSize="13sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_label_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:maxLines="1" android:layout_below="@+id/iv_icon_6" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/view_d6" android:background="#e6e9ed" android:layout_width="1px" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/item_7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chaoxing_default" android:layout_centerHorizontal="true" app:is_circle="false" app:x_radius="8px" app:y_radius="8px"/>
+            <TextView android:textSize="13sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_label_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:maxLines="1" android:layout_below="@+id/iv_icon_7" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/view_d8" android:background="#e6e9ed" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

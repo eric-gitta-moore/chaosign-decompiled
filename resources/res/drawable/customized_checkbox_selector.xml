@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/customized_toggle_button_checked"/>
+    <item android:state_checked="false" android:drawable="@drawable/customized_toggle_button_uncheck"/>
+    <item android:drawable="@drawable/customized_toggle_button_uncheck"/>
+</selector>

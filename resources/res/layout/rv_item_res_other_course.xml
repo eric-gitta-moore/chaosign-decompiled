@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="73dp">
+        <RelativeLayout android:paddingRight="12dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_centerVertical="true">
+            <CheckBox android:id="@+id/cb_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+            <RelativeLayout android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/cb_selector" android:layout_centerVertical="true">
+                <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/ga_folder" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:src="@drawable/ic_default_image" android:scaleType="centerCrop" cx:riv_mutate_background="true" cx:riv_oval="false"/>
+                <RelativeLayout android:id="@+id/rl_icon_course" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginLeft="5dp" android:layout_centerVertical="true">
+                    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/ga_icon" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_chaoxing_default" android:scaleType="fitCenter" android:layout_centerInParent="true" cx:riv_corner_radius="4dp" cx:riv_mutate_background="true" cx:riv_oval="true"/>
+                    <TextView android:textSize="10sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_red_count" android:background="@drawable/shape_red_circle_ff" android:layout_width="18dp" android:layout_height="18dp" android:maxLines="1" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toLeftOf="@+id/tv_arrow" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@+id/rl_title" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:paddingRight="60dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+                    <RelativeLayout android:id="@+id/tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-55dp" android:layout_marginTop="3dp" android:layout_toRightOf="@+id/tv_title">
+                        <TextView android:textSize="10sp" android:textColor="#999999" android:id="@+id/tv_top_tag" android:background="@drawable/bg_circular_bead_ff999999" android:paddingLeft="4dp" android:paddingTop="1dp" android:paddingRight="4dp" android:paddingBottom="1dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_top" android:maxLines="1" android:layout_toRightOf="@+id/tv_tag"/>
+                        <TextView android:textSize="9sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_tag" android:background="@drawable/bg_circular_bead_ff33adff" android:paddingBottom="1dp" android:layout_width="19dp" android:layout_height="15dp" android:layout_marginRight="5dp" android:text="教" android:maxLines="1" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <TextView android:textSize="14sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="正文" android:maxLines="1" android:layout_toLeftOf="@+id/tv_folder" android:layout_below="@+id/rl_title"/>
+                <TextView android:textSize="12sp" android:textColor="#0099ff" android:ellipsize="end" android:id="@+id/tv_folder" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="文件夹" android:maxLines="1" android:maxLength="10" android:layout_below="@+id/rl_title" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/img_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_sort" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sort_36dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="70dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

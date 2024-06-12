@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.toofifi.mobile.component.view.ScaleBarcodeView android:id="@+id/zxing_barcode_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.toofifi.mobile.component.view.CustomViewFinderView android:id="@+id/zxing_viewfinder_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textColor="@color/c_a_green" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/zxing_status_view" android:background="@color/c_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="saoyis"/>
+</merge>

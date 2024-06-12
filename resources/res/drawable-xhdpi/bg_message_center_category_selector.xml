@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/message_center_category_bg"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="bottom|center_vertical|center_horizontal|center" android:src="@drawable/ic_triangle" android:tileMode="disabled"/>
+    </item>
+</layer-list>

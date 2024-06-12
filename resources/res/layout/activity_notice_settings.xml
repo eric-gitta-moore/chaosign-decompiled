@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/cToolBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/ll_reply_mode" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:visibility="gone" android:layout_margin="@dimen/dp_10" style="@style/notice_setting_linearlayout_vertical_radius">
+                <RelativeLayout android:id="@+id/rl_reply" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:text="@string/notice_letter_mode_replay" style="@style/notice_setting_text_warp_16_333333"/>
+                    <ImageView android:id="@+id/iv_reply" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <View style="@style/notice_setting_line"/>
+                <RelativeLayout android:id="@+id/rl_comment" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:text="@string/notice_letter_mode_comment" style="@style/notice_setting_text_warp_16_333333"/>
+                    <ImageView android:id="@+id/iv_comment" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_forbid_reply" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:text="@string/message_notice_allow_comment" style="@style/notice_setting_text_warp_16_333333"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sb_forbid_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_visible_all_comment" android:layout_width="match_parent" android:layout_height="84dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/tv_visible_all_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="30dp" android:text="@string/message_notice_show_allow_comments" android:maxLines="1"/>
+                    <TextView android:textSize="13sp" android:textColor="#8a8b99" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="15dp" android:text="@string/message_notice_show_allow_comments_tip" android:maxLines="2" android:layout_toLeftOf="@+id/sb_visible_all_comment" android:layout_below="@+id/tv_visible_all_comment"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sb_visible_all_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" style="@style/notice_setting_linearlayout_vertical_radius">
+                <RelativeLayout android:id="@+id/rl_hide_read" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:text="@string/notice_hide_read_receipts" style="@style/notice_setting_text_warp_16_333333"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sb_hide_read" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <View style="@style/notice_setting_line"/>
+                <RelativeLayout android:id="@+id/rv_send_time" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:text="@string/notice_timed_send" style="@style/notice_setting_text_warp_16_333333"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sb_time_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_time_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View style="@style/notice_setting_line"/>
+                    <TextView android:gravity="center_vertical" android:layout_height="@dimen/dp_50" android:text="@string/pcenter_contents_sendtime" android:layout_alignParentTop="true" style="@style/notice_setting_text_warp_16_333333"/>
+                    <TextView android:gravity="center_vertical" android:id="@+id/tv_timed_send" android:layout_height="@dimen/dp_50" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/notice_setting_text_warp_13_0099ff"/>
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_999999" android:id="@+id/tv_time_send_tip" android:layout_width="wrap_content" android:layout_height="15dp" android:layout_marginBottom="@dimen/dp_15" android:layout_below="@+id/tv_timed_send"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_unread_remind" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:background="@color/color_f5f6f8" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/unread_notice_remind"/>
+                <LinearLayout android:id="@+id/ll_unread_remind_receive" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:visibility="gone" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_10" android:minHeight="@dimen/dp_53" style="@style/notice_setting_linearlayout_vertical_radius">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/unread_remind_receive_check" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginTop="@dimen/dp_5">
+                        <TextView android:text="@string/notice_setting_receive_remind_setting" android:layout_weight="1" style="@style/notice_setting_text_warp_16_333333"/>
+                        <ImageView android:id="@+id/iv_remind_receive_check" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:src="@drawable/mission_group_open"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_unread_remind_receive_content" android:background="@drawable/radius_ffffff_10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10">
+                        <RelativeLayout android:id="@+id/rl_email_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_emailRemind" style="@style/notice_setting_text_warp_16_333333"/>
+                            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cb_email_remind" style="@style/notice_setting_switch"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_email_time" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_sendtime" style="@style/notice_setting_text_warp_16_333333"/>
+                            <TextView android:id="@+id/tv_email_time" style="@style/notice_setting_text_warp_13_0099ff"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_sms_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_noteRemind" style="@style/notice_setting_text_warp_16_333333"/>
+                            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cb_sms_remind" style="@style/notice_setting_switch"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_sms_time" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_sendtime" style="@style/notice_setting_text_warp_16_333333"/>
+                            <TextView android:id="@+id/tv_sms_time" style="@style/notice_setting_text_warp_13_0099ff"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_phone_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_callRemind" style="@style/notice_setting_text_warp_16_333333"/>
+                            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cb_phone_remind" style="@style/notice_setting_switch"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_phone_time" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_sendtime" style="@style/notice_setting_text_warp_16_333333"/>
+                            <TextView android:id="@+id/tv_phone_time" style="@style/notice_setting_text_warp_13_0099ff"/>
+                            <View android:background="@color/color_ebebeb" android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_app_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/remind_in_app" style="@style/notice_setting_text_warp_16_333333"/>
+                            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cb_app_remind" style="@style/notice_setting_switch"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_app_time" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_sendtime" style="@style/notice_setting_text_warp_16_333333"/>
+                            <TextView android:id="@+id/tv_app_time" style="@style/notice_setting_text_warp_13_0099ff"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_wx_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_weichatRemind" style="@style/notice_setting_text_warp_16_333333"/>
+                            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cb_wx_remind" style="@style/notice_setting_switch"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_wx_time" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_sendtime" style="@style/notice_setting_text_warp_16_333333"/>
+                            <TextView android:id="@+id/tv_wx_time" style="@style/notice_setting_text_warp_13_0099ff"/>
+                            <View style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/ll_unread_remind_send" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:visibility="gone" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:minHeight="@dimen/dp_56" style="@style/notice_setting_linearlayout_vertical_radius">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/unread_remind_send_check" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginTop="@dimen/dp_5">
+                        <TextView android:text="@string/notice_setting_send_remind_setting" android:layout_weight="1" style="@style/notice_setting_text_warp_16_333333"/>
+                        <ImageView android:id="@+id/iv_remind_send_check" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:src="@drawable/mission_group_open"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_unread_remind_send_content" android:background="@drawable/radius_ffffff_10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10">
+                        <RelativeLayout android:id="@+id/rl_email_switch_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_emailRemind" style="@style/notice_setting_text_warp_16_333333"/>
+                            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cb_email_remind_send" style="@style/notice_setting_switch"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_email_time_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_sendtime" style="@style/notice_setting_text_warp_16_333333"/>
+                            <TextView android:id="@+id/tv_email_time_send" style="@style/notice_setting_text_warp_13_0099ff"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_sms_switch_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_noteRemind" style="@style/notice_setting_text_warp_16_333333"/>
+                            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cb_sms_remind_send" style="@style/notice_setting_switch"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_sms_time_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_sendtime" style="@style/notice_setting_text_warp_16_333333"/>
+                            <TextView android:id="@+id/tv_sms_time_send" style="@style/notice_setting_text_warp_13_0099ff"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_phone_switch_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_callRemind" style="@style/notice_setting_text_warp_16_333333"/>
+                            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cb_phone_remind_send" style="@style/notice_setting_switch"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_phone_time_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_sendtime" style="@style/notice_setting_text_warp_16_333333"/>
+                            <TextView android:id="@+id/tv_phone_time_send" style="@style/notice_setting_text_warp_13_0099ff"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_app_switch_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/remind_in_app" style="@style/notice_setting_text_warp_16_333333"/>
+                            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cb_app_remind_send" style="@style/notice_setting_switch"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_app_time_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_sendtime" style="@style/notice_setting_text_warp_16_333333"/>
+                            <TextView android:id="@+id/tv_app_time_send" style="@style/notice_setting_text_warp_13_0099ff"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_wx_switch_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_weichatRemind" style="@style/notice_setting_text_warp_16_333333"/>
+                            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cb_wx_remind_send" style="@style/notice_setting_switch"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rl_wx_time_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:text="@string/pcenter_contents_sendtime" style="@style/notice_setting_text_warp_16_333333"/>
+                            <TextView android:id="@+id/tv_wx_time_send" style="@style/notice_setting_text_warp_13_0099ff"/>
+                            <View style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_chose_send" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:background="@color/color_f5f6f8" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="@string/notice_setting_select_sender"/>
+                <LinearLayout android:id="@+id/ll_chose_sender" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:minHeight="@dimen/dp_53" style="@style/notice_setting_linearlayout_vertical_radius">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/select_send_check" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginTop="@dimen/dp_5">
+                        <TextView android:id="@+id/tv_select_sender_name" android:layout_weight="1" style="@style/notice_setting_text_warp_16_333333"/>
+                        <ImageView android:id="@+id/iv_chose_send_check" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:src="@drawable/mission_group_open"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_select_sender" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_send_type" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-5dp">
+                <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:background="@color/color_f5f6f8" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_setting_select_send_type"/>
+                <LinearLayout android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:minHeight="@dimen/dp_53" style="@style/notice_setting_linearlayout_vertical_radius">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/select_send_type" android:layout_width="match_parent" android:layout_height="@dimen/dp_45" android:layout_marginTop="@dimen/dp_5">
+                        <TextView android:id="@+id/tv_send_type_name" android:layout_weight="1" style="@style/notice_setting_text_warp_16_333333"/>
+                        <ImageView android:id="@+id/iv_send_type_check" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:src="@drawable/mission_group_open"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_sendType_option" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:id="@+id/tv_send_type_default" style="@style/notice_setting_text_warp_16_333333"/>
+                            <ImageView android:id="@+id/iv_send_type_default" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                            <View android:layout_alignParentBottom="true" style="@style/notice_setting_line"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rv_send_type_Separate" android:layout_width="match_parent" android:layout_height="50dp">
+                            <TextView android:id="@+id/tv_send_type_Separate" style="@style/notice_setting_text_warp_16_333333"/>
+                            <ImageView android:id="@+id/iv_send_type_Separate" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

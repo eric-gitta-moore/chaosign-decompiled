@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:paddingLeft="60dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.fanzhou.widget.CircleImageView android:id="@+id/ivRightAvator" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/icon_user_head_portrait" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+    <RelativeLayout android:id="@+id/rlRightTxtMsg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/ivRightAvator">
+        <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/tvRightTxtMsg" android:background="@drawable/sl_bg_msg_white" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:textIsSelectable="false"/>
+        <ProgressBar android:id="@+id/pbRightTxtMsgLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tvRightTxtMsg" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Small.Inverse"/>
+        <ImageView android:id="@+id/ivRightTxtMsgResend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_send_failed" android:layout_toLeftOf="@+id/tvRightTxtMsg" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlRightImgMsg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/ivRightAvator">
+        <com.chaoxing.mobile.widget.MsgImageView android:id="@+id/mivRightImgMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        <ProgressBar android:id="@+id/pbRightLoadingImgMsg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/mivRightImgMsg" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Small.Inverse"/>
+        <ImageView android:id="@+id/ivRightImgMsgResend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_send_failed" android:scaleType="centerInside" android:layout_toLeftOf="@+id/mivRightImgMsg" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</RelativeLayout>

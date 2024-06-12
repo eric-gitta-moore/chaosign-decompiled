@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/customer_dialog_bg" android:paddingTop="10dp" android:layout_width="300dp" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tvTitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" style="@style/Text_Title_Page"/>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/persongroup_dialog_editext_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:layout_marginBottom="10dp">
+        <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#cccccc" android:layout_gravity="center_vertical" android:id="@+id/etContent" android:background="@null" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="45dp" android:hint="@string/persongroup_create_hint" android:minEms="16" android:singleLine="true" android:maxLength="16" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivDel" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/item_selpic_del"/>
+    </LinearLayout>
+    <View android:background="#bababa" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="20dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:id="@+id/btnCancel" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1" style="@style/custom_dialog_style"/>
+        <View android:id="@+id/vDividerLine" android:background="#bababa" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:id="@+id/btnOk" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/yes" android:layout_weight="1" style="@style/custom_dialog_style"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/image_edit_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivLogo" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llBottom" android:background="@color/image_edit_bottom_banner_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/llBtnContaner">
+            <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/sbHum" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="50" android:min="0" style="@style/image_edit_CustomSeekbarStyle"/>
+            <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/sbSatura" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="50" android:min="0" style="@style/image_edit_CustomSeekbarStyle"/>
+            <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/sbLum" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="200" android:progress="100" android:min="0" style="@style/image_edit_CustomSeekbarStyle"/>
+            <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/sbDefinit" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="50" style="@style/image_edit_CustomSeekbarStyle"/>
+        </FrameLayout>
+        <View android:background="#757b7e" android:layout_width="match_parent" android:layout_height="1px" android:layout_above="@+id/llBtnContaner"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llBtnContaner" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llLum" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/ivLum" android:background="@drawable/image_edit_palette_lum_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <TextView android:textColor="@color/image_edit_white" android:gravity="center" android:id="@+id/tvLum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/image_edit_bright" android:layout_centerInParent="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llHum" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/ivHum" android:background="@drawable/image_edit_palette_contract_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <TextView android:textColor="@color/image_edit_white" android:gravity="center" android:id="@+id/tvHum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/image_edit_contrast"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llDefinit" android:paddingTop="10dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/ivDefinit" android:background="@drawable/image_edit_palette_definit_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <TextView android:textColor="@color/image_edit_white" android:gravity="center" android:id="@+id/tvDefinit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/image_edit_clarity"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llSatura" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/ivSatura" android:background="@drawable/image_edit_palette_satura_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <TextView android:textColor="@color/image_edit_white" android:gravity="center" android:id="@+id/tvSatura" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/image_edit_saturation"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@+id/titleBar" layout="@layout/image_edit_edit_image_header"/>
+</RelativeLayout>

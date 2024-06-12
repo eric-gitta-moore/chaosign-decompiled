@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp">
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="40dp" android:layout_height="40dp">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_book_cover_40dp" android:scaleType="centerCrop" app:riv_corner_radius="4dp"/>
+            <com.chaoxing.bookshelf.view.RoundProgressBar android:id="@+id/download_progressbar" android:background="@drawable/book_round_progressbar_background" android:layout_width="28dp" android:layout_height="28dp" android:max="100" android:layout_centerInParent="true" app:roundProgressColor="@android:color/white" app:roundWidth="1dp" app:textIsDisplayable="false"/>
+            <TextView android:textSize="9dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_download_progress" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_download_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_book_shlef_progress_pause" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <TextView android:textSize="13sp" android:textColor="#ffb3b3b3" android:ellipsize="end" android:id="@+id/tv_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/right" app:layout_constraintHorizontal_bias="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/right" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/tv_author" app:layout_constraintTop_toTopOf="0">
+                    <View android:layout_gravity="center_vertical" android:id="@+id/split_view" android:background="#ffebebeb" android:layout_width="1dp" android:layout_height="12dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+                    <TextView android:textSize="13sp" android:textColor="#ffb3b3b3" android:layout_gravity="center_vertical" android:id="@+id/tv_read_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="#ffebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="50dp"/>
+</FrameLayout>

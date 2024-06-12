@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.conferencesw.view.MeetSurfaceViewContainer android:id="@+id/rl_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/rl_top" android:background="#80000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_back" android:padding="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_2" android:src="@mipmap/cx_ic_navigation_arrow_back_24dp_white"/>
+            <TextView android:textSize="15sp" android:textColor="@color/white" android:id="@+id/tv_right" android:paddingLeft="8dp" android:paddingTop="@dimen/dp_10" android:paddingRight="8dp" android:paddingBottom="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_4" android:text="@string/commen_done" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.chaoxing.core.widget.HorizontalListView android:id="@+id/listView" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="98dp"/>
+        <RelativeLayout android:id="@+id/rl_check" android:background="#80000000" android:layout_width="match_parent" android:layout_height="@dimen/dp_46">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@+id/tvTip" android:paddingLeft="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_selected_background_takes_effect_immediately" android:layout_centerVertical="true" android:layout_toStartOf="@+id/ll_check" android:layout_alignParentStart="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_check" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivCheck" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/ic_course_online_virture_bg_uncheck"/>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/tvVirture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_7" android:text="@string/online_mirror_image"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

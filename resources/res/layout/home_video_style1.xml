@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_item1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.chaoxing.mobile.study.home.mainpage.view.HomeVideoImageView android:id="@+id/v_video1" android:layout_width="match_parent" android:layout_height="@dimen/home_image_max_height"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_item1_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="测试"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#b3b3b3" android:id="@+id/tv_item1_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:text="作者"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_items" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

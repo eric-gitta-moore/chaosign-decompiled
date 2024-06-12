@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/voice_recording_round_bg" android:layout_width="60dp" android:layout_height="60dp">
+    <ImageView android:id="@+id/iv" android:background="@drawable/create_new_note_icon_for_ball" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginBottom="4dp"/>
+    <TextView android:textSize="10sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tvTime" android:layout_width="40dp" android:layout_height="wrap_content" android:text="@string/create_note" android:maxLines="1"/>
+</LinearLayout>

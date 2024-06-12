@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingTop="12dp" android:paddingRight="15dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_logo" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:src="@drawable/ic_folder_private" android:scaleType="centerCrop" android:layout_centerVertical="true" cx:riv_mutate_background="true" cx:riv_oval="false"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/tv_arrow" android:layout_toRightOf="@+id/iv_logo" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="正文" android:maxLines="1"/>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/img_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/gray_ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="65dp" android:layout_alignParentBottom="true"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fanzhou="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/container" android:background="@drawable/dynamic_recommend_item_cover_bg" android:paddingBottom="13dp" android:descendantFocusability="blocksDescendants" android:layout_width="142dp" android:layout_height="wrap_content" android:layout_marginRight="7dp">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/dynamic_recommend_item_bg" android:layout_width="65dp" android:layout_height="65dp" android:layout_marginTop="8dp">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerInParent="true" fanzhou:is_circle="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:lines="1"/>
+        <TextView android:textSize="12sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/tv_introduction" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:lines="2"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_attention" android:background="@drawable/bg_circular_bead_ff0099ff" android:layout_width="105dp" android:layout_height="20dp" android:layout_marginTop="10dp" android:text="关注" android:layout_alignParentBottom="true"/>
+</LinearLayout>

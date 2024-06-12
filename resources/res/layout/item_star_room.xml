@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:my="http://schemas.android.com/apk/res-auto" android:id="@+id/container" android:paddingLeft="16dp" android:paddingRight="16dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="73dp">
+        <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/icon_user_head_portrait" android:layout_centerVertical="true" my:is_circle="false" my:x_radius="6px" my:y_radius="6px"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/iv_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@+id/tv_count" android:layout_centerVertical="true"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

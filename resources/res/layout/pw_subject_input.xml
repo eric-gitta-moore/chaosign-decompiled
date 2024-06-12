@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/viewContainer" android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#f7f7f7" android:paddingLeft="22dp" android:paddingTop="4dp" android:paddingRight="22dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/subject" android:background="@drawable/bg_group_qrcode_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_subject" android:background="@drawable/menu_btn_bg" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="专题"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/subject_chapter" android:background="@drawable/bg_group_qrcode_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_subject_chapter" android:background="@drawable/menu_btn_bg" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="专题章节"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/course_chapter" android:background="@drawable/bg_group_qrcode_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_course_chapter" android:background="@drawable/menu_btn_bg" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/import_course_chapter"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/note" android:background="@drawable/bg_group_qrcode_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_note" android:background="@drawable/menu_btn_bg" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="笔记"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_group_qrcode_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginBottom="16dp">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_cancel" android:background="@drawable/menu_btn_gray_bg" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="取消"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

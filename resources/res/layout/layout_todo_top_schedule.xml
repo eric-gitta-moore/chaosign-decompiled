@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/top_schedule" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginBottom="@dimen/dp_8">
+        <ImageView android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_margin="@dimen/dp_11" android:src="@drawable/icon_todo_top_schedule"/>
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_schedule"/>
+    </LinearLayout>
+</RelativeLayout>

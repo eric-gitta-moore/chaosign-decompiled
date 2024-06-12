@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/screen_cast_control_rock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="85dp">
+        <com.chaoxing.study.screencast.view.RockerView android:id="@+id/rocker_view" android:layout_width="128dp" android:layout_height="128dp" android:layout_marginBottom="100dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:study_screencast_areaBackground="@drawable/study_screencast_rock_view_background_normal" app:study_screencast_rockerBackground="@drawable/study_screencast_rock_handle_normal" app:study_screencast_rockerCallBackMode="1" app:study_screencast_rockerScale="0.42" app:study_screencast_rockerSpeedLevel="10"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="right" android:id="@+id/ivWord" android:background="@drawable/study_screencast_img_topic_screen_word" android:visibility="gone" android:clickable="true" android:layout_width="60dp" android:layout_height="60dp"/>
+    <include android:id="@+id/guide_page" android:visibility="gone" layout="@layout/study_screencast_screen_cast_controller_guide_page"/>
+    <com.chaoxing.study.screencast.view.ScreenCastDragView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/screen_cast_control" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_marginBottom="85dp"/>
+</FrameLayout>

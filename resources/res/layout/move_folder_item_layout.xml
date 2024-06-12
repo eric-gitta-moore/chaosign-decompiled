@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/itemContainer" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_toLeftOf="@+id/btnNext" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="56dp" android:layout_height="56dp">
+                <ImageView android:id="@+id/iv_icon" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_folder_private" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tvName" android:paddingRight="50dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:maxLines="1" style="@style/text_title_16"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-46dp" android:layout_toRightOf="@+id/tvName">
+                <TextView android:textSize="10sp" android:textColor="#999999" android:id="@+id/tv_top" android:background="@drawable/bg_circular_bead_ff999999" android:paddingLeft="4dp" android:paddingTop="1dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grouplist_Top"/>
+                <ImageView android:id="@+id/ivSilence" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_hint_trends"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textColor="#0099ff" android:id="@+id/btnNext" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iv_selected" android:text="@string/common_enter" android:drawableRight="@drawable/book_source_next_level" android:drawablePadding="6dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

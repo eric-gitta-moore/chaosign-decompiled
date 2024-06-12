@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layout_left" android:background="#e61f1f1f" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentStart="true"/>
+    <RelativeLayout android:id="@+id/layout_right" android:background="#e6181e33" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentEnd="true"/>
+    <RelativeLayout android:gravity="bottom" android:id="@+id/layout_bottom" android:background="@drawable/video_bottom_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/back_tiny" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="6dp" android:layout_marginTop="6dp"/>
+    <RelativeLayout android:id="@+id/layout_top" android:background="@drawable/video_title_bg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ProgressBar android:id="@+id/loading" android:visibility="invisible" android:layout_width="32dp" android:layout_height="32dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/video_download_progrss"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_center_control" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/iv_center_play_pre" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_center_play_pre" android:layout_marginEnd="67dp"/>
+        <ImageView android:id="@+id/start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/iv_center_play_next" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_center_play_next" android:layout_marginStart="67dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/small_close" android:paddingLeft="10dp" android:paddingTop="10dp" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/video_small_close" android:scaleType="centerInside"/>
+    <ImageView android:id="@+id/lock_screen" android:padding="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video_unlock" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <RelativeLayout android:id="@+id/right_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/shot_screen" android:padding="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_shotscreen"/>
+        <ImageView android:id="@+id/write_note" android:padding="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_writenote" android:layout_below="@+id/shot_screen"/>
+    </RelativeLayout>
+</RelativeLayout>

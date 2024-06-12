@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvGroupMember" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#d9d9d9" android:dividerHeight="1px" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+        <TextView android:textSize="18sp" android:textColor="#66333333" android:id="@+id/noDataTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无小组成员" android:layout_centerInParent="true"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

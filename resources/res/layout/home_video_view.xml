@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18sp" android:textStyle="bold" android:textColor="#1a1a1a" android:id="@+id/tv_column_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#666666" android:id="@+id/tv_column_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_home_more" android:drawableRight="@drawable/ic_home_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.chaoxing.mobile.study.home.mainpage.view.HomeVideoView1 android:id="@+id/video_style1" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    <com.chaoxing.mobile.study.home.mainpage.view.HomeVideoView2 android:id="@+id/video_style2" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    <View android:background="@color/home_item_divider" android:layout_width="match_parent" android:layout_height="@dimen/home_item_divider" android:layout_marginTop="25dp"/>
+</LinearLayout>

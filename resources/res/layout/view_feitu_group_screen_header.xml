@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_line_jg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="13dp" android:paddingTop="11dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="14sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_666666" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/input_ip" android:background="@drawable/bg_ic_input" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:hint="@string/ic_input_ip_hint" android:layout_weight="1"/>
+            <TextView android:id="@+id/scan" android:background="@drawable/ic_scan" android:visibility="gone" android:layout_width="21dp" android:layout_height="21dp"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/net_image" android:background="@drawable/ic_current_network" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/current_network" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="22dp" android:text="@string/ic_same_network"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="18dp" android:text="@string/ic_select_screen"/>
+    <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp" android:layout_marginTop="17dp"/>
+</merge>

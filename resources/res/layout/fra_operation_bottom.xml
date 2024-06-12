@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/vg_bottom" android:background="#f7f7f7" android:layout_width="match_parent" android:layout_height="50dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_operation" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/note_panel_open" android:scaleType="centerInside" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llkeyboard" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <View android:background="#c5c5c5" android:layout_width="1px" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/iv_keyboard_hidden" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_open_keyboard" android:scaleType="centerInside"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#c5c5c5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:id="@+id/fl_footer_panel" android:background="#f7f7f7" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

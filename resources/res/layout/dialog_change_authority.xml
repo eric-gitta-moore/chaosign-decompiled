@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="282dp">
+        <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tv_allow" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="允许" android:layout_weight="1"/>
+        <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tv_need_apply" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="需要申请" android:layout_weight="1"/>
+        <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tv_not_allow" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="不允许" android:layout_weight="1"/>
+        <View android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="6dp"/>
+        <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

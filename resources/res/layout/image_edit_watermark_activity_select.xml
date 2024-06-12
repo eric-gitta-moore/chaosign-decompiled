@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_source" android:layout_width="match_parent" android:layout_height="0dp" android:scaleType="centerInside" app:layout_constraintDimensionRatio="h,3:4" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#0099ff" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_image" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginTop="30dp" android:layout_marginStart="28dp" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/tv_text" app:layout_constraintTop_toBottomOf="@+id/iv_source"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#0099ff" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_text" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginTop="30dp" android:singleLine="true" android:layout_marginStart="20dp" android:layout_marginEnd="28dp" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toRightOf="@+id/tv_image" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/iv_source"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

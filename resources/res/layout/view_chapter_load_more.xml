@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14dp" android:textColor="#3c3c3c" android:gravity="center_vertical" android:id="@+id/tv_chapter_load_pre" android:visibility="gone" android:layout_width="16dp" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="滑动查看上一章节" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="14dp" android:textColor="#3c3c3c" android:gravity="center_vertical" android:id="@+id/tv_chapter_load_after" android:visibility="gone" android:layout_width="16dp" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="滑动查看下一章节" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

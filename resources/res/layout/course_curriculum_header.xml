@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/white_circle_border_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:elevation="0dp" app:cardCornerRadius="4dp">
+    <LinearLayout android:orientation="vertical" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="15dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/student_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textColor="#ff333333" android:id="@+id/student_tv_course" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="13sp" android:textColor="@color/chaoxing_blue" android:id="@+id/button_punch_stu" android:background="@drawable/blue_border_099bff" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="10dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/student_teacher" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/curriculum_teach"/>
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/student_tv_teacher" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/student_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/curriculum_time"/>
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/student_tv_time" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/student_location_room" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_location"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/student_tv_location_room" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:gravity="center_vertical" android:id="@+id/student_tv_location_room_online" android:background="@drawable/bg_circular_bead_fff5f6f8" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5dp" android:drawableStart="@drawable/ic_class_room_logo" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/student_view_zhibo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/curriculum_teacher_zhibo"/>
+                <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:gravity="left" android:id="@+id/student_tv_zhibo" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/student_study_note" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/curriculum_study_note"/>
+                <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:id="@+id/student_tv_study_note" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/student_view_zhibo_live" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/student_tv_zhibo_live_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="德邻直播"/>
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="："/>
+                <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:gravity="left" android:id="@+id/student_tv_zhibo_live_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/student_view_platform" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/student_tv_platform_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="教学平台"/>
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="："/>
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/student_tv_platform_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/teacher_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textColor="@color/chaoxing_blue" android:id="@+id/teacher_tv_course" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="13sp" android:textColor="@color/chaoxing_blue" android:id="@+id/button_punch" android:background="@drawable/blue_border_099bff" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="10dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/teacher_class" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/curriculum_class"/>
+                <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:id="@+id/teacher_tv_class" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/teacher_teach_plan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/curriculum_teach_lesson"/>
+                <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:id="@+id/teacher_tv_teach_plan" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_location"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/teacher_tv_location_room" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:gravity="center_vertical" android:id="@+id/teacher_tv_location_room_online" android:background="@drawable/bg_circular_bead_fff5f6f8" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5dp" android:drawableStart="@drawable/ic_class_room_logo" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/teacher_view_zhibo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/curriculum_teacher_zhibo"/>
+                <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:gravity="left" android:id="@+id/teacher_tv_zhibo" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/curriculum_teacher_note"/>
+                <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:id="@+id/teacher_tv_teacher_note" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/teacher_view_zhibo_live" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/teacher_tv_zhibo_live_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="德邻直播"/>
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="："/>
+                <TextView android:textSize="15sp" android:textColor="@color/chaoxing_blue" android:gravity="left" android:id="@+id/teacher_tv_zhibo_live_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/teacher_view_platform" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/teacher_tv_platform_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="教学平台"/>
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="："/>
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/teacher_tv_platform_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/attend_view" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/gray_ebebeb" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <TextView android:textSize="15sp" android:textColor="@color/color_666666" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="一卡通考勤记录" android:drawableRight="@drawable/ic_right_arrow"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/custom_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</FrameLayout>

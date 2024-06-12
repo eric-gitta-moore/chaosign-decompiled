@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottom_bar">
+        <ListView android:id="@+id/list_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:divider="@color/transparent"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_alignParentBottom="true">
+        <View android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16sp" android:textColor="@color/blue_0099ff" android:id="@+id/btn_reset" android:background="@null" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/reset" android:layout_weight="1"/>
+            <View android:background="@color/divider_line" android:layout_width="1px" android:layout_height="match_parent"/>
+            <Button android:textSize="16sp" android:textColor="@color/blue_0099ff" android:id="@+id/btn_positive" android:background="@null" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/positive" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

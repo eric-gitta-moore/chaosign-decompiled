@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/tvline" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/tvWordCloud" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topic_wordscloud" android:drawableRight="@drawable/blue_ic_down" android:drawablePadding="5dp" android:layout_below="@+id/tvline"/>
+    <RelativeLayout android:id="@+id/rlContent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="217dp" android:layout_below="@+id/tvWordCloud">
+        <android.webkit.WebView android:scrollbarStyle="insideOverlay" android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <include layout="@layout/home_web_common_reload"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.widget.SelectBar xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/read_catalog_select_bar" android:background="@drawable/border_blue" android:layout_width="match_parent" android:layout_height="45dp">
+    <TextView android:textSize="16sp" android:textColor="#0e6fe7" android:gravity="center" android:id="@+id/tv_read_catalog" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/catalog_window_title" android:layout_weight="1"/>
+    <View android:background="#0e6fe7" android:layout_width="1dp" android:layout_height="match_parent"/>
+    <TextView android:textSize="16sp" android:textColor="#0e6fe7" android:gravity="center" android:id="@+id/tv_read_note_list" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/note2" android:layout_weight="1"/>
+    <View android:background="#0e6fe7" android:layout_width="1dp" android:layout_height="match_parent"/>
+    <TextView android:textSize="16sp" android:textColor="#0e6fe7" android:gravity="center" android:id="@+id/tv_read_bookmark_list" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/bookmarks_window_title" android:layout_weight="1"/>
+</com.chaoxing.widget.SelectBar>

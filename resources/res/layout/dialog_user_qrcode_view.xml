@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/bg_corner_mine_qrcode" android:layout_width="316dp" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ivShare" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/ic_mine_share" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_marginBottom="40dp" android:layout_marginStart="50dp" android:layout_marginEnd="50dp">
+        <TextView android:textSize="20dp" android:textColor="#333333" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的名片" android:singleLine="true"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/rlInviteCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvInvitCodeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/something_xuexitong_invaitecode"/>
+                <TextView android:textSize="22sp" android:textColor="#0099ff" android:id="@+id/tvInvitCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/tvInvitCodeLabel" android:layout_marginStart="4dp" android:layout_toEndOf="@+id/tvInvitCodeLabel"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_copy" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_copy_16dp"/>
+        </LinearLayout>
+        <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tvUseHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/user_xuexitong_rightconner"/>
+        <RelativeLayout android:id="@+id/rlQRCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <ImageView android:id="@+id/ivQRCode" android:background="@drawable/best_lib_rank_img_stroke" android:layout_width="216dp" android:layout_height="216dp" android:scaleType="fitCenter"/>
+            <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvScanHint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/something_xuexitong_users"/>
+    </LinearLayout>
+</RelativeLayout>

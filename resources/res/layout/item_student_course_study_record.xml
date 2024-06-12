@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/recordLayout" android:background="@color/color_f5f6f8" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="88dp">
+    <ImageView android:id="@+id/iv_upLine" android:background="#e5e5e5" android:visibility="gone" android:layout_width="2dp" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_above="@+id/iv_circle" android:layout_alignTop="@+id/divider_up"/>
+    <ImageView android:id="@+id/iv_circle" android:layout_width="10dp" android:layout_height="10dp" android:src="@drawable/bg_circle_solid_lightgray" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_bottomLine" android:background="#e5e5e5" android:layout_width="2dp" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_below="@+id/iv_circle" android:layout_alignBottom="@+id/divider_bottom"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rightParent" android:background="@drawable/bg_round_border_lightgray" android:paddingLeft="6dp" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginLeft="@dimen/ui_10_dip" android:layout_toRightOf="@+id/iv_circle" android:layout_centerInParent="true">
+        <RelativeLayout android:gravity="center" android:id="@+id/iconLayout" android:background="@drawable/bg_circle_border_lightgray" android:padding="@dimen/ui_10_dip" android:layout_width="44dp" android:layout_height="44dp">
+            <ImageView android:id="@+id/categoryIcon" android:layout_width="36dp" android:layout_height="36dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ui_10_dip">
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/categoryTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/ratioTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/categoryTv" android:layout_alignLeft="@+id/categoryTv"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/percentTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55dp" android:layout_toRightOf="@+id/ratioTv" android:layout_alignTop="@+id/ratioTv"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider_bottom" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="0.5px" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/divider_up" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="0.5px" android:layout_alignParentTop="true"/>
+</RelativeLayout>

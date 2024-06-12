@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/subscriptionContentConter" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topBar" layout="@layout/activity_top_bar"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_search" android:background="@drawable/search_bar_rect_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/topBar">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/ll_search_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="9dp" android:layout_marginTop="8dp" android:layout_marginRight="9dp" android:layout_marginBottom="8dp">
+            <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_group_search"/>
+            <TextView android:textSize="16sp" android:textColor="#cccccc" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/comment_serarch"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvContent" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:layout_below="@+id/ll_search"/>
+    <include android:id="@+id/pbContentWait" layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

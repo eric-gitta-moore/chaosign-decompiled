@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.common.TitleBarView android:id="@+id/viewTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vg_bottom" android:layout_width="match_parent" android:layout_height="90dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_weight="1">
+                <TextView android:textSize="21sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvToName" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tvToAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="2"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/tvNavigation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="20dp" android:text="导航" android:drawableTop="@drawable/icon_navigation" android:drawablePadding="2dp"/>
+        </LinearLayout>
+        <com.baidu.mapapi.map.MapView android:id="@+id/bmapView" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/vg_bottom"/>
+        <ImageView android:id="@+id/ivStartLocated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="45dp" android:layout_marginBottom="15dp" android:src="@drawable/icon_start_located" android:layout_alignRight="@+id/bmapView" android:layout_alignBottom="@+id/bmapView"/>
+    </RelativeLayout>
+</LinearLayout>

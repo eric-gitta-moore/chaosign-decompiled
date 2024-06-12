@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_red_paper" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="#d9d9d9" android:dividerHeight="1px" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <TextView android:textSize="14sp" android:textColor="#ffcbcbcb" android:gravity="center" android:id="@+id/tv_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="哎呀~竟然没有人赞赏"/>
+        <include android:id="@+id/loading" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+        <include android:id="@+id/reload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+    </RelativeLayout>
+</RelativeLayout>

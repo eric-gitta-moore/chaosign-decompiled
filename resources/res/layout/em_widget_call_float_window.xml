@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_call_voice" android:background="@android:color/transparent" android:padding="20dp" android:layout_width="100dp" android:layout_height="100dp">
+        <ImageView android:id="@+id/iv_avatar" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/em_call_video_default"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_call_video" android:background="@android:color/transparent" android:padding="20dp" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp"/>
+</RelativeLayout>

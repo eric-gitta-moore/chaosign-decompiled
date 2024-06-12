@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_img" android:layout_width="113dp" android:layout_height="80dp" android:scaleType="centerCrop" app:riv_corner_radius="4dp" app:riv_mutate_background="true"/>
+    <RelativeLayout android:id="@+id/rl_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/iv_img" android:layout_alignTop="@+id/iv_img" android:layout_alignBottom="@+id/iv_img">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="2"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#b3b3b3" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="8dp" android:maxLines="1" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <View android:background="#f5f6f7" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

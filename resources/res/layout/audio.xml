@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rlContainer" android:layout_width="match_parent" android:layout_height="78dp">
+        <RelativeLayout android:id="@+id/rlState" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/ivState" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/audio_normal" android:scaleType="fitXY"/>
+            <include android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" android:layout_centerInParent="true" layout="@layout/wait_circle_bar"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/llTitle" android:background="@drawable/audio_title_normal" android:layout_width="match_parent" android:layout_height="78dp" android:layout_toRightOf="@+id/rlState">
+            <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvTitle" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Title"/>
+            <TextView android:ellipsize="end" android:id="@+id/tvEpisode" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Content_14"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/ivCoverTop" android:background="@color/black_4c000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="78dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/selectedBg" android:background="@color/black_4c000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="78dp">
+        <ImageView android:id="@+id/edit_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:layout_marginBottom="1dp" android:src="@drawable/bookshelf_selector" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

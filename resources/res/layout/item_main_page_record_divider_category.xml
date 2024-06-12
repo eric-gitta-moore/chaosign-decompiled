@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="13dp" android:textColor="#999999" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_divider_left" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:layout_alignParentLeft="true"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="13dp" android:textColor="#999999" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_divider_right" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:layout_alignParentRight="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_divider_refresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_note_updating" android:scaleType="centerInside"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="13dp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

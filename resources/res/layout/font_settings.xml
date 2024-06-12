@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:background="@drawable/epub_shadow" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/fontBg" android:background="@color/white" android:layout_width="match_parent" android:layout_height="101dp">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="25dp" android:paddingTop="20dp" android:paddingRight="25dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/fontSubIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/font_size_black_sub" android:layout_centerVertical="true"/>
+            <com.chaoxing.widget.FontSizeSelectView android:id="@+id/fontSizeSelectView" android:layout_width="match_parent" android:layout_height="24dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/fontAddIv" android:layout_toRightOf="@+id/fontSubIv" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/fontAddIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/font_size_black_add" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="15sp" android:textColor="@color/normal_black" android:id="@+id/pageStyleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="仿真书卷"/>
+            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/switchBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" style="@style/EpubSwitchButtonWhiteStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

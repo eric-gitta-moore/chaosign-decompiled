@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#33000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_mission" android:background="#f4f5f6" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13sp" android:textColor="#707070" android:gravity="center_vertical" android:id="@+id/tvCloseOpera" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="44dp" android:drawableLeft="@drawable/note_panel_close" android:drawablePadding="8dp"/>
+            <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/tv_personal_mission_library" android:background="@drawable/ic_course_mission_lib" android:paddingLeft="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="1px"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="215dp"/>
+        <com.viewpagerindicator.CirclePageIndicator android:id="@+id/vIndicator" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginBottom="10dp" app:dotPadding="10dp" app:fillColor="#8b8b8b" app:pageColor="#bbbbbb" app:radius="3dp" app:strokeWidth="1px"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/fragment_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ll_mission"/>
+</RelativeLayout>

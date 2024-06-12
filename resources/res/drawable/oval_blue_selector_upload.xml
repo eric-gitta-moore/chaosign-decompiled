@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:gravity="bottom|center_vertical|center_horizontal|center" android:height="3dp" android:width="16dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="1dp"/>
+            <solid android:color="@color/chaoxing_blue"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.facedetection.widget.CameraView android:id="@+id/camera_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+        <com.chaoxing.facedetection.widget.OverlayView android:id="@+id/face_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignLeft="@+id/camera_view" android:layout_alignTop="@+id/camera_view" android:layout_alignRight="@+id/camera_view" android:layout_alignBottom="@+id/camera_view"/>
+        <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/face_keep_sufficient_light" android:layout_centerHorizontal="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_tips" android:layout_width="120dp" android:layout_height="32dp" android:layout_marginTop="84dp" android:text="@string/face_no_face_detected" android:layout_centerHorizontal="true" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="12dp" android:autoSizeMaxTextSize="16dp"/>
+    </RelativeLayout>
+</LinearLayout>

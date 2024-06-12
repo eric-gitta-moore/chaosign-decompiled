@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/video_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_line" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:text="线路"/>
+                <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_video_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+            <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="30dp" android:text="清晰度"/>
+            <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

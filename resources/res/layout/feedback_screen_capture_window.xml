@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/bg_screen_capture_feedback" android:paddingLeft="@dimen/dp_11" android:paddingRight="@dimen/dp_11" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivRecord" android:visibility="gone" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_8" android:layout_marginLeft="@dimen/dp_11" android:src="@drawable/ic_feedback_record_pause"/>
+    <TextView android:textSize="11sp" android:textColor="#ccffffff" android:layout_gravity="center_vertical" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_marginRight="@dimen/dp_9" android:layout_marginBottom="@dimen/dp_4"/>
+    <ImageView android:layout_gravity="center_vertical" android:background="#f54d45" android:layout_width="7dp" android:layout_height="7dp"/>
+</LinearLayout>

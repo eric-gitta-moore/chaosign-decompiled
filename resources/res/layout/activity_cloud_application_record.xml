@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/parentView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rgTabs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <RadioButton android:textSize="14sp" android:gravity="center" android:id="@+id/rb_01" android:padding="12dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_weight="1" android:layout_centerVertical="true"/>
+            <RadioButton android:textSize="14sp" android:gravity="center" android:id="@+id/rb_02" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_weight="1" android:layout_centerVertical="true" android:importantForAccessibility="yes"/>
+        </RadioGroup>
+        <View android:id="@+id/tablayout_below_divider" android:background="@color/gray_ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_record" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <include android:id="@+id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle_bg_white"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/down_tips_view"/>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.reader.pdz.booknote.widget.NotePanelView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/pdg_note_panel" android:background="@drawable/lib_reader_pdz_toolbar_bottom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="55dp" android:layout_alignParentBottom="true">
+    <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_note_close" android:background="@android:color/transparent" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/lib_reader_pdz_note_panel_back" android:scaleType="centerInside"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_note_tag" android:background="@drawable/lib_reader_pdz_note_panel_item_bg_xml" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/lib_reader_pdz_note_panel_tag_selector" android:scaleType="centerInside"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_note_line" android:background="@drawable/lib_reader_pdz_note_panel_item_bg_xml" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/lib_reader_pdz_note_panel_line_selector" android:scaleType="centerInside"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_note_free_line" android:background="@drawable/lib_reader_pdz_note_panel_item_bg_xml" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/lib_reader_pdz_note_panel_freeline_selector" android:scaleType="centerInside"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_note_highlt" android:background="@drawable/lib_reader_pdz_note_panel_item_bg_xml" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/lib_reader_pdz_note_panel_highlt_selector" android:scaleType="centerInside"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_note_rect" android:background="@drawable/lib_reader_pdz_note_panel_item_bg_xml" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/lib_reader_pdz_note_panel_rect_selector" android:scaleType="centerInside"/>
+    </RelativeLayout>
+</com.chaoxing.reader.pdz.booknote.widget.NotePanelView>

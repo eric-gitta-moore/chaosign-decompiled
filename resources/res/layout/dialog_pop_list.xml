@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:id="@+id/rootView" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_17" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tv_90" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_62" android:text="@string/topic_list_qrcode_modification_time90"/>
+        <TextView android:textSize="@dimen/sp_17" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tv_180" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_62" android:text="@string/topic_list_qrcode_modification_time180"/>
+        <TextView android:textSize="@dimen/sp_17" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tv_365" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_62" android:text="@string/topic_list_qrcode_modification_time365"/>
+        <TextView android:textSize="@dimen/sp_17" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tv_cancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_62" android:layout_marginTop="@dimen/dp_10" android:text="@string/comment_cancle"/>
+    </LinearLayout>
+</LinearLayout>

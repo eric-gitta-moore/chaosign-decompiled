@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_bar">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <EditText android:textSize="16sp" android:textColor="#333333" android:id="@+id/et_title" android:background="@android:color/transparent" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/something_xuexitong_title" android:maxLines="3" android:maxLength="200"/>
+                <View android:id="@+id/line" android:background="#ff0099ff" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_below="@+id/et_title"/>
+                <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#cccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/et_content" android:background="@android:color/transparent" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/say_something_and_thought" android:minLines="4" android:maxLength="20000" android:layout_below="@+id/line"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_images_attachments" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/et_content">
+                    <com.chaoxing.mobile.group.widget.TopicGridView android:id="@+id/gv_images" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:albumColumnWidth="68dp" app:albumColumns="4" app:albumHorizontalSpacing="12dp" app:albumPaddingBottom="@dimen/common_margin" app:albumPaddingLeft="24dp" app:albumPaddingRight="24dp" app:albumPaddingTop="@dimen/common_margin" app:albumVerticalSpacing="12dp"/>
+                    <com.chaoxing.mobile.attachment.view.AttachmentViewLayout android:id="@+id/attachmentLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@+id/bottom_bar" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rlOptPanel" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@+id/btn_add" android:background="@android:color/transparent" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:src="@drawable/note_panel_open"/>
+                    <TextView android:textSize="10sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvImageCount" android:background="@drawable/circle_bg_f55925_nosize" android:focusable="false" android:clickable="false" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginTop="7dp" android:layout_marginRight="3dp" android:text="1" android:layout_alignRight="@+id/btn_add"/>
+                </RelativeLayout>
+                <ImageView android:id="@+id/iv_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:src="@drawable/note_pic_camera" android:scaleType="centerInside" android:layout_toRightOf="@+id/rlOptPanel" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/iv_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:src="@drawable/note_pic_voice" android:scaleType="centerInside" android:layout_toRightOf="@+id/iv_camera" android:layout_centerVertical="true"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/llShowPushRemind" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:id="@+id/cbsendMessageToMember" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/create_topic_select_sign"/>
+                        <TextView android:textSize="14sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:text="推送提醒"/>
+                    </LinearLayout>
+                    <View android:background="#d9d9d9" android:layout_width="1dp" android:layout_height="48dp"/>
+                    <ImageView android:id="@+id/btn_hide_key_board" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:src="@drawable/note_open_keyboard"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+            <FrameLayout android:id="@+id/fl_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="260dp"/>
+        </LinearLayout>
+        <include android:id="@+id/loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+        <include android:id="@+id/loading2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" layout="@layout/page_loading_circle_bg_white"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvUploading" android:background="@drawable/loading_bg" android:paddingLeft="30dp" android:paddingTop="16dp" android:paddingRight="30dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录音上传中....." android:layout_centerInParent="true"/>
+</RelativeLayout>

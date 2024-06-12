@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/pdg_container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.reader.pdz.widget.PageRecyclerView android:id="@+id/rvBookView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include layout="@layout/lib_reader_pdz_view_book_top_toolbar"/>
+        <include layout="@layout/lib_reader_pdz_view_book_bottom_toolbar"/>
+        <include layout="@layout/lib_reader_pdz_view_book_note_panel"/>
+    </RelativeLayout>
+    <include android:layout_gravity="start" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/lib_reader_pdz_view_book_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>

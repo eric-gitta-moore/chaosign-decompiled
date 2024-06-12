@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/recent_play_text_linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:id="@+id/name_recent_play_list_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@+id/progress_recent_play_list_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/delete_recent_play_list_linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageButton android:id="@+id/delete_recent_play_list_ib" android:focusable="false" android:visibility="gone" android:layout_width="29dp" android:layout_height="28dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="10dp" android:layout_marginRight="0dp">
+        <TextView android:ellipsize="end" android:id="@+id/tv_downloadName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:text="科学松鼠会" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Text_Title"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_downloadState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+            <TextView android:textSize="13sp" android:textColor="#b3b3b3" android:gravity="right" android:layout_gravity="center_horizontal" android:id="@+id/tv_downloadLable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="38%" android:layout_alignParentRight="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

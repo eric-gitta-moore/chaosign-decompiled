@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
+    <RelativeLayout android:background="@drawable/boder_operation_item" android:layout_width="60dp" android:layout_height="60dp">
+        <ImageView android:id="@+id/iv_operation_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_icon" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="#666666" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/tv_operation_item" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/topic_body_select_image_album" android:maxLines="1"/>
+</LinearLayout>

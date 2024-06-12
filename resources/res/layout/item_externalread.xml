@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="66dp">
+    <RelativeLayout android:paddingLeft="15dp" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="66dp" android:layout_centerInParent="true">
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tv_coordinate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_coordinate"/>
+        <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/tv_address" android:layout_below="@+id/tv_coordinate"/>
+    </RelativeLayout>
+    <View android:id="@+id/vLine" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

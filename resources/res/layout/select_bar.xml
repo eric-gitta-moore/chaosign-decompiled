@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llBook" android:paddingTop="3dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="45dp">
+        <ImageView android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/channel_book" android:scaleType="centerInside"/>
+        <TextView android:id="@+id/tvBook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="图书" style="@style/Text_Gray_15"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llChapter" android:paddingTop="3dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_toRightOf="@+id/llBook">
+        <ImageView android:visibility="gone" android:layout_width="16dp" android:layout_height="30dp" android:src="@drawable/channel_chapter" android:scaleType="centerInside"/>
+        <TextView android:id="@+id/tvChapter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="章节" style="@style/Text_Gray_15"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llJournal" android:paddingTop="3dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_toRightOf="@+id/llChapter">
+        <ImageView android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/channel_journal" android:scaleType="centerInside"/>
+        <TextView android:id="@+id/tvJournal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="期刊" style="@style/Text_Gray_15"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llVideo" android:paddingTop="3dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_toRightOf="@+id/llJournal">
+        <ImageView android:visibility="gone" android:layout_width="36dp" android:layout_height="30dp" android:src="@drawable/channel_video"/>
+        <TextView android:id="@+id/tvVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="视频" style="@style/Text_Gray_15"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llThesis" android:paddingTop="3dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_toRightOf="@+id/llVideo">
+        <ImageView android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/channel_thesis"/>
+        <TextView android:id="@+id/tvThesis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="论文" style="@style/Text_Gray_15"/>
+    </LinearLayout>
+</RelativeLayout>

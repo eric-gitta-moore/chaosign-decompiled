@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewToolbar" layout="@layout/common_title_bar_4_title_2line"/>
+    <ScrollView android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/viewToolbar">
+        <RelativeLayout android:id="@+id/rlContent" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlTop" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="13dp">
+                <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" ss:border_color="@color/avatar_border" ss:border_width="1px" ss:is_circle="false" ss:x_radius="5dp" ss:y_radius="5dp"/>
+                <RelativeLayout android:id="@+id/rlRoom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/ivAvatar">
+                    <RelativeLayout android:id="@+id/rlTopRoom" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true"/>
+                        <TextView android:textSize="12sp" android:textColor="#cccccc" android:ellipsize="end" android:id="@+id/tvOrganization" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginTop="2dp" android:text="" android:singleLine="true" android:layout_toRightOf="@+id/tvAuthor"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rlBottomRoom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/rlTopRoom">
+                        <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvPublishTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                        <TextView android:textSize="12sp" android:textColor="#0099ff" android:id="@+id/tvDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="@string/common_delete" android:layout_toRightOf="@+id/tvPublishTime"/>
+                        <TextView android:textSize="12sp" android:textColor="#0099ff" android:id="@+id/tvRelease" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="@string/topiccheck_list_release" android:layout_toRightOf="@+id/tvDelete"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textSize="18sp" android:textColor="#000000" android:id="@+id/tvContentTitle" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/rlTop" android:lineSpacingMultiplier="1.2"/>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tvContent" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tvContentTitle" android:lineSpacingMultiplier="1.4"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llImage" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tvContent"/>
+            <com.chaoxing.mobile.attachment.view.AttachmentViewLayout android:id="@+id/attachmentLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/llImage"/>
+            <include android:visibility="gone" layout="@layout/reload"/>
+            <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

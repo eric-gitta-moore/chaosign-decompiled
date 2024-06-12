@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivCover" android:layout_width="66dp" android:layout_height="90dp" android:layout_marginLeft="10dp" android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:layout_marginBottom="6dp" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/ivCover" android:layout_centerVertical="true">
+        <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我看世界" android:singleLine="true" style="@style/Text_Title_15"/>
+        <TextView android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="王赛广" android:singleLine="true" style="@style/Text_Content_14"/>
+        <TextView android:id="@+id/tvYear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="2012.09" style="@style/Text_Content_14"/>
+    </LinearLayout>
+    <Button android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btnAddToShelf" android:background="#00a0de" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:text="下载到书架" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

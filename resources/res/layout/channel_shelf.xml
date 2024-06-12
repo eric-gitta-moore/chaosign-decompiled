@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/activity_top_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.core.widget.SliderViewSwitcher android:id="@+id/bookSwitcher" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/rl_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_no_data_tip" android:background="@drawable/conversation_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginRight="64dp" android:layout_marginBottom="69dp" android:layout_above="@+id/tv_no_data_tip" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="19sp" android:textColor="#cccccc" android:id="@+id/tv_no_data_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_conversation_tip" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

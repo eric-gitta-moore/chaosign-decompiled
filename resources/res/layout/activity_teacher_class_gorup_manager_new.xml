@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rvView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include layout="@layout/page_loading_circle"/>
+        <TextView android:textSize="15sp" android:textColor="@color/gray_b3b3b3" android:id="@+id/tvEmptyMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="220dp" android:text="点击+添加学生" android:layout_centerHorizontal="true"/>
+        <include layout="@layout/common_reload"/>
+    </RelativeLayout>
+</LinearLayout>

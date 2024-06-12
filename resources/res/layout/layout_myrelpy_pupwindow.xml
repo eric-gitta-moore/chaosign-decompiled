@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_popup_mid" android:layout_width="108dp" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/rlReplyme" android:layout_width="wrap_content" android:layout_height="44dp">
+            <TextView android:textSize="16dp" android:textColor="#333333" android:id="@+id/tvReplyMe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_replyme_title" android:layout_toLeftOf="@+id/ivSelectReplyme" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/ivSelectReplyme" android:background="@drawable/ic_replyme_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/rlMyReply" android:layout_width="match_parent" android:layout_height="44dp">
+            <TextView android:textSize="16dp" android:textColor="#333333" android:id="@+id/tvMyReply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_myreply_title" android:layout_toLeftOf="@+id/ivSelectMyReply" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/ivSelectMyReply" android:background="@drawable/ic_replyme_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

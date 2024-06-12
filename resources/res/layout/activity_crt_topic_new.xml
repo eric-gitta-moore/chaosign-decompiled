@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.input.ime.widget.RimeInputLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/input_layout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/fl_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar"/>
+        <include android:id="@+id/loading_view" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+    </RelativeLayout>
+</com.chaoxing.input.ime.widget.RimeInputLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/customer_dialog_white_bg" android:paddingLeft="1px" android:paddingTop="10dp" android:paddingRight="1px" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textColor="#333333" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text=""/>
+    <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp"/>
+    <ListView android:id="@+id/listView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/divider_line" android:dividerHeight="1px"/>
+</LinearLayout>

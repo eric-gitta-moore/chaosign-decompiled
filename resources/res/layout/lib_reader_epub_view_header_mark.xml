@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/arrowIv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/lib_reader_popup_window_arrow_down" android:scaleType="centerInside"/>
+    <TextView android:textSize="15sp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/headTipsTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp"/>
+    <ImageView android:id="@+id/markIconIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@mipmap/lib_reader_header_bookmark_unadd_icon"/>
+</merge>

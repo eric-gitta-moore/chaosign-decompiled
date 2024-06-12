@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/parentView" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:gravity="center" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginLeft="15dp" android:text="@string/system_reminder"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/radius_ffffff_10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:id="@+id/rlNewMsgTip" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabNewMsgTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/new_message_switch" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbNewMsgTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rlNoticeDetailShow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                    <View android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="1px"/>
+                    <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabNoticeDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/notice_content_switch" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbNoticeDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <TextView android:textSize="14sp" android:textColor="#b2b2b2" android:gravity="left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/switch_message_tip"/>
+                <View android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="1px"/>
+                <RelativeLayout android:id="@+id/rlNoticeManage" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabNoticeManage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/notice_manage" android:layout_centerVertical="true"/>
+                    <TextView android:id="@+id/cbNoticeManage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:drawableRight="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:gravity="center" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginLeft="15dp" android:layout_marginTop="8dp" android:text="@string/notifications_or_reminders_by_mail_on_site"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/radius_ffffff_10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:id="@+id/rlNoticeDialogShow" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabNoticeDialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/notice_dialog_switch" android:layout_toLeftOf="@+id/cbNoticeDialog" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbNoticeDialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+                <com.chaoxing.mobile.notify.widget.NoticePopupRemindType android:id="@+id/noticePopupType" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <View android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="1px"/>
+                <RelativeLayout android:id="@+id/rlWXNotice" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabWXNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/wx_notice_switch" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbWXNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:gravity="center" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginLeft="15dp" android:layout_marginTop="8dp" android:text="@string/other_settings"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/radius_ffffff_10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="69dp">
+                <RelativeLayout android:id="@+id/rlReceivePrivateMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/cbReceivePrivateMessage">
+                        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvReceivePrivateMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/receive_private_message" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:id="@+id/tvReceivePrivateMessageTips" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/receive_private_message_tips" android:layout_centerVertical="true"/>
+                    </LinearLayout>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbReceivePrivateMessage" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

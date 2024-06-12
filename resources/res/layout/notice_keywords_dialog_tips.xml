@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/customer_dialog_10bg" android:layout_width="300dp" android:layout_height="293dp">
+    <ImageView android:id="@+id/ivClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:src="@drawable/icon_notice_delete_rule" android:layout_marginStart="271dp"/>
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/notice_tips"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="252dp" android:layout_height="124dp" android:layout_marginTop="20dp" android:layout_marginStart="24dp">
+        <TextView android:textSize="14sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_tips_one"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/notice_tips_two"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/notice_tips_three"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/notice_tips_four"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/notice_tips_five"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btDetermine" android:background="@drawable/notice_rounded_button" android:layout_width="252dp" android:layout_height="40dp" android:layout_marginTop="24dp" android:text="@string/comment_done" android:layout_marginStart="24dp"/>
+</LinearLayout>

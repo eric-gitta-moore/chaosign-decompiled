@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/myLayout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="#fafafa" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+                <com.chaoxing.mobile.player.attachment.AttachmentVideoView android:id="@+id/attachmentVideo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.chaoxing.mobile.note.widget.NoteDetailRefreshLayout android:id="@+id/refresh_layout" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom" android:layout_below="@+id/attachmentVideo">
+                    <com.chaoxing.mobile.note.widget.PowerfulRecyclerView android:id="@+id/rv_comment" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:dividerColor="@color/white"/>
+                </com.chaoxing.mobile.note.widget.NoteDetailRefreshLayout>
+                <RelativeLayout android:id="@+id/rlLoadAll" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginBottom="22dp" android:layout_above="@+id/bottom" android:layout_alignParentRight="true">
+                    <TextView android:textSize="16sp" android:textColor="#ff0281df" android:background="@drawable/ic_topic_load_all" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <ImageView android:id="@+id/to_top" android:paddingBottom="22dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@drawable/img_to_top" android:layout_above="@+id/bottom" android:layout_alignParentRight="true"/>
+                <RelativeLayout android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <RelativeLayout android:id="@+id/rl_cast" android:visibility="gone" android:layout_width="match_parent" android:layout_height="62dp">
+                        <TextView android:textSize="13dp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/mission_control" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mission_control_open" android:drawableTop="@drawable/mission_control_open" android:drawablePadding="4dp" android:layout_weight="1" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <include android:id="@+id/bottomBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_reply_bar"/>
+                </RelativeLayout>
+                <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+                <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_note_failed_match_parent"/>
+            </RelativeLayout>
+            <include android:id="@+id/partCommentView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/note_detail_partcomment_list"/>
+            <com.chaoxing.study.screencast.view.ScreenCastController android:id="@+id/screen_control" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:id="@+id/reply_bg" android:background="#80000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/fl_reply" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include android:id="@+id/reply_viewLoading" android:visibility="gone" android:clickable="true" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+    <TextView android:textSize="18sp" android:textColor="#66333333" android:gravity="center" android:id="@+id/tvDeleteTip" android:background="@color/cx_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="该笔记已删除"/>
+</RelativeLayout>

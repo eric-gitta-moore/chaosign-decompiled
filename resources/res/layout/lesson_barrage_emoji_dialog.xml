@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_container" android:background="@drawable/radius_f225282e_radius5" android:padding="@dimen/dp_5" android:layout_width="match_parent" android:layout_height="160dp" android:layout_margin="@dimen/dp_5">
+    <GridView android:gravity="center" android:layout_gravity="center" android:id="@+id/gv_emoji" android:layout_width="wrap_content" android:layout_height="160dp" android:listSelector="@android:color/transparent" android:numColumns="7"/>
+</RelativeLayout>

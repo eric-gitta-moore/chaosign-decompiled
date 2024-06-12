@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivCover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:scaleType="fitXY"/>
+    <RelativeLayout android:id="@+id/tvContent" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_toRightOf="@+id/ivCover">
+        <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我看世界" android:singleLine="true" android:layout_toRightOf="@+id/ivCover" android:layout_alignTop="@+id/ivCover" style="@style/Text_Title_15"/>
+        <TextView android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="6dp" android:text="王赛广" android:layout_below="@+id/tvTitle" android:layout_alignLeft="@+id/tvTitle" style="@style/Text_Content_14"/>
+        <TextView android:id="@+id/tvYear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="2012.09" android:layout_below="@+id/tvAuthor" android:layout_alignLeft="@+id/tvTitle" style="@style/Text_Content_14"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/ivDelete" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

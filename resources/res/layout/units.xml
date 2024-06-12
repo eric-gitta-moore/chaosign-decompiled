@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_bar" layout="@layout/activity_top_bar"/>
+    <include android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="-2px" layout="@layout/unit_search_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.fanzhou.widget.PullToRefreshListView android:id="@+id/list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/btn_shadow" android:cacheColorHint="#ffffff" android:divider="@color/divider_line" android:dividerHeight="1px"/>
+        <include layout="@layout/wait_circle_bar_with_text"/>
+    </RelativeLayout>
+</LinearLayout>

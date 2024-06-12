@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/bg_sl_item" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlTvMsg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_toLeftOf="@+id/ivImg" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <TextView android:textSize="14sp" android:textColor="@color/normal_gray" android:ellipsize="end" android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true" android:layout_below="@+id/tvTitle"/>
+        <TextView android:textSize="14sp" android:textColor="@color/normal_gray" android:ellipsize="end" android:id="@+id/tvPublishTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:singleLine="true" android:layout_toRightOf="@+id/tvAuthor" android:layout_alignBottom="@+id/tvAuthor"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/ivImg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="96dp" android:maxHeight="72dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+</RelativeLayout>

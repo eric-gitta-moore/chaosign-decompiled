@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.chat.widget.AttachmentMessageView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/v_attachment_packet_message" android:background="@drawable/chat_im_to_bg_red_packet" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.chaoxing.mobile.group.ViewAttachment android:id="@+id/v_attach_message" android:paddingRight="0dp" android:layout_width="222dp" android:layout_height="wrap_content"/>
+</com.chaoxing.mobile.chat.widget.AttachmentMessageView>

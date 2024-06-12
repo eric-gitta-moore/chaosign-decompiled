@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/top_bar" android:background="@drawable/rk_bg_toolbar" android:layout_width="match_parent" android:layout_height="46dp" android:layout_alignParentTop="true">
+        <TextView android:id="@+id/back" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:text="" android:drawableLeft="@drawable/rk_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/course_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="测试" android:layout_toRightOf="@+id/back" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/share" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11dp" android:drawableLeft="@drawable/rk_share" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/switch_video_visible" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:drawableLeft="@drawable/rk_show_video" android:layout_toLeftOf="@+id/share" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/switch_video_doc" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:drawableLeft="@drawable/rk_switch_video_doc" android:layout_toLeftOf="@+id/switch_video_visible" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/bottom_bar" android:background="@color/color_cc_bg_toolbar" android:layout_width="match_parent" android:layout_height="46dp" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@+id/play_layout" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="11dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:layout_gravity="center" android:id="@+id/play" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/rk_play"/>
+        </FrameLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="8dp" android:layout_toLeftOf="@+id/llo_right" android:layout_toRightOf="@+id/play_layout" android:layout_centerVertical="true">
+            <SeekBar android:id="@+id/video_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="2dp" android:progressDrawable="@drawable/cc_seekbar_style" android:minHeight="2dp" android:thumb="@drawable/cc_progress" android:thumbOffset="0dp" android:paddingStart="0dp" android:paddingEnd="0dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/current_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="00:00" android:layout_below="@+id/video_progress" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="00:00" android:layout_below="@+id/video_progress" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llo_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/video_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="x1.0"/>
+            <TextView android:gravity="center" android:id="@+id/switch_danmaku" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11dp" android:drawableLeft="@drawable/rk_switch_danmaku_on"/>
+            <TextView android:id="@+id/zoom" android:padding="8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11dp" android:drawableLeft="@drawable/rk_zoom"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/scroll_time" android:background="@drawable/bg_rk_live_replay_time" android:visibility="gone" android:layout_width="110dp" android:layout_height="40dp" android:layout_centerInParent="true"/>
+    <View android:id="@+id/focus_view" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_bar" android:layout_below="@+id/top_bar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/select_speed_layout" android:background="@color/color_cc_bg_toolbar" android:padding="5dp" android:layout_width="40dp" android:layout_height="90dp">
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/video_speed_3" android:layout_width="wrap_content" android:layout_height="0dp" android:text="1.5x" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/video_speed_2" android:layout_width="wrap_content" android:layout_height="0dp" android:text="1.3x" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/video_speed_1" android:layout_width="wrap_content" android:layout_height="0dp" android:text="1.0x" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+    <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tvReport" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25dp" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/ivReport" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folder_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@+id/divideLine" android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+</RelativeLayout>

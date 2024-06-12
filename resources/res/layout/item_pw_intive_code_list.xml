@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/selectable_item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20dp" android:paddingTop="14dp" android:paddingRight="15dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_delete" android:paddingLeft="5dp" android:paddingTop="4dp" android:paddingRight="5dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_delete_4opencourse" android:scaleType="center"/>
+        <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textColor="#999999" android:ellipsize="end" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tv_code" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:minWidth="40dp" android:maxLines="1" android:minEms="6"/>
+    </LinearLayout>
+    <View android:id="@+id/line" android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

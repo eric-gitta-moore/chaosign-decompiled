@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/activityTitle" android:visibility="gone" layout="@layout/activity_top_bar"/>
+    <include android:id="@+id/view_no_content" android:visibility="gone" layout="@layout/setting_item_no_content"/>
+    <com.fanzhou.widget.GestureRelativeLayout android:id="@+id/mrlContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.fanzhou.widget.PullToRefreshListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvRssChannelContent" android:background="@color/white" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/divider_line" android:dividerHeight="1px"/>
+        <include android:id="@+id/pbRssChannelContentWait" layout="@layout/wait_circle_bar_with_text"/>
+    </com.fanzhou.widget.GestureRelativeLayout>
+</LinearLayout>

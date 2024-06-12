@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <RelativeLayout android:id="@+id/screen_state_zone" android:background="#bfd9f4" android:layout_width="match_parent" android:layout_height="@dimen/dp_70" android:layout_below="@+id/tool_bar">
+        <ImageView android:id="@+id/screen_state_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_feitu_connented" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_15"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_15" android:layout_toLeftOf="@+id/screen_cancle" android:layout_toRightOf="@+id/screen_state_iv" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/screen_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="已连接"/>
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_333333" android:id="@+id/screen_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="智慧教室屏幕"/>
+        </LinearLayout>
+        <Button android:textColor="@color/blue_0099ff" android:id="@+id/screen_cancle" android:background="@drawable/blue_border_corner" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_24" android:layout_marginRight="@dimen/dp_20" android:text="断开" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="18sp" android:textColor="@color/color_333333" android:id="@+id/screen" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/ic_screen_mode" android:layout_below="@+id/screen_state_zone" android:layout_marginStart="15dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/zone_row_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:weightSum="2" android:layout_below="@+id/screen">
+        <FrameLayout android:id="@+id/layout_group_screen" android:background="@drawable/bg_select_screen_mode" android:layout_width="0dp" android:layout_height="@dimen/dp_60" android:layout_weight="1" android:layout_marginStart="15dp">
+            <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/group_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_group_screen" android:drawableLeft="@drawable/icon_feitu_jinxiang" android:drawablePadding="@dimen/dp_8"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/layout_file_screen" android:background="@drawable/bg_select_screen_mode" android:layout_width="0dp" android:layout_height="@dimen/dp_60" android:layout_weight="1" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+            <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="文档展示" android:drawableLeft="@drawable/icon_feitu_file" android:drawablePadding="@dimen/dp_8"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/layout_content_screen" android:background="@drawable/bg_select_screen_mode" android:visibility="gone" android:layout_width="0dp" android:layout_height="@dimen/dp_60" android:layout_weight="1" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+            <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/content_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_content_screen" android:drawableLeft="@drawable/icon_feitu_content" android:drawablePadding="@dimen/dp_8"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/zone_row_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:weightSum="2" android:layout_below="@+id/zone_row_1">
+        <FrameLayout android:id="@+id/layout_media_screen" android:background="@drawable/bg_select_screen_mode" android:layout_width="0dp" android:layout_height="@dimen/dp_60" android:layout_weight="1" android:layout_marginStart="15dp">
+            <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="音视频展示" android:drawableLeft="@drawable/icon_feitu_media" android:drawablePadding="@dimen/dp_8"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/layout_img_screen" android:background="@drawable/bg_select_screen_mode" android:layout_width="0dp" android:layout_height="@dimen/dp_60" android:layout_weight="1" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+            <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="图片展示" android:drawableLeft="@drawable/icon_feitu_img" android:drawablePadding="@dimen/dp_8"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/zone_row_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:weightSum="2" android:layout_below="@+id/zone_row_2">
+        <FrameLayout android:layout_width="0dp" android:layout_height="@dimen/dp_60" android:layout_weight="1" android:layout_marginStart="15dp">
+            <TextView android:textSize="15sp" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/dp_8"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

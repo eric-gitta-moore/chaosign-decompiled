@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvMembers" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include layout="@layout/page_loading_circle"/>
+        <TextView android:textSize="15sp" android:textColor="#999999" android:id="@+id/tvMessageTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无数据" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

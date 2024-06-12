@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="#ffeeef" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="#ff554c" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="40dp" android:text="当前账号已在其它设备登录，消息功能暂不可用" android:maxLines="1" android:layout_weight="1"/>
+    <TextView android:textSize="12sp" android:textColor="@color/blue_0099ff" android:gravity="center_vertical" android:id="@+id/tv_reLogin" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="@dimen/dp_10" android:text="重新连接"/>
+</LinearLayout>

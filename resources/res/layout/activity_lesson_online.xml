@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_root" android:background="#ff0b0d0f" android:fitsSystemWindows="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <RelativeLayout android:id="@+id/rl_top" android:background="#cc25282e" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:id="@+id/iv_back" android:padding="8dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@mipmap/cx_ic_navigation_arrow_back_24dp_white" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_tile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="线上课堂"/>
+            <TextView android:textSize="11sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+        </LinearLayout>
+        <TextView android:textSize="15sp" android:textColor="#fff54e45" android:id="@+id/tv_right" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="退出" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_bottom" android:background="#cc25282e" android:layout_width="match_parent" android:layout_height="56dp" android:weightSum="4" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="麦克风" android:drawableTop="@drawable/ic_conference_voice" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_screen_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共享屏幕" android:drawableTop="@drawable/ic_conference_screen_share" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_speeker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扬声器" android:drawableTop="@drawable/ic_conference_speeker" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tv_members" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="成员" android:drawableTop="@drawable/ic_conference_members" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ll_bottom" android:layout_below="@+id/rl_top">
+        <com.chaoxing.mobile.conferenceys.views.LessonRootView android:gravity="center" android:layout_gravity="center" android:id="@+id/rl_surface" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_screen_share" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="16sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_share_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你正在共享屏幕"/>
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/rl_screen_share_stop" android:background="@drawable/lesson_online_screen_showing_text_bg" android:layout_width="130dp" android:layout_height="40dp" android:layout_marginTop="30dp">
+                <TextView android:textSize="@dimen/sp_16" android:textColor="#fff54e45" android:id="@+id/tv_share_now" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="停止共享" android:drawableLeft="@drawable/ic_screen_share_stop" android:drawablePadding="@dimen/dp_4" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:textColor="#ff41464d" android:gravity="center_horizontal" android:id="@+id/tv_no_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无成员共享屏幕" android:drawableTop="@drawable/ic_conference_no_screen" android:drawablePadding="13dp" android:layout_centerInParent="true"/>
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_speeker_list" android:background="@drawable/bg_conference_speeker_list" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp" android:layout_margin="@dimen/dp_10"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_screenshare_person" android:paddingLeft="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="5dp" android:layout_marginBottom="8dp" android:drawableLeft="@drawable/ic_conference_screen_share_person" android:layout_alignParentBottom="true"/>
+        <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/style_call_tools_panel_button_wrapper">
+            <ImageButton android:id="@+id/btn_invite" android:src="@drawable/em_call_invite" style="@style/style_call_tools_panel_button"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_fullscreen" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:src="@drawable/ic_conference_fullscreen" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

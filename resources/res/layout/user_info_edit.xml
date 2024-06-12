@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:id="@+id/parent" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topBar" layout="@layout/activity_top_bar"/>
+    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_weight="1" android:layout_below="@+id/topBar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/InfoLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_vertical" android:id="@+id/tvAvatar" android:paddingLeft="16dp" android:layout_width="80dp" android:layout_height="68dp" android:text="@string/portrait" style="@style/text_user_title"/>
+                <RelativeLayout android:id="@+id/rlAvatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" android:contentDescription="@null" ss:border_color="@color/user_line" ss:border_width="1px" ss:is_circle="false"/>
+                    <ProgressBar android:id="@+id/pbAvatar" android:visibility="gone" android:layout_width="45dp" android:layout_height="45dp" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/tvAvatarProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px"/>
+            <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/infoRealName" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/user_setting_info"/>
+                <ImageView android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:contentDescription="@null"/>
+                <include android:id="@+id/infoNickName" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/user_setting_info"/>
+                <ImageView android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:contentDescription="@null"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="center_vertical" android:id="@+id/infoSexLabel" android:layout_width="69dp" android:layout_height="56dp" style="@style/text_user_title"/>
+                    <RadioGroup android:orientation="horizontal" android:id="@+id/sex_radio" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                        <RadioButton android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/male_radio" android:layout_width="wrap_content" android:layout_height="match_parent" android:button="@null" android:text="男" android:drawableLeft="@drawable/button_sex" android:drawablePadding="10dp"/>
+                        <RadioButton android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/female_radio" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="40dp" android:button="@null" android:text="女" android:drawableLeft="@drawable/button_sex" android:drawablePadding="10dp"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px"/>
+            <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp" android:contentDescription="@null"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <include android:id="@+id/infoEmail" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/user_setting_info"/>
+                <ImageView android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:contentDescription="@null"/>
+                <include android:id="@+id/infoPhone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/user_setting_info"/>
+                <ImageView android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:contentDescription="@null"/>
+                <include android:id="@+id/infoSchoolName" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/user_setting_info"/>
+                <ImageView android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:contentDescription="@null"/>
+                <include android:id="@+id/infoDepartment" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/user_setting_info"/>
+            </LinearLayout>
+            <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:visibility="gone" layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

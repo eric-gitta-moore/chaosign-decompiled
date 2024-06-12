@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:shape_radiusInTopLeft="15dp" app:shape_radiusInTopRight="15dp" app:shape_solidColor="#f5f6f8">
+    <com.google.android.material.imageview.ShapeableImageView android:layout_width="match_parent" android:layout_height="100dp" android:src="@drawable/cxai_bg_top" android:scaleType="fitXY" app:shapeAppearance="@style/cxai_shape_style_rounded15"/>
+    <com.chaoxing.mobile.voice.ui.view.AiToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <TextView android:textSize="20sp" android:textColor="#1b1f26" android:ellipsize="end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="第一步: 请选择您想要的应用" android:maxLines="2"/>
+        <com.hjq.shape.layout.ShapeRelativeLayout android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="14dp" android:layout_weight="1" app:shape_radiusInTopLeft="8dp" app:shape_radiusInTopRight="8dp" app:shape_solidColor="#ffffff">
+            <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_setting_intent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.hjq.shape.layout.ShapeRelativeLayout>
+    </LinearLayout>
+</com.hjq.shape.layout.ShapeRelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="12dp">
+        <ImageView android:id="@+id/imageDelete" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="8dp" android:src="@drawable/edit_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="16sp" android:textColor="#7d4d13" android:ellipsize="end" android:id="@+id/textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@null" android:singleLine="true" android:layout_toLeftOf="@+id/imageDelete" android:layout_alignParentLeft="true"/>
+        <EditText android:textColor="#7d4d13" android:ellipsize="end" android:id="@+id/editTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@+id/imageDelete" android:layout_alignParentLeft="true" android:inputType="text" android:imeOptions="actionDone"/>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="#7d4d13" android:id="@+id/textRemark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="2dp" android:layout_marginBottom="5dp" android:text="@null" android:drawableLeft="@drawable/contents_bookmark" android:drawablePadding="5dp"/>
+</LinearLayout>

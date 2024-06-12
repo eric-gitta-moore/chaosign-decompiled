@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/sub_scription" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/headerBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@+id/rl_praise" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <Button android:id="@+id/btnPraise" android:background="@android:color/transparent" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/bar_praised"/>
+                <TextView android:textSize="10sp" android:textColor="#0099ff" android:id="@+id/tv_praise_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-12dp" android:layout_marginTop="7dp" android:layout_toRightOf="@+id/btnPraise"/>
+            </RelativeLayout>
+            <Button android:layout_gravity="center_vertical" android:id="@+id/btnForward" android:background="@android:color/transparent" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/bar_share" android:layout_alignParentRight="true"/>
+        </LinearLayout>
+        <Button android:gravity="center_vertical" android:id="@+id/btnBack" android:background="@android:color/transparent" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <TextView android:ellipsize="middle" android:gravity="center" android:id="@+id/tvAppTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="92dp" android:layout_marginRight="92dp" android:text="不吃大米饿得慌的书房" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/Text_Title_Page"/>
+    </RelativeLayout>
+    <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:background="@android:color/white" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:layout_weight="1" android:layout_below="@+id/headerBar" android:footerDividersEnabled="false"/>
+    <include android:id="@+id/manualInputIsbn" android:visibility="gone" layout="@layout/fz_manual_input_isbn"/>
+    <include layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

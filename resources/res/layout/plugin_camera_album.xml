@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/color_ebeced" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/lyBottom" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/button_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="预览" android:layout_centerVertical="true"/>
+        <CheckBox android:textSize="16sp" android:textColor="#333333" android:id="@+id/cbOriginalImg" android:paddingLeft="4dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:checked="false" android:button="@drawable/checkbox_small_selector" android:text="@string/original_img" android:layout_toRightOf="@+id/button_preview" android:layout_centerVertical="true"/>
+        <Button android:textSize="13sp" android:id="@+id/btnOk" android:background="@drawable/bg_rect_0099ff" android:layout_width="64dp" android:layout_height="30dp" android:layout_marginRight="15dp" android:text="完成" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/gvAlbum" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/lyBottom" android:layout_below="@+id/toolBar"/>
+    <TextView android:textColor="#000000" android:id="@+id/tvTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有图片" android:layout_centerInParent="true"/>
+    <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/pbLoading" android:layout_width="28dp" android:layout_height="28dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

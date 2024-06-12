@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.study.home.mainpage2.widget.nested.NestedParentRecyclerView android:id="@+id/rv_main_record" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.chaoxing.mobile.study.home.mainpage2.widget.MainPageIndicator android:id="@+id/view_float_indicator" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp"/>
+    <com.chaoxing.mobile.study.home.mainpage.view.HomePageFloatButton android:id="@+id/iv_to_top" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="75dp" android:src="@drawable/img_to_top" android:scaleType="centerInside" android:layout_alignParentBottom="true" android:layout_marginEnd="17dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_screen_laser_painter" android:background="@drawable/study_screencast_laser_painter_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/iv_screen_spoltlight" android:background="@drawable/study_screencast_spotlight_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/iv_screen_zoom_large" android:background="@drawable/study_screencast_controller_zoomlarge_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/iv_screen_zoom_small" android:background="@drawable/study_screencast_controller_zoomsmall_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/iv_screen_rotate" android:background="@drawable/study_screencast_controller_rotate_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/iv_screen_compare" android:background="@drawable/study_screencast_controller_compare_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

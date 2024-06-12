@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.GestureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/libContentConter" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/activityTitle" layout="@layout/activity_comment_title"/>
+        <include android:id="@+id/view_no_content" android:visibility="gone" layout="@layout/upload_item_no_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llcontent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="@color/red" android:id="@+id/tvTip" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+                <Button android:textColor="@color/white" android:id="@+id/btn_Upload" android:background="@color/blue_0e6fe7" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginTop="12dp" android:text="@string/begin_upload"/>
+            </LinearLayout>
+            <RelativeLayout android:background="@drawable/book_source_classify_bg" android:layout_width="match_parent" android:layout_height="34dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/upload_records" android:layout_centerVertical="true" style="@style/Text_Content_16"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/btnUploading" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="14sp" android:textColor="@color/blue_0e6fe7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_ing"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/blue_right_raw" android:contentDescription="@string/upload_ing"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ListView android:id="@+id/lvUploadRecords" android:background="@color/white" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:layout_weight="1" style="@style/List_View_Style"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@+id/pbContentWait" layout="@layout/wait_circle_bar_with_text"/>
+    <View android:id="@+id/topView" android:background="@color/black_half_apha" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.fanzhou.widget.GestureRelativeLayout>

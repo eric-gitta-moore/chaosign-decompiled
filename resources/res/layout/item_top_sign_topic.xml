@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/selectable_item_background" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/content_view" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingRight="15dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@+id/rlIconRoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="10sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/tv_tag" android:background="@drawable/bg_circular_bead_ff0099ff_2" android:layout_width="30dp" android:layout_height="16dp" android:text="@string/note_top" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/ivMissionHeader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/tvNotReadTag" android:background="@drawable/circle_bg_red" android:layout_width="9dp" android:layout_height="9dp" android:layout_marginRight="-4dp" android:layout_alignTop="@+id/rlIconRoom" android:layout_alignRight="@+id/rlIconRoom"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/tvDigest" android:background="@drawable/shape_digest_backgroud" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="精" android:layout_toRightOf="@+id/rlIconRoom" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="1" android:layout_toRightOf="@+id/tvDigest" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/cover" android:background="#80999999" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/content_view" android:layout_alignBottom="@+id/content_view"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@+id/viewDiveder2" android:background="#e5e5e5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+        <View android:id="@+id/viewDiveder" android:background="#e5e5e5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    </RelativeLayout>
+</LinearLayout>

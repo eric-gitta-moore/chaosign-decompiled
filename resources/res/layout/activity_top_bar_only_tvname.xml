@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+    <TextView android:ellipsize="middle" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginRight="65dp" android:singleLine="true" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+    <TextView android:id="@+id/tvLanguage" android:background="@drawable/light_blue_btn_bg" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="语言/中文" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Text_White_16"/>
+    <LinearLayout android:id="@+id/llGoHome" android:background="#00a0de" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:id="@+id/tvGoHome" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="12dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首页" style="@style/Text_White_18"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tvDiscuss" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" style="@style/text_discuss_style"/>
+</RelativeLayout>

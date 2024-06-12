@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/search_bar" android:background="@color/white" android:paddingRight="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+        <TextView android:textSize="15sp" android:textColor="#333333" android:id="@+id/tv_cancel" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/cl_ic_toolbar_arrow_left_24dp" android:layout_centerVertical="true" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/search_bg_night" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_toLeftOf="@+id/tv_action" android:layout_toRightOf="@+id/tv_cancel" android:layout_centerVertical="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_group_search" android:layout_marginStart="8dp" android:layout_marginEnd="5dp"/>
+            <EditText android:textSize="14sp" android:textColor="@color/normal_gray" android:textColorHint="#ffb3b3b3" android:id="@+id/et_keyword" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="30dp" android:hint="@string/comment_serarch" android:layout_weight="1" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch"/>
+            <ImageView android:id="@+id/iv_clear" android:paddingLeft="12dp" android:paddingTop="5dp" android:paddingRight="12dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_weight="0"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tv_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/search_Action_Button"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

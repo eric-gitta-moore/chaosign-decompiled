@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rlContainer" android:background="#80333333" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/popwindow_option_shap" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/tvTopic" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="话题"/>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/tvResource" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="资料"/>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </LinearLayout>
+        <TextView android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/tvCancel" android:background="@drawable/popwindow_option_shap" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="取消"/>
+    </LinearLayout>
+</RelativeLayout>

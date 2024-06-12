@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.GestureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/grlContainer" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlTitle" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+                <TextView android:id="@+id/tv_left" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+                <TextView android:ellipsize="middle" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginRight="65dp" android:singleLine="true" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+                <TextView android:id="@+id/tvLanguage" android:background="@drawable/light_blue_btn_bg" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="语言/中文" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Text_White_16"/>
+                <LinearLayout android:id="@+id/llGoHome" android:background="#00a0de" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                    <TextView android:id="@+id/tvGoHome" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="12dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首页" style="@style/Text_White_18"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tvDiscuss" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" style="@style/text_discuss_style"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+                <TextView android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" style="@style/Text_Title_20"/>
+                <TextView android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" style="@style/Text_Default_16"/>
+                <TextView android:id="@+id/tvJourName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" style="@style/Text_Default_16"/>
+                <TextView android:id="@+id/tvPublishDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" style="@style/Text_Default_16"/>
+                <TextView android:id="@+id/tvStageNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" style="@style/Text_Default_16"/>
+                <TextView android:id="@+id/tvPageNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" style="@style/Text_Default_16"/>
+                <TextView android:id="@+id/tvKeyword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" style="@style/Text_Default_16"/>
+                <TextView android:id="@+id/tvFrom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" style="@style/Text_Default_16"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llButton1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+                <LinearLayout android:gravity="center" android:id="@+id/llRead" android:background="@drawable/light_blue_btn_bg" android:visibility="gone" android:layout_width="135dp" android:layout_height="50dp" android:layout_marginRight="10dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/ivRead" android:layout_width="28dp" android:layout_height="33dp" android:layout_marginRight="10dp" android:src="@drawable/book_detail_read"/>
+                    <TextView android:id="@+id/tvReadImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="原文阅读" style="@style/Text_White_18"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@+id/llTransfer" android:background="@drawable/light_blue_btn_bg" android:visibility="gone" android:layout_width="135dp" android:layout_height="50dp" android:layout_weight="1">
+                    <ImageView android:layout_width="28dp" android:layout_height="33dp" android:layout_marginRight="10dp" android:src="@drawable/book_detail_document_transfer"/>
+                    <TextView android:id="@+id/tvTransfer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="文献传递" style="@style/Text_White_18"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llIntroduce" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="45dp">
+                <TextView android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="内容提要 :" style="@style/Text_Title"/>
+                <TextView android:id="@+id/tvContentData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3dp" style="@style/Text_Default_16"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/bottom_bar" android:layout_width="match_parent" android:layout_height="43dp" android:layout_alignParentBottom="true" layout="@layout/rss_channel_content_footer"/>
+    <include layout="@layout/wait_circle_bar"/>
+</com.fanzhou.widget.GestureRelativeLayout>

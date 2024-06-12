@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="upush_notification_content_color">#b3ffffff</color>
+    <color name="upush_notification_title_color">#ffffffff</color>
+    <color name="web_bg_color">#ff000000</color>
+</resources>

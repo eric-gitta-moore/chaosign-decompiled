@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <com.scwang.smart.refresh.header.CxClassicsHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlDrawableArrow="@drawable/icon_refresh" app:srlDrawableArrowSize="18dp" app:srlDrawableMarginRight="8dp" app:srlDrawableProgressSize="18dp" app:srlEnableLastTime="false" app:srlFinishDuration="100" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="13sp" app:srlTextTimeMarginTop="2dp"/>
+                <com.yanzhenjie.recyclerview.SwipeRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/rv_members" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+            <include android:id="@+id/edit_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" layout="@layout/note_batch_edit_bottom_bar"/>
+        </LinearLayout>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+        <RelativeLayout android:id="@+id/vg_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:id="@+id/tvNoDataTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_no_search_result" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+    </RelativeLayout>
+</LinearLayout>

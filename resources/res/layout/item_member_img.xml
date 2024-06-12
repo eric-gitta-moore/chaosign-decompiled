@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.fanzhou.widget.CircleImageView android:id="@+id/iv_member" android:clickable="false" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="12dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:contentDescription="@null" ss:border_color="#999d9e" ss:border_width="1px" ss:is_circle="false" ss:x_radius="10px" ss:y_radius="10px"/>
+</LinearLayout>

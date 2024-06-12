@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:background="@drawable/option_grid_item_bg" android:layout_width="48dp" android:layout_height="48dp">
+        <ImageView android:id="@+id/iv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_option_cloud"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/color_333333" android:gravity="center_horizontal" android:id="@+id/tv_title" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="测试" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="8sp"/>
+</LinearLayout>

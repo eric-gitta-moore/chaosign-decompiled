@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#80999999" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:id="@+id/tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="55dp" style="@style/group_popwindow_text"/>
+        <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:gravity="center" android:id="@+id/tv_text_one" android:background="@color/white" android:layout_width="match_parent" android:layout_height="55dp" android:text="@string/write_note_abadon" style="@style/group_popwindow_text"/>
+        <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:gravity="center" android:id="@+id/tv_two" android:background="@color/white" android:layout_width="match_parent" android:layout_height="55dp" android:text="@string/write_note_draft" style="@style/group_popwindow_text"/>
+        <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:gravity="center" android:id="@+id/tv_text_third" android:background="@color/white" android:layout_width="match_parent" android:layout_height="55dp" android:text="@string/write_note_abadon" style="@style/group_popwindow_text"/>
+        <View android:id="@+id/thirdline" android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+        <View android:background="@color/bg_color_f5f6f8" android:layout_width="match_parent" android:layout_height="6dp"/>
+        <TextView android:gravity="center" android:id="@+id/tv_Cancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/cancel" style="@style/group_popwindow_text"/>
+    </LinearLayout>
+</RelativeLayout>

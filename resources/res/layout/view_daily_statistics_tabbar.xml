@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.office.widget.CustomConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/constraintLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/ds_tabs_indicator" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginStart="7dp" android:layout_marginEnd="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="48dp" android:drawableStart="@drawable/mainpage_channel_mask" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/filterIv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/daily_stcs_filter_icon"/>
+    <View android:id="@+id/v_divider2" android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="3px" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+</com.chaoxing.mobile.office.widget.CustomConstraintLayout>

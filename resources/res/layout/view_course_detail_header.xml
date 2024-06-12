@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f5f6f8" android:paddingBottom="1px" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/search_bar_normal"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llCourseInfo" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_course_name"/>
+            <TextView android:textSize="16sp" android:textColor="#ffb3b3b3" android:ellipsize="end" android:gravity="right" android:id="@+id/tv_course_name" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/setting_mycourse" android:maxLines="1"/>
+        </LinearLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_course_teacher"/>
+            <TextView android:textSize="16sp" android:textColor="#ffb3b3b3" android:ellipsize="end" android:gravity="right" android:id="@+id/tv_teacher_name" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="教师" android:maxLines="1"/>
+        </LinearLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/classes_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_classes_name"/>
+            <TextView android:textSize="16sp" android:textColor="#ffb3b3b3" android:ellipsize="end" android:gravity="end" android:id="@+id/tv_classes_name" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingEnd="6dp"/>
+        </LinearLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_qr_code" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_classes_qrcode"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="#ffb3b3b3" android:ellipsize="end" android:gravity="end" android:id="@+id/tv_classes_qrcode" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="@drawable/ic_qrcode_16dp" android:drawablePadding="8dp" android:layout_toLeftOf="@+id/right" android:paddingEnd="6dp"/>
+                <TextView android:id="@+id/right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="3dp" android:layout_alignParentRight="true" android:drawableEnd="@drawable/ic_right_arrow"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/rlNoDisturbing" android:background="@android:color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabNoDisturbing" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_message_no_notification" android:layout_centerVertical="true"/>
+        <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbNoDisturbing" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+    </RelativeLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="8dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/vgHistoryFile" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@+id/tvHistoryFile" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/history_file" android:drawableRight="@drawable/ic_right_arrow"/>
+        <View android:background="#ebebeb" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/vgSearchChatRecord" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@+id/tvSearchChatRecord" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/pcenter_wechat_search_chat_history" android:drawableRight="@drawable/ic_right_arrow"/>
+        <View android:background="#ebebeb" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@+id/tvClearChatRecord" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/clear_chat_history" android:drawableRight="@drawable/ic_right_arrow"/>
+        <View android:background="#ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="8dp"/>
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@+id/tvReport" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/topic_Report" android:drawableRight="@drawable/ic_right_arrow"/>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_coursehistory" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="17sp" android:textColor="#333333" android:layout_width="106dp" android:layout_height="wrap_content" android:text="课堂活动历史" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_exam" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="17sp" android:textColor="#333333" android:layout_width="106dp" android:layout_height="wrap_content" android:text="@string/course_exam" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/course_task" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="8dp"/>
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="center_vertical" android:background="#ffffff" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/chat_course_event" android:drawablePadding="3dp" android:drawableEnd="@drawable/ic_right_arrow" android:paddingEnd="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/course_class_manager" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#ebebeb" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="center_vertical" android:background="#ffffff" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/course_clazz_manage" android:drawablePadding="3dp" android:drawableEnd="@drawable/ic_right_arrow" android:paddingEnd="15dp"/>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:orientation="horizontal" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="30dp">
+        <TextView android:textSize="14sp" android:textColor="#666666" android:id="@+id/tvName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="全体成员" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

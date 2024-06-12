@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#efefef" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/topbar"/>
+    <RelativeLayout android:id="@+id/rl_device_tip" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_device_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/iv_arrow" android:layout_centerVertical="true">
+            <TextView android:textColor="@color/red" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/tv_device_tip" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_margin_left" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/tip_disconnect_device" android:maxLines="1" android:layout_weight="1"/>
+            <TextView android:textColor="@color/color_selectdevice_selector" android:id="@+id/tv_tip_click" android:paddingLeft="5dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/tip_select_device" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_arrow" style="@style/option_item_image_arrow"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/ll_layout_connect_wifi" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/x30" android:textColor="@color/connect_wifi_text_color" android:gravity="center" android:id="@+id/txt_scan_connect_wifi" android:background="@drawable/scan_wifi" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/scan_to_connect" android:layout_weight="1" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/x30" android:textColor="@color/connect_wifi_text_color" android:gravity="center" android:id="@+id/txt_intelligent_connect_wifi" android:background="@drawable/inter_wifi" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/intelligent_to_connect" android:layout_weight="1" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </LinearLayout>
+    <GridView android:id="@+id/screen_projection_function_gridView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="8dp" android:layout_marginRight="30dp" android:stretchMode="columnWidth" android:numColumns="2"/>
+    <View android:background="@drawable/line_ver_bg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="33dp" android:layout_marginTop="6dp" android:layout_marginRight="33dp" android:layout_marginBottom="20dp"/>
+    <GridView android:id="@+id/screen_media_function_gridView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:stretchMode="columnWidth" android:numColumns="2" android:layout_weight="1"/>
+</LinearLayout>

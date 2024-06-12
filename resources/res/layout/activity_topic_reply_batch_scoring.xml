@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_topic" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="@color/DividerColor" android:dividerHeight="0dp" android:layout_above="@+id/option_bar" android:headerDividersEnabled="false" android:footerDividersEnabled="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/option_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/edit_toolbar" android:background="#f5f6f8" android:paddingTop="1px" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                <Button android:textSize="18sp" android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@+id/btn_ok" android:background="@drawable/bg_btn_5dp_0099ff" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/attach_grade" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

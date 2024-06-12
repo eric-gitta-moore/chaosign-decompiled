@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titleBar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:id="@+id/rl_boottom" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/tv_start_camera" android:background="@drawable/recognion_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+        <LinearLayout android:orientation="horizontal" android:background="@color/color_f9f9f9" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="80dp" android:layout_alignBottom="@+id/tv_start_camera">
+            <RelativeLayout android:id="@+id/rl_copy" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_copy" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/selector_recongnion_copy" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="15sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="复制" android:layout_below="@+id/iv_copy"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_forword" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_forword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_recongnion_forward" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="15sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="转发" android:layout_below="@+id/iv_forword"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_edit" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_recongnion_edit" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="15sp" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="编辑" android:layout_below="@+id/iv_edit"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_boottom" android:layout_below="@+id/titleBar">
+        <EditText android:textSize="16sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/edt_content" android:background="@null" android:padding="15dp" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:lineSpacingExtra="3dp"/>
+    </ScrollView>
+</RelativeLayout>

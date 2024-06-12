@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:background="#ffcc0000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-81dp" android:layout_marginBottom="1px">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1">
+            <CheckBox android:id="@+id/cb_selected" android:focusable="false" android:visibility="gone" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="8dp" android:button="@drawable/checkbox_group_member"/>
+            <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon" android:clickable="false" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="12dp" android:layout_marginTop="6dp" android:layout_marginRight="12dp" android:layout_marginBottom="6dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" android:contentDescription="@null" ss:border_color="#999d9e" ss:border_width="1px" ss:is_circle="false" ss:x_radius="5dp" ss:y_radius="5dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:singleLine="true"/>
+            </LinearLayout>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/tv_attention" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="25dp"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:layout_width="80dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/pcenter_contents_RemoveFocus"/>
+    </LinearLayout>
+    <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="1px"/>
+</LinearLayout>

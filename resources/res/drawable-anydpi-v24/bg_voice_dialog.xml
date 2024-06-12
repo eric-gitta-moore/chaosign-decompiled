@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="101dp" android:width="375dp" android:viewportWidth="375" android:viewportHeight="101">
+    <path android:fillColor="@drawable/res_0x7f080006_bg_voice_dialog__0" android:pathData="M0,0.75h375v100h-375z"/>
+</vector>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_item_height">203dp</dimen>
+    <dimen name="grid_item_height">140dp</dimen>
+    <dimen name="grid_item_height_bg">138dp</dimen>
+    <dimen name="grid_item_width">100dp</dimen>
+    <dimen name="grid_item_width_bg">98dp</dimen>
+    <dimen name="video_all_height">136dp</dimen>
+    <dimen name="video_grid_item_height">96dp</dimen>
+    <dimen name="video_grid_item_width">154dp</dimen>
+</resources>

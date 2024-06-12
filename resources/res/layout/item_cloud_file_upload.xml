@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:my="http://schemas.android.com/apk/res-auto" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="70dp">
+        <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true" my:border_color="@color/avatar_border" my:border_width="1px" my:is_circle="false" my:x_radius="4dp" my:y_radius="4dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/optionLayout" android:layout_toRightOf="@+id/iv_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:ellipsize="end" android:id="@+id/tv_name" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/up_detail" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ProgressBar android:id="@+id/process_bar" android:layout_width="match_parent" android:layout_height="3dp" android:max="100" style="@style/DownloadCenterProgressHorizontal"/>
+                <RelativeLayout android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tv_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+                    <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tv_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/optionLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="13sp" android:id="@+id/tvOptioin" android:background="@drawable/button_stroke_0099ff" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="60dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

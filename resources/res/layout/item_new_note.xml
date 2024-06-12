@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fanzhou="http://schemas.android.com/apk/res-auto" android:id="@+id/container" android:background="#ffffff" android:paddingBottom="1px" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/rlcontainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlCheckContainer" android:paddingLeft="8dp" android:paddingTop="30dp" android:paddingRight="8dp" android:paddingBottom="30dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="-8dp" android:layout_centerVertical="true">
+                <CheckBox android:id="@+id/cb_selected" android:focusable="false" android:clickable="false" android:layout_width="24dp" android:layout_height="24dp" android:button="@drawable/checkbox_group_member" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/rlCheckContainer">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" fanzhou:is_circle="false" fanzhou:x_radius="4dp" fanzhou:y_radius="4dp"/>
+                    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/rl_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_weight="1">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="13dp">
+                            <TextView android:textSize="14sp" android:textColor="@color/chaoxing_blue" android:ellipsize="end" android:id="@+id/tv_creator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150dp" android:singleLine="true"/>
+                            <com.chaoxing.mobile.resource.flower.StatisUserDataView android:id="@+id/userFlower" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+                            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                                <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvTag" android:background="@drawable/bg_circular_bead_c7c7cb" android:visibility="gone" android:layout_width="42dp" android:layout_height="18dp" android:layout_marginLeft="5dp" android:text="未同步"/>
+                                <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvUploading" android:background="@drawable/bg_circular_bead_c7c7cb" android:visibility="gone" android:layout_width="42dp" android:layout_height="18dp" android:layout_marginLeft="5dp" android:text="同步中"/>
+                                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/iv_icon_private" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp">
+                                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_private" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_private_dynamic"/>
+                                    <TextView android:textSize="10sp" android:textColor="#999999" android:paddingRight="4dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="仅自己可见" android:layout_alignRight="@+id/iv_icon2"/>
+                                </LinearLayout>
+                                <TextView android:textSize="9sp" android:textColor="#a8a8a8" android:gravity="center" android:id="@+id/tvTagTop" android:background="@drawable/bg_circular_bead_cccccc" android:visibility="gone" android:layout_width="25dp" android:layout_height="13dp" android:layout_marginLeft="5dp" android:text="@string/note_top"/>
+                            </LinearLayout>
+                            <TextView android:textSize="14sp" android:textColor="#0099ff" android:ellipsize="end" android:gravity="center" android:id="@+id/tvNoteBook" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:maxWidth="70dp" android:singleLine="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_unit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="13dp" android:layout_below="@+id/ll_top">
+                            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:textSize="12sp" android:textColor="#0099ff" android:id="@+id/tvReadCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView android:textSize="13sp" android:textColor="#cccccc" android:ellipsize="end" android:id="@+id/tv_from" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:lines="1" android:layout_toRightOf="@+id/rlCheckContainer" android:layout_below="@+id/ll_title"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_contentainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp">
+                    <TextView android:textSize="17sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/tv_note_title" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingMultiplier="1" android:letterSpacing="0.02"/>
+                    <TextView android:textSize="16sp" android:textColor="#444444" android:ellipsize="end" android:id="@+id/tv_note_content" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:lineSpacingMultiplier="1.2" android:letterSpacing="0.02"/>
+                    <com.chaoxing.mobile.note.widget.DynamicItemImageAndVideoLayout android:id="@+id/vg_images" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                    <com.chaoxing.mobile.attachment.view.AttachmentViewLayout android:id="@+id/view_forward_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_buttom_rlayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:gravity="center" android:id="@+id/rlShare" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/ivShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dynamic_share_icon" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="12sp" android:textColor="#4f4f4f" android:id="@+id/tvShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/topic_share" android:layout_toRightOf="@+id/ivShare" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center" android:id="@+id/rlReply" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/ivReply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dynamic_reply" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="12sp" android:textColor="#4f4f4f" android:id="@+id/tvReply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/topic_review" android:layout_toRightOf="@+id/ivReply" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center" android:id="@+id/rlPraise" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/ivPraise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dynamic_prise" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="12sp" android:textColor="#4f4f4f" android:id="@+id/tvPraise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/topic_like" android:layout_toRightOf="@+id/ivPraise" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@+id/cover" android:background="#80999999" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/rlcontainer" android:layout_alignBottom="@+id/rlcontainer"/>
+    <View android:id="@+id/viewline1" android:background="#f5f6f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp" android:layout_below="@+id/rlcontainer" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/line1" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rlcontainer" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.chat.widget.VideoMessageView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/v_video_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp">
+    <com.chaoxing.mobile.chat.widget.AutoVideoView android:id="@+id/v_auto_video_message" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:adjustViewBounds="true"/>
+    <TextView android:id="@+id/iv_cover" android:background="@drawable/chat_im_att_bg_normal" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignLeft="@+id/v_auto_video_message" android:layout_alignTop="@+id/v_auto_video_message" android:layout_alignRight="@+id/v_auto_video_message" android:layout_alignBottom="@+id/v_auto_video_message"/>
+</com.chaoxing.mobile.chat.widget.VideoMessageView>

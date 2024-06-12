@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:id="@+id/rlContainer0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerInParent="true" ss:border_color="@color/avatar_border" ss:border_width="1px" ss:is_circle="false" ss:x_radius="10px" ss:y_radius="10px"/>
+    <com.fanzhou.widget.CircleImageView android:id="@+id/ivTag" android:focusable="false" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="fitCenter" android:layout_centerInParent="true" ss:border_color="@color/avatar_border" ss:border_width="1px" ss:is_circle="false" ss:x_radius="10px" ss:y_radius="10px"/>
+    <LinearLayout android:gravity="center" android:id="@+id/ivDelete" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="-4dp" android:layout_marginTop="-4dp" android:layout_toRightOf="@+id/ivAvatar">
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_delete_member"/>
+    </LinearLayout>
+</RelativeLayout>

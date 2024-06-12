@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/button_blue_stroke_no_round" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <include layout="@layout/item_opencourse_select_bar"/>
+    </LinearLayout>
+    <com.chaoxing.mobile.widget.GestureViewFlipper android:id="@+id/vfDetailInfos" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

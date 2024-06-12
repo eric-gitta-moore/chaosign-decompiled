@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_left" android:visibility="visible" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="20dp" android:src="@drawable/icon_curriculum_chaoxing_class" android:layout_centerVertical="true" app:riv_corner_radius="6dp" app:riv_oval="false"/>
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/tvTitle" android:paddingTop="19dp" android:paddingBottom="19dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="测试" android:layout_toLeftOf="@+id/iv_right" android:layout_toRightOf="@+id/iv_left" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_right" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/ic_right_arrow_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/gray_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

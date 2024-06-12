@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_clean_cache" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/topBar">
+        <include android:id="@+id/itemImg" layout="@layout/item_clean_cache"/>
+        <include android:id="@+id/itemVoice" layout="@layout/item_clean_cache"/>
+    </LinearLayout>
+    <include android:id="@+id/pbWait" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar" layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

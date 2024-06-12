@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/zk_settings_root" android:background="@drawable/zk_settingsview_selector" android:layout_width="@dimen/x500" android:layout_height="@dimen/y600">
+    <RelativeLayout android:background="@color/zk_settings_title_color" android:layout_width="match_parent" android:layout_height="@dimen/zk_y60">
+        <TextView android:textSize="@dimen/zk_x24" android:textColor="@color/black" android:id="@+id/zk_settings_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shortcut_setting" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/zk_settings_close" android:background="@mipmap/ic_zk_settings_close" android:layout_width="@dimen/x28" android:layout_height="@dimen/x28" android:layout_marginRight="@dimen/zk_x12" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/x10" android:layout_marginTop="@dimen/y80" android:layout_marginRight="@dimen/x10" android:layout_marginBottom="@dimen/y2">
+        <ScrollView android:id="@+id/zk_settings_scroll" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/x5" android:layout_marginTop="@dimen/y8" android:layout_marginRight="@dimen/x5" android:layout_marginBottom="@dimen/y10">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:id="@+id/line00" style="@style/zk_settings_line_horizontal"/>
+                <RelativeLayout android:id="@+id/rl_pic_full" style="@style/option_item_5200">
+                    <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/sv_pic_full" android:layout_width="@dimen/zk_x66" android:layout_height="@dimen/zk_y28" android:layout_alignParentRight="true" shSwitch:shadowSpace="0dp" shSwitch:tintColor="#ff1782dd"/>
+                    <TextView android:textSize="@dimen/zk_x24" android:textColor="@color/white" android:ellipsize="marquee" android:id="@+id/tv_pic_full" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zk_x5" android:text="@string/land_fullscreen" android:maxLines="1" android:layout_toLeftOf="@+id/sv_pic_full" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <View android:id="@+id/line0" style="@style/zk_settings_line_horizontal"/>
+                <RelativeLayout android:id="@+id/rl_show_ppt_icon" style="@style/option_item_5200">
+                    <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/sv_show_ppt_icon" android:layout_width="@dimen/zk_x66" android:layout_height="@dimen/zk_y28" android:layout_alignParentRight="true" shSwitch:shadowSpace="0dp" shSwitch:tintColor="#ff1782dd"/>
+                    <TextView android:textSize="@dimen/zk_x24" android:textColor="@color/white" android:ellipsize="marquee" android:id="@+id/tv_show_ppt_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zk_x5" android:text="@string/ppt_icon_show" android:maxLines="1" android:layout_toLeftOf="@+id/sv_show_ppt_icon" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <View android:id="@+id/line1" style="@style/zk_settings_line_horizontal"/>
+                <RelativeLayout android:id="@+id/rl_youtube" style="@style/option_item_5200">
+                    <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/sv_youtube" android:layout_width="@dimen/zk_x66" android:layout_height="@dimen/zk_y28" android:layout_alignParentRight="true" shSwitch:shadowSpace="0dp" shSwitch:tintColor="#ff1782dd"/>
+                    <TextView android:textSize="@dimen/zk_x24" android:textColor="@color/white" android:ellipsize="marquee" android:id="@+id/tv_youtube" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zk_x5" android:text="@string/support_youtube" android:maxLines="1" android:layout_toLeftOf="@+id/sv_youtube" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <View android:id="@+id/line2" style="@style/zk_settings_line_horizontal"/>
+                <RelativeLayout android:id="@+id/rl_marter_papa" style="@style/option_item_5200">
+                    <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/sv_marter_papa" android:layout_width="@dimen/zk_x66" android:layout_height="@dimen/zk_y28" android:layout_alignParentRight="true" shSwitch:shadowSpace="0dp" shSwitch:tintColor="#ff1782dd"/>
+                    <TextView android:textSize="@dimen/zk_x24" android:textColor="@color/white" android:ellipsize="marquee" android:id="@+id/tv_marter_papa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zk_x5" android:text="@string/master_cast_device" android:maxLines="1" android:layout_toLeftOf="@+id/sv_marter_papa" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <View android:id="@+id/line3" style="@style/zk_settings_line_horizontal"/>
+                <RelativeLayout android:id="@+id/rl_pic_vertical" style="@style/option_item_5200">
+                    <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/sv_pic_vertical" android:layout_width="@dimen/zk_x66" android:layout_height="@dimen/zk_y28" android:layout_alignParentRight="true" shSwitch:shadowSpace="0dp" shSwitch:tintColor="#ff1782dd"/>
+                    <TextView android:textSize="@dimen/zk_x24" android:textColor="@color/white" android:ellipsize="marquee" android:id="@+id/tv_pic_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zk_x5" android:text="@string/screen_portrait" android:maxLines="1" android:layout_toLeftOf="@+id/sv_pic_vertical" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <View android:id="@+id/line4" style="@style/zk_settings_line_horizontal"/>
+                <RelativeLayout android:id="@+id/rl_show_master_ball" style="@style/option_item_5200">
+                    <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/sv_show_master_ball" android:layout_width="@dimen/zk_x66" android:layout_height="@dimen/zk_y28" android:layout_alignParentRight="true" shSwitch:shadowSpace="0dp" shSwitch:tintColor="#ff1782dd"/>
+                    <TextView android:textSize="@dimen/zk_x24" android:textColor="@color/white" android:ellipsize="marquee" android:id="@+id/tv_show_master_ball" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zk_x5" android:text="@string/master_control_show" android:maxLines="1" android:layout_toLeftOf="@+id/sv_show_master_ball" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <View android:id="@+id/line5" style="@style/zk_settings_line_horizontal"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

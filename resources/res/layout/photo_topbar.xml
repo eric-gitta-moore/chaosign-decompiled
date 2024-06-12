@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/bg_top" android:layout_width="match_parent" android:layout_height="@dimen/top_bar_height">
+    <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/photo_back_imageView" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bg_back"/>
+    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/photo_title_textView" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:maxEms="10" android:drawableRight="@drawable/icon_photo_show" android:drawablePadding="8dp"/>
+    <ImageView android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/photo_pattern_ImageView" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bg_video_list"/>
+</FrameLayout>

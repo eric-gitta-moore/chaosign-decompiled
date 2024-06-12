@@ -1,0 +1,14 @@
+[
+{
+    "aid": 0,
+    "androidphonelogo": "channel_my_bookshelf",
+    "appid": "tushu",
+    "appname": "书架",
+    "available": 1,
+    "bind": 0,
+    "focus": 1,
+    "isWebapp": 0,
+    "needLogin": 0,
+	"order": -100
+}
+]

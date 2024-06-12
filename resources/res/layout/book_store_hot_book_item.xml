@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.bookstore.view.NewBookView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp">
+        <RelativeLayout android:layout_width="86dp" android:layout_height="116dp">
+            <ImageView android:id="@+id/book_cover" android:background="@drawable/default_cover_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:contentDescription="@null"/>
+            <ImageView android:id="@+id/selectbg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/black_4c000000" android:scaleType="fitXY" android:contentDescription="@null"/>
+        </RelativeLayout>
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/hot_book_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/Text_Content_14"/>
+    </LinearLayout>
+</com.fanzhou.bookstore.view.NewBookView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rootView" android:background="#666666" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/bg_f5f6f8" android:padding="15dp" android:layout_width="210dp" android:layout_height="83dp" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@+id/rl_upload" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:id="@+id/tv_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="正在上传"/>
+            <TextView android:id="@+id/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:drawableLeft="@drawable/ic_close_gray_12dp" android:layout_alignParentRight="true"/>
+            <LinearLayout android:gravity="center" android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_upload">
+                <ProgressBar android:id="@+id/progress_bar" android:layout_width="135dp" android:layout_height="5dp" android:max="100" android:progressDrawable="@drawable/upload_clound_progress" style="?android:attr/progressBarStyleHorizontal"/>
+                <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:id="@+id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_upload_fail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:id="@+id/tv_fail_reload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传失败 重新上传" android:drawableTop="@drawable/ic_fail_tip" android:drawablePadding="8dp" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_upload_success" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传成功 !" android:drawableTop="@drawable/ic_success_tip" android:drawablePadding="8dp" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

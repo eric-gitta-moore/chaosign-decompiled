@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/mark_container" android:background="@drawable/epub_white_popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/markTv" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加书签"/>
+</LinearLayout>

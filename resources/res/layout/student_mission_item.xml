@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/rl_mission" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_mission" android:layout_width="45dp" android:layout_height="45dp" android:scaleType="centerCrop"/>
+                <TextView android:id="@+id/tv_mission_tip" android:background="@drawable/shape_mission_circle" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="-20dp" android:layout_toRightOf="@+id/iv_mission"/>
+            </RelativeLayout>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/mission_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="time" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11dp" android:layout_toLeftOf="@+id/mission_time" android:layout_toRightOf="@+id/rl_mission" android:layout_centerVertical="true">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_mission_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ceshiceshishishishgkajlgdjgjaldgjldjglsdkjglsdkjgkdsjagllgkdsgjldkgjgdklgj" android:maxLines="2" android:lineSpacingMultiplier="1.2"/>
+                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_mission_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="content" android:singleLine="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="15sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvTransmit" android:background="#0099ff" android:visibility="gone" android:layout_width="70dp" android:layout_height="match_parent" android:text="转发"/>
+        <TextView android:textSize="15sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="#fb362d" android:visibility="gone" android:layout_width="70dp" android:layout_height="match_parent" android:text="@string/common_delete"/>
+    </LinearLayout>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</LinearLayout>

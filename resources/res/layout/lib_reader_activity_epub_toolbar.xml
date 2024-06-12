@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/toolbar" android:background="@mipmap/lib_reader_toolbar_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/place_holder_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/ib_left" android:background="@android:color/transparent" android:layout_width="40dp" android:layout_height="40dp" android:foreground="?android:attr/selectableItemBackground" android:src="@mipmap/lib_reader_ic_toolbar_back_left" android:scaleType="centerInside" android:layout_centerVertical="true" style="@style/Widget.AppCompat.Button"/>
+        <TextView android:textSize="16dp" android:textColor="@color/lib_reader_toolbar_text" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Title" android:maxLines="2" android:layout_toLeftOf="@+id/ib_right" android:layout_toRightOf="@+id/ib_left" android:layout_centerVertical="true"/>
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/ib_right" android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="40dp" android:layout_height="40dp" android:foreground="?android:attr/selectableItemBackground" android:src="@mipmap/lib_reader_ic_toolbar_menu" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

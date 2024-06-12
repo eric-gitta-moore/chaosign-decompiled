@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/parentView" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar2_topiclist"/>
+    <RelativeLayout android:id="@+id/rl_essence_label" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/viewTitleBar">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delicate" android:layout_centerVertical="true"/>
+        <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cb_essence_label" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginLeft="15dp" android:layout_marginRight="14dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+        <View android:id="@+id/line" android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/lvTopic" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_delete" android:layout_below="@+id/rl_essence_label"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_no_tag_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="16sp" android:textColor="#cccccc" android:id="@+id/tv_nodatahint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_topic_no_tag_result" android:layout_centerInParent="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/blue_0099ff" android:id="@+id/tv_no_data_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_topic_no_tag_result_add" android:layout_centerInParent="true"/>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+    <Button android:textSize="18sp" android:textColor="#b3b3b3" android:layout_gravity="center_vertical" android:id="@+id/btn_delete" android:background="@android:color/transparent" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/delete_resource" android:layout_weight="1" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

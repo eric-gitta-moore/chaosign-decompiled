@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/link_edit_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+    <TextView android:textSize="20sp" android:textColor="@color/link_edit_text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="8dp" android:text="@string/note_edit_hyperlink"/>
+    <View android:background="#b2b2b2" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="8dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12dp">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llInnerLink" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="16sp" android:textColor="@color/link_edit_text_content" android:id="@+id/rbtnInnerLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/read_radio_btn_bg" android:text="@string/note_click_to_goto_any_page" android:drawablePadding="8dp"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="16sp" android:textColor="@color/link_edit_text_content" android:id="@+id/tvPageType" android:layout_width="65dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/note_page_type"/>
+                <EditText android:textSize="14sp" android:textColor="@color/link_edit_text_content" android:id="@+id/etPageType" android:background="@drawable/note_link_edit_input_bg" android:paddingLeft="5dp" android:focusable="false" android:layout_width="208dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:layout_marginRight="20dp" android:text="@string/note_text_page"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="16sp" android:textColor="@color/link_edit_text_content" android:layout_width="65dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/note_page_no"/>
+                <EditText android:textSize="14sp" android:textColor="@color/link_edit_text_content" android:id="@+id/etPageNo" android:background="@drawable/note_link_edit_input_bg" android:paddingLeft="5dp" android:layout_width="208dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:layout_marginRight="20dp" android:text="1" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <TextView android:textSize="16sp" android:textColor="@color/link_edit_text_content" android:id="@+id/page_info_range" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/pageRange"/>
+                <TextView android:textSize="16sp" android:textColor="@color/link_edit_text_content" android:id="@+id/page_range" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#b2b2b2" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llHttpLink" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="16sp" android:textColor="@color/link_edit_text_content_disable" android:id="@+id/rbtnHttpLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/read_radio_btn_bg" android:text="@string/note_please_input_url" android:drawablePadding="8dp"/>
+            <EditText android:textSize="14sp" android:textColor="@color/link_edit_text_content_disable" android:id="@+id/etHttpLink" android:background="@drawable/note_link_edit_input_bg" android:paddingLeft="5dp" android:layout_width="270dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="http://" android:inputType="textUri"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#b2b2b2" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="10dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:textSize="16sp" android:textColor="@color/link_edit_button_text" android:gravity="center" android:id="@+id/btnNoteLinkEditCancle" android:background="@drawable/link_edit_cancel" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/no" android:layout_weight="1"/>
+        <View android:background="#b2b2b2" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="16sp" android:textColor="@color/link_edit_button_text" android:gravity="center" android:id="@+id/btnNoteLinkEditOK" android:background="@drawable/link_edit_ok" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/yes" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

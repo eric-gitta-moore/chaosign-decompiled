@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/parentView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/viewTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="14sp" android:textColor="#ff999999" android:background="#f7f7f7" android:paddingLeft="15dp" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/freeze_type_tag"/>
+            <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llReportType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+            <View android:background="@drawable/common_f5f6f8_stroke_bg" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:paddingTop="20dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tvImgUploadTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_uploadimg_tag"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSelectedImage" android:layout_width="match_parent" android:layout_height="82dp"/>
+                <TextView android:textSize="13sp" android:textColor="@color/gray_999999" android:id="@+id/tvUploadImgCountTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/report_uploadimg_count_tag"/>
+            </LinearLayout>
+            <View android:background="@drawable/common_f5f6f8_stroke_bg" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <RelativeLayout android:paddingLeft="15dp" android:paddingTop="20dp" android:paddingRight="18dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="127dp">
+                <EditText android:textSize="16sp" android:textColor="@color/CommentTextColor" android:textColorHint="#cccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/etInputText" android:background="@android:color/transparent" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/report_input_tag" android:minLines="3" android:layout_above="@+id/tvTextCount" android:lineSpacingExtra="6dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/gray_999999" android:id="@+id/tvTextCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/500" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <View android:background="@drawable/common_f5f6f8_stroke_bg" android:layout_width="match_parent" android:layout_height="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

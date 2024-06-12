@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_selected_member">
+            <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0px" android:headerDividersEnabled="false" android:footerDividersEnabled="true"/>
+            <include android:id="@+id/pbWait" layout="@layout/page_loading_circle"/>
+            <ImageView android:id="@+id/ivLoad" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/state_loading_fail" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_selected_member" android:background="#efeff4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="68dp" android:layout_alignParentBottom="true">
+            <HorizontalScrollView android:id="@+id/g_member" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/tv_add_member">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llSelected" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </HorizontalScrollView>
+            <TextView android:textSize="14sp" android:textColor="#0099ff" android:gravity="center_vertical" android:id="@+id/tv_add_member" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="确定（）" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <include layout="@layout/common_reload"/>
+    </RelativeLayout>
+</LinearLayout>

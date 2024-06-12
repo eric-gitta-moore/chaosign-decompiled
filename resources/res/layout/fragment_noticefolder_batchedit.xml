@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.common.TitleBarView android:id="@+id/viewTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_edit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_delete" android:background="#ff3e9cfa" android:paddingTop="@dimen/adaptive_10dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/schedule_delete_text" android:drawableTop="@drawable/icon_note_batch_edit_delete" android:layout_weight="1"/>
+                <View android:id="@+id/viewDivider" android:background="#ebebeb" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+                <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_move" android:background="#3e9cfa" android:paddingTop="@dimen/adaptive_10dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/common_move" android:drawableTop="@drawable/icon_note_batch_edit_move" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.mobeta.android.dslv.DragSortListView android:id="@+id/listView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/list_divider_94dp" android:dividerHeight="0px" android:layout_above="@+id/ll_edit" android:headerDividersEnabled="false" android:footerDividersEnabled="false" cx:collapsed_height="0dp" cx:drag_enabled="true" cx:drag_handle_id="@+id/iv_sort" cx:drag_scroll_start="0.33" cx:drag_start_mode="0" cx:float_alpha="0.6" cx:max_drag_scroll_speed="0.5" cx:slide_shuffle_speed="0.3" cx:track_drag_sort="false" cx:use_default_controller="true"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+        <com.chaoxing.mobile.common.NoDataTipView android:id="@+id/vg_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

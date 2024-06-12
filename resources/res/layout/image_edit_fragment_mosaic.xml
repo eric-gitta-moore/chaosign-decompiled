@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/image_edit_bottom_tool_detail_height">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/action_base" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="40dp" android:layout_height="wrap_content" android:src="@drawable/image_edit_edit_image_traditional_mosaic_selector"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/action_ground_glass" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="40dp" android:layout_height="wrap_content" android:src="@drawable/image_edit_edit_image_brush_mosaic_selector"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/action_flower" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="40dp" android:layout_height="wrap_content" android:src="@drawable/image_edit_edit_image_mosaic_tool_btn"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/paint_revoke" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="5dp" android:src="@drawable/image_edit_edit_image_revoke_btn"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar" android:fadeScrollbars="false">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="22dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlSuggest" android:background="@android:color/white" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="8dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_suggest" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="@color/gray_b3b3b3" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlPrivacyPolicy" android:background="@drawable/selectable_item_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:paddingStart="15dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_privacy_policy" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="@color/gray_b3b3b3" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlUserProtocol" android:background="@drawable/selectable_item_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="8dp" android:paddingStart="15dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_user_protocol" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="@color/gray_b3b3b3" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlLogout" android:background="@drawable/selectable_item_background" android:paddingLeft="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="8dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_logout" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="@color/gray_b3b3b3" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlCurVersion" android:background="@android:color/white" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:id="@+id/tvLabelCurVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version_cur_label" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="@color/gray_b3b3b3" android:gravity="center_vertical" android:id="@+id/tvCurVersion" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlUpgrade" android:background="@android:color/white" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_upgrad" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="@color/gray_b3b3b3" android:gravity="center_vertical" android:id="@+id/tvLatestVersion" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlRealVersion" android:background="@drawable/selectable_item_background" android:paddingLeft="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version_real_label" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="@color/gray_b3b3b3" android:gravity="center_vertical" android:id="@+id/tvRealVersion" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/date_line" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlIcp" android:background="@android:color/white" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_icp_title" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="@color/gray_b3b3b3" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlGray" android:background="@android:color/white" android:paddingLeft="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="8dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="体验内测版" android:drawableRight="@drawable/ic_right_arrow" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlPc" android:background="@drawable/selectable_item_background" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pc_label" android:layout_centerVertical="true"/>
+                <TextView android:textSize="16sp" android:textColor="#0066cc" android:gravity="center_vertical" android:id="@+id/tvPc" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:text="@string/pc_url" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_circular_corner_4_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="12dp">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llDownloadUrl" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="#0066cc" android:id="@+id/tvDownloadTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/version_address"/>
+                    <TextView android:textSize="14sp" android:textColor="#0066cc" android:id="@+id/tvDownloadUrl" android:background="@drawable/download_url_click_style" android:paddingTop="4dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+                    <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvLongClickTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/persioninfo_longtopress"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/ivQrCode" android:layout_width="224dp" android:layout_height="224dp" android:layout_marginTop="18dp" android:layout_marginBottom="35dp"/>
+            </LinearLayout>
+            <Button android:textSize="14sp" android:textColor="#999999" android:id="@+id/btnHelp" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="开发辅助"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/vWaiting" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+</RelativeLayout>

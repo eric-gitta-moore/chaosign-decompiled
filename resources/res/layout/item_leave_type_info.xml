@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="30sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/numberTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12"/>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/typeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="事假"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/video_waiting" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_waiting" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/video_loading" android:scaleType="centerInside"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:textColor="#ffffff" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="等待上传..." android:singleLine="true" android:layout_below="@+id/iv_waiting"/>
+</LinearLayout>

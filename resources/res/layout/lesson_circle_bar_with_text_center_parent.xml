@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@color/trans_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:id="@+id/pbLoading" android:layout_width="30dp" android:layout_height="30dp" android:indeterminateDrawable="@drawable/loading_drawable"/>
+    <TextView android:textSize="15sp" android:textColor="#ccffffff" android:id="@+id/tvLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/course_online_net_down"/>
+</LinearLayout>

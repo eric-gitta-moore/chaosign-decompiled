@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top" android:layout_width="match_parent" android:layout_height="72dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp" android:paddingStart="8dp" android:paddingEnd="6dp">
+        <ImageView android:id="@+id/back" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_back" android:scaleType="centerInside" android:contentDescription="@string/accessibility_back_content_description"/>
+        <TextView android:textSize="15sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="7dp" android:layout_marginEnd="16dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llTopRight" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivDanmu" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_danmu_close" android:contentDescription="@string/accessibility_danmu_content_description" android:layout_marginEnd="6dp"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivReport" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/video_right_report" android:contentDescription="@string/accessibility_report_content_description"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivShare" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_share" android:contentDescription="@string/accessibility_share_content_description"/>
+            <ImageView android:id="@+id/ivMore" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_setting_more" android:contentDescription="@string/accessibility_more_content_description"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

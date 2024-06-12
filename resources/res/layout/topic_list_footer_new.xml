@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/content_view" android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="#b3b3b3" android:id="@+id/tv_hint" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/divler" app:layout_goneMarginTop="0dp"/>
+    <ProgressBar android:id="@+id/pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp" app:layout_constraintBottom_toBottomOf="@+id/tv_hint" app:layout_constraintEnd_toStartOf="@+id/tv_hint" app:layout_constraintTop_toTopOf="@+id/tv_hint" style="@android:style/Widget.ProgressBar.Small"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

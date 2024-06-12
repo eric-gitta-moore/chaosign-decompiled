@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar_3"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.chaoxing.mobile.search.widget.SearchBar android:id="@+id/searchBar" android:paddingBottom="0px" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llcontainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+                        <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_name" android:layout_centerVertical="true"/>
+                        <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/et_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="84dp" android:hint="@string/pcenter_contents_input_name" android:singleLine="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+                    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+                        <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_phone" android:layout_centerVertical="true"/>
+                        <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/et_mobile" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="84dp" android:hint="@string/pcenter_contents_input_phone" android:singleLine="true" android:layout_centerVertical="true" android:inputType="number"/>
+                    </RelativeLayout>
+                    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+                    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+                        <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/email" android:layout_centerVertical="true"/>
+                        <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/et_email" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="84dp" android:hint="@string/pcenter_contents_input_email" android:singleLine="true" android:layout_centerVertical="true" android:inputType="textEmailAddress"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+                <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/tv_add" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="80dp" android:text="@string/comment_add"/>
+                <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+                <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp"/>
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/v_from_Person_group" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pcenter_message_my_Persongroup" android:drawableRight="@drawable/book_source_next_level" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/v_from_root_contacts" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pcenter_message_root_contacts" android:drawableRight="@drawable/book_source_next_level" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/v_from_contacts" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pcenter_message_SendWeChat_OrganizationContacts" android:drawableRight="@drawable/book_source_next_level" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/v_from_self_contacts" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pcenter_message_SendWeChat_MyContacts" android:drawableRight="@drawable/book_source_next_level" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/v_from_group" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pcenter_message_SendWeChat_SelectGroup" android:drawableRight="@drawable/book_source_next_level" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/v_from_group_chat" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pcenter_message_group_chat" android:drawableRight="@drawable/book_source_next_level" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/v_from_friend" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pcenter_message_SendWeChat_MyFriends" android:drawableRight="@drawable/book_source_next_level" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/v_from_self_contacts_line" android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/v_from_sys_contacts" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pcenter_message_SendWeChat_PhoneContacts" android:drawableRight="@drawable/book_source_next_level" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/my_attentionline" android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/v_from_my_attention" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pcenter_message_my_attention" android:drawableRight="@drawable/book_source_next_level" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/sysline" android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/v_from_attention_my" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pcenter_message_attention_my" android:drawableRight="@drawable/book_source_next_level" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/page_loading_circle"/>
+</RelativeLayout>

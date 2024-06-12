@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:id="@+id/tvMsgTime" android:background="@android:color/transparent" android:paddingLeft="5dp" android:paddingTop="2dp" android:paddingRight="5dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+    <ViewSwitcher android:id="@+id/vsMsgContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_below="@+id/tvMsgTime">
+        <include android:id="@+id/left" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/msg_left"/>
+        <include android:id="@+id/right" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/msg_right"/>
+    </ViewSwitcher>
+</RelativeLayout>

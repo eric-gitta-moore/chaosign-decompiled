@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:background="#ffcc0000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-81dp">
+        <RelativeLayout android:id="@+id/viewFront" android:background="@drawable/selector_list_item" android:paddingTop="6dp" android:paddingBottom="6dp" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/iv_icon" android:clickable="false" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="12dp" android:layout_marginTop="6dp" android:layout_marginRight="12dp" android:layout_marginBottom="6dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" android:contentDescription="@null" ss:border_color="#999d9e" ss:border_width="1px" ss:is_circle="false" ss:x_radius="10px" ss:y_radius="10px"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_toRightOf="@+id/iv_icon" android:layout_centerVertical="true">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium Text" android:singleLine="true" android:layout_toLeftOf="@+id/tvTime" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="14sp" android:textColor="#b3b3b3" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Small Text" android:singleLine="true" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Small Text" android:singleLine="true" android:layout_below="@+id/tvName"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:layout_width="80dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="删除"/>
+    </LinearLayout>
+</RelativeLayout>

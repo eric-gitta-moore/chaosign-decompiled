@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@+id/fl_inner" android:paddingLeft="@dimen/header_footer_left_right_padding" android:paddingTop="@dimen/header_footer_top_bottom_padding" android:paddingRight="@dimen/header_footer_left_right_padding" android:paddingBottom="@dimen/header_footer_top_bottom_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/pull_to_refresh_image" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/icon_refresh" android:scaleType="centerInside"/>
+                <com.chaoxing.core.widget.CircleProgressBar android:layout_gravity="center" android:id="@+id/pull_to_refresh_progress" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp" style="@android:style/Widget.ProgressBar.Small"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp">
+                <TextView android:textSize="13sp" android:textColor="@color/refresh_text_color" android:id="@+id/pull_to_refresh_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:id="@+id/pull_to_refresh_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

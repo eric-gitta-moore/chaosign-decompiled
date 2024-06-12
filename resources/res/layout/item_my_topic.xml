@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/topBlank" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/rlContent" android:background="@drawable/bg_topic_item" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBlank">
+        <RelativeLayout android:id="@+id/rlBody" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlTop" android:paddingLeft="8dp" android:paddingTop="6dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" ss:border_color="@color/avatar_border" ss:border_width="1px" ss:is_circle="false" ss:x_radius="6px" ss:y_radius="6px"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/ivAvatar" android:layout_centerVertical="true">
+                    <RelativeLayout android:id="@+id/rlLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/rlRight" android:layout_centerVertical="true">
+                        <TextView android:textSize="16sp" android:textColor="#ff0066cc" android:ellipsize="end" android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小清新" android:singleLine="true"/>
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:id="@+id/tvPublishTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1分钟前" android:layout_below="@+id/tvAuthor"/>
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvOrganization" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="2dp" android:text="南京航空航天大学" android:singleLine="true" android:layout_toRightOf="@+id/tvAuthor"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rlRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <RelativeLayout android:id="@+id/rlPraise" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/ivPraise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_do_praise" android:layout_centerVertical="true"/>
+                            <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tvPraise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="114" android:layout_toRightOf="@+id/ivPraise" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/rlReply" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_toRightOf="@+id/rlPraise">
+                            <ImageView android:id="@+id/ivReply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_reply" android:layout_centerVertical="true"/>
+                            <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tvReply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="50" android:layout_toRightOf="@+id/ivReply" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlMiddle" android:background="@drawable/bg_sl_item_topic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-10px" android:layout_below="@+id/rlTop">
+                <RelativeLayout android:id="@+id/rlContentBody" android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tvTitle" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="16sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/tvContent" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="正文" android:layout_below="@+id/tvTitle" android:lineSpacingMultiplier="1.2"/>
+                    <RelativeLayout android:id="@+id/rlImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/tvContent">
+                        <ImageView android:id="@+id/ivImage0" android:background="@drawable/ic_default_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:cropToPadding="true"/>
+                        <ImageView android:id="@+id/ivImage1" android:background="@drawable/ic_default_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:scaleType="fitXY" android:cropToPadding="true" android:layout_toRightOf="@+id/ivImage0"/>
+                        <ImageView android:id="@+id/ivImage2" android:background="@drawable/ic_default_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:scaleType="fitXY" android:cropToPadding="true" android:layout_toRightOf="@+id/ivImage1"/>
+                        <ImageView android:id="@+id/ivMore" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1px" android:src="@drawable/pic_more" android:layout_alignBottom="@+id/ivImage2" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <FrameLayout android:id="@+id/flAttachment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_below="@+id/rlImage">
+                        <com.chaoxing.mobile.group.ViewAttachment android:id="@+id/viewAttachment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </FrameLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/rlLastReply" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlContentBody">
+                    <View android:id="@+id/reply_line" android:background="#ffbfbfbf" android:layout_width="match_parent" android:layout_height="1px"/>
+                    <TextView android:textSize="12sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvFrom" android:paddingLeft="12dp" android:paddingTop="10dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3分钟前 马建新回复：赞同" android:singleLine="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

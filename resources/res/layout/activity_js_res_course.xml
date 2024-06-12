@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <Button android:textSize="14sp" android:ellipsize="end" android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingTop="4dp" android:paddingRight="6dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0dp" android:minHeight="0dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rgTabs" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RadioButton android:textSize="15sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/rb_tab01" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:minWidth="58dp"/>
+            <RadioButton android:textSize="15sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/rb_tab02" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:minWidth="58dp"/>
+        </RadioGroup>
+        <Button android:textSize="14sp" android:id="@+id/btnRight" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingTop="4dp" android:paddingRight="6dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:minWidth="0dp" android:minHeight="0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ViewFlipper android:id="@+id/vf_course" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/fl_res_course" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/fl_self_choose_course" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ViewFlipper>
+</LinearLayout>

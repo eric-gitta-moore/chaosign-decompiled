@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/bottom_layout" android:background="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.chaoxing.gallery.album.widget.AlbumPreviewBottomGallery android:id="@+id/preview_gallery" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingRight="15dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/cx_gallery_edit" android:singleLine="true" android:layout_centerVertical="true"/>
+        <CheckBox android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/cb_original" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cx_gallery_original_image" android:layout_centerVertical="true" android:paddingStart="4dp" android:layout_marginStart="20dp" android:layout_toEndOf="@+id/tv_edit" style="@style/Cx.Widget.CheckBox"/>
+        <Button android:textSize="13sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/bt_ok" android:background="#0099ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64dp" android:minHeight="30dp" android:text="@string/cx_gallery_confirm" android:singleLine="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

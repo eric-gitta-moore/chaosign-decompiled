@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/myclass_discuss_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="微距摄影"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/discuss_chapter" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="16sp" android:textColor="#ffffffff" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关联章节："/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/discuss_chapter_list" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/creator" android:layout_width="0dp" android:layout_height="wrap_content" android:text="林小瑜，教授" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/reply_count" android:layout_width="0dp" android:layout_height="wrap_content" android:text="回复（14）" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更新于：13-02-12" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/myclass_discuss_arrow"/>
+    </LinearLayout>
+</RelativeLayout>

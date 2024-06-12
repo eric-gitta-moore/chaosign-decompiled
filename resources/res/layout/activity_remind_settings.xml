@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar2_title_2line"/>
+    <RelativeLayout android:id="@+id/remindSettingLayout" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="66dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_remind_settings" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/autoPunchSettingLayout" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="66dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/iv_arrow_right" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/autoPunchTextTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_punch" android:singleLine="true"/>
+                <ImageView android:id="@+id/redDotIv" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="5dp" android:src="@drawable/red_dot_shape" android:layout_toRightOf="@+id/autoPunchTextTv" android:layout_alignTop="@+id/autoPunchTextTv"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

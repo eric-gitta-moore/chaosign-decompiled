@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/left_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/cl_ic_toolbar_arrow_left_white_24dp" style="@style/cl_Toolbar_Action_Button"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/right_action_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:paddingStart="15dp" android:paddingEnd="@dimen/cl_toolbar_padding_end">
+            <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/right_action" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cl_Toolbar_Action_Button"/>
+            <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/right_action2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cl_Toolbar_Action_Button"/>
+            <com.chaoxing.library.widget.ActionView android:layout_gravity="center_vertical" android:id="@+id/right_action3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cl_Toolbar_Action_Button"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:lines="1" android:layout_toLeftOf="@+id/right_action_layout" android:layout_toRightOf="@+id/left_action" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

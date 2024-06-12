@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:background="@drawable/selector_list_item" android:paddingTop="4dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlContent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlAvatar" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="12dp" android:layout_marginRight="4dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_group_message" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" ss:border_color="#999d9e" ss:border_width="1px" ss:is_circle="false" ss:x_radius="10px" ss:y_radius="10px"/>
+            <com.chaoxing.mobile.chat.widget.RedCircleTipView android:textSize="10sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvMessageCount" android:background="@null" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlMessage" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/rlAvatar" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Medium Text" android:singleLine="true" android:layout_toLeftOf="@+id/tvTime" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="14sp" android:textColor="#ffb3b3b3" android:id="@+id/tvTime" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2分钟前" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tvHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Small Text" android:singleLine="true" android:layout_below="@+id/tvTitle"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="#ffd9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp" android:layout_below="@+id/rlContent"/>
+</RelativeLayout>

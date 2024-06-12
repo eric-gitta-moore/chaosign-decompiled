@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_img" android:layout_width="60dp" android:layout_height="90dp">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <ImageView android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_home_audio" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/rl_img">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试" android:maxLines="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#b3b3b3" android:id="@+id/tv_content1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.5dp" android:text="测试"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#b3b3b3" android:id="@+id/tv_content2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.5dp" android:text="测试"/>
+    </LinearLayout>
+</RelativeLayout>

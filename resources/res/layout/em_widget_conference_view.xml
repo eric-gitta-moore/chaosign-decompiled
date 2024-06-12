@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.hyphenate.media.EMCallSurfaceView android:id="@+id/item_surface_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/img_call_avatar" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/em_default_avatar" android:scaleType="centerCrop"/>
+    <RelativeLayout android:background="@drawable/em_conference_member_cover" android:layout_width="match_parent" android:layout_height="@dimen/adaptive_44dp">
+        <TextView android:textSize="@dimen/adaptive_18sp" android:textColor="#ffffff" android:id="@+id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/adaptive_12dp" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/icon_mute" android:padding="2dp" android:visibility="gone" android:layout_width="@dimen/adaptive_40dp" android:layout_height="@dimen/adaptive_40dp" android:src="@drawable/em_call_mute" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/icon_talking" android:padding="2dp" android:visibility="gone" android:layout_width="@dimen/adaptive_40dp" android:layout_height="@dimen/adaptive_40dp" android:src="@drawable/em_call_sound_on" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

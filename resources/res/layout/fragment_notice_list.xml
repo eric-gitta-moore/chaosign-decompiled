@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_titleBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_centerVertical="true" android:contentDescription="@string/back" android:drawableStart="@drawable/cl_ic_toolbar_arrow_left_24dp" android:layout_marginEnd="10dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_title" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="95dp" android:layout_marginRight="95dp" android:layout_centerInParent="true">
+            <com.chaoxing.mobile.widget.AutoSizeTextView android:textSize="18sp" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_centerInParent="true">
+            <com.chaoxing.core.widget.CircleProgressBar android:layout_gravity="center_vertical" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginTop="2dp"/>
+            <TextView android:textSize="18sp" android:textColor="@color/color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_tip_receiving" android:layout_marginStart="5dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/llRight" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_marginEnd="4dp" android:layout_alignParentEnd="true">
+            <Button android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/btnRight2" android:background="@android:color/transparent" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Button android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/btnRight" android:background="@android:color/transparent" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="设置"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/listBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_titleBar">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/list_divider" android:dividerHeight="0px" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <include android:id="@+id/viewLoading" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+        <com.chaoxing.mobile.common.NoDataTipView android:id="@+id/vg_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_edit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="18sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_delete" android:background="#e74a3b" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/schedule_delete_text" android:layout_weight="1"/>
+            <View android:id="@+id/viewDivider" android:background="#dfdfdf" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="4dp" android:layout_marginBottom="4dp"/>
+            <TextView android:textSize="18sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_move" android:background="#70a6da" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/common_move" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

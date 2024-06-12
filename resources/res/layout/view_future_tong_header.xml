@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+        <RelativeLayout android:id="@+id/rl_func" android:layout_width="match_parent" android:layout_height="72dp" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/tv_func" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_func" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginEnd="9dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_func2" android:layout_width="match_parent" android:layout_height="72dp" android:layout_weight="1" android:layout_marginStart="16dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/tv_func2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_func2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginEnd="9dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+        <RelativeLayout android:id="@+id/rl_func3" android:layout_width="match_parent" android:layout_height="72dp" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/tv_func3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_func3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginEnd="9dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_func4" android:layout_width="match_parent" android:layout_height="72dp" android:layout_weight="1" android:layout_marginStart="16dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/tv_func4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_func4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginEnd="9dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="12dp"/>
+</LinearLayout>

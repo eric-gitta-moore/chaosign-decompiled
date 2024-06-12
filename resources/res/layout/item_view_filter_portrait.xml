@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="135dp">
+    <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/filter_title" android:layout_width="100dp" android:layout_height="20dp" android:text="小清新"/>
+    <ImageView android:id="@+id/filter_image" android:layout_width="95dp" android:layout_height="95dp" android:layout_marginTop="10dp" android:layout_below="@+id/filter_title"/>
+    <ImageView android:id="@+id/filter_bg_right" android:background="@drawable/bg_live_filter_right" android:layout_width="5dp" android:layout_height="95dp" android:layout_marginTop="10dp" android:layout_toRightOf="@+id/filter_image" android:layout_below="@+id/filter_title"/>
+    <ImageView android:id="@+id/filter_bg_bottom" android:background="@drawable/bg_live_filter_bottom" android:layout_width="100dp" android:layout_height="10dp" android:layout_below="@+id/filter_image"/>
+</RelativeLayout>

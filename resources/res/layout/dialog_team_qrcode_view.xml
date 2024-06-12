@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_corner_group_qrcode" android:paddingTop="10dp" android:paddingBottom="40dp" android:layout_width="280dp" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="right" android:id="@+id/ivShare" android:padding="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="4dp" android:src="@drawable/group_shared"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/rlInviteCode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/tvInvitCodeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/something_xuexitong_invaitecode"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#0099ff" android:id="@+id/tvInvitCode" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btnShare" android:background="@android:color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:drawableLeft="@drawable/group_transfer"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvUseHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/user_xuexitong_rightconner"/>
+    <RelativeLayout android:id="@+id/rlQRCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <ImageView android:id="@+id/ivQRCode" android:background="@drawable/best_lib_rank_img_stroke" android:layout_width="175dp" android:layout_height="175dp" android:scaleType="centerCrop" android:layout_centerHorizontal="true"/>
+        <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvScanHint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/something_xuexitong_users"/>
+    <TextView android:textSize="12sp" android:textColor="#0099ff" android:id="@+id/tvShowUserInfo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/account_info_title"/>
+</LinearLayout>

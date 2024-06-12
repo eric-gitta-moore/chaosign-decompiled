@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.chaoxing.fanya.aphone.view.BackButtonBlack android:id="@+id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="#1a6fff" android:gravity="center" android:id="@+id/confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirm" android:drawableLeft="@drawable/discuss_new_publish" android:layout_alignParentRight="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="关联章节" android:layout_toLeftOf="@+id/confirm" android:layout_toRightOf="@+id/back" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/myclass_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="选择课程章节，可以多选"/>
+    <ListView android:id="@+id/listView" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+</LinearLayout>

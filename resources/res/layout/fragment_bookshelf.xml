@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_book" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="center" android:id="@+id/tv_storage_capacity" android:background="#fff5f6f8" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

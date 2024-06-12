@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="13sp" android:textColor="@color/color_cccccc" android:id="@+id/tvEditTip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp"/>
+    <RelativeLayout android:id="@+id/rlReplyBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tvEditTip">
+        <LinearLayout android:orientation="vertical" android:id="@+id/rlContent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlPraiseUser" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginBottom="1px">
+                <ImageView android:id="@+id/ivPraiseTopLine" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+                <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@+id/llPraiseUser" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/btnReplyOrder" android:layout_above="@+id/ivPraiseBottomLine" android:layout_below="@+id/ivPraiseTopLine">
+                    <TextView android:textSize="16sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvPraiseUser" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" app:layout_constraintHorizontal_bias="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/tvPraiseCount" app:layout_constraintWidth_default="1"/>
+                    <TextView android:textSize="16sp" android:textColor="#ff0099ff" android:gravity="center_vertical" android:id="@+id/tvPraiseCount" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:layout_marginStart="5dp" app:layout_constraintLeft_toRightOf="@+id/tvPraiseUser" app:layout_constraintRight_toRightOf="0"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <Button android:id="@+id/btnReplyOrder" android:background="@android:color/transparent" android:padding="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11dp" android:drawableLeft="@drawable/ic_topic_reply_order_asc" android:layout_above="@+id/ivPraiseBottomLine" android:layout_alignParentRight="true"/>
+                <ImageView android:id="@+id/ivPraiseBottomLine" android:background="#ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/viewLoadAll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlContent">
+            <TextView android:textSize="16sp" android:textColor="#0099ff" android:id="@+id/tvLoadAll" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="之前的评论..."/>
+            <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignTop="@+id/tvLoadAll"/>
+            <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignBottom="@+id/tvLoadAll"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

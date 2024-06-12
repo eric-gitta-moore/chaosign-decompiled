@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="55dp">
+        <Button android:textSize="18sp" android:textColor="@color/bg_green" android:gravity="center" android:id="@+id/check_answer" android:background="@drawable/green_button" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/check_answer" android:layout_alignParentRight="true"/>
+        <Button android:textSize="18sp" android:textColor="@color/bg_green" android:gravity="center" android:id="@+id/check_right" android:background="@drawable/green_button" android:visibility="gone" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/check_right" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/bg_green" android:id="@+id/tv_right_answer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="100dp" android:text="@string/tv_right_answer" android:drawableLeft="@drawable/right_answer" android:drawablePadding="5dp" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/red" android:id="@+id/tv_wrong_answer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="100dp" android:text="@string/tv_wrong_answer" android:drawableLeft="@drawable/wrong_answer" android:drawablePadding="5dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

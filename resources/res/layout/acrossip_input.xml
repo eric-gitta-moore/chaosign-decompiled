@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <EditText android:textSize="18sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/et_across_ip" android:background="@drawable/et_pincode_input" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/across_ip_input_please" android:maxLength="15" android:digits="1234567890.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" android:inputType="textEmailAddress" android:textCursorDrawable="@null"/>
+</LinearLayout>

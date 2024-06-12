@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.study.contacts.widget.DeptItemHomeView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/viewFront" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/cb_selected" android:focusable="false" android:visibility="gone" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="8dp" android:button="@drawable/checkbox_group_member"/>
+                <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_name" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="" android:maxLines="2" android:lineSpacingMultiplier="1.1"/>
+            </LinearLayout>
+            <TextView android:textSize="15sp" android:textColor="#999999" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tvCount" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="6dp" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+</com.chaoxing.study.contacts.widget.DeptItemHomeView>

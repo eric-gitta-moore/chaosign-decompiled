@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.upload.UploadView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:paddingTop="18dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:layout_weight="1">
+            <TextView android:ellipsize="end" android:id="@+id/tvUploadtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Title_18"/>
+            <TextView android:id="@+id/tvLoadSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Content_14"/>
+            <ProgressBar android:id="@+id/uploadProgressBar" android:layout_width="match_parent" android:layout_height="2dp" android:progressDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleHorizontal"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_weight="0">
+            <Button android:id="@+id/btnCanceUpload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/cancel" android:layout_alignParentBottom="true" style="@style/btn_stroke_black_default"/>
+        </RelativeLayout>
+    </LinearLayout>
+</com.chaoxing.mobile.upload.UploadView>

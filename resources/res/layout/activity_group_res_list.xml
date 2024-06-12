@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titleBar" layout="@layout/common_title_bar2"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titleBar">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/resListView" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#ffefeff4" android:dividerHeight="1px" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tvTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/folder_empty_tip" android:layout_centerInParent="true"/>
+        <include layout="@layout/wait_circle_bar_with_text"/>
+    </RelativeLayout>
+</RelativeLayout>

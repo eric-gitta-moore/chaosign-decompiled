@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <title>新建笔记</title>
+    <link rel="stylesheet" href="css/editor.css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    <script type="text/javascript" src="dist/editor.bundle.js" async></script>
+</head>
+<body>
+<!--页面加载中的动画-->
+<div class="loading"></div>
+<div class="note-netStatus note-netStatus-off">
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 15.3332C12.0501 15.3332 15.3333 12.0499 15.3333 7.99984C15.3333 3.94975 12.0501 0.666504 8 0.666504C3.94992 0.666504 0.666672 3.94975 0.666672 7.99984C0.666672 12.0499 3.94992 15.3332 8 15.3332ZM6.83334 5.33317C6.83334 4.68884 7.35567 4.1665 8 4.1665C8.64434 4.1665 9.16667 4.68884 9.16667 5.33317C9.16667 5.49934 9.13193 5.6574 9.06932 5.80047L8.41118 8.95955C8.31831 9.40533 7.68171 9.40533 7.58883 8.95955L6.93069 5.80047C6.86808 5.6574 6.83334 5.49934 6.83334 5.33317ZM8.85945 11.0926C8.85945 11.5673 8.47466 11.9521 8 11.9521C7.52535 11.9521 7.14056 11.5673 7.14056 11.0926C7.14056 10.618 7.52535 10.2332 8 10.2332C8.47466 10.2332 8.85945 10.618 8.85945 11.0926Z" fill="#F9973B"/>
+        </svg>
+        <span class="note-netStatus-txt">离线编辑中，网络恢复后内容会自动同步</span>
+        <span class="note-netStatus-close"></span>
+    </div>
+</div>
+<div class="note-netStatus note-netStatus-on">
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 15.3332C3.94992 15.3332 0.666672 12.0499 0.666672 7.99984C0.666672 3.94975 3.94992 0.666504 8 0.666504C12.0501 0.666504 15.3333 3.94975 15.3333 7.99984C15.3333 12.0499 12.0501 15.3332 8 15.3332ZM11.5725 6.48429C11.8401 6.16809 11.8007 5.69486 11.4845 5.4273C11.1683 5.15974 10.695 5.19918 10.4275 5.51538L7.26813 9.24914L5.51034 7.61691C5.20681 7.33506 4.73226 7.35263 4.45041 7.65617C4.16856 7.9597 4.18613 8.43425 4.48967 8.7161L6.823 10.8828C6.97316 11.0222 7.17383 11.0941 7.37837 11.0818C7.58291 11.0695 7.77352 10.9741 7.90588 10.8176L11.5725 6.48429Z" fill="#00B86E"/>
+        </svg>
+        <span class="note-netStatus-txt">网络已恢复，内容将自动保存</span>
+        <span class="note-netStatus-close"></span>
+    </div>
+</div>
+<div class="cxeditor">
+    <div class="edit_title">
+        <div id="noteTitle" class="noteTitle" placeholder="标题" contenteditable="plaintext-only"></div>
+<!--        <div id="addSubjectBtn" style="display: none">加入专题</div>-->
+<!--        <div id="compilations">-->
+<!--            <img src="./src/icons/addcompilations.png" id="addCompilations"/>-->
+<!--            <div id="changeCompilations">-->
+<!--                <img src="./src/icons/compliationsCover.png" alt="" id="compliationsCover">-->
+<!--                <span></span>-->
+<!--                <img src="./src/icons/rightArrow.png" alt="" class="rightArrow">-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+    <div id="editorBox"><div id="editor"></div></div>
+</div>
+<div id="content" style="display: none"></div>
+</body>
+</html>

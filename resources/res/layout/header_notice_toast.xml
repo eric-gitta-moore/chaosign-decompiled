@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_rootview" android:background="@drawable/add_notice_floating_window_shadow" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="56dp">
+        <com.makeramen.roundedimageview.RoundedImageView android:layout_gravity="center" android:id="@+id/header_toast_smallimg" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/ic_launcher" android:scaleType="fitCenter" app:riv_corner_radius="4dp" app:riv_mutate_background="true" app:riv_oval="false"/>
+        <RelativeLayout android:layout_gravity="center" android:id="@+id/rl_content" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginLeft="8dp" android:layout_weight="999" android:layout_toRightOf="@+id/header_toast_smallimg">
+            <TextView android:textSize="14sp" android:textColor="#333" android:id="@+id/header_toast_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今天是个好天气" android:lines="1" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="#666" android:layout_gravity="center" android:id="@+id/header_toast_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邵世勇" android:lines="1" android:singleLine="true" android:layout_below="@+id/header_toast_name"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/header_toast_bigimg" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@drawable/remove_floatingwindow" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

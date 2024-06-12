@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#a0000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@drawable/online_resource_newspaper_picker_background" android:paddingLeft="10dp" android:paddingTop="30dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+            <com.fanzhou.scholarship.widget.WheelView android:layout_gravity="center_vertical" android:id="@+id/yearWheelView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <com.fanzhou.scholarship.widget.WheelView android:layout_gravity="center_vertical" android:id="@+id/monthWheelView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="160dp" android:layout_weight="2">
+            <Button android:textSize="16sp" android:textColor="@android:color/black" android:id="@+id/btnOk" android:background="@drawable/btn_white_stroke_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/finish"/>
+            <Button android:textSize="16sp" android:textColor="@android:color/black" android:id="@+id/btnCancel" android:background="@drawable/btn_white_stroke_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

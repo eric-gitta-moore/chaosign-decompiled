@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <Button android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="48dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <Button android:textColor="@color/blue_0099ff" android:id="@+id/btnRight" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@string/service_online" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/CommentTextColor" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录" android:layout_centerInParent="true"/>
+        <RelativeLayout android:id="@+id/rl_radio_group" android:visibility="gone" android:layout_width="260dp" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/rg_head" android:visibility="visible" android:layout_width="260dp" android:layout_height="30dp" android:layout_centerInParent="true">
+                <RadioButton android:textSize="18sp" android:textColor="@color/notify_tab_login_color" android:gravity="center" android:id="@+id/rb_login_tab_left" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="@string/loginpage_invidsingle" android:layout_weight="1"/>
+                <RadioButton android:textSize="18sp" android:textColor="@color/notify_tab_login_color" android:gravity="center" android:id="@+id/rb_login_tab_right" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:button="@null" android:text="@string/loginpage_invid_org" android:layout_weight="1"/>
+            </RadioGroup>
+            <ImageView android:id="@+id/iv_tab_bottom_img" android:background="@color/blue_0099ff" android:layout_width="80dp" android:layout_height="1dp" android:layout_marginLeft="26dp" android:scaleType="matrix" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <TextView android:ellipsize="middle" android:gravity="center" android:id="@+id/tv_without_password" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginRight="65dp" android:text="免密码登录" android:singleLine="true" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+    </RelativeLayout>
+    <ViewFlipper android:id="@+id/vfLogin" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/flLoginLeft" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/flLoginRight" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ViewFlipper>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/lib_cal_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <EditText android:textSize="18sp" android:id="@+id/editText" android:background="#ebebeb" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:maxLines="5" android:layout_above="@+id/kv_keyboard"/>
+    <TextView android:textSize="18sp" android:gravity="center" android:id="@+id/showKeyBoard" android:background="@color/lib_cal_colorPrimary" android:layout_width="match_parent" android:layout_height="50dp" android:text="显示键盘" android:layout_alignParentTop="true"/>
+    <com.chaoxing.lib_calculator.KeyBoardView android:textStyle="normal" android:id="@+id/kv_keyboard" android:background="#ebebeb" android:paddingBottom="10dp" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:shadowRadius="0.1" android:layout_alignParentBottom="true" android:keyTextColor="#000000"/>
+</RelativeLayout>

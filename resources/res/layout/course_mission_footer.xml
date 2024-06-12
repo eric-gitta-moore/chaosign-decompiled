@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/content_view" android:background="#fffdfdfd" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/view_tip_list_end" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="16sp" android:textColor="#ffcbcbcb" android:layout_gravity="center" android:id="@+id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/list_end"/>
+        <TextView android:textSize="16sp" android:textColor="#ffcbcbcb" android:id="@+id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/pull_to_refresh_mission" android:layout_centerInParent="true"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/normal_blue" android:layout_gravity="center" android:id="@+id/tv_un_fold_mission" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui_10_dip" android:text="@string/un_fold_mission" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

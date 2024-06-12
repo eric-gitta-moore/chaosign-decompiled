@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="setting_menu_list">
+        <item>@string/setting_my_favorites</item>
+        <item>@string/setting_scan_history</item>
+        <item>@string/setting_study_process</item>
+        <item>@string/setting_borrow_info</item>
+        <item>@string/setting_message_center</item>
+        <item>@string/setting_feedback</item>
+    </array>
+</resources>

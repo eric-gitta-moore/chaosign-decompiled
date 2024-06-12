@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <EditText android:enabled="false" android:textSize="18sp" android:textColor="@android:color/black" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/noteTagText" android:background="@drawable/note_tagbg_lines" android:paddingLeft="34dp" android:paddingTop="34dp" android:paddingRight="25dp" android:paddingBottom="54dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:hint=""/>
+</LinearLayout>

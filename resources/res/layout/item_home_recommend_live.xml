@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingTop="14dp" android:paddingBottom="21dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="67dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18sp" android:textColor="#262626" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginEnd="15dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#b3b3b3" android:ellipsize="end" android:id="@+id/iv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="1" android:layout_marginEnd="15dp"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_avatar" android:layout_width="20dp" android:layout_height="20dp" app:riv_oval="true"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="#b3b3b3" android:id="@+id/tv_speaker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="5dp" android:layout_toEndOf="@+id/iv_avatar"/>
+            <ImageView android:id="@+id/iv_del" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_home_recommend_del" android:layout_centerVertical="true" android:paddingStart="@dimen/home_item_margin_right" android:paddingEnd="@dimen/home_item_margin_right" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="55dp" android:layout_height="22dp" android:layout_marginTop="16dp">
+        <ImageView android:id="@+id/iv_status_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_home_live_notstart"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="10sp" android:textColor="@android:color/white" android:id="@+id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="3dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:background="@color/home_item_divider" android:layout_width="match_parent" android:layout_height="@dimen/home_item_divider" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/cb_top" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/cb_top"/>
+    <include android:id="@+id/v_loading" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tb_top" layout="@layout/common_loading_transparent"/>
+</RelativeLayout>

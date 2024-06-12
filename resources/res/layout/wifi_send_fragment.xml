@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.GestureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/libContentConter" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wif_send_book" android:singleLine="true" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+            <ImageView android:id="@+id/btnBack" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/navigation_img_back" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/back_opds_home"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="183dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llBeforeSend" android:background="#0099ff" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textColor="@android:color/white" android:id="@+id/tv_pc_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/pc_input" style="@style/Text_White_14"/>
+                    <TextView android:textSize="14sp" android:textColor="#0e6fe7" android:gravity="center" android:id="@+id/tv_severAddress" android:background="#e4f7ff" android:layout_width="260dp" android:layout_height="30dp" android:text=""/>
+                </LinearLayout>
+                <include android:id="@+id/llWifi_connnect" android:visibility="gone" layout="@layout/wifi_send_progress"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="30dp">
+                <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wifi_logo" android:contentDescription="@string/wifi_send"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp">
+                    <TextView android:id="@+id/tv_wifi_open_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_opened" style="@style/Text_Content_14"/>
+                    <TextView android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_wifi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/Text_Content_14"/>
+                    <TextView android:textColor="#999999" android:id="@+id/tv_sytip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/same_wifi" style="@style/Text_Content_14"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.fanzhou.widget.GestureRelativeLayout>

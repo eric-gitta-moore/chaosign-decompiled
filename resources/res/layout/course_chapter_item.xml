@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/item_divider" android:layout_width="25dp" android:layout_height="wrap_content"/>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@+id/cbSelector" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:button="@drawable/checkbox_group_member"/>
+        <TextView android:textSize="12sp" android:textColor="@color/normal_title_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_part_index" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/normal_title_color" android:layout_gravity="center_vertical" android:id="@+id/tv_part_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:singleLine="true"/>
+    </LinearLayout>
+    <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

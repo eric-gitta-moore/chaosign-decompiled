@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvMessage" android:background="#ffefeff4" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#ffd9d9d9" android:dividerHeight="1px" android:headerDividersEnabled="true" android:footerDividersEnabled="true"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent_white"/>
+        <include android:id="@+id/viewLoading2" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_note_failed_match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iCover" android:background="@drawable/default_cover_bg" android:padding="2dp" android:visibility="gone" android:layout_width="66dp" android:layout_height="90dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:scaleType="fitXY"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="62dp" android:layout_weight="1">
+        <TextView android:id="@+id/tvRssCataItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Title"/>
+        <TextView android:ellipsize="end" android:id="@+id/tvRssCataItemAbstract" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true" style="@style/text_content_list_item"/>
+        <TextView android:ellipsize="end" android:id="@+id/tvRssCataItemAbstract2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Text_Content_14"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="45dp" android:layout_height="62dp" android:layout_weight="0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivDownloadState" android:paddingLeft="20dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/right_arrow" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+        <ProgressBar android:id="@+id/pbwaitDownload" android:visibility="invisible" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

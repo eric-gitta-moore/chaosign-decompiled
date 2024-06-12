@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:cl_right_action_text="@string/comment_finish"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_clazz_assign" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

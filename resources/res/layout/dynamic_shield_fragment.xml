@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/llContainer" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/titleBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rgTabs" android:background="@drawable/blue_border_corner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RadioButton android:textSize="15sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/rb_tab01" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:minWidth="58dp"/>
+            <View android:id="@+id/line1" android:background="#0099ff" android:layout_width="1px" android:layout_height="match_parent"/>
+            <RadioButton android:textSize="15sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/rb_tab02" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:minWidth="58dp"/>
+        </RadioGroup>
+        <Button android:id="@+id/btnBack" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/navigation_img_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/rl_fragment" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titleBar"/>
+</RelativeLayout>

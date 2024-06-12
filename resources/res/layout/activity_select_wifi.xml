@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/color_connecting_tips" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/tv_device_tip" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="@dimen/item_margin_left" android:text="@string/tip_connect" android:maxLines="1" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="@color/color_connecting_tips" android:gravity="center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/back_textView" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/app_back"/>
+    </LinearLayout>
+    <View style="@style/line_horizontal"/>
+    <ListView android:id="@+id/lv_wifis" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/line_color" android:dividerHeight="0.1dp"/>
+</LinearLayout>

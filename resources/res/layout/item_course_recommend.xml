@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="4dp">
+        <com.chaoxing.fanya.aphone.view.AsyncImageView android:id="@+id/icon" android:background="@drawable/default_course" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" ratio_reference="width" width_height_ratio="1.68"/>
+        <TextView android:textSize="15sp" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:singleLine="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+            <TextView android:textSize="12sp" android:textColor="#646464" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/job_progress"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ProgressBar android:id="@+id/pb_job" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="13dp" android:progressDrawable="@drawable/seekbar_style_job" android:minHeight="13dp" android:layout_centerInParent="true" style="?android:attr/progressBarStyleHorizontal"/>
+                <TextView android:textSize="11sp" android:textColor="#fefefe" android:id="@+id/tv_job_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center_vertical" android:id="@+id/creator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="8dp" android:layout_marginBottom="10dp" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

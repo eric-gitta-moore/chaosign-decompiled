@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/viewContainer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top" android:visibility="gone" layout="@layout/common_title_bar_5"/>
+    <com.chaoxing.mobile.note.widget.NoteListTitleBar android:gravity="center_vertical" android:id="@+id/viewTitleBar" android:layout_width="match_parent" android:layout_height="48dp" android:layout_below="@+id/top"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@android:color/transparent" android:dividerHeight="0px"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+        <TextView android:textSize="17sp" android:textColor="#999999" android:id="@+id/tvNoDataTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="180dp" android:text="@string/find_group_nodata_tip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <include layout="@layout/wait_circle_bar_with_text"/>
+    <ImageView android:id="@+id/ivLoad" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/state_loading_fail" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/to_top" android:paddingBottom="22dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@drawable/img_to_top" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/flReplyMeContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top"/>
+    <ViewStub android:id="@+id/viewStub" android:layout="@layout/view_stub_text_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

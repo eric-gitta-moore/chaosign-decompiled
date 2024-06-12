@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/timeLayout" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingRight="15dp" android:paddingBottom="12.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="36sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/timeTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="9:00" android:singleLine="true" android:layout_toLeftOf="@+id/switchBtn"/>
+        <com.kyleduo.switchbutton.SwitchButton android:id="@+id/switchBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:kswThumbColor="@color/white" app:kswThumbHeight="20dp" app:kswThumbWidth="19dp" style="@style/WiFiSwitchButtonStyle"/>
+        <TextView android:textSize="11sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/typeTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.5dp" android:text="上班打卡提醒" android:singleLine="true" android:layout_toLeftOf="@+id/repeatTv" android:layout_below="@+id/timeTv" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="11sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/repeatTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="15dp" android:text="每个工作日" android:singleLine="true" android:layout_below="@+id/timeTv" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/dividerIv" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_below="@+id/timeLayout"/>
+</RelativeLayout>

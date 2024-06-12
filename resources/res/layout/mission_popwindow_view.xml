@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlpop" android:background="#80333333" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/popwindow_option_shap" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:textColor="@color/color_cccccc" android:gravity="center" android:id="@+id/tv_title" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mine_submit_mission_title" android:lineSpacingMultiplier="1.3"/>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/tv_save" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/commen_Save"/>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/tv_pc_cloud"/>
+            <TextView android:textSize="15sp" android:textColor="@color/common_delete" android:gravity="center" android:id="@+id/tv_submit" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/submit"/>
+        </LinearLayout>
+        <TextView android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/tv_cancel" android:background="@drawable/popwindow_option_shap" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="15dp" android:text="@string/cancel"/>
+    </LinearLayout>
+</RelativeLayout>

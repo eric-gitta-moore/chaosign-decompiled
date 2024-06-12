@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/shape_border_approval_item_bg" android:layout_width="315dp" android:layout_height="152dp">
+        <TextView android:textSize="18sp" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/title_tip" android:layout_width="315dp" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@string/schedule_add_label" android:layout_alignParentTop="true" android:layout_centerInParent="true"/>
+        <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#999999" android:id="@+id/add_label_content" android:background="@drawable/shape_border_add_label_content_bg" android:paddingLeft="6dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:hint="@string/schedule_add_label_hint" android:layout_below="@+id/title_tip"/>
+        <View android:id="@+id/label_divider" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="4dp" android:layout_above="@+id/label_action_zone"/>
+        <LinearLayout android:gravity="center" android:id="@+id/label_action_zone" android:layout_width="315dp" android:layout_height="40dp" android:weightSum="2" android:layout_alignParentBottom="true">
+            <TextView android:textSize="15sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/add_label_cancle" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/schedule_cancle_text" android:layout_weight="1"/>
+            <View android:background="#ebebeb" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="4dp"/>
+            <TextView android:textColor="#0099ff" android:gravity="center" android:id="@+id/add_label_ok" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/schedule_text_confirm" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+<meta charset="utf-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body onhashchange="hashChangeFire()">
+    <div class="attach-box" id="attach-box"><b class="closeAnnex"></b></div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/attachment_common.js"></script>
+    <script type="text/javascript">
+        //判断移动端
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        function hashChangeFire(){
+            if(getUrlParam('isiframeClose')){
+                $(".closeAnnex").show();
+            }
+        }
+        function getUrlParam(name){
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.hash.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return r[2]; return null; //返回参数值
+        }
+        //2021.04.22
+        var editorClientType = true;
+        if(getUrlParam('editorClientType')){
+        	if(getUrlParam('editorClientType') == 'false'){
+        		editorClientType = false;
+        	}
+        }
+        var jsonOld = window.name;
+        try{
+            jsonOld = b64DecodeUnicode(jsonOld);
+        }catch(e){
+
+        }
+        try{
+            json = JSON.parse(jsonOld);
+        }catch(e){
+            json = "";
+        }
+        if(json == ""){
+        }
+        var att_course = json.att_course || "";
+        if (att_course != "") {
+            var courseLogo = att_course.knowledgeLogo || "images/icon_gray.png";
+            courseLogo = courseLogo.replace(/.webp/g, '.jpg');
+            if (courseLogo.indexOf("chaoxing.com") != -1) {
+                courseLogo = courseLogo.replace(/origin/g, '100_100cQ50');
+            }
+            var courseName = att_course.courseName || "";
+            var knowledgeLabel = att_course.knowledgeLabel || "";
+            var html = '<div tabindex="0" aria-hidden="false" role="option" class="attach_item insertCourse">'+
+                            '<div aria-hidden="true" class="img squareRadius"><img src="'+courseLogo+'"></div>'+
+                            '<div class="attach_infor">'+
+                                '<h2 class="words2">'+knowledgeLabel+'</h2>'+
+                                '<p class="aside">'+courseName+'</p>'+
+                            '</div>'+
+                        '</div>';
+            $(".attach-box").append(html);
+        }
+        if(json.cid){
+            var cid=json.cid;
+            //显示附件叉号2021.05
+            attachmentUtils.showiframeClose(cid,editorClientType);
+        }
+        // 附件点击调客户端方法
+        function openClickEvent(e,attachment){
+            attachmentUtils.openClickEvent(e,attachment,json,editorClientType);
+        };
+        //长按附件
+        var touchY = 0;
+        var longClick =0;
+        $(".attach-box").on({
+            touchstart: function(e){
+                longClick=0;
+                timeOutEvent = setTimeout(function(){
+                    //此处为长按事件
+                    longClick=1;//假如长按，则设置为1
+                    if(json.cid){
+                        var cid=json.cid;
+                        if (isAndroid && (typeof javaJs !== 'undefined')) {
+                           javaJs.executeParentJs('zss_editor.iframeForward("'+cid+'")');
+                        }
+                        if (isIOS) {
+                            if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+                            window.webkit.messageHandlers.executeParentJs.postMessage(['zss_editor.iframeForward("'+cid+'")']);
+                            }else{
+                    　　　　     if(window.top["executeParentJs"]) {
+                                    window.top["executeParentJs"]('zss_editor.iframeForward("'+cid+'")');
+                                }
+                            }
+                        }
+                    }
+
+                },500);
+                var touch = e.originalEvent.targetTouches[0];
+                touchY = touch.clientY;
+            },
+            touchmove: function(e){
+                clearTimeout(timeOutEvent);
+                timeOutEvent = 0;
+                var touch = e.originalEvent.changedTouches[0];
+                if(Math.abs(touch.clientY - touchY) < 10){
+                    if(isAndroid){
+                     e.preventDefault();
+                    }
+                }
+            },
+            touchend: function(e){
+                clearTimeout(timeOutEvent);
+                if(timeOutEvent!=0 && self.longClick==0){//点击
+                   //此处为点击事件----在此处跳转
+                   openClickEvent(e,jsonOld)
+                }
+                return false;
+            }
+        });
+        $('.attach-box').bind('contextmenu', function(e) {
+          e.preventDefault();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" app:contentScrim="@android:color/transparent" app:expandedTitleMarginStart="0dp" app:layout_scrollFlags="3">
+            <RelativeLayout android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="2" app:layout_collapseParallaxMultiplier="0.7">
+                <ImageView android:id="@+id/iv_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@android:color/white" android:scaleType="centerCrop" android:layout_alignTop="@+id/header_view" android:layout_alignBottom="@+id/header_view"/>
+                <View android:background="#99333333" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/header_view" android:layout_alignBottom="@+id/header_view"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/header_view" android:paddingTop="64dp" android:paddingBottom="49dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp">
+                        <RelativeLayout android:id="@+id/avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
+                            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_avatar" android:layout_width="90dp" android:layout_height="90dp" android:src="@drawable/icon_note_heji_default_logo" android:scaleType="centerCrop" app:riv_border_color="@android:color/white" app:riv_border_width="0dp" app:riv_corner_radius="6dp" app:riv_oval="false"/>
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/ll_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="23dp" android:layout_toRightOf="@+id/avatar">
+                            <TextView android:textSize="17sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1"/>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="13sp" android:textColor="#b2ffffff" android:ellipsize="end" android:id="@+id/tv_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+                                <TextView android:textSize="13sp" android:textColor="#b2ffffff" android:ellipsize="end" android:id="@+id/tv_readers" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:lines="1"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/tvAdd" android:background="@drawable/bg_circle_border_27_ffffff" android:paddingLeft="14dp" android:paddingTop="4dp" android:paddingRight="14dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_heji_add" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:textFontWeight="400"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <FrameLayout android:id="@+id/toolbar" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/heji_info_toolbar"/>
+            </FrameLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@+id/list_view_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-15dp" android:layout_marginBottom="@dimen/dp_45" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <View android:id="@+id/reply_bg" android:background="#80000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/fl_reply" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include android:layout_gravity="bottom" android:id="@+id/bottomBar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_reply_bar"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

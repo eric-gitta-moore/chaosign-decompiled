@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/llContentCenter" layout="@layout/activity_comment_title"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="83dp" android:layout_height="match_parent">
+            <com.chaoxing.mobile.widget.SelectCateMenu android:orientation="vertical" android:id="@+id/llcateView" android:background="@drawable/navigation_left_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ProgressBar android:id="@+id/cateWaitBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <fragment android:name="com.chaoxing.mobile.contentcenter.audio.ui.AudioContentFragment" android:id="@+id/content_fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

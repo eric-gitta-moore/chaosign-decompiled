@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_system_app_edit" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolBar" layout="@layout/common_title_bar"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/llFolder" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolBar">
+        <RelativeLayout android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/icFolder" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_folder_private"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:id="@+id/tvFolderName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/note_root" android:layout_toRightOf="@+id/icFolder" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</RelativeLayout>

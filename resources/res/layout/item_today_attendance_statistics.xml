@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.AppCompatTextView android:textSize="12sp" android:textColor="@color/ds_color_base_black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <android.support.v7.widget.AppCompatTextView android:textSize="12sp" android:textColor="@color/ds_color_base_gray" android:id="@+id/countTv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

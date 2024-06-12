@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/llReply_content" android:background="#f4f5f6" android:paddingLeft="15dp" android:paddingTop="11dp" android:paddingRight="15dp" android:paddingBottom="11dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="74dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvReplyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <TextView android:textSize="13sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tvReplyContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dp" android:layout_marginBottom="1.5dp" android:maxLines="2" android:layout_below="@+id/tvReplyTitle"/>
+        <TextView android:textSize="11sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvFromInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true" android:layout_below="@+id/tvReplyContent"/>
+    </RelativeLayout>
+</LinearLayout>

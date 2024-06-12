@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.common.TitleBarView android:id="@+id/viewTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_address" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.chaoxing.mobile.search.widget.SearchBar android:id="@+id/search_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <ListView android:id="@+id/lvAddress" android:layout_width="match_parent" android:layout_height="306dp" android:divider="@android:color/transparent" android:dividerHeight="0dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_search_address" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rl_search" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/group_search_input_bg" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:layout_toStartOf="@+id/btn_right">
+                        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/iv_search_bg" android:layout_marginStart="8dp"/>
+                        <EditText android:textSize="14sp" android:textColor="#666666" android:textColorHint="#b3b3b3" android:layout_gravity="center_vertical" android:id="@+id/et_keyword" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="28dp" android:hint="@string/comment_serarch" android:layout_weight="1" android:inputType="text" android:imeOptions="actionSearch" android:paddingStart="0dp" android:paddingEnd="6dp" android:layout_marginStart="5dp"/>
+                        <ImageView android:id="@+id/iv_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_weight="0" android:layout_marginEnd="8dp"/>
+                    </LinearLayout>
+                    <Button android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/btn_right" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/cancel" android:layout_centerVertical="true" android:layout_marginStart="-8dp" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:id="@+id/tv_history_tag" android:paddingTop="15dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="历史记录" android:drawableLeft="@drawable/ic_clock" android:drawablePadding="5dp"/>
+                <ListView android:id="@+id/lvSearchAddress" android:layout_width="match_parent" android:layout_height="400dp" android:divider="@android:color/transparent" android:dividerHeight="0dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tvLoading" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/loading" android:layout_alignTop="@+id/rl_container" android:layout_alignBottom="@+id/rl_container"/>
+        <com.baidu.mapapi.map.MapView android:id="@+id/bmapView" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_container"/>
+        <com.chaoxing.mobile.chat.widget.LocationMapView android:id="@+id/locationView" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/bmapView" android:layout_alignBottom="@+id/bmapView"/>
+        <ImageView android:id="@+id/ivStartLocated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="45dp" android:layout_marginBottom="15dp" android:src="@drawable/icon_start_located" android:layout_alignRight="@+id/bmapView" android:layout_alignBottom="@+id/bmapView"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+    </RelativeLayout>
+</LinearLayout>

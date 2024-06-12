@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/remaining_space" android:background="@drawable/bg_cc_remaining_space" android:layout_width="match_parent" android:layout_height="30dp" android:text="剩余可用空间" android:layout_alignParentBottom="true"/>
+    <com.chaoxing.mobile.rklive.RkOffLineDownloadingLayout android:id="@+id/offline_downloading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/downloaded_course_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/remaining_space" android:layout_below="@+id/offline_downloading"/>
+    <com.chaoxing.mobile.rklive.RkNoOffLineDownloadLayout android:id="@+id/no_offline_download_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/remaining_space" android:layout_below="@+id/title_bar"/>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

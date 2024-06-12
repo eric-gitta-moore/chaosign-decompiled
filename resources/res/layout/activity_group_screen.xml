@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/screen_action" android:background="@drawable/bg_ic_blue" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="15dp" android:layout_marginTop="20dp" android:layout_marginRight="15dp" android:layout_marginBottom="20dp" android:text="@string/ic_link_device" android:layout_alignParentBottom="true"/>
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/screen_action" android:layout_below="@+id/tool_bar"/>
+</RelativeLayout>

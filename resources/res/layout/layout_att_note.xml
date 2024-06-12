@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/att_widget_ll" android:background="@drawable/shape_line_blue_bg" android:padding="6dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/att_img_iv" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="6dp" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/att_img_iv" android:layout_centerVertical="true">
+            <TextView android:ellipsize="end" android:id="@+id/att_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主题" android:maxLines="1"/>
+            <TextView android:ellipsize="end" android:id="@+id/att_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="内容" android:maxLines="2"/>
+            <TextView android:id="@+id/att_from_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="来自哪里"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/att_delete_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@mipmap/reminder_att_delete_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

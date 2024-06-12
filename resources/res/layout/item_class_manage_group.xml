@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.downloadcenter.ui.SwipeLeftDeleteItem xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="50dp">
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/tvEdit" android:background="#f7a923" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/common_rename"/>
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/tvDismiss" android:background="#fb362d" android:layout_width="50dp" android:layout_height="match_parent" android:text="@string/grouplist_Dismiss"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rlContainer" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+        <ImageView android:id="@+id/ivDelteGroup" android:background="@drawable/icon_class_manage_group_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="#333" android:ellipsize="end" android:id="@+id/tvGroupName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:text="第一组大家放假啊发卡就放到空间大附件了开始大家反馈就打开十几分埃及水电费加的卡是发卡机是的罚款件大事打分就打开是连接发到范德萨接口" android:maxLines="1" android:layout_toRightOf="@+id/ivDelteGroup" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="#999" android:id="@+id/tvStudentCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/viewSp" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</com.chaoxing.mobile.downloadcenter.ui.SwipeLeftDeleteItem>

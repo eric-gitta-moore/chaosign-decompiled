@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:keepScreenOn="true">
+    <android.opengl.GLSurfaceView android:id="@+id/sv_previewer" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <ProgressBar android:id="@+id/pb_push_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small"/>
+    <RelativeLayout android:id="@+id/status_panel" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/pb_loading" android:layout_centerInParent="true">
+            <TextView android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+            <Button android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/btn_status_operate" android:background="@drawable/bg_border_white" android:paddingLeft="24dp" android:paddingTop="6dp" android:paddingRight="24dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="关闭" android:layout_below="@+id/tv_status" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

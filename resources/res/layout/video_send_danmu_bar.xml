@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rootView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llo_live_chat_operation" android:layout_width="match_parent" android:layout_height="52dp">
+        <com.chaoxing.mobile.player.danmu.view.VideoDanmuEditText android:textSize="16sp" android:textColorHint="#ffcccccc" android:gravity="center_vertical" android:id="@+id/write_message" android:background="@drawable/bg_edittext_circular_bead_white_play" android:padding="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:layout_marginBottom="6dp" android:maxHeight="84dp" android:minHeight="40dp" android:hint="@string/live_say_something" android:layout_weight="1" android:imeOptions="flagNoExtractUi"/>
+        <ImageView android:id="@+id/btn_emoji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:src="@drawable/live_chat_emoj"/>
+        <ImageView android:id="@+id/btn_keyboard" android:background="@drawable/live_keyboard" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp"/>
+        <TextView android:enabled="false" android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_send" android:background="@drawable/video_chat_sendbtn" android:layout_width="56dp" android:layout_height="30dp" android:layout_marginRight="6dp" android:text="@string/send"/>
+    </LinearLayout>
+    <com.chaoxing.mobile.live.LiveEmojiPanel android:orientation="vertical" android:id="@+id/emoji_panel" android:background="#fff5f5f5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/llo_live_chat_operation"/>
+</RelativeLayout>

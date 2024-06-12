@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>笔记 1.2 备份</title>
+    <g id="笔记-1.2-备份" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组" transform="translate(2.500000, 2.250000)" fill-rule="nonzero">
+            <rect id="矩形" stroke="#3A8BFF" stroke-width="1.2" x="1.6" y="0.6" width="10.8" height="12.3" rx="1.28947368"></rect>
+            <rect id="矩形" fill="#3A8BFF" x="0" y="4.14642857" width="3" height="1.15714286" rx="0.578571429"></rect>
+            <rect id="矩形-copy" fill="#3A8BFF" x="0" y="8.19642857" width="3" height="1.15714286" rx="0.578571429"></rect>
+            <path d="M7.5,0.964285714 L10.5,0.964285714 L10.5,4.5848467 C10.5,4.69530365 10.4104569,4.7848467 10.3,4.7848467 C10.2790294,4.7848467 10.2581893,4.78154858 10.2382435,4.77507323 L9,4.37308098 L9,4.37308098 L7.76175651,4.77507323 C7.65669729,4.80918041 7.54388064,4.75166241 7.50977347,4.6466032 C7.50329812,4.62665739 7.5,4.60581728 7.5,4.5848467 L7.5,0.964285714 L7.5,0.964285714 Z" id="矩形" fill="#3A8BFF"></path>
+        </g>
+    </g>
+</svg>

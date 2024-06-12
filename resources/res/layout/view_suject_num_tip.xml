@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="14sp" android:textColor="#999999" android:id="@+id/tvDataTip" android:background="#f5f6f8" android:paddingLeft="15dp" android:paddingTop="6dp" android:paddingRight="15dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="提示：作者未发布的专题不可见" android:maxLines="1"/>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="20dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:id="@+id/tv_country" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textColor="#ff999999" android:layout_gravity="center_vertical" android:id="@+id/tv_code" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

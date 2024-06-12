@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rlContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/rl_cToolbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.chaoxing.library.widget.CToolbar android:id="@+id/viewToolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <RelativeLayout android:id="@+id/ll_cToolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+                        <Button android:textSize="14sp" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/btn_Left" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingTop="4dp" android:paddingRight="6dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minWidth="0dp" android:minHeight="0dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_weight="1"/>
+                        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+                            <com.fanzhou.widget.CircleImageView android:id="@+id/iv_logo" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/icon_user_head_portrait" android:layout_centerInParent="true" app:border_color="@color/avatar_border" app:border_width="1px" app:is_circle="false" app:x_radius="5dp" app:y_radius="5dp"/>
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="7">
+                            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                                <TextView android:textSize="10sp" android:textColor="#bebebe" android:id="@+id/tv_num_post" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="8dp"/>
+                                <View android:background="#bebebe" android:visibility="gone" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="2dp"/>
+                                <TextView android:textSize="10sp" android:textColor="#bebebe" android:id="@+id/tv_num_people" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="8dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textColor="#999999" android:layout_gravity="center" android:id="@+id/tv_addedStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+                        <RelativeLayout android:layout_gravity="center" android:id="@+id/rl_bt_shared" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <Button android:id="@+id/bt_shared" android:background="@drawable/group_share_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:background="#eeeeeeee" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@+id/srl_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottomBar" android:layout_below="@+id/rl_cToolbar">
+                <com.scwang.smart.refresh.header.CxClassicsHeader android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:srlDrawableArrow="@drawable/icon_refresh" app:srlDrawableArrowSize="18dp" app:srlDrawableMarginRight="8dp" app:srlDrawableProgressSize="18dp" app:srlEnableLastTime="false" app:srlFinishDuration="100" app:srlPrimaryColor="@color/white" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="13sp" app:srlTextTimeMarginTop="2dp"/>
+                <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_topic_list" android:background="#fafafa" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:footerDividersEnabled="false" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+            <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_cToolbar" layout="@layout/page_loading_circle"/>
+            <include android:id="@+id/bottomBar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/view_reply_bar"/>
+            <com.chaoxing.study.screencast.view.ScreenCastController android:id="@+id/screen_control" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:id="@+id/reply_bg" android:background="#80000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/fl_reply" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include android:id="@+id/reply_viewLoading" android:visibility="gone" android:clickable="true" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

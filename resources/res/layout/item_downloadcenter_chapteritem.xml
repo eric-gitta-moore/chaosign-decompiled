@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.downloadcenter.ui.SwipeLeftDeleteItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:my="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="65dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvDelete" android:background="@color/color_commen_del" android:layout_width="60dp" android:layout_height="match_parent" android:text="删除"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="11dp" android:layout_marginRight="12dp" android:layout_marginBottom="11dp">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/img_icon" android:layout_width="45dp" android:layout_height="45dp" android:scaleType="centerCrop" my:is_circle="false" my:x_radius="6px" my:y_radius="6px"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rlContainer" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="43dp" android:text="专题名" android:singleLine="true"/>
+                    <RelativeLayout android:id="@+id/rlTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-38dp" android:layout_toRightOf="@+id/tvTitle">
+                        <TextView android:textSize="10dp" android:textColor="#a8a8a8" android:gravity="center" android:id="@+id/ivDownloaded" android:background="@drawable/bg_circular_bead_cccccc_tran_bg" android:visibility="gone" android:layout_width="38dp" android:layout_height="16dp" android:text="@string/downloadres_isDownloaded"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <ProgressBar android:id="@+id/pbProgress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" style="@style/DownloadCenterProgressHorizontal"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="#666666" android:id="@+id/tvSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="122.0k/s" android:layout_alignParentRight="true"/>
+                    <TextView android:textColor="#666666" android:id="@+id/tvSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="12.6M/22.6M"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/tvFinishSize" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大小" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/rlBtnContaioner" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+            <TextView android:gravity="center" android:id="@+id/tvOptioin" android:background="@drawable/bg_btn_downloadcenter_border_white" android:layout_width="50dp" android:layout_height="24dp" android:text="继续"/>
+        </RelativeLayout>
+    </LinearLayout>
+</com.chaoxing.mobile.downloadcenter.ui.SwipeLeftDeleteItem>

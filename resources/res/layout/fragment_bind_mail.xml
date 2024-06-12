@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.common.TitleBarView android:id="@+id/viewTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#f1f0ef" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <TextView android:textSize="18sp" android:textColor="#666666" android:id="@+id/tvTitleTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="请先绑定邮箱"/>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="账号"/>
+            <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#999999" android:id="@+id/et_email_account" android:background="#00000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="example@chaoxing.com"/>
+        </LinearLayout>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="密码"/>
+            <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#999999" android:id="@+id/et_email_pwd" android:background="#00000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="邮箱密码" android:inputType="textPassword"/>
+        </LinearLayout>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+        <Button android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/btnUnBind" android:background="@drawable/bg_btn_quit_group" android:padding="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="60dp" android:layout_marginRight="50dp" android:text="解除绑定"/>
+    </LinearLayout>
+</RelativeLayout>

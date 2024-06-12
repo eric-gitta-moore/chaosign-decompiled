@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:background="@drawable/personal_background" android:layout_width="match_parent" android:layout_height="214dp"/>
+        <RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ScrollView android:id="@+id/svSetting" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.chaoxing.mobile.widget.UserInfoHeaderView android:id="@+id/userHeaderView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48dp"/>
+                    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+                        <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/siMessageCenter" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/contact" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/myAttention" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/attenteMe" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/MyFriend" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/myTopic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/replyMe" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/groupAction" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/siPersonalPrivacy" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/siSetPwd" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/stroke_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/siFavorite" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/sivAccountBind" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/siFeedback" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/sivCleanCache" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                        <com.chaoxing.mobile.widget.SettingsItemView android:id="@+id/sivAbout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <Button android:id="@+id/btnBack" android:background="@android:color/transparent" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="48dp" android:drawableLeft="@drawable/img_back_button" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <include android:id="@+id/vWaiting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+</RelativeLayout>

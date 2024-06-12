@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingTop="10dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <CheckBox android:id="@+id/cb_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <com.chaoxing.mobile.group.ui.GroupAvatar android:id="@+id/ga_icon" android:background="@drawable/ic_chaoxing_default" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/cb_selector" android:layout_centerVertical="true"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toLeftOf="@+id/iv_right_arrow" android:layout_toRightOf="@+id/ga_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:paddingRight="34dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="正文" android:maxLines="1" android:layout_below="@+id/tv_title"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

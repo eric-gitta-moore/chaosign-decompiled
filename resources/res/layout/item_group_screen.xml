@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="15dp" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:enabled="false" android:id="@+id/select_ip" android:background="@drawable/selector_ic_select_ip" android:clickable="false" android:layout_width="24dp" android:layout_height="24dp" android:button="@null" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:id="@+id/screen_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="教师侧屏2" android:layout_toRightOf="@+id/select_ip" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:id="@+id/ip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:text="" android:layout_toRightOf="@+id/select_ip" android:layout_below="@+id/screen_name"/>
+    <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="40dp" android:layout_marginTop="15dp" android:layout_below="@+id/ip"/>
+</RelativeLayout>

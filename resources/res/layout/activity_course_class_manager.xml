@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar_3"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/receive_message_read_status" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1dp">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tv_receive_message_read_status" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_message_receive_message_read_status" android:layout_centerVertical="true"/>
+            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sb_receive_message_read_status" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlSilent" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabSilent" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/something_xuexitong_MuteAllMembers" android:layout_centerVertical="true"/>
+            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbSilent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+        </RelativeLayout>
+        <View android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="@dimen/dp_8"/>
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@+id/tvMemberCheck" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/course_chat_member_check" android:drawableRight="@drawable/ic_right_arrow"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/llTransferGroup" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/pcenter_wechat_TransferGroup" android:drawableRight="@drawable/ic_right_arrow"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llCustomerService" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:gravity="center_vertical" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="@dimen/conversation_info_height" android:text="@string/pcenter_wechat_customer_service"/>
+            <ImageView android:id="@+id/ivCustomerService" android:background="@drawable/ic_chat_customer_service_bg" android:padding="2dp" android:visibility="gone" android:layout_width="@dimen/dp_21" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/ic_chat_customer_service"/>
+            <TextView android:textSize="13sp" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvCustomerService" android:layout_width="match_parent" android:layout_height="@dimen/conversation_info_height" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_22" android:maxLines="1" android:layout_weight="1"/>
+            <ImageView android:gravity="center_vertical" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="@dimen/conversation_info_height" android:src="@drawable/ic_right_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_draft_notice" android:background="#1af8af45" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="6dp" android:src="@drawable/icon_note_detail_draft_notice"/>
+        <TextView android:textSize="14sp" android:textColor="#faaf43" android:gravity="center_vertical" android:id="@+id/tv_draft_notice" android:layout_width="match_parent" android:layout_height="match_parent" android:text="当前笔记有内容未发布，可进入编辑页面继续编辑或发布，发布后详情页可见"/>
+    </LinearLayout>
+</RelativeLayout>

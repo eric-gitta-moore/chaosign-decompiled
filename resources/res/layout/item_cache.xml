@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp">
+    <RelativeLayout android:layout_gravity="center_vertical" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/cb_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16dp" android:textColor="#ff333333" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/size_view" android:layout_toRightOf="@+id/cb_select" android:layout_centerVertical="true" android:layout_marginStart="10dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/size_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="5dp" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true">
+            <TextView android:textSize="15dp" android:textColor="#ffb3b3b3" android:gravity="end" android:layout_gravity="center_vertical" android:id="@+id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minEms="4"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right_arrow" android:layout_marginStart="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:layout_gravity="bottom" android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px"/>
+</FrameLayout>

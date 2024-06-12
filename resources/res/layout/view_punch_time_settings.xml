@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="70dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/switchBtn" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/autoPunchTextTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_punch" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="#cccccc" android:id="@+id/tipsTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/auto_punch_at_work_tips" android:lineSpacingExtra="2.5dp"/>
+        </LinearLayout>
+        <com.kyleduo.switchbutton.SwitchButton android:id="@+id/switchBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:kswThumbColor="@color/white" app:kswThumbHeight="20dp" app:kswThumbWidth="19dp" style="@style/WiFiSwitchButtonStyle"/>
+    </RelativeLayout>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/timeSettingLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/timeStartLayout" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="66dp">
+            <ImageView android:id="@+id/startTimeArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@+id/startTimeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="6:00" android:layout_toLeftOf="@+id/startTimeArrow" android:layout_centerVertical="true"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wf_start_time" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/timeEndLayout" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="66dp">
+            <ImageView android:id="@+id/endTimeArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@+id/endTimeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="18:00" android:layout_toLeftOf="@+id/endTimeArrow" android:layout_centerVertical="true"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wf_end_time" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+</merge>

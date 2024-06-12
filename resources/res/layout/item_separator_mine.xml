@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:background="#ebecee" android:paddingLeft="16dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/vs_option">
+        <TextView android:textSize="14sp" android:textColor="#0066cc" android:id="@+id/tv_friends" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bookCollections_recommend_resource"/>
+        <View android:id="@+id/indicator_friends" android:background="#0066cc" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_alignLeft="@+id/tv_friends" android:layout_alignRight="@+id/tv_friends" android:layout_alignBottom="@+id/tv_friends"/>
+        <TextView android:textSize="14sp" android:textColor="#666666" android:id="@+id/tv_star" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="好友收藏" android:layout_toRightOf="@+id/tv_friends"/>
+        <View android:id="@+id/indicator_star" android:background="#0099ff" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_alignLeft="@+id/tv_star" android:layout_alignRight="@+id/tv_star" android:layout_alignBottom="@+id/tv_star"/>
+    </RelativeLayout>
+    <ViewSwitcher android:id="@+id/vs_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/left" android:layout_alignBottom="@+id/left" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_option" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/img_refresh"/>
+        <ProgressBar android:layout_gravity="center" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small"/>
+    </ViewSwitcher>
+</RelativeLayout>

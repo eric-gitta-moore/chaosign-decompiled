@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--<base href="http://fanya.chaoxing.com/"/>-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,user-scalable=no"/>
+<style type="text/css">
+body *{
+	//color:white!important;
+	color:black;
+}
+</style>
+        
+<title></title>
+<!--
+<link href="file:///android_asset/iframe.css" type="text/css" rel="stylesheet"/>
+<script src="file:///android_asset/ext.js"></script>
+<script src="file:///android_asset/ueditor.parse.js"></script>
+-->
+
+<link href="/ananas/ueditor/themes/iframe_wap.css?v={date}" type="text/css" rel="stylesheet"/>
+<script src="/ananas/ext-4.2.0.663/ext.js?v={date}"></script>
+
+<script type="text/javascript">
+document.domain = '{domain}';
+window.AttachmentSetting ={javascript};
+function windowOnload(){
+	location.href="nativeapi:onload";
+}
+</script>
+<script src="/ananas/ueditor/ueditor.parse_wap.js?v={date}"></script>
+
+</head>
+<body onload="windowOnload();">
+
+<div class="ans-cc">{content}</div>
+<script>
+uParse(".ans-cc");
+</script>
+</body>
+</html>

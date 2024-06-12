@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rlcontainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="74dp">
+    <RelativeLayout android:id="@+id/rlContentContainer" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_centerVertical="true">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_linker_image" android:layout_width="@dimen/lib_attachment_icon_size" android:layout_height="@dimen/lib_attachment_icon_size" app:riv_corner_radius="4dp" app:riv_oval="false"/>
+        <TextView android:textSize="@dimen/lib_attachment_title" android:textColor="@color/lib_attachment_color_attachemt_title" android:ellipsize="end" android:id="@+id/tv_linkers_contexts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="测试了" android:maxLines="2" android:layout_toRightOf="@+id/iv_linker_image" android:layout_centerInParent="true" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.2"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_remove" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_attachment_icon_delete" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+</RelativeLayout>

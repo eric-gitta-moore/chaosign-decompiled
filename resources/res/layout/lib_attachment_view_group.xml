@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/group" android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:minHeight="82dp" android:layout_toLeftOf="@+id/iv_add_common_use">
+        <com.chaoxing.mobile.attachment.view.widget.MergeAvatar android:layout_gravity="center_vertical" android:id="@+id/iv_group_icon" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/iv_group_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="11sp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_group" android:background="@drawable/lib_attachment_bg_attachment_group" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小组" android:singleLine="true" android:layout_toRightOf="@+id/tvTitle"/>
+            <ImageView android:id="@+id/iv_group_tag" android:background="@drawable/lib_attachment_icon_group_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp"/>
+            <TextView android:textSize="15sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/tv_name" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="研发部经典语录" android:maxLines="2" android:layout_centerVertical="true"/>
+            <TextView android:textSize="11sp" android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="作者"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_add_common_use" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:src="@drawable/lib_attachment_icon_add_common_use" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_remove" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lib_attachment_icon_delete" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+</RelativeLayout>

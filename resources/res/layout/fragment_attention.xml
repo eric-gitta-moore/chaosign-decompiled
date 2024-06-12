@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar_4"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llTabBar" android:background="@drawable/attention_stroke_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="45dp" android:layout_below="@+id/viewTitleBar">
+        <Button android:textSize="16sp" android:id="@+id/btnTab1" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/focus_sharedData" android:layout_weight="1"/>
+        <Button android:textSize="16sp" android:id="@+id/btnTab2" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/focus_groupAction" android:layout_weight="1"/>
+        <Button android:textSize="16sp" android:id="@+id/btnTab3" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/focus_sharedNote" android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/fragmentPager" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="30" android:layout_below="@+id/llTabBar"/>
+</RelativeLayout>

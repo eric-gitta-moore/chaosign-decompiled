@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.ViewSwipeListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-71dp">
+        <RelativeLayout android:padding="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginRight="12dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" ss:border_color="@color/avatar_border" ss:border_width="1px" ss:is_circle="false" ss:x_radius="10px" ss:y_radius="10px"/>
+            <TextView android:textSize="16sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/tvAdminName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="名字" android:singleLine="true" android:layout_toRightOf="@+id/ivAvatar" android:layout_centerVertical="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tvAdminTag" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="管理员" android:layout_toRightOf="@+id/tvAdminName" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="#ffcc0000" android:layout_width="70dp" android:layout_height="match_parent" android:text="删除"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rlAddAdmin" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/ivAddAdmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_group_invite"/>
+        <TextView android:textSize="16sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/tvaddAdminTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:text="添加管理员" android:singleLine="true" android:layout_toRightOf="@+id/ivAddAdmin" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</com.fanzhou.widget.ViewSwipeListItem>

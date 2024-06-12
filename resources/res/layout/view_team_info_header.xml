@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f5f6f8" android:paddingBottom="1px" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/vg_group_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlGroupName" android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/conversation_info_height">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabGroupName" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_recovery_topic" android:drawablePadding="5dp" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlGroupQRCode" android:background="@android:color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/conversation_info_height">
+            <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvLabGroupQRCode" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/inviteCode_title" android:layout_centerVertical="true"/>
+            <com.kyleduo.switchbutton.SwitchButton android:id="@+id/cbGroupQRCode" android:clickable="true" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            <View android:background="#e1e1e1" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/vgGroupQRCodeDetail" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:layout_marginBottom="5dp">
+                <TextView android:textSize="16sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/something_xuexitong_invaitecode"/>
+                <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#0099ff" android:id="@+id/tvInviteCode" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tvInstructions" android:background="@drawable/group_transfer" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </LinearLayout>
+            <View android:background="#ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+            <TextView android:textSize="13dp" android:textColor="#999999" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/user_xuexitong_rightconner"/>
+            <ImageView android:id="@+id/ivGroupQRCode" android:layout_width="168dp" android:layout_height="168dp" android:layout_marginTop="10dp" android:layout_marginBottom="15dp" android:scaleType="fitXY"/>
+            <TextView android:textSize="12sp" android:textColor="#666666" android:id="@+id/tvQRCodeIntro" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvQRCodeInstructions" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp"/>
+        </LinearLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rlAddMember" android:background="@android:color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/conversation_info_height">
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvAddMember" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_notes_group_new_member" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/cbAddMember" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/add_contact" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    </RelativeLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/rlGroupMember" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp">
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:id="@+id/tvMemberLable" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_contents_member" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

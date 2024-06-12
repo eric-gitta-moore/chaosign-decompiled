@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/image_edit_bottom_banner_height">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/btn_paint" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/image_edit_edit_image_pen_tool_selector" android:contentDescription="@string/image_edit_edit"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/btn_stickers" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/image_edit_edit_image_emotion_selector" android:contentDescription="@string/image_edit_stickers"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/btn_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/image_edit_edit_image_text_tool_selector" android:contentDescription="@string/image_edit_text"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/btn_mosaic" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/image_edit_edit_image_mosaic_tool_selector" android:contentDescription="@string/image_edit_mosaic"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/btn_Palette" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/image_edit_edit_image_palette" android:contentDescription="@string/image_edit_crop"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/btn_crop" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/image_edit_edit_image_crop_selector" android:contentDescription="@string/image_edit_crop"/>
+    </LinearLayout>
+</LinearLayout>

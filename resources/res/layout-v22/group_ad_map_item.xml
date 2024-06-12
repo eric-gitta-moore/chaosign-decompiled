@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:background="@color/WHITE" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="15dp">
+    <com.google.android.material.imageview.ShapeableImageView android:id="@+id/iv_logo" android:layout_width="110dp" android:layout_height="74dp" android:src="@drawable/ic_default_image" android:scaleType="centerCrop" android:layout_alignParentStart="true" cx:shapeAppearance="@style/ShapeAppearance.Rounded4dp"/>
+    <RelativeLayout android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/item_sort" android:layout_toEndOf="@+id/iv_logo" android:paddingHorizontal="10dp">
+        <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/item_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="关于猫猫的科普，历史上的5只酷猫关于猫猫的科普关于猫猫的科普关于猫猫的科普" android:maxLines="2" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/item_date_time" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="07-22 17:30" android:layout_below="@+id/item_content"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/item_sort" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_sort_36dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

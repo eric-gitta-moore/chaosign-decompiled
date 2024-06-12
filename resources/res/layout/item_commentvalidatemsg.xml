@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.downloadcenter.ui.SwipeLeftDeleteItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zdy="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvDelete" android:background="@color/color_commen_del" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/common_delete"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rlContainer" android:paddingTop="14dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rlImgRoom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.chaoxing.mobile.chat.widget.ConversationAvatar2 android:id="@+id/ivAvatar" android:background="#ebebeb" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.chaoxing.mobile.chat.widget.ConversationAvatar2 android:id="@+id/ivAttachmentUserAvatar" android:background="#ebebeb" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="3dp" android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+        <TextView android:textColor="@color/menu_set_left_bg_color" android:gravity="center" android:id="@+id/tvCateList" android:background="@color/validate_group" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="小组" android:layout_toRightOf="@+id/rlImgRoom"/>
+        <RelativeLayout android:id="@+id/rlUserInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/rlButton" android:layout_toRightOf="@+id/rlImgRoom" android:layout_below="@+id/tvCateList">
+            <RelativeLayout android:id="@+id/rlUserLeft" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小新" android:maxEms="11" android:singleLine="true"/>
+                <com.chaoxing.mobile.resource.flower.StatisUserDataView android:id="@+id/statisDataView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tvAuthor"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/tvCircleRead" android:background="@drawable/icon_validate_unread" android:visibility="gone" android:layout_width="11dp" android:layout_height="11dp" android:layout_margin="3dp" android:layout_toRightOf="@+id/rlUserLeft" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_maininfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_toLeftOf="@+id/linearl_attention" android:layout_toRightOf="@+id/rlImgRoom" android:layout_below="@+id/rlUserInfo">
+            <TextView android:textSize="12sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvOrganization" android:paddingRight="63dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="#ff999999" android:id="@+id/tvRequestTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-60dp" android:text="2016-05-26" android:layout_toRightOf="@+id/tvOrganization"/>
+            <RelativeLayout android:id="@+id/rlRequest" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/tvOrganization">
+                <TextView android:textSize="14sp" android:textColor="#333" android:id="@+id/tvRequest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="申请加入设计图讨论" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:textColor="#ff333333" android:id="@+id/tvRequestContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="验证信息：我是小新" android:maxLines="2" android:layout_toLeftOf="@+id/linearl_attention" android:layout_toRightOf="@+id/rlImgRoom" android:layout_below="@+id/rl_maininfo"/>
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:id="@+id/tvAdmin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="验证信息：我是小新" android:maxLines="2" android:layout_toRightOf="@+id/rlImgRoom" android:layout_below="@+id/tvRequestContent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearl_attention" android:layout_width="wrap_content" android:layout_height="@dimen/friend_layoutheight" android:layout_alignParentRight="true">
+            <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="center" android:id="@+id/btnAttachment" android:paddingLeft="8dp" android:paddingTop="-8dp" android:paddingRight="8dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拒绝"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rlButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="14sp" android:textColor="#ff999999" android:id="@+id/button" android:background="@drawable/bg_btn_common_border_white_with3dp" android:paddingLeft="6dp" android:paddingTop="2dp" android:paddingRight="6dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拒绝"/>
+            <TextView android:textSize="14sp" android:textColor="#ff999999" android:gravity="center" android:id="@+id/button2" android:background="@drawable/bg_btn_common_border_white_with3dp" android:paddingLeft="6dp" android:paddingTop="2dp" android:paddingRight="6dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="同意" android:layout_toRightOf="@+id/button"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.chaoxing.mobile.downloadcenter.ui.SwipeLeftDeleteItem>

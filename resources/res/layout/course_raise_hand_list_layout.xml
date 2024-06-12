@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/ic_course_online_raise_hand_list_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_17" android:textColor="#333333" android:id="@+id/raiseHandCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_15" android:text="@string/course_online_apply" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/rl_close" android:padding="@dimen/dp_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_2">
+            <ImageView android:id="@+id/iv_close" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:src="@drawable/ic_course_online_raise_hands_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_apply" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="44dp">
+        <RelativeLayout android:id="@+id/rl_apply_voice" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tv_apply_voice" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/course_online_handup" android:layout_centerInParent="true"/>
+            <View android:id="@+id/tv_apply_voice_line" android:background="@color/chaoxing_blue" android:layout_width="16dp" android:layout_height="3dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_apply_video" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@+id/tv_apply_video" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_open_video" android:layout_weight="1" android:layout_centerInParent="true"/>
+            <View android:id="@+id/tv_apply_video_line" android:background="@color/chaoxing_blue" android:visibility="gone" android:layout_width="16dp" android:layout_height="3dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_apply_screen_share" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@+id/tv_apply_screen_share" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/course_online_screen_share" android:layout_weight="1" android:layout_centerInParent="true"/>
+            <View android:id="@+id/tv_apply_screen_share_line" android:background="@color/chaoxing_blue" android:visibility="gone" android:layout_width="16dp" android:layout_height="3dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView android:id="@+id/lv_raiseHand" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@null" android:divider="@color/white" android:dividerHeight="0dp"/>
+        <TextView android:textSize="@dimen/sp_17" android:textColor="@color/color_999999" android:gravity="center" android:id="@+id/tvNoDataTip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_share_person_tip" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rl_bottom" android:background="@color/white" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/tvRefuse" android:background="@drawable/btn_stroke_0099ff" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="7dp" android:layout_marginBottom="10dp" android:text="@string/course_online_raise_hand_refuse" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvAgree" android:background="@drawable/btn_solide_0099ff" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:text="@string/course_online_raise_hand_agree" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

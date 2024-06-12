@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cx="http://schemas.android.com/apk/res-auto" android:id="@+id/contentView" android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingRight="15dp" android:paddingBottom="8dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/card_view" android:layout_width="match_parent" android:layout_height="wrap_content" cx:cardCornerRadius="10dp" cx:cardElevation="0dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rl_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/rl_logo" android:layout_width="42dp" android:layout_height="42dp" android:layout_marginLeft="14dp" android:layout_marginTop="14dp" android:layout_centerVertical="true">
+                        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/iv_logo" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ic_default_image" android:scaleType="fitXY" cx:shapeAppearance="@style/ShapeAppearance.Rounded4dp"/>
+                        <ImageView android:id="@+id/ic_teach_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tag_course_teach" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toLeftOf="@+id/iv_right_arrow" android:layout_toRightOf="@+id/rl_logo">
+                        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="17sp" android:textColor="@color/color_34455e" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" cx:layout_constraintBottom_toBottomOf="0" cx:layout_constraintHorizontal_bias="0" cx:layout_constraintHorizontal_chainStyle="2" cx:layout_constraintLeft_toLeftOf="0" cx:layout_constraintRight_toLeftOf="@+id/tags" cx:layout_constraintTop_toTopOf="0" cx:layout_constraintWidth_default="1"/>
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/tags" android:layout_width="wrap_content" android:layout_height="wrap_content" cx:layout_constraintBottom_toBottomOf="0" cx:layout_constraintLeft_toRightOf="@+id/tv_name" cx:layout_constraintRight_toRightOf="0" cx:layout_constraintTop_toTopOf="0" cx:layout_constraintVertical_bias="0">
+                                <ImageView android:id="@+id/iv_top_tag" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:src="@drawable/ic_course_list_top" android:maxLines="1" android:layout_toRightOf="@+id/tv_name"/>
+                                <TextView android:textSize="11sp" android:textColor="@color/white" android:id="@+id/tv_end_course_tag" android:background="@drawable/bg_solide_ffcccccc_radius_3" android:paddingLeft="4dp" android:paddingRight="4dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:maxLines="1" android:layout_toRightOf="@+id/tv_name"/>
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView android:textSize="13sp" android:textColor="@color/color_a6abb3" android:ellipsize="end" android:id="@+id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1" android:layout_below="@+id/rl_title"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/iv_right_arrow" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_course_list_folder_gray_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="@color/color_A6A9B3" android:ellipsize="end" android:id="@+id/tv_schools" android:paddingLeft="14dp" android:paddingRight="17dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingMultiplier="1.3"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_clazz" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/gray_edf1f7" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_clazz" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

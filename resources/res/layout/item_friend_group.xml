@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-121dp" android:layout_marginBottom="1px">
+        <RelativeLayout android:id="@+id/viewFront" android:background="@drawable/selector_list_note_item" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/v_name" android:layout_width="match_parent" android:layout_height="60dp">
+                <TextView android:textSize="16sp" android:textColor="#000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvName" android:paddingRight="32dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:singleLine="true"/>
+                <TextView android:textSize="10sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/tvTag" android:background="@drawable/bg_circular_bead_ff0099ff_2" android:visibility="gone" android:layout_width="27dp" android:layout_height="15dp" android:layout_marginLeft="-30dp" android:text="@string/note_top"/>
+            </LinearLayout>
+            <View android:background="#d9d9d9" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvStick" android:background="#99cdff" android:visibility="gone" android:layout_width="70dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/note_top"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvEdit" android:background="#f58f09" android:layout_width="60dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/something_xuexitong_edit"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="#cc0000" android:layout_width="60dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/something_xuexitong_delete"/>
+    </LinearLayout>
+</LinearLayout>

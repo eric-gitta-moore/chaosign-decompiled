@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tv_arrow">
+            <TextView android:textSize="16sp" android:textColor="@color/color_34455e" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingMultiplier="1.1"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tv_arrow" android:paddingLeft="15dp" android:paddingTop="16dp" android:paddingRight="15dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/right_arrow" android:drawablePadding="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/color_ebeded" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="16dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

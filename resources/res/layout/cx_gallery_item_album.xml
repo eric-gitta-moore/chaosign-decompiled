@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.gallery.album.widget.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_album" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/cx_gallery_ic_album_default_image" android:scaleType="centerCrop"/>
+    <RelativeLayout android:id="@+id/rl_select_container" android:paddingTop="3dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:paddingStart="12dp" android:paddingEnd="3dp" android:layout_alignParentEnd="true">
+        <CheckBox android:enabled="false" android:id="@+id/cb_select" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/cx_gallery_selector_checkbox_album_item"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12dp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/tv_select_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/cb_select" android:layout_alignBottom="@+id/cb_select" android:layout_alignStart="@+id/cb_select" android:layout_alignEnd="@+id/cb_select"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/container_video_desc" android:background="@drawable/cx_gallery_bg_album_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <androidx.appcompat.widget.AppCompatImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/cx_gallery_ic_album_video" android:layout_marginStart="7dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="7dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</com.chaoxing.gallery.album.widget.SquareRelativeLayout>

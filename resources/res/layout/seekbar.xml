@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <SeekBar android:id="@+id/seekBar" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:maxHeight="6dp" android:progressDrawable="@drawable/bg_video_seekbar" android:minHeight="6dp" android:thumb="@drawable/icon_video_seekbar_thumb"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <TextView android:textColor="@color/text_av_playing" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/seekBar_currentPosition_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp"/>
+        <TextView android:textColor="@color/text_av_playing" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/seekBar_duration_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/win_back" android:background="@drawable/epub_lum_back" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ListView android:id="@+id/note_line_size_list" android:fadingEdge="none" android:layout_width="220dp" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent"/>
+</RelativeLayout>

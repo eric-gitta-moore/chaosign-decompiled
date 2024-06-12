@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:background="@color/date_line" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlContainer" android:background="@color/gray_style" android:layout_width="match_parent" android:layout_height="68dp">
+        <com.fanzhou.widget.CircleImageView android:id="@+id/ivCover" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginLeft="12dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" ss:border_color="#cccccc" ss:border_width="1px" ss:is_circle="false" ss:x_radius="10px" ss:y_radius="10px"/>
+        <ImageView android:id="@+id/ivCoverTop" android:layout_width="match_parent" android:layout_height="68dp" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:id="@+id/selectedBg" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="68dp" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/edit_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:src="@drawable/bookshelf_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:singleLine="true" android:layout_toLeftOf="@+id/ivRightArrow" android:layout_toRightOf="@+id/ivCover" android:layout_centerVertical="true" style="@style/Text_Title"/>
+        <ImageView android:id="@+id/ivRightArrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="12dp" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</FrameLayout>

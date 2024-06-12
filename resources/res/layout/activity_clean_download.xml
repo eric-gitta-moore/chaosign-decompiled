@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="12sp" android:textColor="#666666" android:id="@+id/tvTip" android:background="#f7f7f7" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="此处课程不计成绩和学分"/>
+        <View android:id="@+id/vLine" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/tvTip"/>
+        <ListView android:id="@+id/lvClean" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/date_line" android:dividerHeight="1px" android:layout_below="@+id/vLine"/>
+        <TextView android:textSize="19sp" android:textColor="#66333333" android:id="@+id/tvNoDataTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear_download_noData" android:layout_centerInParent="true"/>
+        <include layout="@layout/page_loading_circle"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:paddingLeft="15dp" android:paddingTop="14dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.chaoxing.mobile.chat.widget.ConversationAvatar2 android:id="@+id/iv_icon" android:background="#ebebeb" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="10dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="15dp" android:text="08-15" android:singleLine="true" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="标题" android:singleLine="true" android:layout_toLeftOf="@+id/tvTime"/>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_marginRight="15dp" android:text="正文" android:singleLine="true" android:layout_below="@+id/tvTitle"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="55dp" android:layout_marginBottom="1px"/>
+</LinearLayout>

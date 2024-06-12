@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f5f6f7" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/tb_top" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:paddingLeft="3dp" android:paddingTop="18dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tb_top"/>
+    <include android:id="@+id/v_loading" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tb_top" layout="@layout/common_loading_transparent"/>
+    <include android:id="@+id/v_reload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tb_top" layout="@layout/common_reload"/>
+</RelativeLayout>

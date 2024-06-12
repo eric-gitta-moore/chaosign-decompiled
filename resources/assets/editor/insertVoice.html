@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+<meta charset="utf-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body onhashchange="hashChangeFire()">
+    <div  tabindex="0" class="attach-box" id="attach-box"><b class="closeAnnex"></b></div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/radialIndicator.min.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
+    <script type="text/javascript" src="js/attachment_common.js"></script>
+    <script type="text/javascript">
+         //判断移动端
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        function hashChangeFire(){
+            if(getUrlParam('progressVal') || getUrlParam('progressSize') || getUrlParam('progressStatus')){
+                $(".audio-chat-detail").show();
+                var progressVal = getUrlParam('progressVal');
+                var progressSize = getUrlParam('progressSize');
+                var progressStatus = getUrlParam('progressStatus');
+                 var progress =  parseInt((progressVal / progressSize) * 100);
+                var progresslen = sizeformat(fileSize * (progressVal / progressSize)) ||  0;
+                if(progressStatus == 0){
+                     $('.audio-infor-time').html('上传失败！点击重新上传');
+                     $('.audio-infor-time').addClass("audio-infor-fail");
+                     $(".insertVoice").addClass("audio-chat-fail");
+                }else if(progress == 100){
+                    $('.audio-infor-time').html(voiceLength);
+                    $('.audio-infor-size').html(fileSizeformat);
+                    $(".linegap,.audio-infor-size").addClass("show");
+                    setTimeout(function(){
+                        $('.audio-chat-detail').hide();
+                        $('.audio-infor-time').removeClass("audio-infor-fail");
+                        $(".insertVoice").removeClass("audio-chat-fail")
+                    },200)
+                }else if(progress >= 0){
+                    $('.audio-infor-time').html('正在上传...');
+                    $(".audio-chat-voice").css("width",progress+"%");
+                    $('.audio-infor-time').removeClass("audio-infor-fail");
+                    $(".insertVoice").removeClass("audio-chat-fail");
+                }
+            }
+            // 时时播放
+//          if(getUrlParam('currentTime') || getUrlParam('duration')){
+//              $('.audio-content').show();
+//              var currentTime = getUrlParam('currentTime');
+//              var duration = getUrlParam('duration');
+//              myaudio.ontimeupdate(currentTime,duration);
+//          }
+            if(getUrlParam('isvoiceIcon')){
+                $(".voiceIcon").show();
+                $(".voiceIcon").siblings("h2").removeClass("words2");
+                $(".closeAnnex").show();
+            }
+            //替换录音标题
+            if(getUrlParam('newtit')){
+                var newtit = getUrlParam('newtit');
+                $(".attach_item h2").html(decodeURIComponent(newtit));
+                jsonOld = JSON.parse(jsonOld);
+                jsonOld.att_voice.titleEdited = 1;
+                jsonOld = JSON.stringify(jsonOld);
+
+            }
+            //是否播放动画
+            if(getUrlParam('played')){
+                var newtit = getUrlParam('played');
+                if(newtit == 'true'){
+                    $("#attach-box").addClass("animate");
+                }else{
+                    $("#attach-box").removeClass("animate");
+                }
+
+            }
+            //详情页录音标题为空删除
+//          if(getUrlParam('isvoiceTitEmpty')){
+//              if($(".insertVoice .titM h2").text() == "无标题"){
+//                  $(".insertVoice .titM").hide();
+//              }
+//          }
+
+        }
+        function getUrlParam(name){
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.hash.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return r[2]; return null; //返回参数值
+        }
+        //2021.04.22
+        var editorClientType = true;
+        if(getUrlParam('editorClientType')){
+        	if(getUrlParam('editorClientType') == 'false'){
+        		editorClientType = false;
+        	}
+        }
+        var jsonOld = window.name;
+        try{
+            jsonOld = b64DecodeUnicode(jsonOld);
+        }catch(e){
+
+        }
+        try{
+            json = JSON.parse(jsonOld);
+        }catch(e){
+            json = "";
+        }
+        if(json == ""){
+        }
+        var att_voice = json.att_voice || "";
+        if (att_voice != "") {
+            var titleEdited = att_voice.titleEdited || "";
+            if(titleEdited == 1){
+                var fileName = att_voice.fileTitle || "";
+            }else{
+                var fileName = "无标题";
+            }
+            var fileSize = att_voice.fileLength || 0;
+            var fileSizeformat = sizeformat(fileSize) || 0;
+            var voiceLength = formartTime(att_voice.voiceLength || 0);
+            var objectId2 = att_voice.objectId2 || "";
+            if(objectId2 == ""){
+            	var voiceInfor = "等待上传";
+            }else{
+            	var voiceInfor = voiceLength;
+            }
+            var html = '<div aria-hidden="false" role="option" class="attach_item insertVoice">'+
+                            '<div aria-hidden="true" class="voiceImg"></div>'+
+                            '<div class="attach_infor">'+
+                                '<div class="titM"><h2 class="words2">'+fileName+'</h2><b class="voiceIcon"></b></div>';
+                    if(objectId2 == ""){
+                        html +=	'<p class="audio-txt-infor"><span class="audio-infor-size"></span><span class="linegap"></span><span class="audio-infor-time">'+voiceInfor+'</span></p>';
+                    }else{
+                    	html += '<p class="audio-txt-infor"><span class="audio-infor-size show">'+fileSizeformat+'</span><span class="linegap show"></span><span class="audio-infor-time">'+voiceInfor+'</span></p>';
+                    }
+
+                     html +='</div>'+
+                            '<div class="audio-chat-detail">'+
+                                '<span class="audio-chat-voice"></span>'+
+                            '</div>'+
+                        '</div>';
+            $(".attach-box").append(html);
+        }
+
+         if(json.att_voice.status && json.att_voice.status == 2){
+            $('.audio-infor-time').html('上传失败！点击重新上传');
+            $(".insertVoice").addClass("audio-chat-fail");
+            $('.audio-infor-time').addClass("audio-infor-fail");
+         }
+         if(json.cid){
+            var cid=json.cid;
+            //显示录音修改图标2021.05
+            attachmentUtils.showvoiceIcon(cid,editorClientType);
+
+        }
+
+        function reuploadFile(attachment){
+        	if(editorClientType == true){
+	            //android
+	            if (isAndroid && (typeof javaJs !== 'undefined')) {
+	               javaJs.reuploadFile(attachment);
+	            }
+	            //ios
+	            if (isIOS) {
+	                if(window.webkit && window.webkit.messageHandlers.reuploadFile){
+	                     window.webkit.messageHandlers.reuploadFile.postMessage([attachment]);
+	                 }else{
+	        　　　　       if(window.top["reuploadFile"]) {
+	                        window.top["reuploadFile"](attachment);
+	                    }
+	                 }
+	            }
+            }else{
+            	parent.postMessage({'msgType':'reuploadFile','mediaType': 'audio', 'attachment': json}, '*');
+            }
+        }
+
+        function updateVoiceTime(time){
+            // //android
+            // if (isAndroid) {
+            //    javaJs.updateVoiceTime(jsonOld,time);
+            // }
+            // //ios
+            // if (isIOS) {
+            //     if(window.webkit && window.webkit.messageHandlers.updateVoiceTime){
+            //         window.webkit.messageHandlers.updateVoiceTime.postMessage([jsonOld,time]);
+            //     }else{
+            //         if(window.top["updateVoiceTime"]){
+            //             window.top["updateVoiceTime"](jsonOld,time);
+            //         }
+            //     }
+            // }
+            if(json.cid){
+                var cid=json.cid;
+                if (isAndroid && (typeof javaJs !== 'undefined')) {
+                   javaJs.executeParentJs('zss_editor.onVoiceTime("'+cid+'",'+time+')');
+                }
+                if (isIOS) {
+                    if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+                    window.webkit.messageHandlers.executeParentJs.postMessage(['zss_editor.onVoiceTime("'+cid+'",'+time+')']);
+                    }else{
+            　　　　     if(window.top["executeParentJs"]) {
+                            window.top["executeParentJs"]('zss_editor.onVoiceTime("'+cid+'",'+time+')');
+                        }
+                    }
+                }
+            }
+
+        }
+        // 附件点击调客户端方法
+        function openClickEvent(e,attachment){
+            attachmentUtils.openVoiceClickEvent(e,attachment,json,editorClientType)
+        };
+
+        // $(".audio-progress-detail")[0].ontouchend = function (event) {
+        //     event.preventDefault();
+        //      myaudio.updateTime(event);
+        // }
+        //长按附件
+        var touchY = 0;
+        var longClick =0;
+        $(".attach-box").on({
+            touchstart: function(e){
+                longClick=0;
+                timeOutEvent = setTimeout(function(){
+                    //此处为长按事件
+                    longClick=1;//假如长按，则设置为1
+                    if(json.cid){
+                        var cid=json.cid;
+                        if (isAndroid && (typeof javaJs !== 'undefined')) {
+                           javaJs.executeParentJs('zss_editor.iframeForward("'+cid+'")');
+                        }
+                        if (isIOS) {
+                            if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+                            window.webkit.messageHandlers.executeParentJs.postMessage(['zss_editor.iframeForward("'+cid+'")']);
+                            }else{
+                    　　　　     if(window.top["executeParentJs"]) {
+                                    window.top["executeParentJs"]('zss_editor.iframeForward("'+cid+'")');
+                                }
+                            }
+                        }
+                    }
+
+                },500);
+                var touch = e.originalEvent.targetTouches[0];
+                touchY = touch.clientY;
+            },
+            touchmove: function(e){
+                clearTimeout(timeOutEvent);
+                timeOutEvent = 0;
+                var touch = e.originalEvent.changedTouches[0];
+                if(Math.abs(touch.clientY - touchY) < 10){
+                    if(isAndroid){
+                     e.preventDefault();
+                    }
+                }
+            },
+            touchend: function(e){
+                clearTimeout(timeOutEvent);
+                if(timeOutEvent!=0 && self.longClick==0){//点击
+                   //此处为点击事件----在此处跳转
+                   openClickEvent(e,jsonOld)
+                }
+                return false;
+            },
+            click:function (e) {
+                openClickEvent(e,jsonOld)
+            }
+        });
+        $('.attach-box').bind('contextmenu', function(e) {
+          e.preventDefault();
+        })
+    </script>
+</body>
+</html>

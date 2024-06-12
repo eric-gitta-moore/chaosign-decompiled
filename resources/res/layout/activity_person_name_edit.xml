@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/common_white_stroke_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/topBar">
+        <ImageView android:id="@+id/iv_delete" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <EditText android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:id="@+id/editName" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/personal_info_input_real_name" android:layout_toLeftOf="@+id/iv_delete" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar" layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

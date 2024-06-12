@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/parentView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolBar">
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.scwang.smart.refresh.header.CxClassicsHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlDrawableArrow="@drawable/icon_refresh" app:srlDrawableArrowSize="18dp" app:srlDrawableMarginRight="8dp" app:srlDrawableProgressSize="18dp" app:srlEnableLastTime="false" app:srlFinishDuration="100" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="13sp" app:srlTextTimeMarginTop="2dp"/>
+            <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_ppt" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:footerDividersEnabled="false"/>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="#808080" android:id="@+id/showEmpty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_mission" android:layout_centerInParent="true"/>
+    <ImageView android:textSize="16sp" android:textColor="#808080" android:id="@+id/ivEmpty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:src="@drawable/ic_resource_lib_empty" android:layout_centerHorizontal="true"/>
+    <include android:id="@+id/viewLoading" android:visibility="gone" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/myclass_calendar_item" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/index" android:background="@drawable/myclass_calendar_index" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/index">
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="13-06-20 周一 09:00-10:00"/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="1号楼A102-5"/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="上课内容："/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/calendar_references" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="备注："/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/comment" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="先练练手的减肥了开始的风景疗伤的看风景考虑"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

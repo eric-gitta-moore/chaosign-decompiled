@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.common.widget.FragmentPagerHost xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@android:id/tabhost" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/top_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/header_height">
+        <com.chaoxing.fanya.aphone.view.BackButtonBlack android:id="@+id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20sp" android:textColor="@color/title_text" android:ellipsize="end" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:layout_marginRight="80dp" android:text="@string/course_content" android:singleLine="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/btn_menu" android:layout_width="30dp" android:layout_height="40dp" android:layout_alignParentRight="true">
+            <Button android:background="@drawable/icon_menu" android:layout_width="20dp" android:layout_height="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#f4f5f7" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.chaoxing.fanya.aphone.view.AsyncImageView android:id="@+id/aiv_cover" android:background="@drawable/default_course" android:layout_width="0dp" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_weight="3" ratio_reference="width" width_height_ratio="1.5"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_weight="4">
+            <TextView android:textSize="15sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/tv_course_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="#818181" android:ellipsize="end" android:id="@+id/tv_course_creator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:singleLine="true" android:layout_below="@+id/tv_course_title"/>
+            <TextView android:textSize="12sp" android:textColor="#818181" android:id="@+id/tv_class" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:singleLine="true" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/job_unfinish_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:layout_alignParentBottom="true">
+                <TextView android:textSize="12sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jobcount_tip1"/>
+                <TextView android:textSize="12sp" android:textColor="#ff5500" android:id="@+id/tv_job_unfinish_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jobcount_tip2"/>
+                <TextView android:textSize="10sp" android:textColor="#000000" android:gravity="center" android:background="@drawable/s_yellownode" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textSize="12sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jobcount_tip3"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/base_divider_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/course_tab_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="43dp">
+        <com.android.common.widget.FragmentPagerWidget android:orientation="horizontal" android:id="@android:id/tabs" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:background="@color/base_divider_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="2px" android:weightSum="2" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/cursor" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/chapter_tab_cursor_green" android:scaleType="fitXY" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@android:id/tabcontent" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="30"/>
+        <include layout="@layout/loading"/>
+    </RelativeLayout>
+</com.android.common.widget.FragmentPagerHost>

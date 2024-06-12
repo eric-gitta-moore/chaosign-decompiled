@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_praise" android:background="@android:color/white" android:paddingBottom="1px" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/rlContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:id="@+id/TvTopicEditTip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" style="@style/topic_edit_tip_12"/>
+        <LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="14sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/btnReward" android:background="@drawable/shape_givemoney_background" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="@string/common_reward"/>
+            <TextView android:textSize="12sp" android:textColor="#333333" android:layout_gravity="center_horizontal" android:id="@+id/tvRewardTag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="0人赞赏"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/ivPraiseTopLine" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="4dp"/>
+        <RelativeLayout android:id="@+id/rlPraiseUser" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="35dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llPraiseUser" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="40dp" android:layout_above="@+id/ivPraiseBottomLine">
+                <TextView android:textSize="16sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvPraiseUser" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxEms="12" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center_vertical" android:id="@+id/tvPraiseCount" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0"/>
+            </LinearLayout>
+            <Button android:id="@+id/btnReplyOrder" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:drawableLeft="@drawable/ic_topic_reply_order_asc" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/ivPraiseBottomLine" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/viewLoadAll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlContent">
+        <TextView android:textSize="16sp" android:textColor="#0099ff" android:id="@+id/tvLoadAll" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="之前的评论..."/>
+        <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tvReplyCount" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignTop="@+id/tvLoadAll"/>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignBottom="@+id/tvLoadAll"/>
+    </RelativeLayout>
+</RelativeLayout>

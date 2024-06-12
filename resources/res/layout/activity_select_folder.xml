@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rlContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlMoveTop" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <Button android:textSize="16sp" android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="48dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/ivCreateFolder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:src="@drawable/create_folder" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/topLine" android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rlMoveTop"/>
+    <ListView android:id="@+id/listView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="#d9d9d9" android:dividerHeight="0px" android:minHeight="113dp" android:layout_below="@+id/topLine"/>
+</LinearLayout>

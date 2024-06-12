@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="49dp">
+    <TextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_intent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="查询会议室状态" android:maxLines="3" android:layout_centerVertical="true" android:layout_toStartOf="@+id/iv_right_arrow"/>
+    <ImageView android:id="@+id/iv_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ai_right_arrow" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

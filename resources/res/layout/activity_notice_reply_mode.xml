@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <TextView android:id="@+id/tvBack" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+        <TextView android:textSize="18sp" android:textColor="#ff333333" android:ellipsize="middle" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginRight="65dp" android:text="@string/notice_letter_mode_switch" android:singleLine="true" android:layout_centerInParent="true"/>
+        <TextView android:id="@+id/tvFinish" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_finish" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_blue_16"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_reply" android:background="#fff" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="15sp" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:text="@string/notice_letter_mode_replay" android:layout_centerVertical="true"/>
+        <RelativeLayout android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/iv_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <RelativeLayout android:id="@+id/rl_comment" android:background="#fff" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="15sp" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:text="@string/notice_letter_mode_comment" android:layout_centerVertical="true"/>
+        <RelativeLayout android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/iv_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

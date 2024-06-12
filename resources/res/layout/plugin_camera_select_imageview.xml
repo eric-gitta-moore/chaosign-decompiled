@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="100dp">
+    <RelativeLayout android:id="@+id/rlShowPic" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@+id/ivshow" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+        <RelativeLayout android:id="@+id/rlCbSelect" android:paddingLeft="12dp" android:paddingTop="3dp" android:paddingRight="3dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <CheckBox android:id="@+id/imgselect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_state_selector"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rlTakePic" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:src="@drawable/album_camera"/>
+        <TextView android:textSize="15sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="拍照"/>
+    </LinearLayout>
+</RelativeLayout>

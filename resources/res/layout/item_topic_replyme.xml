@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/topBlank" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/rlReplyContent" android:background="@drawable/bg_topic_item" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBlank">
+        <RelativeLayout android:id="@+id/rlBody" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlTop" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="12dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" ss:border_color="@color/avatar_border" ss:border_width="1px" ss:is_circle="false" ss:x_radius="6px" ss:y_radius="6px"/>
+                <RelativeLayout android:id="@+id/rlLeft" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/ivAvatar" android:layout_centerVertical="true">
+                    <TextView android:textSize="16sp" android:textColor="#ff0066cc" android:ellipsize="end" android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小清新" android:singleLine="true"/>
+                    <TextView android:textSize="14sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvOrganization" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="2dp" android:text="南京航空航天大学" android:singleLine="true" android:layout_toRightOf="@+id/tvAuthor"/>
+                    <TextView android:textSize="14sp" android:textColor="#ff999999" android:id="@+id/tvPublishTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1分钟前" android:layout_below="@+id/tvAuthor"/>
+                    <TextView android:textSize="14sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="来自我的小组" android:singleLine="true" android:layout_toRightOf="@+id/tvPublishTime" android:layout_below="@+id/tvAuthor"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlMiddle" android:background="@drawable/bg_sl_item_topic" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlTop">
+                <RelativeLayout android:id="@+id/rlContentBody" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="正文" android:lineSpacingMultiplier="1.1"/>
+                    <RelativeLayout android:id="@+id/rlImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="5dp" android:layout_below="@+id/tvContent">
+                        <ImageView android:id="@+id/ivImage0" android:background="@drawable/ic_default_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:cropToPadding="true"/>
+                        <ImageView android:id="@+id/ivImage1" android:background="@drawable/ic_default_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:scaleType="fitXY" android:cropToPadding="true" android:layout_toRightOf="@+id/ivImage0"/>
+                        <ImageView android:id="@+id/ivImage2" android:background="@drawable/ic_default_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:scaleType="fitXY" android:cropToPadding="true" android:layout_toRightOf="@+id/ivImage1"/>
+                        <ImageView android:id="@+id/ivMore" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1px" android:src="@drawable/pic_more" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/llMainContent" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:layout_below="@+id/rlContentBody">
+                    <ImageView android:id="@+id/ivMainImg" android:background="@drawable/ic_default_image" android:padding="1px" android:layout_width="56dp" android:layout_height="56dp" android:scaleType="centerCrop" android:cropToPadding="true"/>
+                    <TextView android:textSize="14sp" android:textColor="#333333" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tvMainContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

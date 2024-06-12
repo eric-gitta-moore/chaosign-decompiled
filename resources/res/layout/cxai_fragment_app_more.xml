@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:shape_radiusInTopLeft="15dp" app:shape_radiusInTopRight="15dp" app:shape_solidColor="#f5f6f8">
+    <com.google.android.material.imageview.ShapeableImageView android:layout_width="match_parent" android:layout_height="100dp" android:src="@drawable/cxai_bg_top" android:scaleType="fitXY" app:shapeAppearance="@style/cxai_shape_style_rounded15"/>
+    <com.chaoxing.mobile.voice.ui.view.AiToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/cl_more" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/ab_layout_main_page" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <com.chaoxing.mobile.voice.ui.home.AiSearchView android:id="@+id/view_search" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.hjq.shape.layout.ShapeRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:shape_radiusInTopLeft="10dp" app:shape_radiusInTopRight="10dp" app:shape_solidColor="#ffffff">
+            <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_more" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp" android:overScrollMode="never"/>
+        </com.hjq.shape.layout.ShapeRelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无应用" android:layout_centerInParent="true"/>
+</com.hjq.shape.layout.ShapeRelativeLayout>

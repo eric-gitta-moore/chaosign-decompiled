@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_root" android:fitsSystemWindows="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <com.chaoxing.mobile.conferencehx.MemberViewGroup android:id="@+id/surface_view_group" android:background="@color/holo_black" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.mobile.conferencehx.SquareRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:orientation="vertical" android:id="@+id/state_cover_main" android:background="@drawable/em_conference_member_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/adaptive_88dp">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="37dp" android:layout_marginLeft="@dimen/adaptive_24dp" android:layout_marginRight="@dimen/adaptive_24dp" android:layout_centerVertical="true">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/tv_call_time_main">
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_members" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/adaptive_24dp" android:layout_alignParentLeft="true">
+                            <TextView android:textSize="@dimen/adaptive_18sp" android:textStyle="bold" android:textColor="#fff" android:ellipsize="end" android:id="@+id/tv_members_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+                            <TextView android:textSize="@dimen/adaptive_18sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/tv_member_count_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/adaptive_18sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/tv_call_time_main" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/layout_talking" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/adaptive_24dp" android:layout_below="@+id/first" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@+id/icon_talking" android:visibility="gone" android:layout_width="@dimen/adaptive_40dp" android:layout_height="@dimen/adaptive_40dp" android:src="@drawable/em_call_sound_on" android:layout_toRightOf="@+id/tv_talker" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/adaptive_18sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/tv_talker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.chaoxing.mobile.conferencehx.SquareRelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/layout_tools_panel" android:background="@color/bg_tools_panel" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.chaoxing.mobile.conferencehx.EasePageIndicator android:gravity="center" android:id="@+id/indicator" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginTop="4dp"/>
+                <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/indicator" android:layout_centerInParent="true" layout="@layout/em_layout_tools_panel"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

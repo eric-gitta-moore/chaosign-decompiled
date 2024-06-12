@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/富文本/插入文档</title>
+    <g id="icon/富文本/插入文档" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="编组-2" transform="translate(2.500000, 2.500000)" stroke="#474C59" stroke-width="1.2">
+            <g id="编组" transform="translate(3.714286, 3.250000)" stroke-linejoin="round">
+                <line x1="1.85714286" y1="3.21700423" x2="8.35704573" y2="3.25253761" id="路径-14"></line>
+                <polyline id="路径-15" transform="translate(3.521972, 3.250000) rotate(-315.000000) translate(-3.521972, -3.250000) " points="1.66482942 1.39285714 1.66482942 5.10714286 5.37911513 5.10714286"></polyline>
+            </g>
+            <path d="M11.6025117,2.47286322 C10.4120847,0.96661082 8.56892435,0 6.5,0 C2.91014913,0 -1.64947421e-12,2.91014913 -1.64947421e-12,6.5 C-1.64947421e-12,10.0898509 2.91014913,13 6.5,13 C8.92464475,13 11.039218,11.6724262 12.1564819,9.70451662" id="路径"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" app:contentScrim="@android:color/transparent" app:expandedTitleMarginStart="0dp" app:layout_scrollFlags="3">
+            <RelativeLayout android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="2" app:layout_collapseParallaxMultiplier="0.7">
+                <ImageView android:id="@+id/iv_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@android:color/white" android:scaleType="centerCrop" android:layout_alignTop="@+id/header_view" android:layout_alignBottom="@+id/header_view"/>
+                <View android:background="#99333333" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/header_view" android:layout_alignBottom="@+id/header_view"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/header_view" android:paddingTop="48dp" android:paddingBottom="45dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp">
+                        <RelativeLayout android:id="@+id/avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
+                            <com.google.android.material.imageview.ShapeableImageView android:id="@+id/iv_avatar" android:padding="1dp" android:layout_width="75dp" android:layout_height="75dp" android:src="@drawable/ic_avatar_75dp" android:scaleType="centerCrop" app:shapeAppearance="@style/Cx.ShapeAppearance.Rounded50p" app:strokeColor="@android:color/white" app:strokeWidth="2dp"/>
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/avatar" android:layout_centerVertical="true">
+                            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="19dp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" app:layout_constraintEnd_toStartOf="@+id/iv_sex" app:layout_constraintHorizontal_bias="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_default="1"/>
+                                <ImageView android:id="@+id/iv_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginStart="7dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/tv_name" app:layout_constraintTop_toTopOf="0"/>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                            <TextView android:textSize="11dp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/tv_certified" android:background="@drawable/personal_info_certified" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/personal_info_certified" android:drawableStart="@drawable/ic_certified_15dp" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <TextView android:textSize="13sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/tv_me" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="2" android:drawableLeft="@drawable/ic_me_edit" android:drawablePadding="5dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+                    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/attention_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/tv_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-"/>
+                            <TextView android:textSize="11sp" android:textColor="#bbffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/personal_info_attention"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/fans_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/tv_fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="-"/>
+                            <TextView android:textSize="11sp" android:textColor="#bbffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/personal_info_fans"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/great_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/tv_great" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="-"/>
+                            <TextView android:textSize="11sp" android:textColor="#bbffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/personal_info_get_great"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView android:id="@+id/contact_view" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="-35dp" android:layout_marginRight="15dp" android:layout_marginBottom="25dp" android:layout_below="@+id/header_view" app:cardCornerRadius="8dp" app:cardElevation="0dp">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp">
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/unit_dept_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:src="@drawable/ic_unit_30dp"/>
+                            <TextView android:textSize="13sp" android:textColor="#ff666666" android:id="@+id/tv_unit_dept" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawablePadding="5dp" android:layout_marginStart="5dp" app:drawableEndCompat="@drawable/ic_right_arrow"/>
+                        </LinearLayout>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/phone_number_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="13sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/tv_phone_number" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="5dp" android:textIsSelectable="true" app:drawableStartCompat="@drawable/ic_phone_30dp"/>
+                            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right_12dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <FrameLayout android:id="@+id/toolbar" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/personal_info_toolbar"/>
+            </FrameLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@+id/list_view_layout" android:background="@drawable/personal_info_bg_list" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-15dp" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/iv_write_note" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:layout_marginRight="16dp" android:layout_marginBottom="80dp" android:src="@drawable/ic_write_note"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

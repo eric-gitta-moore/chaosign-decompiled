@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/view_group_avatar_1" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/view_group_avatar_1"/>
+    <include android:id="@+id/view_group_avatar_2" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/view_group_avatar_2"/>
+    <include android:id="@+id/view_group_avatar_3" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/view_group_avatar_3"/>
+    <include android:id="@+id/view_group_avatar_4" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/view_group_avatar_4"/>
+    <ImageView android:id="@+id/iv_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+</merge>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <EditText android:textSize="16sp" android:textColor="#cccccc" android:textColorHint="#ffcccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/ed_add_tags" android:background="@android:color/transparent" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="@dimen/adaptive_50dp" android:hint="请输入自定义标签"/>
+</LinearLayout>

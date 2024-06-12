@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_not_select_ip"/>
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <size android:height="12dp" android:width="12dp"/>
+            <solid android:color="@color/chaoxing_blue"/>
+        </shape>
+    </item>
+</layer-list>

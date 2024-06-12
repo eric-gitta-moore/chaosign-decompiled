@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.reader.pdz.widget.BookPageLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_page_container" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.chaoxing.reader.pdz.widget.PageScaleImageView android:id="@+id/ivPage" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.chaoxing.reader.pdz.booknote.widget.NoteWrapperView android:id="@+id/notewrapperview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.reader.pdz.booknote.widget.NoteView android:id="@+id/pdg_note_board" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false"/>
+    </com.chaoxing.reader.pdz.booknote.widget.NoteWrapperView>
+    <androidx.core.widget.ContentLoadingProgressBar android:id="@+id/pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+</com.chaoxing.reader.pdz.widget.BookPageLayout>

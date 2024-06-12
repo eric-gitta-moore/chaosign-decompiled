@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="25dp" android:textColor="#666666" android:gravity="center" android:id="@+id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="135dp" android:hint="请录入语音..." android:textAlignment="center"/>
+    <TextView android:textSize="20sp" android:textColor="#ff3300" android:id="@+id/time_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <com.chaoxing.mobile.graphicwork.HeartBeatShapeView1 android:id="@+id/myHeartBeatShapeView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <Button android:enabled="false" android:id="@+id/btnEndSpeech" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="102dp" android:drawableRight="@drawable/item_selimg_del" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="16dp" android:textColor="#666666" android:gravity="center" android:id="@+id/tv_down_speak" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="22dp" android:text="@string/button_pushtotalk" android:layout_above="@+id/btnStartSpeech"/>
+    <Button android:id="@+id/btnStartSpeech" android:background="@drawable/btn_speak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="74dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

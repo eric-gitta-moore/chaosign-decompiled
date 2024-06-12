@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/group_top_bar"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_search" android:background="@drawable/ll_search_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="35dp" android:layout_margin="10dp" android:layout_below="@+id/top">
+            <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_group_search"/>
+            <TextView android:textSize="16sp" android:textColor="#cccccc" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/comment_serarch"/>
+        </LinearLayout>
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_classify" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="#d9d9d9" android:dividerHeight="1px"/>
+    </LinearLayout>
+    <include layout="@layout/wait_circle_bar_with_text"/>
+    <ImageView android:id="@+id/ivLoad" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/state_loading_fail" android:layout_centerInParent="true"/>
+</RelativeLayout>

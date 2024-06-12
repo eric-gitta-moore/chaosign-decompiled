@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/activity_top_bar"/>
+    <ScrollView android:background="#efeff4" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fadeScrollbars="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/top_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_icon" android:layout_width="78dp" android:layout_height="78dp" android:layout_marginTop="34dp" android:src="@drawable/ic_about_us" android:layout_centerHorizontal="true"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_below="@+id/iv_icon" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="20sp" android:textColor="@color/normal_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/this_app_name"/>
+                    <TextView android:textSize="20sp" android:textColor="@color/normal_black" android:id="@+id/tvVersion" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Button android:id="@+id/btnCheckUpdate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:text="@string/checkUpdate" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/btn_stroke_blue_default"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/about_detail" android:lineSpacingExtra="8dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                <View android:background="@color/stroke_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+                <RelativeLayout android:id="@+id/rlFunction" android:background="@drawable/btn_shadow" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_function" android:layout_centerVertical="true"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                </RelativeLayout>
+                <View android:background="@color/date_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+                <RelativeLayout android:id="@+id/rlScore" android:background="@drawable/btn_shadow" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_rating" android:layout_centerVertical="true"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                </RelativeLayout>
+                <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+                <RelativeLayout android:id="@+id/rlUpgrade" android:background="@drawable/btn_shadow" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_upgrad" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:id="@+id/tvNewVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:layout_marginRight="8dp" android:layout_toLeftOf="@+id/ivRedTag" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/ivRedTag" android:background="@drawable/red_circle_bg_tag" android:visibility="invisible" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginRight="8dp" android:layout_toLeftOf="@+id/ivRightArrow" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                    <ImageView android:id="@+id/ivRightArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                </RelativeLayout>
+                <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+                <RelativeLayout android:id="@+id/rlSharedQRCode" android:background="@drawable/btn_shadow" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="45dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_sharedQRCode" android:layout_centerVertical="true"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                </RelativeLayout>
+                <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/vWaiting" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+</RelativeLayout>

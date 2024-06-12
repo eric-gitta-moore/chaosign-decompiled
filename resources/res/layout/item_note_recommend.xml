@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_buttom_rlayout" android:background="@drawable/note_recommend_container_bottom_bg" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/ivConver" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="15dp" android:scaleType="centerCrop" app:riv_corner_radius="2dp"/>
+            <TextView android:textSize="15sp" android:textColor="#606366" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_note_title" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+        </LinearLayout>
+        <View android:id="@+id/viewline1" android:background="#dedfe0" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</LinearLayout>

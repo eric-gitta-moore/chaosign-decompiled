@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="55dp">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/fontNameIv" android:visibility="gone" android:layout_width="65dp" android:layout_height="16dp" android:layout_marginLeft="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/lib_reader_color_333333" android:id="@+id/fontNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="默认字体" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/selectIv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@mipmap/lib_reader_font_select" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="14sp" android:textColor="@color/lib_reader_color_999999" android:id="@+id/fontSizeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="7.2M" android:layout_toLeftOf="@+id/downloadIv" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/downloadIv" android:layout_width="wrap_content" android:layout_height="29dp" android:layout_marginRight="15dp" android:src="@mipmap/lib_reader_font_download" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:background="@color/lib_reader_dash_divider_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

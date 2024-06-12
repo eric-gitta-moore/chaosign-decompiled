@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <Button android:textSize="16sp" android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingTop="4dp" android:paddingRight="6dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:minWidth="0dp" android:minHeight="0dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="#ff333333" android:ellipsize="middle" android:id="@+id/tvTopTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="78dp" android:layout_marginRight="78dp" android:text="@string/forward_qrcode" android:singleLine="true" android:layout_centerInParent="true"/>
+        <Button android:textSize="14sp" android:id="@+id/btnRight" android:background="@drawable/group_shared" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="13dp" android:minWidth="0dp" android:minHeight="0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/bg_qrcode_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="60dp" android:layout_marginRight="30dp">
+        <RelativeLayout android:id="@+id/rlContiner" android:background="@drawable/bg_qrcode_center_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp">
+                <RelativeLayout android:id="@+id/rlLogo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/ivLogo" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="centerCrop"/>
+                    <com.chaoxing.mobile.chat.widget.ConversationAvatar2 android:id="@+id/chatLogo" android:background="#ebebeb" android:layout_width="50dp" android:layout_height="50dp"/>
+                    <com.chaoxing.mobile.chat.widget.ConversationAvatar2 android:id="@+id/groupLogo" android:background="#ebebeb" android:layout_width="50dp" android:layout_height="50dp"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/rlRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/rlLogo" android:layout_centerVertical="true">
+                    <TextView android:textSize="15dp" android:textColor="#333" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题啊" android:maxLines="1"/>
+                    <TextView android:textSize="12sp" android:textColor="#999" android:ellipsize="end" android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="内容啊" android:maxLines="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:id="@+id/ivQRCode" android:layout_width="216dp" android:layout_height="216dp" android:layout_marginTop="40dp" android:layout_below="@+id/rlTitle" android:layout_centerHorizontal="true"/>
+            <TextView android:textColor="@color/color_999999" android:id="@+id/tvTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="40dp" android:text="@string/curriculum_scan_the_qr_code_to_view_the_shared_content" android:layout_below="@+id/ivQRCode" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="#0099ff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tvSave" android:background="@drawable/bg_forward_qrcode_save" android:layout_width="115dp" android:layout_height="35dp" android:layout_marginTop="30dp" android:text="@string/save_image_to_gallery"/>
+</LinearLayout>

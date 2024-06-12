@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/searchbar_popup_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="15sp" android:textColor="#333333" android:id="@+id/tvName" android:layout_width="280dp" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="2dp" android:layout_marginBottom="5dp" android:text="年代："/>
+    <GridView android:gravity="center" android:id="@+id/gvContent" android:layout_width="280dp" android:layout_height="wrap_content" android:verticalSpacing="10dp" android:columnWidth="40dp" android:numColumns="4"/>
+</LinearLayout>

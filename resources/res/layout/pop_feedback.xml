@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:id="@+id/tv_audio" android:background="@color/white" android:layout_width="match_parent" android:layout_height="55dp" android:text="@string/course_online_feedback_audio" style="@style/group_popwindow_text"/>
+        <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:gravity="center" android:id="@+id/tv_other" android:background="@color/white" android:layout_width="match_parent" android:layout_height="55dp" android:text="@string/course_online_feedback_other" style="@style/group_popwindow_text"/>
+        <View android:background="@color/bg_color_f5f6f8" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <TextView android:gravity="center" android:id="@+id/tv_cancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/cancel" style="@style/group_popwindow_text"/>
+    </LinearLayout>
+</RelativeLayout>

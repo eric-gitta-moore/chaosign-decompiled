@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#e61f1f1f" android:layout_width="103dp" android:layout_height="match_parent">
+    <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/tvReport" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="举报" android:drawablePadding="5dp" android:layout_centerInParent="true" android:drawableStart="@drawable/ic_videoplayer_report"/>
+</RelativeLayout>

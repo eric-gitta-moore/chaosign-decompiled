@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/sort_selected_up">
+        <shape>
+            <solid android:color="#000000"/>
+            <gradient android:startColor="#464646" android:endColor="#464646" android:angle="270" android:centerY="0.5" android:centerColor="#626262"/>
+        </shape>
+    </item>
+</selector>

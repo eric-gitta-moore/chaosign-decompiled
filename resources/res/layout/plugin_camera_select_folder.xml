@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="90dp">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/ivFolderCover" android:layout_width="66dp" android:layout_height="66dp" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp">
+            <TextView android:textSize="18sp" android:textColor="#333333" android:id="@+id/folderName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/filenum" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/selected_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:src="@drawable/folder_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

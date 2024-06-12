@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/createNoteBar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="45dp">
+        <RelativeLayout android:id="@+id/rl_notebook" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="#666666" android:gravity="center_vertical" android:id="@+id/tv_notebook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="笔记本" android:drawableLeft="@drawable/dynamic_notebook" android:drawablePadding="5dp" android:layout_centerInParent="true"/>
+            <View android:background="#ebebeb" android:layout_width="1px" android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_lives" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="#666666" android:gravity="center_vertical" android:id="@+id/tv_live" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeline_header_live" android:drawableLeft="@drawable/dynamic_lives" android:drawablePadding="5dp" android:layout_centerInParent="true"/>
+            <View android:background="#ebebeb" android:layout_width="1px" android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_Recorder" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="#666666" android:gravity="center_vertical" android:id="@+id/tv_Recorder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeline_header_recode" android:drawableLeft="@drawable/dynamic_recoder" android:drawablePadding="5dp" android:layout_centerInParent="true"/>
+            <View android:background="#ebebeb" android:layout_width="1px" android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_camera" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="#666666" android:gravity="center_vertical" android:id="@+id/tv_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeline_header_camera" android:drawableLeft="@drawable/dynamic_camera" android:drawablePadding="5dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="8dp"/>
+</LinearLayout>

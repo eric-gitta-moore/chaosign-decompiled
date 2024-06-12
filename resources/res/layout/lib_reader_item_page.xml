@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.reader.epub.widget.PageView android:id="@+id/page_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+    <ImageView android:id="@+id/bookMarkIconIv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@mipmap/lib_reader_header_bookmark_add_icon" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="12dp" android:textColor="@color/lib_reader_page_text" android:ellipsize="end" android:gravity="bottom" android:id="@+id/tv_chapter" android:paddingLeft="@dimen/lib_reader_page_padding_left" android:paddingTop="12dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="@dimen/lib_reader_page_padding_top" android:maxLines="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/loading_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <androidx.core.widget.ContentLoadingProgressBar android:layout_gravity="center_horizontal" android:id="@+id/pb_loading" android:layout_width="match_parent" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall"/>
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="13dp" android:textColor="#ff333333" android:id="@+id/tv_page_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

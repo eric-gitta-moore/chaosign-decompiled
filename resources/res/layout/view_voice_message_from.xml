@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.chat.widget.VoiceMessageView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/v_voice_message" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vg_voice_message" android:background="@drawable/chat_im_from_bg_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_voice" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chatfrom_voice_playing_f3"/>
+            <TextView android:textColor="#333333" android:layout_gravity="center_vertical" android:id="@+id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="3dp" android:text=""/>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_unread" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/chat_voice_unread" android:layout_toRightOf="@+id/vg_message" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_999999" android:layout_gravity="center_vertical" android:id="@+id/tv_to_text" android:background="@drawable/radius_ede9f0_10dp" android:paddingLeft="@dimen/dp_8" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dp_8" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/convert_to_text" android:maxLines="1"/>
+    </LinearLayout>
+    <include android:id="@+id/viewVoiceToText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" layout="@layout/view_voice_to_text"/>
+</com.chaoxing.mobile.chat.widget.VoiceMessageView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" android:layout_weight="0">
+            <TextView android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginRight="65dp" android:text="@string/local_import" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+            <ImageView android:id="@+id/btnBack" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/navigation_img_back" android:layout_centerVertical="true" android:contentDescription="@string/import_cancle"/>
+            <Button android:id="@+id/btnImport" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/btn_stroke_blue_default"/>
+        </RelativeLayout>
+        <TextView android:ellipsize="start" android:gravity="center_vertical" android:id="@+id/tvPath" android:background="@drawable/local_import_top_divider_bg" android:paddingLeft="12dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="35dp" android:singleLine="true" android:layout_weight="0" style="@style/Text_Title"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvFiles" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/btn_shadow" android:cacheColorHint="@android:color/transparent" android:divider="@color/divider_line" android:dividerHeight="1px" android:fastScrollEnabled="true"/>
+            <ProgressBar android:id="@+id/pbWait" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vEmptyFolder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/localbook_empty_folder"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/empty_folder" style="@style/Text_Content_18"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/open_tool_bar" android:background="@drawable/bottom_toolbar_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="48dp" android:layout_weight="0">
+            <TextView android:gravity="center_vertical" android:id="@+id/btnBackprlevel" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:text="@string/pre_level" style="@style/Text_Title"/>
+            <ImageView android:background="@color/gray_b2b2b2" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="2dp" android:layout_marginRight="20dp" android:layout_marginBottom="2dp"/>
+            <Button android:id="@+id/btnScan" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginRight="20dp" android:text="@string/import_scan" style="@style/Button_blue_text_white_16"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/vBlackLayer" android:background="@color/trans_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vImportPorgress" android:background="@drawable/bottom_toolbar_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_weight="0" android:layout_alignParentBottom="true">
+        <ProgressBar android:id="@+id/pbImportWait" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <TextView android:ellipsize="middle" android:id="@+id/tvImporting" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" style="@style/Text_Title_16"/>
+    </LinearLayout>
+    <View android:orientation="horizontal" android:id="@+id/lltopView" android:background="@color/black_half_apha" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

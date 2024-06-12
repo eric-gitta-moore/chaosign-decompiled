@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/bg_view_selection_toolbar2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="30dp">
+            <androidx.appcompat.widget.AppCompatButton android:textSize="14sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@+id/btn0_0" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <View android:id="@+id/line0_0" android:background="@color/white" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatButton android:textSize="14sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@+id/btn0" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <View android:id="@+id/line0" android:background="@color/white" android:layout_width="1px" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatButton android:textSize="14sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@+id/btn1" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <View android:id="@+id/line1" android:background="@color/white" android:layout_width="1px" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatButton android:textSize="14sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@+id/btn2" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <View android:id="@+id/line2" android:background="@color/white" android:layout_width="1px" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatButton android:textSize="14sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@+id/btn3" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/topbar"/>
+    <View style="@style/line_horizontal"/>
+    <RelativeLayout android:id="@+id/layoutAboutUs" android:visibility="gone" style="@style/option_item">
+        <TextView android:text="@string/about_us" style="@style/option_item_text"/>
+        <ImageView style="@style/option_item_image_arrow"/>
+    </RelativeLayout>
+    <View style="@style/line_horizontal"/>
+    <RelativeLayout android:id="@+id/layout_feedback" android:visibility="gone" style="@style/option_item">
+        <TextView android:text="@string/feedback" style="@style/option_item_text"/>
+        <ImageView style="@style/option_item_image_arrow"/>
+    </RelativeLayout>
+    <View android:visibility="gone" style="@style/line_horizontal"/>
+    <RelativeLayout android:id="@+id/layoutMobileDevName" android:visibility="visible" style="@style/option_item">
+        <TextView android:text="@string/devname_input_title" style="@style/option_item_text"/>
+        <TextView android:id="@+id/tv_devname" android:layout_marginRight="20dp" android:text="" android:layout_alignParentRight="true" style="@style/option_item_text"/>
+        <ImageView style="@style/option_item_image_arrow"/>
+    </RelativeLayout>
+    <View style="@style/line_horizontal"/>
+    <RelativeLayout android:id="@+id/layoutHD" android:visibility="gone" style="@style/option_item">
+        <TextView android:text="@string/setting_hd" style="@style/option_item_text"/>
+        <ImageView style="@style/option_item_image_arrow"/>
+        <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/switch_view_hd" android:layout_width="44dp" android:layout_height="22dp" shSwitch:shadowSpace="0dp" shSwitch:tintColor="@color/bg_top" style="@style/option_item_image_arrow"/>
+    </RelativeLayout>
+    <View style="@style/line_horizontal"/>
+    <RelativeLayout android:id="@+id/layoutScreenOn" android:visibility="gone" style="@style/option_item">
+        <TextView android:text="@string/setting_keepscreenon" style="@style/option_item_text"/>
+        <ImageView style="@style/option_item_image_arrow"/>
+        <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/switch_view_screenon" android:layout_width="44dp" android:layout_height="22dp" shSwitch:shadowSpace="0dp" shSwitch:tintColor="@color/bg_top" style="@style/option_item_image_arrow"/>
+    </RelativeLayout>
+    <View android:visibility="gone" style="@style/line_horizontal"/>
+    <RelativeLayout android:id="@+id/layoutWifiband" android:visibility="gone" style="@style/option_item">
+        <TextView android:text="@string/wifi_frequencyband" style="@style/option_item_text"/>
+        <ImageView android:id="@+id/iv_wifiband" style="@style/option_item_image_arrow"/>
+        <TextView android:id="@+id/tv_wifiband" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/iv_wifiband" style="@style/option_item_text"/>
+    </RelativeLayout>
+    <View android:visibility="gone" style="@style/line_horizontal"/>
+    <RelativeLayout android:id="@+id/layoutAcrossIp" android:visibility="visible" style="@style/option_item">
+        <TextView android:text="@string/across_ip_connect" style="@style/option_item_text"/>
+        <ImageView style="@style/option_item_image_arrow"/>
+        <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/switch_view_acrossip" android:layout_width="44dp" android:layout_height="22dp" shSwitch:shadowSpace="0dp" shSwitch:tintColor="@color/bg_top" style="@style/option_item_image_arrow"/>
+    </RelativeLayout>
+    <View style="@style/line_horizontal"/>
+    <RelativeLayout android:id="@+id/layoutAcceptPull" android:visibility="visible" style="@style/option_item">
+        <TextView android:text="@string/accept_pull_play" style="@style/option_item_text"/>
+        <ImageView style="@style/option_item_image_arrow"/>
+        <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/switch_accept_pull_play" android:layout_width="44dp" android:layout_height="22dp" shSwitch:shadowSpace="0dp" shSwitch:tintColor="@color/bg_top" style="@style/option_item_image_arrow"/>
+    </RelativeLayout>
+    <View style="@style/line_horizontal"/>
+    <RelativeLayout android:id="@+id/layoutMainInterface" android:visibility="visible" style="@style/option_item">
+        <TextView android:text="@string/switch_item_main_interface" style="@style/option_item_text"/>
+        <ImageView style="@style/option_item_image_arrow"/>
+        <com.toofifi.mobile.component.view.ShSwitchView android:id="@+id/switch_view_main_interface" android:layout_width="44dp" android:layout_height="22dp" shSwitch:shadowSpace="0dp" shSwitch:tintColor="@color/bg_top" style="@style/option_item_image_arrow"/>
+    </RelativeLayout>
+    <View style="@style/line_horizontal"/>
+    <RelativeLayout android:id="@+id/layout_nfc_write" android:visibility="visible" style="@style/option_item">
+        <TextView android:text="@string/nfc_write_title" style="@style/option_item_text"/>
+        <ImageView style="@style/option_item_image_arrow"/>
+    </RelativeLayout>
+    <View style="@style/line_horizontal"/>
+    <RelativeLayout android:id="@+id/layoutUpdate" style="@style/option_item">
+        <TextView android:text="@string/check_update" style="@style/option_item_text"/>
+        <ImageView android:id="@+id/ivUpdateArrow" style="@style/option_item_image_arrow"/>
+        <TextView android:id="@+id/tvVersion" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/ivUpdateArrow" style="@style/option_item_text"/>
+    </RelativeLayout>
+    <View style="@style/line_horizontal"/>
+    <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0px" android:layout_marginBottom="@dimen/y91" android:layout_weight="1">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rlbottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tv_split" android:background="@color/black_alpha_20" android:layout_width="@dimen/x2" android:layout_height="@dimen/y36" android:layout_marginLeft="@dimen/y36" android:layout_marginRight="@dimen/y36" android:layout_centerInParent="true"/>
+            <TextView android:textSize="@dimen/y36" android:textColor="#0036ff" android:id="@+id/tv_fwxy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_fwxy" android:layout_toLeftOf="@+id/tv_split"/>
+            <TextView android:textSize="@dimen/y36" android:textColor="#0036ff" android:id="@+id/tv_yszc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_yszc" android:layout_toRightOf="@+id/tv_split"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

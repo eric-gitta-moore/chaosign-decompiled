@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:id="@+id/cb_selector" android:paddingRight="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@drawable/checkbox_group_member" android:layout_alignTop="@+id/tv_name" android:layout_alignBottom="@+id/tv_name"/>
+    <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/tv_name" android:paddingTop="14dp" android:paddingRight="15dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@+id/cb_selector"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_close" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/video_setting_close" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+    <TextView android:textSize="14sp" android:textColor="#a6a6a6" android:id="@+id/tv_tag_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46dp" android:text="@string/speed" android:layout_marginStart="25dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_speed" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="2dp" android:layout_marginRight="15dp" android:layout_below="@+id/tv_tag_speed"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_clarity" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rv_speed">
+        <TextView android:textSize="14sp" android:textColor="#a6a6a6" android:id="@+id/tv_tag_clarity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/clarity_tag" android:layout_marginStart="25dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_clarity" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="2dp" android:layout_marginRight="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginBottom="20dp" android:layout_below="@+id/ll_clarity" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_videoplayer_report"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_report" android:singleLine="true" android:layout_marginStart="6dp"/>
+    </LinearLayout>
+</RelativeLayout>

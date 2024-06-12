@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_width="match_parent" android:layout_height="15dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="15sp" android:textColor="@color/color_666666" android:id="@+id/left_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="@color/chaoxing_blue" android:id="@+id/left_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/left_tv"/>
+    </RelativeLayout>
+</LinearLayout>

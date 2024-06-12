@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.toofifi.mobile.component.photo.TouchRemoteImageView android:id="@+id/image_server_screen" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <com.toofifi.mobile.component.mark.Paintview android:id="@+id/my_paint_view" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageButton android:id="@+id/btn_show_menu" android:background="@drawable/bg_image_bottom_circle" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="300dp" android:src="@drawable/btn_show_menu" android:scaleType="fitCenter" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_menu" android:background="#90000000" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <ImageButton android:id="@+id/btn_hide_menu" android:src="@drawable/btn_hide_menu_normal" style="@style/menu_image_btn"/>
+        <ImageButton android:id="@+id/btn_key_home" android:src="@drawable/btn_key_home" style="@style/menu_image_btn"/>
+        <ImageButton android:id="@+id/btn_key_back" android:src="@drawable/btn_key_back" style="@style/menu_image_btn"/>
+        <ImageButton android:id="@+id/btn_touch_remote" android:src="@drawable/btn_mode_touch" style="@style/menu_image_btn"/>
+        <ImageButton android:id="@+id/btn_magnify_remote" android:src="@drawable/btn_mode_magnify" style="@style/menu_image_btn"/>
+        <ImageButton android:id="@+id/btn_mark" android:src="@drawable/btn_mode_mark" style="@style/menu_image_btn"/>
+        <ImageButton android:id="@+id/btn_mark_clean" android:src="@drawable/btn_mark_clean" style="@style/menu_image_btn"/>
+        <ImageButton android:id="@+id/btn_doc_cast" android:src="@drawable/btn_doc_cast" style="@style/menu_image_btn"/>
+        <ImageButton android:id="@+id/btn_camera" android:src="@drawable/btn_enter_camera" style="@style/menu_image_btn"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_mark_setting" android:background="#70000000" android:layout_width="100px" android:layout_height="match_parent" android:layout_toLeftOf="@+id/layout_menu">
+        <ImageButton android:id="@+id/btn_little_width" android:background="#00000000" android:padding="13dp" android:src="@drawable/btn_pen_width" style="@style/mark_setting_btn"/>
+        <ImageButton android:id="@+id/btn_middle_width" android:background="#00000000" android:padding="11dp" android:src="@drawable/btn_pen_width" style="@style/mark_setting_btn"/>
+        <ImageButton android:id="@+id/btn_large_width" android:background="#00000000" android:padding="7dp" android:src="@drawable/btn_pen_width" style="@style/mark_setting_btn"/>
+        <ImageView android:id="@+id/btn_color_red" android:layout_width="45dp" android:src="#ff0000" style="@style/mark_setting_btn"/>
+        <ImageView android:id="@+id/btn_color_green" android:layout_width="45dp" android:src="#00ff00" style="@style/mark_setting_btn"/>
+        <ImageView android:id="@+id/btn_color_blue" android:layout_width="45dp" android:src="#0000ff" style="@style/mark_setting_btn"/>
+        <ImageView android:id="@+id/btn_color_black" android:layout_width="45dp" android:src="#000000" style="@style/mark_setting_btn"/>
+        <ImageView android:id="@+id/btn_color_white" android:layout_width="45dp" android:src="#ffffff" style="@style/mark_setting_btn"/>
+        <ImageView android:id="@+id/btn_color_yellow" android:layout_width="45dp" android:src="#ffff00" style="@style/mark_setting_btn"/>
+    </LinearLayout>
+    <ImageButton android:gravity="center" android:id="@+id/btn_close" android:background="@drawable/bg_image_right_circle" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/bg_back"/>
+</RelativeLayout>

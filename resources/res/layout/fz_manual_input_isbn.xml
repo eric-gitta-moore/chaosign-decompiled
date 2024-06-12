@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/manual_input_bg" android:background="#90000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/tvTop" android:layout_width="match_parent" android:layout_height="58dp"/>
+    <LinearLayout android:orientation="vertical" android:background="#f0000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvInputTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/input_isbn"/>
+        <EditText android:id="@+id/etISBN" android:background="@drawable/round_corner_rectangle" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:singleLine="true" android:digits="0123456789-" android:inputType="number"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+            <Button android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/btnCancel" android:background="@drawable/dark_gray_btn_bg" android:layout_width="80dp" android:layout_height="40dp" android:text="@string/cancel"/>
+            <Button android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/btnSearch" android:background="@drawable/light_blue_btn_bg" android:layout_width="80dp" android:layout_height="40dp" android:layout_marginLeft="30dp" android:text="@string/search"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/tvBottom" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

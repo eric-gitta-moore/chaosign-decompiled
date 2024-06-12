@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_image_boder_d9d9d9_with_4_corner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/videoCover" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:riv_border_color="#d9d9d9" app:riv_border_width="1px" app:riv_corner_radius="4dp" app:riv_oval="false"/>
+    <ImageView android:id="@+id/ivDefault" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_video_default" android:layout_centerInParent="true"/>
+    <View android:background="@drawable/bg_image_boder_0d000000_with_4_corner" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play_start" android:layout_centerInParent="true"/>
+    <View android:background="@drawable/bg_image_boder_0d000000_with_4_corner" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:background="@drawable/ic_dynamic_video_bottom_bg" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_alignLeft="@+id/videoCover" android:layout_alignRight="@+id/videoCover" android:layout_alignBottom="@+id/videoCover" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="11sp" android:textColor="#e6ffffff" android:id="@+id/tvVideoSize" android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginBottom="8dp" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="11sp" android:textColor="#e6ffffff" android:gravity="right" android:id="@+id/tvTime" android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rlMain" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/menuBtns" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="17sp" android:textColor="#333333" android:gravity="center" android:id="@+id/choose_camera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/choose_camera"/>
+        <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:textSize="17sp" android:textColor="#333333" android:gravity="center" android:id="@+id/choose_pick" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/choose_pick"/>
+        <View android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="6dp"/>
+        <TextView android:textSize="17sp" android:textColor="#333333" android:gravity="center" android:id="@+id/choose_canncel" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginBottom="5dp" android:text="@string/choose_canncel"/>
+    </LinearLayout>
+</RelativeLayout>

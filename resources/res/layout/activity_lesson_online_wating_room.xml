@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_waiting" android:background="#0b0d0f" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_waiting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="17sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="教师开启了等候室，请耐心等待"/>
+        <TextView android:textSize="16sp" android:textColor="#c3ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_theme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10"/>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/rl_leave_class" android:background="@drawable/lesson_online_leave_class_bg" android:layout_width="108dp" android:layout_height="40dp" android:layout_marginTop="@dimen/dp_42">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="#f54e45" android:id="@+id/tv_leave_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_leave_class_text" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_chat" android:background="@drawable/radius_1affffff_radius24" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="@dimen/dp_42" android:src="@drawable/lesson_wating_room_chat"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/chat_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="28sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/inviteCode_title" android:singleLine="true"/>
+        <EditText android:textSize="18sp" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/etInvitationCode" android:background="@drawable/selector_bg_invite_code_input" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:minHeight="52dp" android:hint="@string/input_inviteCode_title" android:singleLine="true" android:layout_below="@+id/tv_title" android:paddingStart="15dp" android:paddingEnd="40dp"/>
+        <ImageView android:id="@+id/iv_clear_code" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40dp" android:src="@drawable/clear" android:scaleType="center" android:layout_alignTop="@+id/etInvitationCode" android:layout_alignBottom="@+id/etInvitationCode" android:layout_alignParentEnd="true"/>
+        <Button android:textSize="18sp" android:id="@+id/btnValidInviteCode" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="40dp" android:text="@string/persioninfo_Done" android:layout_below="@+id/etInvitationCode" style="@style/Button_blue_Submit"/>
+        <RelativeLayout android:id="@+id/rl_recent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/btnValidInviteCode">
+            <RelativeLayout android:id="@+id/rl_recent_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="13sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_recent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="34dp" android:text="@string/string_home_recent_record" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_delete_recent" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_recent_invite_delete" android:scaleType="centerInside" android:layout_alignTop="@+id/tv_recent" android:layout_alignBottom="@+id/tv_recent" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:layout_below="@+id/rl_recent_title">
+                <com.chaoxing.mobile.login.ui.InviteWordWrapView android:id="@+id/view_wordwrap" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:layout_width="240dp" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

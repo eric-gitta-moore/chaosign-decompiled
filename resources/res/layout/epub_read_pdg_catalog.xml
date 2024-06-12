@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/llContainer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/read_catalog_select_bar_layout" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <include layout="@layout/epub_read_catalog_select_bar"/>
+    </LinearLayout>
+    <View android:id="@+id/dividerLineView" android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+    <com.chaoxing.widget.GestureViewFlipper android:id="@+id/gvf_read_catalog_lists" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp"/>
+    <ImageButton android:id="@+id/ibtn_read_catalog_back" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/read_catalog_back" android:contentDescription="@null"/>
+</LinearLayout>

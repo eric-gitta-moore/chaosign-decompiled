@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_label" android:background="@color/white" android:paddingLeft="7dp" android:paddingTop="6dp" android:paddingRight="5dp" android:paddingBottom="6dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp">
+        <ImageView android:id="@+id/iv_delete" android:padding="8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_delete_unit" android:layout_centerVertical="true"/>
+        <RelativeLayout android:paddingRight="5dp" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_toLeftOf="@+id/iv_sort" android:layout_toRightOf="@+id/iv_delete" android:layout_centerVertical="true" android:fastScrollEnabled="false">
+            <EditText android:textSize="16sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@+id/tv_label" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@+id/iv_clear" android:layout_centerVertical="true" android:lineSpacingExtra="3dp"/>
+            <ImageView android:id="@+id/iv_clear" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="7dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_sort" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sort_36dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="48dp"/>
+</LinearLayout>

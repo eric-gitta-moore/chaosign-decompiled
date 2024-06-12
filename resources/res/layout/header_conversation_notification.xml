@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:gravity="center_vertical" android:id="@+id/tvNotificationItem" android:paddingLeft="15dp" android:layout_width="0dp" android:layout_height="35dp" android:text="@string/conversation_notification_hint" android:maxLines="1" android:drawableLeft="@drawable/icon_conversation_notification" android:drawablePadding="8dp" android:layout_weight="1"/>
+    <ImageView android:id="@+id/vNotificationItemClose" android:paddingLeft="8dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_conversation_notification_cancel"/>
+</merge>

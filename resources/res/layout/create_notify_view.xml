@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rlRoot" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/color_ebeced" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+            <TextView android:id="@+id/tvCanncel" android:paddingLeft="8dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+            <TextView android:textSize="20sp" android:textColor="#ff333333" android:ellipsize="middle" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginRight="65dp" android:text="@string/pcenter_contents_sendNotice" android:singleLine="true" android:layout_centerInParent="true"/>
+            <TextView android:id="@+id/tvSend" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+        </RelativeLayout>
+        <ScrollView android:background="#ffffff" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_all" android:paddingTop="6dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="收件人:"/>
+                    <TextView android:textSize="14sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/tv_all" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginBottom="2dp" android:maxLines="2"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/vg_receiver" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+                    <TextView android:textSize="14sp" android:textColor="#cccccc" android:id="@+id/tv_receiver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="15dp" android:layout_marginBottom="5dp" android:text="@string/pcenter_message_Tosomeone"/>
+                    <RelativeLayout android:id="@+id/rl_view" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+                        <com.chaoxing.mobile.widget.WordWrapView android:layout_gravity="center_vertical" android:id="@+id/view_wordwrap" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <Button android:textColor="#0099ff" android:id="@+id/btn_remove" android:background="@drawable/blue_btn_border_5" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="6dp" android:layout_marginBottom="10dp" android:text="一键清除" android:layout_below="@+id/view_wordwrap"/>
+                    </RelativeLayout>
+                    <Button android:gravity="center" android:layout_gravity="bottom" android:id="@+id/btn_add" android:background="@drawable/add_contact" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="12dp" android:layout_marginBottom="4dp" style="@style/text_blue_16"/>
+                </LinearLayout>
+                <View android:background="#99ccff" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/etTitle"/>
+                <LinearLayout android:id="@+id/vg_receiver_cs" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+                    <TextView android:textSize="14sp" android:textColor="#cccccc" android:id="@+id/tv_receiver_cs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="15dp" android:layout_marginBottom="5dp" android:text="@string/pcenter_message_Duplicate"/>
+                    <RelativeLayout android:id="@+id/rl_view_cs" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+                        <com.chaoxing.mobile.widget.WordWrapView android:layout_gravity="center_vertical" android:id="@+id/view_wordwrap_cs" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <Button android:textColor="#0099ff" android:id="@+id/btn_remove_cs" android:background="@drawable/blue_btn_border_5" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="6dp" android:layout_marginBottom="10dp" android:text="一键清除" android:layout_below="@+id/view_wordwrap_cs"/>
+                    </RelativeLayout>
+                    <Button android:gravity="center" android:layout_gravity="bottom" android:id="@+id/btn_add_cs" android:background="@drawable/add_contact" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="12dp" android:layout_marginBottom="4dp" style="@style/text_blue_16"/>
+                </LinearLayout>
+                <View android:id="@+id/view_cs" android:background="#99ccff" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/etTitle"/>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textColorHint="#cccccc" android:gravity="center_vertical" android:id="@+id/etTitle" android:background="#00000000" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/topic_title_hint" style="@style/text_lightgray_17"/>
+                    <View android:id="@+id/dividerLine" android:background="#99ccff" android:layout_width="match_parent" android:layout_height="1px"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_UnreadNoticeRemind" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:gravity="center_vertical" android:background="#00000000" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/pcenter_contents_UnreadNoticeRemind" android:layout_weight="2" style="@style/text_lightgray_17"/>
+                            <TextView android:gravity="center_vertical" android:id="@+id/tv_UnreadNoticeRemind" android:background="#00000000" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/text_lightgray_17"/>
+                            <ImageView android:layout_gravity="center" android:id="@+id/iv_UnreadNoticeRemind" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        </LinearLayout>
+                        <View android:background="#99ccff" android:layout_width="match_parent" android:layout_height="1px"/>
+                    </LinearLayout>
+                    <EditText android:textSize="16sp" android:textColor="@color/normal_black" android:textColorHint="#cccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/etContent" android:background="#00000000" android:paddingLeft="16dp" android:paddingRight="16dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:minHeight="100dp" android:hint="@string/say_something"/>
+                    <View android:background="#e5e5e5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+                    <RelativeLayout android:id="@+id/rlImgGridView" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.chaoxing.mobile.group.widget.TopicGridView android:id="@+id/imgGridView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:albumColumnWidth="68dp" app:albumColumns="4" app:albumHorizontalSpacing="12dp" app:albumPaddingBottom="@dimen/common_margin" app:albumPaddingLeft="24dp" app:albumPaddingRight="24dp" app:albumPaddingTop="@dimen/common_margin" app:albumVerticalSpacing="12dp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.chaoxing.mobile.note.widget.ContentView android:id="@+id/contentView" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+                <com.chaoxing.mobile.attachment.view.AttachmentViewLayout android:id="@+id/ll_add_attachment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="6dp" android:layout_marginRight="12dp" android:layout_below="@+id/contentView"/>
+            </LinearLayout>
+        </ScrollView>
+        <View android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llImgChooseTip" android:background="#f9f9f9" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="24dp" android:layout_marginTop="8dp" android:layout_marginRight="@dimen/common_margin" android:layout_marginBottom="8dp">
+                <ImageView android:id="@+id/iv_operation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/note_panel_open" android:layout_centerInParent="true"/>
+                <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_unread_count" android:background="@drawable/tips_textview_bg" android:layout_width="16dp" android:layout_height="16dp" android:text="1" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="24dp" android:layout_marginTop="8dp" android:layout_marginRight="@dimen/common_margin" android:layout_marginBottom="8dp">
+                <ImageView android:id="@+id/iv_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rlOperaPanel" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/btnOperaPanel">
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1px"/>
+            <FrameLayout android:id="@+id/fl_footer_panel" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:id="@+id/loading_view" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

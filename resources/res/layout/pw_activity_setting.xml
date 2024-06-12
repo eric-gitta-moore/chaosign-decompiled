@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/emptyView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/llContent"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/llContent" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="415dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="40dp" android:text="选择活动分组"/>
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rvGroup" android:layout_width="match_parent" android:layout_height="300dp" android:layout_above="@+id/btnOk" android:layout_below="@+id/tvTitle"/>
+        <Button android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/btnOk" android:background="@drawable/btn_blue_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="15dp" android:text="@string/btn_ok" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <include layout="@layout/page_loading_circle"/>
+</RelativeLayout>

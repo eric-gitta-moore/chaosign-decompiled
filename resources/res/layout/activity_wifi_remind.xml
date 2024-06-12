@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar2_title_2line"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/remindRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar"/>
+    <TextView android:textSize="15sp" android:textColor="#999999" android:gravity="center" android:id="@+id/emptyTv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_remind_empty_hint" android:layout_centerInParent="true"/>
+    <ProgressBar android:id="@+id/loading_view" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_centerInParent="true" style="@style/ProgressBar"/>
+</RelativeLayout>

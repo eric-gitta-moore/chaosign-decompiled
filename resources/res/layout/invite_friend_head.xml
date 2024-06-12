@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/infoLayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivTopImg" android:layout_width="match_parent" android:layout_height="281dp" android:src="@drawable/app_share_top" android:scaleType="fitXY"/>
+    <TextView android:textSize="15sp" android:textColor="#080808" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31dp" android:text="@string/share_tip1"/>
+    <TextView android:textSize="13sp" android:textColor="#080808" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/share_tip2"/>
+    <TextView android:textSize="13sp" android:textColor="#080808" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/share_tip3"/>
+    <TextView android:textSize="13sp" android:textColor="#080808" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31dp" android:text="@string/share_tip4"/>
+    <TextView android:textSize="21sp" android:textColor="#080808" android:layout_gravity="center_horizontal" android:id="@+id/tvInviteCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp"/>
+    <Button android:textSize="14sp" android:textColor="#ffffff" android:id="@+id/btninviteFriend" android:background="@drawable/bg_blue_select_style" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginLeft="12dp" android:layout_marginTop="40dp" android:layout_marginRight="12dp" android:layout_marginBottom="40dp" android:text="@string/invite_title"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="42dp">
+        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="14sp" android:textColor="#080808" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/share_invite_tip" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="#080808" android:id="@+id/tvInvitNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="0人" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

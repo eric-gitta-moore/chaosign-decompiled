@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.notify.widget.ViewNoticeReceiver android:id="@+id/view_receiver" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="55dp">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="#999" android:id="@+id/tv_notice_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15.5dp" android:text="@string/notice_title_hint"/>
+                <EditText android:textSize="17sp" android:textColor="@color/normal_reader_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/etTitle" android:background="#00000000" android:paddingLeft="10dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@+id/dividerLine" android:background="#99ccff" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+        <EditText android:textSize="17sp" android:textColor="@color/normal_reader_text" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/etContent" android:background="#00000000" android:paddingLeft="15dp" android:paddingRight="15dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:minHeight="100dp" android:lineSpacingExtra="2dp"/>
+        <RelativeLayout android:id="@+id/rlImgGridView" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.chaoxing.mobile.group.widget.TopicGridView android:id="@+id/imgGridView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:albumColumnWidth="75dp" app:albumColumns="4" app:albumHorizontalSpacing="10dp" app:albumPaddingBottom="@dimen/common_margin" app:albumPaddingLeft="15dp" app:albumPaddingRight="15dp" app:albumPaddingTop="@dimen/common_margin" app:albumVerticalSpacing="12dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.chaoxing.mobile.attachment.view.AttachmentViewLayout android:id="@+id/ll_add_attachment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="6dp" android:layout_marginRight="12dp" android:layout_below="@+id/contentView"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/footviewlayout" android:paddingLeft="48dp" android:paddingRight="48dp" android:layout_width="match_parent" android:layout_height="80dp">
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="40dp">
+        <ProgressBar android:id="@+id/footviewpb" android:layout_width="wrap_content" android:layout_height="match_parent" android:indeterminateDrawable="@drawable/book_content_list_footview_progress" style="?android:attr/progressBarStyleLarge"/>
+        <TextView android:textSize="18dp" android:textColor="#515151" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_content_list_footview"/>
+    </LinearLayout>
+</LinearLayout>

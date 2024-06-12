@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18sp" android:textColor="#66333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击重新加载"/>
+        <TextView android:textSize="18sp" android:textColor="#0099ff" android:id="@+id/tv_to_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="本地编辑"/>
+    </LinearLayout>
+</RelativeLayout>

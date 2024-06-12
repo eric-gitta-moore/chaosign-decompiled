@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/topBar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:paddingBottom="12dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/topBar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llContent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="#666666" android:gravity="center_vertical" android:id="@+id/tvRemakeLabel" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/remake_label"/>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rlSetRemark" android:background="@drawable/common_white_stroke_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_delete" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <EditText android:textSize="16sp" android:textColor="@color/normal_black" android:textColorHint="#cccccc" android:id="@+id/editRemark" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入姓名" android:layout_toLeftOf="@+id/iv_delete" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="12sp" android:textColor="#666666" android:gravity="center_vertical" android:id="@+id/tvGroupLabel" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/group_label"/>
+            <com.chaoxing.mobile.login.ui.LabelView android:id="@+id/lvSelectedLabel" android:background="@drawable/common_white_stroke_bg" android:paddingLeft="5dp" android:paddingTop="4dp" android:paddingRight="5dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:textColor="#666666" android:gravity="center_vertical" android:id="@+id/tvTotalLabel" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="@string/total_group_label"/>
+            <com.chaoxing.mobile.login.ui.LabelView android:id="@+id/lvTotalLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar" layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

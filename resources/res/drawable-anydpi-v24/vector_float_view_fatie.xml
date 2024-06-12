@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="60dp" android:width="60dp" android:autoMirrored="true" android:viewportWidth="60" android:viewportHeight="60">
+    <group>
+        <clip-path android:pathData="M0,0h60v60h-60z"/>
+        <path android:fillColor="@drawable/res_0x7f0800a3_vector_float_view_fatie__0" android:pathData="M30,30m-27.5,0a27.5,27.5 0,1 1,55 0a27.5,27.5 0,1 1,-55 0"/>
+        <path android:fillColor="#00000000" android:pathData="M38.398,21.925V29.032C38.398,30.063 37.563,30.898 36.532,30.898H23.468C22.437,30.898 21.602,30.063 21.602,29.032V15.968C21.602,14.937 22.437,14.102 23.468,14.102H30.707" android:strokeColor="#ffffff" android:strokeWidth="1" android:strokeLineCap="round"/>
+        <path android:fillColor="#00000000" android:pathData="M30,23.431L38.16,14.102" android:strokeColor="#ffffff" android:strokeWidth="1" android:strokeLineCap="round"/>
+        <path android:fillColor="#ffffff" android:pathData="M21.16,40.4H23.64C22.94,42.63 21.87,44.38 20.41,45.66L20.78,46.32C21.92,45.39 22.86,44.14 23.59,42.56C23.92,43.26 24.47,43.91 25.25,44.51C24.5,45 23.57,45.45 22.45,45.86L22.83,46.53C24.04,46.06 25.06,45.54 25.88,44.96C26.72,45.51 27.78,46.02 29.06,46.49L29.43,45.82C28.27,45.42 27.28,44.98 26.47,44.5C27.29,43.8 27.83,43.02 28.1,42.16V41.54H24.01C24.15,41.18 24.27,40.8 24.39,40.4H29.26V39.71H24.58C24.76,38.97 24.92,38.19 25.05,37.35L24.32,37.26C24.2,38.12 24.04,38.93 23.84,39.71H22.09L22.66,37.74L21.95,37.62L21.16,40.4ZM24.13,42.2H27.37C27.09,42.88 26.58,43.51 25.84,44.09C25.04,43.51 24.47,42.88 24.13,42.2ZM26.73,37.34L26.25,37.81C27,38.41 27.59,38.97 28.01,39.5L28.52,38.99C28.04,38.44 27.45,37.89 26.73,37.34ZM33.5,44.84C34,44.84 34.25,44.53 34.25,43.91V38.93H32.86V37.38H32.2V38.93H30.82V44.89H31.46V39.56H32.2V46.47H32.86V44.84H33.5ZM32.86,39.56H33.62V43.77C33.62,44.09 33.51,44.25 33.3,44.25L32.86,44.23V39.56ZM36.37,37.33V41.79H34.89V46.53H35.56V46.02H38.33V46.53H39.01V41.79H37.07V39.8H39.49V39.14H37.07V37.33H36.37ZM35.56,45.35V42.44H38.33V45.35H35.56Z"/>
+    </group>
+</vector>

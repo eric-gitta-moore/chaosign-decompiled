@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.widget.SearchBar xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/searchBar" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="48dp">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/search_bar_bg2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+        <ImageView android:id="@+id/ivSpeech" android:paddingLeft="5dp" android:layout_width="25dp" android:layout_height="20dp" android:src="@drawable/icon_speak" android:scaleType="centerInside"/>
+        <EditText android:textSize="14sp" android:textColorHint="@color/text_hint" android:id="@+id/etKeyword" android:background="#ffffff" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/input_search_keyword" android:singleLine="true" android:layout_weight="1" android:inputType="text" android:imeOptions="actionSearch"/>
+        <ImageView android:id="@+id/ivDelete" android:layout_width="wrap_content" android:layout_height="20dp" android:src="@drawable/clear"/>
+    </LinearLayout>
+</com.chaoxing.mobile.widget.SearchBar>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/color_f5f6f8" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+        <CheckBox android:id="@+id/cb_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:button="@null" android:drawableLeft="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <FrameLayout android:id="@+id/node_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/cb_selector" android:layout_centerVertical="true">
+            <View android:id="@+id/full_line" android:background="@color/color_ebebeb" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginLeft="11dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="46dp">
+                <TextView android:textSize="14sp" android:textColor="@color/color_course_chapter_title" android:gravity="center" android:id="@+id/tv_node_index" android:background="@drawable/ic_course_chapter_label" android:paddingLeft="-11dp" android:paddingBottom="1dp" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="16sp" android:textColor="#666" android:ellipsize="end" android:id="@+id/tv_node_title" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:maxLines="2" android:layout_toLeftOf="@+id/part_right" android:layout_toRightOf="@+id/tv_node_index" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.2"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

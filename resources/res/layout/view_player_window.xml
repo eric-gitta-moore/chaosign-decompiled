@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/player_content" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <com.chaoxing.mobile.live.KeyboardLayout android:id="@+id/keyboard_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextureView android:id="@+id/sv_player" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <com.chaoxing.mobile.live.LiveCover android:id="@+id/live_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.chaoxing.mobile.live.KeyboardLayout>
+    <com.chaoxing.mobile.live.LivePlayerOperationLayout android:id="@+id/operation_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.chaoxing.mobile.live.LiveStatusView android:id="@+id/view_status" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.chaoxing.mobile.live.LiveReportView android:id="@+id/view_report" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.chaoxing.mobile.live.LiveBrightnessView android:id="@+id/brightness" android:background="@drawable/video_dialog_progress_bg" android:paddingLeft="14dp" android:paddingRight="14dp" android:visibility="gone" android:layout_width="154dp" android:layout_height="44dp" android:layout_centerInParent="true"/>
+    <com.chaoxing.mobile.live.LiveVolumeView android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/volume" android:background="@drawable/video_dialog_progress_bg" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="154dp" android:layout_height="44dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

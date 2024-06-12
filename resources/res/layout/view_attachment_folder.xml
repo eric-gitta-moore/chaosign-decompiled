@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:my="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:id="@+id/rlcontainer" android:background="@drawable/bg_circle_border_f4f5f6" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="74dp">
+    <com.fanzhou.widget.CircleImageView android:layout_gravity="center_vertical" android:id="@+id/ivIcon" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="8dp" android:src="@drawable/icon_att_public_folder" my:is_circle="false" my:x_radius="4dp" my:y_radius="4dp"/>
+    <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvName" android:paddingRight="12dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+</LinearLayout>

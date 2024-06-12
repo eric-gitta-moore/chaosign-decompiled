@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rlRoot" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/rlToolbar" android:background="@color/color_ebeced" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <TextView android:id="@+id/tvCanncel" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+        <TextView android:textSize="20sp" android:textColor="#ff333333" android:ellipsize="middle" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_marginRight="65dp" android:text="@string/topic_createTitle" android:singleLine="true" android:layout_centerInParent="true"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/tvSend" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/pcenter_notes_edit_finish" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_gray_16"/>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlContent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rlToolbar">
+        <com.chaoxing.mobile.group.widget.AtToInBlueEditText android:textColorHint="#cccccc" android:id="@+id/etTitle" android:background="#00000000" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/topic_title_hint" android:maxLines="3" style="@style/text_lightgray_17"/>
+        <View android:id="@+id/dividerLine" android:background="#99ccff" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/etTitle"/>
+        <com.chaoxing.mobile.group.widget.AtToInBlueEditText android:textSize="16sp" android:textColor="@color/normal_black" android:textColorHint="#cccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/etContent" android:background="#00000000" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp" android:layout_marginBottom="4dp" android:hint="@string/topic_content_hint" android:layout_above="@+id/flBottom" android:layout_below="@+id/dividerLine"/>
+        <FrameLayout android:id="@+id/flBottom" android:background="@color/color_ebeced" android:layout_width="match_parent" android:layout_height="346dp" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@+id/rlImgGridView" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.chaoxing.mobile.group.widget.TopicGridView android:id="@+id/imgGridView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:albumColumnWidth="68dp" app:albumColumns="4" app:albumHorizontalSpacing="12dp" app:albumPaddingBottom="@dimen/common_margin" app:albumPaddingLeft="24dp" app:albumPaddingRight="24dp" app:albumPaddingTop="@dimen/common_margin" app:albumVerticalSpacing="12dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/llImgChooseTip" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                    <ImageView android:layout_width="68dp" android:layout_height="68dp" android:layout_marginLeft="24dp" android:layout_marginTop="@dimen/common_margin" android:layout_marginRight="@dimen/common_margin" android:layout_marginBottom="@dimen/common_margin" android:src="@drawable/topic_img_add"/>
+                    <TextView android:textSize="16sp" android:textColor="#999999" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加图片"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <FrameLayout android:id="@+id/flAttachment" android:background="@android:color/white" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.chaoxing.mobile.group.ViewAttachment android:id="@+id/viewAttachment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/imgGridView"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <include android:id="@+id/loading_view" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

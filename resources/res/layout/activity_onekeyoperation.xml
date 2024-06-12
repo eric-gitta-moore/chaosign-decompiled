@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlContainer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/titleBar" layout="@layout/common_title_bar"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titleBar">
+            <RelativeLayout android:id="@+id/rlCreateWeChat" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="建群聊" android:layout_centerVertical="true"/>
+                <ImageView android:background="@drawable/ic_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlCreateGroup" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="建小组" android:layout_centerVertical="true"/>
+                <ImageView android:background="@drawable/ic_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="#e7e8e9" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlInputConcasts" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="#333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="导入通讯录" android:layout_centerVertical="true"/>
+                <ImageView android:background="@drawable/ic_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="#e7e8e9" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <include android:id="@+id/pageLoading" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titleBar" layout="@layout/page_loading_circle"/>
+    </RelativeLayout>
+</RelativeLayout>

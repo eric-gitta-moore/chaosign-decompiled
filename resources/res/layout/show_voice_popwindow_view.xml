@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlpop" android:background="#80333333" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container" android:background="#7f7f7f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/tvRecordVoice" android:layout_width="match_parent" android:layout_height="50dp" android:text="录音频"/>
+            <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/tvVoiceFile" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:text="音频文件"/>
+        </LinearLayout>
+        <TextView android:textSize="15sp" android:textColor="@color/blue_0099ff" android:gravity="center" android:id="@+id/tvCancel" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="12dp" android:text="取消"/>
+    </LinearLayout>
+</RelativeLayout>

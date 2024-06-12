@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.FragmentTabHost xmlns:android="http://schemas.android.com/apk/res/android" android:id="@android:id/tabhost" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/realtabcontent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="52dp"/>
+        <TabWidget android:gravity="center" android:orientation="horizontal" android:id="@android:id/tabs" android:background="@drawable/bottom_toolbar_bg" android:layout_width="match_parent" android:layout_height="52dp" android:divider="@android:color/transparent" android:layout_alignParentBottom="true" android:showDividers="none"/>
+        <Button android:textSize="18sp" android:textColor="@color/white" android:id="@+id/btnDone" android:background="#0099ff" android:visibility="invisible" android:clickable="false" android:layout_width="match_parent" android:layout_height="55dp" android:text="@string/done" android:layout_alignParentBottom="true"/>
+        <com.chaoxing.mobile.main.ui.MainTabFlagRoomView android:id="@+id/rlFlagRoom" android:background="@color/mainpage_backgroud_color" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@android:id/tabs"/>
+        <RelativeLayout android:id="@+id/rlNewVersion" android:background="@color/mainpage_backgroud_color" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/ivShowHeader" android:background="@drawable/img_newversion_headview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="25dp"/>
+            <ImageView android:background="@drawable/img_newversion_clickthere" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginTop="5dp" android:layout_below="@+id/ivShowHeader"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlShowCreateNote" android:background="@color/mainpage_backgroud_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/ivCreateNoteTag" android:paddingTop="11dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_newversion_create_note" android:layout_alignParentRight="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_newversion_createnote_message" android:layout_below="@+id/ivCreateNoteTag" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <include android:id="@+id/mainCoverView" android:visibility="gone" layout="@layout/coverview_mainpage"/>
+        <include android:id="@+id/firstComeCourseView" android:visibility="gone" layout="@layout/coverview_first_login_course"/>
+        <include android:id="@+id/newNoteCoverView" android:visibility="gone" layout="@layout/coverview_new_note"/>
+    </RelativeLayout>
+</com.fanzhou.widget.FragmentTabHost>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/parentView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/common_title_bar2_topiclist"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/lvTopic" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_delete" android:layout_below="@+id/viewTitleBar"/>
+    <include android:visibility="gone" layout="@layout/page_loading_circle"/>
+    <Button android:textSize="18sp" android:textColor="#b3b3b3" android:layout_gravity="center_vertical" android:id="@+id/btn_delete" android:background="@android:color/transparent" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/delete_resource" android:layout_weight="1" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/loginRootLayout" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/loginContent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/top" layout="@layout/activity_top_bar"/>
+        <TextView android:textSize="18sp" android:textColor="#333333" android:id="@+id/tvLoginSuccess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="68dp" android:text="第三步：请输入学号" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="18sp" android:textColor="#333333" android:id="@+id/tvInviteCodeUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34dp" android:text="北京九中" android:layout_centerHorizontal="true"/>
+        <EditText android:textSize="14sp" android:textColorHint="#cccccc" android:id="@+id/etAccount" android:background="@drawable/bg_input" android:paddingLeft="12dp" android:paddingTop="10dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:hint="@string/username_hint" android:drawablePadding="10dp" android:inputType="text" android:imeOptions="actionNext"/>
+        <EditText android:textSize="14sp" android:textColorHint="#cccccc" android:id="@+id/etPassword" android:background="@drawable/bg_input" android:paddingLeft="12dp" android:paddingTop="10dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:hint="@string/password" android:drawablePadding="10dp" android:inputType="textPassword" android:imeOptions="actionNext"/>
+        <Button android:textSize="@dimen/text_size_logout" android:id="@+id/btnVerify" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="16dp" android:layout_marginTop="50dp" android:layout_marginRight="16dp" android:text="@string/comment_done" style="@style/Button_blue_Submit"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/pbValidWait" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <include layout="@layout/wait_circle_bar_with_text"/>
+    </LinearLayout>
+</RelativeLayout>

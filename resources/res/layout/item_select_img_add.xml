@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="64dp" android:layout_height="64dp">
+    <ImageView android:id="@+id/item_grid_image" android:background="@drawable/bg_circle_border_ffe5e5e5" android:layout_width="59dp" android:layout_height="59dp" android:src="@drawable/topic_img_add" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

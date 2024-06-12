@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/top" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/dialog_teenager_top" android:scaleType="fitStart" android:adjustViewBounds="true"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top" android:layout_centerVertical="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="24dp" android:layout_marginEnd="24dp">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="18sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/privacy_policy_teenager_protect"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="13sp" android:textColor="#ff333333" android:gravity="start" android:id="@+id/tv_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="16dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_accept" android:background="@drawable/dialog_button_positive" android:paddingLeft="12dp" android:paddingTop="9dp" android:paddingRight="12dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="100dp" android:minHeight="40dp" android:text="@string/privacy_policy_guardian_consent" android:backgroundTint="#ff0099ff"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="16dp" android:textColor="#ffcccccc" android:gravity="center" android:id="@+id/tv_not_accept" android:paddingLeft="12dp" android:paddingTop="9dp" android:paddingRight="12dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:minWidth="100dp" android:minHeight="40dp" android:text="@string/privacy_policy_not_accept_quit"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

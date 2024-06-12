@@ -1,0 +1,186 @@
+# Trime custom style settings
+# encoding: utf-8
+
+config_version: "1.0.0"
+name: 标准          #方案名称
+author: 风花絮      #作者信息
+
+#键盘高度
+round_corner:
+  1: &round1 5  #按键圆角半径
+
+#界面风格、功能开关
+style:
+  color_scheme: default #配色方案
+  keyboards:
+    __include: trime_keyboards:/names #键盘配置
+  keyboard_height: 275 #锁定键盘高度，避免切换时键盘高度变化而造成闪烁
+
+  horizontal: true #水平模式
+  vertical_correction: -5
+  key_height: 52 #键高
+  key_text_size: 20 #键字号
+  key_long_text_size: 16 #长标签字号
+  label_text_size: 22 #标签字号
+  preview_height: 56 #按键提示高度
+  preview_text_size: 40 #按键提示字号
+  preview_offset: -32 #按键提示纵向偏移
+  proximity_correction: true #按键纠错
+  round_corner: *round1 #按键圆角半径
+  shadow_radius: 0.0 #按键阴影半径
+  symbol_text_size: 10 #符号字号
+  key_back_drawable: 'bg_key_normal.9.png' #按键背景
+
+  candidate_padding: 5  #候选项内边距
+  candidate_spacing: 0.5  #候选间距
+  candidate_text_size: 18  #候选字号
+  candidate_use_cursor: true #高亮候选项
+  candidate_view_height: 28 #候选区高度
+
+  comment_height: 14 #编码提示区高度
+  comment_on_top: true #编码提示在上方或右侧
+  comment_text_size: 12 #编码提示字号
+  text_height: 32 #编码区高度
+  text_size: 14 #编码区字号
+
+  auto_caps: false #自動句首大寫:true|false|ascii
+  reset_ascii_mode: false #显示键盘时重置为中文状态
+  speech_opencc_config: none #语音输入简繁转换
+
+  enter_label_mode: 0  #是否使用App提供的ActionLabel内容作为Enter键的文本（由于多数App没有适配ActionLable，实际影响不大）。0不使用，1只使用actionlabel，2优先使用，3当其他方式没有获得label时才读取actionlabel
+  enter_labels: # 定义Enter键的文本
+    go: 前往
+    done: 完成
+    next: 下个
+    pre: 上个
+    search: 搜索
+    send: 发送
+    default: Enter   # 定义默认Enter键的文本
+
+#颜色
+colors:
+  1: &color1 0xff000000
+  2: &color2 0xffffffff
+  3: &color3 0xffdadee5
+  4: &color4 0xffb3b9c7
+  5: &color5 0xff9298A6
+  6: &color6 0xff828A99
+
+#配色方案
+preset_color_schemes:
+  default:
+    name: "标准配色"#方案名称
+    author: 风花絮 #作者信息
+    dark_scheme: steam
+    keyboard_back_color: *color3 #键盘背景
+    root_background: *color2 # 整个键盘区+候选栏的背景图/色
+    border_color: *color2
+    shadow_color: *color2
+
+    key_border_color: *color2
+    key_back_color: *color2 #按键背景
+    key_symbol_color: *color5 #按键符号
+    key_text_color: *color1 #按键文本
+    label_color: *color4 #标签
+    preview_back_color: *color4 #按键提示背景
+    preview_text_color: *color4 #按键提示文本
+    on_key_back_color: *color4
+    on_key_text_color: *color1
+    off_key_back_color: *color4  #按键关闭状态背景
+    off_key_text_color: *color5 #按键关闭状态文本
+    long_text_back_color: *color2 #长文本按键的背景(剪贴板）
+    hilited_back_color: *color2 #高亮编码背景
+    hilited_key_back_color: *color4 #高亮按键背景
+    hilited_key_symbol_color: *color5 #高亮按键符号
+    hilited_key_text_color: *color1 #高亮按键文本
+    hilited_off_key_back_color: *color4 #高亮按键关闭状态背景
+    hilited_off_key_text_color: *color1 #高亮按键关闭状态文本
+    hilited_on_key_text_color: *color2
+
+    candidate_background: *color2 #候选栏的整体背景图/色
+    candidate_separator_color: *color2 #候选分割背景
+    candidate_text_color: *color1 #候选文本
+    hilited_candidate_back_color: *color2 #高亮候选背景
+    hilited_candidate_text_color: *color4 #高亮候选文本
+
+    back_color: *color2 #候选区背景状态栏
+    comment_text_color: *color3 #提示
+    hilited_comment_text_color: *color1 #高亮提示
+    hilited_text_color: *color1 #高亮编码
+    text_color: *color4 #编码
+    text_back_color: *color2 #编码区背景
+
+    bkg: *color2 #空格键背景色
+    tkg: *color1 #空格键文字颜色
+    benter: *color4 #回车键背景色
+    tenter: *color1 #回车键文字颜色
+    bgn: *color4 #功能键背景色
+    bgn_on: *color6 #功能键背景色
+    tgn: *color1 #功能键文字颜色
+    bbs: *color4 #退格键背景色
+    tbs: *color1 #退格键文字颜色
+    baoe: *color2 #aoeiu背景色
+    taoe: *color4 #aoeiu文字颜色
+    bh1: *color2 #第一行背景色
+    th1: *color1 #第一行文字颜色
+    bh2: *color2 #第二行背景色
+    th2: *color1 #第二行文字颜色
+    bh3: *color2 #第三行背景色
+    th3: *color1 #第三行文字颜色
+    bh4: *color2 #第四行背景色
+    th4: *color1 #第四行文字颜色
+
+
+#键盘布局
+preset_keyboards:
+  __include: trime_keyboards:/preset_keyboards
+
+candidate_page:
+  padding: [ 6, 6, 6, 6 ]
+  gap: [ 6, 6 ]
+  key_width: 0.78
+  round_corner: 5
+  candidate_back_color: *color2
+  page_back_color: *color3
+  key_correct: 2
+  keys:
+    - { click: Candidate_back, key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: tgn, key_text_size: '15' }
+    - { click: BackSpace2, key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: tgn }
+    - { click: Candidate_switch, key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: tgn }
+    - { click: page_pre, key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: tgn }
+    - { click: page_next, key_back_drawable: 'bg_key_func.9.png', hilited_key_back_color: bgn_on, key_text_color: tgn }
+
+preset_keys:
+  # 编辑
+  Shift_L: { shift_lock: 'click', functional: false, send: Shift_L ,states_icon: [ 'ic_shift.png', 'ic_shift_on.png' ] }
+  Return: { icon: 'ic_enter.png', functional: false, send: Return }
+  BackSpace: { icon: 'ic_backspace.png', repeatable: true, functional: false, send: BackSpace }
+  BackSpace2: { icon: 'ic_backspace.png', repeatable: false, functional: false, send: BackSpace }
+  space: { icon: 'ic_space.png', repeatable: false, functional: false, send: space }
+  Escape: { label: 取消, functional: false, send: Escape }
+
+  delimiter: { label: 分词, text: '''' }
+
+  # rime状态
+  Mode_switch: { toggle: ascii_mode, functional: false, send: Mode_switch, states_icon: [ 'ic_option_cn.png', 'ic_option_en.png' ] }
+
+  #切换键盘
+  Keyboard_number: { label: 123, functional: false, send: Eisu_toggle, select: 'number' }
+  Keyboard_symbol: { label: 符, functional: false, send: Eisu_toggle, select: 'symbol' }
+
+  # keyboard_symbol
+  Keyboard_symbol_back: { label: '返回', functional: false, send: Eisu_toggle }
+  Keyboard_symbol_lock: { toggle: _symbol_lock, send: Mode_switch, states_icon: [ 'ic_symbol_unlock.png', 'ic_symbol_lock.png' ] }
+  page_pre: { icon: 'ic_page_up.png', functional: false, send: Page_Up }
+  page_next: { icon: 'ic_page_down.png', functional: false, send: Page_Down }
+
+  #candidate_page
+  Candidate_back: { label: '返回', functional: false, send: Eisu_toggle }
+  Candidate_switch: { toggle: _candidate_switch, send: Mode_switch, states_icon: [ 'ic_candidate_all_switch.png', 'ic_candidate_single_switch.png' ] }
+
+  symbol_left_yin_hao: { label: '“', text: '“”{Left}', functional: false }
+  symbol_left_yin_hao2: { label: "'", text: "''{Left}", functional: false }
+
+
+
+

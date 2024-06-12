@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#80666666" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/bg_borderlinker_white" android:layout_width="match_parent" android:layout_height="300dp" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_top_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tv_linker_title" android:layout_width="wrap_content" android:layout_height="45dp" android:text="@string/attach_linker" android:layout_centerHorizontal="true"/>
+                <ImageView android:id="@+id/im_linker_close" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginRight="10dp" android:src="@drawable/ic_edit_closelinkers" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px"/>
+            <EditText android:textSize="14sp" android:textColor="@color/color_333333" android:textColorHint="@color/color_cccccc" android:gravity="top" android:id="@+id/et_linker_title" android:background="@null" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/note_attach_linker_title" android:maxLines="3" android:maxLength="50" android:layout_centerVertical="true" android:lineSpacingExtra="5dp"/>
+            <View android:background="@color/stroke_line" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <EditText android:scrollbarSize="3sp" android:scrollbarThumbVertical="@color/app_line_bg" android:scrollbarStyle="insideOverlay" android:textSize="13sp" android:textColor="@color/color_505050" android:textColorHint="@color/color_cccccc" android:gravity="top" android:id="@+id/et_share_info" android:background="@null" android:padding="10dp" android:visibility="gone" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/note_attach_linker_content" android:layout_above="@+id/rl_url_layout" android:layout_below="@+id/ll_top_title" android:layout_centerVertical="true" android:lineSpacingExtra="5dp"/>
+        <com.chaoxing.mobile.note.widget.Listen2PasteEditText android:scrollbarSize="3sp" android:scrollbarThumbVertical="@color/app_line_bg" android:scrollbarStyle="insideOverlay" android:textSize="13sp" android:textColor="@color/color_505050" android:textColorHint="@color/color_cccccc" android:gravity="top" android:id="@+id/et_show_linker" android:background="@null" android:padding="15dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/note_weblink_input_content" android:layout_above="@+id/rl_url_layout" android:layout_below="@+id/ll_top_title" android:layout_centerVertical="true" android:lineSpacingExtra="5dp"/>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_url_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px"/>
+            <Button android:textSize="14sp" android:textColor="@color/white" android:id="@+id/bn_submit_linker" android:background="@drawable/bg_btn_linker_reply" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="15dp" android:text="@string/note_attach_linker_done" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <include layout="@layout/page_loading_circle"/>
+    </RelativeLayout>
+</RelativeLayout>

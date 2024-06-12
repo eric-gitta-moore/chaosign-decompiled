@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_code_search" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/alphabet_indicator_layout" android:layout_below="@+id/topBar"/>
+    <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/tvTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_no_search_result" android:layout_centerInParent="true"/>
+</RelativeLayout>

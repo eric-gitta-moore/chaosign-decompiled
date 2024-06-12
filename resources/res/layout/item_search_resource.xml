@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.ViewSwipeListItem xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="73dp">
+        <RelativeLayout android:layout_gravity="center_vertical" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.chaoxing.mobile.group.ui.GroupAvatar android:id="@+id/ga_icon" android:background="@drawable/ic_chaoxing_default" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginRight="8dp" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_folder" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginRight="8dp" android:layout_centerVertical="true"/>
+            <RelativeLayout android:id="@+id/rl_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ga_icon" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="vertical" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tv_resource_position" android:layout_centerVertical="true">
+                    <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+                    <TextView android:textSize="14sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/tv_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="2" android:layout_below="@+id/title"/>
+                </LinearLayout>
+                <TextView android:textSize="13sp" android:textColor="#0099ff" android:id="@+id/tv_resource_position" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_options" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_option1" android:background="#65a5e5" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_option2" android:background="#fa372d" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_option3" android:background="@color/color_commen_stick" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="70dp" android:layout_alignParentBottom="true"/>
+</com.fanzhou.widget.ViewSwipeListItem>

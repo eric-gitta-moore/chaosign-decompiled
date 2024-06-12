@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.study.contacts.widget.TabView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/contacts_tab_text" android:gravity="center" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent"/>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fanzhou="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="55dp">
+        <ImageView android:id="@+id/opds_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/other_opds_icon" android:contentDescription="@string/booksource"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textColor="@android:color/black" android:id="@+id/otherBookSourceTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/booksource" style="@style/Text_Title_16"/>
+            <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/add_opds" android:lines="2" style="@style/text_content_list_item"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0">
+            <Button android:gravity="center" android:id="@+id/btnEdite" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:clickable="false" android:layout_width="56dp" android:layout_height="28dp" android:text="@string/edit" style="@style/btn_stroke_black_default"/>
+            <Button android:id="@+id/btnAdd" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:clickable="false" android:layout_width="56dp" android:layout_height="28dp" android:layout_marginLeft="10dp" android:text="@string/add" style="@style/btn_stroke_black_default"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#48b9de" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ListView android:id="@+id/opdsLisbrary" android:paddingLeft="10dp" android:paddingRight="10dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:footerDividersEnabled="true" style="@style/List_View_Style"/>
+    <View android:background="@color/gray_b2b2b2" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+</LinearLayout>

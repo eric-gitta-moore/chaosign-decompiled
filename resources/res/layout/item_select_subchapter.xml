@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/llContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+        <CheckBox android:id="@+id/cb_checked" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:text="选中" android:singleLine="true" android:layout_toRightOf="@+id/cb_checked"/>
+    </RelativeLayout>
+    <View android:background="@color/gray_ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="50dp"/>
+</LinearLayout>

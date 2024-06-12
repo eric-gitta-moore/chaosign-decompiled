@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.note.widget.NoteItem xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/itemContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="-171dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/viewFront" android:background="@drawable/selector_list_note_item" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <CheckBox android:layout_gravity="center_vertical" android:id="@+id/cb_selected" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:button="@drawable/checkbox_group_member"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_centerVertical="true">
+                                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                                        <ImageView android:id="@+id/iv_img_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/icon_note"/>
+                                        <TextView android:textSize="9sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvTag" android:background="@drawable/bg_circular_bead_c7c7cb" android:visibility="gone" android:layout_width="30dp" android:layout_height="13dp" android:layout_marginRight="5dp" android:text="未同步"/>
+                                        <TextView android:textSize="9sp" android:textColor="#a8a8a8" android:gravity="center" android:id="@+id/tvTagTop" android:background="@drawable/bg_circular_bead_cccccc" android:visibility="gone" android:layout_width="25dp" android:layout_height="13dp" android:layout_marginRight="5dp" android:text="@string/note_top"/>
+                                    </LinearLayout>
+                                    <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvTitle" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/vTag"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="13sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:maxLines="2" android:lineSpacingExtra="5dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/iv_note_img" android:visibility="gone" android:layout_width="84dp" android:layout_height="84dp" android:layout_marginLeft="13dp" android:layout_marginTop="13dp" android:layout_marginBottom="13dp" android:scaleType="centerCrop"/>
+                    </LinearLayout>
+                    <com.chaoxing.mobile.attachment.view.AttachmentViewLayout android:id="@+id/view_forward_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/vg_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp">
+                    <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvUpdateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_buttom_rlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <RelativeLayout android:id="@+id/rlPraise" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/ivPraise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_do_praise" android:layout_centerVertical="true"/>
+                            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvPraise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="114" android:layout_toRightOf="@+id/ivPraise" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rlReply" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/ivReply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_reply" android:layout_centerVertical="true"/>
+                            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvReply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="50" android:layout_toRightOf="@+id/ivReply" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rlReadcount" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/ivReadcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_reader_count" android:layout_centerVertical="true"/>
+                            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_read_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="0" android:layout_toRightOf="@+id/ivReadcount" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="#0099ff" android:ellipsize="end" android:gravity="center" android:id="@+id/tvNoteBook" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp" android:maxWidth="70dp" android:singleLine="true"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvShare" android:background="#ff7e00" android:visibility="gone" android:layout_width="70dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/note_sharing_notes"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvStick" android:background="@color/color_commen_stick" android:layout_width="70dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/note_top"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvEdit" android:background="@color/color_note_move" android:visibility="visible" android:layout_width="50dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/bookCollections_Move"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvDelete" android:background="@color/color_commen_del" android:layout_width="50dp" android:layout_height="match_parent" android:minHeight="48dp" android:text="@string/gTimeline_Delete"/>
+    </LinearLayout>
+    <View android:id="@+id/line1" android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_marginBottom="1px"/>
+</com.chaoxing.mobile.note.widget.NoteItem>

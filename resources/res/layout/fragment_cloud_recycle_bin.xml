@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.chaoxing.mobile.study.home.mainpage2.widget.MainSwipeRecyclerView android:id="@+id/rv_cloud" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar"/>
+    <include android:id="@+id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar" layout="@layout/page_loading_circle"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="17sp" android:textColor="@color/color_cccccc" android:gravity="center" android:id="@+id/empty_tips" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cloud_recycle_empty_tip" android:layout_below="@+id/toolbar"/>
+</RelativeLayout>

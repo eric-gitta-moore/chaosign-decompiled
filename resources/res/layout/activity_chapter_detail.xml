@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/reviewTipsView" android:background="#e676c5f9" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/titleBar">
+        <TextView android:textSize="13sp" android:textColor="#ffffff" android:id="@+id/tv_review" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_knowledge_chapter" android:layout_toLeftOf="@+id/icon_close" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/icon_close" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/live_more_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_chapter_paper" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="18sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/tv_chapter_name" android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingRight="15dp" android:paddingBottom="4dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:importantForAccessibility="yes"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_edit_time" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_edit_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="17dp">
+                    <TextView android:textSize="14sp" android:textColor="#0368cd" android:id="@+id/tv_edit" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="14sp" android:textColor="#0368cd" android:id="@+id/tv_delete" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_edit"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <com.chaoxing.fanya.aphone.ui.chapter.detail.ui.ChapterTabLayout android:id="@+id/tb_chapter" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="43dp" android:importantForAccessibility="yes" app:tabIndicatorColor="@color/chaoxing_blue" app:tabIndicatorHeight="1dp" app:tabMode="1" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/chaoxing_blue" app:tabTextColor="#333333"/>
+            <com.chaoxing.fanya.aphone.ui.chapter.detail.ui.ChapterViewPager android:id="@+id/vp_chapter" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="0dp" android:flipInterval="30" android:layout_weight="1" android:importantForAccessibility="no"/>
+        </LinearLayout>
+        <include android:id="@+id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle_bg_white"/>
+        <com.chaoxing.study.screencast.view.ScreenCastController android:id="@+id/screen_control" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

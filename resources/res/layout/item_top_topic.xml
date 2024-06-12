@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlContentBody" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlImageRoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="10sp" android:textColor="#0099ff" android:id="@+id/tvTag" android:background="@drawable/bg_circular_bead_ff0099ff_2" android:paddingLeft="4dp" android:paddingTop="1dp" android:paddingRight="4dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_top"/>
+            <ImageView android:id="@+id/ivMissionHeader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="最新设计稿最新设计稿最新设计稿最新设计稿最新设计稿" android:singleLine="true" android:layout_toRightOf="@+id/rlImageRoom" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/tvNotReadTag" android:background="@drawable/circle_bg_red" android:visibility="gone" android:layout_width="9dp" android:layout_height="9dp" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/tvTitle" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/viewCover" android:background="#33000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/rlContentBody" android:layout_alignBottom="@+id/rlContentBody"/>
+    <View android:id="@+id/viewLine" android:background="#ffd9d9d9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignBottom="@+id/rlContentBody"/>
+</RelativeLayout>

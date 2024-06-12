@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_listview"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_selected_standard" android:background="@android:color/white" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:layout_gravity="center" android:id="@+id/cb_selected_standard" android:background="@drawable/group_type" android:focusable="true" android:clickable="true" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:button="@null"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_standardmode"/>
+                <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/notice_setting_model_default_info"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_selected_conversation" android:background="@android:color/white" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:layout_gravity="center" android:id="@+id/cb_selected_conversation" android:background="@drawable/group_type" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:button="@null"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_sessionmode"/>
+                <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:id="@+id/tv_conversation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/notice_setting_model_conversation_info"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

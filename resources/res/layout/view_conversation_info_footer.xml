@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f5f6f8" android:paddingBottom="1px" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/v_member_more" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_down" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <include android:id="@+id/vLoadFooter" layout="@layout/listview_footer_common"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlDismissGroup" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingBottom="30dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btnDismissGroup" android:background="@drawable/bg_btn_dismiss_group" android:layout_width="match_parent" android:layout_height="40dp" android:text="解散群聊"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlQuitGroup" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="30dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btnQuitGroup" android:background="@drawable/bg_btn_quit_group" android:layout_width="match_parent" android:layout_height="40dp" android:text="退出"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

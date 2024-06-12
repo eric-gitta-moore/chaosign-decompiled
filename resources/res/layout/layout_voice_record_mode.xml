@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#80999999" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/rl_send_both" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:id="@+id/iv_send_both" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_icon_selected" android:layout_centerVertical="true" android:layout_toEndOf="@+id/btn_send_both"/>
+            <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/btn_send_both" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_input_send_both" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/rl_send_voice" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:id="@+id/iv_send_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_icon_selected" android:layout_centerVertical="true" android:layout_toEndOf="@+id/btn_send_voice"/>
+            <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/btn_send_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_input_send_voice" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/rl_send_text" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:id="@+id/iv_send_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_icon_selected" android:layout_centerVertical="true" android:layout_toEndOf="@+id/btn_send_text"/>
+            <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/btn_send_text" android:layout_width="wrap_content" android:layout_height="56dp" android:text="@string/voice_input_send_text" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <View android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/btn_cancel" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/cancel"/>
+    </LinearLayout>
+</RelativeLayout>

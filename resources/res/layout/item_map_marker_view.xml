@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/icon_wifi_location_marker" android:layout_width="30dp" android:layout_height="45dp">
+    <com.chaoxing.mobile.widget.roundedimageview.RoundedImageView android:id="@+id/userHeaderIv" android:layout_width="23dp" android:layout_height="23dp" android:layout_marginTop="4dp" android:layout_marginBottom="19dp" android:layout_centerHorizontal="true" app:riv_oval="true"/>
+</RelativeLayout>

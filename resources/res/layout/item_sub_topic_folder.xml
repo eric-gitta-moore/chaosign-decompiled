@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.group.ui.TopicFolderListItem xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_topicfolder_move" android:background="@color/color_commen_move" android:visibility="gone" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/bookCollections_Move"/>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_edit" android:background="@color/color_commen_stick" android:visibility="gone" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/common_Edit"/>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_delete" android:background="@color/color_commen_del" android:visibility="gone" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/something_xuexitong_delete"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mainView" android:background="@drawable/selectable_item_background" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/cb_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+            <RelativeLayout android:id="@+id/content_view" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingRight="15dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/cb_selector" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@+id/rlHeaderRoom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_folder" android:background="@drawable/icon_topiclist_topicfolder" android:layout_width="30dp" android:layout_height="30dp" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <ImageView android:id="@+id/iv_red_tag" android:background="@drawable/shape_red_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-5dp" android:layout_alignTop="@+id/rlHeaderRoom" android:layout_alignRight="@+id/rlHeaderRoom"/>
+                <TextView android:textSize="12sp" android:textColor="#b3b3b3" android:gravity="center_vertical" android:id="@+id/tv_group_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="名字" android:maxLines="2" android:layout_toLeftOf="@+id/tv_group_count" android:layout_toRightOf="@+id/rlHeaderRoom" android:layout_centerVertical="true" style="@style/group_title_text"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@+id/line" android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="2px"/>
+    </LinearLayout>
+</com.chaoxing.mobile.group.ui.TopicFolderListItem>

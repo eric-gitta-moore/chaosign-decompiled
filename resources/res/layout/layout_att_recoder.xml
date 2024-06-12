@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/shape_line_blue_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+    <ImageView android:id="@+id/recoder_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/reminder_icon_live_end" android:layout_alignParentLeft="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/recoder_icon_iv" android:layout_centerVertical="true">
+        <TextView android:id="@+id/recoder_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4秒"/>
+        <TextView android:id="@+id/recoder_size_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="288.5kb"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/recoder_del_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/reminder_att_delete_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

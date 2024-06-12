@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16sp" android:textStyle="bold" android:textColor="@color/read_set_text_color" android:layout_gravity="left" android:id="@+id/note_list_tv_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_list" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/note_list_ll_list" android:background="@drawable/pdg_note_corner_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40dp" android:layout_alignParentBottom="true">
+                <View android:id="@+id/note_list_vertical_divider" android:background="@drawable/read_pdg_note_vertical_line_normal" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginLeft="-1px" android:layout_toRightOf="@+id/note_list_lv_users"/>
+                <ListView android:id="@+id/note_list_lv_users" android:visibility="gone" android:fadingEdge="none" android:layout_width="105dp" android:layout_height="match_parent" android:listSelector="@color/list_selector" android:cacheColorHint="#00000000" android:divider="@color/read_pdg_list_item_divider" android:dividerHeight="1px"/>
+                <ListView android:id="@+id/note_list_lv_list" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/list_selector" android:cacheColorHint="#00000000" android:divider="@color/read_pdg_list_item_divider" android:dividerHeight="1px" android:layout_weight="1" android:layout_toRightOf="@+id/note_list_lv_users"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/vNoNote" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_note" android:layout_centerInParent="true"/>
+                    <TextView android:textColor="#adb1b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="暂无标注"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px">
+                <Button android:textSize="16sp" android:textColor="#666666" android:id="@+id/btnMyNote" android:background="@drawable/note_list_switch_btn_bg_xml" android:padding="5dp" android:visibility="visible" android:layout_width="106dp" android:layout_height="40dp" android:text="@string/note_my_note"/>
+                <Button android:textSize="16sp" android:textColor="#666666" android:id="@+id/btnOthersNote" android:background="@drawable/note_list_switch_btn_bg_xml" android:padding="5dp" android:visibility="visible" android:layout_width="106dp" android:layout_height="40dp" android:layout_marginLeft="6dp" android:text="@string/note_others_shared_note"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginLeft="10dp">
+            <CheckBox android:textSize="16sp" android:textColor="#666666" android:id="@+id/cbShareMyNote" android:paddingLeft="0dp" android:layout_width="wrap_content" android:layout_height="38dp" android:button="@null" android:text="@string/note_share_my_note" android:drawableLeft="@drawable/note_list_checkbox_selector" android:drawablePadding="6dp"/>
+            <Button android:textSize="16sp" android:textColor="#0e6fe7" android:gravity="center" android:id="@+id/btn_view_hide_note" android:background="@drawable/border_blue" android:padding="5dp" android:layout_width="75dp" android:layout_height="30dp" android:text="@string/hide_note" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <Button android:textSize="16sp" android:textColor="#0e6fe7" android:gravity="center" android:id="@+id/btn_edit_note_list" android:background="@drawable/border_blue" android:padding="5dp" android:layout_width="60dp" android:layout_height="30dp" android:layout_marginRight="12dp" android:text="@string/note_edit" android:singleLine="true" android:layout_toLeftOf="@+id/btn_view_hide_note" android:layout_centerVertical="true"/>
+            <Button android:textSize="16sp" android:textColor="#0e6fe7" android:gravity="center" android:id="@+id/btn_note_refresh" android:background="@drawable/border_blue" android:padding="5dp" android:visibility="gone" android:layout_width="60dp" android:layout_height="30dp" android:text="@string/refresh" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

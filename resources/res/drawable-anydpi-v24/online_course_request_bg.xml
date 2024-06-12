@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="30dp" android:width="65dp" android:viewportWidth="65" android:viewportHeight="30">
+    <path android:fillColor="@drawable/res_0x7f0800a0_online_course_request_bg__0" android:pathData="M0,0H60.45C63.181,0 65.108,2.675 64.245,5.265L57.823,24.53C56.735,27.797 53.677,30 50.234,30H0L0,0Z"/>
+</vector>

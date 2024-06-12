@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fanzhou="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/viewTopline" android:background="#d9d9d9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="1dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="47dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/rl_icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="1dp" fanzhou:is_circle="false" fanzhou:x_radius="4dp" fanzhou:y_radius="4dp"/>
+            <com.fanzhou.widget.CircleImageView android:id="@+id/ga_avatar" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" android:layout_centerVertical="true" fanzhou:is_circle="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_name" android:paddingLeft="2dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="6dp" android:maxWidth="220dp" android:lines="1"/>
+        <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center_vertical" android:id="@+id/tvType" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="4dp"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:minWidth="7dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/icon_next" android:padding="8dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13dp" android:src="@drawable/icon_notebook_share_delete"/>
+    </LinearLayout>
+    <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="50dp" android:layout_marginBottom="1px"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topBar" layout="@layout/common_title_bar"/>
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rlBottom" android:layout_below="@+id/topBar"/>
+    <RelativeLayout android:id="@+id/rlBottom" android:background="#f9f9f9" android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingRight="12dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/btnAgree" android:background="@drawable/btn_blue_bg" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="42dp" android:text="@string/live_agree_btn" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

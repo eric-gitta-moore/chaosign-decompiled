@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="74dp">
+            <com.fanzhou.widget.CircleImageView android:layout_gravity="center_vertical" android:id="@+id/img_group" android:background="@drawable/default_creat_group" android:visibility="visible" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="18dp" ss:border_color="#999d9e" ss:border_width="1px" ss:is_circle="false" ss:x_radius="10px" ss:y_radius="10px"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@+id/groupName" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="18dp" android:text="产品经理"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/added_PersonGroup_member" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="@string/pcenter_message_my_Persongroup"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="（可选）"/>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/add_group_member" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="@string/pcenter_notes_group_addmember_organization"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="（可选）"/>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/added_group" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="@string/pcenter_notes_group_addmember_joingroup"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="（可选）"/>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/added_group_chatting" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="@string/pcenter_notes_group_addmember_MyGrouChat"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="（可选）"/>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/add_my_friend" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="@string/pcenter_notes_group_addmember_myfirends"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="（可选）"/>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/add_sys_group_member" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="@string/pcenter_notes_group_addmember_mobilecontact"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="（可选）"/>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/add_custom_group_member" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="@string/pcenter_notes_group_addmember_mycontacts"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="（可选）"/>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/add_my_attention" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="@string/pcenter_message_my_attention"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="（可选）"/>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/add_attention_my" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="@string/pcenter_message_attention_my"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="（可选）"/>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llAddByEmailOrPhoneContainer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="74dp">
+            <EditText android:textSize="16sp" android:textColor="@color/color_333333" android:textColorHint="#cccccc" android:id="@+id/add_name" android:background="@drawable/add_groupmember_bg" android:paddingLeft="6dp" android:visibility="gone" android:layout_width="96dp" android:layout_height="48dp" android:layout_marginLeft="12dp" android:hint="输入姓名" android:singleLine="true"/>
+            <EditText android:textSize="16sp" android:textColor="@color/color_333333" android:textColorHint="#cccccc" android:id="@+id/phone_or_email" android:background="@drawable/add_groupmember_bg" android:paddingLeft="6dp" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="12dp" android:hint="输入邮箱/手机号" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="13sp" android:textColor="#ff0099ff" android:gravity="center" android:id="@+id/tv_add" android:background="@drawable/blue_btn_border_top5_left7" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="12dp" android:text="确定"/>
+        </LinearLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/hasMember" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="#d9d9d9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:background="@color/transparent" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="45dp" android:text="已添加成员"/>
+            <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

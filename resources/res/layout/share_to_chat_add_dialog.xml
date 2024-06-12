@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#80333333" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/share_to_chat_dialog_bg" android:paddingTop="10dp" android:layout_width="300dp" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/normal_title_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:text="AAAAAAAAAAAAAA" android:lines="1" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+                        <TextView android:textSize="12sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="允许对方编辑"/>
+                        <com.kyleduo.switchbutton.SwitchButton android:layout_gravity="center_vertical" android:id="@+id/switch_button" android:clickable="true" android:layout_width="32dp" android:layout_height="20dp" android:layout_marginLeft="5dp" style="@style/WiFiSwitchButtonStyle"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.chaoxing.mobile.attachment.view.AttachmentViewLayout android:id="@+id/viewAtt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp"/>
+                    <ImageView android:id="@+id/ivMore" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:src="@drawable/ic_share_chat_more" android:layout_alignBottom="@+id/viewAtt" android:layout_alignEnd="@+id/viewAtt"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+                    <TextView android:textSize="15sp" android:textColor="#999999" android:ellipsize="end" android:layout_gravity="left" android:id="@+id/tv_text_context" android:background="#f4f5f6" android:paddingTop="11.5dp" android:paddingBottom="11.5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.5dp" android:layout_marginBottom="15dp" android:maxLines="2" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                    <ImageView android:id="@+id/ivMoreText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_share_chat_more" android:layout_alignBottom="@+id/tv_text_context" android:layout_alignEnd="@+id/tv_text_context"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.fanzhou.widget.CircleImageView android:id="@+id/circleView" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:scaleType="fitXY" android:contentDescription="@null" ss:border_color="#999d9e" ss:border_width="0px" ss:is_circle="false" ss:x_radius="4dp" ss:y_radius="4dp"/>
+                    <ImageView android:id="@+id/ivMoreImg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_share_chat_more" android:layout_alignBottom="@+id/circleView" android:layout_alignEnd="@+id/circleView"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+                    <RelativeLayout android:background="@drawable/customer_dialog_addview_editext_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1">
+                        <EditText android:textSize="15sp" android:textColor="#333333" android:textColorHint="#cccccc" android:gravity="center_vertical" android:id="@+id/etText" android:background="#f4f5f6" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/pcenter_contents_message" android:maxLines="2" android:layout_marginStart="6dp" android:layout_marginEnd="6dp" android:layout_toStartOf="@+id/ivFace"/>
+                        <ImageView android:id="@+id/ivFace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_share_chat_face" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                    <ImageView android:id="@+id/ivAddImg" android:background="@drawable/customer_dialog_addview_editext_bg" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="5dp" android:src="@drawable/ic_share_chat_add" android:scaleType="centerInside" android:layout_weight="0"/>
+                </LinearLayout>
+                <HorizontalScrollView android:id="@+id/hsvImg" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="15dp" android:layout_marginRight="16dp">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/llimgs" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </HorizontalScrollView>
+                <View android:background="@color/app_line_bg" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="25dp"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                    <Button android:textSize="15sp" android:textColor="@color/normal_blue" android:gravity="center" android:id="@+id/btnCancel" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1"/>
+                    <View android:id="@+id/vDividerLine" android:background="@color/app_line_bg" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+                    <Button android:textSize="15sp" android:textColor="@color/normal_blue" android:gravity="center" android:id="@+id/btnNeutral" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1"/>
+                    <View android:id="@+id/vDividerLine1" android:background="@color/app_line_bg" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+                    <Button android:textSize="15sp" android:textColor="@color/normal_blue" android:gravity="center" android:id="@+id/btnOk" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/yes" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/faceContainer" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

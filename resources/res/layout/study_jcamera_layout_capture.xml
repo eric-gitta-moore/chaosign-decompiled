@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="#fff" android:gravity="center_horizontal" android:id="@+id/tvTag" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="轻触拍照，按住录像"/>
+    <RelativeLayout android:id="@+id/rl_capture" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tvTag">
+        <RelativeLayout android:id="@+id/rlCancel" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="65dp" android:layout_toLeftOf="@+id/btnSure" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/btnCancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/study_jcamera_icon_camera_cancle_default"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/btnBack" android:background="@drawable/study_jcamera_icon_camera_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_centerVertical="true"/>
+        <com.chaoxing.camera.CaptureButton android:id="@+id/captureBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <RelativeLayout android:id="@+id/rlEdit" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65dp" android:layout_toRightOf="@+id/btnSure" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/btnEdit" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/study_jcamera_img_camera_edit"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/btnSure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/study_jcamera_icon_camera_sure" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/record_mode_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_capture">
+        <com.chaoxing.camera.view.ScrollerSelectIndication android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Space android:layout_width="250dp" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/record_multiple_picture" android:layout_width="80dp" android:layout_height="wrap_content" android:text="@string/study_jcamera_multiple_picture"/>
+                <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/record_mode_take_picture" android:layout_width="80dp" android:layout_height="wrap_content" android:text="@string/study_jcamera_take_picture"/>
+                <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/record_mode_video_recorde" android:layout_width="80dp" android:layout_height="wrap_content" android:text="@string/study_jcamera_video_recorde"/>
+                <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/record_mode_capture_ocr" android:layout_width="80dp" android:layout_height="wrap_content" android:text="@string/study_jcamera_capture_ocr"/>
+                <Space android:layout_width="250dp" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.chaoxing.camera.view.ScrollerSelectIndication>
+        <View android:background="@drawable/indicator" android:layout_width="18dp" android:layout_height="3dp" android:layout_marginTop="4dp" android:layout_below="@+id/indicator" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

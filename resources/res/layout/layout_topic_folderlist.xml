@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llTopicList" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/line" android:background="#ffd9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignBottom="@+id/llTopicList"/>
+</RelativeLayout>

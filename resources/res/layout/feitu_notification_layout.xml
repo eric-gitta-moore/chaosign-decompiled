@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="80dp">
+    <ImageView android:id="@+id/notify_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:src="@drawable/ic_launcher" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@+id/notify_img" android:layout_centerVertical="true">
+        <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/notify_mirror_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未投屏"/>
+        <TextView android:textSize="14sp" android:textColor="#888888" android:id="@+id/notify_dev_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LG-123"/>
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_switch" android:layout_width="80dp" android:layout_height="28dp" android:layout_marginRight="28dp" android:src="@mipmap/switch_off" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

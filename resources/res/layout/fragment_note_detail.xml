@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <View android:id="@+id/placeholder_note_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <androidx.core.widget.ContentLoadingProgressBar android:id="@+id/pb_loading" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true" style="@style/ProgressBar"/>
+    </RelativeLayout>
+</RelativeLayout>

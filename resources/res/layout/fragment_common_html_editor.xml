@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.libhtmleditor.widget.RecordBarView android:id="@+id/rl_recordheader" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="35dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_recordheader">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/rl_web" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <com.chaoxing.libhtmleditor.widget.EditorWebView android:id="@+id/wv_editor" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <com.chaoxing.record.view.RecordRecognizeView android:id="@+id/ll_sign" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                <View android:id="@+id/view_cover" android:background="#80999999" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <FrameLayout android:id="@+id/fl_footer" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvUploading" android:background="@drawable/loading_bg" android:paddingLeft="30dp" android:paddingTop="16dp" android:paddingRight="30dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录音上传中....." android:layout_centerInParent="true"/>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvImageDownloading" android:background="@drawable/loading_bg" android:paddingLeft="30dp" android:paddingTop="16dp" android:paddingRight="30dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在下载图片,请稍等..." android:layout_centerInParent="true"/>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/contentLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/titleGroup" android:background="@drawable/time_picker_radiobutton_underline_gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:checkedButton="@+id/dateButton">
+            <RadioButton android:gravity="center" android:id="@+id/dateButton" android:background="@drawable/time_picker_selector_background_underline" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:button="@null" android:text="1900年12月30日" android:layout_weight="1"/>
+            <View android:background="#ff464646" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+            <RadioButton android:gravity="center" android:id="@+id/timeButton" android:background="@drawable/time_picker_selector_background_underline" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:button="@null" android:text="12时12分" android:layout_weight="1"/>
+        </RadioGroup>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/contentViewPager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/titleGroup"/>
+        <View android:id="@+id/buttonHorizontalDivider" android:background="#ff464646" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/contentViewPager"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/buttonGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/buttonHorizontalDivider">
+            <Button android:id="@+id/cancelButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+            <View android:id="@+id/buttonVerticalDivider" android:background="#ff464646" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+            <Button android:id="@+id/okButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@android:string/ok" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

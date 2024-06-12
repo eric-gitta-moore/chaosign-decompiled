@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/titleBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_item_title" android:ellipsize="middle" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="108dp" android:layout_marginRight="108dp" android:singleLine="true" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+    <Button android:id="@+id/btnBack" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/navigation_img_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <Button android:id="@+id/btnCloseWb" android:background="@android:color/transparent" android:paddingLeft="2dp" android:paddingRight="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:drawableLeft="@mipmap/cx_ic_navigation_close_24dp" android:layout_toRightOf="@+id/btnBack" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/btnOperLeft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivOperLeft" android:layout_width="32dp" android:layout_height="32dp" android:scaleType="fitCenter"/>
+            <TextView android:textSize="16sp" android:textColor="@color/bg_blue" android:layout_gravity="center_vertical" android:id="@+id/tvOperLeft" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/btnOper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivOper" android:layout_width="32dp" android:layout_height="32dp" android:scaleType="fitCenter"/>
+            <TextView android:textSize="16sp" android:textColor="@color/bg_blue" android:layout_gravity="center_vertical" android:id="@+id/tvOper" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/ibtnWebHome" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ibtn_web_home" android:scaleType="centerInside"/>
+        <ImageView android:id="@+id/btnDone" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/navigation_img_done" android:scaleType="centerInside"/>
+    </LinearLayout>
+</RelativeLayout>

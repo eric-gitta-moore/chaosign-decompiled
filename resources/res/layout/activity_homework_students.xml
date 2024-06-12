@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <Button android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="48dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/btnRight" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:text="@string/pcenter_contents_sendNotice" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rg_head" android:visibility="visible" android:layout_width="260dp" android:layout_height="30dp" android:layout_centerInParent="true">
+            <RadioButton android:textSize="16sp" android:textColor="@color/notify_tab_text_color" android:gravity="center" android:id="@+id/rb_notice_tab_left" android:background="@drawable/notify_tab_left" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@null" android:layout_weight="1"/>
+            <RadioButton android:textSize="16sp" android:textColor="@color/notify_tab_text_color" android:gravity="center" android:id="@+id/rb_notice_tab_right" android:background="@drawable/notify_tab_right" android:layout_width="0dp" android:layout_height="match_parent" android:button="@null" android:layout_weight="1"/>
+        </RadioGroup>
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="30"/>
+</LinearLayout>

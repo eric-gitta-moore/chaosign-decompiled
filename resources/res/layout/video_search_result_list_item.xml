@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ivSearchRstCover" android:background="@drawable/video_loading_cover" android:layout_width="107dp" android:layout_height="66dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_toRightOf="@+id/ivSearchRstCover" android:layout_alignTop="@+id/ivSearchRstCover" android:layout_centerVertical="true">
+        <TextView android:id="@+id/tvSearchRstTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="钓鱼岛是中国的" android:maxLines="2" style="@style/Text_Title_16"/>
+        <TextView android:id="@+id/tvSearchRstAuthor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="王赛广" android:singleLine="true" style="@style/Text_Content_14"/>
+    </LinearLayout>
+</RelativeLayout>

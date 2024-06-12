@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.note.widget.DynamicListTitleBar android:gravity="center_vertical" android:id="@+id/viewTitleBar" android:layout_width="match_parent" android:layout_height="48dp"/>
+    <RelativeLayout android:id="@+id/rlPersonnalNote" android:background="#cbdff4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/viewToolbar">
+        <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/tvPersonnalNote" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/vgFloat" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <com.scwang.smart.refresh.header.CxClassicsHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlDrawableArrow="@drawable/icon_refresh" app:srlDrawableArrowSize="18dp" app:srlDrawableMarginRight="8dp" app:srlDrawableProgressSize="18dp" app:srlEnableLastTime="false" app:srlFinishDuration="100" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="13sp" app:srlTextTimeMarginTop="2dp"/>
+                <com.yanzhenjie.recyclerview.DynamicSwipeRecyclerView android:id="@+id/listView" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:footerDividersEnabled="false"/>
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+            <include android:id="@+id/edit_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" layout="@layout/note_batch_edit_bottom_bar"/>
+        </LinearLayout>
+        <View android:id="@+id/viewCover" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+        <LinearLayout android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/viewReload2" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="#ffb3b3b3" android:gravity="center" android:id="@+id/tvNoDataTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <TextView android:textSize="17sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/ivRec" android:background="@drawable/log_dec_bg" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="17dp" android:layout_marginBottom="150dp" android:text="语音\10加分" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/ivBackTop" android:paddingBottom="75dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@drawable/img_to_top" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

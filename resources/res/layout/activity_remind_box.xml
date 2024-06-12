@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/mainGrey" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/box_head" layout="@layout/layout_reminder_box_actionbar"/>
+    <TextView android:id="@+id/divider_line" android:background="@color/dividerLine" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/box_head"/>
+    <RelativeLayout android:id="@+id/reminder_search" android:background="@color/dateZoneBG" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/divider_line">
+        <RelativeLayout android:background="@drawable/shape_line_white_bg" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginLeft="14dp" android:layout_marginTop="11dp" android:layout_marginRight="14dp" android:layout_marginBottom="5dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@mipmap/reminder_icon_search" android:layout_centerVertical="true"/>
+                <TextView android:textColor="#b9b9b9" android:gravity="center" android:id="@+id/box_search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remind_reminders" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/box_lv_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/reminder_search">
+        <ListView android:id="@+id/remind_box_lv" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+    </LinearLayout>
+    <TextView android:textSize="20sp" android:id="@+id/no_remind" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remind_no_event" android:layout_centerInParent="true"/>
+</RelativeLayout>

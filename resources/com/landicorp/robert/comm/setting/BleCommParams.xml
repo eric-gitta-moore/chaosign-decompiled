@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+    <ble class="com.landicorp.robert.comm.setting.BleCommParam">
+  		<phone model="Redmi Note 2">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">6</ConnectOutTime>
+            <ConnectNum type="int">5</ConnectNum>            
+    	</phone>
+	    <phone model="Redmi Note 3">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone model="Mi-4c">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">6</ConnectOutTime>
+            <ConnectNum type="int">5</ConnectNum>
+	    </phone>
+	    <phone model="SM-G9300">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">6</ConnectOutTime>
+            <ConnectNum type="int">5</ConnectNum>
+	    </phone>
+	    <phone model="SM-P600">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">6</ConnectOutTime>
+            <ConnectNum type="int">5</ConnectNum>
+	    </phone>
+	    <phone model="XT1570">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">6</ConnectOutTime>
+            <ConnectNum type="int">5</ConnectNum>
+	    </phone>
+	    <phone manufacturer="HUAWEI" model="ALE-UL00">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="Xiaomi" model="Redmi 3S">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone model="MI MAX">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="samsung" model="GT-I9158P">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="Xiaomi" model="MI PAD">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone model="HTC D826t">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="asus" model="ASUS K00S">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="Xiaomi" model="MI 3">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="OPPO" model="R7c">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="OPPO" model="R2017">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="Xiaomi" model="HM 1S">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="Letv" model="X900+">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">6</ConnectOutTime>
+            <ConnectNum type="int">5</ConnectNum>
+	    </phone>
+	    <phone model="ONE A2001">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">6</ConnectOutTime>
+            <ConnectNum type="int">5</ConnectNum>
+	    </phone>
+	    <phone manufacturer="samsung" model="SM-G3518">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone model="APOS A8">
+            <Mtu type="int">20</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="Letv" model="X800">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="vivo" model="vivo X9">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="OPPO" model="OPPO R9s">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="Meizu" model="M5 Note">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>
+	    <phone manufacturer="nubia" model="NX569J">
+            <Mtu type="int">0</Mtu>
+            <ConnectOutTime type="int">30</ConnectOutTime>
+            <ConnectNum type="int">3</ConnectNum>
+	    </phone>	    
+	</ble>
+</params>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llo_bottom" android:background="@drawable/bottom_toolbar_bg" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/select_all" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/public_select_all" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_cc_publisher" android:gravity="center" android:id="@+id/download" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/download_4opencourse" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/download_listview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/llo_bottom" android:layout_below="@+id/title_bar"/>
+    <TextView android:textSize="16sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cc_no_chapter_data" android:layout_below="@+id/title_bar"/>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

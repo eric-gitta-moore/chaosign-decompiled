@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:id="@+id/parent" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topBar" layout="@layout/activity_top_bar"/>
+    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_weight="1" android:layout_below="@+id/topBar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/InfoLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp">
+                <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/account" style="@style/Text_Title"/>
+                    <RelativeLayout android:id="@+id/rlAvatar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:contentDescription="@null" ss:border_color="@color/avatar_border" ss:border_width="1dp" ss:is_circle="false" ss:x_radius="4dp" ss:y_radius="4dp"/>
+                        <ProgressBar android:id="@+id/pbAvatar" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:layout_centerInParent="true"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/tvAvatarProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tvSchool" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Text_Title"/>
+                        <TextView android:id="@+id/tvAccount" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tap_to_login" style="@style/text_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/ic_rect_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_base_info" android:layout_centerVertical="true" style="@style/Text_Title"/>
+                    <Button android:id="@+id/btnUserSubmit" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/btn_stroke_blue_default"/>
+                    <Button android:id="@+id/btnUserCancel" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/cancel" android:layout_toLeftOf="@+id/btnUserSubmit" android:layout_centerVertical="true" style="@style/btn_stroke_black_default"/>
+                    <Button android:id="@+id/btnEdit" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/btn_stroke_blue_default"/>
+                </RelativeLayout>
+                <ImageView android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="1px" android:contentDescription="@null"/>
+                <include android:id="@+id/infoName" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/setting_info"/>
+                <ImageView android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="1px" android:contentDescription="@null"/>
+                <include android:id="@+id/infoSchool" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/setting_info"/>
+                <ImageView android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="1px" android:contentDescription="@null"/>
+                <include android:id="@+id/infoPhone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/setting_info"/>
+                <ImageView android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="1px" android:contentDescription="@null"/>
+                <include android:id="@+id/infoEmail" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/setting_info"/>
+            </LinearLayout>
+            <Button android:gravity="center" android:id="@+id/btnLogout" android:background="@drawable/sl_bg_logout" android:layout_width="match_parent" android:layout_height="44dp" android:layout_margin="10dp" android:text="@string/logout_acount" style="@style/Text_White_18"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:visibility="gone" layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

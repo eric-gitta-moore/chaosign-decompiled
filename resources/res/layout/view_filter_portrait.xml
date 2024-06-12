@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.core.widget.HorizontalListView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/filter_listview" android:layout_width="wrap_content" android:layout_height="135dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:dividerWidth="4dp"/>

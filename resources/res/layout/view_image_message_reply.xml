@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.chat.widget.ImageMessageReplyView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/v_image_message_reply" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <pl.droidsonroids.gif.GifImageView android:id="@+id/iv_image_message" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="122dp" android:maxHeight="122dp" android:minWidth="50dp" android:minHeight="50dp"/>
+    <TextView android:id="@+id/iv_cover" android:background="@drawable/chat_im_att_bg_normal" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignLeft="@+id/iv_image_message" android:layout_alignTop="@+id/iv_image_message" android:layout_alignRight="@+id/iv_image_message" android:layout_alignBottom="@+id/iv_image_message"/>
+    <ImageView android:id="@+id/iv_gif_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_gif" android:layout_alignRight="@+id/iv_image_message" android:layout_alignBottom="@+id/iv_image_message"/>
+    <ImageView android:id="@+id/iv_gif_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_chat_image_download" android:layout_centerInParent="true"/>
+    <ProgressBar android:id="@+id/pb_gif_download" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge"/>
+</com.chaoxing.mobile.chat.widget.ImageMessageReplyView>

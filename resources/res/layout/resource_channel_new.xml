@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlAll" android:background="@drawable/select_school_search_bar_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlTitle" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/academic_resources" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+        <LinearLayout android:id="@+id/llNavigation" android:background="@drawable/blue_btn_border_5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="#ff0099ff" android:id="@+id/tvNavigation" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="导航"/>
+        </LinearLayout>
+        <Button android:textSize="16sp" android:textColor="@color/back_text_color" android:id="@+id/btnBack" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/navigation_img_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.fanzhou.scholarship.widget.SelectBar android:id="@+id/selectBar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/rlTitle"/>
+    <View android:id="@+id/xt_1" android:background="#cfcfcf" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/selectBar"/>
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/rlSearch" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/xt_1">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_corners_search" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/llSearch">
+            <ImageView android:id="@+id/ivSearch" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginLeft="10dp" android:src="@drawable/iv_search_bg" android:scaleType="centerInside"/>
+            <ImageView android:layout_gravity="center" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="32dp" android:layout_height="42dp" android:src="@drawable/icon_group_search" android:scaleType="centerInside"/>
+            <EditText android:textSize="16sp" android:textColor="#666666" android:id="@+id/etSearch" android:background="@null" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="搜索"/>
+            <ImageView android:id="@+id/ivSpeak" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="32dp" android:layout_height="42dp" android:src="@drawable/icon_speak" android:scaleType="centerInside"/>
+            <EditText android:textSize="15sp" android:textColorHint="@color/text_hint" android:background="@android:color/white" android:paddingLeft="7dp" android:focusable="false" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/please_input_book_keyword" android:singleLine="true" android:layout_weight="1" android:inputType="text"/>
+            <ImageView android:id="@+id/ivDelete" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="10dp" android:src="@drawable/clear"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/llSearch" android:background="@drawable/light_blue_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <TextView android:id="@+id/tvSearch" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="检  索" style="@style/Text_White_18"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/xt_2" android:background="#cfcfcf" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/rlSearch"/>
+    <com.fanzhou.widget.GestureRelativeLayout android:id="@+id/grlContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/xt_2">
+        <ListView android:id="@+id/lvContent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/List_View_Style"/>
+        <com.fanzhou.scholarship.widget.KeywordsFlow android:id="@+id/keywordFlow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.fanzhou.widget.GestureRelativeLayout>
+    <include layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

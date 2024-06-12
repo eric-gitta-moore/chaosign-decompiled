@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/authority_sub_shadow_group_check" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="40dp">
+    <ImageView android:id="@+id/iv_iconview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_individualtopic_tx" android:layout_centerVertical="true"/>
+    <TextView android:textSize="13sp" android:textColor="#feb74c" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:text="@string/please_check_topics_reviewed" android:singleLine="false" android:drawablePadding="9dp" android:layout_toRightOf="@+id/iv_iconview" android:layout_centerVertical="true"/>
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/tvRiskWarItemClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/icon_topic_check_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

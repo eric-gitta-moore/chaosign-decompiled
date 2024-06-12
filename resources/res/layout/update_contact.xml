@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16dp" android:textColor="@color/white" android:ellipsize="middle" android:gravity="center" android:id="@+id/tvLoading" android:background="@drawable/loading_bg_radius10" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载中，请稍后..."/>
+</LinearLayout>

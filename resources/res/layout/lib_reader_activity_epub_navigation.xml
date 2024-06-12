@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/place_holder_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp" android:weightSum="3">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/tab_catalog" android:paddingTop="12dp" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?android:attr/selectableItemBackground" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textColor="@color/lib_reader_navigation_tab_selected" android:gravity="center" android:id="@+id/tv_catalog" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/lib_reader_outline" android:drawableBottom="@drawable/lib_reader_navigation_tab_selected" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/tab_bookmark" android:paddingTop="12dp" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?android:attr/selectableItemBackground" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textColor="@color/lib_reader_navigation_tab" android:gravity="center" android:id="@+id/tv_bookmark" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/lib_reader_bookmark" android:drawableBottom="@drawable/lib_reader_navigation_tab_normal" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/tab_booknote" android:paddingTop="12dp" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?android:attr/selectableItemBackground" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textColor="@color/lib_reader_navigation_tab" android:gravity="center" android:id="@+id/tv_booknote" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/lib_reader_dash" android:drawableBottom="@drawable/lib_reader_navigation_tab_normal" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#33999999" android:layout_width="match_parent" android:layout_height="1px"/>
+        <ViewFlipper android:id="@+id/navi_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</merge>

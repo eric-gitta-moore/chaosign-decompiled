@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="35dp">
+        <TextView android:textSize="15sp" android:gravity="center_vertical" android:id="@+id/dateTv" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:gravity="center_vertical" android:id="@+id/countTv" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <include layout="@layout/view_divider"/>
+    <com.chaoxing.mobile.office.widget.ASErrorLayout android:gravity="center" android:id="@+id/errorLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

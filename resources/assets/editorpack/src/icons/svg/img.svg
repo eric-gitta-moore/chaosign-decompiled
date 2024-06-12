@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>图片 1.2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="图片-1.2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组" transform="translate(2.000000, 3.000000)">
+            <path d="M13,8.64419342 L11.0893541,6.31235375 C10.7552504,5.90352403 10.0885827,5.8950475 9.74058369,6.29266916 L7.00002887,9.42951515 L4.91684616,8.15785893 C4.62433222,7.97881199 4.23942013,7.98864548 3.95764524,8.18180822 L1,10.2147488 C1,10.648431 1.35156895,11 1.78525124,11 L12,11 C12.5522847,11 13,10.5522847 13,10 L13,8.64419342 L13,8.64419342 Z" id="Fill-1" fill="#474C59"></path>
+            <path d="M1.5,11.4 L12.5,11.4 C12.9970563,11.4 13.4,10.9970563 13.4,10.5 L13.4,1.5 C13.4,1.00294373 12.9970563,0.6 12.5,0.6 L1.5,0.6 C1.00294373,0.6 0.6,1.00294373 0.6,1.5 L0.6,10.5 C0.6,10.9970563 1.00294373,11.4 1.5,11.4 Z" id="路径" stroke="#474C59" stroke-width="1.2"></path>
+            <circle id="椭圆形" fill="#474C59" fill-rule="nonzero" cx="4.3" cy="4.5" r="1.5"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="252dp">
+        <RelativeLayout android:id="@+id/rlContainer" android:background="#f5f6f8" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/btnCancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_cancle" android:layout_centerVertical="true"/>
+            <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/btnSure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sure" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_topic_dicuss_time_title" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_below="@+id/rlContainer">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.chaoxing.pickerview.lib.WheelView android:id="@+id/wvDay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.chaoxing.pickerview.lib.WheelView android:id="@+id/wvHour" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+                    <TextView android:textSize="20sp" android:textColor="#0099ff" android:id="@+id/tvHourCoverView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="- -" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.chaoxing.pickerview.lib.WheelView android:id="@+id/wvMin" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+                    <TextView android:textSize="20sp" android:textColor="#0099ff" android:id="@+id/tvMinCoverView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="- -" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:background="@drawable/cover_view_class_manage_score_top" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3"/>
+                <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <View android:background="@drawable/cover_view_class_manage_score_bottom" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

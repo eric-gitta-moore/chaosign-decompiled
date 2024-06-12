@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dslv="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewToolbar" layout="@layout/common_title_bar_4"/>
+    <com.mobeta.android.dslv.DragSortListView android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3dp" android:divider="#00000000" android:dividerHeight="0dp" dslv:collapsed_height="0dp" dslv:drag_enabled="true" dslv:drag_handle_id="@+id/itemContainer" dslv:drag_scroll_start="0.33" dslv:drag_start_mode="2" dslv:float_alpha="0.6" dslv:max_drag_scroll_speed="0.5" dslv:slide_shuffle_speed="0.3" dslv:track_drag_sort="false" dslv:use_default_controller="true"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/ic_rect_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/llBrightness" android:paddingLeft="15dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="60dp">
+        <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:layout_gravity="center_vertical" android:id="@+id/tvBrightness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_brightness" android:layout_centerVertical="true"/>
+        <SeekBar android:id="@+id/sbBrightness" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:max="100" android:layout_toRightOf="@+id/tvBrightness" android:layout_centerVertical="true" style="@style/MySeekBar"/>
+    </RelativeLayout>
+    <include layout="@layout/settings_item_dividerline"/>
+    <RelativeLayout android:id="@+id/rlSelectStyle" android:paddingLeft="15dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="60dp">
+        <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/tvSelectStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_style" android:layout_centerVertical="true"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rgSelectStyle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/tvSelectStyle" android:layout_centerVertical="true">
+            <com.chaoxing.mobile.widget.RadioButtonCenter android:id="@+id/rbBlueStyle" android:background="@drawable/bg_blue_select_style" android:layout_width="24dp" android:layout_height="24dp"/>
+            <com.chaoxing.mobile.widget.RadioButtonCenter android:id="@+id/rbGreenStyle" android:background="@drawable/bg_green_select_style" android:layout_width="24dp" android:layout_height="24dp"/>
+            <com.chaoxing.mobile.widget.RadioButtonCenter android:id="@+id/rbYellowStyle" android:background="@drawable/bg_yellow_select_style" android:layout_width="24dp" android:layout_height="24dp"/>
+            <com.chaoxing.mobile.widget.RadioButtonCenter android:id="@+id/rbRedStyle" android:background="@drawable/bg_red_select_style" android:layout_width="24dp" android:layout_height="24dp"/>
+            <com.chaoxing.mobile.widget.RadioButtonCenter android:id="@+id/rbPurpleStyle" android:background="@drawable/bg_purple_select_style" android:layout_width="24dp" android:layout_height="24dp"/>
+            <com.chaoxing.mobile.widget.RadioButtonCenter android:id="@+id/rbPinkStyle" android:background="@drawable/bg_pink_select_style" android:layout_width="24dp" android:layout_height="24dp"/>
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

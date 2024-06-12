@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/content_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_add" android:layout_width="match_parent" android:layout_height="@dimen/dp_44">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_add" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="@dimen/dp_15" android:src="@drawable/icon_note_heji_add" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="16sp" android:textColor="#999999" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tvName" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="15dp" android:text="@string/note_heji_add" android:singleLine="true"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_44" android:layout_below="@+id/ll_add">
+        <TextView android:textSize="13sp" android:textColor="#b3b3b3" android:ellipsize="end" android:id="@+id/tvTip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提示: 左滑可以插入、删除" android:singleLine="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

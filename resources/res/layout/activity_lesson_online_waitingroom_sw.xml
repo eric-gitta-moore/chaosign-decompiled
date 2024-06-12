@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/layout_root" android:background="#ff292e33" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_top" android:background="#f225282e" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_title" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_back" android:padding="8dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@mipmap/cx_ic_navigation_arrow_back_24dp_white"/>
+                <TextView android:textColor="@color/white" android:id="@+id/tv_tile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_online_chaoxing_class" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <include android:id="@+id/waitingRoomView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_top" layout="@layout/activity_lesson_online_wating_room"/>
+    </RelativeLayout>
+</FrameLayout>

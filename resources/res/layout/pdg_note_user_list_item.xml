@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="16sp" android:textColor="@color/read_pdg_catalog_text_normal" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvNoteUsers" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/ivRightDivideLine" android:background="@drawable/read_pdg_note_vertical_line_normal" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

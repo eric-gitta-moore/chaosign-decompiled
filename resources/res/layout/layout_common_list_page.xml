@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.common.TitleBarView android:id="@+id/v_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.chaoxing.mobile.chat.widget.LoadListView android:id="@+id/v_load_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/v_title_bar"/>
+    <include android:id="@+id/view_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/v_title_bar" layout="@layout/page_loading_circle_bg_white"/>
+</RelativeLayout>

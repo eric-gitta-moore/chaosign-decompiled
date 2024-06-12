@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/lib_reader_dialog_bg" android:layout_width="280dp" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iconIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.5dp" android:src="@drawable/update_punch_icon" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="16sp" android:textColor="#666666" android:gravity="center_horizontal" android:id="@+id/tv_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26.5dp" android:layout_marginBottom="44dp" android:text="@string/confirm_update_wifi_punch" android:layout_below="@+id/iconIv" android:layout_centerHorizontal="true" android:lineSpacingExtra="10dp"/>
+    </RelativeLayout>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/tv_cancel" android:paddingLeft="9dp" android:paddingTop="15dp" android:paddingRight="9dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/lib_reader_cancel" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_divider" android:background="#ebebeb" android:layout_width="1px" android:layout_height="match_parent"/>
+        <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/tv_confirm" android:paddingLeft="9dp" android:paddingTop="15dp" android:paddingRight="9dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/lib_reader_confirm" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

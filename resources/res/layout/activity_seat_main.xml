@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toplbar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llSeatInfo" android:background="@drawable/bg_reserve_info" android:paddingTop="38dp" android:layout_width="match_parent" android:layout_height="213dp">
+            <TextView android:textSize="17sp" android:textColor="#000000" android:id="@+id/tvInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:text="@string/seatinfo" android:drawableLeft="@drawable/seat_info_tag" android:drawablePadding="9dp"/>
+            <TextView android:textSize="13sp" android:textColor="#333333" android:id="@+id/tvInfo1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="14dp" android:text="@string/time"/>
+            <TextView android:textSize="13sp" android:textColor="#333333" android:id="@+id/tvInfo2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="14dp" android:text="@string/address"/>
+            <TextView android:textSize="13sp" android:textColor="#333333" android:id="@+id/tvInfo3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="14dp" android:text="@string/seat"/>
+            <TextView android:textSize="13sp" android:textColor="#287cd3" android:id="@+id/tvTipInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="14dp" android:text="@string/seat_tipinfo"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llReserveSeat" android:layout_width="match_parent" android:layout_height="88dp" android:layout_marginTop="11dp" android:layout_below="@+id/llSeatInfo">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/llQuickSeat" android:background="@drawable/bg_circular_corner_10_white" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="17sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvQuickSeat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickseat" android:drawableLeft="@drawable/seat_quick" android:drawablePadding="18dp"/>
+            </LinearLayout>
+            <View android:background="#efeff4" android:layout_width="14dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/llAutoSeat" android:background="@drawable/bg_circular_corner_10_white" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="17sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvAutoSeat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autoseat" android:drawableLeft="@drawable/seat_auto" android:drawablePadding="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llReservehelp" android:layout_width="match_parent" android:layout_height="88dp" android:layout_marginTop="14dp" android:layout_below="@+id/llReserveSeat">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/llreserve" android:background="@drawable/bg_circular_corner_10_white" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="17sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvMyReserve" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/myAppointment" android:drawableLeft="@drawable/my_reserve" android:drawablePadding="18dp"/>
+            </LinearLayout>
+            <View android:background="#efeff4" android:layout_width="14dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/llHelp" android:background="@drawable/bg_circular_corner_10_white" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="17sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvHelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help" android:drawableLeft="@drawable/seat_help" android:drawablePadding="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llPic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/llReservehelp"/>
+        <include android:id="@+id/pbLoading" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+    </RelativeLayout>
+</LinearLayout>

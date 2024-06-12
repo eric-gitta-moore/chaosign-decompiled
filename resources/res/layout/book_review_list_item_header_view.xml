@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llReview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <EditText android:textColorHint="@color/text_hint" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/etBookReview" android:background="@drawable/bg_input" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:hint="@string/default_review" android:minLines="6" android:maxLength="500" style="@style/Text_Title_15"/>
+        <TextView android:layout_gravity="right" android:id="@+id/tvReviewLimit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-23dp" android:layout_marginRight="15dp" android:text="还可以输入140字" style="@style/Text_Content_14"/>
+        <RelativeLayout android:id="@+id/llShareTo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp">
+            <CheckBox android:id="@+id/cbShareTo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <TextView android:id="@+id/tvShareTo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/review_prompt" android:layout_toRightOf="@+id/cbShareTo" android:layout_centerVertical="true" style="@style/Text_Title_16"/>
+            <Button android:layout_gravity="center" android:id="@+id/ibtnReview" android:background="@drawable/light_blue_btn_bg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Text_White_16"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/rlSending" android:background="@drawable/toast_bg" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <include android:id="@+id/pbWait" layout="@layout/wait_circle_bar_with_text"/>
+        <TextView android:id="@+id/tvSending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="正在分享……" android:layout_below="@+id/pbWait" style="@style/Text_White_16"/>
+    </RelativeLayout>
+</RelativeLayout>

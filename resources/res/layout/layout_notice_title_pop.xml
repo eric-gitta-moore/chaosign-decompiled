@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:paddingTop="38dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_popup_mid" android:layout_width="104dp" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@+id/tvAll" android:layout_width="match_parent" android:layout_height="44dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_notes_all" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_All" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:src="@drawable/iv_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/tvNotice" android:layout_width="match_parent" android:layout_height="44dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_contents_Notice" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_Notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:src="@drawable/iv_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/tvLetter" android:layout_width="match_parent" android:layout_height="44dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_letter" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_Letter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:src="@drawable/iv_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/tvApproval" android:layout_width="match_parent" android:layout_height="44dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_notice_shenpi" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_Approval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:src="@drawable/iv_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:id="@+id/tvUnread" android:layout_width="match_parent" android:layout_height="44dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pcenter_notice_unread" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_Unread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:src="@drawable/iv_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

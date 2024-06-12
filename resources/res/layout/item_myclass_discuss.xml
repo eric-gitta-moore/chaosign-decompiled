@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp">
+        <TextView android:textSize="16sp" android:textColor="#59657d" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="43dp" android:layout_marginRight="14dp" android:maxLines="2" android:lineSpacingExtra="5dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="1dp" android:layout_marginRight="16dp">
+        <TextView android:textSize="12sp" android:textColor="#cccccc" android:id="@+id/tv_creator" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="#7b9131" android:id="@+id/tv_from" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="#d2d2d2" android:id="@+id/tv_last_reply" android:layout_width="55dp" android:layout_height="wrap_content"/>
+            <Button android:textSize="12sp" android:textColor="#d2d2d2" android:id="@+id/btn_support" android:background="@null" android:layout_width="36dp" android:layout_height="26dp" android:layout_marginRight="2dp" android:drawableLeft="@drawable/support2" android:drawablePadding="1dp"/>
+            <Button android:textSize="12sp" android:textColor="#d2d2d2" android:id="@+id/btn_reply" android:background="@null" android:layout_width="36dp" android:layout_height="26dp" android:drawableLeft="@drawable/reply2" android:drawablePadding="1dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

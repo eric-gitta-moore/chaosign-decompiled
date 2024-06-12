@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:id="@+id/rlcontainer" android:background="@drawable/bg_circle_border_f4f5f6" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="74dp">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.fanzhou.widget.CircleImageView android:id="@+id/ivIcon" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="8dp" android:src="@drawable/ic_default_image" android:scaleType="fitCenter" android:layout_below="@+id/line" ss:border_color="@color/avatar_border" ss:border_width="1px" ss:is_circle="false" ss:x_radius="8px" ss:y_radius="8px"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ivIcon" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="域名称" android:maxLines="2" android:layout_below="@+id/line"/>
+            <TextView android:textSize="14sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="域作者" android:maxLines="2" android:layout_below="@+id/tvTitle"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

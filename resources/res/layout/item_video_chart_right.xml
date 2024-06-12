@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/item_video_imageView_right" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <View android:background="@color/black_alpha_50" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/white" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/item_duration_textView_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:background="@drawable/bg_video_screen_projection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/function_mirror"/>
+</FrameLayout>

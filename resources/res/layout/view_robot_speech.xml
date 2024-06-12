@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/speech" android:background="@drawable/bg_robot_voice" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true"/>
+    <com.chaoxing.mobile.robot.ui.widget.RobotSpeechWaveView android:id="@+id/left_view" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/speech" android:layout_centerVertical="true" app:lineMinHeight="8dp" app:lineSpace="5dp" app:lineWidth="2dp" app:waveOrientation="1"/>
+    <com.chaoxing.mobile.robot.ui.widget.RobotSpeechWaveView android:id="@+id/right_view" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/speech" android:layout_centerVertical="true" app:lineMinHeight="8dp" app:lineSpace="5dp" app:lineWidth="2dp" app:waveOrientation="0"/>
+</merge>

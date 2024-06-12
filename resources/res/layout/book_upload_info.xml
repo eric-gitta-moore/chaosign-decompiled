@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.GestureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/libContentConter" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/activity_comment_title"/>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/normal_gray" android:gravity="center_vertical" android:background="@color/gray_a2acb2" android:paddingLeft="12dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/book_upload_info_tip" android:maxLines="2"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llName" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <TextView android:textColor="#ff0000" android:gravity="center" android:layout_width="10dp" android:layout_height="match_parent" android:text="@string/book_name_tip"/>
+                <TextView android:gravity="center_vertical" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bookName" style="@style/Text_Title_16"/>
+                <EditText android:textColorHint="@color/text_hint" android:ellipsize="middle" android:id="@+id/editFileTitle" android:background="@drawable/write_halfblack_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="12dp" android:hint="" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llAutor" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/autor" style="@style/Text_Title_16"/>
+                <EditText android:textColorHint="@color/text_hint" android:ellipsize="middle" android:id="@+id/editAutor" android:background="@drawable/write_halfblack_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="12dp" android:hint="" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llSource" android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/bookorigin" style="@style/Text_Title_16"/>
+                <EditText android:textColorHint="@color/text_hint" android:ellipsize="middle" android:id="@+id/editSource" android:background="@drawable/write_halfblack_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="12dp" android:hint="" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llSummary" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:text="@string/summary" style="@style/Text_Title_16"/>
+                <EditText android:textColorHint="@color/text_hint" android:ellipsize="end" android:gravity="top" android:id="@+id/editSummary" android:background="@drawable/write_halfblack_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="136dp" android:layout_marginLeft="12dp" android:hint="" android:maxLines="5"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bottom_toolbar_bg" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentBottom="true">
+        <Button android:gravity="center" android:id="@+id/btnCance" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1" style="@style/Text_Content_16"/>
+        <View android:background="@color/gray_b2b2b2" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_weight="0"/>
+        <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:gravity="center" android:id="@+id/btnStartUpload" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/begin_upload" android:layout_weight="1"/>
+    </LinearLayout>
+</com.fanzhou.widget.GestureRelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/itemView" android:background="@drawable/selector_sort_list_item" android:layout_width="match_parent" android:layout_height="44dp">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rlRoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/ivSelect" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llRoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tvInviteCode" android:layout_alignParentLeft="true">
+            <ImageView android:id="@+id/ivUnitDel" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:src="@drawable/btn_delete_4opencourse" android:layout_centerVertical="true"/>
+            <TextView android:ellipsize="end" android:id="@+id/tvUnitName" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:singleLine="true" android:layout_toRightOf="@+id/ivUnitDel" style="@style/Text_secTitle_updateVersion"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/tvInviteCode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/inviteCode_title" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/ivSelect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:src="@drawable/ic_contacts_sort" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

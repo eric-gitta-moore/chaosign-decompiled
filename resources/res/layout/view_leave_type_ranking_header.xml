@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@+id/dateTv" android:background="#fff4f5f7" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="35dp" android:text="2019年4月"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/typeLayout" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="15sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="类型统计" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="@color/color_selector_ff999999_ff0099ff" android:id="@+id/typeCountTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/according_to_count" android:layout_centerVertical="true"/>
+            <ImageView android:background="@color/color_999999" android:layout_width="1dp" android:layout_height="15dp" android:layout_marginLeft="8dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/color_selector_ff999999_ff0099ff" android:id="@+id/typeTimeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/according_to_time" android:layout_centerVertical="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.chaoxing.mobile.office.widget.LeaveTypeGridLayout android:id="@+id/typeInfoLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="34dp" android:layout_marginBottom="34dp"/>
+    <View android:id="@+id/divider" android:background="#f4f5f7" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/leaveListLayout" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="15sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/leave_details" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="15sp" android:textColor="@color/color_selector_ff999999_ff0099ff" android:id="@+id/leaveListCountTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/according_to_count" android:layout_centerVertical="true"/>
+            <ImageView android:background="@color/color_999999" android:layout_width="1dp" android:layout_height="15dp" android:layout_marginLeft="8dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/color_selector_ff999999_ff0099ff" android:id="@+id/leaveListTimeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/according_to_time" android:layout_centerVertical="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/view_divider"/>
+</LinearLayout>

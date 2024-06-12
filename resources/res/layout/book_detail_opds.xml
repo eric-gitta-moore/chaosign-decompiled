@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.GestureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/grlContainer" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:id="@+id/slView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/rlTop" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:minHeight="60dp">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <RelativeLayout android:id="@+id/rlDownload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <Button android:id="@+id/btnDownload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download" android:drawableLeft="@drawable/book_detail_download" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/opds_btn_stroke_0099ff"/>
+                        <Button android:enabled="false" android:textSize="16sp" android:textColor="@color/normal_gray" android:id="@+id/btnDownloaded" android:background="@drawable/button_black_stroke" android:paddingLeft="3dp" android:paddingTop="5dp" android:paddingRight="3dp" android:paddingBottom="5dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/downloaded" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:gravity="center" android:id="@+id/btnRead" android:background="@drawable/button_stroke_0099ff" android:paddingLeft="12dp" android:paddingTop="5dp" android:paddingRight="12dp" android:paddingBottom="5dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_read" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <TextView android:id="@+id/tvBookTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" style="@style/title_text_black_24"/>
+            </RelativeLayout>
+            <View android:background="@color/blue_0e6fe7" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llRead" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <ImageView android:id="@+id/ivBookCover" android:background="@drawable/default_cover_bg" android:padding="2dp" android:layout_width="96dp" android:layout_height="136dp" android:layout_marginRight="10dp" android:scaleType="fitXY"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:id="@+id/tvBookAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Content_16"/>
+                    <TextView android:id="@+id/tvBookPress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Content_16"/>
+                    <TextView android:id="@+id/tvBookData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Content_16"/>
+                    <TextView android:id="@+id/tvBookIsbn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Content_16"/>
+                    <TextView android:id="@+id/tvBookPages" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Content_16"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llSummaryContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="45dp">
+                <TextView android:textStyle="bold" android:id="@+id/tvBookContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/Text_Title_16"/>
+                <TextView android:id="@+id/tvContentData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3dp" style="@style/Text_Default_16"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/bottom_bar" android:layout_width="match_parent" android:layout_height="43dp" android:layout_alignParentBottom="true" layout="@layout/book_detail_content_footer_opds"/>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_white"/>
+    <include android:id="@+id/viewLoading2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+    <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent"/>
+</com.fanzhou.widget.GestureRelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/main" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/item_eye_protect" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_eye_protect" android:layout_centerVertical="true"/>
+                <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_eye_protect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            </RelativeLayout>
+            <View android:id="@+id/item_eye_protect_divider" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/view_dark_mode" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/item_dark_settings" android:background="@drawable/selectable_item_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_dark" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@+id/tv_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8dp" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_right_arrow" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View android:id="@+id/item_dark_follow_sys_settings_divider" android:layout_width="match_parent" android:layout_height="8dp"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/item_language_settings" android:background="@drawable/selectable_item_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_set_language" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14sp" android:textColor="@color/gray_b3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/item_language_settings_divider" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <RelativeLayout android:id="@+id/item_storage_settings" android:background="@drawable/selectable_item_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_cleanCache" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14sp" android:textColor="@color/gray_b3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:layout_width="match_parent" android:layout_height="8dp"/>
+            <RelativeLayout android:id="@+id/item_upload_log" android:background="@drawable/selectable_item_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/setting_upload_log" android:drawableRight="@drawable/ic_right_arrow" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/item_save_image" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/color_999999" android:id="@+id/tv_tips" android:background="@color/bg_color_f5f6f8" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/setting_save_image_tips"/>
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/tv_tip1" android:paddingLeft="15dp" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_save_image" android:layout_below="@+id/tv_tips"/>
+                <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_image" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/tv_tip1" android:layout_alignBottom="@+id/tv_tip1" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            </RelativeLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp"/>
+            <RelativeLayout android:id="@+id/item_save_video" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:paddingLeft="15dp" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_save_video"/>
+                <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sw_video" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonStyle"/>
+            </RelativeLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

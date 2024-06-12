@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_iknow" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/text_devices" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/textview_msg" android:paddingLeft="@dimen/x10" android:paddingRight="@dimen/x10" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="20dp" android:text="@string/mirror_maxdevice" android:layout_weight="1" android:lineSpacingExtra="3dp"/>
+    <View android:background="@color/bg_window_out_of_range_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp"/>
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_devices" android:gravity="center" android:id="@+id/textview_iknow" android:background="@drawable/btn_dialog_selector_bottom" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/desktop_ok"/>
+</LinearLayout>

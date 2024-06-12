@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.bookshelf.GridView android:scrollbarStyle="outsideOverlay" android:id="@+id/gvNewspaper" android:background="@color/gray_e6e9ed" android:paddingLeft="10dp" android:paddingRight="10dp" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:stretchMode="columnWidth" android:columnWidth="@dimen/grid_item_width" android:numColumns="3"/>
+</FrameLayout>

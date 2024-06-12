@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.player.course.view.EventDragView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/dragView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_video" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/fl_write_note" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/fl_video"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/event_window" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/fl_web" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="270dp" android:minHeight="153dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_move" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:src="@drawable/course_window_move" app:layout_constraintBottom_toTopOf="@+id/iv_scale" app:layout_constraintEnd_toEndOf="0"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_scale" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:src="@drawable/course_window_scale" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintRight_toRightOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.chaoxing.mobile.player.course.view.EventDragView>

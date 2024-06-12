@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@+id/view_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="18dp" android:textColor="#333333" android:gravity="center" android:id="@+id/tv_key" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1"/>
+    <ImageView android:id="@+id/iv_key" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside"/>
+</merge>

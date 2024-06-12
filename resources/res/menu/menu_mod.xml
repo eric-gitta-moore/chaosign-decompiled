@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/icon_menu_gotopage" android:id="@+id/gotopage" android:title="@string/goto_page_title"/>
+    <item android:icon="@drawable/icon_menu_detail" android:id="@+id/book_detail" android:title="@string/book_detail_title"/>
+</menu>

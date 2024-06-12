@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.bookshelf.BookView1 xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_width="match_parent" android:layout_height="115dp">
+    <ImageView android:id="@+id/book_cover" android:background="@drawable/picture_frame" android:layout_width="79dp" android:layout_height="102dp" android:layout_marginLeft="20dp" android:layout_marginTop="8dp" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/info" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_weight="1" android:layout_toRightOf="@+id/book_cover">
+        <TextView android:gravity="center_vertical" android:id="@+id/book_name" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/text_24_dark_wood"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/author" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/text_20_dark_wood"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/deleter" android:background="@drawable/del" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_alignParentRight="true"/>
+    <CheckBox android:id="@+id/selector" android:visibility="invisible" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:button="@drawable/checkbox" android:layout_toLeftOf="@+id/deleter" android:layout_centerVertical="true"/>
+</com.chaoxing.bookshelf.BookView1>

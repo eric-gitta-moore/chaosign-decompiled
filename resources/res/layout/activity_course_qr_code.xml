@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/common_title_bar"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_corner_group_qrcode" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <TextView android:textSize="20sp" android:textColor="@color/normal_black" android:gravity="center" android:id="@+id/tvCreateTip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_marginBottom="20dp" android:text="@string/create_course_success"/>
+        <LinearLayout android:id="@+id/rlInviteCode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:id="@+id/tv_invite_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_code"/>
+            <TextView android:textSize="26sp" android:textColor="@color/blue_0099ff" android:id="@+id/tv_invite_code" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tvUseHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:text="@string/user_course_student_invite"/>
+        <RelativeLayout android:id="@+id/rlQRCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+            <ImageView android:id="@+id/ivQRCode" android:background="@drawable/best_lib_rank_img_stroke" android:layout_width="200dp" android:layout_height="200dp" android:scaleType="centerCrop" android:layout_centerHorizontal="true"/>
+            <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/rl_edit_class_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="20dp" android:layout_marginRight="15dp">
+            <TextView android:textSize="17sp" android:textColor="#333" android:id="@+id/tvClassName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/class_name"/>
+            <TextView android:textSize="17sp" android:textColor="#0099ff" android:ellipsize="end" android:id="@+id/tvEditName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="测试按揭教师" android:maxLines="1" android:drawableRight="@drawable/icon_edit_class_name" android:drawablePadding="7dp" android:layout_toRightOf="@+id/tvClassName" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/btn_finish" android:background="@drawable/btn_blue_bg" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="30dp" android:text="@string/oprate_ok" android:layout_alignParentBottom="true"/>
+    <include android:id="@+id/loading" android:visibility="gone" layout="@layout/page_loading_circle_bg_white"/>
+</RelativeLayout>

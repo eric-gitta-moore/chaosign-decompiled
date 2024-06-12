@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.chaoxing.fanya.aphone.view.AsyncImageView android:id="@+id/icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_alignTop="@+id/myclass_content" android:layout_alignBottom="@+id/myclass_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/myclass_content" android:background="#d8ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/myclass_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="#ff0000" android:id="@+id/course_title" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="微距摄影" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:textColor="#000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="开始学习" android:drawableRight="@drawable/myclass_arrow" android:drawablePadding="5dp"/>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/course_detail_title" android:id="@+id/class_title" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2013学年秋季乙3班"/>
+        <TextView android:textSize="14sp" android:textColor="@color/course_detail_title" android:id="@+id/creator" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="小超，教授（宁波职业学院）"/>
+        <TextView android:textSize="14sp" android:textColor="@color/course_detail_title" android:id="@+id/progress" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="未完成任务点：20%"/>
+        <TextView android:textSize="14sp" android:textColor="@color/course_detail_title" android:id="@+id/credit" android:paddingLeft="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="学分：20"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="@color/course_detail_title" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="学习任务"/>
+            <Button android:textSize="14sp" android:textColor="#ff1a6fff" android:id="@+id/work" android:background="@drawable/myclass_button" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="作业（5）"/>
+            <Button android:textSize="14sp" android:textColor="#ff1a6fff" android:background="@drawable/myclass_button" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="考试（0）"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="@color/course_detail_title" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="互动更新"/>
+            <Button android:textSize="14sp" android:textColor="#ff1a6fff" android:id="@+id/discuss" android:background="@drawable/myclass_button" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="讨论（5）"/>
+            <Button android:textSize="14sp" android:textColor="#ff1a6fff" android:id="@+id/answer" android:background="@drawable/myclass_button" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="答疑（5）"/>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/course_detail_title" android:layout_gravity="right" android:id="@+id/time" android:paddingLeft="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:text="课程结束：13-06-05"/>
+    </LinearLayout>
+</RelativeLayout>

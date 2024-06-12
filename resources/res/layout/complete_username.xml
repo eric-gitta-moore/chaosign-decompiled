@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_corner_group_qrcode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginRight="22dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="15sp" android:textColor="#333333" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="请完善您的姓名"/>
+        <EditText android:textSize="14sp" android:textColor="#333333" android:textColorHint="#cccccc" android:id="@+id/etName" android:background="@drawable/bg_input" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="18dp" android:layout_marginTop="24dp" android:layout_marginRight="18dp" android:hint="姓名：" android:singleLine="true"/>
+        <View android:background="#bababa" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="27dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16sp" android:textColor="@color/normal_gray" android:id="@+id/btnCancel" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginBottom="4px" android:text="@string/choose_canncel" android:layout_weight="1" style="@style/custom_dialog_style"/>
+            <View android:background="#bababa" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"/>
+            <Button android:textSize="16sp" android:textColor="@color/normal_blue" android:id="@+id/btnOk" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginBottom="4px" android:text="@string/sure" android:layout_weight="1" style="@style/custom_dialog_style"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/wait_circle_bar"/>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/loginRootLayout" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top" layout="@layout/activity_top_bar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/loginContentLayout" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top">
+        <TextView android:gravity="left" android:id="@+id/tvSchoolName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/chaoxing_account" style="@style/Text_Black_18"/>
+        <TextView android:textSize="@dimen/text_size_content" android:textColor="@color/normal_gray" android:id="@+id/tvLoginNote" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/use_student_or_borrow_id_need"/>
+        <EditText android:textSize="14sp" android:textColorHint="@color/divider_line" android:id="@+id/etAccount" android:background="@drawable/bg_input" android:paddingLeft="12dp" android:paddingTop="10dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="@string/username_hint" android:drawableLeft="@drawable/login_account" android:drawablePadding="10dp" android:inputType="text" android:imeOptions="actionNext"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vCheckCode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <Button android:id="@+id/btnGetPassword" android:paddingLeft="5dp" android:paddingTop="10dp" android:paddingRight="5dp" android:paddingBottom="10dp" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/get_random_password" style="@style/Button_blue_Submit"/>
+            <TextView android:id="@+id/tvCheckCodeTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/send_checkcode_to_email_or_phone" style="@style/text_content"/>
+        </LinearLayout>
+        <EditText android:textSize="14sp" android:textColorHint="@color/divider_line" android:id="@+id/etPassword" android:background="@drawable/bg_input" android:paddingLeft="12dp" android:paddingTop="10dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/passwd_lend" android:drawableLeft="@drawable/login_password" android:drawablePadding="10dp" android:layout_weight="1" android:imeOptions="actionDone"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <TextView android:textSize="@dimen/text_size_content" android:textColor="@color/light_blue" android:id="@+id/selectUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_unit" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <Button android:textSize="@dimen/text_size_normal" android:id="@+id/btnLogin" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="34dp" android:text="@string/login" style="@style/Button_blue_Submit"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:id="@+id/pbLoginWait" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <include layout="@layout/wait_circle_bar_with_text"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rlBottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="160dp" android:layout_marginLeft="22dp" android:layout_marginRight="22dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:background="#666666" android:layout_width="match_parent" android:layout_height="1px" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="#666666" android:background="@color/bg_activity" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cooperation_account" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/ivQQ" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iv_tecent" android:scaleType="fitEnd" android:layout_weight="1" android:contentDescription="@string/iv_qq"/>
+            <ImageView android:id="@+id/ivSina" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iv_sina" android:scaleType="fitStart" android:layout_weight="1" android:contentDescription="@string/iv_sina"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

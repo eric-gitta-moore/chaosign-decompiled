@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#1f1f1f" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_compress_control" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/tv_compress_cancel" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消"/>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/video_ib_play_pause" android:background="#00000000" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/video_view_pause" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/tv_compress_sure" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <SeekBar android:gravity="center_vertical" android:id="@+id/video_sb_process_play" android:background="@color/black" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:maxHeight="4dp" android:progressDrawable="@drawable/seekbar_process_img" android:minHeight="4dp" android:thumb="@drawable/video_view_process_adjust_ball2" android:thumbOffset="10dp" android:layout_above="@+id/rl_compress_control"/>
+    <FrameLayout android:id="@+id/video_compress_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/video_sb_process_play">
+        <com.chaoxing.mobile.widget.media.TextureRenderView android:id="@+id/trv_compress" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/iv_compress_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/rl_loading" android:background="@drawable/shape_black_bg" android:visibility="gone" android:layout_width="100dp" android:layout_height="80dp" android:layout_centerInParent="true">
+        <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/pb_compress_loading" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="10dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="正在压缩.." android:maxLines="1" android:layout_below="@+id/pb_compress_loading"/>
+    </RelativeLayout>
+</RelativeLayout>

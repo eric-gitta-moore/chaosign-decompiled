@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/video_topbar"/>
+    <include layout="@layout/av_list_tips"/>
+    <com.toofifi.mobile.component.view.sticky.StickyListView android:id="@+id/sticky_listview_video_chart" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+    <com.toofifi.mobile.component.view.sticky.StickyListView android:id="@+id/sticky_listview_video_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+    <com.toofifi.mobile.component.view.sticky.StickyListView android:id="@+id/sticky_listview_audio_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+    <include layout="@layout/document_list_empty_layout"/>
+</LinearLayout>

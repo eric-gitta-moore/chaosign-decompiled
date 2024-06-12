@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/srf_main_video" android:layout_width="match_parent" android:layout_height="match_parent" app:srlEnableNestedScrolling="true">
+    <com.scwang.smart.refresh.header.CxClassicsHeader android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="26dp" app:srlDrawableArrow="@drawable/icon_refresh" app:srlDrawableArrowSize="18dp" app:srlDrawableMarginRight="8dp" app:srlDrawableProgressSize="18dp" app:srlEnableLastTime="false" app:srlFinishDuration="100" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="13sp" app:srlTextTimeMarginTop="2dp"/>
+    <com.chaoxing.mobile.study.home.mainpage2.widget.NestedScrollLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.mobile.study.home.mainpage2.widget.MainPageIndicator android:id="@+id/indicator_main_video" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.chaoxing.mobile.group.ui.NoScrollViewPager android:id="@+id/vp_main_video" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.chaoxing.mobile.study.home.mainpage2.widget.NestedScrollLayout>
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

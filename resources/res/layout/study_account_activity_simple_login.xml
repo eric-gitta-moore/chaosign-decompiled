@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/account_login_form" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@+id/et_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="15510001696" android:hint="@string/study_account_prompt_account" android:maxLines="1" android:singleLine="true" android:inputType="text|textEmailAddress|number|phone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@+id/et_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="pj0320" android:hint="@string/study_account_prompt_password" android:maxLines="1" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionUnspecified" android:imeActionLabel="@string/study_account_action_sign_in_short" android:imeActionId="6"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:textStyle="bold" android:id="@+id/btn_sign_in" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/study_account_action_sign_in" style="?android:attr/textAppearanceSmall"/>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@+id/loading_view" android:background="#10000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/pb_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+    </RelativeLayout>
+</RelativeLayout>

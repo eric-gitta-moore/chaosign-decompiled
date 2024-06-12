@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/topDivider" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+    <RelativeLayout android:id="@+id/top" android:layout_width="match_parent" android:layout_height="81dp" android:layout_below="@+id/topDivider">
+        <com.chaoxing.mobile.widget.roundedimageview.RoundedImageView android:id="@+id/userHeaderIcon" android:layout_width="49dp" android:layout_height="49dp" android:layout_marginLeft="@dimen/ui_10_dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:riv_oval="true"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/userNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui_10_dip" android:layout_marginRight="@dimen/ui_10_dip" android:singleLine="true" android:layout_toRightOf="@+id/userHeaderIcon" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/dateTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:singleLine="true" android:layout_toRightOf="@+id/userNameTv" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/divider" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/contentLayout" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_below="@+id/top">
+        <TextView android:textSize="14sp" android:textColor="#333333" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/countTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+        <View android:background="#ebebeb" android:layout_width="1px" android:layout_height="18dp"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:ellipsize="end" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/durationTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:id="@+id/dividerLine" android:background="#f4f5f7" android:layout_width="match_parent" android:layout_height="8dp" android:layout_below="@+id/contentLayout"/>
+    <com.chaoxing.mobile.office.widget.ASErrorLayout android:id="@+id/errorLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/dividerLine"/>
+</merge>

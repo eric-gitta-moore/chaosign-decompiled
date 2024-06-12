@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/top" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/lvStudents" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top"/>
+    <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top" layout="@layout/wait_circle_bar_with_text_match_parent_white"/>
+    <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top" layout="@layout/page_loading_circle"/>
+    <TextView android:textSize="18sp" android:textColor="#66333333" android:gravity="center" android:id="@+id/tvNoDataTip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="11111" android:layout_below="@+id/top" android:layout_centerInParent="true"/>
+</RelativeLayout>

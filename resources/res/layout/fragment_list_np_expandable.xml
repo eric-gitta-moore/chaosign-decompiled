@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/progressContainer" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/wait_circle_bar_with_text"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/listContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:gravity="center" android:id="@+id/empty" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ExpandableListView android:scrollbarStyle="outsideOverlay" android:id="@android:id/list" android:background="@color/white" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/btn_shadow" android:cacheColorHint="@android:color/transparent" android:groupIndicator="@color/transparent" android:childDivider="@color/transparent" android:divider="@color/divider_line" android:dividerHeight="1px" android:headerDividersEnabled="false"/>
+        <include android:id="@+id/llLoading" android:visibility="gone" layout="@layout/listview_footer_more"/>
+    </FrameLayout>
+</FrameLayout>

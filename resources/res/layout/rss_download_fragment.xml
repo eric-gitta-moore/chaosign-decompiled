@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_downLoad" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_downLoadContent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/layout_downLoadInfo" android:paddingLeft="20dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="10dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_toLeftOf="@+id/btn_cancleDownLoad" android:layout_centerVertical="true">
+                <TextView android:id="@+id/tvDowningName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_Title"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@+id/pb_downingProgress" android:layout_width="match_parent" android:layout_height="4dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_horizontal2" android:layout_weight="1" style="@android:style/Widget.ProgressBar.Horizontal"/>
+                    <TextView android:textSize="15sp" android:textColor="#b3b3b3" android:gravity="center_vertical" android:id="@+id/tv_downingProcess" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="13dp" android:text="0/0" android:layout_weight="0"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:id="@+id/btn_cancleDownLoad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="取消" android:layout_alignParentRight="true" style="@style/btn_stroke_black_default"/>
+        </RelativeLayout>
+        <ListView android:id="@+id/lv_downLoadList" android:background="@drawable/corner_bg" android:visibility="visible" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="30dp" style="@style/List_View_Style"/>
+    </LinearLayout>
+    <include android:id="@+id/view_no_content" android:visibility="gone" layout="@layout/setting_item_no_content"/>
+</RelativeLayout>

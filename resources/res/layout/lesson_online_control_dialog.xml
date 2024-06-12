@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_container" android:background="@drawable/bg_online_course_control_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_self" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_14" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_14" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/cbSelf" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" style="@style/lessonCheckBoxTheme"/>
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:id="@+id/tvSelf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="允许成员自行解除静音"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_apply" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_14" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_14" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/cbApply" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" style="@style/lessonCheckBoxTheme"/>
+        <TextView android:textSize="16sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:id="@+id/tvApply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/course_online_mute_voice_apply"/>
+    </LinearLayout>
+</LinearLayout>

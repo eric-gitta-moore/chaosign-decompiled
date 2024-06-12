@@ -1,0 +1,431 @@
+﻿html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,
+address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,
+var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,body {
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	color: #333;
+	font: 14px/1.5;
+	font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+input,textarea,input {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+	font-family: "Microsoft YaHei";
+}
+
+a,a:link,a:visited,a:hover,a:active {
+	text-decoration: none;
+	color: #333;
+	-webkit-tap-highlight-color: transparent;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+ol,ul {
+	list-style: none;
+}
+::-webkit-input-placeholder{color: #ccc;}
+:-ms-input-placeholder{color: #ccc;}
+:-moz-placeholder {color: #ccc;}
+::-moz-placeholder {color: #ccc;}
+
+.Absolute-Center {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.clear {
+	clear: both;
+	height: 0px;
+	font-size: 0px;
+	line-height: 0px;
+	overflow: hidden;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+
+/* IE 6/7 */
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+
+/*多行文本省略号*/
+.words {
+	display: -webkit-box;
+	display: box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+}
+.words1{
+	-webkit-line-clamp: 1;
+}
+.words2{
+	-webkit-line-clamp: 2;
+}
+.words3{
+	-webkit-line-clamp: 3;
+}
+.words4{
+	-webkit-line-clamp: 4;
+}
+.words5{
+	-webkit-line-clamp: 5;
+}
+.words6 {
+	-webkit-line-clamp: 6;
+}
+.words7 {
+	-webkit-line-clamp: 7;
+}
+.words8{
+	-webkit-line-clamp: 8;
+}
+.words9{
+	-webkit-line-clamp: 9;
+}
+.words10 {
+	-webkit-line-clamp: 10;
+}
+.words11 {
+	-webkit-line-clamp: 11;
+}
+.words12 {
+	-webkit-line-clamp: 12;
+}
+/*单行文本省略号*/
+.word{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.popOverflow { overflow: hidden;position: fixed;width: 100%;}
+/*垂直居中,容器设置宽高*/
+.ycenter {
+	align-items: center;
+	display: -webkit-flex;
+}
+/*水平居中,容器设置宽高*/
+.xcenter {
+	justify-content: center;
+	display: -webkit-flex;
+}
+
+/*box布局水平垂直居中*/
+.xycenterbox{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	-moz-box-pack: center;
+	-webkit-box-pack: center;
+}
+/*box布局水平居中*/
+.xcenterbox{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	-moz-box-pack: center;
+	-webkit-box-pack: center;
+}
+/*box布局垂直居中*/
+.ycenterbox{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+}
+
+/*区域分割*/
+.splitLine {
+	width: 100%;
+	height: 0.16rem;
+	background-color: #F5F6F8;
+}
+
+/*0.5px底边框*/
+.bottomLine{
+	background: -webkit-linear-gradient(top,transparent 50%,#ebebeb 50%) center bottom no-repeat;
+	background: -moz-linear-gradient(top, transparent 50%, #ebebeb 50%) center bottom no-repeat;
+	background: -ms-linear-gradient(top, transparent 50%, #ebebeb 50%) center bottom no-repeat;
+	background-size: 100% 1px;
+}
+/*0.5px底边框*/
+.bottomLine2{
+	background: -webkit-linear-gradient(top,transparent 50%,#f2f2f2 50%) center bottom no-repeat;
+	background: -moz-linear-gradient(top, transparent 50%, #f2f2f2 50%) center bottom no-repeat;
+	background: -ms-linear-gradient(top, transparent 50%, #f2f2f2 50%) center bottom no-repeat;
+	background-size: 100% 1px;
+}
+.topLine{
+	background: -webkit-linear-gradient(top,transparent 50%,#ebebeb 50%) center top no-repeat;
+	background: -moz-linear-gradient(top, transparent 50%, #ebebeb 50%) center top no-repeat;
+	background: -ms-linear-gradient(top, transparent 50%, #ebebeb 50%) center top no-repeat;
+	background-size: 100% 1px;
+}
+.leftLine{
+	background: -webkit-linear-gradient(left,transparent 50%,#ebebeb 50%) left center no-repeat;
+	background: -moz-linear-gradient(left, transparent 50%, #ebebeb 50%) left center no-repeat;
+	background: -ms-linear-gradient(left, transparent 50%, #ebebeb 50%) left center no-repeat;
+	background-size: 1px 100%;
+}
+.border1px:after{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 200%;
+	height: 200%;
+	transform-origin: 0 0;
+	transform: scale(0.5);
+}
+.btn{
+	position: relative;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.32rem;
+	color: #0099FF;
+	text-align: center;
+	border-radius: 0.08rem;
+	user-select: none;
+}
+.btn.blue{
+	background: #0099ff;
+	color: #ffffff;
+}
+.btn.blue:after{
+	display: none;
+}
+.btn.blue.disable{
+	background: #CCEAFF;
+}
+.btn:after{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 200%;
+	height: 198%;
+	transform: scale(0.5);
+	transform-origin: left top;
+	border: solid 1px #0099FF;
+	border-radius: 0.16rem;
+	box-sizing: border-box;
+}
+/*设置隐藏*/
+.none {
+	display: none;
+}
+.hidden {
+	visibility: hidden;
+}
+.switch{
+	position: relative;
+	display: inline-block;
+	width: 0.88rem;
+    height: 0.52rem;
+    border-radius: 0.32rem;
+    padding: 0.04rem;
+    box-sizing: border-box;
+}
+.slider {
+	position: absolute;
+	display: inline-block;
+	width: 0.44rem;
+	height: 0.44rem;
+	background: white;
+	border-radius: 50%;
+	border: 1px solid rgba(0,0,0,0.01);
+	box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.18);
+}
+.switch-on {
+	box-shadow: #0099FF 0px 0px 0px 0.32rem inset;
+	transition: border 0.4s, box-shadow 0.2s, background-color 1.2s;
+	background-color: white;
+	cursor: pointer;
+}
+.switch-on .slider {
+	right: 0.04rem;
+	transition: background-color 0.4s, left 0.2s;
+}
+.switch-off {
+	transition: border 0.4s, box-shadow 0.4s;
+	background-color: #E9E9EB;
+	box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset;
+	cursor: pointer;
+}
+.switch-off .slider {
+	left: 0.04rem;
+	transition: background-color 0.4s, left 0.2s;
+}
+.switch-on.switch-disabled{
+	opacity:.5;
+	cursor:auto;
+}
+.switch-off.switch-disabled{
+	background-color:#F0F0F0 !important;
+	cursor:auto;
+}
+.toastTips{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: auto;
+	height: 1rem;
+	padding: 0.2rem 0.32rem;
+	font-size: 0.3rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 0.6rem;
+	white-space: nowrap;
+	background: rgba(0,0,0,0.7);
+	border-radius: 0.12rem;
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.4);
+	z-index: 100;
+}
+
+/*加载更多动画*/
+.pullUp {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	color: #b3b3b3;
+}
+.pullUp .pullUpIcon {
+	display: inline-block;
+	vertical-align: top;
+	width: 16px;
+	height: 16px;
+	margin: 12px 9px 0 0;
+	background: url(http://img.learn.16q.cn/home/2/new/refresh.png) no-repeat;
+	background-size: contain;
+	-webkit-transform: rotate(0deg) translateZ(0);
+	-webkit-transition-duration: 0ms;
+	-webkit-animation-name: loading;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes loading {
+	from {
+		-webkit-transform: rotate(0deg) translateZ(0);
+	}
+	to {
+		-webkit-transform: rotate(360deg) translateZ(0);
+	}
+}
+
+/*媒体查询*/
+@media screen and (min-width: 212px) {
+	html {
+		font-size: 28.4px
+	}
+}
+@media screen and (min-width: 319px) {
+	html {
+		font-size: 42.67px
+	}
+}
+@media screen and (min-width: 359px) {
+	html {
+		font-size: 48px
+	}
+}
+@media screen and (min-width: 374px) {
+	html {
+		font-size: 50px
+	}
+}
+@media screen and (min-width: 383px) {
+	html {
+		font-size: 51.2px
+	}
+}
+@media screen and (min-width: 399px) {
+	html {
+		font-size: 53.2px
+	}
+}
+@media screen and (min-width: 414px) {
+	html {
+		font-size: 55.2px
+	}
+}
+@media screen and (min-width: 423px) {
+	html {
+		font-size: 56.53px
+	}
+}
+@media screen and (min-width: 479px) {
+	html {
+		font-size: 64px
+	}
+}
+@media screen and (min-width: 539px) {
+	html {
+		font-size: 72px
+	}
+}
+@media screen and (min-width: 639px) {
+	html {
+		font-size: 85.33px
+	}
+}
+@media only screen and (min-width: 750px) {
+	.wrapMax {
+		width: 640px;
+		margin: 0 auto;
+	}
+}

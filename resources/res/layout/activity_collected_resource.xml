@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_collected_resource" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <RelativeLayout android:id="@+id/empty_tip" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_tip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="40dp" android:src="@drawable/conversation_arrow" android:layout_alignParentRight="true"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/tv_empty_message" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="亲，您的资料库是空的" android:layout_below="@+id/iv_tip" android:layout_centerHorizontal="true" style="@style/group_title_b3_text"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/tvTip" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="暂无资料" android:layout_centerInParent="true" style="@style/group_title_b3_text"/>
+        </RelativeLayout>
+        <include layout="@layout/common_loading_transparent"/>
+        <include android:visibility="gone" layout="@layout/reload"/>
+    </RelativeLayout>
+</RelativeLayout>

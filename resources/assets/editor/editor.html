@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no,email=no,adress=no">
+		<meta charset="utf-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body class="editorWrap">
+		<div class="editorBox">
+      <div class="editor_header">
+        <div class="editor_title_wrapper">
+          <div class="editor_title field" contenteditable="plaintext-only" placeholder="标题" id="zss_editor_tit"></div>
+        </div>
+        <div class="collections_wrapper">
+		  <div id="addSubjectBtn" onclick="zss_editor.addNoteHeji()" class="hide">加入专题</div>
+          <div id="collectionAdd" onclick="zss_editor.addNoteHeji()" class="selected hide">
+          </div>
+          <div id="collectionInfo" onclick="zss_editor.addNoteHeji()" class="collections hide">
+            <img src="./images/default-cover.png" alt="">
+            <span></span>
+          </div>
+        </div>
+      </div>
+			<div class="line"></div>
+			<div class="editor_main field" contenteditable="true" id="zss_editor_content"></div>
+		</div>
+		<div id="zss_editor_footer"></div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/sockjs.min.js"></script>
+		<script type="text/javascript" src="js/stomp.js"></script>
+		<script type="text/javascript" src="js/axios.js"></script>
+		<script type="text/javascript" src="js/S2.js"></script>
+		<script type="text/javascript" src="js/replace.js"></script>
+		<script type="text/javascript" src="js/editor.js"></script>
+		<script type="text/javascript" src="js/radialIndicator.min.js"></script>
+		<script type="text/javascript" src="js/echarts.min.js"></script>
+		<script type="text/javascript" src="js/chart.render.js"></script>
+		<script>
+			function isSpecial() {
+				return true;
+			}
+			$(document).ready(function() {
+				zss_editor.init();
+			});
+		</script>
+	</body>
+
+</html>

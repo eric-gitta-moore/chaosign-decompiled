@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="36dp">
+    <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/btn_more">
+        <RelativeLayout android:id="@+id/label" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="14sp" android:textColor="#666666" android:gravity="center" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bookCollections_recommend_resource"/>
+            <View android:id="@+id/line" android:background="@color/bg_blue" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_alignLeft="@+id/tv_label" android:layout_alignRight="@+id/tv_label" android:layout_alignBottom="@+id/tv_label"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/label2" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_toRightOf="@+id/label">
+            <TextView android:textSize="14sp" android:textColor="#666666" android:gravity="center" android:id="@+id/tv_label2" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bookCollections_FirendCollections"/>
+            <View android:id="@+id/line2" android:background="@color/bg_blue" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_alignLeft="@+id/tv_label2" android:layout_alignRight="@+id/tv_label2" android:layout_alignBottom="@+id/tv_label2"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/label3" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_toRightOf="@+id/label2">
+            <TextView android:textSize="14sp" android:textColor="#666666" android:gravity="center" android:id="@+id/tv_label3" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bookCollections_TopCollections"/>
+            <View android:id="@+id/line3" android:background="@color/bg_blue" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_alignLeft="@+id/tv_label3" android:layout_alignRight="@+id/tv_label3" android:layout_alignBottom="@+id/tv_label3"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button android:textSize="14sp" android:textColor="#0099ff" android:id="@+id/btn_more" android:background="@android:color/transparent" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/bookCollections_more" android:layout_alignParentRight="true"/>
+</RelativeLayout>

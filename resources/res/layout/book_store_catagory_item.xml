@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+        <ImageView android:id="@+id/book_cover" android:background="@drawable/default_cover_bg" android:clickable="false" android:layout_width="66dp" android:layout_height="90dp" android:contentDescription="@null"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+                <TextView android:textSize="14sp" android:textColor="#666666" android:id="@+id/tvAutor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="50dp" android:layout_height="match_parent" android:layout_weight="0">
+                <ImageView android:id="@+id/ivDownloadState" android:paddingLeft="25dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/opds_download" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+                <ProgressBar android:id="@+id/pbDownload" android:visibility="invisible" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

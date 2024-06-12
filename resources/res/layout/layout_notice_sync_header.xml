@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_status" android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/iv_status" android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/icon_note_updated" android:scaleType="fitXY"/>
+        <TextView android:textSize="13sp" android:textColor="@color/color_666666" android:id="@+id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="同步完成" android:layout_marginStart="5dp"/>
+    </LinearLayout>
+</merge>

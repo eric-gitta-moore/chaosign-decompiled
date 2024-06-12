@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/common_title_bar2_title_2line"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/timepicker" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.chaoxing.pickerview.lib.WheelView android:id="@+id/hour" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.1"/>
+        <com.chaoxing.pickerview.lib.WheelView android:id="@+id/min" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.1"/>
+    </LinearLayout>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/reminderLayout" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/name" android:layout_centerVertical="true"/>
+        <TextView android:textColor="#999999" android:id="@+id/remindTypeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/punch_remind" android:layout_toLeftOf="@+id/nameArrowRight" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/nameArrowRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="15dp" android:src="@drawable/icons_wifi_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/repeatLayout" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/repeat" android:layout_centerVertical="true"/>
+        <TextView android:textColor="#999999" android:id="@+id/repeatTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/every_working_day" android:layout_toLeftOf="@+id/repeatArrowRight" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/repeatArrowRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="15dp" android:src="@drawable/icons_wifi_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

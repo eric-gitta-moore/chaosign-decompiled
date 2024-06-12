@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>链接1.2备份</title>
+    <g id="链接1.2备份" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7.5,12.5 L6,12.5 L5.5,12.5 C3.56700338,12.5 2,10.9329966 2,9 C2,7.06700338 3.56700338,5.5 5.5,5.5 L6,5.5 L7.5,5.5" id="路径" stroke="#474C59" stroke-width="1.2" stroke-linecap="round"></path>
+        <path d="M16,12.5 L14.5,12.5 L14,12.5 C12.0670034,12.5 10.5,10.9329966 10.5,9 C10.5,7.06700338 12.0670034,5.5 14,5.5 L14.5,5.5 L16,5.5" id="路径备份" stroke="#474C59" stroke-width="1.2" stroke-linecap="round" transform="translate(13.250000, 9.000000) scale(-1, 1) translate(-13.250000, -9.000000) "></path>
+        <rect id="矩形" fill="#474C59" x="6" y="8.4" width="6" height="1.2" rx="0.6"></rect>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_operation_hint" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="36dp" android:text="@string/common_click_and_sort" android:layout_below="@+id/toolbar"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/lv_subject" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/edit_toolbar" android:layout_below="@+id/tv_operation_hint"/>
+    <View android:id="@+id/vDivider" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_above="@+id/edit_toolbar"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/edit_toolbar" android:background="#f5f6f8" android:paddingTop="1px" android:layout_width="match_parent" android:layout_height="44dp" android:weightSum="2" android:layout_alignParentBottom="true">
+        <Button android:textSize="18sp" android:textColor="#999999" android:layout_gravity="center_vertical" android:id="@+id/btn_delete" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/common_delete" android:layout_weight="1"/>
+        <View android:background="#d9d9d9" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="18sp" android:textColor="#999999" android:layout_gravity="center_vertical" android:id="@+id/btn_move" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/common_move" android:layout_weight="1"/>
+    </LinearLayout>
+    <include android:id="@+id/loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+</RelativeLayout>

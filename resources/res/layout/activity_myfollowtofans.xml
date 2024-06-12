@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_activity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/top_toolbar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+        <Button android:textSize="14sp" android:ellipsize="end" android:id="@+id/btnLeft" android:background="@android:color/transparent" android:paddingLeft="6dp" android:paddingTop="4dp" android:paddingRight="6dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rg_tab" android:background="@drawable/stroke_corner_radiogroup" android:layout_width="192dp" android:layout_height="38dp" android:layout_centerInParent="true">
+            <RadioButton android:textColor="@color/note_tab_text" android:ellipsize="end" android:gravity="center" android:id="@+id/rb_myradio" android:background="@drawable/selector_radiobutton_left" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/message_added" android:singleLine="true" android:drawablePadding="0dp" android:layout_weight="1" style="@style/Radio_Button_Resource_Text"/>
+            <RadioButton android:textColor="@color/note_tab_text" android:gravity="center" android:id="@+id/rb_myradiome" android:background="@drawable/selector_radiobutton_right" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="关注我的" android:layout_weight="1" style="@style/Radio_Button_Resource_Text"/>
+        </RadioGroup>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fl_frame_context" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

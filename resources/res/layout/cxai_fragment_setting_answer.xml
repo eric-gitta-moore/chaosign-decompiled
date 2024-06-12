@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:shape_radiusInTopLeft="15dp" app:shape_radiusInTopRight="15dp" app:shape_solidColor="#f5f6f8">
+    <com.google.android.material.imageview.ShapeableImageView android:layout_width="match_parent" android:layout_height="100dp" android:src="@drawable/cxai_bg_top" android:scaleType="fitXY" app:shapeAppearance="@style/cxai_shape_style_rounded15"/>
+    <com.chaoxing.mobile.voice.ui.view.AiToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <com.hjq.shape.view.ShapeView android:layout_width="4dp" android:layout_height="12dp" app:shape_radius="2dp" app:shape_solidColor="#0099ff"/>
+                <TextView android:textSize="14sp" android:textColor="#1b1f26" android:ellipsize="end" android:layout_width="0dp" android:layout_height="wrap_content" android:text="您可以在这里提交你想要的答案：" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <com.hjq.shape.layout.ShapeLinearLayout android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" app:shape_radius="10dp" app:shape_solidColor="#ffffff">
+                <com.hjq.shape.view.ShapeEditText android:gravity="start" android:id="@+id/et_answer" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="160dp" app:shape_radius="8dp" app:shape_strokeColor="#ebebeb" app:shape_strokeSize="1dp"/>
+                <com.hjq.shape.view.ShapeTextView android:textSize="16dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_confirm_answer" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="20dp" android:text="确定" app:shape_radius="8dp" app:shape_solidColor="#b2e0ff"/>
+            </com.hjq.shape.layout.ShapeLinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                <com.hjq.shape.view.ShapeView android:layout_width="4dp" android:layout_height="12dp" app:shape_radius="2dp" app:shape_solidColor="#0099ff"/>
+                <TextView android:textSize="14sp" android:textColor="#1b1f26" android:ellipsize="end" android:layout_width="0dp" android:layout_height="wrap_content" android:text="或者您可以在这里选择应用：" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <com.hjq.shape.layout.ShapeRelativeLayout android:id="@+id/rl_modify_intent" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="14dp" app:shape_radius="8dp" app:shape_solidColor="#ffffff">
+                <TextView android:textSize="15dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择应用" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ai_right_arrow" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </com.hjq.shape.layout.ShapeRelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.hjq.shape.layout.ShapeRelativeLayout>

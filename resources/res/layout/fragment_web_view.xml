@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.input.ime.widget.RimeInputLayout android:id="@+id/input_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBaseline_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:ril_input_view="@+id/web_view_fragment">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/web_view_fragment" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/web_view_fragment_toolbar" layout="@layout/web_client"/>
+            <com.chaoxing.mobile.webapp.ui.toolbar.WebToolbar android:id="@+id/web_view_fragment_toolbar" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.chaoxing.input.ime.widget.RimeInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

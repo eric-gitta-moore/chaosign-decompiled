@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/class_top_bar"/>
+        <LinearLayout android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="match_parent">
+            <GridView android:id="@+id/gv_course" android:layout_width="match_parent" android:layout_height="match_parent" android:verticalSpacing="8dp" android:numColumns="2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/loading"/>
+    <include layout="@layout/wait_bar"/>
+    <TextView android:textSize="16sp" android:textColor="#66333333" android:id="@+id/tvNoDataTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="亲，暂时还不能在手机选课哦，快去\10mooc.chaoxing.com添加感兴趣的课程吧" android:layout_centerInParent="true"/>
+</RelativeLayout>

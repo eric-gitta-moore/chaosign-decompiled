@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CxCamera.Theme" parent="@style/Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:forceDarkAllowed">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="StudyTheme" parent="@style/Cx.AppTheme">
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="StudyTheme.Black" parent="@style/Cx.AppTheme.Black">
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="StudyTheme.Dialog" parent="@style/cl_AppTheme.Dialog">
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="StudyTheme.Fullscreen" parent="@style/Cx.AppTheme.Fullscreen">
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="StudyTheme.Fullscreen.NoAnimation" parent="@style/Cx.AppTheme.Fullscreen.NoAnimation">
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="StudyTheme.Fullscreen.Transparent" parent="@style/Cx.AppTheme.Transparent.Fullscreen">
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="StudyTheme.Fullscreen.Transparent.NoAnimation" parent="@style/Cx.AppTheme.Transparent.Fullscreen.NoAnimation">
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="StudyTheme.NoAnimation" parent="@style/Cx.AppTheme.NoAnimation">
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="StudyTheme.Transparent" parent="@style/Cx.AppTheme.Transparent">
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="StudyTheme.Transparent.NoAnimation" parent="@style/Cx.AppTheme.Transparent.NoAnimation">
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="cx_cpermission_prompt" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:forceDarkAllowed">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/note_menu_btns" android:layout_width="wrap_content" android:layout_height="80dp">
+        <LinearLayout android:id="@+id/book_note_menu_color" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/book_note_menu_color_group"/>
+        </LinearLayout>
+        <View android:background="#666666" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+        <Button android:textSize="16sp" android:textColor="#333333" android:id="@+id/ibtn_del_note" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/note_delete"/>
+    </LinearLayout>
+</RelativeLayout>

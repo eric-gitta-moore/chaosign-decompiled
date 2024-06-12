@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topBar" layout="@layout/common_title_bar"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar">
+        <RelativeLayout android:background="@android:color/white" android:paddingLeft="22dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="80dp">
+            <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/tvFloorName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="东校区"/>
+            <TextView android:textSize="13sp" android:textColor="#666666" android:id="@+id/tvTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="3月22日" android:layout_below="@+id/tvFloorName"/>
+        </RelativeLayout>
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+        <LinearLayout android:background="@android:color/white" android:paddingLeft="22dp" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#9f9f9f" android:gravity="center_horizontal" android:id="@+id/tvSelectableLogo" android:background="@drawable/seat_selectable" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+                <TextView android:textSize="12sp" android:textColor="#9f9f9f" android:id="@+id/tvSelectable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="可选" android:layout_toRightOf="@+id/tvSelectableLogo" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp">
+                <TextView android:textSize="12sp" android:textColor="#9f9f9f" android:gravity="center_horizontal" android:id="@+id/tvUnselecteLogo" android:background="@drawable/seat_unselect" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+                <TextView android:textSize="12sp" android:textColor="#9f9f9f" android:id="@+id/tvUnselect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="不可选" android:layout_toRightOf="@+id/tvUnselecteLogo" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp">
+                <TextView android:textSize="12sp" android:textColor="#9f9f9f" android:gravity="center_horizontal" android:id="@+id/tvSelectedLogo" android:background="@drawable/seat_selected" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+                <TextView android:textSize="12sp" android:textColor="#9f9f9f" android:id="@+id/tvSelected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="已选" android:layout_toRightOf="@+id/tvSelectedLogo" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:paddingLeft="22dp" android:paddingRight="22dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="78dp">
+            <TextView android:textSize="12sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvRoomName" android:background="@drawable/bg_room_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSeat" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="60dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="78dp" android:layout_alignParentBottom="true">
+        <Button android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/btnSelectOK" android:background="@drawable/blue_solid_corner_0099ff" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="确认选座"/>
+    </LinearLayout>
+    <include android:id="@+id/pbLoading" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

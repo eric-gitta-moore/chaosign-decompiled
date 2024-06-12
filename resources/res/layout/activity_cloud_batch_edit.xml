@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/list_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:layout_above="@+id/edit_toolbar" android:layout_below="@+id/titleBar"/>
+    <include layout="@layout/common_loading_transparent"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/edit_toolbar" android:background="@color/color_commen_move" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_delete" android:paddingTop="8dp" android:clickable="false" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/delete_resource" android:drawableTop="@drawable/white_course_resource_delete" android:drawablePadding="2dp" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_move" android:paddingTop="8dp" android:clickable="false" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/move_resource" android:drawableTop="@drawable/white_course_resource_move" android:drawablePadding="2dp" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_down" android:paddingTop="8dp" android:clickable="false" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/down_cloud" android:drawableTop="@drawable/white_cloud_down" android:drawablePadding="2dp" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_share" android:paddingTop="8dp" android:clickable="false" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/forward_shard" android:drawableTop="@drawable/white_course_resource_transfer" android:drawablePadding="2dp" android:layout_weight="1"/>
+        <View android:id="@+id/viewDivider" android:background="#cccccc" android:layout_width="1dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <include layout="@layout/down_tips_view"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/titleBar" layout="@layout/common_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="60dp" android:layout_below="@+id/titleBar">
+        <ListView android:id="@+id/listview" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/transparent" android:dividerHeight="1px" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/showEmpty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/downloadcenter_nodownloadres" android:layout_centerInParent="true"/>
+    <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tvSize" android:background="#f5f6f8" android:layout_width="match_parent" android:layout_height="35dp" android:text="@string/downloadcenter_Capacity" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

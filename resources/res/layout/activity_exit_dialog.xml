@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/exit_layout" android:background="@drawable/shape_exit_dialog_bg" android:layout_width="281dp" android:layout_height="wrap_content">
+    <TextView android:textSize="15sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="提醒"/>
+    <TextView android:textSize="16sp" android:textColor="#333" android:gravity="center_horizontal" android:id="@+id/dialog_remind_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="00:00"/>
+    <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/dialog_remind_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="19dp" android:text="...." android:maxLength="30"/>
+    <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="18sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/flag_done_tv" android:layout_width="0dp" android:layout_height="match_parent" android:text="标记为已完成" android:layout_weight="1"/>
+        <View android:background="@color/dividerLine" android:layout_width="1px" android:layout_height="45dp"/>
+        <TextView android:textSize="18sp" android:textColor="@color/chaoxingBlue" android:gravity="center" android:id="@+id/delay_tv" android:layout_width="0dp" android:layout_height="match_parent" android:text="确定" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

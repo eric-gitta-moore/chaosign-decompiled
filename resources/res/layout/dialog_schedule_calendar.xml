@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/shape_border_approval_item_bg" android:layout_width="255dp" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/my_schedule_calendar_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="#333333" android:id="@+id/calendar_top_title" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2018年6月" android:layout_centerInParent="true"/>
+        <TextView android:textSize="15sp" android:textColor="#0099ff" android:id="@+id/clear_schedule_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="清除" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView android:id="@+id/calendarView" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/my_schedule_calendar_top" app:mcv_headerTextAppearance="@style/style_schedule_calendar_title_text" app:mcv_selectionColor="#0099ff" app:mcv_showOtherDates="7" app:mcv_tileHeight="40dp"/>
+    <View android:id="@+id/calendar_line" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/calendarView"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/calendar_time_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/calendar_line">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/calendar_time" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/calendar_dialog_time_flag_icon" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/schedule_calendar_happen_icon_normal"/>
+            <TextView android:textSize="15sp" android:textColor="#cccccc" android:layout_gravity="center_vertical" android:id="@+id/calendar_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/schedule_set_time"/>
+        </LinearLayout>
+        <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/calendar_remind" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/calendar_dialog_remind_flag_icon" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/schedule_calendar_remind_icon_normal"/>
+            <TextView android:textSize="15sp" android:textColor="#cccccc" android:layout_gravity="center_vertical" android:id="@+id/calendar_remind_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/schedule_set_reminder"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/calendar_line_1" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/calendar_time_info"/>
+    <LinearLayout android:id="@+id/calendar_top" android:layout_width="match_parent" android:layout_height="44dp" android:weightSum="2" android:layout_below="@+id/calendar_line_1">
+        <TextView android:textSize="18sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/calendar_cancle" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/schedule_cancle_text" android:layout_weight="1"/>
+        <View android:background="#ebebeb" android:layout_width="1px" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="18sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/calendar_ok" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/schedule_done_text" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llCalendarTitle" android:background="@drawable/calendar_title_background" android:layout_width="280dp" android:layout_height="70dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+            <ImageButton android:id="@+id/ibtnPreviousMonth" android:background="#00000000" android:padding="5dp" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/calendar_left_arrow" android:scaleType="centerInside" android:layout_alignParentLeft="true"/>
+            <ImageButton android:id="@+id/ibtnNextMonth" android:background="#00000000" android:padding="5dp" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/calendar_right_arrow" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/tvYearMonth" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <ImageView android:layout_width="18dp" android:layout_height="wrap_content" android:layout_marginLeft="-18dp" android:src="@drawable/kal_down_arrow" android:scaleType="centerInside" android:layout_toRightOf="@+id/tvYearMonth" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="日" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="一" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="二" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="三" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="四" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="五" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="六" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="280dp" android:layout_height="210dp">
+        <com.fanzhou.scholarship.widget.CalendarGrid android:id="@+id/calendar" android:layout_width="322dp" android:layout_height="264dp"/>
+        <com.fanzhou.scholarship.widget.CalendarGrid android:id="@+id/anothergrid" android:layout_width="322dp" android:layout_height="264dp"/>
+        <ProgressBar android:id="@+id/calendarWait" android:background="@drawable/busy" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

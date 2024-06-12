@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/base_divider_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/bg_gray" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#ccccd1" android:id="@+id/et_reply" android:background="@drawable/edit_boarder" android:layout_width="0dp" android:layout_height="28dp" android:layout_marginLeft="8dp" android:layout_marginTop="9dp" android:layout_marginBottom="10dp" android:hint="@string/hint_discuss" android:layout_weight="1"/>
+        <Button android:textSize="16sp" android:textColor="#7b9e31" android:layout_gravity="center_vertical" android:id="@+id/btn_reply_send" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/reply2"/>
+    </LinearLayout>
+    <View android:background="@color/base_divider_color" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

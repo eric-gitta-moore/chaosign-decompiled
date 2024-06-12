@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/content_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#b3b3b3" android:gravity="center" android:id="@+id/iv_add" android:layout_width="wrap_content" android:layout_height="46dp" android:layout_marginLeft="16dp" android:layout_marginRight="12dp" android:text="@string/add_chapter" android:drawableLeft="@drawable/ic_chapter_add" android:drawablePadding="15dp"/>
+    </RelativeLayout>
+</LinearLayout>

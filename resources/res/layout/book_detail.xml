@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fanzhou.widget.GestureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/grlContainer" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:id="@+id/slView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rlTitle" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+                <TextView android:id="@+id/tv_left" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/navigation_img_back" android:layout_centerVertical="true"/>
+                <TextView android:ellipsize="middle" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55dp" android:layout_marginRight="55dp" android:singleLine="true" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+                <TextView android:id="@+id/tvDiscuss" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" style="@style/text_discuss_style"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llRead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp">
+                <ImageView android:id="@+id/ivCover" android:visibility="gone" android:layout_width="66dp" android:layout_height="90dp" android:layout_marginRight="10dp" android:src="@drawable/book_loading_cover" android:scaleType="fitXY"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp">
+                    <TextView android:id="@+id/tvAuthor" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="作者：" android:maxLines="3" style="@style/Text_Default_15"/>
+                    <TextView android:id="@+id/tvData" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="出版日期" android:singleLine="true" style="@style/Text_Default_15"/>
+                    <TextView android:id="@+id/tvIsbn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="ISBN号：" android:singleLine="true" style="@style/Text_Default_15"/>
+                    <TextView android:id="@+id/tvPages" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="页数：" style="@style/Text_Default_15"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llButton1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                <LinearLayout android:gravity="center" android:id="@+id/llReadImage" android:background="@drawable/light_blue_btn_bg" android:visibility="invisible" android:layout_width="135dp" android:layout_height="50dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/ivRead" android:layout_width="28dp" android:layout_height="33dp" android:layout_marginRight="10dp" android:src="@drawable/book_detail_read"/>
+                    <TextView android:id="@+id/tvReadImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="阅读全文" style="@style/Text_White_18"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@+id/llDownload" android:background="@drawable/light_blue_btn_bg" android:visibility="invisible" android:layout_width="135dp" android:layout_height="50dp" android:layout_marginTop="15dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/ivDownload" android:layout_width="28dp" android:layout_height="33dp" android:layout_marginRight="10dp" android:src="@drawable/book_detail_add_to_shelf"/>
+                    <TextView android:id="@+id/tvDownload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下　　载" style="@style/Text_White_18"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llButton2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                <LinearLayout android:gravity="center" android:id="@+id/llDocument" android:background="@drawable/light_blue_btn_bg" android:visibility="gone" android:layout_width="135dp" android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+                    <ImageView android:layout_width="28dp" android:layout_height="33dp" android:layout_marginRight="10dp" android:src="@drawable/book_detail_document_transfer"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="文献传递" style="@style/Text_White_18"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@+id/llCollected" android:background="@drawable/light_blue_btn_bg" android:visibility="invisible" android:layout_width="135dp" android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_weight="1">
+                    <ImageView android:layout_width="28dp" android:layout_height="33dp" android:layout_marginRight="10dp" android:src="@drawable/book_detail_countrywide_collected"/>
+                    <TextView android:id="@+id/tvCollected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全国馆藏" style="@style/Text_White_18"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/llRecommendBuy" android:background="@drawable/light_blue_btn_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+                <TextView android:id="@+id/tvRecommendBuy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐购买" style="@style/Text_White_18"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llContent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="45dp">
+                <TextView android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="内容提要 :" style="@style/Text_Title"/>
+                <TextView android:id="@+id/tvContentData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3dp" style="@style/Text_Default_16"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/wait_circle_bar_with_text"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/bottom_bar" android:layout_width="match_parent" android:layout_height="43dp" android:layout_alignParentBottom="true" layout="@layout/book_detail_content_footer"/>
+</com.fanzhou.widget.GestureRelativeLayout>

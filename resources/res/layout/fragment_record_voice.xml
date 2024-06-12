@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:layout_gravity="center_horizontal" android:id="@+id/tvNotice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="@string/record_pause"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/lltime" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="12dp" android:layout_weight="1">
+            <ImageView android:id="@+id/iv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_left_01"/>
+            <TextView android:textSize="14sp" android:textColor="#333333" android:layout_gravity="center" android:id="@+id/tvTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="0:00"/>
+            <ImageView android:id="@+id/iv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_left_01"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.chaoxing.record.view.VoicePlayProgressView android:layout_gravity="center_horizontal" android:id="@+id/vPlayProgressView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:src="@drawable/icon_record_voice_pause"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="76dp" android:layout_marginTop="16dp">
+        <TextView android:textSize="12sp" android:textColor="#aaaaaa" android:id="@+id/tvTagRemind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/record_click_record" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llbottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="#999999" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+                <Button android:textSize="16sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/btnCancal" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/record_delete" android:layout_weight="1"/>
+                <View android:background="#999999" android:layout_width="1px" android:layout_height="match_parent"/>
+                <Button android:textSize="16sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/btnOk" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/record_upload" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

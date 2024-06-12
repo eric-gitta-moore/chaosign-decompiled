@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/dateZoneBG" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_actionbar"/>
+    <RelativeLayout android:background="@drawable/shape_line_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="14sp" android:textColorHint="@color/dividerLine" android:id="@+id/search_content_et" android:background="@drawable/shape_line_white_bg" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="16dp" android:layout_marginTop="6dp" android:layout_marginRight="16dp" android:layout_marginBottom="6dp" android:hint="请输入检索词" android:singleLine="true" android:maxLength="20" android:drawableLeft="@mipmap/reminder_icon_search" android:imeOptions="actionSearch"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/no_data_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:text="暂无相关数据"/>
+    <ListView android:id="@+id/search_result_lv" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+</LinearLayout>

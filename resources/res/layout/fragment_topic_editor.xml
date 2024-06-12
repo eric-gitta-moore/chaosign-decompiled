@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.input.ime.widget.RimeInputLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/input_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:ril_input_view="@+id/soft_keyboard_status_layout">
+    <RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rlContainer" android:background="#80000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom"/>
+            <RelativeLayout android:id="@+id/bottom" android:background="#f9f9f9" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:id="@+id/rlTextPanel" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.chaoxing.input.CInputEditText android:textSize="16sp" android:textColorHint="#cccccc" android:id="@+id/etTitle" android:background="@android:color/white" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/topic_title_hint" android:maxLines="3"/>
+                    <View android:id="@+id/dividerLine" android:background="#99ccff" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/etTitle"/>
+                    <com.chaoxing.mobile.group.widget.AtToInBlueEditText android:textSize="16sp" android:textColor="#333333" android:textColorHint="#cccccc" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/etContent" android:background="@android:color/white" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/topic_content_hint" android:lines="5" android:layout_below="@+id/dividerLine"/>
+                </RelativeLayout>
+                <View android:id="@+id/dividerLine2" android:background="#ffd9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rlTextPanel"/>
+                <RelativeLayout android:id="@+id/rlOperationPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/dividerLine2">
+                    <RelativeLayout android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RelativeLayout android:id="@+id/rlSelectImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <ImageView android:id="@+id/btnSelectImage" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_topic_reply_add"/>
+                            <TextView android:textSize="9sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvImageCount" android:background="@drawable/circle_bg_f55925" android:focusable="false" android:visibility="visible" android:clickable="false" android:layout_width="18dp" android:layout_height="18dp" android:text="9" android:layout_alignRight="@+id/btnSelectImage"/>
+                        </RelativeLayout>
+                        <Button android:enabled="false" android:textColor="@drawable/bg_sl_text_reply_submit" android:id="@+id/btnSubmit" android:background="@drawable/bg_sl_btn_reply_submit" android:paddingLeft="10dp" android:paddingTop="4dp" android:paddingRight="10dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:id="@+id/dividerLine3" android:background="#ffd9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rlOperationPanel"/>
+                <RelativeLayout android:id="@+id/rlImagePanel" android:padding="8dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/dividerLine3">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSelectedImage" android:layout_width="match_parent" android:layout_height="118dp"/>
+                    <TextView android:textSize="12sp" android:textColor="#87888c" android:id="@+id/tvSelectedCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/9" android:layout_below="@+id/rvSelectedImage" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="12sp" android:textColor="#87888c" android:id="@+id/tvSelectTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="还可以选择图片" android:layout_below="@+id/tvSelectedCount" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.chaoxing.input.ime.widget.RimeInputLayout>

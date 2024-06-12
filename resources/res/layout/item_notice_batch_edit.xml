@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="66dp">
+        <CheckBox android:id="@+id/cb_selected" android:layout_width="24dp" android:layout_height="24dp" android:button="@drawable/checkbox_group_member" android:layout_marginStart="15dp"/>
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_icon" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="fitXY" android:contentDescription="@null" android:layout_marginStart="10dp" app:riv_corner_radius="4dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="66dp" android:layout_marginStart="10dp" android:layout_marginEnd="15dp">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+            <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/tv_size" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

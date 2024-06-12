@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <SurfaceView android:id="@+id/sv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:background="#80666666" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/ic_close_white_24dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/ivSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/img_refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rlcontainer" android:background="#80666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:id="@+id/tvRedo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="重录" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:id="@+id/tvOK" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:layout_marginBottom="20dp" android:text="使用录像" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llrecord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_centerInParent="true">
+            <TextView android:textSize="16sp" android:textColor="#f8c428" android:id="@+id/tvRecode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="点击录像"/>
+            <ImageView android:id="@+id/ivRecode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_record_voice_start"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

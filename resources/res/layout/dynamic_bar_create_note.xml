@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/createNoteBar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/viewline0" android:background="#f5f6f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <LinearLayout android:gravity="center_vertical" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="60dp">
+        <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:id="@+id/tv_createnote" android:layout_width="0dp" android:layout_height="wrap_content" android:text="写点什么呢?" android:drawablePadding="5dp" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <View android:background="#cccccc" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="11dp" android:layout_marginBottom="11dp"/>
+            <TextView android:textSize="12sp" android:textColor="#666666" android:gravity="center" android:id="@+id/tvCamera" android:paddingLeft="25dp" android:paddingRight="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="相机" android:drawableTop="@drawable/note_pic_camera" android:drawablePadding="7dp"/>
+            <TextView android:textSize="12sp" android:textColor="#666666" android:gravity="center" android:id="@+id/tvVoiceRecorder" android:paddingLeft="18dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录音" android:drawableTop="@drawable/note_pic_voice" android:drawablePadding="7dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/viewline" android:background="#f5f6f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <View android:id="@+id/viewline1" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

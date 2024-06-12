@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" android:background="@color/transparent" layout="@layout/common_title_bar2"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTitleBar">
+        <com.fanzhou.widget.PullToRefreshListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvReply" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/transparent" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+        <RelativeLayout android:id="@+id/rl_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_no_data_tip" android:background="@drawable/conversation_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginRight="48dp" android:layout_marginBottom="59dp" android:layout_above="@+id/tv_no_data_tip" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="16sp" android:textColor="#cccccc" android:id="@+id/tv_no_data_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_conversation_tip" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@+id/viewLoading" android:visibility="gone" layout="@layout/page_loading_circle"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/black" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.group.ui.ImageViewPager android:id="@+id/vpGallery" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:unselectedAlpha="1"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/headview" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:layout_margin="32dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:textColor="@color/gray_999999" android:id="@+id/gallery_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/return0" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/gallery_imgcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/gallery_del" android:background="@drawable/img_topic_picture_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_blue_16"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/bottom_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <CheckBox android:id="@+id/cbChoose" android:layout_width="90dp" android:layout_height="30dp" android:text="选择" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

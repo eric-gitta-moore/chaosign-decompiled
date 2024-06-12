@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_chapter" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolBar"/>
+    <include android:id="@+id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar" layout="@layout/page_loading_circle"/>
+    <include android:id="@+id/reload_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar" layout="@layout/common_reload"/>
+    <TextView android:textSize="19sp" android:textColor="#cccccc" android:id="@+id/tv_select_no_file_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <ImageView android:textSize="16sp" android:textColor="#808080" android:id="@+id/ivEmpty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:src="@drawable/ic_resource_lib_empty" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

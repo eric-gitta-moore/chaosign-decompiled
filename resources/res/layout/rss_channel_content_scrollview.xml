@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/top_bar" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentTop="true" layout="@layout/rss_channel_content_top"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:layout_below="@+id/top_bar">
+            <WebView android:id="@+id/rss_read_txt" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+            <FrameLayout android:id="@+id/loadStateContainer" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@+id/pbRssReadWait" layout="@layout/wait_circle_bar_with_text"/>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/viewTitleBar" layout="@layout/contact_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_layout_count" android:background="#f5f6f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp">
+            <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:id="@+id/tv_count_flag" android:paddingLeft="9dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <com.chaoxing.study.contacts.widget.ContactsPersonList android:id="@+id/lv_myfriends" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:childDivider="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0px" android:layout_below="@+id/ll_layout_count"/>
+        <com.chaoxing.study.contacts.widget.LetterBar android:id="@+id/vg_letter_bar" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+        <com.chaoxing.mobile.common.NoDataTipView android:id="@+id/vg_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/pbWait" layout="@layout/page_loading_circle"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llbottom" android:background="@color/gray_style" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="18sp" android:textColor="@color/bg_blue" android:gravity="center" android:id="@+id/tvMove" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/common_move" android:layout_weight="1"/>
+            <View android:layout_gravity="center" android:id="@+id/viewline" android:background="@color/user_line" android:visibility="gone" android:layout_width="1px" android:layout_height="46dp"/>
+            <TextView android:textSize="18sp" android:textColor="@color/bg_blue" android:gravity="center" android:id="@+id/tvDel" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:text="删除" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

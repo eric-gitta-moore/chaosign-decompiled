@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_reply_mode" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+    <ImageView android:id="@+id/iv_reply_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notice_settings" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+</RelativeLayout>

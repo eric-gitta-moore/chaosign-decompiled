@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rlpop" android:background="#80333333" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/menu" android:background="@drawable/grid_option_white_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_options" android:paddingLeft="10dp" android:paddingTop="15dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/bg_color_f5f6f8" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+        <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/cancel"/>
+    </LinearLayout>
+</RelativeLayout>

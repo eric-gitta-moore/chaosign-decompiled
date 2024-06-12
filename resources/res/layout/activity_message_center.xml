@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/parent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topBar" layout="@layout/activity_top_bar"/>
+    <RelativeLayout android:id="@+id/rlIndicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="47dp">
+        <HorizontalScrollView android:id="@+id/hsvIndicator" android:visibility="invisible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llIndication" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </HorizontalScrollView>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llIndication2" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/vpMessage" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rlIndicator"/>
+    <include android:id="@+id/pbLoading" layout="@layout/wait_circle_bar_with_text"/>
+    <include android:id="@+id/refresh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topBar" layout="@layout/refresh"/>
+</RelativeLayout>

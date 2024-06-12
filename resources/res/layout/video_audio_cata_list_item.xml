@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="60dp">
+    <ImageView android:id="@+id/iCover" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="80dp" android:layout_height="110dp" android:scaleType="centerInside"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:id="@+id/tvRssCataItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Title"/>
+        <TextView android:id="@+id/tvRssCataItemAbstract" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" style="@style/Text_Content_14"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/right_arrow"/>
+</LinearLayout>

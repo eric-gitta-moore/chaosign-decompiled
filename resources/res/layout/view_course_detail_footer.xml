@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffefeff4" android:paddingBottom="1px" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/v_member_more" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow_down" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <include android:id="@+id/vLoadFooter" layout="@layout/listview_footer_common"/>
+    <RelativeLayout android:id="@+id/rlQuitGroup" android:background="#ffefeff4" android:paddingLeft="@dimen/dp_15" android:paddingTop="@dimen/dp_15" android:paddingRight="15dp" android:paddingBottom="@dimen/dp_15" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/bottomLine">
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btnQuitGroup" android:background="@drawable/bg_btn_quit_group" android:layout_width="match_parent" android:layout_height="40dp" android:text="退课"/>
+    </RelativeLayout>
+</LinearLayout>

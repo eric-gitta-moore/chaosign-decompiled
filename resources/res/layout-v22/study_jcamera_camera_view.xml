@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/background_dark" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/video_preview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/image_photo" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/top_view" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="8dp">
+            <LinearLayout android:id="@+id/switch_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/image_history" android:padding="11dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jcamera_ic_history" android:layout_alignParentRight="true"/>
+                <ImageView android:id="@+id/image_gallery" android:padding="11dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jcamera_ic_gallery" android:layout_alignParentRight="true"/>
+                <ImageView android:id="@+id/image_switch" android:padding="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jcamera_icon_camera_change" android:layout_alignParentRight="true"/>
+            </LinearLayout>
+            <TextView android:textSize="20sp" android:textColor="@color/cx_white" android:id="@+id/tv_duration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/button_close" android:padding="12dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/study_jcamera_ic_close_white" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/rlBottonRoom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:layout_above="@+id/gsSelectView">
+                <com.chaoxing.camera.CaptureLayout android:id="@+id/capture_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.chaoxing.camera.view.GalleryRecyclerView android:id="@+id/multiple_views" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_centerVertical="true"/>
+                <TextView android:textColor="@color/cx_white" android:id="@+id/multiple_confirm" android:background="@drawable/jcamera_blue_solid_corner_0099ff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginRight="26dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <com.chaoxing.camera.view.GlanceAndSelectImageView android:id="@+id/gsSelectView" android:visibility="gone" android:layout_width="100dp" android:layout_height="78dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/id_card_overlay_view" android:background="@drawable/jcamera_shape_card_front" android:visibility="invisible" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginTop="199dp" android:layout_below="@+id/top_view" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/iv_id_card_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:layout_marginRight="8dp" android:src="@drawable/jcamera_card_front" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_id_card_cover_hand" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:layout_marginRight="8dp" android:src="@drawable/jcamera_card_hand_hold" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.chaoxing.camera.FoucsView android:layout_gravity="center" android:id="@+id/fouce_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

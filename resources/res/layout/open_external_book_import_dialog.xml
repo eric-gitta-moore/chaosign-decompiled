@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/tv_open_import_dialog_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_ing"/>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/pb_open_import_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:max="100" style="?android:attr/progressBarStyleHorizontal"/>
+    <Button android:textSize="16sp" android:textColor="#000000" android:id="@+id/btn_open_import_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/import_cancle"/>
+</LinearLayout>

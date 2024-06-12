@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chaoxing.mobile.note.widget.ShareDynamicAttachmentImageLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_image0" android:background="@drawable/bg_image_boder_d9d9d9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_default_image" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_images" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_image" android:background="@drawable/bg_image_boder_d9d9d9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_default_image" android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/iv_image_2" android:background="@drawable/bg_image_boder_d9d9d9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/ic_default_image" android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/iv_image_3" android:background="@drawable/bg_image_boder_d9d9d9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_default_image" android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_more" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pic_more" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</com.chaoxing.mobile.note.widget.ShareDynamicAttachmentImageLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlTitle" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:ellipsize="middle" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48dp" android:layout_marginRight="48dp" android:text="视频" android:singleLine="true" android:layout_centerInParent="true" style="@style/Text_Title_Page"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:gravity="center" android:id="@+id/tvFilter" android:background="@drawable/light_blue_btn_bg" android:paddingLeft="10dp" android:paddingRight="10dp" android:focusable="true" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginRight="10dp" android:text="筛选" style="@style/Text_White_18"/>
+            <ImageView android:id="@+id/ivSearch" android:background="@drawable/light_blue_btn_bg" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="38dp" android:layout_height="35dp" android:layout_marginRight="10dp" android:src="@drawable/second_search_bg"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

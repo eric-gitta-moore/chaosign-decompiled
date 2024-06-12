@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/mark_container" android:background="@drawable/shape_common_bg_pw_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="44dp">
+        <Button android:textSize="16sp" android:textColor="@color/chaoxing_blue" android:id="@+id/btnCancel" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="match_parent" android:text="选择时间" android:layout_centerInParent="true"/>
+        <Button android:textSize="16sp" android:textColor="@color/chaoxing_blue" android:id="@+id/btnSubmit" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/pickerview_submit" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/timepicker" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.pickerview.lib.WheelView android:id="@+id/min" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.1"/>
+    </LinearLayout>
+</LinearLayout>

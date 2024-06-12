@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/content_view" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.mobile.widget.StiffSearchBar android:id="@+id/search_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/rl_cover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="160dp">
+        <ImageView android:id="@+id/iv_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_launcher" android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_play" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/rv_header" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_class_label" android:background="@color/color_f5f6f8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="29dp">
+        <TextView android:textSize="14sp" android:textColor="@color/color_a6abb3" android:id="@+id/tv_label_clazz" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/course_teacher_class" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/color_999999" android:id="@+id/tv_add_clazz" android:paddingLeft="12dp" android:paddingTop="9dp" android:paddingRight="16dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

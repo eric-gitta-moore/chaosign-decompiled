@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="22sp" android:textColor="@color/black" android:gravity="center" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="新建分组"/>
+    <RelativeLayout android:background="@drawable/bg_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <EditText android:textSize="20sp" android:textColor="@color/black" android:id="@+id/ed_new_edit" android:background="@null" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_clear_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/homework_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ViewFlipper android:id="@+id/vf_bottom_panel" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/lib_reader_forward_panel"/>
+        <include layout="@layout/lib_reader_reading_style_panel"/>
+        <include layout="@layout/lib_reader_text_style_panel"/>
+    </ViewFlipper>
+    <View android:background="#33999999" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp" android:weightSum="4">
+        <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center_vertical" android:id="@+id/ib_navigation" android:background="@android:color/transparent" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?android:attr/selectableItemBackground" android:src="@mipmap/lib_reader_ic_bottom_bar_navigation" android:scaleType="center" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center_vertical" android:id="@+id/ib_paging" android:background="@android:color/transparent" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?android:attr/selectableItemBackground" android:src="@mipmap/lib_reader_ic_bottom_bar_paging_selected" android:scaleType="center" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center_vertical" android:id="@+id/ib_page_style" android:background="@android:color/transparent" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?android:attr/selectableItemBackground" android:src="@mipmap/lib_reader_ic_bottom_bar_reading_style" android:scaleType="center" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center_vertical" android:id="@+id/ib_text_level" android:background="@android:color/transparent" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?android:attr/selectableItemBackground" android:src="@mipmap/lib_reader_ic_bottom_bar_text_level" android:scaleType="center" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:id="@+id/place_holder_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/loading_transparent" android:background="@android:color/transparent" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:background="@drawable/loading_bg" android:padding="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60dp">
+        <com.chaoxing.core.widget.CircleProgressBar android:id="@+id/pbLoading" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp"/>
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/tvLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200dp" android:text="@string/loading_data_please_wait"/>
+    </LinearLayout>
+</LinearLayout>

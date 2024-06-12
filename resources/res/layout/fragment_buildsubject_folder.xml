@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/rvResource" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/viewLoading" android:visibility="gone" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+    </RelativeLayout>
+</RelativeLayout>

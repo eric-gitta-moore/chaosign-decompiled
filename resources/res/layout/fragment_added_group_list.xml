@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/common_title_bar"/>
+    <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tvDataTip" android:background="#efeff4" android:padding="6dp" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/rlContent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.fanzhou.widget.PullToRefreshListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lv_addedGroup" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/selector_list_item" android:cacheColorHint="@android:color/transparent" android:divider="#d9d9d9" android:dividerHeight="1px" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+        <include android:id="@+id/loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wait_circle_bar_with_text_match_parent_transprent"/>
+        <include android:id="@+id/reload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+        <TextView android:textSize="17sp" android:textColor="#999999" android:id="@+id/tv_no_data_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="180dp" android:text="ta没有加入公开的小组" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

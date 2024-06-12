@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:id="@+id/topMarkContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/topMarkIv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@mipmap/lib_reader_guide_bookmark" android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/menuContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:layout_width="92dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lib_reader_guide_pre"/>
+        </LinearLayout>
+        <ImageView android:background="@color/lib_reader_color_999999" android:layout_width="2px" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:layout_width="174dp" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lib_reader_guide_menu"/>
+        </LinearLayout>
+        <ImageView android:background="@color/lib_reader_color_999999" android:layout_width="2px" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:layout_width="92dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/lib_reader_guide_next"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

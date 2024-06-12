@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/resourceLayout" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+    <RelativeLayout android:id="@+id/item_space" android:background="#efeff4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="6dp">
+        <View android:background="#d9d9d9" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.fanzhou.widget.CircleImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/ivResourceLogo" android:layout_width="62dp" android:layout_height="62dp" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_marginBottom="12dp" android:src="@drawable/default_cover_bg" android:contentDescription="@null" ss:border_color="#cccccc" ss:border_width="1px" ss:is_circle="false" ss:x_radius="10px" ss:y_radius="10px"/>
+        <com.fanzhou.widget.CircleImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/iCover" android:visibility="gone" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_marginBottom="12dp" android:src="@drawable/default_content_center" android:scaleType="fitCenter" android:contentDescription="@null" ss:border_color="#dcdfe6" ss:border_width="1px" ss:is_circle="true"/>
+        <com.fanzhou.widget.CircleImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/ivAppInfoLogo" android:visibility="gone" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_marginBottom="12dp" android:src="@drawable/default_cover_bg" android:contentDescription="@null" ss:border_color="#cccccc" ss:border_width="0px" ss:is_circle="false" ss:x_radius="10px" ss:y_radius="10px"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="0dp" android:layout_marginBottom="8dp" android:layout_weight="1">
+                <TextView android:ellipsize="end" android:id="@+id/tvResourceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/text_title_list_item"/>
+                <TextView android:ellipsize="end" android:id="@+id/tvDescription" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true" style="@style/Text_Content_14"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rlResourceAdd" android:focusable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0">
+                <ImageView android:id="@+id/ibtnAdd" android:background="@android:color/transparent" android:paddingLeft="20dp" android:paddingRight="12dp" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="59dp" android:src="@drawable/channel_btn_add" android:scaleType="centerInside" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/list_line" android:background="#d9d9d9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:id="@+id/list_line_app" android:background="#d9d9d9" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="56dp"/>
+</LinearLayout>

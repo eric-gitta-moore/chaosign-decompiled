@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.chaoxing.mobile.common.TitleBarView android:id="@+id/v_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView android:id="@+id/v_attachment_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_foot_view" android:background="#3e9cfa" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_save_to_cloud" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="5dp" android:text="@string/save_to_cloud" android:drawableTop="@drawable/icon_notice_save_cloud" android:drawablePadding="2dp" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_forward" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="5dp" android:text="@string/forward_shard" android:drawableTop="@drawable/icon_notice_forward" android:drawablePadding="2dp" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_download" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="5dp" android:text="@string/down_cloud" android:drawableTop="@drawable/icon_notice_download" android:drawablePadding="2dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/down_tips_view"/>
+</RelativeLayout>

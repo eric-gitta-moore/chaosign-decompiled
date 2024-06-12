@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+<meta charset="utf-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body onhashchange="hashChangeFire()">
+    <div tabindex="0" class="attach-box" id="attach-box"><b class="closeAnnex"></b></div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/attachment_common.js"></script>
+    <script type="text/javascript">
+        //判断移动端
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        function hashChangeFire(){
+            if(getUrlParam('isiframeClose')){
+                $(".closeAnnex").show();
+            }
+            //是否播放动画
+            if(getUrlParam('played')){
+                var newtit = getUrlParam('played');
+                if(newtit == 'true'){
+                    $("#attach-box").addClass("animate");
+                }else{
+                    $("#attach-box").removeClass("animate");
+                }
+
+            }
+        }
+        function getUrlParam(name){
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.hash.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return r[2]; return null; //返回参数值
+        }
+        //2021.04.22
+        var editorClientType = true;
+        if(getUrlParam('editorClientType')){
+        	if(getUrlParam('editorClientType') == 'false'){
+        		editorClientType = false;
+        	}
+        }
+        var jsonOld = window.name;
+        try{
+            jsonOld = b64DecodeUnicode(jsonOld);
+        }catch(e){
+
+        }
+        try{
+            json = JSON.parse(jsonOld);
+        }catch(e){
+            json = "";
+        }
+        if(json == ""){
+
+        }
+        var att_clouddisk = json.att_clouddisk || "";
+        if (att_clouddisk != "" && att_clouddisk.fileId) {
+            var name = att_clouddisk.name || "";
+            if(name == ""){
+            	name = "无标题";
+            }
+            var fileSize = att_clouddisk.fileSize || "";
+            var suffixName = name.toLowerCase();
+            var i = suffixName.lastIndexOf(".");
+            var suffix = suffixName.substring(i+1);
+            var icon;
+            var voiceInfor = att_clouddisk.duration || "";
+            if(voiceInfor != ""){
+            	voiceInfor = formartTime(att_clouddisk.duration);
+            }
+            //console.log(suffix);
+            var CloudDiskImg = [
+                {"type":"ppt","img":"images/ppt.png"},
+                {"type":"pptx","img":"images/ppt.png"},
+                {"type":"doc","img":"images/doc.png"},
+                {"type":"docx","img":"images/doc.png"},
+                {"type":"rar","img":"images/rar.png"},
+                {"type":"zip","img":"images/rar.png"},
+                {"type":"jpg","img":"images/jpg.png"},
+                {"type":"png","img":"images/jpg.png"},
+                {"type":"jpeg","img":"images/jpg.png"},
+                {"type":"psd","img":"images/jpg.png"},
+                {"type":"tiff","img":"images/jpg.png"},
+                {"type":"gif","img":"images/jpg.png"},
+                {"type":"bmp","img":"images/jpg.png"},
+                {"type":"mp4","img":"images/mp4.png"},
+                {"type":"3gp","img":"images/mp4.png"},
+                {"type":"avi","img":"images/mp4.png"},
+                {"type":"rmvb","img":"images/mp4.png"},
+                {"type":"asf","img":"images/mp4.png"},
+                {"type":"divx","img":"images/mp4.png"},
+                {"type":"mpg","img":"images/mp4.png"},
+                {"type":"mpeg","img":"images/mp4.png"},
+                {"type":"mpe","img":"images/mp4.png"},
+                {"type":"mkv","img":"images/mp4.png"},
+                {"type":"vob","img":"images/mp4.png"},
+                {"type":"flv","img":"images/mp4.png"},
+                {"type":"m4v","img":"images/mp4.png"},
+                {"type":"mov","img":"images/mp4.png"},
+                {"type":"f4v","img":"images/mp4.png"},
+                {"type":"wmv","img":"images/mp4.png"},
+                {"type":"mp3","img":"images/mp3.png"},
+                {"type":"wav","img":"images/mp3.png"},
+                {"type":"ogg","img":"images/mp3.png"},
+                {"type":"amr","img":"images/mp3.png"},
+                {"type":"mp3pro","img":"images/mp3.png"},
+                {"type":"ra","img":"images/mp3.png"},
+                {"type":"rma","img":"images/mp3.png"},
+                {"type":"real","img":"images/mp3.png"},
+                {"type":"midi","img":"images/mp3.png"},
+                {"type":"mid","img":"images/mp3.png"},
+                {"type":"mod","img":"images/mp3.png"},
+                {"type":"flac","img":"images/mp3.png"},
+                {"type":"ape","img":"images/mp3.png"},
+                {"type":"aac","img":"images/mp3.png"},
+                {"type":"aiff","img":"images/mp3.png"},
+                {"type":"m4a","img":"images/mp3.png"},
+                {"type":"wma","img":"images/mp3.png"},
+                {"type":"pdf","img":"images/pdf.png"},
+                {"type":"epub","img":"images/epub.png"},
+                {"type":"xlsx","img":"images/xlsx.png"},
+                {"type":"xls","img":"images/xlsx.png"},
+                {"type":"xlsm","img":"images/xlsx.png"},
+                {"type":"xltm","img":"images/xlsx.png"},
+                {"type":"xlsb","img":"images/xlsx.png"},
+                {"type":"txt","img":"images/txt.png"},
+                {"type":"pdz","img":"images/pdz.png"},
+                {"type":"que","img":"images/que.png"},
+                {"type":"ti","img":"images/que.png"}
+            ];
+            if(att_clouddisk.icon){
+                 icon = att_clouddisk.icon;
+            }else{
+                for(var i=0;i<CloudDiskImg.length;i++){
+                    if(suffix == CloudDiskImg[i].type){
+                        icon = CloudDiskImg[i].img;
+                    }
+                }
+                if(icon == "" || icon == undefined || icon == null ){
+                    icon = "images/icon_cloud.png"
+                }
+            };
+            if(suffix == "mp3" || suffix == "m4a" || suffix == "m4r" || suffix == "aac" || suffix == "wav" || suffix == "flac" || suffix == "amr" || suffix == "ape"){
+            	var audioindex = name.lastIndexOf(".");
+            	name = name.substring(0,audioindex);
+            	var html = '<div aria-hidden="false" role="option" class="attach_item insertVoice">'+
+                            '<div aria-hidden="true" class="voiceImg"></div>'+
+                            '<div class="attach_infor">'+
+                                '<div class="titM"><h2 class="words2">'+name+'</h2></div>';
+                    if(voiceInfor == ""){
+                    	html += '<p aria-hidden="true" class="audio-txt-infor"><span>'+fileSize+'</span></p>';
+                    }else{
+                    	html += '<p aria-hidden="true" class="audio-txt-infor"><span>'+fileSize+'</span><span class="linegap show"></span><span>'+voiceInfor+'</span></p>';
+                    }
+
+                     html += '</div>'+
+                            '</div>';
+            }else{
+            	var html = '<div aria-hidden="false" role="option" class="attach_item insertCloud">'+
+                            '<div aria-hidden="true" class="img"><img src="'+icon+'"></div>'+
+                            '<div class="attach_infor">'+
+                                '<h2 class="words2">'+name+'</h2>'+
+                                '<p class="aside">'+fileSize+'</p>'+
+                            '</div>'+
+                        '</div>';
+            }
+            $(".attach-box").append(html);
+        }
+        if(json.cid){
+            var cid=json.cid;
+            //显示附件叉号2021.05
+            attachmentUtils.showiframeClose(cid,editorClientType);
+        }
+        // 附件点击调客户端方法
+        function openClickEvent(e,attachment){
+            attachmentUtils.openCloudClickEvent(e,attachment,json,editorClientType)
+        };
+        function versionSame(num){
+            //判断版本号
+            if(navigator.userAgent.indexOf("ChaoXingStudy") > -1){
+                var ua = navigator.userAgent;
+                ua = ua.substring(ua.indexOf("ChaoXingStudy"));
+                ua = ua.substring(ua.indexOf("_")+1);
+                ua = ua.substring(ua.indexOf("_")+1);
+                ua = ua.substring(0,ua.indexOf("_"));
+                var version = ua;
+                if(version > num){
+                    return true;
+                }
+
+            }
+
+            return false;
+        }
+
+        //长按附件
+        var touchY = 0;
+        var longClick =0;
+        $(".attach-box").on({
+            touchstart: function(e){
+                longClick=0;
+                timeOutEvent = setTimeout(function(){
+                    //此处为长按事件
+                    longClick=1;//假如长按，则设置为1
+                    if(json.cid){
+                        var cid=json.cid;
+                        if (isAndroid && (typeof javaJs !== 'undefined')) {
+                           javaJs.executeParentJs('zss_editor.iframeForward("'+cid+'")');
+                        }
+                        if (isIOS) {
+                            if(window.webkit && window.webkit.messageHandlers.executeParentJs){
+                            window.webkit.messageHandlers.executeParentJs.postMessage(['zss_editor.iframeForward("'+cid+'")']);
+                            }else{
+                    　　　　     if(window.top["executeParentJs"]) {
+                                    window.top["executeParentJs"]('zss_editor.iframeForward("'+cid+'")');
+                                }
+                            }
+                        }
+                    }
+
+                },500);
+                var touch = e.originalEvent.targetTouches[0];
+                touchY = touch.clientY;
+            },
+            touchmove: function(e){
+                clearTimeout(timeOutEvent);
+                timeOutEvent = 0;
+                var touch = e.originalEvent.changedTouches[0];
+                if(Math.abs(touch.clientY - touchY) < 10){
+                    if(isAndroid){
+                     e.preventDefault();
+                    }
+                }
+            },
+            touchend: function(e){
+                clearTimeout(timeOutEvent);
+                if(timeOutEvent!=0 && self.longClick==0){//点击
+                   //此处为点击事件----在此处跳转
+                   openClickEvent(e,jsonOld)
+                }
+                return false;
+            },
+            // 无障碍：click事件
+            click:function (e){
+                openClickEvent(e,jsonOld)
+            }
+        });
+        $('.attach-box').bind('contextmenu', function(e) {
+          e.preventDefault();
+        })
+
+        //无障碍:聚焦
+        window.addEventListener('message',handleMessage,false)
+        function handleMessage(event){
+            let data = event.data
+            if(data == 'audioFocus'){
+                document.getElementById('attach-box').blur()
+                document.getElementById('attach-box').focus()
+            }
+        }
+    </script>
+</body>
+</html>

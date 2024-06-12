@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/llContainer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/rlContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_centerVertical="true">
+        <CheckBox android:id="@+id/cb_checked" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_download_chapter" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/ivShowEnable" android:background="@drawable/img_radiobutton_enable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="17sp" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="10dp" android:text="选中" android:singleLine="true" android:layout_toLeftOf="@+id/tvPacketSize" android:layout_toRightOf="@+id/rlContainer"/>
+    <TextView android:textSize="17sp" android:textColor="#b2b2b2" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tvPacketSize" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="10dp" android:text="20M" android:lines="1" android:layout_alignParentRight="true"/>
+</RelativeLayout>

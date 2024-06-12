@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chaoxing.library.widget.CToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.fanzhou.widget.SwipeListView android:scrollbarStyle="outsideOverlay" android:id="@+id/lvTopic" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:layout_weight="1" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+            <include android:id="@+id/edit_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" layout="@layout/note_batch_edit_bottom_bar"/>
+        </LinearLayout>
+        <include android:id="@+id/viewReload" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/loading_failed_match_parent_img"/>
+        <RelativeLayout android:id="@+id/vg_no_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/tv_no_data_arrow" android:background="@drawable/conversation_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginRight="64dp" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:id="@+id/tvNoDataTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_no_search_result" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <include android:id="@+id/viewLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/page_loading_circle"/>
+    </RelativeLayout>
+</LinearLayout>

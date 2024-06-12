@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#fff7f7f7" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/topLine" android:background="#ffc5c5c5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@+id/rlOpration" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/topLine" android:layout_centerVertical="true">
+        <TextView android:textSize="14sp" android:textColor="#ffcccccc" android:gravity="center_vertical" android:id="@+id/tvCreate_bar" android:background="@drawable/bg_edittext_circular_bead_white" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="28dp" android:text="发表话题" android:layout_toLeftOf="@+id/llPraise_bar" android:layout_centerVertical="true"/>
+        <LinearLayout android:id="@+id/llPraise_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/ivShared_bar" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/ivPraise_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_unpraise"/>
+            <TextView android:textSize="9dp" android:textColor="#0099ff" android:id="@+id/tvPraise_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/ivShared_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:src="@drawable/group_shared" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="#0099ff" android:gravity="center" android:id="@+id/tvAddGroup" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="加入小组" android:layout_below="@+id/topLine" android:layout_centerInParent="true"/>
+</RelativeLayout>

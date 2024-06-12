@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="6dp"/>
+            <solid android:color="@color/BLACK"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="6dp"/>
+                <solid android:color="@color/GAINSBORO"/>
+            </shape>
+        </clip>
+    </item> ---------------------\10\10    本文来自 不知名的人 的CSDN 博客\10    ，全文地址请点击：https://blog.csdn.net/juhua2012/article/details/73171420?utm_source=copy 
+</layer-list>

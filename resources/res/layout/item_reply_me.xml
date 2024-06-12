@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ss="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlContent" android:background="@drawable/bg_repley_me_list" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlTop" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/rlReadStatus">
+            <com.fanzhou.widget.CircleImageView android:id="@+id/ivAvatar" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="fitCenter" android:layout_centerVertical="true" ss:border_color="@color/avatar_border" ss:border_width="1px" ss:is_circle="false" ss:x_radius="8px" ss:y_radius="8px"/>
+            <RelativeLayout android:id="@+id/rlLeft" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/ivAvatar" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@+id/rlNameContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:textSize="12sp" android:textColor="#0099ff" android:ellipsize="end" android:id="@+id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小清新" android:singleLine="true"/>
+                    <TextView android:textSize="12sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvPublishTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="1分钟前" android:singleLine="true" android:layout_below="@+id/tvAuthor"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvOrganization" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="10dp" android:text="南京航空航天大学" android:singleLine="true" android:layout_toRightOf="@+id/rlNameContainer"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlReadStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+            <ImageView android:background="@drawable/icon_validate_unread" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlAtMe" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlTop">
+            <TextView android:textSize="14sp" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvNotePartContent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="10dp" android:maxLines="1" android:drawableLeft="@drawable/ic_replyme_note_part" android:drawablePadding="@dimen/dp_6"/>
+            <TextView android:textSize="15sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tvAtTitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@钱俊芝话题是我发的，他人回复的" android:maxLines="2" android:layout_below="@+id/tvNotePartContent"/>
+            <TextView android:textSize="14sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tvAtContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@钱俊芝话题是我发的，他人回复的" android:layout_below="@+id/tvAtTitle"/>
+            <RelativeLayout android:id="@+id/rlAtImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/tvAtContent">
+                <ImageView android:id="@+id/ivImage0" android:background="@drawable/bg_image_default_with_gray_border" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:cropToPadding="true"/>
+                <ImageView android:id="@+id/ivImage1" android:background="@drawable/bg_image_default_with_gray_border" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:scaleType="centerCrop" android:cropToPadding="true" android:layout_toRightOf="@+id/ivImage0"/>
+                <ImageView android:id="@+id/ivImage2" android:background="@drawable/bg_image_default_with_gray_border" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:scaleType="centerCrop" android:cropToPadding="true" android:layout_toRightOf="@+id/ivImage1"/>
+                <ImageView android:id="@+id/ivMore" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pic_more" android:layout_alignRight="@+id/ivImage2" android:layout_alignBottom="@+id/ivImage2"/>
+            </RelativeLayout>
+            <TextView android:textSize="14sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tvAtFrom" android:padding="3dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@钱俊芝话题是我发的，他人回复的" android:singleLine="true" android:layout_below="@+id/rlAtImage"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlReply" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/rlAtMe">
+            <RelativeLayout android:id="@+id/rlReplyImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/ivReplyImage" android:background="@drawable/bg_img_default" android:layout_width="78dp" android:layout_height="78dp" android:scaleType="centerCrop" android:cropToPadding="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/rlReplyImage" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@+id/rlText" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/tvReplyContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="钱俊芝：原话题标题，没有标题的，直接取三行内容，后面加..." android:maxLines="2"/>
+                    <TextView android:textSize="16sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@+id/tvReplyImageAuth" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="钱俊芝的图片" android:singleLine="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/tvGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="来自我的小组" android:singleLine="true" android:layout_below="@+id/rlText"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

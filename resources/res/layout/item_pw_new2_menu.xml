@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="44dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="center" android:id="@+id/tvMenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        <TextView android:textSize="10sp" android:textColor="#b3b3b3" android:layout_gravity="center" android:id="@+id/tvMenu_des" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="2dp"/>
+    </LinearLayout>
+</RelativeLayout>

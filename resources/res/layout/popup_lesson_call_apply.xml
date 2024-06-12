@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/epubContainer" android:background="@drawable/radius_10_25282e" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_call_apply"/>
+        <TextView android:textSize="17sp" android:textColor="@color/white" android:id="@+id/tv_apply_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="10dp" android:src="@drawable/study_screencast_panel_close_24dp" android:scaleType="fitXY" android:alpha="0.6"/>
+    </LinearLayout>
+    <View android:background="#33ffffff" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_apply_list" android:layout_width="match_parent" android:layout_height="320dp" android:minHeight="150dp"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlItem" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:gravity="center_vertical" android:id="@+id/tvLabelName" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="他加入的小组" style="@style/text_user_title"/>
+        <TextView android:textSize="12sp" android:textColor="@color/account_gray" android:gravity="center_vertical" android:id="@+id/tvRightNum" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="3dp" android:layout_alignParentRight="true"/>
+        <View android:background="@color/date_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/content" android:background="@drawable/video_dialog_progress_bg" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="154dp" android:layout_height="44dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/volume_icon" android:background="@drawable/video_volume_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/volume_progressbar" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginLeft="10dp" android:max="100" android:progressDrawable="@drawable/video_dialog_progress" style="@android:style/Widget.ProgressBar.Horizontal"/>
+</merge>

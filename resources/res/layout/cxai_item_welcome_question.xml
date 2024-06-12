@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_container" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="28dp">
+    <com.hjq.shape.layout.ShapeRelativeLayout android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" app:shape_radius="14dp" app:shape_solidColor="#ffffff">
+        <TextView android:textSize="13dp" android:textColor="#333333" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true"/>
+    </com.hjq.shape.layout.ShapeRelativeLayout>
+</RelativeLayout>

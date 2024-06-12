@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager android:id="@+id/vp_promotion" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.rd.PageIndicatorView android:id="@+id/page_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:piv_animationType="3" app:piv_dynamicCount="true" app:piv_interactiveAnimation="true" app:piv_padding="8dp" app:piv_radius="4dp" app:piv_selectedColor="#9b9b9b" app:piv_unselectedColor="#c7c7c7" app:piv_viewPager="@+id/vp_promotion"/>
+    <RelativeLayout android:id="@+id/jump_view" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12dp" android:textColor="#9b9b9b" android:gravity="center" android:id="@+id/btn_jump" android:background="@drawable/promotion_jump_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="false"/>
+    </RelativeLayout>
+</RelativeLayout>

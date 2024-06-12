@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlSecondReply" android:focusable="true" android:clickable="true" android:longClickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/btnDel" android:layout_alignParentLeft="true">
+        <TextView android:textSize="14sp" android:id="@+id/tvSecondReply" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp"/>
+        <RelativeLayout android:id="@+id/rlImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_below="@+id/tvSecondReply">
+            <ImageView android:id="@+id/ivImage0" android:background="@drawable/ic_default_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:cropToPadding="true"/>
+            <ImageView android:id="@+id/ivImage1" android:background="@drawable/ic_default_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:scaleType="fitXY" android:cropToPadding="true" android:layout_toRightOf="@+id/ivImage0"/>
+            <ImageView android:id="@+id/ivImage2" android:background="@drawable/ic_default_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:scaleType="fitXY" android:cropToPadding="true" android:layout_toRightOf="@+id/ivImage1"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/tvSecondReplyEditTip" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rlImage" style="@style/topic_edit_tip_12"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/ivDivider" android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp" android:layout_below="@+id/rlSecondReply"/>
+</RelativeLayout>

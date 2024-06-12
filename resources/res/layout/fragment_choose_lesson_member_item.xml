@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="66dp">
+    <RelativeLayout android:id="@+id/rlCheckContainer" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="-10dp" android:layout_centerVertical="true">
+        <CheckBox android:id="@+id/cb_selected" android:focusable="false" android:clickable="false" android:layout_width="24dp" android:layout_height="24dp" android:button="@drawable/checkbox_group_member" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_avatar" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="11dp" android:layout_marginTop="9dp" android:layout_marginBottom="9dp" android:layout_toRightOf="@+id/rlCheckContainer" android:layout_centerVertical="true">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_avatar" android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/icon_user_head_portrait" android:scaleType="centerCrop" android:layout_centerInParent="true" app:riv_oval="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="@dimen/dp_15" android:layout_toRightOf="@+id/rl_avatar" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textColor="@color/normal_black" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="2"/>
+        <TextView android:textSize="13sp" android:textColor="@color/gray_999999" android:id="@+id/tv_role" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="" android:maxLines="1"/>
+    </LinearLayout>
+</RelativeLayout>

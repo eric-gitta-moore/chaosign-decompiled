@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textColor="#333333" android:id="@+id/input_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="24dp" android:text="Please input screen code" android:layout_centerHorizontal="true"/>
+    <EditText android:textSize="16sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@+id/input_edit" android:background="@drawable/et_pincode_input" android:padding="5dp" android:paddingLeft="30dp" android:paddingRight="30dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:maxLines="1" android:digits="1234567890.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" android:layout_below="@+id/input_title" android:inputType="textEmailAddress"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/input_edit">
+        <Button android:textSize="14sp" android:id="@+id/btn_cancel" android:layout_width="0dp" android:layout_height="50dp" android:layout_margin="5dp" android:text="@string/cancel" android:layout_weight="1"/>
+        <Button android:textSize="14sp" android:id="@+id/btn_confirm" android:layout_width="0dp" android:layout_height="50dp" android:layout_margin="5dp" android:text="@string/confirm" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

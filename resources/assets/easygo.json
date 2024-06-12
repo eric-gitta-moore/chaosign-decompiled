@@ -1,0 +1,47 @@
+{
+  "easyGoVersion": "1.0",
+  "client": "com.chaoxing.mobileinhouse",
+  "logicEntities": [
+    {
+      "head": {
+        "function": "magicwindow",
+        "required": "true"
+      },
+      "body": {
+        "mode": "1",
+        "activityPairs": [
+          {
+            "from": "com.chaoxing.mobile.activity.SplashActivity",
+            "to": "*"
+          },
+          {
+            "from": "com.chaoxing.mobile.main.ui.MainTabActivity",
+            "to": "*"
+          }
+        ],
+        "Activities": [
+          {
+            "name": "com.chaoxing.reader.epub.EpubActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.chaoxing.reader.pdz.PdzActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.chaoxing.mobile.webapp.ui.WebAppNoSplitActivity",
+            "defaultFullScreen": "true"
+          },
+          {
+            "name": "com.chaoxing.mobile.group.ui.TopicImageViewerActivity",
+            "defaultFullScreen": "true"
+          }
+        ],
+        "UX": {
+          "supportRotationUxCompat": "false",
+          "isDraggable": "false"
+        }
+      }
+    }
+  ]
+}

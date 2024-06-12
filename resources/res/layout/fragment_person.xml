@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top" layout="@layout/contact_title_bar2"/>
+    <include android:id="@+id/dept_change_view" android:visibility="gone" layout="@layout/contact_dept_change_view"/>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@color/color_f5f6f8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_selected_member">
+            <com.chaoxing.study.contacts.widget.ContactsPersonList android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@android:color/transparent" android:dividerHeight="0px" android:headerDividersEnabled="false"/>
+            <include android:id="@+id/pbWait" android:visibility="gone" layout="@layout/page_loading_circle"/>
+            <include android:id="@+id/view_updating_contact" android:visibility="gone" layout="@layout/update_contact"/>
+            <com.chaoxing.study.contacts.widget.LetterBar android:id="@+id/vg_letter_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/ivLoad" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/state_loading_fail" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/vg_no_list_tip" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/view_arrow" android:background="@drawable/conversation_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginRight="64dp" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="16sp" android:textColor="#b3b3b3" android:id="@+id/tv_no_data_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="此部门暂时还没有成员哦" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_selected_member" android:background="#efeff4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="68dp" android:layout_alignParentBottom="true">
+            <HorizontalScrollView android:id="@+id/g_member" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/tv_add_member">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llSelected" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </HorizontalScrollView>
+            <TextView android:textSize="14sp" android:textColor="#0099ff" android:gravity="center_vertical" android:id="@+id/tv_add_member" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="确定（）" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

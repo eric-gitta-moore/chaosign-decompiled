@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <CheckBox android:id="@+id/cb_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:button="@drawable/checkbox_group_member" android:layout_centerVertical="true"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_addimage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:src="@drawable/person_unit_add" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/content_view" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/ll_layout" android:layout_centerVertical="true">
+            <EditText android:textSize="16sp" android:textColor="#333" android:textColorHint="#cccccc" android:gravity="center_vertical" android:id="@+id/et_title" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp" android:hint="@string/pcenter_contents_enter_name" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@+id/line" android:background="@color/DividerColor" android:layout_width="match_parent" android:layout_height="1px"/>
+    <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/bn_ok_submit" android:background="@drawable/bg_btn_cause_group" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="15dp" android:text="@string/btn_ok"/>
+</LinearLayout>
